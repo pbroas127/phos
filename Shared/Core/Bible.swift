@@ -118,7 +118,7 @@ enum DailyVerses {
         (ChapterRef(book: "PRO", chapter: 3), 5), (ChapterRef(book: "ISA", chapter: 40), 31),
         (ChapterRef(book: "JHN", chapter: 8), 12), (ChapterRef(book: "ROM", chapter: 12), 2),
         (ChapterRef(book: "PHP", chapter: 4), 8), (ChapterRef(book: "COL", chapter: 3), 2),
-        (ChapterRef(book: "PSA", chapter: 90), 12), (ChapterRef(book: "MAT", chapter: 4), 4),
+        (ChapterRef(book: "PSA", chapter: 90), 12), (ChapterRef(book: "PSA", chapter: 119), 11),
         (ChapterRef(book: "EPH", chapter: 5), 16), (ChapterRef(book: "JAS", chapter: 1), 22),
         (ChapterRef(book: "PSA", chapter: 1), 2), (ChapterRef(book: "HEB", chapter: 12), 1),
         (ChapterRef(book: "LAM", chapter: 3), 23), (ChapterRef(book: "2TI", chapter: 3), 16),

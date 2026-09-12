@@ -47,7 +47,7 @@ enum DemoData {
             today.chapter = ChapterRef(book: "JHN", chapter: 3)
             store.records = records + [DayRecord(dayKey: todayKey, ref: ChapterRef(book: "JHN", chapter: 3), title: "John 3",
                                                  readMode: .paper, reflectMode: .spoken, reflection: reflection, score: 5, total: 5,
-                                                 completedAt: Date().addingTimeInterval(-5 * 3600), readingSeconds: 390, fromPlan: true)]
+                                                 completedAt: Calendar.current.date(bySettingHour: 7, minute: 48, second: 0, of: Date()) ?? Date(), readingSeconds: 390, fromPlan: true)]
             settings.planPositions = ["john": 3]
             store.settings = settings
             if DemoScreen.requested == .recall { today.middayPending = true }
@@ -59,6 +59,8 @@ enum DemoData {
         snap.streak = 11
         snap.chapterTitle = "John 3"
         snap.lockedCount = 4
+        snap.verseText = "Your word is a lamp to my feet, and a light for my path."
+        snap.verseRef = "Psalm 119:105"
         store.snapshot = snap
     }
 

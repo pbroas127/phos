@@ -213,16 +213,9 @@ struct ShieldPreview: View {
         let snap = model.store.snapshot
         VStack(spacing: large ? 22 : 14) {
             Spacer(minLength: large ? 60 : 10)
-            Group {
-                if style == .streak {
-                    Image(systemName: "flame.fill").foregroundStyle(.white)
-                } else {
-                    Image(systemName: "sun.max.fill").foregroundStyle(.white)
-                }
-            }
-            .font(.system(size: large ? 44 : 28))
-            .frame(width: large ? 96 : 60, height: large ? 96 : 60)
-            .background(Theme.gold, in: RoundedRectangle(cornerRadius: large ? 24 : 15, style: .continuous))
+            Image("LaunchLogo").resizable().scaledToFit()
+                .frame(width: large ? 110 : 64, height: large ? 110 : 64)
+                .clipShape(RoundedRectangle(cornerRadius: large ? 26 : 15, style: .continuous))
             Text(title(snap)).font(.system(size: large ? 30 : 20, weight: .bold)).foregroundStyle(Theme.ink).multilineTextAlignment(.center)
             Text(subtitle(snap)).font(.system(size: large ? 19 : 14)).foregroundStyle(Theme.dim).multilineTextAlignment(.center).padding(.horizontal, 20)
             Spacer(minLength: large ? 80 : 10)

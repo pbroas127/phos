@@ -184,6 +184,9 @@ struct BlankQuestion: View {
                     .buttonStyle(.phos).disabled(selected == nil)
             }
         }
+        .onAppear {
+            if ProcessInfo.processInfo.arguments.contains("-demoData"), selected == nil { selected = item.question.answerText }
+        }
     }
 
     private var sentence: some View {

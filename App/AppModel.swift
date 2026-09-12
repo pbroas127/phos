@@ -62,7 +62,7 @@ final class AppModel {
 
     var passesLeft: Int { settings.passesLeft(now: now) }
 
-    var lockedCount: Int { Blocker.lockedCount(selection) }
+    var lockedCount: Int { demo ? 4 : Blocker.lockedCount(selection) }
 
     var todaysRecord: DayRecord? { records.first { $0.dayKey == today.dayKey } }
 
@@ -101,8 +101,8 @@ final class AppModel {
         snap.planDay = planDay
         snap.planLength = plan.chapters.count
         snap.unlockedUntil = today.unlockedUntil
-        let (ref, verse) = DailyVerses.pick(for: today.dayKey)
-        let text = Bible.shared.verse(ref, verse)
+        let (ref, verse) = demo ? (ChapterRef(book: "PSA", chapter: 119), 105) : DailyVerses.pick(for: today.dayKey)
+        let text = Bible.shared.verse(ref, verse).trimmingCharacters(in: CharacterSet(charactersIn: "“”‘’\"' "))
         if !text.isEmpty {
             snap.verseText = text
             snap.verseRef = BookNames.verseTitle(ref, verse)

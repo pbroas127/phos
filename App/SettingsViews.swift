@@ -87,8 +87,8 @@ struct SettingsScreen: View {
                 }
 
                 Section("About") {
-                    Link("Help and support", destination: URL(string: "https://phos-app.vercel.app/support")!)
-                    Link("Privacy policy", destination: URL(string: "https://phos-app.vercel.app/privacy")!)
+                    Link("Help and support", destination: URL(string: "https://phos-app-sigma.vercel.app/support")!)
+                    Link("Privacy policy", destination: URL(string: "https://phos-app-sigma.vercel.app/privacy")!)
                     LabeledContent("Bible text", value: "World English Bible")
                     LabeledContent("Version", value: Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0")
                 }

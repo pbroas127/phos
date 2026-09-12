@@ -29,6 +29,10 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.peterbroas.phos
         PROVISIONING_PROFILE_SPECIFIER: match AppStore com.peterbroas.phos
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: Apple Distribution
+        DEVELOPMENT_TEAM: GN2K85HBR8
+        TARGETED_DEVICE_FAMILY: 1
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
     info:
       path: App/Info.plist
@@ -75,6 +79,10 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.peterbroas.phos.widgets
         PROVISIONING_PROFILE_SPECIFIER: match AppStore com.peterbroas.phos.widgets
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: Apple Distribution
+        DEVELOPMENT_TEAM: GN2K85HBR8
+        TARGETED_DEVICE_FAMILY: 1
     info:
       path: Widgets/Info.plist
       properties:
@@ -100,6 +108,10 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.peterbroas.phos.shieldconfig
         PROVISIONING_PROFILE_SPECIFIER: match AppStore com.peterbroas.phos.shieldconfig
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: Apple Distribution
+        DEVELOPMENT_TEAM: GN2K85HBR8
+        TARGETED_DEVICE_FAMILY: 1
     info:
       path: ShieldConfig/Info.plist
       properties:
@@ -126,6 +138,10 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.peterbroas.phos.shieldaction
         PROVISIONING_PROFILE_SPECIFIER: match AppStore com.peterbroas.phos.shieldaction
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: Apple Distribution
+        DEVELOPMENT_TEAM: GN2K85HBR8
+        TARGETED_DEVICE_FAMILY: 1
     info:
       path: ShieldAction/Info.plist
       properties:
@@ -153,6 +169,10 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.peterbroas.phos.monitor
         PROVISIONING_PROFILE_SPECIFIER: match AppStore com.peterbroas.phos.monitor
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: Apple Distribution
+        DEVELOPMENT_TEAM: GN2K85HBR8
+        TARGETED_DEVICE_FAMILY: 1
     info:
       path: Monitor/Info.plist
       properties:
@@ -180,6 +200,10 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.peterbroas.phos.report
         PROVISIONING_PROFILE_SPECIFIER: match AppStore com.peterbroas.phos.report
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: Apple Distribution
+        DEVELOPMENT_TEAM: GN2K85HBR8
+        TARGETED_DEVICE_FAMILY: 1
     info:
       path: Report/Info.plist
       properties:

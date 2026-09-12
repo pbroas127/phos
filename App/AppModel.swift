@@ -152,6 +152,7 @@ final class AppModel {
 
     func finishOnboarding() {
         settings.onboarded = true
+        settings.onboardedAt = Date()
         saveSettings()
         if !demo {
             Blocker.registerDaily(settings: settings)
@@ -260,7 +261,7 @@ final class AppModel {
     // MARK: Rules and plans
 
     func proposeRules(_ proposed: Rules) {
-        let result = RuleLogic.propose(current: settings.rules, proposed: proposed, now: Date())
+        let result = RuleLogic.propose(current: settings.rules, proposed: proposed, now: Date(), setupUntil: settings.setupWindowEnds)
         settings.rules = result.effective
         settings.pendingRules = result.pending
         saveSettings()

@@ -60,6 +60,16 @@ final class RuleLogicTests: XCTestCase {
         XCTAssertNil(r.pending)
     }
 
+    func testSetupDayAppliesEasierChangesNow() {
+        var proposed = Rules()
+        proposed.wordsToType = 20
+        let r = RuleLogic.propose(current: Rules(), proposed: proposed, now: now, setupUntil: now.addingTimeInterval(3600))
+        XCTAssertEqual(r.effective.wordsToType, 20)
+        XCTAssertNil(r.pending)
+        let after = RuleLogic.propose(current: Rules(), proposed: proposed, now: now, setupUntil: now.addingTimeInterval(-1))
+        XCTAssertEqual(after.effective.wordsToType, 60)
+    }
+
     func testNormalizeClampsPassToQuestions() {
         var r = Rules()
         r.questionsPerCheck = 2

@@ -231,8 +231,10 @@ struct PendingRules: Codable, Equatable {
 
 enum RuleLogic {
     /// Stricter changes apply right away. Easier changes wait a day when the delay is on.
-    static func propose(current: Rules, proposed raw: Rules, now: Date, delay: TimeInterval = 86_400) -> (effective: Rules, pending: PendingRules?) {
+    static func propose(current: Rules, proposed raw: Rules, now: Date, delay: TimeInterval = 86_400, setupUntil: Date? = nil) -> (effective: Rules, pending: PendingRules?) {
         let proposed = raw.normalized()
+        // During the first day after setup every change applies right away, so people can find settings that fit.
+        if let setupUntil, now < setupUntil { return (proposed, nil) }
         guard current.delayEasierChanges else { return (proposed, nil) }
         var effective = current
         var easier = false
@@ -414,6 +416,7 @@ struct PassUse: Codable, Hashable, Identifiable {
 
 struct AppSettings: Codable, Equatable {
     var onboarded = false
+    var onboardedAt: Date?
     var rules = Rules()
     var pendingRules: PendingRules?
     var schedule = Schedule()
@@ -430,6 +433,7 @@ struct AppSettings: Codable, Equatable {
         let c = try decoder.container(keyedBy: CodingKeys.self)
         let d = AppSettings()
         onboarded = (try? c.decode(Bool.self, forKey: .onboarded)) ?? d.onboarded
+        onboardedAt = try? c.decode(Date.self, forKey: .onboardedAt)
         rules = (try? c.decode(Rules.self, forKey: .rules)) ?? d.rules
         pendingRules = try? c.decode(PendingRules.self, forKey: .pendingRules)
         schedule = (try? c.decode(Schedule.self, forKey: .schedule)) ?? d.schedule
@@ -440,6 +444,9 @@ struct AppSettings: Codable, Equatable {
         preferredRead = (try? c.decode(ReadMode.self, forKey: .preferredRead)) ?? d.preferredRead
         preferredReflect = (try? c.decode(ReflectMode.self, forKey: .preferredReflect)) ?? d.preferredReflect
     }
+
+    /// Rule changes apply instantly until this moment.
+    var setupWindowEnds: Date? { onboardedAt?.addingTimeInterval(86_400) }
 
     func passesLeft(now: Date, calendar: Calendar = .current) -> Int {
         let used = passUses.filter { calendar.isDate($0.date, equalTo: now, toGranularity: .month) }.count

@@ -145,6 +145,12 @@ struct RulesView: View {
                     }
                 }
             }
+            if let ends = model.settings.setupWindowEnds, ends > Date() {
+                Section {
+                    Label("Setup day: changes apply right away until \(ends.formatted(.dateTime.weekday(.wide).hour().minute())).", systemImage: "sparkles")
+                        .font(.footnote).foregroundStyle(Theme.ink)
+                }
+            }
             ForEach(RuleField.allCases) { field in
                 Section {
                     if field == .unlock {

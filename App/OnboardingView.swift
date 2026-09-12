@@ -100,7 +100,7 @@ struct OnboardingView: View {
             Text("Phos").font(Theme.serif(56)).foregroundStyle(Theme.ink)
             Text("Greek for light.").font(.title3).foregroundStyle(Theme.dim)
             Text("Your most distracting apps stay locked each morning until you read a chapter of the Bible, reflect on it, and answer a few questions.")
-                .font(.title3).foregroundStyle(Theme.ink).fixedSize()
+                .font(.title3).foregroundStyle(Theme.ink).wrapLines()
             CardBox(fill: Theme.soft) {
                 VStack(alignment: .leading, spacing: 6) {
                     Text("“Your word is a lamp to my feet, and a light for my path.”").font(Theme.serif(19, .regular)).foregroundStyle(Theme.ink)
@@ -126,7 +126,7 @@ struct OnboardingView: View {
             Image(systemName: symbol).font(.title3).foregroundStyle(Theme.gold).frame(width: 44, height: 44).background(Theme.soft, in: Circle())
             VStack(alignment: .leading, spacing: 3) {
                 Text(title).font(.headline).foregroundStyle(Theme.ink)
-                Text(detail).font(.subheadline).foregroundStyle(Theme.dim).fixedSize()
+                Text(detail).font(.subheadline).foregroundStyle(Theme.dim).wrapLines()
             }
         }
     }
@@ -135,7 +135,7 @@ struct OnboardingView: View {
         VStack(alignment: .leading, spacing: 18) {
             Text("Screen Time access").font(Theme.serif(36)).foregroundStyle(Theme.ink)
             Text("Phos uses Apple's Screen Time to lock the apps you pick. Apple keeps your app list private. Phos never sees which apps you use, and nothing leaves your iPhone.")
-                .font(.body).foregroundStyle(Theme.ink).fixedSize()
+                .font(.body).foregroundStyle(Theme.ink).wrapLines()
             if model.authorized {
                 Label("Access allowed", systemImage: "checkmark.circle.fill").font(.headline).foregroundStyle(Theme.green)
             }
@@ -146,7 +146,7 @@ struct OnboardingView: View {
         VStack(alignment: .leading, spacing: 18) {
             Text("What should wait?").font(Theme.serif(36)).foregroundStyle(Theme.ink)
             Text("Pick the apps or categories that pull you in. Social media and entertainment are a good start.")
-                .foregroundStyle(Theme.ink).fixedSize()
+                .foregroundStyle(Theme.ink).wrapLines()
             CardBox {
                 HStack {
                     VStack(alignment: .leading, spacing: 4) {
@@ -164,7 +164,7 @@ struct OnboardingView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Pick a reading plan").font(Theme.serif(36)).foregroundStyle(Theme.ink)
             Text("The plan chooses each day's chapter, so there is no hunting for the shortest one.")
-                .foregroundStyle(Theme.ink).fixedSize()
+                .foregroundStyle(Theme.ink).wrapLines()
             PlanList()
         }
     }
@@ -173,7 +173,7 @@ struct OnboardingView: View {
         VStack(alignment: .leading, spacing: 18) {
             Text("One last thing").font(Theme.serif(36)).foregroundStyle(Theme.ink)
             Text("When you open a locked app, tap the unlock button and Phos sends a notification. Tap it to jump straight to your reading. Allow notifications on the next screen so that works.")
-                .foregroundStyle(Theme.ink).fixedSize()
+                .foregroundStyle(Theme.ink).wrapLines()
             CardBox(fill: Theme.soft) {
                 VStack(alignment: .leading, spacing: 10) {
                     Label("Locks at \(model.settings.schedule.morning.label)", systemImage: "sunrise")
@@ -188,7 +188,7 @@ struct OnboardingView: View {
 }
 
 extension View {
-    func fixedSize() -> some View { fixedSize(horizontal: false, vertical: true) }
+    func wrapLines() -> some View { fixedSize(horizontal: false, vertical: true) }
 }
 
 struct PlanList: View {

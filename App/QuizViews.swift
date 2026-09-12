@@ -129,7 +129,7 @@ struct ChoiceQuestion: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text(item.question.q ?? "").font(Theme.serif(25)).foregroundStyle(Theme.ink).fixedSize()
+            Text(item.question.q ?? "").font(Theme.serif(25)).foregroundStyle(Theme.ink).wrapLines()
             ForEach(item.choices, id: \.self) { choice in
                 Button { if !locked { selected = choice } } label: {
                     OptionRow(text: choice, state: state(choice))
@@ -257,7 +257,7 @@ struct TrueFalseQuestion: View {
         VStack(spacing: 18) {
             VStack(spacing: 14) {
                 Eyebrow(text: "True or false")
-                Text(item.question.q ?? "").font(Theme.serif(27)).foregroundStyle(Theme.ink).multilineTextAlignment(.center).fixedSize()
+                Text(item.question.q ?? "").font(Theme.serif(27)).foregroundStyle(Theme.ink).multilineTextAlignment(.center).wrapLines()
             }
             .padding(28)
             .frame(maxWidth: .infinity, minHeight: 240)

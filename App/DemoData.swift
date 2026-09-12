@@ -74,7 +74,7 @@ enum DemoData {
             thisWeekTotal: minutes.reduce(0, +) * 60,
             lastWeekTotal: 12.4 * 3600,
             topApps: [.init(name: "Instagram", seconds: 2.2 * 3600), .init(name: "TikTok", seconds: 1.6 * 3600),
-                      .init(name: "YouTube", seconds: 58 * 60), .init(name: "X", seconds: 24 * 60)]
+                      .init(name: "YouTube", seconds: 58.0 * 60), .init(name: "X", seconds: 24.0 * 60)]
         )
     }
 }

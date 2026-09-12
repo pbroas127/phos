@@ -134,7 +134,7 @@ struct ModeChoice: View {
                                     .frame(width: 52, height: 52).background(Theme.soft, in: RoundedRectangle(cornerRadius: 14))
                                 VStack(alignment: .leading, spacing: 3) {
                                     Text(mode.title).font(.headline).foregroundStyle(Theme.ink)
-                                    Text(detail(mode)).font(.subheadline).foregroundStyle(Theme.dim).fixedSize()
+                                    Text(detail(mode)).font(.subheadline).foregroundStyle(Theme.dim).wrapLines()
                                 }
                                 Spacer()
                                 Image(systemName: selected == mode ? "checkmark.circle.fill" : "circle")

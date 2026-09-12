@@ -1,0 +1,4 @@
+git_url("git@github.com:pbroas127/glance-certs.git")
+storage_mode("git")
+type("appstore")
+app_identifier(["com.peterbroas.phos", "com.peterbroas.phos.widgets", "com.peterbroas.phos.shieldconfig", "com.peterbroas.phos.shieldaction", "com.peterbroas.phos.monitor", "com.peterbroas.phos.report"])

@@ -1,0 +1,2855 @@
+{
+ "book": "GEN",
+ "chapters": {
+  "1": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did God describe everything he had made at the end of the sixth day?",
+     "options": [
+      "Very good",
+      "Good",
+      "Complete",
+      "Holy"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did God say he had given people for food?",
+     "options": [
+      "Every seed herb and every fruit tree",
+      "Every living creature that moves",
+      "Only the fruit of the garden",
+      "The fish of the sea and the birds"
+     ],
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Besides giving light, what else were the lights in the sky to be for?",
+     "options": [
+      "Signs to mark seasons, days, and years",
+      "Guides for travelers crossing the earth",
+      "Warnings of judgment to come",
+      "Measures of the height of the heavens"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did God call the dry land?",
+     "options": [
+      "Earth",
+      "Ground",
+      "Eden",
+      "Field"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Darkness was on the surface of the deep and God's Spirit was ____ of the waters.",
+     "answer": "hovering over the surface",
+     "wrong": [
+      "sleeping beneath the surface",
+      "shining above the depths",
+      "resting under the darkness"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "God created man in his own image. In God's image he created him; ____ he created them.",
+     "answer": "male and female",
+     "wrong": [
+      "man and beast",
+      "father and mother",
+      "body and spirit"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "God said to them, \"Be fruitful, multiply, fill the earth, and ____.\"",
+     "answer": "subdue it",
+     "wrong": [
+      "tend it well",
+      "guard it",
+      "keep it holy"
+     ],
+     "v": 28
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "God makes light",
+      "God makes the expanse called sky",
+      "Dry land appears and plants grow",
+      "God makes the sun, moon, and stars"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God created the birds of the sky on the third day.",
+     "answer": false,
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "God blessed the sea creatures and birds, telling them to be fruitful and multiply.",
+     "answer": true,
+     "v": 22
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 24,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did God do on the seventh day?",
+     "options": [
+      "Rested from all his work",
+      "Created the man and woman",
+      "Planted the garden in Eden",
+      "Brought the animals to the man"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why had no plant of the field sprung up yet?",
+     "options": [
+      "God had not caused it to rain",
+      "The ground was still under water",
+      "The sun had not been made yet",
+      "No seeds had been scattered"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which river flows through the land of Havilah, where there is gold?",
+     "options": [
+      "Pishon",
+      "Gihon",
+      "Hiddekel",
+      "Euphrates"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did God bring every animal and bird to the man?",
+     "options": [
+      "To see what he would call them",
+      "To give him food to eat",
+      "To teach him to rule over them",
+      "So he could choose his livestock"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The LORD God formed man from ____, and breathed into his nostrils the breath of life.",
+     "answer": "the dust of the ground",
+     "wrong": [
+      "the clay of the river",
+      "the stones of Eden",
+      "the roots of a tree"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"It is not good for the man to be alone. I will make him ____.\"",
+     "answer": "a helper comparable to him",
+     "wrong": [
+      "a friend to walk with",
+      "a servant to serve him",
+      "a keeper for the garden"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The LORD God took the man, and put him into the garden of Eden to ____.",
+     "answer": "cultivate and keep it",
+     "wrong": [
+      "rule and guard it",
+      "rest and enjoy it",
+      "name and fill it"
+     ],
+     "v": 15
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "God forms man and breathes life into him",
+      "God warns the man about one tree",
+      "The man names the animals",
+      "God makes a woman from the man's rib"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The man and his wife were naked, and they were ashamed.",
+     "answer": false,
+     "v": 25
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The tree of life stood in the middle of the garden.",
+     "answer": true,
+     "v": 9
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 15,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the man and woman make for themselves after their eyes were opened?",
+     "options": [
+      "Coverings of sewn fig leaves",
+      "A shelter among the trees",
+      "Garments of animal skins",
+      "An altar to the LORD"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When God asked the woman what she had done, what did she say?",
+     "options": [
+      "The serpent deceived me, and I ate",
+      "The man gave me the fruit",
+      "I only touched the tree",
+      "I did not know it was forbidden"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the woman tell the serpent God had said about the tree?",
+     "options": [
+      "Do not eat it or touch it",
+      "Do not look at it or go near it",
+      "Do not eat it until the harvest",
+      "Do not share its fruit with anyone"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What guarded the way to the tree of life?",
+     "options": [
+      "Cherubim and a flaming sword",
+      "An angel holding a bow",
+      "A wall of fire",
+      "A deep river"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "\"For you are dust, and ____.\"",
+     "answer": "you shall return to dust",
+     "wrong": [
+      "you shall rest in peace",
+      "you shall become a spirit",
+      "you shall live forever"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The man called his wife Eve because she would be ____.",
+     "answer": "the mother of all the living",
+     "wrong": [
+      "the helper of all mankind",
+      "the first of all women",
+      "the joy of his heart"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They heard the LORD God's voice walking in the garden ____.",
+     "answer": "in the cool of the day",
+     "wrong": [
+      "in the heat of noon",
+      "at the break of dawn",
+      "in the dark of night"
+     ],
+     "v": 8
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The serpent questions the woman",
+      "The woman eats and gives some to her husband",
+      "The man and his wife hide among the trees",
+      "God sends the man out of Eden"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The man blamed the serpent for giving him the fruit.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "God told the serpent that the woman's offspring would bruise its head.",
+     "answer": true,
+     "v": 15
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was Abel's work?",
+     "options": [
+      "Keeper of sheep",
+      "Tiller of the ground",
+      "Builder of cities",
+      "Hunter in the field"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did Cain answer when the LORD asked where Abel was?",
+     "options": [
+      "I don't know. Am I my brother's keeper?",
+      "He went out into the field alone.",
+      "He is out tending his flock.",
+      "I have not seen him since the offering."
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Cain live after he left the LORD's presence?",
+     "options": [
+      "The land of Nod, east of Eden",
+      "The land of Cush, south of Eden",
+      "The land of Havilah",
+      "Beside the river Euphrates"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who was the father of all who handle the harp and pipe?",
+     "options": [
+      "Jubal",
+      "Jabal",
+      "Tubal Cain",
+      "Lamech"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"If you don't do well, ____. Its desire is for you, but you are to rule over it.\"",
+     "answer": "sin crouches at the door",
+     "wrong": [
+      "death waits in the field",
+      "anger rises in your heart",
+      "evil hides in the dark"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"What have you done? The voice of your brother's blood ____.\"",
+     "answer": "cries to me from the ground",
+     "wrong": [
+      "calls to me from heaven",
+      "rises up from the field",
+      "speaks against you today"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "A son was born to Seth, named Enosh. At that time men began to ____.",
+     "answer": "call on the LORD's name",
+     "wrong": [
+      "build altars to God",
+      "offer the firstborn of flocks",
+      "walk in the LORD's ways"
+     ],
+     "v": 26
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Cain and Abel bring offerings",
+      "The LORD asks Cain why he is angry",
+      "Cain kills Abel in the field",
+      "Cain builds a city named after his son"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD respected Cain's offering but not Abel's.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Eve named Seth, saying God had given her another child instead of Abel.",
+     "answer": true,
+     "v": 25
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 24,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who was Noah's father?",
+     "options": [
+      "Lamech",
+      "Methuselah",
+      "Enoch",
+      "Jared"
+     ],
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which sons of Noah are named at the end of the chapter?",
+     "options": [
+      "Shem, Ham, and Japheth",
+      "Shem, Ham, and Canaan",
+      "Seth, Ham, and Japheth",
+      "Shem, Asshur, and Japheth"
+     ],
+     "v": 32
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who was born to Enoch?",
+     "options": [
+      "Methuselah",
+      "Lamech",
+      "Mahalalel",
+      "Kenan"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In whose likeness was Seth born?",
+     "options": [
+      "Adam's own likeness, after his image",
+      "Abel's likeness, to replace him",
+      "Eve's likeness, as her son",
+      "Cain's likeness, as his brother"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Enoch walked with God, and he was not found, for ____.",
+     "answer": "God took him",
+     "wrong": [
+      "he went away",
+      "he died young",
+      "God hid him"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He named him Noah, saying, \"This one will ____ and in the toil of our hands.\"",
+     "answer": "comfort us in our work",
+     "wrong": [
+      "lead us in our journey",
+      "save us from the flood",
+      "help us in our fields"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He created them male and female, and blessed them. On the day they were created, he ____.",
+     "answer": "named them Adam",
+     "wrong": [
+      "called them good",
+      "gave them the garden",
+      "named them man and woman"
+     ],
+     "v": 2
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Adam becomes the father of Seth",
+      "Enoch walks with God",
+      "Lamech names his son Noah",
+      "Noah becomes the father of three sons"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Adam had other sons and daughters besides Seth.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Enoch walked with God only before Methuselah was born.",
+     "answer": false,
+     "v": 22
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 8,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How is Noah described in this chapter?",
+     "options": [
+      "Righteous and blameless, walking with God",
+      "Rich and powerful among the people",
+      "A mighty hunter before the LORD",
+      "One of the men of renown"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What kind of wood did God tell Noah to use for the ship?",
+     "options": [
+      "Gopher wood",
+      "Cedar wood",
+      "Acacia wood",
+      "Oak wood"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did God say the earth was filled with?",
+     "options": [
+      "Violence",
+      "Idols",
+      "Famine",
+      "Disease"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did God tell Noah to set the door of the ship?",
+     "options": [
+      "In its side",
+      "In its roof",
+      "At its front",
+      "At its back"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "But Noah found ____.",
+     "answer": "favor in the LORD's eyes",
+     "wrong": [
+      "grace in the people's sight",
+      "shelter in the high mountains",
+      "rest in the LORD's house"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The LORD was sorry that he had made man on the earth, and ____.",
+     "answer": "it grieved him in his heart",
+     "wrong": [
+      "he turned his face away",
+      "he wept over the land",
+      "his anger burned against them"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"My Spirit will not strive with man forever, because ____.\"",
+     "answer": "he also is flesh",
+     "wrong": [
+      "he has turned away",
+      "his heart is proud",
+      "he is only dust"
+     ],
+     "v": 3
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "God's sons take men's daughters as wives",
+      "The LORD sees how great man's wickedness is",
+      "God tells Noah to make a ship",
+      "Noah does all that God commanded"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God told Noah to bring two of every sort of living thing, male and female.",
+     "answer": true,
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "God told Noah to seal the ship with pitch only on the outside.",
+     "answer": false,
+     "v": 14
+    }
+   ]
+  },
+  "7": {
+   "keyVerse": 12,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How long did God say he would cause it to rain?",
+     "options": [
+      "Forty days and forty nights",
+      "Seven days and seven nights",
+      "One hundred days",
+      "Twelve days and twelve nights"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many days after God spoke to Noah did the floodwaters come?",
+     "options": [
+      "Seven",
+      "Forty",
+      "Three",
+      "Ten"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "After everyone went into the ship, who shut Noah in?",
+     "options": [
+      "The LORD",
+      "Noah himself",
+      "Shem and Japheth",
+      "Noah's wife"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How long did the waters flood the earth?",
+     "options": [
+      "One hundred fifty days",
+      "Forty days",
+      "Seven months",
+      "One full year"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Every living thing on the ground was destroyed. Only Noah was left, and those who were ____.",
+     "answer": "with him in the ship",
+     "wrong": [
+      "on the high mountains",
+      "hidden in the caves",
+      "in the land of Eden"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The waters increased, and ____, and it was lifted up above the earth.",
+     "answer": "lifted up the ship",
+     "wrong": [
+      "covered the valleys",
+      "swept away the cities",
+      "rose over the trees"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "All the fountains of the great deep burst open, and ____.",
+     "answer": "the sky's windows opened",
+     "wrong": [
+      "the mountains fell down",
+      "the rivers overflowed their banks",
+      "the earth split apart"
+     ],
+     "v": 11
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "God tells Noah to go into the ship",
+      "Noah's family and the animals go in",
+      "All the high mountains are covered",
+      "Everything on the dry land dies"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Noah went into the ship with his sons, but his sons' wives stayed behind.",
+     "answer": false,
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "God told Noah to take seven pairs of every clean animal but only two of the animals that are not clean.",
+     "answer": true,
+     "v": 2
+    }
+   ]
+  },
+  "8": {
+   "keyVerse": 22,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the dove bring back in her mouth?",
+     "options": [
+      "A freshly plucked olive leaf",
+      "A twig from a fig tree",
+      "A blade of green grass",
+      "A branch from a grapevine"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did the ship come to rest?",
+     "options": [
+      "On Ararat's mountains",
+      "On the mountains of Shinar",
+      "On the hills of Havilah",
+      "On a mountain near Eden"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was the first bird Noah sent out of the ship?",
+     "options": [
+      "A raven",
+      "A dove",
+      "An eagle",
+      "A sparrow"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did God make pass over the earth so the waters would go down?",
+     "options": [
+      "A wind",
+      "A great heat",
+      "A cloud",
+      "A fire"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Noah built ____, and took of every clean animal and every clean bird.",
+     "answer": "an altar to the LORD",
+     "wrong": [
+      "a tent for his family",
+      "a house for his sons",
+      "a wall around the camp"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The dove found ____, and she returned into the ship to him.",
+     "answer": "no place to rest her foot",
+     "wrong": [
+      "no tree still standing",
+      "no food on the waters",
+      "no other birds nearby"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"While the earth remains, seed time and harvest, and cold and heat, and ____, and day and night will not cease.\"",
+     "answer": "summer and winter",
+     "wrong": [
+      "rain and drought",
+      "planting and reaping",
+      "sunrise and sunset"
+     ],
+     "v": 22
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The ship comes to rest",
+      "The tops of the mountains can be seen",
+      "Noah sends birds out of the window",
+      "God tells Noah to go out of the ship"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD said he would curse the ground again if man's heart turned to evil.",
+     "answer": false,
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The third time Noah sent out the dove, she did not return to him.",
+     "answer": true,
+     "v": 12
+    }
+   ]
+  },
+  "9": {
+   "keyVerse": 13,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did God say he would do when he looked at the rainbow in the cloud?",
+     "options": [
+      "Remember his everlasting covenant",
+      "Bless the descendants of Noah",
+      "Send rain in its season",
+      "Forgive the sins of man"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Noah plant after he began to be a farmer?",
+     "options": [
+      "A vineyard",
+      "An olive grove",
+      "A field of wheat",
+      "A fig orchard"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did God tell Noah and his sons they must not eat?",
+     "options": [
+      "Flesh with its life, that is, its blood",
+      "The meat of unclean animals",
+      "Any fish without scales",
+      "The fruit of the vine"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "When Noah awoke from his wine, whom did he curse?",
+     "options": [
+      "Canaan",
+      "Ham",
+      "Japheth",
+      "Shem"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"Whoever sheds man's blood, his blood will be shed by man, for God made man ____.\"",
+     "answer": "in his own image",
+     "wrong": [
+      "from the dust",
+      "to rule the earth",
+      "a living soul"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"All flesh will not be cut off any more by the waters of the flood. There will never again be ____.\"",
+     "answer": "a flood to destroy the earth",
+     "wrong": [
+      "a curse upon the ground",
+      "a famine in the land",
+      "a darkness over the sky"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Shem and Japheth took a garment, laid it on both their shoulders, ____, and covered their father.",
+     "answer": "went in backwards",
+     "wrong": [
+      "closed their eyes tightly",
+      "put out the lamp",
+      "went in on their knees"
+     ],
+     "v": 23
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "God blesses Noah and his sons",
+      "God speaks of a sign in the cloud",
+      "Noah lies uncovered within his tent",
+      "Ham tells his two brothers outside"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God told Noah that every moving thing that lives would be food for him.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Noah said, \"May God enlarge Japheth. Let him dwell in the tents of Ham.\"",
+     "answer": false,
+     "v": 27
+    }
+   ]
+  },
+  "10": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who became the father of Nimrod?",
+     "options": [
+      "Cush",
+      "Ham",
+      "Canaan",
+      "Asshur"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Nimrod went out of Shinar and built Nineveh. Which land did he go into?",
+     "options": [
+      "Assyria",
+      "Egypt",
+      "Canaan",
+      "Havilah"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why was Peleg given his name?",
+     "options": [
+      "In his days the earth was divided",
+      "He was Eber's firstborn son",
+      "He was a mighty hunter",
+      "His family spread to the islands"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to the chapter, which people descended from Casluhim?",
+     "options": [
+      "The Philistines",
+      "The Jebusites",
+      "The Amorites",
+      "The Hivites"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Nimrod began to be ____.",
+     "answer": "a mighty one on the earth",
+     "wrong": [
+      "a king over many nations",
+      "a builder of great towers",
+      "a servant to his brothers"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "These are the families of the sons of Noah. The nations divided from these on the earth ____.",
+     "answer": "after the flood",
+     "wrong": [
+      "before the tower",
+      "in Nimrod's days",
+      "after Noah died"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Children were also born to Shem, the father of all ____.",
+     "answer": "the children of Eber",
+     "wrong": [
+      "the people of Canaan",
+      "the nations of the islands",
+      "the hunters of Shinar"
+     ],
+     "v": 21
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The sons of Japheth are named",
+      "The sons of Ham are named",
+      "The sons of Shem are named",
+      "The sons of Joktan are named"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Canaan is listed as one of the sons of Ham.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The chapter describes Japheth as the elder brother of Shem.",
+     "answer": false,
+     "v": 21
+    }
+   ]
+  },
+  "11": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the people want to build a city and a tower?",
+     "options": [
+      "To make a name and avoid being scattered",
+      "To escape if another flood came",
+      "To defend themselves against enemies",
+      "To offer sacrifices high in the sky"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the builders use for mortar?",
+     "options": [
+      "Tar",
+      "Clay",
+      "Lime",
+      "Straw"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did the people settle as they traveled east?",
+     "options": [
+      "A plain in the land of Shinar",
+      "A valley in the land of Canaan",
+      "The mountains of Ararat",
+      "A plain beside Ur"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who was the father of Lot?",
+     "options": [
+      "Haran",
+      "Nahor",
+      "Terah",
+      "Abram"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Its name was called Babel, because there the LORD ____ of all the earth.",
+     "answer": "confused the language",
+     "wrong": [
+      "judged the pride",
+      "humbled the kings",
+      "ended the building"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"Come, let's build ourselves a city, and a tower ____.\"",
+     "answer": "whose top reaches to the sky",
+     "wrong": [
+      "that stands upon the mountain",
+      "made of gold and stone",
+      "that guards the whole plain"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"They are one people, and they all have one language. Now nothing will be withheld from them, ____.\"",
+     "answer": "which they intend to do",
+     "wrong": [
+      "which their hands can build",
+      "unless they are scattered",
+      "that they ask of me"
+     ],
+     "v": 6
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The whole earth speaks one language",
+      "The people make bricks and burn them",
+      "The LORD comes down to see the tower",
+      "Terah's family leaves Ur of the Chaldees"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The people finished building the city before the LORD scattered them.",
+     "answer": false,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Terah set out from Ur with Abram, Lot, and Sarai toward Canaan, but they settled in Haran.",
+     "answer": true,
+     "v": 31
+    }
+   ]
+  },
+  "12": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Abram go down into Egypt?",
+     "options": [
+      "There was a severe famine in the land",
+      "Pharaoh had invited him to come",
+      "The LORD told him to go there",
+      "His herds needed more pasture"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Abram ask Sarai to tell the Egyptians?",
+     "options": [
+      "That she was his sister",
+      "That she was his servant",
+      "That she was a widow",
+      "That she was Lot's wife"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD do to Pharaoh because of Sarai?",
+     "options": [
+      "Afflicted his house with great plagues",
+      "Sent a famine on Egypt",
+      "Warned him in a dream",
+      "Struck him with blindness"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "When Abram pitched his tent with Bethel on the west, what was on the east?",
+     "options": [
+      "Ai",
+      "Shechem",
+      "Hebron",
+      "Zoar"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"I will bless those who bless you, and I will curse him who treats you with contempt. ____ will be blessed through you.\"",
+     "answer": "All the families of the earth",
+     "wrong": [
+      "All your sons and daughters",
+      "All the kings of Canaan",
+      "All who dwell in Haran"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The LORD appeared to Abram and said, \"I will give this land ____.\"",
+     "answer": "to your offspring",
+     "wrong": [
+      "to you today",
+      "to your servants",
+      "to you and Lot"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Abram passed through the land to the place of Shechem, ____.",
+     "answer": "to the oak of Moreh",
+     "wrong": [
+      "to the well of Beersheba",
+      "to the plain of Jordan",
+      "to the hill of Bethel"
+     ],
+     "v": 6
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The LORD tells Abram to leave his country",
+      "Abram builds an altar where the LORD appeared",
+      "Sarai is taken into Pharaoh's house",
+      "Pharaoh's men send Abram away"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Lot stayed behind in Haran when Abram left.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Pharaoh dealt well with Abram for Sarai's sake, and Abram gained livestock and servants.",
+     "answer": true,
+     "v": 16
+    }
+   ]
+  },
+  "13": {
+   "keyVerse": 8,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why could Abram and Lot not live together?",
+     "options": [
+      "Their possessions were too great for the land",
+      "Lot wanted to go back to Egypt",
+      "The LORD commanded them to part",
+      "They argued over who built the altar"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which land did Lot choose for himself?",
+     "options": [
+      "The plain of the Jordan",
+      "The hills around Bethel",
+      "The land of Canaan",
+      "The South toward Egypt"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In this chapter, what did the LORD say Abram's offspring would be like?",
+     "options": [
+      "The dust of the earth",
+      "The stars of the sky",
+      "The sand of the seashore",
+      "The grass of the field"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did Abram settle at the end of the chapter?",
+     "options": [
+      "By the oaks of Mamre in Hebron",
+      "By the oak of Moreh at Shechem",
+      "Between Bethel and Ai",
+      "In the city of Zoar"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Abram lived in the land of Canaan, and Lot moved his tent ____.",
+     "answer": "as far as Sodom",
+     "wrong": [
+      "as far as Zoar",
+      "close to Egypt",
+      "toward the mountains"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"Please, let there be no strife between you and me, and between your herdsmen and my herdsmen; for ____.\"",
+     "answer": "we are relatives",
+     "wrong": [
+      "the land is small",
+      "God is watching us",
+      "we are strangers here"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Abram was very rich in livestock, ____.",
+     "answer": "in silver, and in gold",
+     "wrong": [
+      "in servants and in camels",
+      "in wine and in grain",
+      "in land and in tents"
+     ],
+     "v": 2
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Abram goes up out of Egypt",
+      "Abram calls on the LORD at his first altar",
+      "Abram's and Lot's herdsmen quarrel",
+      "The LORD tells Abram to look in every direction"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Abram let Lot choose which way he would go.",
+     "answer": true,
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When Lot separated from Abram, he traveled west.",
+     "answer": false,
+     "v": 11
+    }
+   ]
+  },
+  "14": {
+   "keyVerse": 20,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Abram lead his men out to battle?",
+     "options": [
+      "His relative Lot had been taken captive",
+      "The kings had stolen his flocks",
+      "The king of Sodom begged for help",
+      "Melchizedek told him to fight"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Melchizedek king of Salem bring out?",
+     "options": [
+      "Bread and wine",
+      "Gold and silver",
+      "Oil and incense",
+      "Meat and milk"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Abram give to Melchizedek?",
+     "options": [
+      "A tenth of all",
+      "Half of the goods",
+      "The captured kings",
+      "His best sheep"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was the valley of Siddim full of, where some of the kings fell?",
+     "options": [
+      "Tar pits",
+      "Deep caves",
+      "Thorn bushes",
+      "Flooded streams"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Melchizedek king of Salem brought out food. He was ____.",
+     "answer": "priest of God Most High",
+     "wrong": [
+      "king of all Canaan",
+      "a servant of Pharaoh",
+      "a brother of Mamre"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He divided himself against them ____, he and his servants, and struck them.",
+     "answer": "by night",
+     "wrong": [
+      "at sunrise",
+      "in the valley",
+      "by the river"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"I will not take ____ nor anything that is yours, lest you should say, 'I have made Abram rich.'\"",
+     "answer": "a thread nor a sandal strap",
+     "wrong": [
+      "a sheep nor a donkey",
+      "a coin nor a cup",
+      "a garment nor a tent"
+     ],
+     "v": 23
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The kings rebel against Chedorlaomer",
+      "Four kings fight five kings in Siddim",
+      "Abram pursues the kings as far as Dan",
+      "Melchizedek blesses Abram"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The king of Sodom told Abram to keep the goods, and Abram gladly accepted them.",
+     "answer": false,
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Mamre, Eshcol, and Aner were allies of Abram.",
+     "answer": true,
+     "v": 13
+    }
+   ]
+  },
+  "15": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD tell Abram to look toward and count?",
+     "options": [
+      "The stars in the sky",
+      "The dust of the earth",
+      "The sand by the sea",
+      "The sheep in his flocks"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who did Abram say would inherit his estate?",
+     "options": [
+      "Eliezer of Damascus",
+      "Lot his nephew",
+      "Ishmael his son",
+      "Mamre the Amorite"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What passed between the pieces of the animals?",
+     "options": [
+      "A smoking furnace and a flaming torch",
+      "A pillar of cloud and fire",
+      "Two angels with swords",
+      "A great wind and rain"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What came down on the carcasses that Abram had to drive away?",
+     "options": [
+      "Birds of prey",
+      "Wild dogs",
+      "Jackals",
+      "Flies"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "He believed in the LORD, who ____.",
+     "answer": "credited it to him for righteousness",
+     "wrong": [
+      "made a covenant with him",
+      "gave him a son soon",
+      "promised him the whole land"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"Don't be afraid, Abram. I am ____, your exceedingly great reward.\"",
+     "answer": "your shield",
+     "wrong": [
+      "your fortress",
+      "your strong rock",
+      "your king"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"Your offspring will live as foreigners in a land that is not theirs, and will serve them. They will afflict them ____.\"",
+     "answer": "four hundred years",
+     "wrong": [
+      "seventy long years",
+      "forty hard years",
+      "three hundred years"
+     ],
+     "v": 13
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The LORD speaks to Abram in a vision",
+      "Abram asks how he will know he will inherit",
+      "A deep sleep falls on Abram",
+      "The LORD makes a covenant about the land"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD said Abram's heir would come from his own body.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Abram divided the birds in half along with the other animals.",
+     "answer": false,
+     "v": 10
+    }
+   ]
+  },
+  "16": {
+   "keyVerse": 13,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who was Hagar?",
+     "options": [
+      "Sarai's Egyptian servant",
+      "Abram's Canaanite servant",
+      "Lot's eldest daughter",
+      "A woman from Haran"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did the LORD's angel find Hagar?",
+     "options": [
+      "By a fountain on the way to Shur",
+      "At the well of Beersheba",
+      "By the oaks of Mamre",
+      "On the road into Egypt"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the angel tell Hagar to do?",
+     "options": [
+      "Return and submit to her mistress",
+      "Go back to her people in Egypt",
+      "Stay hidden in the wilderness",
+      "Go to Abram in secret"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Hagar call the LORD who spoke to her?",
+     "options": [
+      "A God who sees",
+      "God Most High",
+      "The LORD who provides",
+      "God Almighty"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "\"He will be like ____ among men. His hand will be against every man.\"",
+     "answer": "a wild donkey",
+     "wrong": [
+      "a roaring lion",
+      "a mighty hunter",
+      "a strong ox"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"You shall call his name Ishmael, because ____.\"",
+     "answer": "the LORD has heard your affliction",
+     "wrong": [
+      "God has given you a son",
+      "he will be a great nation",
+      "the LORD has seen your tears"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Sarai said to Abram, \"____. I gave my servant into your bosom.\"",
+     "answer": "This wrong is your fault",
+     "wrong": [
+      "The LORD has cursed me",
+      "You have shamed my house",
+      "Send this woman away now"
+     ],
+     "v": 5
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Sarai gives Hagar to Abram",
+      "Hagar looks down on Sarai",
+      "Hagar flees into the wilderness",
+      "Hagar bears Abram a son"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Abram told Sarai to do with Hagar whatever seemed good to her.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Sarai gave Hagar to Abram after he had lived twenty years in Canaan.",
+     "answer": false,
+     "v": 3
+    }
+   ]
+  },
+  "17": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did God change Abram's name to Abraham?",
+     "options": [
+      "He was made father of a multitude of nations",
+      "He had obeyed God's voice",
+      "He would become a great king",
+      "He had defeated the four kings"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Abraham do when God said Sarah would bear him a son?",
+     "options": [
+      "Fell on his face and laughed",
+      "Built an altar and worshiped",
+      "Wept for joy",
+      "Asked God for a sign"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "At what age was every male to be circumcised?",
+     "options": [
+      "Eight days old",
+      "Seven days old",
+      "Thirty days old",
+      "One year old"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How many princes did God say Ishmael would father?",
+     "options": [
+      "Twelve",
+      "Seven",
+      "Ten",
+      "Three"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "\"I am God Almighty. ____ and be blameless.\"",
+     "answer": "Walk before me",
+     "wrong": [
+      "Bow down to me",
+      "Listen to my voice",
+      "Keep my commandments"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Abraham said to God, \"Oh that ____ before you!\"",
+     "answer": "Ishmael might live",
+     "wrong": [
+      "Sarah might bear",
+      "Eliezer might serve",
+      "Lot might dwell"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"I will establish my covenant with Isaac, whom Sarah will bear to you ____.\"",
+     "answer": "at this set time next year",
+     "wrong": [
+      "after many long years",
+      "when you enter Canaan",
+      "in her ninetieth year"
+     ],
+     "v": 21
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The LORD appears to Abram",
+      "God changes Abram's name",
+      "God changes Sarai's name",
+      "Abraham circumcises every male in his house"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God said his everlasting covenant would be with Isaac rather than Ishmael.",
+     "answer": true,
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Ishmael was circumcised on a different day than Abraham.",
+     "answer": false,
+     "v": 26
+    }
+   ]
+  },
+  "18": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where was Abraham when the three men appeared?",
+     "options": [
+      "Sitting in the tent door in the heat of the day",
+      "Standing under the oak at evening",
+      "Drawing water at the well in the morning",
+      "Kneeling at the altar at night"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did Sarah react when she heard she would have a son?",
+     "options": [
+      "She laughed within herself",
+      "She wept for joy",
+      "She bowed to the ground",
+      "She ran to tell Abraham"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What question did the LORD ask after Sarah laughed?",
+     "options": [
+      "Is anything too hard for the LORD?",
+      "Who made the mouth of man?",
+      "Why do you doubt my word?",
+      "Have I not spoken it before?"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Abraham tell Sarah to make for the visitors?",
+     "options": [
+      "Cakes from fine meal",
+      "Lentil stew",
+      "Unleavened bread and fish",
+      "Roasted lamb"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"May that be far from you. Shouldn't ____ do right?\"",
+     "answer": "the Judge of all the earth",
+     "wrong": [
+      "the God of my fathers",
+      "the King of all heaven",
+      "the LORD of the covenant"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"Because the cry of Sodom and Gomorrah is great, and because ____, I will go down now.\"",
+     "answer": "their sin is very grievous",
+     "wrong": [
+      "their kings have rebelled",
+      "they have mocked my servants",
+      "their land is full of idols"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"I have taken it on myself to speak to the Lord, although I am ____.\"",
+     "answer": "dust and ashes",
+     "wrong": [
+      "old and weak",
+      "a stranger here",
+      "only a servant"
+     ],
+     "v": 27
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Abraham runs to meet three men",
+      "Abraham sets food before them under the tree",
+      "The men look toward Sodom",
+      "Abraham pleads for the righteous in the city"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Abraham stopped asking once the LORD agreed to spare the city for twenty righteous people.",
+     "answer": false,
+     "v": 32
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Abraham served the visitors a calf along with butter and milk.",
+     "answer": true,
+     "v": 8
+    }
+   ]
+  },
+  "19": {
+   "keyVerse": 26,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What happened to Lot's wife?",
+     "options": [
+      "She looked back and became a pillar of salt",
+      "She stayed behind and died in Sodom",
+      "She was struck blind at the gate",
+      "She fled alone to the mountains"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the angels do to the men at Lot's door?",
+     "options": [
+      "Struck them with blindness",
+      "Struck them with fire",
+      "Made them fall asleep",
+      "Drove them off with a wind"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Lot's sons-in-law respond to his warning?",
+     "options": [
+      "They thought he was joking",
+      "They fled to the mountains",
+      "They seized him and beat him",
+      "They went to warn the city"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which small city did Lot ask to flee to instead of the mountains?",
+     "options": [
+      "Zoar",
+      "Gomorrah",
+      "Admah",
+      "Zeboiim"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Then the LORD rained on Sodom and on Gomorrah ____ from the LORD out of the sky.",
+     "answer": "sulfur and fire",
+     "wrong": [
+      "hail and lightning",
+      "stones and smoke",
+      "blood and ash"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But he lingered; and the men grabbed his hand, his wife's hand, and his two daughters' hands, ____.",
+     "answer": "the LORD being merciful to him",
+     "wrong": [
+      "the city already on fire",
+      "the morning being very near",
+      "the men of Sodom still blind"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Abraham looked toward Sodom and Gomorrah, and saw that the smoke of the land went up ____.",
+     "answer": "as the smoke of a furnace",
+     "wrong": [
+      "like a great pillar of cloud",
+      "into the heavens above",
+      "over all the mountains"
+     ],
+     "v": 28
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Two angels arrive at Sodom in the evening",
+      "The men of the city surround Lot's house",
+      "The angels hurry Lot out at morning",
+      "The LORD destroys the cities of the plain"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Lot was sitting in the gate of Sodom when the two angels arrived.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The angels accepted Lot's invitation to stay in his house as soon as he offered.",
+     "answer": false,
+     "v": 2
+    }
+   ]
+  },
+  "20": {
+   "keyVerse": 17,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did God warn Abimelech about Sarah?",
+     "options": [
+      "In a dream of the night",
+      "Through an angel at the gate",
+      "By a voice from the sky",
+      "Through Abraham's servant"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did God tell Abimelech that Abraham was?",
+     "options": [
+      "A prophet",
+      "A priest",
+      "A prince",
+      "A judge"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Abraham say he called Sarah his sister?",
+     "options": [
+      "He thought the fear of God was not there",
+      "Sarah had asked him to say it",
+      "The king demanded to know who she was",
+      "He hoped to receive gifts from the king"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did Abraham explain that Sarah really was his sister?",
+     "options": [
+      "Daughter of his father, not his mother",
+      "Daughter of his mother, not his father",
+      "Daughter of his brother Nahor",
+      "Daughter of his brother Haran"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "\"Behold, you are a dead man, because of the woman whom you have taken; for ____.\"",
+     "answer": "she is a man's wife",
+     "wrong": [
+      "she is my servant",
+      "she is from Egypt",
+      "she is under a curse"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Abraham prayed to God. So God ____, his wife, and his female servants.",
+     "answer": "healed Abimelech",
+     "wrong": [
+      "forgave the king",
+      "blessed Gerar",
+      "spared the king"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Abimelech said, \"Behold, my land is before you. ____.\"",
+     "answer": "Dwell where it pleases you",
+     "wrong": [
+      "Leave it before morning",
+      "Take what you have earned",
+      "Go and do not return"
+     ],
+     "v": 15
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Abimelech takes Sarah",
+      "Abimelech's servants hear and are very scared",
+      "Abimelech asks Abraham what he has done",
+      "Abimelech restores Sarah with gifts"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Abimelech had not come near Sarah.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Abimelech gave Sarah's brother a thousand pieces of gold.",
+     "answer": false,
+     "v": 16
+    }
+   ]
+  },
+  "21": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Sarah say after Isaac was born?",
+     "options": [
+      "God has made me laugh",
+      "The LORD has remembered me",
+      "Now my shame is taken away",
+      "At last God has heard me"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Sarah see that led her to tell Abraham to cast out Hagar?",
+     "options": [
+      "Hagar's son mocking",
+      "Hagar taking their water",
+      "Hagar's son striking Isaac",
+      "Hagar looking down on her"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "When the water ran out, what did God open Hagar's eyes to see?",
+     "options": [
+      "A well of water",
+      "An angel standing near",
+      "A path back to Egypt",
+      "A camp of travelers"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Abraham plant in Beersheba?",
+     "options": [
+      "A tamarisk tree",
+      "An oak tree",
+      "A vineyard",
+      "A fig tree"
+     ],
+     "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"Cast out this servant and her son! For the son of this servant will not be ____, Isaac.\"",
+     "answer": "heir with my son",
+     "wrong": [
+      "raised with my son",
+      "equal to my son",
+      "a brother to my son"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "God was with the boy. He lived in the wilderness, and as he grew up, he became ____.",
+     "answer": "an archer",
+     "wrong": [
+      "a shepherd",
+      "a great chief",
+      "a hunter of lions"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"You shall take these seven ewe lambs from my hand, that it may be ____, that I have dug this well.\"",
+     "answer": "a witness to me",
+     "wrong": [
+      "a gift to you",
+      "a payment for water",
+      "an offering to God"
+     ],
+     "v": 30
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Isaac is born to Sarah",
+      "Abraham makes a feast when Isaac is weaned",
+      "Abraham sends Hagar away with bread and water",
+      "Abraham and Abimelech make a covenant"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Abraham circumcised Isaac when he was eight days old.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When Abraham complained about the seized well, Abimelech said he already knew about it.",
+     "answer": false,
+     "v": 26
+    }
+   ]
+  },
+  "22": {
+   "keyVerse": 8,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did God tell Abraham to go to offer Isaac?",
+     "options": [
+      "The land of Moriah",
+      "The land of Gerar",
+      "The wilderness of Paran",
+      "The plain of Mamre"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Abraham offer in place of Isaac?",
+     "options": [
+      "A ram caught by its horns",
+      "A lamb from his flock",
+      "A young goat",
+      "A calf from the herd"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who carried the wood for the burnt offering up to the place?",
+     "options": [
+      "Isaac",
+      "Abraham",
+      "The two young men",
+      "The donkey"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whom did Abraham tell to stay behind with the donkey?",
+     "options": [
+      "His two young men",
+      "Sarah his wife",
+      "Eliezer his servant",
+      "Ishmael his son"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Abraham said, \"God will provide himself ____, my son.\"",
+     "answer": "the lamb for a burnt offering",
+     "wrong": [
+      "a way for us both",
+      "a sacrifice from heaven",
+      "the altar and the wood"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"For now I know that you fear God, since ____, your only son, from me.\"",
+     "answer": "you have not withheld your son",
+     "wrong": [
+      "you have built the altar",
+      "you have come this far",
+      "you have trusted my word"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"I will multiply your offspring greatly. Your offspring will possess ____.\"",
+     "answer": "the gate of his enemies",
+     "wrong": [
+      "the land of Moriah",
+      "the cities of Canaan",
+      "the wealth of nations"
+     ],
+     "v": 17
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Abraham saddles his donkey early in the morning",
+      "Abraham builds the altar and binds Isaac",
+      "The LORD's angel calls from the sky",
+      "They go together to Beersheba"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Isaac asked his father where the lamb for the burnt offering was.",
+     "answer": true,
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The LORD's angel called to Abraham out of the sky only once.",
+     "answer": false,
+     "v": 15
+    }
+   ]
+  },
+  "23": {
+   "keyVerse": 4,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Sarah die?",
+     "options": [
+      "Kiriath Arba, also called Hebron",
+      "Beersheba",
+      "Gerar",
+      "Bethel"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "From whom did Abraham buy the field and cave?",
+     "options": [
+      "Ephron the Hittite",
+      "Abimelech king of Gerar",
+      "Mamre the Amorite",
+      "Phicol the captain"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the children of Heth call Abraham?",
+     "options": [
+      "A prince of God among us",
+      "A stranger in our land",
+      "A mighty warrior",
+      "A rich foreigner"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How much did Abraham pay for the field?",
+     "options": [
+      "Four hundred shekels of silver",
+      "A thousand pieces of silver",
+      "Forty shekels of gold",
+      "Seven ewe lambs"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "\"I am ____ living with you. Give me a possession of a burying-place with you.\"",
+     "answer": "a stranger and a foreigner",
+     "wrong": [
+      "a friend and a neighbor",
+      "a prince and a priest",
+      "an old and weary man"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"Ask Ephron that he may sell me ____, which is in the end of his field.\"",
+     "answer": "the cave of Machpelah",
+     "wrong": [
+      "the tomb of his fathers",
+      "the well of Mamre",
+      "the oaks of Hebron"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Ephron said, \"No, my lord, hear me. ____, and I give you the cave that is in it.\"",
+     "answer": "I give you the field",
+     "wrong": [
+      "I sell you the land",
+      "Pay what seems right",
+      "I lend you the ground"
+     ],
+     "v": 11
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Sarah dies in the land of Canaan",
+      "Abraham asks the children of Heth for a burial place",
+      "Abraham weighs out the silver",
+      "Abraham buries Sarah in the cave"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Abraham accepted the field as a gift without paying for it.",
+     "answer": false,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The field Abraham bought included the trees within its borders.",
+     "answer": true,
+     "v": 17
+    }
+   ]
+  },
+  "24": {
+   "keyVerse": 58,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Abraham made his servant swear not to take a wife for Isaac from which people?",
+     "options": [
+      "The Canaanites",
+      "The Egyptians",
+      "The Philistines",
+      "The Hittites"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What sign did the servant ask the LORD for at the well?",
+     "options": [
+      "She would offer to water his camels too",
+      "She would be the first woman to greet him",
+      "She would invite him to her father's house",
+      "She would be carrying a golden pitcher"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was the name of Rebekah's brother who ran out to the servant?",
+     "options": [
+      "Laban",
+      "Bethuel",
+      "Nahor",
+      "Kemuel"
+     ],
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Rebekah do when the servant told her the man in the field was his master?",
+     "options": [
+      "Covered herself with her veil",
+      "Ran out to meet him",
+      "Bowed down to the ground",
+      "Hid behind the camels"
+     ],
+     "v": 65
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They called Rebekah and said, \"Will you go with this man?\" She said, \"____.\"",
+     "answer": "I will go",
+     "wrong": [
+      "Let me stay awhile",
+      "I must ask Father",
+      "I am afraid"
+     ],
+     "v": 58
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Food was set before him to eat, but he said, \"I will not eat ____.\"",
+     "answer": "until I have told my message",
+     "wrong": [
+      "until the camels are fed",
+      "until Laban has returned",
+      "until I have seen Isaac"
+     ],
+     "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Laban and Bethuel answered, \"____. We can't speak to you bad or good.\"",
+     "answer": "The thing proceeds from the LORD",
+     "wrong": [
+      "Our sister is still too young",
+      "This is too sudden for us",
+      "We must speak with our elders"
+     ],
+     "v": 50
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The servant swears an oath to Abraham",
+      "The servant gives Rebekah a gold ring and bracelets",
+      "Rebekah's family asks her to stay ten days",
+      "Isaac brings Rebekah into Sarah's tent"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Isaac had gone out to meditate in the field at evening when he saw the camels coming.",
+     "answer": true,
+     "v": 63
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Abraham told his servant to take Isaac back to his homeland if the woman would not come.",
+     "answer": false,
+     "v": 6
+    }
+   ]
+  },
+  "25": {
+   "keyVerse": 23,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jacob give Esau in exchange for his birthright?",
+     "options": [
+      "Bread and lentil stew",
+      "A skin of wine",
+      "Roasted venison",
+      "A handful of silver"
+     ],
+     "v": 34
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did Jacob come out at his birth?",
+     "options": [
+      "With his hand holding Esau's heel",
+      "Red all over like a hairy garment",
+      "Before his brother Esau",
+      "Crying louder than his brother"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who buried Abraham in the cave of Machpelah?",
+     "options": [
+      "Isaac and Ishmael",
+      "Isaac and Jacob",
+      "Isaac alone",
+      "Ishmael and his sons"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "After Abraham died and God blessed Isaac, where did Isaac live?",
+     "options": [
+      "By Beer Lahai Roi",
+      "In Beersheba",
+      "By the oaks of Mamre",
+      "In Gerar"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Now Isaac loved Esau, because ____. Rebekah loved Jacob.",
+     "answer": "he ate his venison",
+     "wrong": [
+      "he was his firstborn",
+      "he was a strong man",
+      "he worked the fields"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"Two nations are in your womb. The one people will be stronger than the other people. ____.\"",
+     "answer": "The elder will serve the younger",
+     "wrong": [
+      "The younger will serve the elder",
+      "The two will live in peace",
+      "Both will become great nations"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Esau was a skillful hunter, a man of the field. Jacob was ____.",
+     "answer": "a quiet man, living in tents",
+     "wrong": [
+      "a shepherd of his father's flocks",
+      "a farmer tilling the ground",
+      "a gentle man loved by all"
+     ],
+     "v": 27
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Abraham dies and is buried",
+      "Rebekah goes to inquire of the LORD",
+      "Rebekah gives birth to twins",
+      "Esau sells his birthright to Jacob"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Rebekah was barren until Isaac asked the LORD on her behalf.",
+     "answer": true,
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Abraham gave all that he had to the sons of Keturah.",
+     "answer": false,
+     "v": 5
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,2741 @@
+{
+ "book": "LUK",
+ "chapters": {
+  "1": {
+   "keyVerse": 37,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the angel say Zacharias would be unable to speak?",
+     "options": [
+      "He did not believe the angel's words",
+      "He burned the incense the wrong way",
+      "He told the people about the vision",
+      "He asked for a sign in the sky"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where was the angel standing when he appeared to Zacharias?",
+     "options": [
+      "On the right side of the altar of incense",
+      "At the gate of the temple",
+      "Beside the golden lampstand",
+      "In the outer court with the people"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happened when Elizabeth heard Mary's greeting?",
+     "options": [
+      "The baby leaped in her womb",
+      "She fell to the ground in fear",
+      "Zacharias was able to speak again",
+      "She hid herself for five months"
+     ],
+     "v": 41
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Gabriel said John would go before the Lord in the spirit and power of whom?",
+     "options": [
+      "Elijah",
+      "Moses",
+      "Elisha",
+      "Samuel"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Mary sang, \"He has put down princes from their thrones, and has ____.\"",
+     "answer": "exalted the lowly",
+     "wrong": [
+      "lifted up the poor",
+      "honored the humble",
+      "raised up the weak"
+     ],
+     "v": 52
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Zacharias prophesied that the dawn from on high would shine on those who sit in darkness and ____.",
+     "answer": "the shadow of death",
+     "wrong": [
+      "the valley of fear",
+      "the land of exile",
+      "the chains of sin"
+     ],
+     "v": 79
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The angel told Mary, \"For ____ is impossible.\"",
+     "answer": "nothing spoken by God",
+     "wrong": [
+      "nothing asked in faith",
+      "nothing done by the Spirit",
+      "nothing the Lord desires"
+     ],
+     "v": 37
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "An angel appears to Zacharias in the temple",
+      "Gabriel is sent to Mary in Nazareth",
+      "Mary visits Elizabeth in the hill country",
+      "Zacharias writes that the baby's name is John"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Elizabeth said the baby would be called John before Zacharias wrote anything.",
+     "answer": true,
+     "v": 60
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Gabriel was sent to Mary in the ninth month of Elizabeth's pregnancy.",
+     "answer": false,
+     "v": 26
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why was the newborn Jesus laid in a feeding trough?",
+     "options": [
+      "There was no room for them in the inn",
+      "The shepherds had prepared it for him",
+      "The angel told Joseph to do so",
+      "It was the custom in Bethlehem"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Joseph go to Bethlehem to enroll?",
+     "options": [
+      "He was of the house and family of David",
+      "His parents still lived there",
+      "Mary's relatives lived there",
+      "The governor of Syria sent him there"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What sacrifice did Mary and Joseph come to offer in Jerusalem?",
+     "options": [
+      "A pair of turtledoves or two young pigeons",
+      "A spotless lamb one year old",
+      "Two measures of fine flour",
+      "A young bull without blemish"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who was Anna?",
+     "options": [
+      "A prophetess who never left the temple",
+      "A relative of Elizabeth from Judea",
+      "Simeon's sister who served the priests",
+      "A widow who kept the inn in Bethlehem"
+     ],
+     "v": 37
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Simeon said, \"For my eyes have ____.\"",
+     "answer": "seen your salvation",
+     "wrong": [
+      "beheld your glory",
+      "witnessed your promise",
+      "seen the Lord's anointed"
+     ],
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Simeon said to Mary, \"Yes, ____ through your own soul.\"",
+     "answer": "a sword will pierce",
+     "wrong": [
+      "a sorrow will pass",
+      "an arrow will go",
+      "a great grief will cut"
+     ],
+     "v": 35
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "After the shepherds' visit, Mary kept all these sayings, ____.",
+     "answer": "pondering them in her heart",
+     "wrong": [
+      "telling them to Joseph",
+      "writing them in a book",
+      "sharing them with Elizabeth"
+     ],
+     "v": 19
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "A decree goes out from Caesar Augustus",
+      "An angel appears to shepherds at night",
+      "Simeon takes the child into his arms",
+      "The boy Jesus stays behind in Jerusalem"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jesus' parents found him in the temple after three days of searching.",
+     "answer": true,
+     "v": 46
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "It had been revealed to Anna that she would not see death before seeing the Lord's Christ.",
+     "answer": false,
+     "v": 26
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Herod shut John up in prison?",
+     "options": [
+      "John rebuked him about Herodias",
+      "John refused to baptize him",
+      "John claimed to be the Christ",
+      "John stirred up the soldiers"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was Jesus doing when the sky was opened?",
+     "options": [
+      "Praying after being baptized",
+      "Teaching the crowds at the Jordan",
+      "Speaking with John about the Christ",
+      "Fasting alone in the wilderness"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "John said God is able to raise up children to Abraham from what?",
+     "options": [
+      "These stones",
+      "The dust of the ground",
+      "The trees of the field",
+      "The waters of the Jordan"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "About how old was Jesus when he began to teach?",
+     "options": [
+      "About thirty",
+      "About twelve",
+      "About forty",
+      "About twenty"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "John told the crowds, \"He who has ____, let him give to him who has none.\"",
+     "answer": "two coats",
+     "wrong": [
+      "a full barn",
+      "much silver",
+      "many sheep"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "John said the one coming would gather the wheat into his barn, but burn up the chaff ____.",
+     "answer": "with unquenchable fire",
+     "wrong": [
+      "in the outer darkness",
+      "on the last day",
+      "before all the people"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "John told the soldiers, \"Extort from no one by violence, neither accuse anyone wrongfully. ____.\"",
+     "answer": "Be content with your wages",
+     "wrong": [
+      "Give your spare coat away",
+      "Obey the orders of Caesar",
+      "Return what you have taken"
+     ],
+     "v": 14
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "The multitudes ask John what they must do",
+      "Tax collectors ask John what they must do",
+      "Soldiers ask John what they must do",
+      "Herod shuts John up in prison"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When the people wondered if John was the Christ, he told them that he was.",
+     "answer": false,
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Luke traces Jesus' family line all the way back to Adam, the son of God.",
+     "answer": true,
+     "v": 38
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 4,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the people of Nazareth try to do to Jesus?",
+     "options": [
+      "Throw him off a cliff",
+      "Stone him in the synagogue",
+      "Hand him over to Herod",
+      "Drive him into the lake"
+     ],
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the demon in the Capernaum synagogue call Jesus?",
+     "options": [
+      "The Holy One of God",
+      "The Son of David",
+      "The Prophet from Galilee",
+      "The Lamb of God"
+     ],
+     "v": 34
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whose mother in law did Jesus heal of a great fever?",
+     "options": [
+      "Simon's",
+      "Andrew's",
+      "Levi's",
+      "Jairus's"
+     ],
+     "v": 38
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Jesus said only one leper was cleansed in Elisha's time. Who was it?",
+     "options": [
+      "Naaman the Syrian",
+      "Gehazi the servant",
+      "Hiram of Tyre",
+      "Uzziah the king"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "After reading from Isaiah, Jesus said, \"Today, this Scripture has been ____.\"",
+     "answer": "fulfilled in your hearing",
+     "wrong": [
+      "read in your synagogue",
+      "opened to your eyes",
+      "proclaimed to your city"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"Most certainly I tell you, no prophet is ____.\"",
+     "answer": "acceptable in his hometown",
+     "wrong": [
+      "honored among his relatives",
+      "welcome in his own house",
+      "believed by his brothers"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The reading from Isaiah said he was sent to proclaim release to the captives, ____ to the blind.",
+     "answer": "recovering of sight",
+     "wrong": [
+      "light and healing",
+      "comfort and hope",
+      "opening of eyes"
+     ],
+     "v": 18
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "The devil tells Jesus to turn a stone into bread",
+      "The devil shows him the kingdoms of the world",
+      "The devil sets him on the pinnacle of the temple",
+      "Jesus reads from Isaiah in the Nazareth synagogue"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jesus ate nothing during his forty days in the wilderness.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When the crowds held on to Jesus, he agreed to stay and preach only in their city.",
+     "answer": false,
+     "v": 43
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 32,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Simon say when Jesus told him to let down the nets?",
+     "options": [
+      "We worked all night and caught nothing",
+      "The fish do not come near in daylight",
+      "Our nets are too torn to use",
+      "The water here is too deep"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the men get the paralyzed man in front of Jesus?",
+     "options": [
+      "They let him down through the roof tiles",
+      "They carried him through a back door",
+      "They waited until the crowd went home",
+      "They brought him to the lakeshore"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where was Levi when Jesus said to him, \"Follow me\"?",
+     "options": [
+      "Sitting at the tax office",
+      "Washing nets by the lake",
+      "Eating in his own house",
+      "Standing in the synagogue"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who were Simon's partners that were amazed at the great catch of fish?",
+     "options": [
+      "James and John, sons of Zebedee",
+      "Andrew and Philip of Bethsaida",
+      "Levi and Nathanael",
+      "James and Judas, sons of Alphaeus"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said to Simon, \"Don't be afraid. From now on you will be ____.\"",
+     "answer": "catching people alive",
+     "wrong": [
+      "gathering my sheep",
+      "feeding my flock",
+      "sowing the good seed"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"Those who are healthy have no need for a physician, ____.\"",
+     "answer": "but those who are sick do",
+     "wrong": [
+      "but those who are lost do",
+      "but those who are weak do",
+      "but those who are poor do"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said no one having drunk old wine immediately desires new, for he says, \"____.\"",
+     "answer": "The old is better",
+     "wrong": [
+      "The new is too strong",
+      "We have enough already",
+      "The new has not aged"
+     ],
+     "v": 39
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Simon's nets catch a great multitude of fish",
+      "Jesus cleanses a man full of leprosy",
+      "A paralyzed man is lowered through the roof",
+      "Levi makes a great feast for Jesus"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jesus told the cleansed leper to tell everyone in the city what had happened.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jesus taught the crowds while sitting in Simon's boat before the great catch.",
+     "answer": true,
+     "v": 3
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 31,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus do the night before he chose the twelve apostles?",
+     "options": [
+      "Prayed all night on a mountain",
+      "Ate with tax collectors and sinners",
+      "Taught in the synagogue at Capernaum",
+      "Sailed across the lake alone"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In Jesus' comparison, what does the one who hears and obeys do when building a house?",
+     "options": [
+      "Digs deep and lays a foundation on rock",
+      "Builds high walls around it",
+      "Builds far away from the stream",
+      "Uses beams of cedar and stone"
+     ],
+     "v": 48
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Jesus say woe to the rich?",
+     "options": [
+      "They have received their consolation",
+      "They will be thrown into the fire",
+      "They have robbed the widows",
+      "Their treasures will rot away"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus say David did when he was hungry?",
+     "options": [
+      "Ate the show bread in God's house",
+      "Picked grain in a stranger's field",
+      "Asked Saul's servants for food",
+      "Ate honey from the forest"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"Blessed are you who weep now, for ____.\"",
+     "answer": "you will laugh",
+     "wrong": [
+      "you will be comforted",
+      "your tears will cease",
+      "you will see God"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said, \"Give, and it will be given to you: good measure, pressed down, shaken together, and ____.\"",
+     "answer": "running over",
+     "wrong": [
+      "heaped up high",
+      "filled to the brim",
+      "poured out freely"
+     ],
+     "v": 38
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus asked, \"Why do you call me, 'Lord, Lord,' and don't ____?\"",
+     "answer": "do the things which I say",
+     "wrong": [
+      "follow where I lead",
+      "believe the words I speak",
+      "love one another as commanded"
+     ],
+     "v": 46
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The disciples pluck grain on the Sabbath",
+      "Jesus heals a man's withered hand",
+      "Jesus chooses twelve and names them apostles",
+      "Jesus teaches the crowd on a level place"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jesus told his hearers to love their enemies and lend, expecting nothing back.",
+     "answer": true,
+     "v": 35
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jesus said a disciple is above his teacher once he is fully trained.",
+     "answer": false,
+     "v": 40
+    }
+   ]
+  },
+  "7": {
+   "keyVerse": 50,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the Jewish elders say the centurion deserved Jesus' help?",
+     "options": [
+      "He loved their nation and built their synagogue",
+      "He had been baptized by John",
+      "He gave alms to the widows of the city",
+      "He had freed many Jewish prisoners"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom did Jesus raise from the dead at the gate of Nain?",
+     "options": [
+      "The only son of a widow",
+      "The daughter of a synagogue ruler",
+      "The servant of a centurion",
+      "The brother of a tax collector"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus tell the messengers from John to do?",
+     "options": [
+      "Tell John what they had seen and heard",
+      "Bring John to see him",
+      "Wait with him until the Sabbath",
+      "Go and ask the Pharisees about him"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Jesus say Simon the Pharisee failed to give him?",
+     "options": [
+      "Water for his feet, a kiss, and oil",
+      "Bread, wine, and a seat of honor",
+      "A basin, a towel, and a robe",
+      "A greeting, a meal, and lodging"
+     ],
+     "v": 44
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said of the centurion, \"I tell you, I have not found such great faith, ____.\"",
+     "answer": "no, not in Israel",
+     "wrong": [
+      "no, not in Jerusalem",
+      "not even among my disciples",
+      "no, not in all Judea"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus compared this generation to children saying, \"We piped to you, and you didn't dance. ____, and you didn't weep.\"",
+     "answer": "We mourned",
+     "wrong": [
+      "We lamented loudly",
+      "We cried for you",
+      "We sang sad songs"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The centurion sent word, \"Lord, don't trouble yourself, for I am not worthy for you to come ____.\"",
+     "answer": "under my roof",
+     "wrong": [
+      "all this way",
+      "near my servant",
+      "to a Gentile"
+     ],
+     "v": 6
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The centurion's servant is healed",
+      "A widow's son is raised at Nain",
+      "John's disciples ask if Jesus is the one coming",
+      "A woman anoints Jesus' feet at a Pharisee's house"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The woman at the Pharisee's house poured her ointment on Jesus' head.",
+     "answer": false,
+     "v": 38
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jesus said people claimed John the Baptizer had a demon because he came neither eating bread nor drinking wine.",
+     "answer": true,
+     "v": 33
+    }
+   ]
+  },
+  "8": {
+   "keyVerse": 21,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What name did the demon possessed man give when Jesus asked?",
+     "options": [
+      "Legion",
+      "Beelzebul",
+      "Abaddon",
+      "Mammon"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In the parable of the farmer, what choked those who fell among the thorns?",
+     "options": [
+      "Cares, riches, and pleasures of life",
+      "Temptation and persecution",
+      "The devil taking the word away",
+      "Pride and the praise of men"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who did Jesus allow into the house when he raised Jairus's daughter?",
+     "options": [
+      "Peter, John, James, and the parents",
+      "Only the girl's mother and father",
+      "All twelve apostles",
+      "Peter, Andrew, and the mourners"
+     ],
+     "v": 51
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus tell the man freed from the demons to do?",
+     "options": [
+      "Return home and declare what God had done",
+      "Get into the boat and follow him",
+      "Go and show himself to the priest",
+      "Tell no one what had happened"
+     ],
+     "v": 39
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "At Jairus's house Jesus said, \"Don't weep. She isn't dead, ____.\"",
+     "answer": "but sleeping",
+     "wrong": [
+      "but only weak",
+      "but waiting for me",
+      "but will live again"
+     ],
+     "v": 52
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Those in the good ground hear the word with an honest and good heart, hold it tightly, and ____.",
+     "answer": "produce fruit with perseverance",
+     "wrong": [
+      "grow strong in faith",
+      "share it with their neighbors",
+      "never fall away again"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Peter said, \"Master, the multitudes press and jostle you, and you say, '____?'\"",
+     "answer": "Who touched me",
+     "wrong": [
+      "Who is following me",
+      "Who called my name",
+      "Who is pushing me"
+     ],
+     "v": 45
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jesus tells the parable of the farmer sowing seed",
+      "Jesus calms the wind storm on the lake",
+      "Demons leave a man and enter a herd of pigs",
+      "Jesus raises the daughter of Jairus"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The woman with the flow of blood touched the fringe of Jesus' cloak and was healed immediately.",
+     "answer": true,
+     "v": 44
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "After the pigs drowned, the people of the Gadarenes begged Jesus to stay with them.",
+     "answer": false,
+     "v": 37
+    }
+   ]
+  },
+  "9": {
+   "keyVerse": 23,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jesus tell the twelve to do when a city did not receive them?",
+     "options": [
+      "Shake the dust from their feet",
+      "Call down fire on that city",
+      "Stay until the people repented",
+      "Warn the elders at the gate"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When Jesus asked who they said he was, what did Peter answer?",
+     "options": [
+      "The Christ of God",
+      "The Son of the living God",
+      "The Prophet like Moses",
+      "The King of Israel"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Moses and Elijah speak about with Jesus on the mountain?",
+     "options": [
+      "His departure he would accomplish at Jerusalem",
+      "The kingdoms he would rule over",
+      "The coming of John the Baptizer",
+      "The rebuilding of the temple"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did the Samaritan village not receive Jesus?",
+     "options": [
+      "His face was set toward Jerusalem",
+      "He had healed a Samaritan on the Sabbath",
+      "His disciples had no money to pay",
+      "Herod had forbidden them to welcome him"
+     ],
+     "v": 53
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"If anyone desires to come after me, let him deny himself, ____, and follow me.\"",
+     "answer": "take up his cross",
+     "wrong": [
+      "leave his possessions",
+      "sell all he has",
+      "carry his brother's burden"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"The foxes have holes and the birds of the sky have nests, but the Son of Man has no place ____.\"",
+     "answer": "to lay his head",
+     "wrong": [
+      "to call his home",
+      "to rest his feet",
+      "to stay the night"
+     ],
+     "v": 58
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said, \"No one, having put his hand to the plow and ____, is fit for God's Kingdom.\"",
+     "answer": "looking back",
+     "wrong": [
+      "turning aside",
+      "stopping to rest",
+      "growing weary"
+     ],
+     "v": 62
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jesus sends out the twelve to preach and heal",
+      "Jesus feeds about five thousand men",
+      "Jesus asks who the multitudes say he is",
+      "Jesus' appearance changes on the mountain"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The disciples had cast the spirit out of the man's only son before Jesus came down the mountain.",
+     "answer": false,
+     "v": 40
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Herod was perplexed because some said John had risen from the dead.",
+     "answer": true,
+     "v": 7
+    }
+   ]
+  },
+  "10": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who passed by on the other side before the Samaritan came to the wounded man?",
+     "options": [
+      "A priest and a Levite",
+      "A scribe and a Pharisee",
+      "A tax collector and a soldier",
+      "Two merchants from Jericho"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many others did the Lord appoint and send ahead of him two by two?",
+     "options": [
+      "Seventy",
+      "Twelve",
+      "Fifty",
+      "One hundred twenty"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the Samaritan give the host of the inn?",
+     "options": [
+      "Two denarii",
+      "A gold ring",
+      "His own animal",
+      "Ten shekels of silver"
+     ],
+     "v": 35
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Martha ask Jesus to do?",
+     "options": [
+      "Tell her sister to help her serve",
+      "Stay the night in her house",
+      "Bless the meal she had prepared",
+      "Send the crowd away so they could rest"
+     ],
+     "v": 40
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus told those he sent, \"Go your ways. Behold, I send you out as ____.\"",
+     "answer": "lambs among wolves",
+     "wrong": [
+      "sheep without a shepherd",
+      "light in the darkness",
+      "salt for the earth"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said, \"Don't rejoice in this, that the spirits are subject to you, but rejoice that ____.\"",
+     "answer": "your names are written in heaven",
+     "wrong": [
+      "the Kingdom has come near",
+      "your reward is great in heaven",
+      "Satan has fallen from heaven"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus answered, \"Martha, Martha, you are ____ about many things.\"",
+     "answer": "anxious and troubled",
+     "wrong": [
+      "busy and distracted",
+      "worried and afraid",
+      "careful and hurried"
+     ],
+     "v": 41
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The Lord sends others out two by two",
+      "Those sent return full of joy",
+      "A lawyer asks how to inherit eternal life",
+      "Martha receives Jesus into her house"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When a lawyer asked \"Who is my neighbor?\", Jesus told of a man going down from Jerusalem to Jericho.",
+     "answer": true,
+     "v": 30
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jesus said Capernaum, which is exalted to heaven, would be spared in the judgment.",
+     "answer": false,
+     "v": 15
+    }
+   ]
+  },
+  "11": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jesus say the heavenly Father will give to those who ask him?",
+     "options": [
+      "The Holy Spirit",
+      "Their daily bread",
+      "Wisdom and understanding",
+      "Riches in heaven"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In the story of the friend at midnight, why does the friend finally get up and give the bread?",
+     "options": [
+      "Because of the man's persistence",
+      "Because they are close friends",
+      "Because his children woke up",
+      "Because the man offered to pay"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What surprised the Pharisee who invited Jesus to dine?",
+     "options": [
+      "Jesus had not washed before dinner",
+      "Jesus brought tax collectors with him",
+      "Jesus refused the best seat",
+      "Jesus did not give thanks for the food"
+     ],
+     "v": 38
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What sign did Jesus say would be given to this evil generation?",
+     "options": [
+      "The sign of Jonah",
+      "The sign of Elijah",
+      "The sign of Moses",
+      "The sign of Solomon"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"Keep asking, and it will be given you. Keep seeking, and you will find. ____, and it will be opened to you.\"",
+     "answer": "Keep knocking",
+     "wrong": [
+      "Keep praying",
+      "Keep waiting",
+      "Keep watching"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus asked, \"If he asks for an egg, he won't give him ____, will he?\"",
+     "answer": "a scorpion",
+     "wrong": [
+      "a stone",
+      "a snake",
+      "a thorn"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "When a woman blessed his mother, Jesus said, \"On the contrary, blessed are those who hear the word of God, ____.\"",
+     "answer": "and keep it",
+     "wrong": [
+      "and teach it",
+      "and believe it",
+      "and share it"
+     ],
+     "v": 28
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jesus teaches his disciples how to pray",
+      "Jesus casts out a demon that was mute",
+      "A woman blesses the womb that bore him",
+      "Jesus eats at a Pharisee's house"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jesus said a house divided against itself falls.",
+     "answer": true,
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jesus told the lawyers they load people with heavy burdens but won't lift one finger to help carry them.",
+     "answer": true,
+     "v": 46
+    }
+   ]
+  },
+  "12": {
+   "keyVerse": 34,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the rich man plan to do with his abundant crops?",
+     "options": [
+      "Pull down his barns and build bigger ones",
+      "Sell them and buy more land",
+      "Give a tenth to the temple",
+      "Store them in his neighbor's barns"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the man in the crowd want Jesus to do?",
+     "options": [
+      "Tell his brother to divide the inheritance",
+      "Judge between him and his landlord",
+      "Heal his father who was dying",
+      "Pay the tax he owed to Caesar"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which birds did Jesus say to consider, since they don't sow or reap?",
+     "options": [
+      "The ravens",
+      "The sparrows",
+      "The doves",
+      "The eagles"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus say the yeast of the Pharisees is?",
+     "options": [
+      "Hypocrisy",
+      "Greed",
+      "Pride",
+      "False teaching"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"A man's life doesn't consist of ____ which he possesses.\"",
+     "answer": "the abundance of the things",
+     "wrong": [
+      "the gold and the silver",
+      "the houses and the fields",
+      "the treasures and the lands"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "God said to the rich man, \"You foolish one, ____ is required of you.\"",
+     "answer": "tonight your soul",
+     "wrong": [
+      "tomorrow your life",
+      "this year your soul",
+      "today your harvest"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said, \"To whomever much is given, ____.\"",
+     "answer": "of him will much be required",
+     "wrong": [
+      "to him more will be added",
+      "from him much will be taken",
+      "he will be set over much"
+     ],
+     "v": 48
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jesus warns about the yeast of the Pharisees",
+      "Jesus tells of a rich man with abundant crops",
+      "Jesus says to consider the lilies",
+      "Jesus tells of servants watching for their lord"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jesus said even Solomon in all his glory was not dressed like one of the lilies.",
+     "answer": true,
+     "v": 27
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jesus said the servant who did not know his lord's will, yet did wrong, would be beaten with many stripes.",
+     "answer": false,
+     "v": 48
+    }
+   ]
+  },
+  "13": {
+   "keyVerse": 24,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why was the ruler of the synagogue indignant?",
+     "options": [
+      "Jesus had healed on the Sabbath",
+      "Jesus let a woman teach",
+      "Jesus read from the wrong scroll",
+      "Jesus called him a fox"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the vine dresser ask the owner to do with the fruitless fig tree?",
+     "options": [
+      "Leave it one more year while he fertilized it",
+      "Cut it down and plant a vine",
+      "Move it to better soil",
+      "Water it through the dry season"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus call Herod when the Pharisees warned him?",
+     "options": [
+      "That fox",
+      "That wolf",
+      "That serpent",
+      "That jackal"
+     ],
+     "v": 32
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Besides the Galileans killed by Pilate, what other deaths did Jesus mention?",
+     "options": [
+      "Eighteen killed when a tower in Siloam fell",
+      "Fishermen who drowned in a storm",
+      "Soldiers slain at the gate of Jericho",
+      "Pilgrims crushed in the temple courts"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said God's Kingdom is like yeast, which a woman took and hid in ____, until it was all leavened.",
+     "answer": "three measures of flour",
+     "wrong": [
+      "a great batch of dough",
+      "two jars of meal",
+      "a basket of bread"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said, \"How often I wanted to gather your children together, like a hen gathers ____ under her wings.\"",
+     "answer": "her own brood",
+     "wrong": [
+      "her little chicks",
+      "her young ones",
+      "her scattered eggs"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"I tell you, no, but unless you repent, you will all ____.\"",
+     "answer": "perish in the same way",
+     "wrong": [
+      "be judged on that day",
+      "be cast out of Jerusalem",
+      "be cut down like trees"
+     ],
+     "v": 3
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jesus is told about Galileans killed by Pilate",
+      "Jesus tells a parable about a fig tree",
+      "Jesus heals a bent over woman on the Sabbath",
+      "Some Pharisees warn Jesus to go away"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jesus compared God's Kingdom to a mustard seed that grew into a large tree where birds live.",
+     "answer": true,
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Some Pharisees warned Jesus to leave because Pilate wanted to kill him.",
+     "answer": false,
+     "v": 31
+    }
+   ]
+  },
+  "14": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "After the invited guests made excuses, whom did the master tell his servant to bring in?",
+     "options": [
+      "The poor, maimed, blind, and lame",
+      "His relatives and rich neighbors",
+      "The priests and the elders",
+      "Soldiers from the city gate"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What condition did the man at the Pharisee ruler's house have?",
+     "options": [
+      "Dropsy",
+      "Leprosy",
+      "A withered hand",
+      "A great fever"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the second invited guest say he had bought?",
+     "options": [
+      "Five yoke of oxen",
+      "A field",
+      "A vineyard",
+      "A house in the city"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Jesus say not to sit in the best seat at a wedding feast?",
+     "options": [
+      "Someone more honorable might be invited",
+      "The host may not have invited you",
+      "The best seats belong to the priests",
+      "It is not lawful at a wedding"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus asked, \"Which of you, desiring to build a tower, doesn't first sit down and ____?\"",
+     "answer": "count the cost",
+     "wrong": [
+      "draw up the plans",
+      "gather the workers",
+      "ask his neighbors"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said, \"Salt is good, but if the salt ____, with what do you season it?\"",
+     "answer": "becomes flat and tasteless",
+     "wrong": [
+      "is left in the sun",
+      "is mixed with sand",
+      "is stored too long"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"Whoever doesn't bear his own cross and come after me, ____.\"",
+     "answer": "can't be my disciple",
+     "wrong": [
+      "isn't worthy of me",
+      "will lose his reward",
+      "has no part with me"
+     ],
+     "v": 27
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jesus heals a man on the Sabbath",
+      "Jesus teaches about choosing seats at a feast",
+      "Jesus tells of a man who made a great supper",
+      "Jesus teaches about counting the cost"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jesus told his host to invite rich neighbors to his dinners so they could repay him.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When Jesus asked the lawyers and Pharisees if it was lawful to heal on the Sabbath, they were silent.",
+     "answer": true,
+     "v": 4
+    }
+   ]
+  },
+  "15": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What work did the younger son take in the far country?",
+     "options": [
+      "Feeding pigs in a citizen's fields",
+      "Herding sheep for a rich man",
+      "Carrying water at the city gate",
+      "Working in a vineyard for wages"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why were the Pharisees and scribes murmuring?",
+     "options": [
+      "Jesus welcomed sinners and ate with them",
+      "Jesus healed a man on the Sabbath",
+      "Jesus spoke against the temple",
+      "Jesus did not wash before eating"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the woman do to find her lost coin?",
+     "options": [
+      "Lit a lamp and swept the house",
+      "Asked her neighbors to help search",
+      "Emptied every jar in the house",
+      "Went back to the marketplace"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the elder son say his father never gave him?",
+     "options": [
+      "A goat to celebrate with his friends",
+      "A ring for his hand",
+      "His share of the property",
+      "A robe for the feasts"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The father said, \"For this, my son, was dead and is alive again. He was lost ____.\"",
+     "answer": "and is found",
+     "wrong": [
+      "and has returned",
+      "and came home",
+      "but now is saved"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The father said, \"Bring out the best robe and put it on him. Put ____ and sandals on his feet.\"",
+     "answer": "a ring on his hand",
+     "wrong": [
+      "a chain on his neck",
+      "a crown on his head",
+      "a belt around his waist"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The father told the elder son, \"Son, you are always with me, and ____.\"",
+     "answer": "all that is mine is yours",
+     "wrong": [
+      "you will inherit my house",
+      "your work is not forgotten",
+      "I have loved you always"
+     ],
+     "v": 31
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The younger son asks for his share",
+      "He wastes his property in a far country",
+      "A severe famine arises in that land",
+      "His father runs and kisses him"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The father saw his younger son returning while he was still far off.",
+     "answer": true,
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The elder son went into the celebration and complained to his father there.",
+     "answer": false,
+     "v": 28
+    }
+   ]
+  },
+  "16": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was the name of the beggar laid at the rich man's gate?",
+     "options": [
+      "Lazarus",
+      "Simon",
+      "Bartimaeus",
+      "Jairus"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the rich man in torment want someone sent to his father's house?",
+     "options": [
+      "To warn his five brothers",
+      "To comfort his grieving mother",
+      "To give away his riches",
+      "To tell his servants to free Lazarus"
+     ],
+     "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why was the manager about to lose his position?",
+     "options": [
+      "He was accused of wasting his lord's possessions",
+      "He had stolen oil from the storehouse",
+      "He refused to collect the debts",
+      "He lent money to his friends"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the manager say to himself about his future?",
+     "options": [
+      "He had no strength to dig and was ashamed to beg",
+      "He was too old to learn another trade",
+      "He would go to a far country",
+      "He would ask the debtors for work"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"He who is faithful in a very little is ____.\"",
+     "answer": "faithful also in much",
+     "wrong": [
+      "worthy of great reward",
+      "ready to rule cities",
+      "trusted with true riches"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Abraham said, \"They have ____. Let them listen to them.\"",
+     "answer": "Moses and the prophets",
+     "wrong": [
+      "the law and the psalms",
+      "the priests and scribes",
+      "the elders of Israel"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Abraham said, \"Between us and you there is ____ fixed.\"",
+     "answer": "a great gulf",
+     "wrong": [
+      "a high wall",
+      "a deep river",
+      "a locked gate"
+     ],
+     "v": 26
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "The manager lowers the debtors' bills",
+      "Jesus says no servant can serve two masters",
+      "The Pharisees, lovers of money, scoff at Jesus",
+      "Jesus tells of a rich man and a beggar"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When the beggar died, he was carried away by the angels to Abraham's bosom.",
+     "answer": true,
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The lord condemned the dishonest manager for lowering the bills.",
+     "answer": false,
+     "v": 8
+    }
+   ]
+  },
+  "17": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How many of the ten cleansed lepers came back to give thanks?",
+     "options": [
+      "One",
+      "Two",
+      "Nine",
+      "None of them"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus tell the ten lepers to do?",
+     "options": [
+      "Go and show themselves to the priests",
+      "Wash seven times in the Jordan",
+      "Wait outside the village until evening",
+      "Offer a sacrifice in Jerusalem"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Luke point out about the leper who returned?",
+     "options": [
+      "He was a Samaritan",
+      "He was a Roman soldier",
+      "He was a synagogue ruler",
+      "He was a tax collector"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where was Jesus passing when he met the ten lepers?",
+     "options": [
+      "Along the borders of Samaria and Galilee",
+      "Near the gate of Jericho",
+      "On the road to Bethany",
+      "By the lake of Gennesaret"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"If you had faith like ____, you would tell this sycamore tree, 'Be uprooted and be planted in the sea.'\"",
+     "answer": "a grain of mustard seed",
+     "wrong": [
+      "a little flickering lamp",
+      "a handful of barley",
+      "a child with his father"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said that when you have done all that is commanded, say, \"We are ____. We have done our duty.\"",
+     "answer": "unworthy servants",
+     "wrong": [
+      "faithful stewards",
+      "children of God",
+      "good and faithful"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Speaking of the day the Son of Man is revealed, Jesus said, \"Let him who is in the field likewise not turn back. ____!\"",
+     "answer": "Remember Lot's wife",
+     "wrong": [
+      "Remember the flood",
+      "Flee to the mountains",
+      "Watch and pray always"
+     ],
+     "v": 32
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Jesus warns about causing little ones to stumble",
+      "The apostles ask him to increase their faith",
+      "Ten lepers meet Jesus at a village",
+      "Pharisees ask when God's Kingdom will come"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jesus said to forgive a brother who sins against you seven times in a day and repents each time.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Jesus told the Pharisees that God's Kingdom comes with signs people can point to, saying \"Look, here!\"",
+     "answer": false,
+     "v": 21
+    }
+   ]
+  },
+  "18": {
+   "keyVerse": 27,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the unrighteous judge finally defend the widow?",
+     "options": [
+      "She kept coming and would wear him out",
+      "He came to fear God",
+      "Her adversary had broken the law",
+      "The people of the city demanded it"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the Pharisee in the temple boast about in his prayer?",
+     "options": [
+      "He fasted twice a week and gave tithes",
+      "He never missed a Sabbath or a feast",
+      "He gave half his goods to the poor",
+      "He had kept the law since his youth"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the rich ruler become very sad?",
+     "options": [
+      "He was very rich",
+      "His father had just died",
+      "Jesus refused to call him good",
+      "He had broken the commandments"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the blind man near Jericho cry out?",
+     "options": [
+      "Jesus, you son of David, have mercy on me",
+      "Jesus, Master, have mercy on us",
+      "Holy One of God, heal my eyes",
+      "Teacher, let me follow you"
+     ],
+     "v": 38
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The tax collector beat his chest, saying, \"God, ____, a sinner!\"",
+     "answer": "be merciful to me",
+     "wrong": [
+      "look down upon me",
+      "remember and save me",
+      "turn your face to me"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"Whoever doesn't receive God's Kingdom ____, he will in no way enter into it.\"",
+     "answer": "like a little child",
+     "wrong": [
+      "with a humble heart",
+      "with all his strength",
+      "as a poor man does"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus told the twelve the Son of Man would be delivered to the Gentiles, mocked, treated shamefully, and ____.",
+     "answer": "spit on",
+     "wrong": [
+      "stripped of his clothing",
+      "beaten with rods",
+      "led away bound"
+     ],
+     "v": 32
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jesus tells of a widow and an unjust judge",
+      "Jesus tells of a Pharisee and a tax collector",
+      "People bring their babies to Jesus",
+      "A rich ruler asks about eternal life"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jesus said the tax collector went home justified rather than the Pharisee.",
+     "answer": true,
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jesus told the rich ruler to sell half of what he had and give it to the poor.",
+     "answer": false,
+     "v": 22
+    }
+   ]
+  },
+  "19": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Zacchaeus climb a sycamore tree?",
+     "options": [
+      "He was short and couldn't see past the crowd",
+      "He was hiding from the angry crowd",
+      "Jesus had told him to wait there",
+      "He wanted to call out to Jesus"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How much of his goods did Zacchaeus say he would give to the poor?",
+     "options": [
+      "Half",
+      "All of it",
+      "A tenth",
+      "A third"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What were the disciples to say if anyone asked why they were untying the colt?",
+     "options": [
+      "The Lord needs it",
+      "The Master will return it today",
+      "The prophet has sent for it",
+      "The King is coming to the city"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In the parable, what did the fearful servant do with his mina?",
+     "options": [
+      "Kept it laid away in a handkerchief",
+      "Buried it in the ground",
+      "Gave it to the money changers",
+      "Spent it on his own needs"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"For the Son of Man came to ____ that which was lost.\"",
+     "answer": "seek and to save",
+     "wrong": [
+      "find and bring home",
+      "call and to gather",
+      "heal and to restore"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "When the Pharisees said to rebuke his disciples, Jesus answered, \"I tell you that if these were silent, ____.\"",
+     "answer": "the stones would cry out",
+     "wrong": [
+      "the heavens would declare it",
+      "the trees would clap their hands",
+      "the angels would sing it"
+     ],
+     "v": 40
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The nobleman told the first servant, \"Because you were found faithful with very little, you shall have ____.\"",
+     "answer": "authority over ten cities",
+     "wrong": [
+      "charge of my household",
+      "a share in my kingdom",
+      "ten talents of silver"
+     ],
+     "v": 17
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Zacchaeus climbs a tree to see Jesus",
+      "Jesus tells a parable about ten servants",
+      "Two disciples bring a colt to Jesus",
+      "Jesus weeps over the city"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When Jesus saw Jerusalem as he came near, he rejoiced over the city.",
+     "answer": false,
+     "v": 41
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "In the parable, the nobleman's citizens sent an envoy saying they did not want him to reign over them.",
+     "answer": true,
+     "v": 14
+    }
+   ]
+  },
+  "20": {
+   "keyVerse": 25,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why were the leaders afraid to say John's baptism was from men?",
+     "options": [
+      "The people would stone them",
+      "Herod would put them in prison",
+      "The Romans would punish them",
+      "Jesus would call them liars"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In the vineyard parable, why did the farmers decide to kill the owner's son?",
+     "options": [
+      "So the inheritance would be theirs",
+      "He had come to evict them",
+      "He had beaten their servants",
+      "They did not believe he was the son"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who asked Jesus about a woman who had married seven brothers?",
+     "options": [
+      "Some Sadducees",
+      "Some Pharisees",
+      "The chief priests",
+      "Spies sent by the governor"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Jesus say Moses showed at the bush?",
+     "options": [
+      "That the dead are raised",
+      "That God keeps his covenant",
+      "That the law would pass away",
+      "That the Christ must suffer"
+     ],
+     "v": 37
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"Then give to Caesar the things that are Caesar's, and to God ____.\"",
+     "answer": "the things that are God's",
+     "wrong": [
+      "the first of your harvest",
+      "your heart and your strength",
+      "the tithe of all you earn"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus quoted, \"The stone which the builders rejected ____.\"",
+     "answer": "was made the chief cornerstone",
+     "wrong": [
+      "has become a stumbling stone",
+      "was thrown out of the city",
+      "was laid in the temple"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said, \"Now he is not the God of the dead, but ____, for all are alive to him.\"",
+     "answer": "of the living",
+     "wrong": [
+      "of the righteous",
+      "of the faithful",
+      "of the chosen ones"
+     ],
+     "v": 38
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Leaders ask Jesus by what authority he acts",
+      "Jesus tells the parable of the vineyard",
+      "Spies ask about paying taxes to Caesar",
+      "Jesus is asked about a woman married seven times"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jesus asked to be shown a denarius and asked whose image was on it.",
+     "answer": true,
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jesus asked why people say that the Christ is Abraham's son.",
+     "answer": false,
+     "v": 41
+    }
+   ]
+  },
+  "21": {
+   "keyVerse": 33,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Jesus say the poor widow put in more than all the rich?",
+     "options": [
+      "She gave all she had to live on",
+      "She gave in secret without boasting",
+      "Her coins were made of gold",
+      "She gave on behalf of her family"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus say about the temple and its beautiful stones?",
+     "options": [
+      "Not one stone would be left on another",
+      "It would be rebuilt in three days",
+      "It would stand until the end",
+      "Its gifts would be given to the poor"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When Jerusalem is surrounded by armies, what did Jesus say those in Judea should do?",
+     "options": [
+      "Flee to the mountains",
+      "Gather inside the city walls",
+      "Hide in the temple courts",
+      "Stay in their houses and pray"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did Jesus spend each night during these days of teaching in the temple?",
+     "options": [
+      "On the mountain called Olivet",
+      "At Martha's house in Bethany",
+      "In the temple courts",
+      "In the village of Bethphage"
+     ],
+     "v": 37
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"Heaven and earth will pass away, but my words ____.\"",
+     "answer": "will by no means pass away",
+     "wrong": [
+      "will stand forever and ever",
+      "will be fulfilled in you",
+      "will remain in your hearts"
+     ],
+     "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"When these things begin to happen, look up and lift up your heads, because ____.\"",
+     "answer": "your redemption is near",
+     "wrong": [
+      "the Kingdom has come",
+      "your enemies are defeated",
+      "the Son of Man is here"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said, \"By ____ you will win your lives.\"",
+     "answer": "your endurance",
+     "wrong": [
+      "your faithfulness",
+      "your many prayers",
+      "your good works"
+     ],
+     "v": 19
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jesus watches a poor widow give two coins",
+      "Jesus says the temple stones will be thrown down",
+      "Jesus tells a parable about the fig tree",
+      "The people come early to hear him in the temple"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jesus told his followers to plan their answers carefully before being brought before kings.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jesus said that even though some would be put to death, not a hair of their head would perish.",
+     "answer": true,
+     "v": 18
+    }
+   ]
+  },
+  "22": {
+   "keyVerse": 42,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did Judas point Jesus out to the crowd?",
+     "options": [
+      "He came near to kiss him",
+      "He called out his name",
+      "He pointed to him with a torch",
+      "He took hold of his cloak"
+     ],
+     "v": 47
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How were Peter and John to find the room for the Passover?",
+     "options": [
+      "Follow a man carrying a pitcher of water",
+      "Ask the priests at the temple gate",
+      "Look for a house with a lamp in the window",
+      "Go to the house of Simon the Pharisee"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus do after a disciple struck the high priest's servant?",
+     "options": [
+      "Touched his ear and healed him",
+      "Told the disciple to strike again",
+      "Ran away into the garden",
+      "Gave himself up without a word"
+     ],
+     "v": 51
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "When Jesus spoke of buying a sword, what did the disciples show him?",
+     "options": [
+      "Two swords",
+      "One small dagger",
+      "Twelve swords",
+      "A sword and a spear"
+     ],
+     "v": 38
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus broke the bread and said, \"This is my body which is given for you. ____.\"",
+     "answer": "Do this in memory of me",
+     "wrong": [
+      "Eat this and remember me",
+      "Receive this in my name",
+      "Keep this until I return"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "As Jesus prayed in agony, his sweat became like ____ falling down on the ground.",
+     "answer": "great drops of blood",
+     "wrong": [
+      "heavy drops of rain",
+      "tears of deep sorrow",
+      "drops of melting wax"
+     ],
+     "v": 44
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said, \"Simon, Simon, behold, Satan asked to have all of you, that he might ____.\"",
+     "answer": "sift you as wheat",
+     "wrong": [
+      "scatter you like sheep",
+      "test you with fire",
+      "crush you like grapes"
+     ],
+     "v": 31
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Judas talks with the chief priests about betrayal",
+      "Jesus shares the bread and the cup",
+      "Jesus prays on the Mount of Olives",
+      "Peter denies knowing Jesus"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After denying Jesus the third time, Peter stayed by the fire in the courtyard.",
+     "answer": false,
+     "v": 62
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "While Jesus prayed on the Mount of Olives, an angel from heaven appeared and strengthened him.",
+     "answer": true,
+     "v": 43
+    }
+   ]
+  },
+  "23": {
+   "keyVerse": 43,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who was made to carry the cross after Jesus?",
+     "options": [
+      "Simon of Cyrene",
+      "Joseph of Arimathaea",
+      "Simon Peter",
+      "One of the criminals"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Pilate send Jesus to Herod?",
+     "options": [
+      "Jesus was under Herod's jurisdiction",
+      "Herod had asked to judge him",
+      "The chief priests demanded it",
+      "Pilate was leaving Jerusalem"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the centurion say when he saw Jesus die?",
+     "options": [
+      "Certainly this was a righteous man",
+      "Truly this was the Son of God",
+      "This man was a great prophet",
+      "He saved others but not himself"
+     ],
+     "v": 47
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What changed between Herod and Pilate that day?",
+     "options": [
+      "They became friends",
+      "They became enemies",
+      "Herod took over Pilate's court",
+      "They agreed to release Barabbas"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"Father, forgive them, for they ____.\"",
+     "answer": "don't know what they are doing",
+     "wrong": [
+      "have been led astray",
+      "are blinded by their rulers",
+      "are only obeying orders"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The criminal said to Jesus, \"Lord, remember me ____.\"",
+     "answer": "when you come into your Kingdom",
+     "wrong": [
+      "when you sit on your throne",
+      "when you rise again",
+      "before your Father in heaven"
+     ],
+     "v": 42
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said, \"Daughters of Jerusalem, don't weep for me, but weep for ____.\"",
+     "answer": "yourselves and for your children",
+     "wrong": [
+      "the city and the temple",
+      "the sins of this people",
+      "those who crucify me"
+     ],
+     "v": 28
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The council brings Jesus before Pilate",
+      "Pilate sends Jesus to Herod",
+      "Barabbas is released to the crowd",
+      "Joseph lays Jesus' body in a tomb"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The crowd shouted for Pilate to release Barabbas instead of Jesus.",
+     "answer": true,
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Joseph of Arimathaea had agreed with the council's decision against Jesus.",
+     "answer": false,
+     "v": 51
+    }
+   ]
+  },
+  "24": {
+   "keyVerse": 32,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where were the two disciples going when Jesus came near and walked with them?",
+     "options": [
+      "A village named Emmaus",
+      "The town of Bethany",
+      "The city of Jericho",
+      "Back home to Galilee"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the disciples give Jesus to eat in Jerusalem?",
+     "options": [
+      "A piece of broiled fish and honeycomb",
+      "Bread and a cup of wine",
+      "Figs and barley loaves",
+      "Roasted lamb and bitter herbs"
+     ],
+     "v": 42
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Peter see when he stooped and looked into the tomb?",
+     "options": [
+      "Strips of linen lying by themselves",
+      "Two angels in dazzling clothing",
+      "The stone sealed with wax",
+      "The women's spices spilled on the floor"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was the name of one of the two disciples on the road?",
+     "options": [
+      "Cleopas",
+      "Nicodemus",
+      "Matthias",
+      "Lazarus"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The men in dazzling clothing asked the women, \"Why do you seek ____?\"",
+     "answer": "the living among the dead",
+     "wrong": [
+      "the Lord in this tomb",
+      "a body that is gone",
+      "the Teacher in this place"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"Touch me and see, for a spirit doesn't have ____, as you see that I have.\"",
+     "answer": "flesh and bones",
+     "wrong": [
+      "hands and feet",
+      "a body of flesh",
+      "scars and wounds"
+     ],
+     "v": 39
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said, \"But wait in the city of Jerusalem until you are ____.\"",
+     "answer": "clothed with power from on high",
+     "wrong": [
+      "filled with the Holy Spirit",
+      "sent out to all nations",
+      "ready to be my witnesses"
+     ],
+     "v": 49
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The women find the stone rolled away",
+      "Jesus walks with two disciples on the road",
+      "Jesus eats in front of the disciples",
+      "Jesus is carried up into heaven"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The apostles believed the women's report about the empty tomb right away.",
+     "answer": false,
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jesus led the disciples out as far as Bethany and blessed them before he was carried up.",
+     "answer": true,
+     "v": 50
+    }
+   ]
+  }
+ }
+}

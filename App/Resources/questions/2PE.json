@@ -1,0 +1,38 @@
+{"book":"2PE","chapters":{
+"1":{"keyVerse":21,"questions":[
+{"t":"choice","d":1,"q":"Where does Peter say he was with Jesus when the voice came out of heaven?","options":["On the holy mountain","By the Sea of Galilee","In the temple courts","At the Jordan River"],"v":18},
+{"t":"choice","d":2,"q":"How does Peter describe the person who lacks these qualities?","options":["Blind, seeing only what is near","Weak, falling at every trial","Proud, trusting only in himself","Lost, wandering in the dark"],"v":9},
+{"t":"choice","d":2,"q":"Peter tells readers to heed the word of prophecy as if it were what?","options":["A lamp shining in a dark place","A sword that divides the heart","A seed planted in good soil","A rock that cannot be moved"],"v":19},
+{"t":"choice","d":3,"q":"What does Peter call his body, which he says he will soon put off?","options":["His tent","His house","His garment","His vessel"],"v":13},
+{"t":"blank","d":1,"q":"For we didn't follow ____ when we made known to you the power and coming of our Lord Jesus Christ.","answer":"cunningly devised fables","wrong":["the traditions of men","clever human reasoning","the stories of elders"],"v":16},
+{"t":"blank","d":2,"q":"Be more diligent to make ____ sure. For if you do these things, you will never stumble.","answer":"your calling and election","wrong":["your faith and hope","your path and purpose","your love and service"],"v":10},
+{"t":"blank","d":3,"q":"That through these you may become ____, having escaped from the corruption that is in the world by lust.","answer":"partakers of the divine nature","wrong":["heirs of the eternal kingdom","children of the living God","servants of the holy covenant"],"v":4},
+{"t":"order","d":3,"items":["Moral excellence","Knowledge","Self control","Perseverance"],"v":5},
+{"t":"tf","d":1,"q":"Peter says prophecy of Scripture came by the will of holy men.","answer":false,"v":21},
+{"t":"tf","d":2,"q":"The voice Peter heard said, \"This is my beloved Son, in whom I am well pleased.\"","answer":true,"v":17}
+]},
+"2":{"keyVerse":9,"questions":[
+{"t":"choice","d":1,"q":"Whose way does Peter say the false teachers followed, loving the wages of wrongdoing?","options":["Balaam","Cain","Korah","Jezebel"],"v":15},
+{"t":"choice","d":2,"q":"In Peter's example, what stopped the madness of the prophet?","options":["A speechless donkey speaking with a man's voice","An angel standing in his path","A voice thundering from heaven","A sudden blindness"],"v":16},
+{"t":"choice","d":2,"q":"According to Peter, whom do the false teachers deny?","options":["The Master who bought them","The prophets who came before","The apostles who taught them","The angels who guard them"],"v":1},
+{"t":"choice","d":3,"q":"Where does Peter say God cast the angels who sinned?","options":["Tartarus","The lake of fire","The bottomless pit","Sheol"],"v":4},
+{"t":"blank","d":1,"q":"The dog turns to his own vomit again, and the sow that has washed to ____.","answer":"wallowing in the mire","wrong":["rolling in the dust","feeding in the field","sleeping in the mud"],"v":22},
+{"t":"blank","d":2,"q":"These are ____, clouds driven by a storm.","answer":"wells without water","wrong":["trees without fruit","lamps without oil","fields without harvest"],"v":17},
+{"t":"blank","d":3,"q":"Promising them liberty, while they themselves are ____.","answer":"bondservants of corruption","wrong":["slaves of their passions","prisoners of darkness","servants of deceit"],"v":19},
+{"t":"order","d":2,"items":["God did not spare the angels who sinned","A flood brought on the ancient world","Sodom and Gomorrah turned into ashes","Righteous Lot delivered from the wicked"],"v":4},
+{"t":"tf","d":1,"q":"Peter says that for those who escape the world's defilement and are entangled again, the last state is worse than the first.","answer":true,"v":20},
+{"t":"tf","d":3,"q":"Peter says angels bring slanderous judgments against dignitaries before the Lord.","answer":false,"v":11}
+]},
+"3":{"keyVerse":8,"questions":[
+{"t":"choice","d":1,"q":"How does Peter say the day of the Lord will come?","options":["As a thief in the night","With a great trumpet blast","Like lightning from the east","After a sign in the heavens"],"v":10},
+{"t":"choice","d":2,"q":"What do the mockers in the last days ask?","options":["Where is the promise of his coming?","Who has ever seen the Lord?","Why should we fear judgment?","When will the heavens be opened?"],"v":4},
+{"t":"choice","d":2,"q":"Why does Peter say the Lord is not slow concerning his promise?","options":["He is patient, wanting all to come to repentance","He is waiting for the nations to gather","He is still preparing his angels","He is waiting for the temple to be rebuilt"],"v":9},
+{"t":"choice","d":3,"q":"Which beloved brother does Peter say wrote letters with some things hard to understand?","options":["Paul","James","John","Jude"],"v":15},
+{"t":"blank","d":1,"q":"But, according to his promise, we look for ____, in which righteousness dwells.","answer":"new heavens and a new earth","wrong":["a kingdom that cannot be shaken","a city built by God","the rest promised to the fathers"],"v":13},
+{"t":"blank","d":2,"q":"But grow in ____ of our Lord and Savior Jesus Christ.","answer":"the grace and knowledge","wrong":["the faith and hope","the love and fear","the truth and wisdom"],"v":18},
+{"t":"blank","d":3,"q":"But the heavens that exist now and the earth, by the same word have been ____.","answer":"stored up for fire","wrong":["set apart for glory","kept safe from flood","made ready for renewal"],"v":7},
+{"t":"order","d":2,"items":["Remember the words of the holy prophets","The world then perished, overflowed with water","One day is with the Lord as a thousand years","Beware lest you fall from your steadfastness"],"v":2},
+{"t":"tf","d":1,"q":"Peter says this is the second letter he has written to these readers.","answer":true,"v":1},
+{"t":"tf","d":3,"q":"Peter tells his readers to regard the patience of the Lord as a sign of delay.","answer":false,"v":15}
+]}
+}}

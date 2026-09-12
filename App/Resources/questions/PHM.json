@@ -1,0 +1,12 @@
+{"book":"PHM","chapters":{"1":{"keyVerse":16,"questions":[
+{"t":"choice","d":1,"q":"Who is Paul appealing to Philemon about?","options":["Onesimus","Epaphras","Archippus","Demas"],"v":10},
+{"t":"choice","d":2,"q":"Why does Paul appeal to Philemon instead of commanding him?","options":["For love's sake","He has no authority to command","Philemon is his elder","The church asked him not to"],"v":9},
+{"t":"choice","d":2,"q":"What does Paul ask Philemon to prepare for him?","options":["A guest room","A letter of welcome","Supplies for his journey","A meeting of the church"],"v":22},
+{"t":"choice","d":3,"q":"Who is NOT named among those sending greetings at the end?","options":["Titus","Mark","Luke","Aristarchus"],"v":23},
+{"t":"blank","d":1,"q":"No longer as a slave, but more than a slave, ____.","answer":"a beloved brother","wrong":["a trusted servant","a faithful friend","a free citizen"],"v":16},
+{"t":"blank","d":2,"q":"Who once was useless to you, but now is ____.","answer":"useful to you and to me","wrong":["faithful in every good work","a servant of the saints","precious to the whole church"],"v":11},
+{"t":"blank","d":3,"q":"I, Paul, write this ____: I will repay it.","answer":"with my own hand","wrong":["with God as my witness","from my chains in prison","in the presence of Timothy"],"v":19},
+{"t":"order","d":3,"items":["Thanks for Philemon's love and faith","Appeal for Onesimus, his child in chains","Offer to repay anything owed","Request to prepare a guest room"],"v":4},
+{"t":"tf","d":1,"q":"Paul says he is keeping Onesimus with him instead of sending him back.","answer":false,"v":12},
+{"t":"tf","d":2,"q":"The letter is addressed to Philemon alone, with no other recipients named.","answer":false,"v":2}
+]}}}

@@ -1,0 +1,74 @@
+{"book":"1TI","chapters":{
+"1":{"keyVerse":15,"questions":[
+{"t":"choice","d":1,"q":"Where had Paul urged Timothy to stay?","options":["Ephesus","Corinth","Macedonia","Crete"],"v":3},
+{"t":"choice","d":2,"q":"How does Paul describe what he used to be?","options":["A blasphemer, a persecutor, and insolent","A tax collector and a sinner","A proud teacher of the law","A servant of idols"],"v":13},
+{"t":"choice","d":2,"q":"What does Paul say is the goal of the command?","options":["Love from a pure heart, good conscience, sincere faith","Knowledge of the law and the prophets","Order and peace in the assembly","Obedience to the elders in every city"],"v":5},
+{"t":"choice","d":3,"q":"Whom did Paul deliver to Satan so they would learn not to blaspheme?","options":["Hymenaeus and Alexander","Phygelus and Hermogenes","Demas and Crescens","Diotrephes and Demetrius"],"v":20},
+{"t":"blank","d":1,"q":"Christ Jesus came into the world to save sinners, ____.","answer":"of whom I am chief","wrong":["who call on his name","both Jews and Greeks","of every tribe and nation"],"v":15},
+{"t":"blank","d":2,"q":"Not to pay attention to myths and ____, which cause disputes.","answer":"endless genealogies","wrong":["old wives' tales","vain philosophies","false prophecies"],"v":4},
+{"t":"blank","d":3,"q":"Now to the King eternal, ____, to God who alone is wise, be honor and glory.","answer":"immortal, invisible","wrong":["holy, almighty","glorious, righteous","faithful, true"],"v":17},
+{"t":"order","d":3,"items":["Warning against teaching a different doctrine","The law is good if used lawfully","Paul thanks Christ for appointing him","Instruction to wage the good warfare"],"v":3},
+{"t":"tf","d":1,"q":"Paul says some who thrust away faith and a good conscience made a shipwreck of the faith.","answer":true,"v":19},
+{"t":"tf","d":2,"q":"Paul says the law is made for the righteous person.","answer":false,"v":9}
+]},
+"2":{"keyVerse":5,"questions":[
+{"t":"choice","d":1,"q":"Paul says he was appointed a teacher of whom?","options":["The Gentiles","The Jews","The elders","The Greeks in Athens"],"v":7},
+{"t":"choice","d":2,"q":"Instead of gold and pearls, what should women adorn themselves with?","options":["Good works","Humble silence","Plain white linen","Gentle words"],"v":10},
+{"t":"choice","d":2,"q":"What reason from creation does Paul give in this chapter?","options":["Adam was formed first, then Eve","Eve was taken from Adam's side","God rested on the seventh day","Adam named every living creature"],"v":13},
+{"t":"choice","d":3,"q":"Which of these is NOT in Paul's list of costly adornments?","options":["Perfume","Braided hair","Gold","Pearls"],"v":9},
+{"t":"blank","d":1,"q":"Who desires all people to be saved and come to ____.","answer":"full knowledge of the truth","wrong":["repentance before the end","faith in his Son","the light of life"],"v":4},
+{"t":"blank","d":2,"q":"Christ Jesus, who gave himself as ____ for all.","answer":"a ransom","wrong":["a sacrifice","an offering","a servant"],"v":6},
+{"t":"blank","d":3,"q":"That we may lead ____ in all godliness and reverence.","answer":"a tranquil and quiet life","wrong":["a holy and blameless life","a simple and humble life","a peaceful and fruitful life"],"v":2},
+{"t":"order","d":2,"items":["Prayers for all men and for kings","One mediator between God and men","Men praying with holy hands","Women learning in quietness"],"v":1},
+{"t":"tf","d":1,"q":"Paul says Adam was deceived, and then the woman.","answer":false,"v":14},
+{"t":"tf","d":3,"q":"Paul insists he is telling the truth in Christ and not lying about his appointment.","answer":true,"v":7}
+]},
+"3":{"keyVerse":1,"questions":[
+{"t":"choice","d":1,"q":"What must an overseer rule well?","options":["His own house","His own business","The city council","The temple treasury"],"v":4},
+{"t":"choice","d":2,"q":"Why must an overseer not be a new convert?","options":["He might be puffed up and fall like the devil","He might not know the scriptures","The people would not respect him","He could not teach others"],"v":6},
+{"t":"choice","d":2,"q":"What does Paul call the assembly of the living God?","options":["The pillar and ground of the truth","The body and bride of Christ","The temple of the Holy Spirit","The household of faith"],"v":15},
+{"t":"choice","d":3,"q":"What do those who have served well gain for themselves?","options":["Good standing and great boldness in the faith","Double honor and fair wages","A crown of righteousness","The praise of all outsiders"],"v":13},
+{"t":"blank","d":1,"q":"This is a faithful saying: someone who seeks to be an overseer ____.","answer":"desires a good work","wrong":["seeks a heavy burden","must first be tested","desires great honor"],"v":1},
+{"t":"blank","d":2,"q":"Let them also first ____; then let them serve if they are blameless.","answer":"be tested","wrong":["be taught","be baptized","be appointed"],"v":10},
+{"t":"blank","d":3,"q":"God was revealed in the flesh, justified in the spirit, ____, preached among the nations.","answer":"seen by angels","wrong":["raised in power","exalted in heaven","crowned with glory"],"v":16},
+{"t":"order","d":3,"items":["Qualifications for overseers","Qualifications for servants","How to behave in God's house","The great mystery of godliness"],"v":1},
+{"t":"tf","d":1,"q":"Paul writes that he does not expect to come to Timothy anytime soon.","answer":false,"v":14},
+{"t":"tf","d":2,"q":"Paul says an overseer must have a good testimony from those outside the church.","answer":true,"v":7}
+]},
+"4":{"keyVerse":12,"questions":[
+{"t":"choice","d":1,"q":"What does Paul tell Timothy not to let anyone despise?","options":["His youth","His teaching","His weakness","His gift"],"v":12},
+{"t":"choice","d":2,"q":"What were the false teachers forbidding and commanding?","options":["Forbidding marriage and requiring abstaining from foods","Forbidding wine and commanding circumcision","Forbidding prayer and requiring sacrifices","Forbidding work and requiring fasting"],"v":3},
+{"t":"choice","d":2,"q":"How was Timothy's gift given to him?","options":["By prophecy with the laying on of elders' hands","Through a vision from an angel","At his baptism by Paul","Through the prayers of his mother"],"v":14},
+{"t":"choice","d":3,"q":"Compared to bodily exercise, what does godliness have?","options":["Value in all things, with promise for both lives","Value only in the life to come","About the same value in this life","No value without good works"],"v":8},
+{"t":"blank","d":1,"q":"But refuse profane and ____. Exercise yourself toward godliness.","answer":"old wives' fables","wrong":["endless genealogies","empty philosophies","false prophecies"],"v":7},
+{"t":"blank","d":2,"q":"In doing this you will save both yourself and ____.","answer":"those who hear you","wrong":["your whole household","the church at Ephesus","many who are lost"],"v":16},
+{"t":"blank","d":3,"q":"Until I come, pay attention to reading, ____, and to teaching.","answer":"to exhortation","wrong":["to prayer","to fasting","to singing"],"v":13},
+{"t":"order","d":3,"items":["Some will fall away in later times","Every creature of God is good","Be an example to those who believe","Give yourself wholly to these things"],"v":1},
+{"t":"tf","d":1,"q":"Paul says some foods God created should be rejected, even if received with thanksgiving.","answer":false,"v":4},
+{"t":"tf","d":2,"q":"Paul says food is sanctified through the word of God and prayer.","answer":true,"v":5}
+]},
+"5":{"keyVerse":8,"questions":[
+{"t":"choice","d":1,"q":"How should Timothy treat an older man?","options":["Exhort him as a father","Rebuke him before all","Leave him to the elders","Correct him in private only"],"v":1},
+{"t":"choice","d":2,"q":"What minimum age does Paul give for enrolling a widow?","options":["Sixty","Fifty","Seventy","Forty"],"v":9},
+{"t":"choice","d":2,"q":"Why does Paul tell Timothy to use a little wine?","options":["For his stomach and frequent infirmities","To show his freedom in Christ","For the Lord's supper","To welcome his guests"],"v":23},
+{"t":"choice","d":3,"q":"Which Scripture does Paul quote about honoring elders?","options":["Don't muzzle the ox treading out grain","Give to Caesar what is Caesar's","The farmer must first taste the fruit","Honor your father and your mother"],"v":18},
+{"t":"blank","d":1,"q":"Let the elders who rule well be counted worthy of ____.","answer":"double honor","wrong":["great respect","a good reward","full wages"],"v":17},
+{"t":"blank","d":2,"q":"Don't receive an accusation against an elder except at the word of ____.","answer":"two or three witnesses","wrong":["the whole assembly","a trusted brother","the other elders"],"v":19},
+{"t":"blank","d":3,"q":"But she who gives herself to pleasure is ____.","answer":"dead while she lives","wrong":["far from the faith","a shame to her house","lost in her desires"],"v":6},
+{"t":"order","d":3,"items":["Treat younger women as sisters in purity","Honor widows who are widows indeed","Accusations against elders need witnesses","Some men's sins are evident"],"v":2},
+{"t":"tf","d":1,"q":"Paul says believers with widows in their family should help them so the church is not burdened.","answer":true,"v":16},
+{"t":"tf","d":2,"q":"Paul tells Timothy to lay hands quickly on those who wish to serve.","answer":false,"v":22}
+]},
+"6":{"keyVerse":6,"questions":[
+{"t":"choice","d":1,"q":"What does Paul call a root of all kinds of evil?","options":["The love of money","Pride of heart","Money itself","Envy and strife"],"v":10},
+{"t":"choice","d":2,"q":"Before whom did Christ Jesus testify the good confession?","options":["Pontius Pilate","Herod the king","The high priest","Caesar"],"v":13},
+{"t":"choice","d":2,"q":"Where should the rich set their hope instead of on riches?","options":["On the living God","On their good works","On their eternal reward","On the church's teaching"],"v":17},
+{"t":"choice","d":3,"q":"What does Paul tell Timothy to turn away from at the end?","options":["What is falsely called knowledge","The traditions of the elders","Disputes over the law of Moses","Endless talk about widows"],"v":20},
+{"t":"blank","d":1,"q":"Fight the good fight of faith. ____ to which you were called.","answer":"Take hold of the eternal life","wrong":["Run the race set before you","Hold fast the good confession","Keep the faith once delivered"],"v":12},
+{"t":"blank","d":2,"q":"For we brought nothing into the world, and ____.","answer":"we certainly can't carry anything out","wrong":["we will leave with nothing","all we have is from God","naked we will return there"],"v":7},
+{"t":"blank","d":3,"q":"He alone has immortality, dwelling in ____.","answer":"unapproachable light","wrong":["the highest heavens","glory everlasting","the holy of holies"],"v":16},
+{"t":"order","d":2,"items":["Servants honoring their masters","Warning about those teaching a different doctrine","Flee these things, man of God","A charge to the rich"],"v":1},
+{"t":"tf","d":1,"q":"Paul says those determined to be rich fall into a temptation and a snare.","answer":true,"v":9},
+{"t":"tf","d":3,"q":"Paul says servants with believing masters may serve them less, since they are brothers.","answer":false,"v":2}
+]}
+}}

@@ -1,0 +1,50 @@
+{"book":"2TI","chapters":{
+"1":{"keyVerse":7,"questions":[
+{"t":"choice","d":1,"q":"Who are named as Timothy's grandmother and mother?","options":["Lois and Eunice","Priscilla and Lydia","Eunice and Chloe","Lois and Phoebe"],"v":5},
+{"t":"choice","d":2,"q":"Who are named among those in Asia who turned away from Paul?","options":["Phygelus and Hermogenes","Hymenaeus and Philetus","Demas and Crescens","Alexander and Carpus"],"v":15},
+{"t":"choice","d":2,"q":"What did Onesiphorus do when he was in Rome?","options":["Sought Paul diligently and found him","Preached boldly in the synagogue","Brought Paul's cloak and books","Stood with Paul at his defense"],"v":17},
+{"t":"choice","d":3,"q":"According to this chapter, how was the gift of God given to Timothy?","options":["Through the laying on of Paul's hands","By prophecy from the elders","Through his mother's prayers","At his baptism in Lystra"],"v":6},
+{"t":"blank","d":1,"q":"For God didn't give us a spirit of fear, but ____.","answer":"of power, love, and self control","wrong":["of peace, joy, and patience","of wisdom, faith, and courage","of truth, hope, and strength"],"v":7},
+{"t":"blank","d":2,"q":"I know him whom I have believed, and I am persuaded that he is able to ____ against that day.","answer":"guard that which I have committed","wrong":["keep me from every evil","deliver me from my chains","finish the work he began"],"v":12},
+{"t":"blank","d":3,"q":"Christ Jesus, who abolished death, and brought ____ to light through the Good News.","answer":"life and immortality","wrong":["grace and truth","hope and glory","mercy and peace"],"v":10},
+{"t":"order","d":3,"items":["Reminder of Timothy's sincere faith","Don't be ashamed of the testimony","Hold the pattern of sound words","Mercy for the house of Onesiphorus"],"v":5},
+{"t":"tf","d":1,"q":"Paul says he is ashamed of his sufferings for the Good News.","answer":false,"v":12},
+{"t":"tf","d":2,"q":"Paul remembers Timothy's tears and longs to see him.","answer":true,"v":4}
+]},
+"2":{"keyVerse":15,"questions":[
+{"t":"choice","d":1,"q":"Which three examples does Paul use to encourage Timothy?","options":["A soldier, an athlete, and a farmer","A shepherd, a builder, and a fisherman","A king, a priest, and a prophet","A servant, a steward, and a judge"],"v":3},
+{"t":"choice","d":2,"q":"What were Hymenaeus and Philetus teaching?","options":["The resurrection is already past","Christ did not come in the flesh","Gentiles must be circumcised","The day of the Lord has come"],"v":18},
+{"t":"choice","d":2,"q":"To whom should Timothy commit the things he heard from Paul?","options":["Faithful men able to teach others","The elders at Ephesus","His own family in Lystra","All who gather in his house"],"v":2},
+{"t":"choice","d":3,"q":"What materials does Paul name for the vessels in a large house?","options":["Gold, silver, wood, and clay","Gold, bronze, iron, and stone","Silver, glass, wood, and iron","Gold, silver, bronze, and clay"],"v":20},
+{"t":"blank","d":1,"q":"I suffer hardship to the point of chains as a criminal. But ____.","answer":"God's word isn't chained","wrong":["the Lord stands with me","my spirit is still free","the Good News still spreads"],"v":9},
+{"t":"blank","d":2,"q":"If we endure, we will also reign with him. If we deny him, ____.","answer":"he also will deny us","wrong":["he remains faithful still","we lose our reward","he will turn from us"],"v":12},
+{"t":"blank","d":3,"q":"Pursue righteousness, faith, love, and peace with those who call on the Lord ____.","answer":"out of a pure heart","wrong":["in spirit and in truth","with thanksgiving and praise","day and night in prayer"],"v":22},
+{"t":"order","d":3,"items":["Remember Jesus Christ, risen from the dead","Shun empty chatter","God's firm foundation stands with a seal","Refuse foolish and ignorant questionings"],"v":8},
+{"t":"tf","d":1,"q":"Paul says that if we are faithless, Christ will also be faithless.","answer":false,"v":13},
+{"t":"tf","d":2,"q":"Paul says the Lord's servant should gently correct those who oppose him.","answer":true,"v":25}
+]},
+"3":{"keyVerse":16,"questions":[
+{"t":"choice","d":1,"q":"How does Paul describe people in the last days?","options":["Lovers of self and lovers of money","Lovers of peace and of order","Seekers of signs and wonders","Fearful of wars and famines"],"v":2},
+{"t":"choice","d":2,"q":"Who opposed Moses, just as these men oppose the truth?","options":["Jannes and Jambres","Korah and Dathan","Balaam and Balak","Pharaoh and his captains"],"v":8},
+{"t":"choice","d":2,"q":"Since when had Timothy known the holy Scriptures?","options":["From infancy","Since his baptism","Since meeting Paul","Since he became an elder"],"v":15},
+{"t":"choice","d":3,"q":"In which cities did Paul endure the persecutions Timothy knew about?","options":["Antioch, Iconium, and Lystra","Philippi, Thessalonica, and Berea","Ephesus, Troas, and Miletus","Corinth, Athens, and Rome"],"v":11},
+{"t":"blank","d":1,"q":"Yes, and all who desire to live godly in Christ Jesus ____.","answer":"will suffer persecution","wrong":["will be greatly rewarded","will find true peace","will be kept from harm"],"v":12},
+{"t":"blank","d":2,"q":"Every Scripture is profitable for teaching, for reproof, ____, and for instruction in righteousness.","answer":"for correction","wrong":["for comfort","for worship","for prophecy"],"v":16},
+{"t":"blank","d":3,"q":"Holding a form of godliness but ____. Turn away from these, also.","answer":"having denied its power","wrong":["lacking its good fruit","hating its sound truth","forgetting its true source"],"v":5},
+{"t":"order","d":3,"items":["Grievous times will come","Creeping into houses to capture gullible women","Timothy followed Paul's teaching and conduct","Remain in the things you have learned"],"v":1},
+{"t":"tf","d":1,"q":"Paul says evil men and impostors will grow worse and worse.","answer":true,"v":13},
+{"t":"tf","d":2,"q":"Paul says the Lord delivered him from some of his persecutions, but not all.","answer":false,"v":11}
+]},
+"4":{"keyVerse":7,"questions":[
+{"t":"choice","d":1,"q":"Why did Demas leave Paul?","options":["He loved this present world","He was sent to Galatia","He fell sick at Miletus","He quarreled with Mark"],"v":10},
+{"t":"choice","d":2,"q":"Who was the only one still with Paul?","options":["Luke","Mark","Titus","Tychicus"],"v":11},
+{"t":"choice","d":2,"q":"What did Paul ask Timothy to bring from Troas?","options":["His cloak, the books, and the parchments","His letters to the churches","Money left with Carpus","His tools for making tents"],"v":13},
+{"t":"choice","d":3,"q":"Who does Paul say did him much evil?","options":["Alexander the coppersmith","Demetrius the silversmith","Hymenaeus the teacher","Erastus of Corinth"],"v":14},
+{"t":"blank","d":1,"q":"I have fought the good fight. I have finished the course. ____.","answer":"I have kept the faith","wrong":["I have won the prize","I have loved his appearing","I have run with patience"],"v":7},
+{"t":"blank","d":2,"q":"Having itching ears, they will heap up for themselves ____.","answer":"teachers after their own lusts","wrong":["riches for the last days","idols of their own making","fables and endless questions"],"v":3},
+{"t":"blank","d":3,"q":"The Lord stood by me and strengthened me. So I was delivered out of ____.","answer":"the mouth of the lion","wrong":["the hand of Caesar","the snare of the enemy","the depths of prison"],"v":17},
+{"t":"order","d":3,"items":["Preach the word in season and out","The time of Paul's departure has come","No one helped at his first defense","Greet Prisca and Aquila"],"v":2},
+{"t":"tf","d":1,"q":"Paul says the crown of righteousness is for all who have loved the Lord's appearing, not him only.","answer":true,"v":8},
+{"t":"tf","d":2,"q":"Paul asks that those who deserted him at his first defense be held accountable.","answer":false,"v":16}
+]}
+}}

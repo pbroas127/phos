@@ -1,0 +1,11 @@
+Phos.xcodeproj/
+build/
+*.ipa
+*.dSYM.zip
+fastlane/report.xml
+fastlane/README.md
+.secrets/
+.DS_Store
+Tools/src/
+Tools/text/
+shots/

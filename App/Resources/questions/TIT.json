@@ -1,0 +1,38 @@
+{"book":"TIT","chapters":{
+"1":{"keyVerse":15,"questions":[
+{"t":"choice","d":1,"q":"Where had Paul left Titus?","options":["Crete","Ephesus","Corinth","Nicopolis"],"v":5},
+{"t":"choice","d":2,"q":"What was Titus to appoint in every city?","options":["Elders","Deacons","Prophets","Evangelists"],"v":5},
+{"t":"choice","d":2,"q":"What did a prophet of the Cretans say about his own people?","options":["Always liars, evil beasts, idle gluttons","Always proud, lazy, and quarrelsome","Lovers of wine and of money","Faithless, boastful, and cruel"],"v":12},
+{"t":"choice","d":3,"q":"Which group of deceivers does Paul especially single out?","options":["Those of the circumcision","The followers of Apollos","The Greek philosophers","The priests of the temple"],"v":10},
+{"t":"blank","d":1,"q":"They profess that they know God, but ____.","answer":"by their deeds they deny him","wrong":["in their hearts they doubt him","by their words they mock him","in secret they serve idols"],"v":16},
+{"t":"blank","d":2,"q":"The overseer must be blameless: not self pleasing, not easily angered, ____, not violent.","answer":"not given to wine","wrong":["not a new convert","not quick to speak","not proud in heart"],"v":7},
+{"t":"blank","d":3,"q":"Not paying attention to ____ and commandments of men who turn away from the truth.","answer":"Jewish fables","wrong":["Greek philosophies","old wives' tales","vain traditions"],"v":14},
+{"t":"order","d":3,"items":["Greeting to Titus, his true child","The overseer must be blameless","Many unruly men and deceivers","To the pure, all things are pure"],"v":4},
+{"t":"tf","d":1,"q":"Paul tells Titus to reprove the deceivers sharply so they may be sound in the faith.","answer":true,"v":13},
+{"t":"tf","d":2,"q":"Paul says the saying about the Cretans is not true.","answer":false,"v":13}
+]},
+"2":{"keyVerse":11,"questions":[
+{"t":"choice","d":1,"q":"Whom are the older women to train?","options":["The young wives","The older men","The servants","The new believers"],"v":4},
+{"t":"choice","d":2,"q":"What is Titus told to exhort the younger men to be?","options":["Sober minded","Bold in preaching","Quick to serve","Strong in the faith"],"v":6},
+{"t":"choice","d":2,"q":"What does the grace of God instruct us to deny?","options":["Ungodliness and worldly lusts","Wealth and comfort","Food and marriage","Our own families"],"v":12},
+{"t":"choice","d":3,"q":"Why should servants show all good fidelity?","options":["To adorn the doctrine of God our Savior","To earn their freedom","To avoid punishment","To win their masters' favor"],"v":10},
+{"t":"blank","d":1,"q":"Say these things and exhort and reprove with all authority. ____.","answer":"Let no one despise you","wrong":["Let no one deceive you","Be strong in grace","Give no place to fear"],"v":15},
+{"t":"blank","d":2,"q":"Looking for the blessed hope and appearing of the glory of ____, Jesus Christ.","answer":"our great God and Savior","wrong":["the Son of the Highest","the King of all kings","the Lamb who was slain"],"v":13},
+{"t":"blank","d":3,"q":"And purify for himself a people for his own possession, ____.","answer":"zealous for good works","wrong":["holy and without blame","rich in faith and love","a royal priesthood forever"],"v":14},
+{"t":"order","d":2,"items":["Instructions for older men","Instructions for older women","Instructions for younger men","Instructions for servants"],"v":2},
+{"t":"tf","d":1,"q":"Paul says the grace of God has appeared, bringing salvation only to the Jews.","answer":false,"v":11},
+{"t":"tf","d":3,"q":"Paul wants Titus's sound speech to leave opponents ashamed, with nothing evil to say.","answer":true,"v":8}
+]},
+"3":{"keyVerse":5,"questions":[
+{"t":"choice","d":1,"q":"How does Paul describe what we once were?","options":["Foolish, disobedient, and deceived","Weak, fearful, and alone","Proud, rich, and powerful","Lost, hungry, and poor"],"v":3},
+{"t":"choice","d":2,"q":"Where does Paul plan to spend the winter?","options":["Nicopolis","Crete","Troas","Corinth"],"v":12},
+{"t":"choice","d":2,"q":"When should Titus avoid a factious man?","options":["After a first and second warning","After a single warning","After three warnings","Only after the elders agree"],"v":10},
+{"t":"choice","d":3,"q":"Whom does Paul tell Titus to send on their journey speedily?","options":["Zenas the lawyer and Apollos","Artemas and Tychicus","Luke and Mark","Crescens and Demas"],"v":13},
+{"t":"blank","d":1,"q":"Not by works of righteousness which we did ourselves, but ____, he saved us.","answer":"according to his mercy","wrong":["by his great power","through our repentance","because of our faith"],"v":5},
+{"t":"blank","d":2,"q":"Remind them to be in subjection to rulers and to authorities, to be obedient, to be ready for ____.","answer":"every good work","wrong":["every trial","the coming judgment","any hardship"],"v":1},
+{"t":"blank","d":3,"q":"That being justified by his grace, we might be made heirs according to ____.","answer":"the hope of eternal life","wrong":["the promise to Abraham","the riches of his glory","the counsel of his will"],"v":7},
+{"t":"order","d":3,"items":["Be subject to rulers and authorities","God's kindness and love appeared","Insist so believers maintain good works","Greetings from all who are with Paul"],"v":1},
+{"t":"tf","d":1,"q":"Paul tells Titus to engage in disputes about the law to correct false teachers.","answer":false,"v":9},
+{"t":"tf","d":2,"q":"Paul says the Holy Spirit was poured out on us richly through Jesus Christ.","answer":true,"v":6}
+]}
+}}

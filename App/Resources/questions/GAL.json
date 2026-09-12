@@ -1,0 +1,689 @@
+{
+ "book": "GAL",
+ "chapters": {
+  "1": {
+   "keyVerse": 12,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul marvel at about the Galatians?",
+     "options": [
+      "They are so quickly turning to a different good news",
+      "They have stopped meeting together",
+      "They refused to receive his messengers",
+      "They sent no gift to Jerusalem"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Paul go after God revealed his Son in him, instead of going to Jerusalem?",
+     "options": [
+      "Arabia",
+      "Antioch",
+      "Tarsus",
+      "Cyprus"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How long after that did Paul go up to Jerusalem to visit Peter?",
+     "options": [
+      "Three years",
+      "Fourteen years",
+      "One year",
+      "Seven years"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Besides Peter, which apostle did Paul see on that visit to Jerusalem?",
+     "options": [
+      "James, the Lord's brother",
+      "John, the brother of James",
+      "Barnabas",
+      "Andrew"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Even though we, or ____, should preach to you any good news other than what we preached, let him be cursed.",
+     "answer": "an angel from heaven",
+     "wrong": [
+      "a prophet from Judea",
+      "a teacher from Jerusalem",
+      "a voice in a vision"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For if I were still pleasing men, I wouldn't be ____.",
+     "answer": "a servant of Christ",
+     "wrong": [
+      "an apostle of God",
+      "faithful to my calling",
+      "free in the Spirit"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "After three years I went up to Jerusalem to visit Peter, and stayed with him ____.",
+     "answer": "fifteen days",
+     "wrong": [
+      "forty days",
+      "seven days",
+      "three months"
+     ],
+     "v": 18
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Anyone preaching another good news is cursed",
+      "Paul's former life in the Jews' religion",
+      "God reveals his Son in Paul",
+      "Paul comes to Syria and Cilicia"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says he received the Good News he preaches from the apostles in Jerusalem.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says he was once more zealous for the traditions of his fathers than many of his own age.",
+     "answer": true,
+     "v": 14
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 21,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Paul oppose Peter to his face at Antioch?",
+     "options": [
+      "Peter drew back from eating with Gentiles",
+      "Peter refused to baptize Gentiles",
+      "Peter denied that Paul was an apostle",
+      "Peter demanded that Titus be circumcised"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who went up to Jerusalem with Paul after fourteen years?",
+     "options": [
+      "Barnabas and Titus",
+      "Silas and Timothy",
+      "Peter and John",
+      "Titus and Luke"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the leaders in Jerusalem ask Paul and Barnabas to remember?",
+     "options": [
+      "The poor",
+      "The law",
+      "The Sabbath",
+      "The temple"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which three men were reputed to be pillars?",
+     "options": [
+      "James, Cephas, and John",
+      "Peter, Andrew, and James",
+      "Barnabas, Titus, and John",
+      "James, John, and Barnabas"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I have been crucified with Christ, and it is no longer I who live, but ____.",
+     "answer": "Christ lives in me",
+     "wrong": [
+      "the Spirit within me",
+      "God works through me",
+      "grace reigns in me"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I don't reject the grace of God. For if righteousness is through the law, then ____!",
+     "answer": "Christ died for nothing",
+     "wrong": [
+      "faith has no purpose",
+      "the promise is empty",
+      "we are still slaves"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The rest of the Jews joined him, so that even Barnabas was carried away with ____.",
+     "answer": "their hypocrisy",
+     "wrong": [
+      "their false teaching",
+      "the Jewish customs",
+      "their bitter anger"
+     ],
+     "v": 13
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "False brothers spy out their liberty",
+      "The right hand of fellowship is given",
+      "Paul resists Peter at Antioch",
+      "Justified by faith, not works of the law"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says Titus, being a Greek, was compelled to be circumcised.",
+     "answer": false,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says Peter was entrusted with the Good News for the circumcised.",
+     "answer": true,
+     "v": 7
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 28,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What question does Paul ask the Galatians about receiving the Spirit?",
+     "options": [
+      "Was it by works of the law or hearing of faith?",
+      "Was it before or after baptism?",
+      "Was it through Paul or through Peter?",
+      "Was it in Jerusalem or in Galatia?"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What promise to Abraham does Paul say preached the Good News beforehand?",
+     "options": [
+      "In you all the nations will be blessed",
+      "Your offspring will be like the stars",
+      "I will give you this land",
+      "Kings will come from you"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say the law became for us?",
+     "options": [
+      "Our tutor to bring us to Christ",
+      "Our judge until the end",
+      "Our shield against sin",
+      "Our path to the promise"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How many years after the covenant with Abraham does Paul say the law came?",
+     "options": [
+      "Four hundred thirty",
+      "Four hundred",
+      "Forty",
+      "Seven hundred"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "There is neither Jew nor Greek, neither slave nor free man, neither male nor female; for you are all ____.",
+     "answer": "one in Christ Jesus",
+     "wrong": [
+      "equal before the Lord",
+      "sons of the Spirit",
+      "a holy nation"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Christ redeemed us from the curse of the law, ____.",
+     "answer": "having become a curse for us",
+     "wrong": [
+      "by keeping it perfectly",
+      "by his righteous life",
+      "and gave us his Spirit"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For as many of you as were baptized into Christ ____.",
+     "answer": "have put on Christ",
+     "wrong": [
+      "have died to sin",
+      "are made new",
+      "have received the Spirit"
+     ],
+     "v": 27
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Did you receive the Spirit by works?",
+      "Abraham believed God",
+      "Why then is there the law?",
+      "Abraham's offspring and heirs by promise"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says those who are of faith are children of Abraham.",
+     "answer": true,
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul points out that the promise was spoken to Abraham's offspring as of many, not as of one.",
+     "answer": false,
+     "v": 16
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In Paul's allegory, Abraham's two sons were born to whom?",
+     "options": [
+      "A servant and a free woman",
+      "Two servant women",
+      "Two free women",
+      "A widow and a young virgin"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the Spirit of God's Son cry out in our hearts?",
+     "options": [
+      "Abba, Father!",
+      "Holy, holy, holy!",
+      "Come, Lord!",
+      "Jesus is Lord!"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say the Galatians would have done for him if possible?",
+     "options": [
+      "Plucked out their eyes and given them",
+      "Sold everything to support him",
+      "Traveled with him to Jerusalem",
+      "Gone to prison in his place"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which mountain does Paul say Hagar stands for?",
+     "options": [
+      "Mount Sinai",
+      "Mount Zion",
+      "Mount Moriah",
+      "Mount of Olives"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "When the fullness of the time came, God sent out his Son, ____, born under the law.",
+     "answer": "born to a woman",
+     "wrong": [
+      "the heir of all",
+      "the promised offspring",
+      "the light of Israel"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "My little children, of whom I am again in travail until ____.",
+     "answer": "Christ is formed in you",
+     "wrong": [
+      "you return to the truth",
+      "I see you again",
+      "the law is fulfilled"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You know that because of ____ I preached the Good News to you the first time.",
+     "answer": "weakness in the flesh",
+     "wrong": [
+      "a vision in the night",
+      "trouble in Antioch",
+      "a storm at sea"
+     ],
+     "v": 13
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "A child heir is no different from a bondservant",
+      "You observe days, months, seasons, and years",
+      "Have I become your enemy by telling the truth?",
+      "The Jerusalem that is above is free"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul concludes that we are children of the servant, not of the free woman.",
+     "answer": false,
+     "v": 31
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says the Galatians received him as an angel of God, even as Christ Jesus.",
+     "answer": true,
+     "v": 14
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which of these is listed as part of the fruit of the Spirit?",
+     "options": [
+      "Patience",
+      "Zeal",
+      "Wisdom",
+      "Courage"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say about every man who receives circumcision?",
+     "options": [
+      "He is a debtor to do the whole law",
+      "He becomes a true child of Abraham",
+      "He is cut off from Israel",
+      "He must also keep the Sabbath"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to Paul, what amounts to something in Christ Jesus?",
+     "options": [
+      "Faith working through love",
+      "Obedience to the elders",
+      "Knowledge of the law",
+      "A clean conscience"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What image does Paul use for how a bad influence spreads?",
+     "options": [
+      "A little yeast through the whole lump",
+      "A spark setting a forest ablaze",
+      "A drop of poison in a cup",
+      "A weed choking the harvest"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The whole law is fulfilled in one word, in this: You shall love your neighbor ____.",
+     "answer": "as yourself",
+     "wrong": [
+      "with all your heart",
+      "as Christ loved you",
+      "and forgive him"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But I say, walk by the Spirit, and you won't ____.",
+     "answer": "fulfill the lust of the flesh",
+     "wrong": [
+      "be judged by others",
+      "grow weary in doing good",
+      "fall into temptation"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "If you bite and devour one another, be careful that you don't ____.",
+     "answer": "consume one another",
+     "wrong": [
+      "destroy the assembly",
+      "grieve the Spirit",
+      "lose your reward"
+     ],
+     "v": 15
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Stand firm in the liberty of Christ",
+      "You were running well",
+      "Called for freedom, serve one another in love",
+      "The deeds of the flesh are obvious"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says that if you are led by the Spirit, you are under the law.",
+     "answer": false,
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says those who belong to Christ have crucified the flesh with its passions and lusts.",
+     "answer": true,
+     "v": 24
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say we fulfill by bearing one another's burdens?",
+     "options": [
+      "The law of Christ",
+      "The law of Moses",
+      "The will of the Spirit",
+      "The promise to Abraham"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How should those who are spiritual restore someone caught in a fault?",
+     "options": [
+      "In a spirit of gentleness",
+      "With a public rebuke",
+      "By sending him away for a time",
+      "After he repays the wrong"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul point out about his own handwriting?",
+     "options": [
+      "He writes with large letters",
+      "He writes with small letters",
+      "He writes with a shaky hand",
+      "He writes in great haste"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul say he bears branded on his body?",
+     "options": [
+      "The marks of the Lord Jesus",
+      "The scars of shipwreck",
+      "The seal of the Spirit",
+      "The chains of Rome"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "God is not mocked, for whatever a man sows, ____.",
+     "answer": "that he will also reap",
+     "wrong": [
+      "that will surely grow",
+      "he must also tend",
+      "God will also judge"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The cross of our Lord Jesus Christ, through which the world has been crucified to me, and ____.",
+     "answer": "I to the world",
+     "wrong": [
+      "I to the law",
+      "sin to my flesh",
+      "death to my body"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For in Christ Jesus neither is circumcision anything, nor uncircumcision, but ____.",
+     "answer": "a new creation",
+     "wrong": [
+      "a pure heart",
+      "the Spirit of life",
+      "keeping the commandments"
+     ],
+     "v": 15
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Restore someone caught in a fault",
+      "Share good things with the one who teaches",
+      "Do good to all, especially the household of faith",
+      "Some push circumcision to avoid persecution"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says each man will bear his own burden.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says those who push circumcision keep the law carefully themselves.",
+     "answer": false,
+     "v": 13
+    }
+   ]
+  }
+ }
+}

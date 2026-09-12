@@ -1,0 +1,461 @@
+{
+ "book": "COL",
+ "chapters": {
+  "1": {
+   "keyVerse": 15,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "From whom did the Colossians learn the Good News?",
+     "options": [
+      "Epaphras",
+      "Tychicus",
+      "Timothy",
+      "Barnabas"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say the Father delivered us out of?",
+     "options": [
+      "The power of darkness",
+      "The curse of the law",
+      "The house of bondage",
+      "The hands of our enemies"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to Paul, in whom are all things held together?",
+     "options": [
+      "Christ",
+      "The Spirit",
+      "The assembly",
+      "The angels"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul say he fills up in his flesh for the sake of the assembly?",
+     "options": [
+      "What is lacking of Christ's afflictions",
+      "What was missing from the law",
+      "What the other apostles left undone",
+      "What the Colossians failed to give"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The riches of the glory of this mystery among the Gentiles, which is Christ in you, ____.",
+     "answer": "the hope of glory",
+     "wrong": [
+      "the light of the nations",
+      "the promise of life",
+      "the seal of the Spirit"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He is the head of the body, the assembly, who is the beginning, ____.",
+     "answer": "the firstborn from the dead",
+     "wrong": [
+      "the first of the prophets",
+      "the Lord of the Sabbath",
+      "the heir of all things"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Through him God reconciled all things to himself, having made peace through ____.",
+     "answer": "the blood of his cross",
+     "wrong": [
+      "the word of his power",
+      "the gift of his Spirit",
+      "the life of his Son"
+     ],
+     "v": 20
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Thanks for their faith, love, and hope",
+      "Prayer to be filled with knowledge of his will",
+      "He is the image of the invisible God",
+      "Paul rejoices in his sufferings"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says all things were created through Christ and for him.",
+     "answer": true,
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says the mystery was openly known through all past ages and generations.",
+     "answer": false,
+     "v": 26
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say was nailed to the cross?",
+     "options": [
+      "The handwriting in ordinances against us",
+      "The names of the principalities",
+      "The stone tablets of the law",
+      "The sins of the Gentiles only"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul call feast days, new moons, and Sabbath days?",
+     "options": [
+      "A shadow of the things to come",
+      "A burden Christ has doubled",
+      "Commands that save the faithful",
+      "The substance of true worship"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul warn could rob them, after the tradition of men?",
+     "options": [
+      "Philosophy and vain deceit",
+      "Prophecy and speaking in languages",
+      "Fasting and prayer",
+      "Letters from Jerusalem"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Besides Colossae, which city does Paul name as he describes his struggle for them?",
+     "options": [
+      "Laodicea",
+      "Hierapolis",
+      "Ephesus",
+      "Philippi"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For in him all the fullness of the Deity ____.",
+     "answer": "dwells bodily",
+     "wrong": [
+      "is fully revealed",
+      "shines forth",
+      "is made known"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The mystery of God, of the Father and of Christ, in whom all the treasures of ____ are hidden.",
+     "answer": "wisdom and knowledge",
+     "wrong": [
+      "grace and truth",
+      "faith and hope",
+      "glory and honor"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Don't handle, nor taste, nor touch; all of which ____.",
+     "answer": "perish with use",
+     "wrong": [
+      "are empty rules",
+      "bring no life",
+      "cannot make holy"
+     ],
+     "v": 22
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Hearts knit together in love",
+      "Walk in Christ as you received him",
+      "Buried with him in baptism",
+      "Let no one judge you about food or feasts"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says that though he is absent in the flesh, he is with them in spirit.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says harsh rules against the body are of great value against the indulgence of the flesh.",
+     "answer": false,
+     "v": 23
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where does Paul tell believers to set their minds?",
+     "options": [
+      "On things above",
+      "On the law",
+      "On the coming judgment",
+      "On their own needs"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul call love, which they are to walk in above all things?",
+     "options": [
+      "The bond of perfection",
+      "The fulfilling of the law",
+      "The greatest of the gifts",
+      "The mark of true disciples"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say should rule in their hearts?",
+     "options": [
+      "The peace of God",
+      "The word of Christ",
+      "The fear of the Lord",
+      "The joy of the Spirit"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which of these pairs appears in Paul's list of distinctions that don't exist in the new man?",
+     "options": [
+      "Barbarian and Scythian",
+      "Roman and Egyptian",
+      "Priest and Levite",
+      "Pharisee and Sadducee"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Whatever you do, in word or in deed, do all in ____, giving thanks to God the Father through him.",
+     "answer": "the name of the Lord Jesus",
+     "wrong": [
+      "love for one another",
+      "the fear of God",
+      "the power of the Spirit"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For you died, and your life is ____.",
+     "answer": "hidden with Christ in God",
+     "wrong": [
+      "raised up with the Lord",
+      "kept safe in heaven",
+      "made new every day"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Fathers, don't provoke your children, so that ____.",
+     "answer": "they won't be discouraged",
+     "wrong": [
+      "they won't grow bitter",
+      "they will obey you",
+      "they won't turn away"
+     ],
+     "v": 21
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Put to death your earthly members",
+      "Don't lie to one another",
+      "Let the word of Christ dwell in you richly",
+      "Wives, be in subjection to your husbands"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul tells husbands to love their wives and not be bitter against them.",
+     "answer": true,
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says to forgive each other, even as the apostles forgave you.",
+     "answer": false,
+     "v": 13
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul ask them to pray that God will open for him?",
+     "options": [
+      "A door for the word",
+      "The doors of his prison",
+      "The hearts of the rulers",
+      "A safe road to Rome"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom does Paul call the beloved physician?",
+     "options": [
+      "Luke",
+      "Demas",
+      "Mark",
+      "Justus"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who is Paul sending along with Tychicus?",
+     "options": [
+      "Onesimus",
+      "Epaphras",
+      "Aristarchus",
+      "Archippus"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul tell the Colossians to do once this letter has been read?",
+     "options": [
+      "Have it read in the Laodicean assembly",
+      "Send it on to Jerusalem",
+      "Keep it hidden from outsiders",
+      "Copy it for every household"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Let your speech always be with grace, ____, that you may know how you ought to answer each one.",
+     "answer": "seasoned with salt",
+     "wrong": [
+      "spoken in love",
+      "full of wisdom",
+      "free from anger"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Masters, give to your servants what is just and equal, knowing that you also have ____.",
+     "answer": "a Master in heaven",
+     "wrong": [
+      "a debt to God",
+      "servants of your own",
+      "a day of judgment"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Tell Archippus, Take heed to ____ which you have received in the Lord, that you fulfill it.",
+     "answer": "the ministry",
+     "wrong": [
+      "the calling",
+      "the charge",
+      "the gift"
+     ],
+     "v": 17
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Continue steadfastly in prayer",
+      "Tychicus will make known Paul's affairs",
+      "Greetings from Aristarchus and Mark",
+      "Greet Nymphas and the assembly in his house"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul writes the closing greeting with his own hand and asks them to remember his chains.",
+     "answer": true,
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul describes Mark as the brother of Barnabas.",
+     "answer": false,
+     "v": 10
+    }
+   ]
+  }
+ }
+}

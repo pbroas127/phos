@@ -1,0 +1,1829 @@
+{
+ "book": "1CO",
+ "chapters": {
+  "1": {
+   "keyVerse": 18,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whose household reported the quarrels among the Corinthians to Paul?",
+     "options": [
+      "Chloe's household",
+      "Stephanas' household",
+      "Sosthenes' household",
+      "Priscilla's household"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does Paul thank God that he baptized so few of them?",
+     "options": [
+      "So no one could say they were baptized into his name",
+      "Because baptism was the work of Apollos",
+      "Because they were baptized before he arrived",
+      "Because Christ told apostles never to baptize"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to Paul, what do Greeks seek after?",
+     "options": [
+      "Wisdom",
+      "Signs",
+      "Righteousness",
+      "Riches"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which two people does Paul name as ones he personally baptized?",
+     "options": [
+      "Crispus and Gaius",
+      "Sosthenes and Crispus",
+      "Gaius and Apollos",
+      "Chloe and Cephas"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The word of the cross is foolishness to those who are dying, but to us who are being saved it is ____.",
+     "answer": "the power of God",
+     "wrong": [
+      "the wisdom of men",
+      "a hidden mystery",
+      "a sign from heaven"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "God chose the foolish things of the world that he might ____ those who are wise.",
+     "answer": "put to shame",
+     "wrong": [
+      "gently humble",
+      "win over",
+      "stand against"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The foolishness of God is wiser than men, and ____ is stronger than men.",
+     "answer": "the weakness of God",
+     "wrong": [
+      "the patience of God",
+      "the silence of God",
+      "the mercy of God"
+     ],
+     "v": 25
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Paul thanks God for their gifts",
+      "Paul urges them to avoid divisions",
+      "Christ crucified is foolishness to Greeks",
+      "God chose the weak and lowly things"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says Christ sent him mainly to baptize.",
+     "answer": false,
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul names Sosthenes as a brother who joins him in writing the letter.",
+     "answer": true,
+     "v": 1
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Paul decide to know while he was among the Corinthians?",
+     "options": [
+      "Only Jesus Christ and him crucified",
+      "Only the law and the prophets",
+      "Only the wisdom of the full grown",
+      "Only the gifts of the Spirit"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does Paul describe himself when he was with them?",
+     "options": [
+      "In weakness, fear, and much trembling",
+      "In boldness, joy, and confidence",
+      "In sickness, hunger, and poverty",
+      "In chains, sorrow, and many tears"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Paul avoid persuasive words of human wisdom?",
+     "options": [
+      "So their faith would rest on God's power",
+      "So the rulers would not arrest him",
+      "Because the Greeks disliked speeches",
+      "Because he had no training in speaking"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What would the rulers of this world not have done if they had known God's wisdom?",
+     "options": [
+      "Crucified the Lord of glory",
+      "Persecuted the assemblies",
+      "Worshiped their idols",
+      "Rejected the prophets"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Things which an eye didn't see, and an ear didn't hear, these God has prepared for ____.",
+     "answer": "those who love him",
+     "wrong": [
+      "those who seek him",
+      "the full grown believers",
+      "his holy apostles"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But we received not the spirit of the world, but ____.",
+     "answer": "the Spirit which is from God",
+     "wrong": [
+      "the wisdom of the rulers",
+      "a spirit of power and boldness",
+      "the teaching of the prophets"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For who has known the mind of the Lord that he should instruct him? But we have ____.",
+     "answer": "Christ's mind",
+     "wrong": [
+      "God's own wisdom",
+      "the Spirit's power",
+      "a better word"
+     ],
+     "v": 16
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Paul came without excellence of speech",
+      "God's wisdom is spoken in a mystery",
+      "The Spirit searches the deep things of God",
+      "The natural man cannot receive spiritual things"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says the things of God's Spirit seem like foolishness to the natural man.",
+     "answer": true,
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says the wisdom he speaks among the full grown is the wisdom of the rulers of this world.",
+     "answer": false,
+     "v": 6
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul tell the Corinthians they are, in whom God's Spirit lives?",
+     "options": [
+      "God's temple",
+      "God's army",
+      "Paul's household",
+      "God's vineyard"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Paul feed them with milk instead of solid food?",
+     "options": [
+      "They were not ready and were still fleshly",
+      "He wanted to save the deeper teaching for Apollos",
+      "They had forgotten what he taught before",
+      "They asked him to keep things simple"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will reveal and test each person's work?",
+     "options": [
+      "Fire on the Day",
+      "The judgment of the apostles",
+      "The approval of the assembly",
+      "A flood of water"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What happens to a person whose work is burned up?",
+     "options": [
+      "He suffers loss but is saved as through fire",
+      "He is removed from the assembly",
+      "He is destroyed along with his work",
+      "He must lay a new foundation"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I planted. Apollos watered. But ____.",
+     "answer": "God gave the increase",
+     "wrong": [
+      "Cephas gathered the harvest",
+      "the Lord sent the rain",
+      "you ate the fruit"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "No one can lay any other foundation than that which has been laid, which is ____.",
+     "answer": "Jesus Christ",
+     "wrong": [
+      "the law of Moses",
+      "the word of the apostles",
+      "the faith of Abraham"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "If anyone thinks that he is wise among you in this world, let him ____ that he may become wise.",
+     "answer": "become a fool",
+     "wrong": [
+      "become a student",
+      "seek out teachers",
+      "keep very quiet"
+     ],
+     "v": 18
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The Corinthians fed milk like babies",
+      "Paul and Apollos called servants",
+      "Each man's work tested by fire",
+      "Let no one boast in men"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says jealousy and strife among them show they are still fleshly.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul lists iron and bronze among the materials someone might build with on the foundation.",
+     "answer": false,
+     "v": 12
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 20,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom did Paul send to remind the Corinthians of his ways in Christ?",
+     "options": [
+      "Timothy",
+      "Titus",
+      "Apollos",
+      "Silas"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say is required of stewards?",
+     "options": [
+      "That they be found faithful",
+      "That they be found wise",
+      "That they speak with power",
+      "That they never be judged"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What contrast does Paul draw about tutors and fathers?",
+     "options": [
+      "Many tutors, but not many fathers",
+      "Many fathers, but not many tutors",
+      "Many teachers, but only one master",
+      "Many servants, but few stewards"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What choice does Paul put to them at the very end of the chapter?",
+     "options": [
+      "Should he come with a rod or with gentleness",
+      "Should he send Timothy or Apollos",
+      "Should he write again or visit in person",
+      "Should they judge him or leave it to the Lord"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "So let a man think of us as Christ's servants and ____.",
+     "answer": "stewards of God's mysteries",
+     "wrong": [
+      "teachers of God's law",
+      "fathers of the assemblies",
+      "witnesses of his glory"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For God's Kingdom is not in word, but ____.",
+     "answer": "in power",
+     "wrong": [
+      "in silence",
+      "in wisdom",
+      "in knowledge"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "We are made as the filth of the world, ____, even until now.",
+     "answer": "the dirt wiped off by all",
+     "wrong": [
+      "the least of all people",
+      "a byword among the nations",
+      "the servants of every man"
+     ],
+     "v": 13
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Paul is not troubled by human judgment",
+      "Judge nothing before the Lord comes",
+      "Apostles displayed like men sentenced to death",
+      "Paul says he will come shortly"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says he writes these things in order to shame them.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says that even though he knows nothing against himself, that does not justify him.",
+     "answer": true,
+     "v": 4
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What sin does Paul say is reported among the Corinthians?",
+     "options": [
+      "A man has his father's wife",
+      "A man robbed his own brother",
+      "Members got drunk at the Lord's meal",
+      "A man married an idol worshiper"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say they should have done instead of being arrogant?",
+     "options": [
+      "Mourned, so the man would be removed",
+      "Prayed quietly for the man",
+      "Written to Paul for advice",
+      "Taken the man before a judge"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When Paul told them not to keep company with sexual sinners, whom did he NOT mean?",
+     "options": [
+      "The sexual sinners of this world",
+      "Believers who sinned long ago",
+      "Those who call themselves brothers",
+      "Leaders in the assembly"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which of these is NOT in Paul's list of so called brothers they should not eat with?",
+     "options": [
+      "A thief",
+      "A slanderer",
+      "A drunkard",
+      "An extortionist"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Your boasting is not good. Don't you know that ____ leavens the whole lump?",
+     "answer": "a little yeast",
+     "wrong": [
+      "a single seed",
+      "a small fire",
+      "a little salt"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For indeed Christ, ____, has been sacrificed in our place.",
+     "answer": "our Passover",
+     "wrong": [
+      "our high priest",
+      "the spotless lamb",
+      "our firstborn son"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Let's keep the feast, not with old yeast, but with the unleavened bread of ____.",
+     "answer": "sincerity and truth",
+     "wrong": [
+      "love and peace",
+      "faith and hope",
+      "grace and mercy"
+     ],
+     "v": 8
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Rebuke for arrogance instead of mourning",
+      "Deliver such a one to Satan",
+      "Clarifying an earlier letter about sexual sinners",
+      "Put away the wicked man from among you"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul tells the church to judge people outside the church.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says he has already judged the man while absent in body but present in spirit.",
+     "answer": true,
+     "v": 3
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 20,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What problem does Paul address at the start of this chapter?",
+     "options": [
+      "Brothers suing each other before unbelievers",
+      "Believers eating food offered to idols",
+      "Believers refusing to work",
+      "Arguments over who baptized whom"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides the world, whom does Paul say believers will judge?",
+     "options": [
+      "Angels",
+      "The apostles",
+      "The rulers of Rome",
+      "The twelve tribes"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say would be better than having lawsuits with each other?",
+     "options": [
+      "Being wronged or defrauded",
+      "Paying a fine to settle it",
+      "Letting Paul decide by letter",
+      "Leaving the assembly quietly"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What saying about food does Paul quote and then answer?",
+     "options": [
+      "Foods for the belly, and the belly for foods",
+      "Eat whatever is set before you",
+      "Man does not live by bread alone",
+      "The belly is never satisfied"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Or don't you know that your body is ____ who is in you, whom you have from God?",
+     "answer": "a temple of the Holy Spirit",
+     "wrong": [
+      "a house for God's Spirit",
+      "a gift from the Father",
+      "the dwelling of the Lord"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "All things are lawful for me, but I will not be brought under ____.",
+     "answer": "the power of anything",
+     "wrong": [
+      "the rule of any man",
+      "the law of Moses",
+      "the judgment of others"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You were washed. You were sanctified. You were justified in ____, and in the Spirit of our God.",
+     "answer": "the name of the Lord Jesus",
+     "wrong": [
+      "the waters of baptism",
+      "the blood of the covenant",
+      "the sight of all people"
+     ],
+     "v": 11
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "No wise man to decide between brothers",
+      "The unrighteous will not inherit God's Kingdom",
+      "Your bodies are members of Christ",
+      "Flee sexual immorality"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says the person who commits sexual immorality sins against his own body.",
+     "answer": true,
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says that he who is joined to the Lord is one flesh with him.",
+     "answer": false,
+     "v": 17
+    }
+   ]
+  },
+  "7": {
+   "keyVerse": 19,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "For those who cannot control themselves, what does Paul say is better than burning with passion?",
+     "options": [
+      "To marry",
+      "To fast and pray",
+      "To stay single anyway",
+      "To move to another city"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say should happen if an unbelieving spouse departs?",
+     "options": [
+      "Let them separate; the believer is not under bondage",
+      "The believer must follow and plead with them",
+      "The believer may never marry anyone",
+      "The assembly must bring the spouse back"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What reason does Paul give for a believer staying with a willing unbelieving spouse?",
+     "options": [
+      "The unbeliever is sanctified and the children are holy",
+      "The law of Moses forbids all divorce",
+      "Paul's own marriage was just like theirs",
+      "The assembly would otherwise be put to shame"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul tell a bondservant to do if he gets a chance to become free?",
+     "options": [
+      "Use the opportunity",
+      "Stay a bondservant anyway",
+      "Ask the assembly first",
+      "Wait until the Lord returns"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Circumcision is nothing, and uncircumcision is nothing, but what matters is ____.",
+     "answer": "keeping God's commandments",
+     "wrong": [
+      "loving one another deeply",
+      "the faith of the heart",
+      "being called by God"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But I say this, brothers: ____. From now on, those who have wives may be as though they had none.",
+     "answer": "the time is short",
+     "wrong": [
+      "the Lord is near",
+      "the night is far gone",
+      "the harvest is ready"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He who is unmarried is concerned for the things of the Lord, but he who is married is concerned about ____.",
+     "answer": "the things of the world",
+     "wrong": [
+      "the needs of his household",
+      "the cares of this life",
+      "the good of his children"
+     ],
+     "v": 33
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Husband and wife owe each other affection",
+      "Believers should not leave willing unbelieving spouses",
+      "Stay in the calling in which you were called",
+      "Paul gives his judgment concerning virgins"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says that a believer who marries has sinned.",
+     "answer": false,
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says a widow is free to marry whomever she wants, only in the Lord.",
+     "answer": true,
+     "v": 39
+    }
+   ]
+  },
+  "8": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say he will do if food causes his brother to stumble?",
+     "options": [
+      "Eat no meat forever more",
+      "Eat meat only in private",
+      "Leave that assembly",
+      "Fast for forty days"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say believers know about idols?",
+     "options": [
+      "No idol is anything in the world",
+      "Idols are the angels of the nations",
+      "Idols must be destroyed by believers",
+      "Idols defile anyone who touches them"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What danger does Paul warn about with the liberty of those who have knowledge?",
+     "options": [
+      "It may become a stumbling block to the weak",
+      "It may make them proud before God",
+      "It may anger the rulers of the city",
+      "It may make their food unclean"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What scene does Paul describe that could embolden a weak brother to eat?",
+     "options": [
+      "Seeing a believer sitting in an idol's temple",
+      "Seeing a believer buy meat at the market",
+      "Seeing a believer skip a fast day",
+      "Seeing an apostle drink wine at a feast"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "We know that we all have knowledge. Knowledge puffs up, but ____.",
+     "answer": "love builds up",
+     "wrong": [
+      "wisdom humbles us",
+      "faith stands firm",
+      "truth sets free"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But food will not ____. If we don't eat we are not worse, nor if we eat are we better.",
+     "answer": "commend us to God",
+     "wrong": [
+      "defile a clean conscience",
+      "keep us from sin",
+      "make the weak strong"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "To us there is one God, the Father, of whom are all things, and ____, through whom are all things.",
+     "answer": "one Lord, Jesus Christ",
+     "wrong": [
+      "one Spirit, the Comforter",
+      "one Son, the Word",
+      "one faith and baptism"
+     ],
+     "v": 6
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Anyone who loves God is known by him",
+      "Some still eat with consciousness of an idol",
+      "The weak brother for whom Christ died",
+      "Sinning against brothers is sinning against Christ"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says eating food makes a believer better before God.",
+     "answer": false,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says some eat as if the food were sacrificed to an idol, and their weak conscience is defiled.",
+     "answer": true,
+     "v": 7
+    }
+   ]
+  },
+  "9": {
+   "keyVerse": 22,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What right does Paul say he chose not to use with the Corinthians?",
+     "options": [
+      "Being supported for preaching the Good News",
+      "Speaking in tongues in the assembly",
+      "Judging those outside the church",
+      "Choosing his own fellow workers"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which command from the law of Moses does Paul quote to support his right?",
+     "options": [
+      "Do not muzzle an ox treading out grain",
+      "Do not steal from your neighbor",
+      "Pay the worker his wages the same day",
+      "Leave the gleanings for the poor"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say his reward is?",
+     "options": [
+      "Presenting the Good News without charge",
+      "A place of honor among the apostles",
+      "Many children in the faith",
+      "A home among the saints in Jerusalem"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whom does Paul name alongside himself in asking if they alone have no right to stop working?",
+     "options": [
+      "Barnabas",
+      "Silas",
+      "Apollos",
+      "Titus"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I have become ____, that I may by all means save some.",
+     "answer": "all things to all men",
+     "wrong": [
+      "a servant of every nation",
+      "a father to many children",
+      "a slave for the Good News"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I therefore run like that, not aimlessly. I fight like that, not ____.",
+     "answer": "beating the air",
+     "wrong": [
+      "fearing the crowd",
+      "running in circles",
+      "holding back blows"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "If I preach the Good News, I have nothing to boast about, for necessity is laid on me; but ____ if I don't preach it.",
+     "answer": "woe is to me",
+     "wrong": [
+      "shame is on me",
+      "judgment waits for me",
+      "God will reject me"
+     ],
+     "v": 16
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Am I not free? Am I not an apostle?",
+      "Examples of soldier, vineyard, and flock",
+      "To the Jews I became as a Jew",
+      "I beat my body into submission"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says that in a race, all the runners receive the prize.",
+     "answer": false,
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul calls the Corinthians the seal of his apostleship in the Lord.",
+     "answer": true,
+     "v": 2
+    }
+   ]
+  },
+  "10": {
+   "keyVerse": 31,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say God will make along with every temptation?",
+     "options": [
+      "The way of escape",
+      "A clear warning beforehand",
+      "An angel to stand guard",
+      "A quick end to the trial"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does Paul say the events in Israel's wilderness history were written down?",
+     "options": [
+      "As examples to warn us",
+      "To prove that God no longer judges",
+      "To explain the Passover feast",
+      "To honor their great faithfulness"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to Paul, to whom do the Gentiles really offer their sacrifices?",
+     "options": [
+      "Demons",
+      "The emperor",
+      "Their dead ancestors",
+      "The stars of heaven"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul say the spiritual rock that followed Israel was?",
+     "options": [
+      "Christ",
+      "Moses",
+      "The law",
+      "An angel"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Therefore let him who thinks he stands ____.",
+     "answer": "be careful that he doesn't fall",
+     "wrong": [
+      "give thanks to the Lord",
+      "help the one who stumbles",
+      "not boast over others"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You can't both drink the cup of the Lord and ____.",
+     "answer": "the cup of demons",
+     "wrong": [
+      "the wine of the Gentiles",
+      "the cup of wrath",
+      "the cup of this world"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Don't grumble, as some of them also grumbled, and perished by ____.",
+     "answer": "the destroyer",
+     "wrong": [
+      "fire from heaven",
+      "the invading armies",
+      "the swallowing earth"
+     ],
+     "v": 10
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Our fathers under the cloud and through the sea",
+      "Flee from idolatry",
+      "One loaf, so we are one body",
+      "Eat whatever is sold in the butcher shop"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul tells believers to ask where meat came from before buying it at the butcher shop.",
+     "answer": false,
+     "v": 25
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says that if someone at a meal tells you food was offered to idols, you should not eat it.",
+     "answer": true,
+     "v": 28
+    }
+   ]
+  },
+  "11": {
+   "keyVerse": 26,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What problem does Paul describe when the Corinthians gather to eat?",
+     "options": [
+      "Some go hungry while others get drunk",
+      "They refuse to share the cup",
+      "They meet together too rarely",
+      "Unbelievers are leading the meal"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What must a person do before eating the bread and drinking the cup?",
+     "options": [
+      "Examine himself",
+      "Wash his hands",
+      "Confess to the elders",
+      "Fast for a day"
+     ],
+     "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to Paul, who is the head of every man?",
+     "options": [
+      "Christ",
+      "God the Father",
+      "His own father",
+      "The elders of the assembly"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul give as the reason many among them are weak and sickly?",
+     "options": [
+      "Eating and drinking in an unworthy way",
+      "Praying with their heads uncovered",
+      "Eating food sacrificed to idols",
+      "Neglecting to anoint the sick"
+     ],
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Be imitators of me, even as ____.",
+     "answer": "I also am of Christ",
+     "wrong": [
+      "Timothy is of me",
+      "you were at first",
+      "the apostles are of God"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "This cup is ____. Do this, as often as you drink, in memory of me.",
+     "answer": "the new covenant in my blood",
+     "wrong": [
+      "the cup of blessing for all",
+      "my life poured out for many",
+      "the seal of my promise"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When we are judged, we are disciplined by the Lord, that we may not ____.",
+     "answer": "be condemned with the world",
+     "wrong": [
+      "fall away from the faith",
+      "be put to shame again",
+      "be cut off forever"
+     ],
+     "v": 32
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Praise for holding firm the traditions",
+      "Head coverings when praying or prophesying",
+      "Divisions when they come together",
+      "The Lord's words on the night he was betrayed"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says he received the account of the Lord's supper from the Lord.",
+     "answer": true,
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says nature teaches that long hair is a dishonor to a woman.",
+     "answer": false,
+     "v": 15
+    }
+   ]
+  },
+  "12": {
+   "keyVerse": 27,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What picture does Paul use to show how believers with different gifts belong together?",
+     "options": [
+      "A body with many members",
+      "A vine with many branches",
+      "A building with many stones",
+      "An army with many ranks"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to Paul, why is the manifestation of the Spirit given to each one?",
+     "options": [
+      "For the profit of all",
+      "As a reward for strong faith",
+      "To show who is truly spiritual",
+      "To take the place of the apostles"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say no one can say except by the Holy Spirit?",
+     "options": [
+      "Jesus is Lord",
+      "God is faithful",
+      "Christ is risen",
+      "Abba, Father"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In Paul's list of those God has set in the assembly, what comes third?",
+     "options": [
+      "Teachers",
+      "Prophets",
+      "Miracle workers",
+      "Gifts of healings"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "When one member suffers, ____. When one member is honored, all the members rejoice with it.",
+     "answer": "all the members suffer with it",
+     "wrong": [
+      "the whole body must help it",
+      "the head must care for it",
+      "the others must pray for it"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Now there are various kinds of gifts, but ____.",
+     "answer": "the same Spirit",
+     "wrong": [
+      "one body in Christ",
+      "the same faith",
+      "one holy calling"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "No, much rather, those members of the body which ____ are necessary.",
+     "answer": "seem to be weaker",
+     "wrong": [
+      "are hidden from view",
+      "seem to be smaller",
+      "are rarely honored"
+     ],
+     "v": 22
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The word of wisdom and word of knowledge",
+      "Baptized in one Spirit into one body",
+      "The foot, the hand, the ear, and the eye",
+      "Earnestly desire the best gifts"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says every believer is given the same spiritual gift.",
+     "answer": false,
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says the eye can't tell the hand, I have no need for you.",
+     "answer": true,
+     "v": 21
+    }
+   ]
+  },
+  "13": {
+   "keyVerse": 13,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say he becomes if he speaks with languages of men and angels but has no love?",
+     "options": [
+      "Sounding brass or a clanging cymbal",
+      "An empty jar or a broken cup",
+      "A dry well or a withered tree",
+      "A shadow or a passing wind"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which of these does Paul say will be done away with or cease?",
+     "options": [
+      "Prophecies, languages, and knowledge",
+      "Faith, hope, and love",
+      "Patience, kindness, and truth",
+      "Wisdom, mercy, and grace"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What example from his own life does Paul use about putting away partial things?",
+     "options": [
+      "Growing from a child into a man",
+      "Leaving the law behind for Christ",
+      "Recovering his sight after blindness",
+      "Coming home from a long journey"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul say about giving his body to be burned without love?",
+     "options": [
+      "It profits him nothing",
+      "He is nothing at all",
+      "He becomes sounding brass",
+      "God still honors the sacrifice"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Love ____. But where there are prophecies, they will be done away with.",
+     "answer": "never fails",
+     "wrong": [
+      "always wins",
+      "remains forever",
+      "covers everything"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For now we see in a mirror, dimly, but then ____.",
+     "answer": "face to face",
+     "wrong": [
+      "with open eyes",
+      "in full light",
+      "clearly and plainly"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Love doesn't behave itself inappropriately, doesn't seek its own way, is not provoked, ____.",
+     "answer": "takes no account of evil",
+     "wrong": [
+      "is never quick to speak",
+      "does not grow weary",
+      "gives without complaint"
+     ],
+     "v": 5
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Speaking languages of men and angels without love",
+      "Love is patient and is kind",
+      "We know in part and prophesy in part",
+      "Faith, hope, and love remain"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says the greatest of faith, hope, and love is faith.",
+     "answer": false,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says love doesn't rejoice in unrighteousness, but rejoices with the truth.",
+     "answer": true,
+     "v": 6
+    }
+   ]
+  },
+  "14": {
+   "keyVerse": 40,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which gift does Paul most want them to seek because it builds up the assembly?",
+     "options": [
+      "Prophecy",
+      "Speaking in other languages",
+      "Gifts of healing",
+      "Working miracles"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What should a person who speaks in another language pray for?",
+     "options": [
+      "That he may interpret",
+      "That he may prophesy instead",
+      "That he may speak more clearly",
+      "That others will stay silent"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What might unbelievers say if the whole assembly speaks in other languages at once?",
+     "options": [
+      "That you are crazy",
+      "That God is among you",
+      "That you are very wise",
+      "That you are drunk"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Paul would rather speak how many words with understanding than ten thousand in another language?",
+     "options": [
+      "Five",
+      "Ten",
+      "Three",
+      "Seven"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For God is not a God of confusion but ____, as in all the assemblies of the saints.",
+     "answer": "of peace",
+     "wrong": [
+      "of glory",
+      "of power",
+      "of love"
+     ],
+     "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For if the trumpet gave ____, who would prepare himself for war?",
+     "answer": "an uncertain sound",
+     "wrong": [
+      "no sound at all",
+      "a quiet signal",
+      "a false alarm"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "If I pray in another language, my spirit prays, but ____.",
+     "answer": "my understanding is unfruitful",
+     "wrong": [
+      "my mind is at rest",
+      "my heart stays silent",
+      "no one else is helped"
+     ],
+     "v": 14
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Follow after love and desire to prophesy",
+      "Examples of the pipe, harp, and trumpet",
+      "Other languages are a sign",
+      "Let two or three prophets speak"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says that if there is no interpreter, the one speaking in another language should keep silent in the assembly.",
+     "answer": true,
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says other languages are a sign for believers, and prophesying is a sign for unbelievers.",
+     "answer": false,
+     "v": 22
+    }
+   ]
+  },
+  "15": {
+   "keyVerse": 57,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What were some among the Corinthians claiming, according to Paul?",
+     "options": [
+      "There is no resurrection of the dead",
+      "The Lord had already returned",
+      "Only the twelve had seen Jesus",
+      "The law of Moses must still be kept"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To whom does Paul say the risen Christ appeared first?",
+     "options": [
+      "Cephas",
+      "James",
+      "Paul",
+      "Over five hundred brothers"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What picture does Paul use to explain how the dead are raised?",
+     "options": [
+      "A seed that is sown and dies",
+      "A house rebuilt after a fire",
+      "A lamp relit in the dark",
+      "A stump that sprouts again"
+     ],
+     "v": 36
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In what city does Paul say he fought with animals?",
+     "options": [
+      "Ephesus",
+      "Corinth",
+      "Philippi",
+      "Antioch"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For as in Adam all die, so also in Christ ____.",
+     "answer": "all will be made alive",
+     "wrong": [
+      "all will be forgiven",
+      "all will reign with him",
+      "all are made righteous"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The sting of death is sin, and ____ is the law.",
+     "answer": "the power of sin",
+     "wrong": [
+      "the strength of death",
+      "the root of sin",
+      "the curse of death"
+     ],
+     "v": 56
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "We will all be changed, in a moment, ____, at the last trumpet.",
+     "answer": "in the twinkling of an eye",
+     "wrong": [
+      "in the space of a breath",
+      "in the flash of lightning",
+      "in the break of dawn"
+     ],
+     "v": 52
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Christ died, was buried, and was raised",
+      "If Christ is not raised, faith is vain",
+      "Christ, the first fruit of those asleep",
+      "How are the dead raised?"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul calls himself the least of the apostles because he persecuted the assembly of God.",
+     "answer": true,
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says Christ appeared to over five hundred brothers at once, and all of them have since died.",
+     "answer": false,
+     "v": 6
+    }
+   ]
+  },
+  "16": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What collection does Paul give instructions about?",
+     "options": [
+      "A collection for the saints",
+      "A fund to build a meeting place",
+      "Money for Paul's own travels",
+      "A gift for the poor of Corinth"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When does Paul tell each person to set money aside?",
+     "options": [
+      "On the first day of every week",
+      "At the start of every month",
+      "On every Sabbath day",
+      "Only once Paul arrives"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does Paul plan to stay at Ephesus until Pentecost?",
+     "options": [
+      "A great and effective door has opened",
+      "He is waiting for Timothy to return",
+      "He is sick and cannot travel",
+      "Winter makes sailing unsafe"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Paul rejoices at the coming of which three men?",
+     "options": [
+      "Stephanas, Fortunatus, and Achaicus",
+      "Timothy, Titus, and Apollos",
+      "Aquila, Crispus, and Gaius",
+      "Sosthenes, Tychicus, and Erastus"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Watch! ____! Be courageous! Be strong!",
+     "answer": "Stand firm in the faith",
+     "wrong": [
+      "Pray without ceasing",
+      "Keep yourselves from idols",
+      "Hold fast the traditions"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Now if Timothy comes, see that he is with you ____, for he does the work of the Lord.",
+     "answer": "without fear",
+     "wrong": [
+      "in good health",
+      "for a long while",
+      "with all honor"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You know the house of Stephanas, that it is ____ of Achaia.",
+     "answer": "the first fruits",
+     "wrong": [
+      "the oldest assembly",
+      "the chief household",
+      "the strong pillar"
+     ],
+     "v": 15
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Paul plans to pass through Macedonia",
+      "Instructions about receiving Timothy",
+      "Let all that you do be done in love",
+      "Greetings from Aquila and Priscilla"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says Apollos was eager to come to Corinth right away.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says Aquila and Priscilla have an assembly that meets in their house.",
+     "answer": true,
+     "v": 19
+    }
+   ]
+  }
+ }
+}

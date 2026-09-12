@@ -1,0 +1,12 @@
+{"book":"2JN","chapters":{
+"1":{"keyVerse":6,"questions":[
+{"t":"choice","d":1,"q":"To whom does the elder address this letter?","options":["The chosen lady and her children","Gaius the beloved","The assembly in Ephesus","The elders of the churches"],"v":1},
+{"t":"choice","d":2,"q":"How does the elder describe the many deceivers who have gone out into the world?","options":["They don't confess Jesus Christ came in the flesh","They teach that the law must be kept","They deny the resurrection of the dead","They falsely claim to be apostles"],"v":7},
+{"t":"choice","d":3,"q":"Why does the elder not want to write more with paper and ink?","options":["He hopes to come and speak face to face","He fears the letter will be intercepted","He has already sent a messenger","He is too weak to keep writing"],"v":12},
+{"t":"blank","d":1,"q":"I rejoice greatly that I have found some of your children ____.","answer":"walking in truth","wrong":["growing in grace","standing in faith","living in love"],"v":4},
+{"t":"blank","d":2,"q":"Not as though I wrote to you a new commandment, but that which we had from the beginning, ____.","answer":"that we love one another","wrong":["that we keep the faith","that we walk in light","that we honor the Father"],"v":5},
+{"t":"blank","d":3,"q":"He who remains in the teaching has ____.","answer":"both the Father and the Son","wrong":["the promise of eternal life","the Spirit of truth within","a full and lasting reward"],"v":9},
+{"t":"tf","d":2,"q":"The elder tells the lady to welcome into her house anyone who comes, even if he doesn't bring this teaching.","answer":false,"v":10},
+{"t":"tf","d":3,"q":"The letter closes with greetings from the children of the lady's chosen sister.","answer":true,"v":13}
+]}
+}}

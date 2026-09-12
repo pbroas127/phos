@@ -1,0 +1,62 @@
+{"book":"1TH","chapters":{
+"1":{"keyVerse":3,"questions":[
+{"t":"choice","d":1,"q":"Who are named with Paul at the start of the letter?","options":["Silvanus and Timothy","Barnabas and Mark","Titus and Luke","Timothy and Apollos"],"v":1},
+{"t":"choice","d":1,"q":"What had the Thessalonians turned away from in order to serve God?","options":["Idols","The law of Moses","Greek philosophy","Their family traditions"],"v":9},
+{"t":"choice","d":2,"q":"In which regions had the Thessalonians become an example to believers?","options":["Macedonia and Achaia","Judea and Samaria","Galatia and Asia","Syria and Cilicia"],"v":7},
+{"t":"choice","d":3,"q":"What does Paul say he knows about the brothers loved by God?","options":["That they are chosen","That they are strong","That they are united","That they are generous"],"v":4},
+{"t":"blank","d":2,"q":"Remembering without ceasing your work of faith and ____ and perseverance of hope.","answer":"labor of love","wrong":["fruit of peace","joy of the Spirit","zeal for truth"],"v":3},
+{"t":"blank","d":2,"q":"To wait for his Son from heaven: Jesus, who delivers us from ____.","answer":"the wrath to come","wrong":["the power of darkness","the hour of trial","the curse of the law"],"v":10},
+{"t":"blank","d":3,"q":"In every place your faith toward God has gone out, so that ____.","answer":"we need not say anything","wrong":["all may glorify God","many have turned to God","our labor is not vain"],"v":8},
+{"t":"order","d":2,"items":["Thanks and prayers for all of them","The Good News came in power and the Spirit","They became an example in Macedonia and Achaia","They turned to God from idols"],"v":2},
+{"t":"tf","d":1,"q":"Paul says the Thessalonians became imitators of him and of the Lord.","answer":true,"v":6},
+{"t":"tf","d":3,"q":"Paul says the Thessalonians received the word in a season of peace and quiet.","answer":false,"v":6}
+]},
+"2":{"keyVerse":7,"questions":[
+{"t":"choice","d":1,"q":"Where had Paul and his companions been shamefully treated before coming to Thessalonica?","options":["Philippi","Athens","Corinth","Jerusalem"],"v":2},
+{"t":"choice","d":2,"q":"Why did Paul and his companions work night and day while preaching?","options":["So they would not burden anyone","To pay for their next journey","To give money to the poor","Because they were forbidden to preach"],"v":9},
+{"t":"choice","d":2,"q":"Who does Paul say hindered him from coming back to them?","options":["Satan","The Jews of Judea","The city rulers","His own sickness"],"v":18},
+{"t":"choice","d":3,"q":"What does Paul call the Thessalonians before the Lord Jesus at his coming?","options":["His hope, joy, and crown of rejoicing","His letter written on hearts","His workmanship in the Lord","His firstfruits in Macedonia"],"v":19},
+{"t":"blank","d":1,"q":"We were gentle among you, like ____ cherishes her own children.","answer":"a nursing mother","wrong":["a loving grandmother","a caring older sister","a devoted widow"],"v":7},
+{"t":"blank","d":2,"q":"You accepted it not as the word of men, but as it is in truth, ____.","answer":"God's word","wrong":["the word of life","a message from heaven","the law of Christ"],"v":13},
+{"t":"blank","d":3,"q":"Neither were we at any time found using ____, nor a cloak of covetousness.","answer":"words of flattery","wrong":["words of anger","empty philosophy","clever arguments"],"v":5},
+{"t":"order","d":3,"items":["Bold to speak despite much conflict","Not seeking glory from men","Behaving holy and blamelessly toward believers","Longing to see their faces again"],"v":2},
+{"t":"tf","d":1,"q":"Paul says he insisted on his authority as an apostle while he was with them.","answer":false,"v":6},
+{"t":"tf","d":2,"q":"Paul says the Thessalonians suffered from their own countrymen, as the churches in Judea did.","answer":true,"v":14}
+]},
+"3":{"keyVerse":12,"questions":[
+{"t":"choice","d":1,"q":"Whom did Paul send to establish and comfort the Thessalonians?","options":["Timothy","Silvanus","Titus","Epaphras"],"v":2},
+{"t":"choice","d":2,"q":"Where did Paul decide to be left behind alone?","options":["Athens","Philippi","Corinth","Berea"],"v":1},
+{"t":"choice","d":2,"q":"What did Paul fear might have happened to them?","options":["The tempter had tempted them","False teachers had deceived them","They had been driven from the city","They had forgotten his teaching"],"v":5},
+{"t":"choice","d":3,"q":"According to the report Paul received, what did they always have of him?","options":["Good memories","Great respect","His letters","Constant prayers"],"v":6},
+{"t":"blank","d":1,"q":"For now we live, if you ____.","answer":"stand fast in the Lord","wrong":["grow in grace daily","remember our teaching","love one another well"],"v":8},
+{"t":"blank","d":2,"q":"At the coming of our Lord Jesus ____.","answer":"with all his saints","wrong":["with his mighty angels","in the clouds of glory","on the last day"],"v":13},
+{"t":"blank","d":3,"q":"Praying exceedingly that we may see your face and may perfect that which is ____.","answer":"lacking in your faith","wrong":["missing from your love","weak in your hope","unfinished in your works"],"v":10},
+{"t":"order","d":3,"items":["Thanksgiving for all the joy over them","Praying night and day to see them","Asking God to direct their way there","Asking that they abound in love"],"v":9},
+{"t":"tf","d":1,"q":"Paul says he was comforted in his distress through the Thessalonians' faith.","answer":true,"v":7},
+{"t":"tf","d":2,"q":"Paul says he told them beforehand that believers would be spared from affliction.","answer":false,"v":4}
+]},
+"4":{"keyVerse":14,"questions":[
+{"t":"choice","d":1,"q":"What does Paul say is the will of God for them in this chapter?","options":["Their sanctification","Their prosperity","Their baptism","Their freedom from the law"],"v":3},
+{"t":"choice","d":2,"q":"Why does Paul say there is no need to write them about brotherly love?","options":["They are taught by God to love","Timothy already taught them","The Spirit will remind them","They read it in the scriptures"],"v":9},
+{"t":"choice","d":2,"q":"Who will rise first when the Lord descends from heaven?","options":["The dead in Christ","Those who are alive","The apostles and prophets","The angels of heaven"],"v":16},
+{"t":"choice","d":3,"q":"What sounds accompany the Lord's descent from heaven?","options":["A shout, the archangel's voice, God's trumpet","Thunder, a shout, and seven trumpets","A trumpet, singing, and loud thunder","The archangel's voice, harps, and a trumpet"],"v":16},
+{"t":"blank","d":1,"q":"So that you don't grieve like the rest, ____.","answer":"who have no hope","wrong":["who do not believe","who live in darkness","who fear the grave"],"v":13},
+{"t":"blank","d":2,"q":"Make it your ambition to lead a quiet life, and to do your own business, and ____.","answer":"to work with your own hands","wrong":["to pray without ceasing","to honor those over you","to give to the poor"],"v":11},
+{"t":"blank","d":3,"q":"Then we who are alive will be caught up together with them ____ to meet the Lord in the air.","answer":"in the clouds","wrong":["in a moment","in great glory","into the heavens"],"v":17},
+{"t":"order","d":3,"items":["Please God and abound more and more","Control your body in holiness and honor","Don't wrong a brother in this matter","Walk properly toward those outside"],"v":1},
+{"t":"tf","d":1,"q":"Paul says those alive at the Lord's coming will not go ahead of those who have died.","answer":true,"v":15},
+{"t":"tf","d":2,"q":"Paul says whoever rejects this teaching on holiness rejects man, not God.","answer":false,"v":8}
+]},
+"5":{"keyVerse":18,"questions":[
+{"t":"choice","d":1,"q":"How does Paul say the day of the Lord comes?","options":["Like a thief in the night","Like lightning from the east","Like a flood over the earth","Like the dawn after night"],"v":2},
+{"t":"choice","d":2,"q":"What will people be saying when sudden destruction comes on them?","options":["Peace and safety","The Lord delays his coming","Let us eat and drink","All is well with us"],"v":3},
+{"t":"choice","d":2,"q":"What does Paul describe as the believer's helmet?","options":["The hope of salvation","The word of God","Faith and love","The peace of God"],"v":8},
+{"t":"choice","d":3,"q":"What does Paul tell them to do for the faint hearted?","options":["Encourage them","Admonish them","Warn them","Correct them"],"v":14},
+{"t":"blank","d":1,"q":"You are all children of light and ____.","answer":"children of the day","wrong":["heirs of the promise","children of the Kingdom","servants of the Lord"],"v":5},
+{"t":"blank","d":2,"q":"Test all things, and ____.","answer":"hold firmly that which is good","wrong":["reject whatever is false","keep yourselves from idols","walk in the light"],"v":21},
+{"t":"blank","d":3,"q":"May your whole ____ be preserved blameless at the coming of our Lord Jesus Christ.","answer":"spirit, soul, and body","wrong":["heart, mind, and strength","life, faith, and love","mind, will, and heart"],"v":23},
+{"t":"order","d":2,"items":["Always rejoice","Pray without ceasing","In everything give thanks","Don't quench the Spirit"],"v":16},
+{"t":"tf","d":1,"q":"Paul tells them they need detailed teaching about the times and the seasons.","answer":false,"v":1},
+{"t":"tf","d":3,"q":"Paul solemnly commands that this letter be read to all the holy brothers.","answer":true,"v":27}
+]}
+}}

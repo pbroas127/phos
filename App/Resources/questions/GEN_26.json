@@ -1,0 +1,2855 @@
+{
+ "book": "GEN",
+ "chapters": {
+  "26": {
+   "keyVerse": 24,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Isaac go when there was a famine in the land?",
+     "options": [
+      "To Gerar, to Abimelech king of the Philistines",
+      "To Egypt, to Pharaoh",
+      "To Haran, to Laban",
+      "To Hebron, to the Hittites"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Isaac told the men of Gerar that Rebekah was his sister.",
+     "answer": true,
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The LORD said to Isaac, \"Don't be afraid, for ____, and will bless you.\"",
+     "answer": "I am with you",
+     "wrong": [
+      "I have heard you",
+      "I will protect you",
+      "I have chosen you"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Abimelech find out that Rebekah was Isaac's wife?",
+     "options": [
+      "He saw Isaac caressing her from a window",
+      "God warned him in a dream",
+      "One of his servants told him",
+      "Rebekah confessed it to him"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Isaac sowed in that land, and reaped in the same year ____ what he planted.",
+     "answer": "one hundred times",
+     "wrong": [
+      "seven times",
+      "ten times",
+      "thirty times"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Abimelech tell Isaac to go away from them?",
+     "options": [
+      "Isaac had become much mightier than they were",
+      "Isaac had lied about his wife",
+      "The famine in Gerar had ended",
+      "Isaac's herdsmen had taken their wells"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Abimelech came to Isaac at Beersheba alone to ask for peace.",
+     "answer": false,
+     "v": 26
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Herdsmen quarrel over the well named Esek",
+      "They quarrel over the well named Sitnah",
+      "No one quarrels over the well named Rehoboth",
+      "The LORD appears to Isaac at Beersheba"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Isaac said, \"For now the LORD has ____, and we will be fruitful in the land.\"",
+     "answer": "made room for us",
+     "wrong": [
+      "given us rest",
+      "fought for us",
+      "opened the wells"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What news did Isaac's servants bring the same day he made the oath with Abimelech?",
+     "options": [
+      "They had found water in the well they dug",
+      "Esau had married two Hittite women",
+      "The Philistines had filled in the wells again",
+      "Abimelech's army was coming back"
+     ],
+     "v": 32
+    }
+   ]
+  },
+  "27": {
+   "keyVerse": 22,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Isaac ask Esau to bring him before he blessed him?",
+     "options": [
+      "Savory food made from venison",
+      "Bread and new wine",
+      "A young goat from the flock",
+      "Grain from the field"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Isaac said, \"The voice is Jacob's voice, but the hands are ____.\"",
+     "answer": "the hands of Esau",
+     "wrong": [
+      "the hands of a hunter",
+      "the hands of my firstborn",
+      "the hands of a stranger"
+     ],
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Esau came back from hunting before Isaac had finished blessing Jacob.",
+     "answer": false,
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When Isaac asked how he found the venison so quickly, what did Jacob answer?",
+     "options": [
+      "The LORD your God gave me success",
+      "Esau helped me with the hunt",
+      "The animals were close to the tents",
+      "My mother had it ready for me"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Rebekah tell Jacob to flee to escape Esau?",
+     "options": [
+      "To her brother Laban in Haran",
+      "To Ishmael in the wilderness",
+      "To Abimelech in Gerar",
+      "To the land of Egypt"
+     ],
+     "v": 43
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Esau said in his heart, \"The days of mourning for my father are at hand. Then ____.\"",
+     "answer": "I will kill my brother Jacob",
+     "wrong": [
+      "I will take back my blessing",
+      "I will leave this land forever",
+      "I will go to Ishmael"
+     ],
+     "v": 41
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Isaac sends Esau out to hunt venison",
+      "Rebekah dresses Jacob in Esau's clothes",
+      "Isaac blesses Jacob",
+      "Esau returns and cries bitterly"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Rebekah tell Isaac made her weary of her life?",
+     "options": [
+      "The daughters of Heth",
+      "Esau's anger toward Jacob",
+      "Isaac's failing eyesight",
+      "The famine in the land"
+     ],
+     "v": 46
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Esau said, \"Isn't he rightly named Jacob? For he has supplanted me ____.\"",
+     "answer": "these two times",
+     "wrong": [
+      "since we were born",
+      "in front of my father",
+      "for the last time"
+     ],
+     "v": 36
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jacob worried that if his father touched him, he would bring a curse on himself instead of a blessing.",
+     "answer": true,
+     "v": 12
+    }
+   ]
+  },
+  "28": {
+   "keyVerse": 16,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jacob see in his dream?",
+     "options": [
+      "A stairway to heaven with angels going up and down",
+      "A burning bush that was not consumed",
+      "The stars of the sky bowing to him",
+      "A great river flowing out of heaven"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Isaac send Jacob to Paddan Aram?",
+     "options": [
+      "To take a wife from Laban's daughters",
+      "To escape the famine in Canaan",
+      "To buy grain for the household",
+      "To bring Laban back to Canaan"
+     ],
+     "v": 2
+    },
+    {
+     "t": "order",
+     "d": 1,
+     "items": [
+      "Jacob lies down with a stone under his head",
+      "He dreams of a stairway reaching to heaven",
+      "He sets up the stone as a pillar",
+      "He makes a vow to God"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jacob awoke and said, \"Surely the LORD is in this place, and ____.\"",
+     "answer": "I didn't know it",
+     "wrong": [
+      "I am afraid",
+      "I will worship him",
+      "he has heard me"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jacob said, \"This is none other than God's house, and this is ____.\"",
+     "answer": "the gate of heaven",
+     "wrong": [
+      "the place of rest",
+      "the holy mountain",
+      "the city of God"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jacob vowed, \"Of all that you will give me I will surely give ____ to you.\"",
+     "answer": "a tenth",
+     "wrong": [
+      "the firstborn",
+      "half of it",
+      "a seventh"
+     ],
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "In the dream, the LORD said Jacob's offspring would be as the stars of the sky.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "After seeing that Canaanite women displeased Isaac, Esau married a daughter of whom?",
+     "options": [
+      "Ishmael",
+      "Laban",
+      "Beeri the Hittite",
+      "Abimelech"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Jacob named the place Bethel. What was the city called at first?",
+     "options": [
+      "Luz",
+      "Salem",
+      "Mamre",
+      "Shechem"
+     ],
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jacob poured oil on the top of the stone he set up.",
+     "answer": true,
+     "v": 18
+    }
+   ]
+  },
+  "29": {
+   "keyVerse": 20,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How many years did Jacob first agree to serve Laban for Rachel?",
+     "options": [
+      "Seven",
+      "Three",
+      "Ten",
+      "Fourteen"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom did Laban bring to Jacob on the wedding night instead of Rachel?",
+     "options": [
+      "Leah",
+      "Zilpah",
+      "Bilhah",
+      "Mahalath"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When Jacob met Rachel, he kissed her and wept.",
+     "answer": true,
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What reason did Laban give for giving Leah first?",
+     "options": [
+      "The younger is not given before the firstborn",
+      "Rachel was too young to marry",
+      "Leah had asked to marry Jacob",
+      "Jacob had not finished his service"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jacob do when he saw Rachel coming with her father's sheep?",
+     "options": [
+      "Rolled the stone away and watered her flock",
+      "Asked her for a drink of water",
+      "Helped her carry water home",
+      "Ran ahead to find Laban"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jacob's years of service seemed to him but ____, for the love he had for her.",
+     "answer": "a few days",
+     "wrong": [
+      "a single year",
+      "a short season",
+      "one passing month"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Leah said, \"This time I will ____.\" Therefore she named him Judah.",
+     "answer": "praise the LORD",
+     "wrong": [
+      "rest from bearing",
+      "be loved by him",
+      "thank my God"
+     ],
+     "v": 35
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Leah's eyes were weak, but Rachel was ____.",
+     "answer": "beautiful in form and attractive",
+     "wrong": [
+      "kind and gentle in spirit",
+      "young and strong in body",
+      "wise and loved by all"
+     ],
+     "v": 17
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Reuben is born to Leah",
+      "Simeon is born to Leah",
+      "Levi is born to Leah",
+      "Judah is born to Leah"
+     ],
+     "v": 32
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jacob stayed with Laban for a full year before Laban asked about his wages.",
+     "answer": false,
+     "v": 14
+    }
+   ]
+  },
+  "30": {
+   "keyVerse": 22,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was the name of the first son Rachel herself bore?",
+     "options": [
+      "Joseph",
+      "Benjamin",
+      "Dan",
+      "Naphtali"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Rachel said to Jacob, \"Give me children, ____.\"",
+     "answer": "or else I will die",
+     "wrong": [
+      "or I will leave you",
+      "as you gave Leah",
+      "before I grow old"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After six sons, Leah bore a daughter named Dinah.",
+     "answer": true,
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Leah receive from Rachel in exchange for her son's mandrakes?",
+     "options": [
+      "Jacob would sleep with Leah that night",
+      "Rachel's servant Bilhah",
+      "A share of Jacob's flock",
+      "Rachel's place as the loved wife"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Laban want Jacob to stay with him?",
+     "options": [
+      "He learned the LORD blessed him for Jacob's sake",
+      "He feared Esau would find Jacob",
+      "Jacob still owed him seven years",
+      "He wanted Jacob to marry again"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jacob ask for as his wages?",
+     "options": [
+      "Every speckled, spotted, and black animal",
+      "Half of Laban's flock",
+      "The firstborn of every ewe",
+      "Camels and donkeys from the herd"
+     ],
+     "v": 32
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Rachel gives her servant Bilhah to Jacob",
+      "Leah gives her servant Zilpah to Jacob",
+      "Rachel asks Leah for Reuben's mandrakes",
+      "Rachel finally bears a son"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jacob said, \"Am I in God's place, who has withheld from you ____?\"",
+     "answer": "the fruit of the womb",
+     "wrong": [
+      "the joy of children",
+      "a son of your own",
+      "the blessing of sons"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When her son was born, Rachel said, \"God has taken away ____.\"",
+     "answer": "my reproach",
+     "wrong": [
+      "my sorrow",
+      "my affliction",
+      "my barrenness"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jacob set the peeled rods before the feeble animals so their young would be his.",
+     "answer": false,
+     "v": 42
+    }
+   ]
+  },
+  "31": {
+   "keyVerse": 49,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Rachel hide her father's teraphim when Laban searched her tent?",
+     "options": [
+      "In the camel's saddle, and she sat on them",
+      "Under the floor of her tent",
+      "Among Leah's belongings",
+      "Buried under an oak tree"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The LORD said to Jacob, \"Return to the land of your fathers, and to your relatives, and ____.\"",
+     "answer": "I will be with you",
+     "wrong": [
+      "I will give you rest",
+      "you will be blessed",
+      "I will bring you home"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Rachel and Leah refused to leave their father's house with Jacob.",
+     "answer": false,
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many times did Jacob say Laban had changed his wages?",
+     "options": [
+      "Ten times",
+      "Seven times",
+      "Three times",
+      "Twenty times"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did God warn Laban in a dream before he caught up with Jacob?",
+     "options": [
+      "Not to speak to Jacob either good or bad",
+      "To let his daughters go in peace",
+      "To pay Jacob the wages he owed",
+      "To return home without chasing Jacob"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jacob said to Laban, \"I served you ____ for your two daughters, and six years for your flock.\"",
+     "answer": "fourteen years",
+     "wrong": [
+      "seven years",
+      "twelve years",
+      "ten years"
+     ],
+     "v": 41
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jacob flees toward the mountain of Gilead",
+      "Laban overtakes Jacob after seven days",
+      "Laban searches the tents for his gods",
+      "Jacob and Laban make a covenant"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was Laban away doing when Rachel stole the teraphim?",
+     "options": [
+      "Shearing his sheep",
+      "Hunting in the field",
+      "Feasting with his relatives",
+      "Buying land in Haran"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Laban said, \"The LORD watch between me and you, when we are ____.\"",
+     "answer": "absent one from another",
+     "wrong": [
+      "far from each other",
+      "apart in distant lands",
+      "gone from this place"
+     ],
+     "v": 49
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jacob told Laban that the drought consumed him by day and the frost by night.",
+     "answer": true,
+     "v": 40
+    }
+   ]
+  },
+  "32": {
+   "keyVerse": 28,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How many men did the messengers say were coming with Esau?",
+     "options": [
+      "Four hundred",
+      "Two hundred",
+      "One thousand",
+      "Forty"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jacob said to the man, \"I won't let you go ____.\"",
+     "answer": "unless you bless me",
+     "wrong": [
+      "until you tell me your name",
+      "until the sun rises",
+      "before you forgive me"
+     ],
+     "v": 26
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jacob limped because the man had touched the hollow of his thigh.",
+     "answer": true,
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the man say Jacob's name would now be Israel?",
+     "options": [
+      "He had fought with God and with men and prevailed",
+      "He would be the father of twelve sons",
+      "He had seen the angels of God",
+      "He had kept his vow at Bethel"
+     ],
+     "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What were Jacob's servants told to say when Esau asked whose animals these were?",
+     "options": [
+      "They are a present from your servant Jacob",
+      "They belong to Laban the Syrian",
+      "They are for trade in the land of Seir",
+      "They are payment for the birthright"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jacob named the place Peniel, saying, \"I have seen God ____, and my life is preserved.\"",
+     "answer": "face to face",
+     "wrong": [
+      "in the night",
+      "with my own eyes",
+      "in this place"
+     ],
+     "v": 30
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jacob sends messengers ahead to Esau",
+      "Jacob divides his camp into two companies",
+      "Jacob prays to be delivered from Esau",
+      "Jacob wrestles with a man until daybreak"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which ford did Jacob send his wives and sons across that night?",
+     "options": [
+      "The ford of the Jabbok",
+      "The ford of the Jordan",
+      "The ford of the Euphrates",
+      "The ford of Gilead"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jacob prayed, \"With just ____ I crossed over this Jordan; and now I have become two companies.\"",
+     "answer": "my staff",
+     "wrong": [
+      "my two hands",
+      "one servant",
+      "my cloak"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The man told Jacob his own name before he blessed him.",
+     "answer": false,
+     "v": 29
+    }
+   ]
+  },
+  "33": {
+   "keyVerse": 4,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did Esau greet Jacob when they met?",
+     "options": [
+      "He ran, embraced and kissed him, and they wept",
+      "He bowed to Jacob seven times",
+      "He took the gifts without a word",
+      "He had his men surround Jacob's camp"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jacob bowed himself to the ground seven times as he came near to Esau.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Esau took Jacob's gift as soon as it was offered.",
+     "answer": false,
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Jacob place Rachel and Joseph as Esau approached?",
+     "options": [
+      "At the rear",
+      "In front of everyone",
+      "Beside Jacob himself",
+      "With the servants' children"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Esau offer to leave with Jacob before returning to Seir?",
+     "options": [
+      "Some of the people who were with him",
+      "Half of his own flocks",
+      "The gifts Jacob had sent",
+      "A tent for Rachel and Joseph"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jacob said to Esau, \"I have seen your face, as one sees ____, and you were pleased with me.\"",
+     "answer": "the face of God",
+     "wrong": [
+      "the face of an angel",
+      "a king on his throne",
+      "the light of morning"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jacob said he would lead on gently, according to the pace of the livestock and according to ____.",
+     "answer": "the pace of the children",
+     "wrong": [
+      "the strength of my wives",
+      "the word of my lord",
+      "the way of the land"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Jacob call the altar he built near Shechem?",
+     "options": [
+      "El Elohe Israel",
+      "El Beth El",
+      "Peniel",
+      "Mahanaim"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jacob bought the ground where he spread his tent for ____.",
+     "answer": "one hundred pieces of money",
+     "wrong": [
+      "twenty pieces of silver",
+      "four hundred shekels of silver",
+      "fifty pieces of gold"
+     ],
+     "v": 19
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Esau offers to travel ahead of Jacob",
+      "Esau returns on his way to Seir",
+      "Jacob builds shelters for his livestock",
+      "Jacob buys land near the city of Shechem"
+     ],
+     "v": 12
+    }
+   ]
+  },
+  "34": {
+   "keyVerse": 31,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which two of Jacob's sons killed the men of Shechem's city?",
+     "options": [
+      "Simeon and Levi",
+      "Reuben and Judah",
+      "Dan and Gad",
+      "Judah and Levi"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What condition did Jacob's sons set before giving their sister?",
+     "options": [
+      "Every male must be circumcised",
+      "A great dowry must be paid",
+      "Shechem must leave the land",
+      "Hamor must give them his city"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jacob was pleased with what his sons did to the city.",
+     "answer": false,
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When did the attack on the city happen?",
+     "options": [
+      "On the third day, while the men were sore",
+      "The same night they were circumcised",
+      "Seven days after the agreement",
+      "At the wedding feast for Dinah"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Shechem said, \"Ask me a great amount for ____, and I will give whatever you ask of me.\"",
+     "answer": "a dowry",
+     "wrong": [
+      "your sister",
+      "a peace offering",
+      "her freedom"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Her brothers answered Jacob, \"Should he deal with our sister ____?\"",
+     "answer": "as with a prostitute",
+     "wrong": [
+      "as with a servant",
+      "as with a foreigner",
+      "as if she were nothing"
+     ],
+     "v": 31
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Shechem asks Hamor to get Dinah for him",
+      "Hamor goes out to talk with Jacob",
+      "Hamor and Shechem speak at the city gate",
+      "Jacob's sons plunder the city"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Hamor tell the men of his city they would gain?",
+     "options": [
+      "Jacob's livestock and possessions would be theirs",
+      "Jacob's sons would defend their city",
+      "Jacob would pay them a yearly tribute",
+      "Their sons would marry into Abraham's blessing"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jacob said, \"I am ____. They will gather themselves together against me and strike me.\"",
+     "answer": "few in number",
+     "wrong": [
+      "old and weak",
+      "a stranger here",
+      "far from home"
+     ],
+     "v": 30
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When Jacob heard that Dinah had been defiled, he kept silent until his sons came in from the field.",
+     "answer": true,
+     "v": 5
+    }
+   ]
+  },
+  "35": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did God tell Jacob to go, live, and make an altar?",
+     "options": [
+      "Bethel",
+      "Hebron",
+      "Shechem",
+      "Beersheba"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "God said to Jacob, \"Your name shall not be Jacob any more, but ____.\"",
+     "answer": "your name will be Israel",
+     "wrong": [
+      "you will be my servant",
+      "your name will be Peniel",
+      "you will be called blessed"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Isaac lived one hundred eighty years, and Esau and Jacob buried him.",
+     "answer": true,
+     "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where was Rachel buried?",
+     "options": [
+      "On the way to Ephrath, which is Bethlehem",
+      "In the cave at Machpelah",
+      "Under the oak below Bethel",
+      "At Hebron beside Abraham"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jacob tell his household to do before going up to Bethel?",
+     "options": [
+      "Put away foreign gods, purify themselves, change garments",
+      "Sacrifice a lamb and pour out oil",
+      "Fast and pray for three days",
+      "Circumcise every male among them"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "As she was dying, Rachel named her son Benoni, but ____.",
+     "answer": "his father named him Benjamin",
+     "wrong": [
+      "the midwife called him Dan",
+      "his father named him Judah",
+      "Jacob named him Ephraim"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "As Jacob traveled, the cities around him pursued his sons.",
+     "answer": false,
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which son lay with Bilhah, his father's concubine?",
+     "options": [
+      "Reuben",
+      "Simeon",
+      "Judah",
+      "Levi"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "God said, \"A nation and a company of nations will be from you, and kings will ____.\"",
+     "answer": "come out of your body",
+     "wrong": [
+      "rule over your brothers",
+      "bow down before you",
+      "be born in this land"
+     ],
+     "v": 11
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Jacob builds an altar at El Beth El",
+      "Deborah, Rebekah's nurse, dies near Bethel",
+      "Rachel dies giving birth on the road",
+      "Jacob comes to Isaac at Mamre"
+     ],
+     "v": 7
+    }
+   ]
+  },
+  "36": {
+   "keyVerse": 8,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Esau move his household away from Jacob?",
+     "options": [
+      "Their possessions were too great to live together",
+      "Esau still hated Jacob for the blessing",
+      "A famine struck the land of Canaan",
+      "God told Esau to leave Canaan"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Esau settle?",
+     "options": [
+      "The hill country of Seir",
+      "The land of Goshen",
+      "The plains of Moab",
+      "Paddan Aram"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Esau took his wives, his sons, and all his possessions, and went into a land away from ____.",
+     "answer": "his brother Jacob",
+     "wrong": [
+      "his father Isaac",
+      "the daughters of Canaan",
+      "the land of Egypt"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whose daughter was Esau's wife Basemath?",
+     "options": [
+      "Ishmael's",
+      "Elon the Hittite's",
+      "Laban's",
+      "Anah's"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "These are the kings who reigned in the land of Edom, before any king reigned over ____.",
+     "answer": "the children of Israel",
+     "wrong": [
+      "the land of Canaan",
+      "the sons of Seir",
+      "the Philistines"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "This is Esau, ____.",
+     "answer": "the father of the Edomites",
+     "wrong": [
+      "the firstborn of Isaac",
+      "the king of Seir",
+      "the chief of the Horites"
+     ],
+     "v": 43
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Esau moved his family to Seir but left his livestock behind with Jacob.",
+     "answer": false,
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Anah find while feeding his father's donkeys?",
+     "options": [
+      "Hot springs in the wilderness",
+      "A well of flowing water",
+      "A lost flock of sheep",
+      "A cave in the hills"
+     ],
+     "v": 24
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Esau takes wives from the daughters of Canaan",
+      "Esau's sons are born in Canaan",
+      "Esau's household leaves the land of Canaan",
+      "Kings reign in the land of Edom"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Amalek was born to Timna, the concubine of Eliphaz.",
+     "answer": true,
+     "v": 12
+    }
+   ]
+  },
+  "37": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In Joseph's second dream, what bowed down to him?",
+     "options": [
+      "The sun, the moon, and eleven stars",
+      "Eleven sheaves of grain",
+      "Twelve stars of the sky",
+      "His brothers' flocks and herds"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They sold Joseph to the Ishmaelites for ____.",
+     "answer": "twenty pieces of silver",
+     "wrong": [
+      "thirty pieces of silver",
+      "ten shekels of gold",
+      "fifty pieces of silver"
+     ],
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The brothers told Jacob that they had sold Joseph to traders.",
+     "answer": false,
+     "v": 32
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How old was Joseph when he fed the flock with his brothers?",
+     "options": [
+      "Seventeen",
+      "Twelve",
+      "Twenty",
+      "Fifteen"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which brother suggested selling Joseph instead of killing him?",
+     "options": [
+      "Judah",
+      "Reuben",
+      "Simeon",
+      "Levi"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Israel loved Joseph more than all his children, because he was ____.",
+     "answer": "the son of his old age",
+     "wrong": [
+      "the strongest of his sons",
+      "a dreamer of dreams",
+      "the most obedient son"
+     ],
+     "v": 3
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Joseph dreams that sheaves bow to his sheaf",
+      "Jacob sends Joseph to check on his brothers",
+      "The brothers throw Joseph into an empty pit",
+      "Jacob recognizes Joseph's bloodied tunic"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did Joseph finally find his brothers?",
+     "options": [
+      "Dothan",
+      "Shechem",
+      "Hebron",
+      "Gilead"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When Joseph was gone from the pit, Reuben said, \"The child is no more; and I, ____?\"",
+     "answer": "where will I go",
+     "wrong": [
+      "what will I say",
+      "how will I face father",
+      "what have we done"
+     ],
+     "v": 30
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Reuben planned to rescue Joseph from the pit and bring him back to their father.",
+     "answer": true,
+     "v": 22
+    }
+   ]
+  },
+  "38": {
+   "keyVerse": 26,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Tamar ask Judah to give her as a pledge?",
+     "options": [
+      "His signet, his cord, and his staff",
+      "A young goat from his flock",
+      "His sandals and his cloak",
+      "Silver coins and a ring"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Judah said, \"She is ____ than I, because I didn't give her to Shelah, my son.\"",
+     "answer": "more righteous",
+     "wrong": [
+      "more faithful",
+      "more innocent",
+      "much wiser"
+     ],
+     "v": 26
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Judah recognized Tamar when he met her by the road.",
+     "answer": false,
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Judah tell Tamar to remain a widow in her father's house?",
+     "options": [
+      "He feared Shelah would die like his brothers",
+      "Tamar had been unfaithful to Er",
+      "Shelah was already married",
+      "Tamar asked to go home"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When told Tamar was with child, what did Judah first order?",
+     "options": [
+      "That she be brought out and burned",
+      "That she be sent away from the land",
+      "That she be stoned at the gate",
+      "That she be given to Shelah"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the midwife tie on the hand of the first twin?",
+     "options": [
+      "A scarlet thread",
+      "A leather cord",
+      "A silver ring",
+      "A strip of linen"
+     ],
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Judah's friend Hirah could not find the woman to get back the pledge.",
+     "answer": true,
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Tamar sat in the gate of Enaim, for she saw that ____, and she wasn't given to him as a wife.",
+     "answer": "Shelah was grown up",
+     "wrong": [
+      "Judah had forgotten her",
+      "her mourning was over",
+      "Onan had refused her"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When the second twin came out first, the midwife said, \"Why have you made ____ for yourself?\"",
+     "answer": "a breach",
+     "wrong": [
+      "a name",
+      "such haste",
+      "a way"
+     ],
+     "v": 29
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Er, Judah's firstborn, dies",
+      "The LORD kills Onan as well",
+      "Tamar sits by the road to Timnah",
+      "Judah sends a young goat by his friend"
+     ],
+     "v": 7
+    }
+   ]
+  },
+  "39": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who bought Joseph when he was brought down to Egypt?",
+     "options": [
+      "Potiphar, an officer of Pharaoh",
+      "Pharaoh's chief baker",
+      "A priest of On",
+      "The keeper of the prison"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Joseph leave in the hand of his master's wife?",
+     "options": [
+      "His garment",
+      "His signet ring",
+      "His staff",
+      "The keys of the house"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The keeper of the prison put all the prisoners in Joseph's hand.",
+     "answer": true,
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Joseph said, \"How then can I do this great wickedness, and ____?\"",
+     "answer": "sin against God",
+     "wrong": [
+      "betray my master",
+      "dishonor your husband",
+      "break his trust"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the LORD bless the Egyptian's house?",
+     "options": [
+      "For Joseph's sake",
+      "Because Potiphar feared God",
+      "Because Pharaoh favored Potiphar",
+      "Because Joseph offered sacrifices"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "His master's wife said, \"He has brought ____ in to us to mock us.\"",
+     "answer": "a Hebrew",
+     "wrong": [
+      "a foreign slave",
+      "a stranger",
+      "a Canaanite"
+     ],
+     "v": 14
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Potiphar makes Joseph overseer of his house",
+      "Joseph refuses his master's wife day after day",
+      "Potiphar hears his wife's story and grows angry",
+      "Joseph gains favor in the prison"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Besides Joseph's work, what was the only thing Potiphar concerned himself with?",
+     "options": [
+      "The food which he ate",
+      "His wife's household",
+      "Pharaoh's business",
+      "The work in his fields"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The LORD was with Joseph in prison, and that which he did, ____.",
+     "answer": "the LORD made it prosper",
+     "wrong": [
+      "the keeper approved of it",
+      "Pharaoh heard about it",
+      "it brought him honor"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Potiphar's wife told the men of her house that Joseph had cried out for help.",
+     "answer": false,
+     "v": 14
+    }
+   ]
+  },
+  "40": {
+   "keyVerse": 8,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which two officers of Pharaoh were put in prison with Joseph?",
+     "options": [
+      "The chief cup bearer and the chief baker",
+      "The chief baker and the captain of the guard",
+      "The cup bearer and the keeper of the prison",
+      "Two of Pharaoh's magicians"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Joseph ask the cup bearer to do once he was restored?",
+     "options": [
+      "Mention Joseph to Pharaoh and get him out",
+      "Send word to his father in Canaan",
+      "Bring him food from Pharaoh's table",
+      "Pay the keeper for his release"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chief cup bearer remembered Joseph as soon as he was restored.",
+     "answer": false,
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why were the cup bearer and the baker put in prison?",
+     "options": [
+      "They offended their lord, the king of Egypt",
+      "They stole from Pharaoh's table",
+      "They plotted against Potiphar",
+      "They failed to interpret a dream"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "On what day did Pharaoh restore the cup bearer and hang the baker?",
+     "options": [
+      "Pharaoh's birthday",
+      "The first day of harvest",
+      "The day of the new moon",
+      "Seven days after the dreams"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Joseph said to them, \"Don't ____? Please tell it to me.\"",
+     "answer": "interpretations belong to God",
+     "wrong": [
+      "dreams come from the LORD",
+      "wise men know such things",
+      "the heavens reveal secrets"
+     ],
+     "v": 8
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Joseph sees the two officers looking sad",
+      "The cup bearer tells his dream of a vine",
+      "The baker tells his dream of baskets",
+      "The chief baker is hanged"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The baker said, \"In the uppermost basket there were baked foods for Pharaoh, and ____ out of the basket.\"",
+     "answer": "the birds ate them",
+     "wrong": [
+      "the servants took them",
+      "the wind scattered them",
+      "the bread spilled"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Joseph said, \"Here also I have done nothing that they should ____.\"",
+     "answer": "put me into the dungeon",
+     "wrong": [
+      "call me a criminal",
+      "sell me as a slave",
+      "hang me on a tree"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The chief baker told his dream only after he saw the cup bearer's interpretation was good.",
+     "answer": true,
+     "v": 16
+    }
+   ]
+  },
+  "41": {
+   "keyVerse": 16,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Joseph say the seven fat cattle and seven good heads of grain meant?",
+     "options": [
+      "Seven years of great plenty",
+      "Seven kings who would rule Egypt",
+      "Seven months of heavy rain",
+      "Seven cities that would store grain"
+     ],
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How old was Joseph when he stood before Pharaoh?",
+     "options": [
+      "Thirty",
+      "Seventeen",
+      "Twenty",
+      "Forty"
+     ],
+     "v": 46
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "None of Egypt's magicians and wise men could interpret Pharaoh's dreams.",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Joseph answered Pharaoh, \"It isn't in me. God will give Pharaoh ____.\"",
+     "answer": "an answer of peace",
+     "wrong": [
+      "the meaning of dreams",
+      "wisdom and understanding",
+      "a sign from heaven"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What portion of the land's produce did Joseph advise Pharaoh to collect in the good years?",
+     "options": [
+      "A fifth part",
+      "A tenth part",
+      "Half of the harvest",
+      "A third part"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Pharaoh said, \"Can we find such a one as this, a man in whom is ____?\"",
+     "answer": "the Spirit of God",
+     "wrong": [
+      "the wisdom of Egypt",
+      "great understanding",
+      "the fear of God"
+     ],
+     "v": 38
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Pharaoh dreams of cattle and heads of grain",
+      "The chief cup bearer remembers Joseph",
+      "Joseph interprets Pharaoh's dreams",
+      "Pharaoh sets Joseph over all Egypt"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Joseph say Pharaoh's dream was given to him twice?",
+     "options": [
+      "God has established it and will do it soon",
+      "So Pharaoh would not forget it",
+      "Because two famines were coming",
+      "So the magicians would hear it too"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Joseph named his second son Ephraim, saying, \"For God has made me fruitful in ____.\"",
+     "answer": "the land of my affliction",
+     "wrong": [
+      "the house of Pharaoh",
+      "a land of strangers",
+      "the years of plenty"
+     ],
+     "v": 52
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Joseph was brought from the dungeon to Pharaoh without changing his clothes.",
+     "answer": false,
+     "v": 14
+    }
+   ]
+  },
+  "42": {
+   "keyVerse": 8,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Joseph accuse his brothers of being?",
+     "options": [
+      "Spies",
+      "Thieves",
+      "Liars",
+      "Runaway slaves"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which brother did Jacob keep at home on the first trip to Egypt?",
+     "options": [
+      "Benjamin",
+      "Reuben",
+      "Judah",
+      "Simeon"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Joseph's brothers recognized him when they bowed before him.",
+     "answer": false,
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which brother did Joseph bind and keep in Egypt?",
+     "options": [
+      "Simeon",
+      "Reuben",
+      "Judah",
+      "Levi"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The brothers said to one another, \"We are certainly guilty concerning ____.\"",
+     "answer": "our brother",
+     "wrong": [
+      "the money",
+      "our father",
+      "this lord"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jacob said, \"If harm happens to him, you will bring down ____ with sorrow to Sheol.\"",
+     "answer": "my gray hairs",
+     "wrong": [
+      "your father",
+      "all my house",
+      "my last days"
+     ],
+     "v": 38
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Joseph turned away from his brothers and wept.",
+     "answer": true,
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did the brothers not know Joseph understood what they said?",
+     "options": [
+      "An interpreter stood between them",
+      "They spoke in whispers",
+      "He had left the room",
+      "They spoke in the language of Canaan"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Reuben said to his father, \"Kill ____, if I don't bring him to you.\"",
+     "answer": "my two sons",
+     "wrong": [
+      "me with the sword",
+      "my whole house",
+      "my firstborn son"
+     ],
+     "v": 37
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "The brothers bow down before Joseph",
+      "Joseph keeps them in custody three days",
+      "One brother finds money in his sack",
+      "The brothers tell Jacob all that happened"
+     ],
+     "v": 6
+    }
+   ]
+  },
+  "43": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which brother promised Jacob he would bear the blame if Benjamin did not return?",
+     "options": [
+      "Judah",
+      "Reuben",
+      "Simeon",
+      "Levi"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Judah said, \"The man solemnly warned us, saying, 'You shall not see my face, ____.'\"",
+     "answer": "unless your brother is with you",
+     "wrong": [
+      "unless you bring double money",
+      "until you pay for the grain",
+      "unless your father comes too"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jacob sent a present and double money with his sons.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How large was Benjamin's portion at the meal?",
+     "options": [
+      "Five times as much as the others",
+      "Twice as much as the others",
+      "Three times as much as the others",
+      "Ten times as much as the others"
+     ],
+     "v": 34
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why were the brothers afraid when they were brought to Joseph's house?",
+     "options": [
+      "They thought it was about the returned money",
+      "They thought Benjamin would be taken",
+      "They had been accused of stealing a cup",
+      "They feared Pharaoh was angry"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The steward said, \"Your God, and the God of your father, has given you ____.\"",
+     "answer": "treasure in your sacks",
+     "wrong": [
+      "favor in my eyes",
+      "grain for the journey",
+      "safe passage home"
+     ],
+     "v": 23
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jacob sends his sons back with Benjamin",
+      "The steward brings Simeon out to them",
+      "Joseph goes to his room to weep",
+      "Joseph washes his face and orders the meal"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did the Egyptians eat separately from the Hebrews?",
+     "options": [
+      "Eating with Hebrews was an abomination to Egyptians",
+      "Joseph wanted to watch them from afar",
+      "The brothers were still under guard",
+      "There was not enough room at the table"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jacob said, \"If I am bereaved of my children, ____.\"",
+     "answer": "I am bereaved",
+     "wrong": [
+      "so be it",
+      "I will surely die",
+      "God has done it"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The brothers marveled because they were seated from the firstborn to the youngest.",
+     "answer": true,
+     "v": 33
+    }
+   ]
+  },
+  "44": {
+   "keyVerse": 33,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Joseph have hidden in Benjamin's sack?",
+     "options": [
+      "His silver cup",
+      "His signet ring",
+      "A bag of gold",
+      "A robe of fine linen"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Judah said, \"For how will I go up to my father, ____?\"",
+     "answer": "if the boy isn't with me",
+     "wrong": [
+      "without any grain for him",
+      "after all we have done",
+      "with such terrible news"
+     ],
+     "v": 34
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Judah asked to stay as a slave in place of the boy.",
+     "answer": true,
+     "v": 33
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In what order did the steward search the sacks?",
+     "options": [
+      "From the oldest to the youngest",
+      "From the youngest to the oldest",
+      "Starting with Benjamin",
+      "Starting with Judah"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the steward ask the brothers when he overtook them?",
+     "options": [
+      "Why have you rewarded evil for good?",
+      "Where is the money for the grain?",
+      "Why did you leave before sunrise?",
+      "Which of you is the youngest?"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Judah said, \"God has found out ____ of your servants.\"",
+     "answer": "the iniquity",
+     "wrong": [
+      "the secret",
+      "the deceit",
+      "the guilt"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Joseph said all the brothers must stay behind as his slaves.",
+     "answer": false,
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the brothers first say should happen to the one who had the cup?",
+     "options": [
+      "He should die, and the rest become slaves",
+      "He alone should become a slave",
+      "He should be beaten and sent away",
+      "He should repay the cup twice over"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Judah said that his father's life is bound up in ____.",
+     "answer": "the boy's life",
+     "wrong": [
+      "his youngest son",
+      "the love of Rachel",
+      "his last hope"
+     ],
+     "v": 30
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "The brothers are sent away at morning light",
+      "The steward overtakes them outside the city",
+      "The brothers tear their clothes and return",
+      "Judah pleads with Joseph about their father"
+     ],
+     "v": 3
+    }
+   ]
+  },
+  "45": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who did Joseph say had truly sent him to Egypt?",
+     "options": [
+      "God, to preserve life",
+      "His brothers, out of jealousy",
+      "Pharaoh, to rule the land",
+      "The Midianite traders"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Joseph said, \"I am Joseph, your brother, ____.\"",
+     "answer": "whom you sold into Egypt",
+     "wrong": [
+      "whom you thought was dead",
+      "the son of Rachel",
+      "whom our father loved"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jacob believed his sons right away when they said Joseph was alive.",
+     "answer": false,
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In what land did Joseph say his family would live near him?",
+     "options": [
+      "Goshen",
+      "Canaan",
+      "On",
+      "Seir"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Joseph give Benjamin that the others did not receive?",
+     "options": [
+      "Three hundred pieces of silver and five changes of clothing",
+      "A gold chain and a chariot",
+      "Ten donkeys loaded with grain",
+      "A signet ring and a robe"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "As he sent his brothers away, Joseph said to them, \"See that you ____.\"",
+     "answer": "don't quarrel on the way",
+     "wrong": [
+      "don't delay on the road",
+      "don't lose the wagons",
+      "don't tell anyone"
+     ],
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Pharaoh and his servants were pleased to hear that Joseph's brothers had come.",
+     "answer": true,
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How many more years of famine did Joseph say were still to come?",
+     "options": [
+      "Five",
+      "Two",
+      "Seven",
+      "Three"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When Jacob saw ____ that Joseph had sent to carry him, his spirit revived.",
+     "answer": "the wagons",
+     "wrong": [
+      "the donkeys",
+      "the chariots",
+      "the camels"
+     ],
+     "v": 27
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Joseph sends out everyone but his brothers",
+      "Joseph weeps on Benjamin's neck",
+      "Pharaoh tells Joseph to bring his father",
+      "Jacob hears that Joseph is alive"
+     ],
+     "v": 1
+    }
+   ]
+  },
+  "46": {
+   "keyVerse": 30,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Israel stop and offer sacrifices on the way to Egypt?",
+     "options": [
+      "Beersheba",
+      "Bethel",
+      "Hebron",
+      "Shechem"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did God tell Jacob in the visions of the night?",
+     "options": [
+      "Don't be afraid to go down into Egypt",
+      "Stay in Canaan until the famine ends",
+      "Send only your sons down to Egypt",
+      "Return to Bethel and build an altar"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Joseph prepared his chariot and went up to meet his father in Goshen.",
+     "answer": true,
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which son did Jacob send ahead to Joseph to show the way to Goshen?",
+     "options": [
+      "Judah",
+      "Reuben",
+      "Benjamin",
+      "Levi"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Israel said to Joseph, \"Now let me die, since ____, that you are still alive.\"",
+     "answer": "I have seen your face",
+     "wrong": [
+      "I have heard your voice",
+      "God has kept his word",
+      "my sons have returned"
+     ],
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Joseph told his brothers that every shepherd is ____ to the Egyptians.",
+     "answer": "an abomination",
+     "wrong": [
+      "a lowly servant",
+      "a foreign enemy",
+      "an outsider"
+     ],
+     "v": 34
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "God speaks to Jacob in visions of the night",
+      "Jacob's family rides in Pharaoh's wagons",
+      "Joseph weeps on his father's neck",
+      "Joseph tells his brothers what to say to Pharaoh"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Joseph tell his brothers to say they were keepers of livestock?",
+     "options": [
+      "So they could dwell in the land of Goshen",
+      "So Pharaoh would give them high positions",
+      "So Pharaoh would put them over his herds",
+      "So no one would know they were Hebrews"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "God said, \"I will also surely bring you up again. Joseph's hand will ____.\"",
+     "answer": "close your eyes",
+     "wrong": [
+      "lead you home",
+      "bless your sons",
+      "bury your bones"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "All the souls of the house of Jacob who came into Egypt numbered seventy five.",
+     "answer": false,
+     "v": 27
+    }
+   ]
+  },
+  "47": {
+   "keyVerse": 27,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jacob ask Joseph to promise before he died?",
+     "options": [
+      "Not to bury him in Egypt",
+      "To make peace with his brothers",
+      "To bless Ephraim above Manasseh",
+      "To lead all Israel back to Canaan"
+     ],
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "When their money ran out, what did the Egyptians first give Joseph for bread?",
+     "options": [
+      "Their livestock",
+      "Their land",
+      "Their silver and gold",
+      "Their clothing"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jacob blessed Pharaoh when Joseph brought him in.",
+     "answer": true,
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How old did Jacob tell Pharaoh he was?",
+     "options": [
+      "130 years",
+      "147 years",
+      "120 years",
+      "175 years"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Joseph told the people, \"At the harvests you shall give ____ to Pharaoh, and four parts will be your own.\"",
+     "answer": "a fifth",
+     "wrong": [
+      "a tenth",
+      "a third",
+      "one half"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The people said to Joseph, \"____! Let us find favor in the sight of my lord.\"",
+     "answer": "You have saved our lives",
+     "wrong": [
+      "You have made us poor",
+      "Give us more bread",
+      "You are like Pharaoh"
+     ],
+     "v": 25
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Joseph gathers all the money paid for grain",
+      "The Egyptians tell Joseph their money is gone",
+      "The people sell themselves and their land",
+      "Joseph gives them seed to sow"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whose land did Joseph not buy for Pharaoh?",
+     "options": [
+      "The land of the priests",
+      "The land of the elders",
+      "The land of the Hebrews",
+      "The land of Pharaoh's officers"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jacob told Pharaoh, \"The days of the years of my life have been ____.\"",
+     "answer": "few and evil",
+     "wrong": [
+      "long and blessed",
+      "full of sorrow",
+      "hard and weary"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Pharaoh told Joseph to put able men among his brothers in charge of the grain storehouses.",
+     "answer": false,
+     "v": 6
+    }
+   ]
+  },
+  "48": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Joseph do when Jacob laid his right hand on Ephraim's head?",
+     "options": [
+      "Tried to move it to Manasseh's head",
+      "Bowed and thanked his father",
+      "Took his sons and left",
+      "Asked Jacob to bless him too"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jacob said of Manasseh, \"He also will be great. However, ____ will be greater than he.\"",
+     "answer": "his younger brother",
+     "wrong": [
+      "his firstborn son",
+      "his own offspring",
+      "the son of Asenath"
+     ],
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jacob's eyesight was still sharp when he blessed Joseph's sons.",
+     "answer": false,
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Jacob said Ephraim and Manasseh would be his, even as which two sons?",
+     "options": [
+      "Reuben and Simeon",
+      "Judah and Levi",
+      "Dan and Naphtali",
+      "Joseph and Benjamin"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jacob remind Joseph about Rachel?",
+     "options": [
+      "She died on the way and was buried near Ephrath",
+      "She was buried in the cave of Machpelah",
+      "She died in Paddan Aram",
+      "She had prayed to see many grandsons"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Israel said, \"I didn't think I would see your face, and behold, God has let me see ____.\"",
+     "answer": "your offspring also",
+     "wrong": [
+      "your glory in Egypt",
+      "the land of Goshen",
+      "my people again"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Jacob said God promised to give the land to his offspring as an everlasting possession.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did Jacob say God Almighty had appeared to him and blessed him?",
+     "options": [
+      "Luz in the land of Canaan",
+      "Beersheba",
+      "Peniel",
+      "Mamre"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jacob prayed, \"The angel who has redeemed me from all evil, ____.\"",
+     "answer": "bless the lads",
+     "wrong": [
+      "be with my sons",
+      "keep them safe",
+      "guide their steps"
+     ],
+     "v": 16
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Joseph hears that his father is sick",
+      "Jacob claims Joseph's sons as his own",
+      "Jacob blesses the boys with crossed hands",
+      "Jacob says God will bring Joseph back"
+     ],
+     "v": 1
+    }
+   ]
+  },
+  "49": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which son did Jacob call a lion's cub?",
+     "options": [
+      "Judah",
+      "Dan",
+      "Reuben",
+      "Joseph"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Jacob ask to be buried?",
+     "options": [
+      "In the cave in the field of Machpelah",
+      "Beside Rachel on the way to Ephrath",
+      "In the land of Goshen",
+      "At Bethel under the oak"
+     ],
+     "v": 30
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jacob gave Reuben the greatest blessing because he was the firstborn.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which two brothers did Jacob say had swords that were weapons of violence?",
+     "options": [
+      "Simeon and Levi",
+      "Reuben and Judah",
+      "Dan and Gad",
+      "Issachar and Zebulun"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jacob said, \"The scepter will not depart from Judah, nor ____ from between his feet.\"",
+     "answer": "the ruler's staff",
+     "wrong": [
+      "the lion's strength",
+      "the royal crown",
+      "his brother's hand"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jacob said, \"Joseph is a fruitful vine, a fruitful vine by a spring. ____.\"",
+     "answer": "His branches run over the wall",
+     "wrong": [
+      "His roots go down deep",
+      "His fruit feeds the nations",
+      "His leaves will not wither"
+     ],
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Jacob said he had buried Leah in the same cave where Abraham and Isaac were buried.",
+     "answer": true,
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did Jacob describe Benjamin?",
+     "options": [
+      "A ravenous wolf",
+      "A doe set free",
+      "A strong donkey",
+      "A fruitful vine"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jacob said, \"Dan will be ____ on the trail, an adder in the path.\"",
+     "answer": "a serpent",
+     "wrong": [
+      "a lion",
+      "a wolf",
+      "an eagle"
+     ],
+     "v": 17
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Jacob speaks about Judah",
+      "Jacob speaks about Dan",
+      "Jacob speaks about Joseph",
+      "Jacob speaks about Benjamin"
+     ],
+     "v": 8
+    }
+   ]
+  },
+  "50": {
+   "keyVerse": 20,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the brothers claim Jacob had commanded before he died?",
+     "options": [
+      "That Joseph should forgive them",
+      "That Joseph should bless Ephraim first",
+      "That they should return to Canaan",
+      "That Joseph should divide the land"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Joseph said, \"As for you, you meant evil against me, but ____.\"",
+     "answer": "God meant it for good",
+     "wrong": [
+      "I have forgiven you",
+      "God has judged you",
+      "the LORD was with me"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Joseph lived to be one hundred ten years old.",
+     "answer": true,
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How long did the Egyptians weep for Israel?",
+     "options": [
+      "Seventy days",
+      "Forty days",
+      "Seven days",
+      "Thirty days"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Joseph make the children of Israel swear to do?",
+     "options": [
+      "Carry up his bones from Egypt",
+      "Stay in Goshen forever",
+      "Care for Ephraim and Manasseh",
+      "Bury him beside Jacob right away"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Joseph said to his brothers, \"Don't be afraid, for am I ____?\"",
+     "answer": "in the place of God",
+     "wrong": [
+      "not your own brother",
+      "your judge and master",
+      "greater than Pharaoh"
+     ],
+     "v": 19
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The physicians embalm Israel",
+      "Pharaoh lets Joseph go up to bury his father",
+      "Jacob's sons bury him in the cave of Machpelah",
+      "The brothers fear Joseph will pay them back"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did the great mourning take place that the Canaanites called Abel Mizraim?",
+     "options": [
+      "The threshing floor of Atad",
+      "The cave of Machpelah",
+      "The land of Goshen",
+      "The city of Hebron"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Joseph said, \"God will surely visit you, and bring you up out of this land to the land ____.\"",
+     "answer": "which he swore to Abraham",
+     "wrong": [
+      "where your fathers lived",
+      "of your father Jacob",
+      "beyond the Jordan river"
+     ],
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Joseph's brothers took their little ones with them to Canaan for Jacob's burial.",
+     "answer": false,
+     "v": 8
+    }
+   ]
+  }
+ }
+}

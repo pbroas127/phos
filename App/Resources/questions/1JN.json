@@ -1,0 +1,62 @@
+{"book":"1JN","chapters":{
+"1":{"keyVerse":9,"questions":[
+{"t":"choice","d":1,"q":"What is the message John says they heard from him and now announce?","options":["God is light, and in him is no darkness","God is love, and he sent his Son","Jesus is Lord over all creation","The kingdom of God is near"],"v":5},
+{"t":"choice","d":2,"q":"What does John say happens if we say that we have no sin?","options":["We deceive ourselves","We walk in darkness forever","We lose our fellowship","We fall under judgment"],"v":8},
+{"t":"choice","d":2,"q":"Why does John say he writes these things?","options":["That our joy may be fulfilled","That you may not be deceived","That you may know the truth","That the church may grow"],"v":4},
+{"t":"choice","d":2,"q":"According to John, what cleanses us from all sin?","options":["The blood of Jesus Christ","Confessing with our mouths","The word of God","Loving one another"],"v":7},
+{"t":"choice","d":3,"q":"John says if we claim we haven't sinned, we make God what?","options":["A liar","Our judge","Angry with us","Distant from us"],"v":10},
+{"t":"blank","d":1,"q":"If we confess our sins, he is ____ to forgive us the sins.","answer":"faithful and righteous","wrong":["gracious and merciful","patient and kind","willing and able"],"v":9},
+{"t":"blank","d":2,"q":"But if we walk in the light as he is in the light, we have ____.","answer":"fellowship with one another","wrong":["peace with God himself","joy in our hearts","hope of eternal life"],"v":7},
+{"t":"blank","d":3,"q":"That which we have seen with our eyes, that which we saw, and ____, concerning the Word of life.","answer":"our hands touched","wrong":["our ears heard","our hearts believed","our lips declared"],"v":1},
+{"t":"tf","d":1,"q":"John says anyone who claims fellowship with God while walking in darkness is lying.","answer":true,"v":6},
+{"t":"tf","d":3,"q":"John says our fellowship is with the Father and with the Holy Spirit.","answer":false,"v":3}
+]},
+"2":{"keyVerse":17,"questions":[
+{"t":"choice","d":1,"q":"If anyone sins, what does John say we have with the Father in Jesus Christ?","options":["A Counselor","A Judge","A King","A Witness"],"v":1},
+{"t":"choice","d":2,"q":"What does John list as the things that are in the world?","options":["Lust of the flesh, lust of the eyes, pride of life","Greed, envy, and pride","Hatred, deceit, and idolatry","Wealth, power, and honor"],"v":16},
+{"t":"choice","d":2,"q":"What does John say about the one who hates his brother?","options":["He doesn't know where he is going","He will be cast out of the assembly","His prayers will not be heard","He has never been forgiven"],"v":11},
+{"t":"choice","d":3,"q":"Why does John say he writes to the young men?","options":["They have overcome the evil one","They know him who is from the beginning","Their sins are forgiven","They have an anointing"],"v":13},
+{"t":"blank","d":1,"q":"Who is the liar but he who denies that ____?","answer":"Jesus is the Christ","wrong":["God is the Father","the Word became flesh","Jesus rose again"],"v":22},
+{"t":"blank","d":2,"q":"I write a new commandment to you, because the darkness is passing away and ____.","answer":"the true light already shines","wrong":["the day of the Lord draws near","the kingdom has already come","the morning star arises"],"v":8},
+{"t":"blank","d":3,"q":"You have ____ from the Holy One, and you all have knowledge.","answer":"an anointing","wrong":["a promise","a calling","a seal"],"v":20},
+{"t":"order","d":2,"items":["Keeping his commandments shows we know him","Claiming to be in the light while hating a brother","Don't love the world","Many antichrists have arisen"],"v":3},
+{"t":"tf","d":1,"q":"John says those who went out from them never truly belonged to them.","answer":true,"v":19},
+{"t":"tf","d":3,"q":"John says Jesus is the atoning sacrifice for our sins only, and not for the whole world.","answer":false,"v":2}
+]},
+"3":{"keyVerse":18,"questions":[
+{"t":"choice","d":1,"q":"Because of the Father's great love, what does John say we should be called?","options":["Children of God","Friends of God","Servants of the Lord","Heirs of the promise"],"v":1},
+{"t":"choice","d":2,"q":"Whom does John give as an example of one who was of the evil one?","options":["Cain","Esau","Pharaoh","Balaam"],"v":12},
+{"t":"choice","d":2,"q":"How does John say we know love?","options":["He laid down his life for us","He gave us his commandments","He forgave all our sins","He answers our prayers"],"v":16},
+{"t":"choice","d":3,"q":"Why does John say we will be like him when he is revealed?","options":["We will see him just as he is","We will be raised from the dead","We will receive new bodies","We will be free from the world"],"v":2},
+{"t":"blank","d":1,"q":"Whoever hates his brother is ____, and no such person has eternal life remaining in him.","answer":"a murderer","wrong":["a liar","a thief","a fool"],"v":15},
+{"t":"blank","d":2,"q":"To this end the Son of God was revealed: that he might ____.","answer":"destroy the works of the devil","wrong":["take away the sin of the world","bring us back to God","gather the children of God"],"v":8},
+{"t":"blank","d":3,"q":"Because if our heart condemns us, God is ____, and knows all things.","answer":"greater than our heart","wrong":["merciful toward our sins","patient with our weakness","faithful to forgive us"],"v":20},
+{"t":"order","d":2,"items":["Everyone with this hope purifies himself","Sin is lawlessness","Don't be surprised if the world hates you","Let's not love in word only"],"v":3},
+{"t":"tf","d":1,"q":"John says we know we have passed out of death into life because we love the brothers.","answer":true,"v":14},
+{"t":"tf","d":3,"q":"John says we know God remains in us by the commandments he gave us.","answer":false,"v":24}
+]},
+"4":{"keyVerse":19,"questions":[
+{"t":"choice","d":1,"q":"What does John tell believers to do with the spirits?","options":["Test them to see whether they are of God","Cast them out in Jesus' name","Ignore them completely","Pray against them"],"v":1},
+{"t":"choice","d":2,"q":"According to John, what casts out fear?","options":["Perfect love","Strong faith","Constant prayer","The word of God"],"v":18},
+{"t":"choice","d":2,"q":"What mark does John give of every spirit that is of God?","options":["It confesses Jesus Christ came in the flesh","It performs signs and wonders","It is heard by the world","It teaches a new commandment"],"v":2},
+{"t":"choice","d":3,"q":"Why does John say the little children have overcome the false prophets?","options":["He who is in them is greater","They have kept all his commandments","They have tested every spirit","The world no longer listens to them"],"v":4},
+{"t":"blank","d":1,"q":"He who doesn't love doesn't know God, for ____.","answer":"God is love","wrong":["God is light","God is holy","God is spirit"],"v":8},
+{"t":"blank","d":2,"q":"In this is love, not that we loved God, but that ____.","answer":"he loved us","wrong":["he chose us","he forgave us","he called us"],"v":10},
+{"t":"blank","d":3,"q":"If a man says, \"I love God,\" and hates his brother, ____.","answer":"he is a liar","wrong":["he is in darkness","he has no life","he deceives himself"],"v":20},
+{"t":"order","d":2,"items":["Many false prophets have gone out","They are of the world, and the world hears them","No one has seen God at any time","We love him because he first loved us"],"v":1},
+{"t":"tf","d":1,"q":"John says God sent his only born Son into the world that we might live through him.","answer":true,"v":9},
+{"t":"tf","d":3,"q":"John testifies that the Father has sent the Son as the judge of the world.","answer":false,"v":14}
+]},
+"5":{"keyVerse":12,"questions":[
+{"t":"choice","d":1,"q":"What does John say is the victory that has overcome the world?","options":["Your faith","Your love","Your obedience","Your hope"],"v":4},
+{"t":"choice","d":2,"q":"Who are the three that testify, according to John?","options":["The Spirit, the water, and the blood","The Father, the Son, and the Spirit","The prophets, the apostles, and the church","The water, the word, and the cross"],"v":8},
+{"t":"choice","d":2,"q":"How does John describe God's commandments?","options":["Not grievous","Hard to keep","Written on stone","Hidden from the world"],"v":3},
+{"t":"choice","d":3,"q":"What does John say about the whole world?","options":["It lies in the power of the evil one","It is passing away with its lusts","It will be judged by fire","It cannot receive the Spirit"],"v":19},
+{"t":"blank","d":1,"q":"Little children, ____.","answer":"keep yourselves from idols","wrong":["love one another deeply","remain in his love","walk in the light"],"v":21},
+{"t":"blank","d":2,"q":"The testimony is this: that God gave to us eternal life, and ____.","answer":"this life is in his Son","wrong":["this life will never end","his Spirit is the truth","we will see him face to face"],"v":11},
+{"t":"blank","d":3,"q":"This is the boldness which we have toward him, that if we ask anything ____, he listens to us.","answer":"according to his will","wrong":["in the name of Jesus","with faith and patience","from a pure heart"],"v":14},
+{"t":"order","d":2,"items":["Whoever loves the Father loves his child","Who overcomes the world but the one who believes","If we receive the witness of men","All unrighteousness is sin"],"v":1},
+{"t":"tf","d":1,"q":"John says he wrote these things so believers may know that they have eternal life.","answer":true,"v":13},
+{"t":"tf","d":3,"q":"John tells believers to make a request for a brother whose sin leads to death.","answer":false,"v":16}
+]}
+}}

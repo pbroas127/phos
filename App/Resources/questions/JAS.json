@@ -1,0 +1,62 @@
+{"book":"JAS","chapters":{
+"1":{"keyVerse":22,"questions":[
+{"t":"choice","d":1,"q":"What should someone who lacks wisdom do?","options":["Ask God, who gives liberally","Seek counsel from the elders","Study the law day and night","Wait patiently for understanding"],"v":5},
+{"t":"choice","d":2,"q":"What does James compare the person who doubts to?","options":["A wave of the sea driven by wind","A house built on the sand","A reed shaken by the wind","A ship without a rudder"],"v":6},
+{"t":"choice","d":2,"q":"What is a hearer of the word who is not a doer like?","options":["A man looking at his face in a mirror","A farmer who never plants his seed","A servant who hides his master's money","A lamp hidden under a basket"],"v":23},
+{"t":"choice","d":3,"q":"How does James describe the Father of lights?","options":["With him is no variation nor turning shadow","He dwells in unapproachable light","His light shines on all people alike","He made the sun, moon, and stars"],"v":17},
+{"t":"blank","d":1,"q":"Let every man be swift to hear, ____, and slow to anger.","answer":"slow to speak","wrong":["quick to forgive","ready to serve","careful to obey"],"v":19},
+{"t":"blank","d":2,"q":"When he has been approved, he will receive ____ which the Lord promised to those who love him.","answer":"the crown of life","wrong":["the crown of glory","the promised inheritance","a heavenly reward"],"v":12},
+{"t":"blank","d":3,"q":"Pure religion and undefiled before our God and Father is this: to visit ____ in their affliction.","answer":"the fatherless and widows","wrong":["the sick and the prisoners","the poor and the strangers","the weak and the lonely"],"v":27},
+{"t":"order","d":3,"items":["Count it all joy in temptations","The rich fade like a flower","Every good gift comes from above","An unbridled tongue makes religion worthless"],"v":2},
+{"t":"tf","d":1,"q":"James says God sometimes tempts people in order to test them.","answer":false,"v":13},
+{"t":"tf","d":2,"q":"James says the anger of man doesn't produce the righteousness of God.","answer":true,"v":20}
+]},
+"2":{"keyVerse":17,"questions":[
+{"t":"choice","d":1,"q":"In James's example, what is said to the poor man who comes in?","options":["Stand there, or sit by my footstool","Sit here in a good place","Go in peace, be warmed","Wait outside until we finish"],"v":3},
+{"t":"choice","d":2,"q":"Which two people does James use as examples of being justified by works?","options":["Abraham and Rahab","Abraham and Moses","Noah and Rahab","David and Elijah"],"v":21},
+{"t":"choice","d":2,"q":"What does James call the command to love your neighbor as yourself?","options":["The royal law","The first law","The law of Moses","The new commandment"],"v":8},
+{"t":"choice","d":3,"q":"What is the rich visitor wearing in James's example?","options":["A gold ring and fine clothing","A purple robe and sandals","A silver chain and linen","A jeweled crown and cloak"],"v":2},
+{"t":"blank","d":1,"q":"For as the body apart from the spirit is dead, even so ____.","answer":"faith apart from works is dead","wrong":["the law apart from mercy fails","hope apart from patience fades","works apart from love are empty"],"v":26},
+{"t":"blank","d":2,"q":"You believe that God is one. You do well. The demons also believe, ____.","answer":"and shudder","wrong":["and rebel","and are silent","yet do not obey"],"v":19},
+{"t":"blank","d":3,"q":"For judgment is without mercy to him who has shown no mercy. ____.","answer":"Mercy triumphs over judgment","wrong":["Love covers all sins","Blessed are the merciful","God will repay each one"],"v":13},
+{"t":"order","d":3,"items":["Don't hold the faith with partiality","God chose the poor to be rich in faith","Speak and act as those judged by freedom","Faith without works cannot save"],"v":1},
+{"t":"tf","d":1,"q":"James says whoever stumbles in one point of the law is guilty only of that point.","answer":false,"v":10},
+{"t":"tf","d":2,"q":"James says Abraham was called the friend of God.","answer":true,"v":23}
+]},
+"3":{"keyVerse":17,"questions":[
+{"t":"choice","d":1,"q":"Why does James say not many should become teachers?","options":["They will receive heavier judgment","Few understand the Scriptures","Teachers are often proud","The church needs more servants"],"v":1},
+{"t":"choice","d":2,"q":"What small things does James use to picture the power of the tongue?","options":["A horse's bit and a ship's rudder","A mustard seed and a lamp","A key and a lock","A needle and a thread"],"v":3},
+{"t":"choice","d":2,"q":"What does James say nobody can tame?","options":["The tongue","The heart","Anger","Wild beasts"],"v":8},
+{"t":"choice","d":3,"q":"How does James describe the wisdom that does not come from above?","options":["Earthly, sensual, and demonic","Proud, foolish, and vain","Worldly, empty, and deceptive","Bitter, jealous, and cruel"],"v":15},
+{"t":"blank","d":1,"q":"Out of the same mouth comes ____. My brothers, these things ought not to be so.","answer":"blessing and cursing","wrong":["truth and lies","praise and complaint","wisdom and folly"],"v":10},
+{"t":"blank","d":2,"q":"Can a fig tree, my brothers, yield olives, or ____?","answer":"a vine figs","wrong":["a thistle figs","an olive grapes","a thorn bush grapes"],"v":12},
+{"t":"blank","d":3,"q":"Now the fruit of righteousness is sown in peace by ____.","answer":"those who make peace","wrong":["those who are humble","the wise in heart","those who love mercy"],"v":18},
+{"t":"order","d":3,"items":["First pure","Then peaceful","Gentle","Reasonable"],"v":17},
+{"t":"tf","d":1,"q":"James says a small fire can spread to a large forest, like the tongue.","answer":true,"v":5},
+{"t":"tf","d":2,"q":"James says sea creatures are the one kind of creature mankind cannot tame.","answer":false,"v":7}
+]},
+"4":{"keyVerse":7,"questions":[
+{"t":"choice","d":1,"q":"What does James say friendship with the world is?","options":["Hostility toward God","Foolishness to God","A snare of the devil","The root of all evil"],"v":4},
+{"t":"choice","d":2,"q":"Why do some ask and not receive, according to James?","options":["They ask with wrong motives","They ask without enough faith","They ask in public for show","They ask for too little"],"v":3},
+{"t":"choice","d":2,"q":"What does James compare our life to?","options":["A vapor that appears and vanishes","A flower that fades in the sun","A shadow that passes by","A candle that burns out"],"v":14},
+{"t":"choice","d":3,"q":"Whom does James describe as able to save and to destroy?","options":["The one lawgiver","The righteous judge","The Lord of Armies","The Father of lights"],"v":12},
+{"t":"blank","d":1,"q":"Draw near to God, and ____.","answer":"he will draw near to you","wrong":["he will lift you up","he will hear your prayer","he will give you rest"],"v":8},
+{"t":"blank","d":2,"q":"Therefore it says, God resists the proud, but ____.","answer":"gives grace to the humble","wrong":["exalts the lowly in heart","hears the cry of the poor","saves the broken in spirit"],"v":6},
+{"t":"blank","d":3,"q":"For you ought to say, ____, we will both live, and do this or that.","answer":"If the Lord wills","wrong":["By God's grace alone","As the Spirit leads","With the Lord's blessing"],"v":15},
+{"t":"order","d":3,"items":["Fightings come from pleasures within","Humble yourselves and he will exalt you","Don't speak against one another","Knowing good and not doing it is sin"],"v":1},
+{"t":"tf","d":1,"q":"James says the devil will flee from you if you resist him.","answer":true,"v":7},
+{"t":"tf","d":2,"q":"James tells sinners to let their laughter be turned to joy.","answer":false,"v":9}
+]},
+"5":{"keyVerse":16,"questions":[
+{"t":"choice","d":1,"q":"Which prophet does James use as an example of powerful prayer?","options":["Elijah","Elisha","Moses","Samuel"],"v":17},
+{"t":"choice","d":2,"q":"How long did it not rain on the earth after that prophet prayed?","options":["Three years and six months","Seven years","Forty days","One year and six months"],"v":17},
+{"t":"choice","d":2,"q":"Whose perseverance does James say they have heard of?","options":["Job","Abraham","Joseph","Daniel"],"v":11},
+{"t":"choice","d":3,"q":"In James's example of patience, what does the farmer wait for?","options":["The early and late rain","The harvest moon","The time for planting","The fields to turn white"],"v":7},
+{"t":"blank","d":1,"q":"Is any among you sick? Let him call for ____.","answer":"the elders of the assembly","wrong":["the physicians of the city","the prophets of the Lord","his brothers in the faith"],"v":14},
+{"t":"blank","d":2,"q":"Let your 'yes' be 'yes', and your 'no', 'no', so that ____.","answer":"you don't fall into hypocrisy","wrong":["you are not judged by men","no one doubts your word","you keep a pure conscience"],"v":12},
+{"t":"blank","d":3,"q":"He who turns a sinner from the error of his way will save a soul from death and ____.","answer":"will cover a multitude of sins","wrong":["will shine like the stars","will receive a great reward","will be called righteous"],"v":20},
+{"t":"order","d":3,"items":["A warning to the rich","Be patient until the Lord's coming","Don't swear by any oath","Pray over the sick"],"v":1},
+{"t":"tf","d":1,"q":"James says the judge stands at the door.","answer":true,"v":9},
+{"t":"tf","d":2,"q":"James says the cries of cheated laborers have not reached the Lord's ears.","answer":false,"v":4}
+]}
+}}

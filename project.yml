@@ -1,0 +1,221 @@
+name: Phos
+options:
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.10"
+    MARKETING_VERSION: 1.0.0
+    CURRENT_PROJECT_VERSION: 1
+    DEVELOPMENT_TEAM: GN2K85HBR8
+    TARGETED_DEVICE_FAMILY: 1
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: Apple Distribution
+targets:
+  Phos:
+    type: application
+    platform: iOS
+    sources:
+      - App
+      - Shared
+    entitlements:
+      path: App/Phos.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.peterbroas.phos
+        com.apple.developer.family-controls: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.peterbroas.phos
+        PROVISIONING_PROFILE_SPECIFIER: match AppStore com.peterbroas.phos
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleDisplayName: Phos
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        ITSAppUsesNonExemptEncryption: false
+        CFBundleURLTypes:
+          - CFBundleURLName: com.peterbroas.phos
+            CFBundleURLSchemes: [phos]
+        NSMicrophoneUsageDescription: Phos listens while you speak your reflection or recite a verse, so it can count your speaking time.
+        NSSpeechRecognitionUsageDescription: Phos turns your spoken reflection into text on your iPhone so you can save it in your journal.
+        NSMotionUsageDescription: Phos checks that your phone stays face down during a focus session.
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+          UIImageName: LaunchLogo
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIUserInterfaceStyle: Light
+    dependencies:
+      - target: PhosWidgets
+        embed: true
+      - target: PhosShieldConfig
+        embed: true
+      - target: PhosShieldAction
+        embed: true
+      - target: PhosMonitor
+        embed: true
+      - target: PhosReport
+        embed: true
+
+  PhosWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - Widgets
+      - Shared/Core
+    entitlements:
+      path: Widgets/PhosWidgets.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.peterbroas.phos
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.peterbroas.phos.widgets
+        PROVISIONING_PROFILE_SPECIFIER: match AppStore com.peterbroas.phos.widgets
+    info:
+      path: Widgets/Info.plist
+      properties:
+        CFBundleDisplayName: Phos Widgets
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+
+  PhosShieldConfig:
+    type: app-extension
+    platform: iOS
+    sources:
+      - ShieldConfig
+      - Shared/Core
+    entitlements:
+      path: ShieldConfig/PhosShieldConfig.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.peterbroas.phos
+        com.apple.developer.family-controls: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.peterbroas.phos.shieldconfig
+        PROVISIONING_PROFILE_SPECIFIER: match AppStore com.peterbroas.phos.shieldconfig
+    info:
+      path: ShieldConfig/Info.plist
+      properties:
+        CFBundleDisplayName: Phos Shield
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.ManagedSettingsUI.shield-configuration-service
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).ShieldConfigurationExtension
+
+  PhosShieldAction:
+    type: app-extension
+    platform: iOS
+    sources:
+      - ShieldAction
+      - Shared/Core
+    entitlements:
+      path: ShieldAction/PhosShieldAction.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.peterbroas.phos
+        com.apple.developer.family-controls: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.peterbroas.phos.shieldaction
+        PROVISIONING_PROFILE_SPECIFIER: match AppStore com.peterbroas.phos.shieldaction
+    info:
+      path: ShieldAction/Info.plist
+      properties:
+        CFBundleDisplayName: Phos Shield Action
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.ManagedSettings.shield-action-service
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).ShieldActionExtension
+
+  PhosMonitor:
+    type: app-extension
+    platform: iOS
+    sources:
+      - Monitor
+      - Shared/Core
+      - Shared/Screen
+    entitlements:
+      path: Monitor/PhosMonitor.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.peterbroas.phos
+        com.apple.developer.family-controls: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.peterbroas.phos.monitor
+        PROVISIONING_PROFILE_SPECIFIER: match AppStore com.peterbroas.phos.monitor
+    info:
+      path: Monitor/Info.plist
+      properties:
+        CFBundleDisplayName: Phos Monitor
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.deviceactivity.monitor-extension
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).DeviceActivityMonitorExtension
+
+  PhosReport:
+    type: extensionkit-extension
+    platform: iOS
+    sources:
+      - Report
+      - Shared/Core
+      - Shared/UI
+    entitlements:
+      path: Report/PhosReport.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.peterbroas.phos
+        com.apple.developer.family-controls: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.peterbroas.phos.report
+        PROVISIONING_PROFILE_SPECIFIER: match AppStore com.peterbroas.phos.report
+    info:
+      path: Report/Info.plist
+      properties:
+        CFBundleDisplayName: Phos Report
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        EXAppExtensionAttributes:
+          EXExtensionPointIdentifier: com.apple.deviceactivityui.report-extension
+
+  PhosTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Tests
+      - Shared/Core
+      - path: App/Resources
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.peterbroas.phos.tests
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_IDENTITY: ""
+
+schemes:
+  Phos:
+    build:
+      targets:
+        Phos: all
+    archive:
+      config: Release
+    run:
+      config: Debug
+  PhosTests:
+    build:
+      targets:
+        PhosTests: all
+    test:
+      targets:
+        - PhosTests

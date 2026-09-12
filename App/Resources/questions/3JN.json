@@ -1,0 +1,12 @@
+{"book":"3JN","chapters":{
+"1":{"keyVerse":4,"questions":[
+{"t":"choice","d":1,"q":"To whom does the elder write this letter?","options":["Gaius","Titus","Philemon","Timothy"],"v":1},
+{"t":"choice","d":2,"q":"What does the elder say about the man who loves to be first in the assembly?","options":["He refuses to receive the brothers","He takes money from the Gentiles","He writes false letters to the churches","He denies that Jesus came in the flesh"],"v":10},
+{"t":"choice","d":3,"q":"Who does the elder say has the testimony of all, and of the truth itself?","options":["Demetrius","Diotrephes","Tychicus","Silvanus"],"v":12},
+{"t":"blank","d":1,"q":"I have no greater joy than this: to hear about ____.","answer":"my children walking in truth","wrong":["my friends growing in faith","the churches living in peace","the brothers standing firm"],"v":4},
+{"t":"blank","d":2,"q":"I pray that you may prosper in all things and be healthy, even as ____.","answer":"your soul prospers","wrong":["your faith grows","your heart rejoices","your love abounds"],"v":2},
+{"t":"blank","d":3,"q":"He who does good is of God. He who does evil ____.","answer":"hasn't seen God","wrong":["doesn't know the truth","walks in darkness","has no part in him"],"v":11},
+{"t":"tf","d":1,"q":"The elder says he hopes to see his friend soon and speak face to face.","answer":true,"v":14},
+{"t":"tf","d":2,"q":"The elder says the brothers who went out for the sake of the Name accepted support from the Gentiles.","answer":false,"v":7}
+]}
+}}

@@ -1,0 +1,50 @@
+name: screenshots
+on:
+  workflow_dispatch:
+jobs:
+  capture:
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select newest Xcode 26
+        run: |
+          XCODE=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          sudo xcode-select -s "$XCODE"
+      - run: brew install xcodegen
+      - run: xcodegen generate
+      - name: Boot simulator
+        id: sim
+        run: |
+          DEVICE=$(xcrun simctl list devices available | grep -E 'iPhone 1[67] Pro Max \(' | head -1 | grep -oE '[0-9A-F-]{36}')
+          if [ -z "$DEVICE" ]; then
+            DEVICE=$(xcrun simctl list devices available | grep -E 'iPhone .* Pro Max \(' | head -1 | grep -oE '[0-9A-F-]{36}')
+          fi
+          echo "udid=$DEVICE" >> $GITHUB_OUTPUT
+          xcrun simctl boot "$DEVICE" || true
+          xcrun simctl bootstatus "$DEVICE" -b
+          xcrun simctl status_bar "$DEVICE" override --time "9:41" --batteryState charged --batteryLevel 100 --cellularBars 4 --wifiBars 3
+          xcrun simctl ui "$DEVICE" appearance light
+      - name: Build for simulator
+        run: |
+          set -o pipefail
+          xcodebuild build -project Phos.xcodeproj -scheme Phos \
+            -destination "id=${{ steps.sim.outputs.udid }}" \
+            -derivedDataPath build CODE_SIGNING_ALLOWED=NO | tail -5
+      - name: Capture
+        run: |
+          UDID="${{ steps.sim.outputs.udid }}"
+          APP=$(find build/Build/Products -name "Phos.app" -maxdepth 3 | head -1)
+          xcrun simctl install "$UDID" "$APP"
+          mkdir -p shots
+          for SCREEN in shield today path calendar reading reflect speak quizChoice quizBlank quizOrder pass missed recall unlocked streak time journal settings focus recite; do
+            xcrun simctl terminate "$UDID" com.peterbroas.phos 2>/dev/null || true
+            sleep 1
+            xcrun simctl launch "$UDID" com.peterbroas.phos -demoData -screen "$SCREEN"
+            sleep 5
+            xcrun simctl io "$UDID" screenshot "shots/$SCREEN.png"
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: shots/

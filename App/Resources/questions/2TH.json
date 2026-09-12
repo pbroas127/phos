@@ -1,0 +1,38 @@
+{"book":"2TH","chapters":{
+"1":{"keyVerse":12,"questions":[
+{"t":"choice","d":1,"q":"What were the Thessalonians enduring, according to Paul?","options":["Persecutions and afflictions","Famine and poverty","Division and quarrels","False teaching and doubt"],"v":4},
+{"t":"choice","d":2,"q":"How will the Lord Jesus be revealed from heaven?","options":["With his mighty angels in flaming fire","Riding on the clouds with thunder","With a great trumpet and a shout","Surrounded by the saints in glory"],"v":7},
+{"t":"choice","d":2,"q":"What penalty does Paul describe for those who don't obey the Good News?","options":["Eternal destruction from the face of the Lord","Being cast into outer darkness","Being handed over to Satan","Wandering the earth without rest"],"v":9},
+{"t":"choice","d":3,"q":"Who will be punished when the Lord Jesus is revealed?","options":["Those who don't know God or obey the Good News","Those who killed the prophets","Those who worship idols in the temple","Those who rejected the apostles"],"v":8},
+{"t":"blank","d":1,"q":"It is a righteous thing with God to repay affliction ____.","answer":"to those who afflict you","wrong":["to all the proud","to the rulers of this age","to those who deny him"],"v":6},
+{"t":"blank","d":2,"q":"That you may be counted worthy of ____, for which you also suffer.","answer":"God's Kingdom","wrong":["the crown of life","the heavenly calling","eternal glory"],"v":5},
+{"t":"blank","d":3,"q":"That our God may count you worthy of your calling, and fulfill every desire of goodness and ____ with power.","answer":"work of faith","wrong":["labor of love","word of truth","hope of glory"],"v":11},
+{"t":"order","d":2,"items":["Thanks for their growing faith and love","Suffering shows God's righteous judgment","Relief for the afflicted when Jesus is revealed","Prayer that God counts them worthy"],"v":3},
+{"t":"tf","d":1,"q":"Paul says the Thessalonians' faith has weakened under persecution.","answer":false,"v":3},
+{"t":"tf","d":3,"q":"Paul says his testimony to the Thessalonians was believed.","answer":true,"v":10}
+]},
+"2":{"keyVerse":15,"questions":[
+{"t":"choice","d":1,"q":"What false claim was troubling the Thessalonians?","options":["The day of Christ had already come","Paul had died in prison","Jesus would never return","The dead would not rise"],"v":2},
+{"t":"choice","d":2,"q":"What does Paul say must come before that day?","options":["The rebellion and the man of sin revealed","A great famine across the earth","The gospel preached to every nation","The rebuilding of the temple"],"v":3},
+{"t":"choice","d":2,"q":"Where does the man of sin sit, setting himself up as God?","options":["In the temple of God","On the throne of Rome","In the city of Babylon","On the mountain of Zion"],"v":4},
+{"t":"choice","d":3,"q":"How will the Lord kill the lawless one?","options":["With the breath of his mouth","With a sword from heaven","By the hand of an archangel","With fire from the altar"],"v":8},
+{"t":"blank","d":1,"q":"Stand firm and hold the traditions which you were taught by us, whether ____.","answer":"by word or by letter","wrong":["in public or in private","by prophecy or by vision","by Timothy or Silvanus"],"v":15},
+{"t":"blank","d":2,"q":"Because they didn't receive ____, that they might be saved.","answer":"the love of the truth","wrong":["the word of the cross","the gift of the Spirit","the grace of God"],"v":10},
+{"t":"blank","d":3,"q":"Because of this, God sends them ____, that they should believe a lie.","answer":"a powerful delusion","wrong":["a spirit of slumber","a great darkness","a lying prophet"],"v":11},
+{"t":"order","d":3,"items":["The mystery of lawlessness already works","The lawless one revealed and destroyed","God chose them for salvation","Prayer for comfort and every good work"],"v":7},
+{"t":"tf","d":1,"q":"Paul says he never spoke of these things while he was with them.","answer":false,"v":5},
+{"t":"tf","d":2,"q":"Paul says the lawless one comes by the working of Satan, with signs and lying wonders.","answer":true,"v":9}
+]},
+"3":{"keyVerse":13,"questions":[
+{"t":"choice","d":1,"q":"What does Paul first ask them to pray for?","options":["That the word of the Lord spreads rapidly","That he be released from prison","That he may visit them soon","That the Jews would believe"],"v":1},
+{"t":"choice","d":2,"q":"What were some among them doing instead of working?","options":["Being busybodies","Arguing about the law","Eating at idol feasts","Traveling between churches"],"v":11},
+{"t":"choice","d":2,"q":"What does Paul say about the greeting at the end of his letters?","options":["He writes it with his own hand","Timothy writes it for him","He seals it with a ring","Silvanus adds it for him"],"v":17},
+{"t":"choice","d":3,"q":"How should they treat a man who doesn't obey the letter?","options":["Admonish him as a brother, not an enemy","Hand him over to the elders","Forgive him and say nothing","Report him to the other churches"],"v":15},
+{"t":"blank","d":1,"q":"If anyone is not willing to work, ____.","answer":"don't let him eat","wrong":["don't let him teach","send him on his way","let him be rebuked"],"v":10},
+{"t":"blank","d":2,"q":"But the Lord is faithful, who will establish you and ____.","answer":"guard you from the evil one","wrong":["keep you in his love","fill you with his peace","give you all wisdom"],"v":3},
+{"t":"blank","d":3,"q":"May the Lord direct your hearts into God's love and into ____.","answer":"the perseverance of Christ","wrong":["the peace of God","the hope of glory","the joy of the Spirit"],"v":5},
+{"t":"order","d":3,"items":["Pray for deliverance from evil men","Withdraw from those walking in rebellion","Work with quietness and eat your own bread","Note the disobedient and keep no company"],"v":2},
+{"t":"tf","d":1,"q":"Paul says he ate bread from others without paying for it while he was with them.","answer":false,"v":8},
+{"t":"tf","d":2,"q":"Paul says that not all people have faith.","answer":true,"v":2}
+]}
+}}

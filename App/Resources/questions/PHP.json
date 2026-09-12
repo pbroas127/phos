@@ -1,0 +1,461 @@
+{
+ "book": "PHP",
+ "chapters": {
+  "1": {
+   "keyVerse": 21,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say the things that happened to him have done for the Good News?",
+     "options": [
+      "Helped it make progress",
+      "Slowed its spread in the city",
+      "Divided the assemblies",
+      "Silenced the brothers"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who does Paul say came to know that his bonds are in Christ?",
+     "options": [
+      "The whole palace guard",
+      "The Jewish council",
+      "The emperor himself",
+      "The rulers of Philippi"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does Paul respond to those who preach Christ out of envy and strife?",
+     "options": [
+      "He rejoices that Christ is proclaimed",
+      "He warns the church to avoid them",
+      "He curses them as false teachers",
+      "He sends Timothy to stop them"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why does Paul say remaining in the flesh is more needful?",
+     "options": [
+      "For the Philippians' sake",
+      "To finish writing his letters",
+      "To see Jerusalem once more",
+      "To make his defense before Caesar"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For to me to live is Christ, and ____.",
+     "answer": "to die is gain",
+     "wrong": [
+      "to suffer is joy",
+      "to serve is life",
+      "to wait is peace"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He who began a good work in you ____ until the day of Jesus Christ.",
+     "answer": "will complete it",
+     "wrong": [
+      "will guard it",
+      "will reward it",
+      "will increase it"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "It has been granted to you on behalf of Christ, not only to believe in him, but also ____.",
+     "answer": "to suffer on his behalf",
+     "wrong": [
+      "to preach his name",
+      "to reign with him",
+      "to share his glory"
+     ],
+     "v": 29
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Thanks for their partnership in the Good News",
+      "Prayer that their love may abound",
+      "Hard pressed between life and death",
+      "Live worthily of the Good News"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says he desires to depart and be with Christ, which is far better.",
+     "answer": true,
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says his chains have made most of the brothers more afraid to speak the word.",
+     "answer": false,
+     "v": 14
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What form did Christ take when he emptied himself?",
+     "options": [
+      "The form of a servant",
+      "The form of an angel",
+      "The form of a king",
+      "The form of a priest"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom does Paul hope to send to the Philippians soon?",
+     "options": [
+      "Timothy",
+      "Titus",
+      "Silas",
+      "Luke"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happened to Epaphroditus?",
+     "options": [
+      "He was sick nearly to death",
+      "He was imprisoned with Paul",
+      "He was shipwrecked on the way",
+      "He was beaten in Thessalonica"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How does Paul describe Epaphroditus?",
+     "options": [
+      "Brother, fellow worker, and fellow soldier",
+      "The beloved physician and friend",
+      "My true child in the faith",
+      "Fellow prisoner and cousin of Barnabas"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "That at the name of Jesus ____, of those in heaven, those on earth, and those under the earth.",
+     "answer": "every knee should bow",
+     "wrong": [
+      "every heart should rejoice",
+      "all creation should sing",
+      "every enemy should flee"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Work out your own salvation ____. For it is God who works in you.",
+     "answer": "with fear and trembling",
+     "wrong": [
+      "with joy and gladness",
+      "with patience and hope",
+      "in faith and love"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Children of God in a crooked and perverse generation, among whom you are seen as ____.",
+     "answer": "lights in the world",
+     "wrong": [
+      "salt of the earth",
+      "a city on a hill",
+      "children of the day"
+     ],
+     "v": 15
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Make my joy full by being of one mind",
+      "Every tongue confesses Jesus Christ is Lord",
+      "Poured out on the sacrifice of their faith",
+      "Receive Epaphroditus with all joy"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says Christ became obedient to the point of death, the death of the cross.",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says he has many others like Timothy who truly care about the Philippians.",
+     "answer": false,
+     "v": 20
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where does Paul say our citizenship is?",
+     "options": [
+      "In heaven",
+      "In Jerusalem",
+      "In Rome",
+      "In the assembly"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which tribe does Paul say he is from?",
+     "options": [
+      "Benjamin",
+      "Judah",
+      "Levi",
+      "Ephraim"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does Paul now consider the things that were once gain to him?",
+     "options": [
+      "As loss for Christ",
+      "As useful tools for ministry",
+      "As proof of his calling",
+      "As gifts to share with others"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How does Paul describe the enemies of the cross of Christ?",
+     "options": [
+      "Their god is the belly",
+      "Their god is money",
+      "Their god is the law",
+      "Their god is Caesar"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Finally, my brothers, ____! To write the same things to you is not tiresome to me.",
+     "answer": "rejoice in the Lord",
+     "wrong": [
+      "stand firm in faith",
+      "pray without ceasing",
+      "love one another"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "That I may know him and ____, and the fellowship of his sufferings.",
+     "answer": "the power of his resurrection",
+     "wrong": [
+      "the depth of his love",
+      "the riches of his grace",
+      "the glory of his kingdom"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Beware of the dogs; beware of the evil workers; beware of ____.",
+     "answer": "the false circumcision",
+     "wrong": [
+      "the proud teachers",
+      "the false apostles",
+      "the lovers of money"
+     ],
+     "v": 2
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Paul's reasons for confidence in the flesh",
+      "A righteousness from God by faith",
+      "I press on toward the goal",
+      "Be imitators together of me"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says he has already obtained it all and is already made perfect.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says that concerning the law, he was a Pharisee.",
+     "answer": true,
+     "v": 5
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 13,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say he has learned to be in whatever state he is?",
+     "options": [
+      "Content",
+      "Patient",
+      "Silent",
+      "Fearless"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which two women does Paul urge to think the same way in the Lord?",
+     "options": [
+      "Euodia and Syntyche",
+      "Lydia and Chloe",
+      "Priscilla and Phoebe",
+      "Mary and Martha"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say the peace of God will guard?",
+     "options": [
+      "Your hearts and your thoughts",
+      "Your homes and families",
+      "Your words and deeds",
+      "Your bodies and souls"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In which city did the Philippians send help to Paul more than once?",
+     "options": [
+      "Thessalonica",
+      "Corinth",
+      "Berea",
+      "Athens"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "In nothing be anxious, but in everything, by prayer and petition ____, let your requests be made known to God.",
+     "answer": "with thanksgiving",
+     "wrong": [
+      "with fasting",
+      "in faith",
+      "with tears"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "My God will supply every need of yours according to ____ in Christ Jesus.",
+     "answer": "his riches in glory",
+     "wrong": [
+      "the measure of faith",
+      "his great mercy",
+      "your own labor"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "All the saints greet you, especially those who are of ____.",
+     "answer": "Caesar's household",
+     "wrong": [
+      "the assembly in Rome",
+      "the house of Aristarchus",
+      "the Jewish synagogue"
+     ],
+     "v": 22
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Stand firm, my joy and crown",
+      "Rejoice in the Lord always",
+      "Think about whatever is true and honorable",
+      "Gifts received from Epaphroditus"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says that when he left Macedonia, only the Philippians shared with him in giving and receiving.",
+     "answer": true,
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says he is seeking the gift itself from the Philippians.",
+     "answer": false,
+     "v": 17
+    }
+   ]
+  }
+ }
+}

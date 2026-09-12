@@ -1,0 +1,689 @@
+{
+ "book": "EPH",
+ "chapters": {
+  "1": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "When does Paul say God chose us in Christ?",
+     "options": [
+      "Before the foundation of the world",
+      "When we first believed",
+      "On the day of our baptism",
+      "When the law was given"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "After believing the Good News, what were the Ephesians sealed with?",
+     "options": [
+      "The promised Holy Spirit",
+      "The blood of the covenant",
+      "The sign of circumcision",
+      "The name of the Father"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul pray will happen to the eyes of their hearts?",
+     "options": [
+      "That they will be enlightened",
+      "That they will be opened to the poor",
+      "That they will be kept from evil",
+      "That they will see the Lord's return"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul call the Holy Spirit in relation to our inheritance?",
+     "options": [
+      "A pledge of our inheritance",
+      "A tutor until the inheritance",
+      "A guard over our inheritance",
+      "The key to our inheritance"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "In him we have our redemption through his blood, ____, according to the riches of his grace.",
+     "answer": "the forgiveness of our trespasses",
+     "wrong": [
+      "the gift of eternal life",
+      "the promise of his Spirit",
+      "the peace of God himself"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He gave him to be head over all things for the assembly, which is ____, the fullness of him who fills all in all.",
+     "answer": "his body",
+     "wrong": [
+      "his bride",
+      "his temple",
+      "his flock"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "God has blessed us with every spiritual blessing ____ in Christ.",
+     "answer": "in the heavenly places",
+     "wrong": [
+      "through the holy prophets",
+      "from the very beginning",
+      "by the hand of angels"
+     ],
+     "v": 3
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Predestined for adoption as children",
+      "The mystery of his will made known",
+      "Paul gives thanks for their faith and love",
+      "Christ seated at God's right hand"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says he stopped praying for the Ephesians once he heard of their faith.",
+     "answer": false,
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says Christ is far above every name, not only in this age but also in the one to come.",
+     "answer": true,
+     "v": 21
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 8,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say Christ broke down between Jews and Gentiles?",
+     "options": [
+      "The middle wall of separation",
+      "The gates of the temple",
+      "The chains of the law",
+      "The veil over their hearts"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say we were created in Christ Jesus for?",
+     "options": [
+      "Good works God prepared beforehand",
+      "Rest from all our labors",
+      "Keeping the law perfectly",
+      "Ruling over the nations"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who does Paul say is the chief cornerstone of God's household?",
+     "options": [
+      "Christ Jesus himself",
+      "Peter the apostle",
+      "The apostles and prophets",
+      "Abraham our father"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How does Paul describe the spirit now working in the children of disobedience?",
+     "options": [
+      "The prince of the power of the air",
+      "The god of this world",
+      "The ruler of the darkness",
+      "The accuser of the brothers"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For by grace you have been saved through faith, and that not of yourselves; ____.",
+     "answer": "it is the gift of God",
+     "wrong": [
+      "it is the work of Christ",
+      "it is by his mercy",
+      "it comes from above"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But now in Christ Jesus you who once were far off are made near in ____.",
+     "answer": "the blood of Christ",
+     "wrong": [
+      "the love of God",
+      "the promise of peace",
+      "the Spirit of grace"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You are no longer strangers and foreigners, but you are ____ with the saints and of the household of God.",
+     "answer": "fellow citizens",
+     "wrong": [
+      "true brothers",
+      "joint heirs",
+      "fellow servants"
+     ],
+     "v": 19
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Dead in transgressions and sins",
+      "God, rich in mercy, made us alive",
+      "Gentiles once separate from Christ",
+      "Built into a holy temple in the Lord"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says Christ preached peace only to those who were near.",
+     "answer": false,
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says Christ created in himself one new man out of the two, making peace.",
+     "answer": true,
+     "v": 15
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 20,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What mystery does Paul say has now been revealed about the Gentiles?",
+     "options": [
+      "They are fellow heirs and members of the body",
+      "They must first keep the law",
+      "They will rule over Israel",
+      "They will be saved only after Israel"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does Paul describe himself at the start of the chapter?",
+     "options": [
+      "The prisoner of Christ Jesus for the Gentiles",
+      "The apostle to the circumcision",
+      "A servant freed from his chains",
+      "The first of all the apostles"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul call himself when describing the grace given to him?",
+     "options": [
+      "The very least of all saints",
+      "The chief of sinners",
+      "A wise master builder",
+      "The last of the prophets"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Through what is God's manifold wisdom made known to the powers in the heavenly places?",
+     "options": [
+      "The assembly",
+      "The prophets",
+      "The angels",
+      "The law"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "That Christ may dwell in your hearts through faith, to the end that you, ____, may be strengthened.",
+     "answer": "being rooted and grounded in love",
+     "wrong": [
+      "being filled with all joy",
+      "being made strong in hope",
+      "being kept by his power"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "And to know Christ's love which ____, that you may be filled with all the fullness of God.",
+     "answer": "surpasses knowledge",
+     "wrong": [
+      "never grows cold",
+      "endures forever",
+      "covers all sin"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I bow my knees to the Father, from whom ____ in heaven and on earth is named.",
+     "answer": "every family",
+     "wrong": [
+      "every nation",
+      "every creature",
+      "every tongue"
+     ],
+     "v": 15
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The mystery made known by revelation",
+      "Grace to preach Christ's unsearchable riches",
+      "Do not lose heart at my troubles",
+      "The width, length, height, and depth"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says this mystery was made known clearly in other generations.",
+     "answer": false,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says that in Christ we have boldness and access in confidence through our faith.",
+     "answer": true,
+     "v": 12
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 32,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say not to let the sun go down on?",
+     "options": [
+      "Your wrath",
+      "Your work",
+      "Your prayers",
+      "Your debts"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does Paul say Christ gave apostles, prophets, evangelists, shepherds, and teachers?",
+     "options": [
+      "For perfecting the saints and building up the body",
+      "To rule over the Gentile assemblies",
+      "To write down the Scriptures",
+      "To punish those who teach error"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What should a person who used to steal do instead?",
+     "options": [
+      "Labor so he has something to give the needy",
+      "Repay four times what he took",
+      "Confess before the whole assembly",
+      "Give up all his possessions"
+     ],
+     "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Paul says immature children are tossed back and forth and carried about by what?",
+     "options": [
+      "Every wind of doctrine",
+      "Every storm of trouble",
+      "Every wave of the sea",
+      "Every voice of men"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "There is one body and one Spirit, one Lord, ____, one God and Father of all.",
+     "answer": "one faith, one baptism",
+     "wrong": [
+      "one law, one covenant",
+      "one truth, one people",
+      "one table, one cup"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Don't grieve ____, in whom you were sealed for the day of redemption.",
+     "answer": "the Holy Spirit of God",
+     "wrong": [
+      "the hearts of the saints",
+      "the Lord who bought you",
+      "the brothers who teach you"
+     ],
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "But speaking truth ____, we may grow up in all things into him who is the head, Christ.",
+     "answer": "in love",
+     "wrong": [
+      "with boldness",
+      "without fear",
+      "in all wisdom"
+     ],
+     "v": 15
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Walk worthily of your calling",
+      "He ascended on high and gave gifts",
+      "No longer walk as the Gentiles walk",
+      "Put away the old man, put on the new"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says to put away falsehood and speak truth, because we are members of one another.",
+     "answer": true,
+     "v": 25
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says the new man has been created in the likeness of Adam.",
+     "answer": false,
+     "v": 24
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 8,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul tell husbands to do?",
+     "options": [
+      "Love their wives as Christ loved the assembly",
+      "Rule their households with strictness",
+      "Provide for their wives' parents",
+      "Teach their wives the law at home"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Instead of being drunk with wine, what does Paul tell them to do?",
+     "options": [
+      "Be filled with the Spirit",
+      "Give thanks over bread",
+      "Fast and pray",
+      "Drink only water"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does Paul tell them to redeem the time?",
+     "options": [
+      "Because the days are evil",
+      "Because the Lord is near",
+      "Because life is short",
+      "Because the night is coming"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul say a covetous man is?",
+     "options": [
+      "An idolater",
+      "A thief",
+      "A fool",
+      "A liar"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For you were once darkness, but are now light in the Lord. ____.",
+     "answer": "Walk as children of light",
+     "wrong": [
+      "Shine before all people",
+      "Stay awake and pray",
+      "Keep your lamps burning"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Speaking to one another in ____; singing and making melody in your heart to the Lord.",
+     "answer": "psalms, hymns, and spiritual songs",
+     "wrong": [
+      "prayers, praises, and blessings",
+      "words of truth and grace",
+      "prophecies and holy teachings"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Awake, you who sleep, and arise from the dead, and ____.",
+     "answer": "Christ will shine on you",
+     "wrong": [
+      "the Lord will lift you",
+      "God will give you life",
+      "you will see his glory"
+     ],
+     "v": 14
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Be imitators of God as beloved children",
+      "No fellowship with the deeds of darkness",
+      "Subject to one another in the fear of Christ",
+      "A great mystery about Christ and the assembly"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says the husband is the head of the wife, as Christ is the head of the assembly.",
+     "answer": true,
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says Christ cleansed the assembly by the washing of water with the law.",
+     "answer": false,
+     "v": 26
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say our wrestling is NOT against?",
+     "options": [
+      "Flesh and blood",
+      "Principalities",
+      "The world's rulers of darkness",
+      "Spiritual forces of wickedness"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which commandment does Paul call the first commandment with a promise?",
+     "options": [
+      "Honor your father and mother",
+      "You shall not steal",
+      "Remember the Sabbath day",
+      "You shall have no other gods"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul tell masters to give up?",
+     "options": [
+      "Threatening",
+      "Their wealth",
+      "Their authority",
+      "Their servants"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whom is Paul sending to tell them how he is doing?",
+     "options": [
+      "Tychicus",
+      "Timothy",
+      "Epaphras",
+      "Onesimus"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Above all, taking up ____, with which you will be able to quench all the fiery darts of the evil one.",
+     "answer": "the shield of faith",
+     "wrong": [
+      "the helmet of hope",
+      "the sword of truth",
+      "the armor of light"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Stand therefore, having truth buckled around your waist, and having put on ____.",
+     "answer": "the breastplate of righteousness",
+     "wrong": [
+      "the robe of salvation",
+      "the coat of peace",
+      "the garment of praise"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Pray for me, to make known the mystery of the Good News, for which I am ____.",
+     "answer": "an ambassador in chains",
+     "wrong": [
+      "a prisoner of hope",
+      "a servant of all",
+      "a debtor to all"
+     ],
+     "v": 20
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Children, obey your parents",
+      "Servants, obey your earthly masters",
+      "Put on the whole armor of God",
+      "Pray for me to speak boldly"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul tells fathers not to provoke their children to wrath.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says servants should work hardest when their masters' eyes are on them.",
+     "answer": false,
+     "v": 6
+    }
+   ]
+  }
+ }
+}

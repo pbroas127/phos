@@ -1,0 +1,62 @@
+{"book":"1PE","chapters":{
+"1":{"keyVerse":16,"questions":[
+{"t":"choice","d":1,"q":"According to Peter's opening blessing, God caused believers to be born again to what?","options":["A living hope","A lasting peace","A new kingdom","A holy calling"],"v":3},
+{"t":"choice","d":2,"q":"Peter says believers were redeemed not with silver or gold, but with what?","options":["Precious blood, as of a spotless lamb","Faithful obedience to the law","The prayers of the prophets","An offering made by fire"],"v":19},
+{"t":"choice","d":3,"q":"Which region is NOT named among the places Peter's readers are living?","options":["Macedonia","Cappadocia","Bithynia","Galatia"],"v":1},
+{"t":"choice","d":2,"q":"What does Peter say angels desire to do?","options":["Look into these things","Sing about these things","Serve the prophets","Announce the Good News"],"v":12},
+{"t":"blank","d":1,"q":"The grass withers, and its flower falls; but ____.","answer":"the Lord's word endures forever","wrong":["his mercy lasts forever","the Lord's glory remains","his kingdom stands forever"],"v":25},
+{"t":"blank","d":2,"q":"The proof of your faith, which is more precious than ____, is tested by fire.","answer":"gold that perishes","wrong":["silver that tarnishes","jewels that fade","treasure that rusts"],"v":7},
+{"t":"blank","d":3,"q":"Having been born again, not of corruptible seed, but of incorruptible, through ____.","answer":"the word of God","wrong":["the blood of Christ","the power of the Spirit","the grace of faith"],"v":23},
+{"t":"order","d":2,"items":["Born again to a living hope","Faith tested by fire like gold","The prophets searched about this salvation","Redeemed with the blood of a spotless lamb"],"v":3},
+{"t":"tf","d":1,"q":"Peter tells his readers that they love and rejoice in Jesus even though they do not see him now.","answer":true,"v":8},
+{"t":"tf","d":3,"q":"Peter says it was revealed to the prophets that they were serving themselves in what they foretold.","answer":false,"v":12}
+]},
+"2":{"keyVerse":17,"questions":[
+{"t":"choice","d":1,"q":"Like newborn babies, what does Peter tell believers to long for?","options":["The pure spiritual milk","The bread of heaven","The wisdom of the elders","The living water"],"v":2},
+{"t":"choice","d":2,"q":"What does Peter call Jesus, rejected by men but chosen by God?","options":["A living stone","A faithful servant","A true vine","A morning star"],"v":4},
+{"t":"choice","d":2,"q":"According to the Scripture Peter quotes, what was not found in Christ's mouth?","options":["Deceit","Anger","Complaint","Boasting"],"v":22},
+{"t":"choice","d":3,"q":"Peter says his readers were once going astray like what?","options":["Sheep","Branches cut off","Seeds on rocky ground","Lost coins"],"v":25},
+{"t":"blank","d":1,"q":"But you are a chosen race, a royal priesthood, ____, a people for God's own possession.","answer":"a holy nation","wrong":["a faithful remnant","a sacred temple","a holy family"],"v":9},
+{"t":"blank","d":2,"q":"Live as free people, yet not using your freedom for ____, but as bondservants of God.","answer":"a cloak of wickedness","wrong":["an excuse for pride","a license to sin","a mask of deceit"],"v":16},
+{"t":"blank","d":3,"q":"Honor all men. Love the brotherhood. ____. Honor the king.","answer":"Fear God","wrong":["Obey the elders","Pray without ceasing","Serve one another"],"v":17},
+{"t":"order","d":2,"items":["Put away all wickedness and deceit","Come to him, a living stone","Subject yourselves to every ordinance of man","Servants, be in subjection to your masters"],"v":1},
+{"t":"tf","d":1,"q":"Peter tells servants to be subject only to masters who are good and gentle.","answer":false,"v":18},
+{"t":"tf","d":3,"q":"Peter says governors are sent for vengeance on evildoers and for praise to those who do well.","answer":true,"v":14}
+]},
+"3":{"keyVerse":14,"questions":[
+{"t":"choice","d":1,"q":"Where does Peter say a wife's beauty should come from?","options":["The hidden person of the heart","Gold ornaments and fine clothing","Her good works in the church","Her wisdom and knowledge"],"v":4},
+{"t":"choice","d":2,"q":"What did Sarah call Abraham, as Peter describes her?","options":["Lord","Husband","Master","Friend"],"v":6},
+{"t":"choice","d":2,"q":"Peter tells husbands to honor their wives for what stated purpose?","options":["That their prayers may not be hindered","That their homes may be at peace","That their children may obey them","That they may live long on earth"],"v":7},
+{"t":"choice","d":3,"q":"How many souls does Peter say were saved through water in Noah's ship?","options":["Eight","Seven","Twelve","Six"],"v":20},
+{"t":"blank","d":1,"q":"Always be ready to give an answer to everyone who asks you a reason concerning ____.","answer":"the hope that is in you","wrong":["the faith you have received","the grace that saved you","the love you have shown"],"v":15},
+{"t":"blank","d":2,"q":"Let him turn away from evil and do good. Let him ____.","answer":"seek peace and pursue it","wrong":["guard his heart always","love his neighbor freely","walk in the light"],"v":11},
+{"t":"blank","d":3,"q":"The incorruptible adornment of ____, which is very precious in God's sight.","answer":"a gentle and quiet spirit","wrong":["a humble and faithful heart","a pure and patient mind","a kind and loving soul"],"v":4},
+{"t":"order","d":2,"items":["Wives, be in subjection to your own husbands","Husbands, live with your wives according to knowledge","All of you be like minded and compassionate","Christ preached to the spirits in prison"],"v":1},
+{"t":"tf","d":1,"q":"Peter says that if you suffer for righteousness' sake, you are blessed.","answer":true,"v":14},
+{"t":"tf","d":3,"q":"Peter says baptism saves by putting away the filth of the flesh.","answer":false,"v":21}
+]},
+"4":{"keyVerse":8,"questions":[
+{"t":"choice","d":1,"q":"What does Peter say love covers?","options":["A multitude of sins","Every kind of fear","All our weaknesses","The shame of the past"],"v":8},
+{"t":"choice","d":2,"q":"What does Peter say about the end of all things?","options":["It is near","It is hidden from all","It will come like a thief","It is still far off"],"v":7},
+{"t":"choice","d":2,"q":"What does Peter tell believers to be toward one another without grumbling?","options":["Hospitable","Patient","Generous","Forgiving"],"v":9},
+{"t":"choice","d":3,"q":"Which of these is NOT in Peter's list of ways a believer should not suffer?","options":["As a liar","As a murderer","As a thief","As a meddler in other men's matters"],"v":15},
+{"t":"blank","d":1,"q":"Beloved, don't be astonished at ____ which has come upon you to test you.","answer":"the fiery trial","wrong":["the great sorrow","the heavy burden","the dark hour"],"v":12},
+{"t":"blank","d":2,"q":"If anyone speaks, let it be as it were ____.","answer":"the very words of God","wrong":["a word of wisdom","a message of grace","the voice of the Spirit"],"v":11},
+{"t":"blank","d":3,"q":"For the time has come for judgment to begin with ____.","answer":"the household of God","wrong":["the rulers of this world","the enemies of the Good News","the elders of the church"],"v":17},
+{"t":"order","d":2,"items":["Arm yourselves with the same mind as Christ","A past life of lewdness and drunken binges","Employ each gift in serving one another","Entrust your souls to a faithful Creator"],"v":1},
+{"t":"tf","d":1,"q":"Peter says a believer who suffers for being a Christian should not be ashamed.","answer":true,"v":16},
+{"t":"tf","d":3,"q":"Peter says the Gentiles speak well of believers who no longer run with them into excess.","answer":false,"v":4}
+]},
+"5":{"keyVerse":7,"questions":[
+{"t":"choice","d":1,"q":"What does Peter compare the devil to?","options":["A roaring lion","A hungry wolf","A crafty serpent","A thief in the night"],"v":8},
+{"t":"choice","d":2,"q":"What will faithful elders receive when the chief Shepherd is revealed?","options":["The crown of glory that doesn't fade","A seat at his right hand","A reward of eternal rest","The crown of righteousness"],"v":4},
+{"t":"choice","d":2,"q":"How does Peter describe himself when he addresses the elders?","options":["A fellow elder and witness of Christ's sufferings","The chief shepherd of the churches","The least of the apostles","A servant of the Gentiles"],"v":1},
+{"t":"choice","d":3,"q":"Through whom does Peter say he has written this letter?","options":["Silvanus","Timothy","Luke","Barnabas"],"v":12},
+{"t":"blank","d":1,"q":"Casting all your worries on him, because ____.","answer":"he cares for you","wrong":["he knows your needs","he hears your prayers","his love is great"],"v":7},
+{"t":"blank","d":2,"q":"God resists the proud, but ____.","answer":"gives grace to the humble","wrong":["lifts up the lowly","hears the cry of the poor","exalts the meek in spirit"],"v":5},
+{"t":"blank","d":3,"q":"Greet one another with ____. Peace be to all of you who are in Christ Jesus.","answer":"a kiss of love","wrong":["a holy embrace","a word of peace","a warm welcome"],"v":14},
+{"t":"order","d":2,"items":["Exhort the elders to shepherd the flock","Younger ones, be subject to the elder","Withstand him steadfast in your faith","She who is in Babylon greets you"],"v":1},
+{"t":"tf","d":1,"q":"Peter tells elders to lead by lording it over those entrusted to them.","answer":false,"v":3},
+{"t":"tf","d":3,"q":"Peter says believers' brothers in the world are undergoing the same sufferings.","answer":true,"v":9}
+]}
+}}

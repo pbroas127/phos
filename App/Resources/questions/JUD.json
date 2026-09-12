@@ -1,0 +1,14 @@
+{"book":"JUD","chapters":{
+"1":{"keyVerse":21,"questions":[
+{"t":"choice","d":1,"q":"Jude calls himself a servant of Jesus Christ and the brother of whom?","options":["James","Peter","John","Thomas"],"v":1},
+{"t":"choice","d":2,"q":"What reason does Jude give for urging readers to contend for the faith?","options":["Ungodly men had crept in secretly","The apostles had been put in prison","Persecution had scattered the believers","False prophets had sent letters"],"v":4},
+{"t":"choice","d":2,"q":"What did Michael the archangel say while arguing with the devil about Moses' body?","options":["May the Lord rebuke you!","Get behind me, Satan!","The body belongs to God!","You have no authority here!"],"v":9},
+{"t":"choice","d":3,"q":"Which three are named in Jude's woe against these men?","options":["Cain, Balaam, and Korah","Cain, Esau, and Balaam","Pharaoh, Korah, and Jezebel","Balaam, Achan, and Absalom"],"v":11},
+{"t":"blank","d":1,"q":"Contend earnestly for the faith which was ____ delivered to the saints.","answer":"once for all","wrong":["long ago","by the prophets","in these days"],"v":3},
+{"t":"blank","d":2,"q":"Autumn trees without fruit, twice dead, ____.","answer":"plucked up by the roots","wrong":["burned in the fire","cut down to the ground","withered in the sun"],"v":12},
+{"t":"blank","d":3,"q":"Enoch, ____, prophesied, saying, \"Behold, the Lord came with ten thousands of his holy ones.\"","answer":"the seventh from Adam","wrong":["the son of Seth","the first of the prophets","the friend of God"],"v":14},
+{"t":"order","d":2,"items":["A people saved out of Egypt, unbelievers destroyed","Angels kept in everlasting bonds","Sodom and Gomorrah suffering eternal fire","Michael contending about the body of Moses"],"v":5},
+{"t":"tf","d":1,"q":"Jude reminds readers that the apostles foretold mockers would come in the last time.","answer":true,"v":18},
+{"t":"tf","d":3,"q":"Jude says he was first eager to write about the coming judgment before changing his subject.","answer":false,"v":3}
+]}
+}}

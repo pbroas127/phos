@@ -1,0 +1,30 @@
+name: beta
+# Manual only. Signing the app needs Apple's Family Controls distribution entitlement on every bundle ID.
+on:
+  workflow_dispatch:
+concurrency:
+  group: beta
+  cancel-in-progress: false
+jobs:
+  upload:
+    runs-on: macos-15
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select newest Xcode 26
+        run: |
+          XCODE=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          sudo xcode-select -s "$XCODE"
+      - uses: webfactory/ssh-agent@v0.9.1
+        with:
+          ssh-private-key: ${{ secrets.MATCH_DEPLOY_KEY }}
+      - run: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+      - run: brew install xcodegen
+      - run: xcodegen generate
+      - run: which fastlane || brew install fastlane
+      - run: fastlane beta
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
+          MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}

@@ -1,0 +1,3560 @@
+{
+ "book": "PRO",
+ "chapters": {
+  "1": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In chapter 1, where does Wisdom call aloud?",
+     "options": [
+      "In the street and the public squares",
+      "In the temple courts",
+      "From the top of a mountain",
+      "Beside the king's throne"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do the sinners promise the son they will all share?",
+     "options": [
+      "One purse",
+      "One house",
+      "One table",
+      "One inheritance"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the son's parents' teaching become for him?",
+     "options": [
+      "A garland for his head and chains for his neck",
+      "A lamp for his feet and light for his path",
+      "A shield for his body and a staff in his hand",
+      "A crown for his head and a ring for his hand"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Wisdom say she will do when disaster comes on those who refused her?",
+     "options": [
+      "Laugh at their disaster",
+      "Weep over their ruin",
+      "Plead with them one more time",
+      "Hide them from the storm"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The fear of the LORD is ____, but the foolish despise wisdom and instruction.",
+     "answer": "the beginning of knowledge",
+     "wrong": [
+      "the end of all folly",
+      "the root of all wisdom",
+      "a crown for the humble"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For the net is spread in vain ____.",
+     "answer": "in the sight of any bird",
+     "wrong": [
+      "when the hunter is asleep",
+      "before the eyes of the fox",
+      "where no birds will come"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "But whoever listens to me will dwell securely, and will be ____.",
+     "answer": "at ease, without fear of harm",
+     "wrong": [
+      "rich in years and honor",
+      "kept safe from every snare",
+      "at peace with all his neighbors"
+     ],
+     "v": 33
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The fear of the LORD is the beginning of knowledge",
+      "If sinners entice you, don't consent",
+      "Wisdom calls aloud in the street",
+      "Whoever listens to me will dwell securely"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Wisdom says that those who rejected her will find her if they seek her diligently when calamity comes.",
+     "answer": false,
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 1 says the sinners who lie in wait for the innocent are really lurking for their own lives.",
+     "answer": true,
+     "v": 18
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In chapter 2, wisdom delivers the son from which two dangers?",
+     "options": [
+      "Evil men and the strange woman",
+      "Famine and war",
+      "Debt and laziness",
+      "Drunkards and gluttons"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "The son is told to search for wisdom as he would for what?",
+     "options": [
+      "Silver and hidden treasures",
+      "Water in a dry land",
+      "A lost sheep in the hills",
+      "Bread in a time of famine"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where does the strange woman's house lead?",
+     "options": [
+      "Down to death",
+      "To poverty and shame",
+      "Into the hands of strangers",
+      "To a city of fools"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to chapter 2, what has the strange woman forgotten?",
+     "options": [
+      "The covenant of her God",
+      "The teaching of her mother",
+      "The vows she made at the gate",
+      "The house of her father"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For the LORD gives wisdom. Out of his mouth comes ____.",
+     "answer": "knowledge and understanding",
+     "wrong": [
+      "counsel and strength",
+      "life and peace",
+      "justice and mercy"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He lays up sound wisdom for the upright. He is a shield to ____.",
+     "answer": "those who walk in integrity",
+     "wrong": [
+      "those who seek his face",
+      "all who take refuge in him",
+      "the humble and the poor"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "None who go to her return again, neither do they ____.",
+     "answer": "attain to the paths of life",
+     "wrong": [
+      "find their way back home",
+      "see the light of day",
+      "escape the snare of death"
+     ],
+     "v": 19
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Receive my words and store up my commandments",
+      "Seek her as silver",
+      "Then you will understand the fear of the LORD",
+      "Deliver you from the strange woman"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 2 says the upright will dwell in the land, but the wicked will be cut off from it.",
+     "answer": true,
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "In chapter 2, the strange woman is described as one who flatters with her eyes.",
+     "answer": false,
+     "v": 16
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 5,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In chapter 3, what is called a tree of life to those who lay hold of her?",
+     "options": [
+      "Wisdom",
+      "Kindness",
+      "The law",
+      "Truth"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What is promised to those who honor the LORD with their first fruits?",
+     "options": [
+      "Barns filled with plenty",
+      "Enemies at peace with them",
+      "Long life in the land",
+      "Children who rise up and bless them"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where is the son told to write kindness and truth?",
+     "options": [
+      "On the tablet of his heart",
+      "On the doorposts of his house",
+      "On the palms of his hands",
+      "On a scroll beside his bed"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to chapter 3, how does the LORD treat mockers and the humble?",
+     "options": [
+      "He mocks the mockers and gives grace to the humble",
+      "He silences the mockers and lifts up the humble",
+      "He humbles the mockers and honors the humble",
+      "He scatters the mockers and feeds the humble"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Trust in the LORD with all your heart, and ____.",
+     "answer": "don't lean on your own understanding",
+     "wrong": [
+      "don't fear the counsel of men",
+      "walk humbly in all his ways",
+      "don't forget all his benefits"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "My son, don't despise the LORD's discipline, neither ____.",
+     "answer": "be weary of his correction",
+     "wrong": [
+      "turn from his instruction",
+      "forget his good commands",
+      "reject the words of his mouth"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Don't say to your neighbor, \"Go, and come again; ____ to you,\" when you have it by you.",
+     "answer": "tomorrow I will give it",
+     "wrong": [
+      "next week I will pay it",
+      "after harvest I will return it",
+      "when I am able I'll bring it"
+     ],
+     "v": 28
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Trust in the LORD with all your heart",
+      "Honor the LORD with your substance",
+      "Happy is the man who finds wisdom",
+      "Don't withhold good from those to whom it is due"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 3 says wisdom is more precious than rubies.",
+     "answer": true,
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 3 says riches and honor are in wisdom's right hand, and length of days is in her left.",
+     "answer": false,
+     "v": 16
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 23,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In chapter 4, who does the speaker say taught him about wisdom when he was young?",
+     "options": [
+      "His own father",
+      "His mother",
+      "The king",
+      "The elders at the gate"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What is the path of the righteous compared to?",
+     "options": [
+      "The dawning light that shines more and more",
+      "A river that never runs dry",
+      "A lamp that burns through the night",
+      "A level road through the city"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What do the wicked eat and drink in chapter 4?",
+     "options": [
+      "The bread of wickedness and the wine of violence",
+      "The bread of idleness and the wine of pride",
+      "The bread of deceit and the wine of anger",
+      "The bread of sorrow and the wine of mockery"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does chapter 4 say the wicked cannot sleep?",
+     "options": [
+      "They don't sleep unless they do evil",
+      "Their guilt troubles them at night",
+      "They fear being caught",
+      "They lie awake counting their plunder"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Keep your heart with all diligence, for out of it is ____.",
+     "answer": "the wellspring of life",
+     "wrong": [
+      "the fountain of wisdom",
+      "the path of peace",
+      "the root of all honor"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Wisdom is supreme. Get wisdom. Yes, though it costs ____, get understanding.",
+     "answer": "all your possessions",
+     "wrong": [
+      "all your years",
+      "your father's inheritance",
+      "the silver in your house"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The way of the wicked is like darkness. They don't know ____.",
+     "answer": "what they stumble over",
+     "wrong": [
+      "where their path will end",
+      "who is leading them astray",
+      "the way back to the light"
+     ],
+     "v": 19
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Listen, sons, to a father's instruction",
+      "Get wisdom. Get understanding.",
+      "Don't enter into the path of the wicked",
+      "Put away from yourself a perverse mouth"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 4 tells the son not to turn to the right hand or to the left.",
+     "answer": true,
+     "v": 27
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The father in chapter 4 says he was one of many sons in his mother's sight.",
+     "answer": false,
+     "v": 3
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 21,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who is the main warning of chapter 5 about?",
+     "options": [
+      "An adulteress",
+      "A violent man",
+      "A lazy neighbor",
+      "A flattering king"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do the lips of the adulteress drip?",
+     "options": [
+      "Honey",
+      "Wine",
+      "Myrrh",
+      "Poison"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In the end, the adulteress is as bitter as what?",
+     "options": [
+      "Wormwood",
+      "Gall",
+      "Vinegar",
+      "Unripe grapes"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the man who followed her say when he groans at his latter end?",
+     "options": [
+      "That he hated instruction and despised reproof",
+      "That he trusted in his own wealth",
+      "That he did not honor his father",
+      "That he waited too long to turn back"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Drink water out of your own cistern, running water ____.",
+     "answer": "out of your own well",
+     "wrong": [
+      "from your own spring",
+      "from your father's field",
+      "from the rock you have dug"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Remove your way far from her. Don't come near ____.",
+     "answer": "the door of her house",
+     "wrong": [
+      "the window of her room",
+      "the street where she walks",
+      "the corner where she waits"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The evil deeds of the wicked ensnare him. ____ hold him firmly.",
+     "answer": "The cords of his sin",
+     "wrong": [
+      "The chains of his pride",
+      "The nets of his greed",
+      "The ropes of his folly"
+     ],
+     "v": 22
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Her feet go down to death",
+      "You will groan at your latter end",
+      "Rejoice in the wife of your youth",
+      "The ways of man are before the LORD's eyes"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 5 says the adulteress gives careful thought to the way of life.",
+     "answer": false,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 5 warns that your labors could end up enriching another man's house.",
+     "answer": true,
+     "v": 10
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In chapter 6, what creature is the sluggard told to go and learn from?",
+     "options": [
+      "The ant",
+      "The bee",
+      "The badger",
+      "The locust"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does chapter 6 introduce its list of things the LORD hates?",
+     "options": [
+      "Six things, yes, seven",
+      "Three things, yes, four",
+      "Five things, yes, six",
+      "Seven things, yes, eight"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happens to a son who has put up collateral for his neighbor?",
+     "options": [
+      "He is trapped by the words of his mouth",
+      "He will lose his house to strangers",
+      "He is bound to serve his neighbor",
+      "He must repay seven times over"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "If a hungry thief is caught, what must he restore?",
+     "options": [
+      "Seven times what he took",
+      "Twice what he took",
+      "Four times what he took",
+      "Ten times what he took"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "A little sleep, a little slumber, ____.",
+     "answer": "a little folding of the hands",
+     "wrong": [
+      "a little rest from your labor",
+      "a little ease in the afternoon",
+      "a little leaning on your bed"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "So your poverty will come as a robber, and your scarcity ____.",
+     "answer": "as an armed man",
+     "wrong": [
+      "as a thief at night",
+      "as a flood in spring",
+      "as a lion in the field"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For the commandment is a lamp, and ____. Reproofs of instruction are the way of life.",
+     "answer": "the law is light",
+     "wrong": [
+      "the truth is a shield",
+      "the word is bread",
+      "wisdom is a guide"
+     ],
+     "v": 23
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Arrogant eyes",
+      "A lying tongue",
+      "Hands that shed innocent blood",
+      "A heart that devises wicked schemes"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 6 compares going in to a neighbor's wife to scooping fire into your lap.",
+     "answer": true,
+     "v": 27
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 6 says a jealous husband will rest content if he is given enough gifts.",
+     "answer": false,
+     "v": 35
+    }
+   ]
+  },
+  "7": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In chapter 7, from where does the speaker watch the young man?",
+     "options": [
+      "Through the lattice of his window",
+      "From the city gate",
+      "From his rooftop",
+      "From the marketplace"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What reason does the woman give that it is safe to come with her?",
+     "options": [
+      "Her husband has gone on a long journey",
+      "Her servants are away at the harvest",
+      "Her husband is sick in bed",
+      "Her family is away at a feast"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does the young man follow her?",
+     "options": [
+      "As an ox goes to the slaughter",
+      "As a lamb follows its shepherd",
+      "As a deer runs to water",
+      "As a moth flies into a flame"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "When does the woman say her husband will come home?",
+     "options": [
+      "At the full moon",
+      "After the harvest",
+      "At the new moon",
+      "After the feast"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Tell wisdom, \"You are my sister.\" ____ your relative.",
+     "answer": "Call understanding",
+     "wrong": [
+      "Call discretion",
+      "Name instruction",
+      "Count prudence"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I have perfumed my bed with ____.",
+     "answer": "myrrh, aloes, and cinnamon",
+     "wrong": [
+      "frankincense, nard, and saffron",
+      "sweet spices from the east",
+      "oil of roses and henna"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Her house is the way to Sheol, going down to ____.",
+     "answer": "the rooms of death",
+     "wrong": [
+      "the gates of the grave",
+      "the depths of the pit",
+      "the shadows of the dead"
+     ],
+     "v": 27
+    },
+    {
+     "t": "order",
+     "d": 1,
+     "items": [
+      "He passes through the street near her corner",
+      "She meets him dressed like a prostitute",
+      "She says she has paid her vows today",
+      "With persuasive words she leads him astray"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "In chapter 7, the young man is described as wise but careless.",
+     "answer": false,
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The woman in chapter 7 says she has spread her couch with striped cloths of the yarn of Egypt.",
+     "answer": true,
+     "v": 16
+    }
+   ]
+  },
+  "8": {
+   "keyVerse": 17,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who is the main speaker in chapter 8?",
+     "options": [
+      "Wisdom",
+      "A father to his son",
+      "King Solomon",
+      "The worthy woman"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to chapter 8, what is the fear of the LORD?",
+     "options": [
+      "To hate evil",
+      "To love mercy",
+      "To keep his statutes",
+      "To walk humbly"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does wisdom say happens by her?",
+     "options": [
+      "Kings reign and princes decree justice",
+      "Prophets speak and priests make offerings",
+      "Armies win and cities stand",
+      "Rains fall and fields yield grain"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does wisdom say she was beside the LORD when he marked out the earth?",
+     "options": [
+      "The craftsman by his side",
+      "The builder of the foundations",
+      "The keeper of the seas",
+      "The herald of the heavens"
+     ],
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For whoever finds me finds life, and ____.",
+     "answer": "will obtain favor from the LORD",
+     "wrong": [
+      "will walk in the light",
+      "will be counted among the wise",
+      "will never lack for bread"
+     ],
+     "v": 35
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Receive my instruction rather than silver, ____.",
+     "answer": "knowledge rather than choice gold",
+     "wrong": [
+      "understanding rather than rubies",
+      "wisdom rather than precious stones",
+      "counsel rather than a king's favor"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "But he who sins against me wrongs his own soul. All those who hate me ____.",
+     "answer": "love death",
+     "wrong": [
+      "walk in darkness",
+      "hate their own lives",
+      "will be forgotten"
+     ],
+     "v": 36
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Before the mountains were settled in place",
+      "When he established the heavens, I was there",
+      "When he gave to the sea its boundary",
+      "My delight was with the sons of men"
+     ],
+     "v": 25
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "In chapter 8, wisdom calls out only in hidden places, away from the city gates.",
+     "answer": false,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Wisdom says she was set up from everlasting, before the earth existed.",
+     "answer": true,
+     "v": 23
+    }
+   ]
+  },
+  "9": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which two women call out to the simple in chapter 9?",
+     "options": [
+      "Wisdom and the foolish woman",
+      "Wisdom and the adulteress's maid",
+      "The worthy woman and a quarrelsome wife",
+      "A mother and a prostitute"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many pillars has Wisdom carved out for her house?",
+     "options": [
+      "Seven",
+      "Twelve",
+      "Four",
+      "Three"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to chapter 9, what happens if you reprove a wise person?",
+     "options": [
+      "He will love you",
+      "He will answer you with patience",
+      "He will teach others what you said",
+      "He will honor you before the elders"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where does the foolish woman sit?",
+     "options": [
+      "At the door of her house, in the high places",
+      "Beside the well at the city gate",
+      "At the corner of the market",
+      "Under the shade of the city wall"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The fear of the LORD is the beginning of wisdom. ____ is understanding.",
+     "answer": "The knowledge of the Holy One",
+     "wrong": [
+      "The love of his commandments",
+      "The keeping of his law",
+      "A humble and contrite heart"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "One who corrects a mocker ____. One who reproves a wicked man invites abuse.",
+     "answer": "invites insult",
+     "wrong": [
+      "wastes his breath",
+      "gains no friend",
+      "sharpens his tongue"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Stolen water is sweet. ____ is pleasant.",
+     "answer": "Food eaten in secret",
+     "wrong": [
+      "Bread taken at night",
+      "Wine poured in darkness",
+      "Fruit from another's field"
+     ],
+     "v": 17
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Wisdom has built her house",
+      "If you are wise, you are wise for yourself",
+      "The foolish woman is loud and undisciplined",
+      "Her guests are in the depths of Sheol"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "In chapter 9, both Wisdom and the foolish woman call out, \"Whoever is simple, let him turn in here.\"",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 9 says that if you mock, others will bear the consequences along with you.",
+     "answer": false,
+     "v": 12
+    }
+   ]
+  },
+  "10": {
+   "keyVerse": 12,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In chapter 10, whom does a foolish son bring grief to?",
+     "options": [
+      "His mother",
+      "His father",
+      "His brothers",
+      "His whole house"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What is the sluggard like to those who send him?",
+     "options": [
+      "Vinegar to the teeth and smoke to the eyes",
+      "Salt in a wound and sand in the eyes",
+      "A thorn in the foot and rust on a blade",
+      "Rain at harvest and frost in spring"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to chapter 10, what is the rich man's wealth to him?",
+     "options": [
+      "His strong city",
+      "His hiding place",
+      "A snare to his soul",
+      "A crown on his head"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does chapter 10 say will happen to the name of the wicked?",
+     "options": [
+      "It will rot",
+      "It will be blotted out",
+      "It will become a curse",
+      "It will be forgotten in a day"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Hatred stirs up strife, but ____.",
+     "answer": "love covers all wrongs",
+     "wrong": [
+      "a gentle word brings peace",
+      "patience calms a quarrel",
+      "kindness turns away wrath"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He who gathers in summer is a wise son, but he who ____ is a son who causes shame.",
+     "answer": "sleeps during the harvest",
+     "wrong": [
+      "wastes his father's grain",
+      "rests while others labor",
+      "spends before he gathers"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "In the multitude of words there is no lack of disobedience, but he who restrains his lips ____.",
+     "answer": "does wisely",
+     "wrong": [
+      "keeps his honor",
+      "gains a friend",
+      "finds favor"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The tongue of the righteous is like ____. The heart of the wicked is of little worth.",
+     "answer": "choice silver",
+     "wrong": [
+      "refined gold",
+      "a flowing brook",
+      "a gentle rain"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 10 says that when the whirlwind passes, the righteous stand firm forever.",
+     "answer": true,
+     "v": 25
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 10 says the LORD's blessing brings wealth, though trouble comes along with it.",
+     "answer": false,
+     "v": 22
+    }
+   ]
+  },
+  "11": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does chapter 11 open by calling an abomination to the LORD?",
+     "options": [
+      "A false balance",
+      "A proud look",
+      "A broken vow",
+      "A lazy hand"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What is a beautiful woman who lacks discretion compared to?",
+     "options": [
+      "A gold ring in a pig's snout",
+      "A jewel dropped in the mud",
+      "A lamp without oil",
+      "A painted wall without a foundation"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to chapter 11, where is there victory?",
+     "options": [
+      "In the multitude of counselors",
+      "In the strength of the king",
+      "In a people of one heart",
+      "In the fear of the enemy"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does chapter 11 say one who troubles his own house will inherit?",
+     "options": [
+      "The wind",
+      "Dust and ashes",
+      "An empty field",
+      "His father's debts"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "When pride comes, then comes shame, but ____.",
+     "answer": "with humility comes wisdom",
+     "wrong": [
+      "with patience comes honor",
+      "the lowly are lifted up",
+      "the meek will inherit peace"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He who trusts in his riches will fall, but the righteous shall flourish ____.",
+     "answer": "as the green leaf",
+     "wrong": [
+      "like a tree by the river",
+      "as the cedars of Lebanon",
+      "like grass after rain"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "One who brings gossip betrays a confidence, but one who is of a trustworthy spirit ____.",
+     "answer": "is one who keeps a secret",
+     "wrong": [
+      "is slow to speak his mind",
+      "guards the name of his friend",
+      "speaks only what is true"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The liberal soul shall be made fat. ____ shall be watered also himself.",
+     "answer": "He who waters",
+     "wrong": [
+      "He who plants",
+      "He who gives drink",
+      "He who sows freely"
+     ],
+     "v": 25
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 11 says riches can deliver a person in the day of wrath.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 11 says people curse someone who withholds grain, but bless the one who sells it.",
+     "answer": true,
+     "v": 26
+    }
+   ]
+  },
+  "12": {
+   "keyVerse": 25,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In chapter 12, what is a worthy woman to her husband?",
+     "options": [
+      "His crown",
+      "The strength of his house",
+      "A shield at his side",
+      "The joy of his youth"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to chapter 12, how does a righteous man treat his animal?",
+     "options": [
+      "He respects its life",
+      "He feeds it before himself",
+      "He lets it rest on the Sabbath",
+      "He never strikes it in anger"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In chapter 12, what is rash speech compared to?",
+     "options": [
+      "The piercing of a sword",
+      "A fire in dry grass",
+      "A hammer striking stone",
+      "An arrow shot in the dark"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does chapter 12 say the slothful man doesn't do?",
+     "options": [
+      "Roast his game",
+      "Plow his field in winter",
+      "Mend his broken wall",
+      "Gather his grapes"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The way of a fool is right in his own eyes, but he who is wise ____.",
+     "answer": "listens to counsel",
+     "wrong": [
+      "keeps his own counsel",
+      "holds his tongue",
+      "searches his heart"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "A fool shows his annoyance the same day, but ____ is prudent.",
+     "answer": "one who overlooks an insult",
+     "wrong": [
+      "one who waits until morning",
+      "one who answers softly",
+      "one who keeps his temper"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Truth's lips will be established forever, but a lying tongue ____.",
+     "answer": "is only momentary",
+     "wrong": [
+      "will be cut off",
+      "brings a rod to his back",
+      "is soon found out"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He who tills his land shall have plenty of bread, but he who ____ is void of understanding.",
+     "answer": "chases fantasies",
+     "wrong": [
+      "sleeps past dawn",
+      "sells his seed grain",
+      "waits for the rain"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 12 says whoever loves correction loves knowledge.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 12 says a righteous person is quick to make friends.",
+     "answer": false,
+     "v": 26
+    }
+   ]
+  },
+  "13": {
+   "keyVerse": 20,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does chapter 13 say about one who spares the rod?",
+     "options": [
+      "He hates his son",
+      "He spoils his son",
+      "He will weep in his old age",
+      "He teaches his son to despise him"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to chapter 13, what makes the heart sick?",
+     "options": [
+      "Hope deferred",
+      "Envy of the rich",
+      "A quarrelsome house",
+      "Words spoken in anger"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happens to wealth gained dishonestly?",
+     "options": [
+      "It dwindles away",
+      "It is taken by strangers",
+      "It brings a curse on his house",
+      "It turns to ashes in his hand"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "The teaching of the wise is a spring of life that turns a person from what?",
+     "options": [
+      "The snares of death",
+      "The paths of the wicked",
+      "The folly of youth",
+      "The pit of destruction"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "One who walks with wise men grows wise, but ____.",
+     "answer": "a companion of fools suffers harm",
+     "wrong": [
+      "the scoffer walks alone",
+      "he who mocks will be mocked",
+      "the proud will stumble in darkness"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He who guards his mouth ____. One who opens wide his lips comes to ruin.",
+     "answer": "guards his soul",
+     "wrong": [
+      "keeps his friends",
+      "finds favor with kings",
+      "walks in peace"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "A good man leaves an inheritance to ____, but the wealth of the sinner is stored for the righteous.",
+     "answer": "his children's children",
+     "wrong": [
+      "the poor at his gate",
+      "his servants and household",
+      "the house of the LORD"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The light of the righteous shines brightly, but ____ is snuffed out.",
+     "answer": "the lamp of the wicked",
+     "wrong": [
+      "the pride of fools",
+      "the hope of the scoffer",
+      "the torch of the proud"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 13 says pride only breeds quarrels.",
+     "answer": true,
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 13 says there are some who pretend to be poor, yet have nothing.",
+     "answer": false,
+     "v": 7
+    }
+   ]
+  },
+  "14": {
+   "keyVerse": 12,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In chapter 14, what does the foolish woman do to her house?",
+     "options": [
+      "Tears it down with her own hands",
+      "Fills it with strife",
+      "Leaves it empty and cold",
+      "Sells it to strangers"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to chapter 14, what rots the bones?",
+     "options": [
+      "Envy",
+      "Anger",
+      "Lying",
+      "Laziness"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whoever oppresses the poor shows contempt for whom?",
+     "options": [
+      "His Maker",
+      "His own soul",
+      "The king",
+      "His neighbor"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does chapter 14 say is true where there are no oxen?",
+     "options": [
+      "The crib is clean",
+      "The farmer is at rest",
+      "The barn is quiet",
+      "The field lies fallow"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "There is a way ____, but in the end it leads to death.",
+     "answer": "which seems right to a man",
+     "wrong": [
+      "which looks wide and pleasant",
+      "that the simple love to walk",
+      "which the proud call wisdom"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "A simple man believes everything, but the prudent man ____.",
+     "answer": "carefully considers his ways",
+     "wrong": [
+      "tests every word he hears",
+      "waits to hear both sides",
+      "asks counsel of the wise"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Righteousness exalts a nation, but sin is ____.",
+     "answer": "a disgrace to any people",
+     "wrong": [
+      "a snare to its rulers",
+      "the ruin of its cities",
+      "a burden on the poor"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "In the multitude of people is the king's glory, but in the lack of people is ____.",
+     "answer": "the destruction of the prince",
+     "wrong": [
+      "the shame of the throne",
+      "the weakness of his army",
+      "the end of his kingdom"
+     ],
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 14 says he who is slow to anger has great understanding.",
+     "answer": true,
+     "v": 29
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 14 says the rich person is shunned even by his neighbor, but the poor person has many friends.",
+     "answer": false,
+     "v": 20
+    }
+   ]
+  },
+  "15": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "According to chapter 15, what does a harsh word do?",
+     "options": [
+      "Stirs up anger",
+      "Wounds the spirit",
+      "Breaks a friendship",
+      "Brings shame on the speaker"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What is better than a fattened calf with hatred?",
+     "options": [
+      "A dinner of herbs where love is",
+      "A crust of bread eaten in peace",
+      "A cup of water from a friend",
+      "A little grain with a quiet heart"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In chapter 15, what is the way of the sluggard like?",
+     "options": [
+      "A thorn patch",
+      "A muddy ditch",
+      "A crooked road",
+      "A field of weeds"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does chapter 15 say the LORD will keep intact?",
+     "options": [
+      "The widow's borders",
+      "The orphan's inheritance",
+      "The poor man's field",
+      "The stranger's tent"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "A gentle tongue is ____, but deceit in it crushes the spirit.",
+     "answer": "a tree of life",
+     "wrong": [
+      "a healing balm",
+      "a fountain of joy",
+      "a shelter for the weak"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Better is little, with the fear of the LORD, than ____.",
+     "answer": "great treasure with trouble",
+     "wrong": [
+      "riches gained by deceit",
+      "a full house with strife",
+      "gold without understanding"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Where there is no counsel, plans fail; but in a multitude of counselors ____.",
+     "answer": "they are established",
+     "wrong": [
+      "there is safety",
+      "victory is won",
+      "wisdom is found"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The fear of the LORD teaches wisdom. Before honor ____.",
+     "answer": "is humility",
+     "wrong": [
+      "comes testing",
+      "is patience",
+      "comes obedience"
+     ],
+     "v": 33
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 15 says the LORD's eyes are everywhere, keeping watch on the evil and the good.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 15 says the prayer of the wicked is an abomination to the LORD, but the sacrifice of the upright is his delight.",
+     "answer": false,
+     "v": 8
+    }
+   ]
+  },
+  "16": {
+   "keyVerse": 18,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In chapter 16, what is gray hair called?",
+     "options": [
+      "A crown of glory",
+      "A mark of wisdom",
+      "A reward for patience",
+      "A garland of honor"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does chapter 16 compare pleasant words to?",
+     "options": [
+      "A honeycomb",
+      "Cool water",
+      "Fine oil",
+      "Ripe fruit"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In chapter 16, what is the king's favor like?",
+     "options": [
+      "A cloud of the spring rain",
+      "The light of dawn",
+      "Shade in the heat of day",
+      "A cool wind at harvest"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "One who is slow to anger is better than whom?",
+     "options": [
+      "The mighty",
+      "The rich",
+      "The learned",
+      "The swift"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Pride goes before destruction, and ____.",
+     "answer": "an arrogant spirit before a fall",
+     "wrong": [
+      "a haughty eye before shame",
+      "a boastful tongue before ruin",
+      "a proud heart before disgrace"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "A man's heart plans his course, but ____.",
+     "answer": "the LORD directs his steps",
+     "wrong": [
+      "the wise seek counsel first",
+      "wisdom guards his way",
+      "time decides his end"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Commit your deeds to the LORD, and ____.",
+     "answer": "your plans shall succeed",
+     "wrong": [
+      "your days will be long",
+      "your house will stand",
+      "your enemies will flee"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "A perverse man stirs up strife. ____ separates close friends.",
+     "answer": "A whisperer",
+     "wrong": [
+      "A mocker",
+      "A flatterer",
+      "A greedy man"
+     ],
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 16 says that when a man's ways please the LORD, the LORD punishes his enemies.",
+     "answer": false,
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 16 says the speech of a worthless man is like a scorching fire.",
+     "answer": true,
+     "v": 27
+    }
+   ]
+  },
+  "17": {
+   "keyVerse": 17,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "According to chapter 17, what does a friend do?",
+     "options": [
+      "Loves at all times",
+      "Speaks the truth in love",
+      "Stays through every storm",
+      "Keeps no record of wrongs"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What would be better to meet than a fool in his folly?",
+     "options": [
+      "A bear robbed of her cubs",
+      "A lion in the street",
+      "A viper on the path",
+      "A wolf in the night"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In chapter 17, what is the beginning of strife like?",
+     "options": [
+      "Breaching a dam",
+      "Lighting a spark",
+      "Opening a gate",
+      "Cracking a wall"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "The refining pot is for silver and the furnace for gold. What does the LORD test?",
+     "options": [
+      "The hearts",
+      "The tongues",
+      "The righteous",
+      "The nations"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "A cheerful heart makes good medicine, but a crushed spirit ____.",
+     "answer": "dries up the bones",
+     "wrong": [
+      "wastes away the body",
+      "brings sickness to the flesh",
+      "weakens the whole body"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Even a fool, when he keeps silent, ____.",
+     "answer": "is counted wise",
+     "wrong": [
+      "hides his folly",
+      "gains respect",
+      "avoids his ruin"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Better is a dry morsel with quietness, than a house full of ____.",
+     "answer": "feasting with strife",
+     "wrong": [
+      "wine and quarreling",
+      "riches and sorrow",
+      "guests and grumbling"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Children's children are ____; the glory of children is their parents.",
+     "answer": "the crown of old men",
+     "wrong": [
+      "the joy of the aged",
+      "a reward from the LORD",
+      "the strength of a house"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 17 says he who covers an offense promotes love.",
+     "answer": true,
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 17 says a hundred lashes enter deeper into a fool than a rebuke into one who has understanding.",
+     "answer": false,
+     "v": 10
+    }
+   ]
+  },
+  "18": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In chapter 18, what is the LORD's name called?",
+     "options": [
+      "A strong tower",
+      "A shield and buckler",
+      "A mighty fortress",
+      "A shelter in the storm"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What are the words of a gossip like?",
+     "options": [
+      "Dainty morsels",
+      "Sparks in dry wood",
+      "Honey on the lips",
+      "Poison in a cup"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to chapter 18, what does a man's gift do for him?",
+     "options": [
+      "Makes room for him before great men",
+      "Buys him friends in every city",
+      "Covers a multitude of his faults",
+      "Opens the ears of the judges"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "A brother offended is more difficult than what?",
+     "options": [
+      "A fortified city",
+      "A stubborn mule",
+      "A dry and thirsty land",
+      "A mountain of stone"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Death and life are in ____; those who love it will eat its fruit.",
+     "answer": "the power of the tongue",
+     "wrong": [
+      "the hands of the wise",
+      "the choices of the heart",
+      "the counsel of friends"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Whoever finds a wife finds a good thing, and ____.",
+     "answer": "obtains favor of the LORD",
+     "wrong": [
+      "is blessed in all his ways",
+      "builds a house that stands",
+      "will not lack for joy"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He who answers before he hears, that is ____.",
+     "answer": "folly and shame to him",
+     "wrong": [
+      "a snare to his soul",
+      "the mark of a fool",
+      "a wound to his name"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "One who is slack in his work is brother to him who is ____.",
+     "answer": "a master of destruction",
+     "wrong": [
+      "a lover of sleep",
+      "a thief in the night",
+      "a friend of fools"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 18 says there is a friend who sticks closer than a brother.",
+     "answer": true,
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 18 says the poor plead for mercy, and the rich answer them gently.",
+     "answer": false,
+     "v": 23
+    }
+   ]
+  },
+  "19": {
+   "keyVerse": 17,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "According to chapter 19, one who has pity on the poor lends to whom?",
+     "options": [
+      "The LORD",
+      "His own soul",
+      "His children",
+      "The king"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In chapter 19, what are a wife's quarrels compared to?",
+     "options": [
+      "A continual dripping",
+      "A thorn in the side",
+      "Smoke in the eyes",
+      "A fire that never goes out"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In chapter 19, what is the king's wrath like?",
+     "options": [
+      "The roaring of a lion",
+      "A storm at sea",
+      "A consuming fire",
+      "A flood in spring"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the sluggard do with his hand in chapter 19?",
+     "options": [
+      "Buries it in the dish and won't lift it",
+      "Folds it and sleeps at noon",
+      "Hides it in his cloak in winter",
+      "Reaches for his neighbor's bread"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "There are many plans in a man's heart, but ____.",
+     "answer": "the LORD's counsel will prevail",
+     "wrong": [
+      "the wise choose only one",
+      "few of them will stand",
+      "the LORD knows them all"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The discretion of a man makes him slow to anger. It is his glory ____.",
+     "answer": "to overlook an offense",
+     "wrong": [
+      "to answer with gentleness",
+      "to keep his words few",
+      "to forgive his brother"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "House and riches are an inheritance from fathers, but a prudent wife ____.",
+     "answer": "is from the LORD",
+     "wrong": [
+      "is worth far more",
+      "is found by searching",
+      "is built by patience"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "That which makes a man to be desired is his kindness. A poor man is better than ____.",
+     "answer": "a liar",
+     "wrong": [
+      "a rich fool",
+      "a proud prince",
+      "a greedy king"
+     ],
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 19 says it isn't good to have zeal without knowledge.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 19 says that once you rescue a hot-tempered man, he will learn and not need rescuing again.",
+     "answer": false,
+     "v": 19
+    }
+   ]
+  },
+  "20": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does chapter 20 call wine?",
+     "options": [
+      "A mocker",
+      "A thief",
+      "A snare",
+      "A liar"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happens to the sluggard who will not plow because of the winter?",
+     "options": [
+      "He begs at harvest and has nothing",
+      "His field is taken by his neighbor",
+      "He sells his land to strangers",
+      "He eats the seed meant for planting"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In chapter 20, what are the lips of knowledge called?",
+     "options": [
+      "A rare jewel",
+      "A fountain of life",
+      "A strong fortress",
+      "A crown of gold"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Fraudulent food is sweet, but afterward the mouth is filled with what?",
+     "options": [
+      "Gravel",
+      "Ashes",
+      "Bitter herbs",
+      "Sand"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Don't love sleep, lest you come to poverty. ____, and you shall be satisfied with bread.",
+     "answer": "Open your eyes",
+     "wrong": [
+      "Rise up early",
+      "Work your field",
+      "Keep your hands busy"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Counsel in the heart of man is like deep water, but a man of understanding ____.",
+     "answer": "will draw it out",
+     "wrong": [
+      "will keep it hidden",
+      "will pour it freely",
+      "will test it first"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Don't say, \"I will pay back evil.\" ____, and he will save you.",
+     "answer": "Wait for the LORD",
+     "wrong": [
+      "Trust in his mercy",
+      "Leave it with God",
+      "Call on his name"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The glory of young men is their strength. The splendor of old men is ____.",
+     "answer": "their gray hair",
+     "wrong": [
+      "their many years",
+      "their wise counsel",
+      "their children's children"
+     ],
+     "v": 29
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 20 says many men claim to be faithful, and a faithful man is easy to find.",
+     "answer": false,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 20 describes a buyer who says \"It's no good\" but boasts about his purchase once he has gone his way.",
+     "answer": true,
+     "v": 14
+    }
+   ]
+  },
+  "21": {
+   "keyVerse": 31,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Chapter 21 says it is better to dwell where than with a contentious and fretful woman?",
+     "options": [
+      "In a desert land",
+      "In a cave in the hills",
+      "In a tent by the road",
+      "In a stranger's house"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "The king's heart is in the LORD's hand like what?",
+     "options": [
+      "The watercourses",
+      "Clay in the potter's hand",
+      "A reed in the wind",
+      "A seal pressed in wax"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to chapter 21, what is more acceptable to the LORD than sacrifice?",
+     "options": [
+      "Doing righteousness and justice",
+      "A humble and contrite heart",
+      "Mercy toward the poor",
+      "Obedience to his voice"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does a wise man do to the city of the mighty?",
+     "options": [
+      "Scales it and brings down its confidence",
+      "Makes peace with it without a battle",
+      "Blesses it so that it is exalted",
+      "Builds its walls even higher"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The horse is prepared for the day of battle; but ____.",
+     "answer": "victory is with the LORD",
+     "wrong": [
+      "the wise plan for peace",
+      "strength is in wise counsel",
+      "the humble will stand firm"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Whoever stops his ears at the cry of the poor, he will also cry out, but ____.",
+     "answer": "shall not be heard",
+     "wrong": [
+      "no one will come",
+      "his cry will be mocked",
+      "will find no mercy"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Whoever guards his mouth and his tongue ____.",
+     "answer": "keeps his soul from troubles",
+     "wrong": [
+      "will be counted wise",
+      "keeps his friends close",
+      "walks in peace all his days"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He who loves pleasure will be a poor man. He who loves ____ won't be rich.",
+     "answer": "wine and oil",
+     "wrong": [
+      "sleep and ease",
+      "feasts and music",
+      "silk and spices"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 21 says every way of a man is right in his own eyes, but the LORD weighs the hearts.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 21 says the desire of the sluggard keeps him alive, even though his hands refuse to labor.",
+     "answer": false,
+     "v": 25
+    }
+   ]
+  },
+  "22": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What excuse does the sluggard give in chapter 22?",
+     "options": [
+      "There is a lion outside",
+      "The ground is too hard to plow",
+      "It is too cold to work",
+      "The harvest is not ready yet"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to chapter 22, what is the borrower to the lender?",
+     "options": [
+      "His servant",
+      "His beggar",
+      "His enemy",
+      "His companion"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does chapter 22 tell you not to move?",
+     "options": [
+      "The ancient boundary stone",
+      "Your neighbor's well",
+      "The stones of the city gate",
+      "Your father's altar"
+     ],
+     "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does chapter 22 say a man skilled in his work will do?",
+     "options": [
+      "Serve kings, not obscure men",
+      "Grow rich in his old age",
+      "Teach many sons his craft",
+      "Build a house that endures"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Train up a child in the way he should go, and when he is old ____.",
+     "answer": "he will not depart from it",
+     "wrong": [
+      "he will bless your name",
+      "he will walk in wisdom",
+      "he will honor your house"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "A good name is more desirable than ____, and loving favor is better than silver and gold.",
+     "answer": "great riches",
+     "wrong": [
+      "a long life",
+      "a royal crown",
+      "a full storehouse"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "A prudent man sees danger and hides himself; but the simple ____.",
+     "answer": "pass on, and suffer for it",
+     "wrong": [
+      "laugh and walk into it",
+      "stand still and are caught",
+      "rush in without a thought"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The mouth of an adulteress is ____. He who is under the LORD's wrath will fall into it.",
+     "answer": "a deep pit",
+     "wrong": [
+      "a sharpened sword",
+      "a hidden snare",
+      "an open grave"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 22 says the rich and the poor have this in common: the LORD is the maker of them all.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 22 says folly is bound up in the heart of a child, and gentle words drive it far from him.",
+     "answer": false,
+     "v": 15
+    }
+   ]
+  },
+  "23": {
+   "keyVerse": 23,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In chapter 23, who has woe, sorrow, and needless bruises?",
+     "options": [
+      "Those who stay long at the wine",
+      "Those who love money",
+      "Those who mock their parents",
+      "Those who refuse correction"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does chapter 23 say riches certainly do?",
+     "options": [
+      "Sprout wings like an eagle and fly away",
+      "Melt like snow in the sun",
+      "Rust like iron left in the rain",
+      "Slip through the fingers like sand"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When eating with a ruler, what should a man given to appetite do?",
+     "options": [
+      "Put a knife to his throat",
+      "Eat only bread and water",
+      "Leave before the meal ends",
+      "Take the lowest seat"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In chapter 23, a wayward wife is called what?",
+     "options": [
+      "A narrow well",
+      "A hidden snare",
+      "A crumbling wall",
+      "A dry cistern"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Buy the truth, and ____. Get wisdom, discipline, and understanding.",
+     "answer": "don't sell it",
+     "wrong": [
+      "hold it close",
+      "share it freely",
+      "guard it well"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "In the end, it bites like a snake, and ____.",
+     "answer": "poisons like a viper",
+     "wrong": [
+      "stings like a scorpion",
+      "burns like a fire",
+      "wounds like a sword"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Listen to your father who gave you life, and don't despise your mother ____.",
+     "answer": "when she is old",
+     "wrong": [
+      "in her sorrow",
+      "when she corrects you",
+      "before your friends"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For the drunkard and the glutton shall become poor; and drowsiness ____.",
+     "answer": "clothes them in rags",
+     "wrong": [
+      "steals their strength",
+      "empties their barns",
+      "leads them astray"
+     ],
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 23 says that if you punish a child with the rod, he will die.",
+     "answer": false,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 23 warns not to eat the food of a man with a stingy eye, because his heart is not with you.",
+     "answer": true,
+     "v": 6
+    }
+   ]
+  },
+  "24": {
+   "keyVerse": 16,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the speaker see when he passed the field of the sluggard?",
+     "options": [
+      "Thorns, nettles, and a broken stone wall",
+      "Weeds choking a field of grain",
+      "Dry ground and a withered vine",
+      "Crops eaten by birds and locusts"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to chapter 24, how many times does a righteous man fall and rise up again?",
+     "options": [
+      "Seven times",
+      "Three times",
+      "Ten times",
+      "Twelve times"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In chapter 24, what is an honest answer like?",
+     "options": [
+      "A kiss on the lips",
+      "Cool water to the thirsty",
+      "A lamp in the dark",
+      "A gift given in secret"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does chapter 24 say to do before you build your house?",
+     "options": [
+      "Prepare your work outside and ready your fields",
+      "Count the cost of the whole building",
+      "Seek counsel from many advisors",
+      "Gather the stone and timber first"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Through wisdom a house is built; ____.",
+     "answer": "by understanding it is established",
+     "wrong": [
+      "by patience it will stand",
+      "by love it is made a home",
+      "by counsel it is protected"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Don't rejoice when your enemy falls. Don't let your heart be glad ____.",
+     "answer": "when he is overthrown",
+     "wrong": [
+      "when he is put to shame",
+      "when he loses everything",
+      "at his calamity"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "If you falter in the time of trouble, ____.",
+     "answer": "your strength is small",
+     "wrong": [
+      "your faith is weak",
+      "your friends will flee",
+      "your house will fall"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "My son, eat honey, for it is good, the droppings of the honeycomb, ____.",
+     "answer": "which are sweet to your taste",
+     "wrong": [
+      "which give strength to your bones",
+      "which heal the weary soul",
+      "which bring light to the eyes"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 24 warns not to be envious of evil men or desire to be with them.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 24 says it is right to repay a man according to what he has done to you.",
+     "answer": false,
+     "v": 29
+    }
+   ]
+  },
+  "25": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does chapter 25 say to do if your enemy is hungry?",
+     "options": [
+      "Give him food to eat",
+      "Leave him to the LORD",
+      "Pray for him in secret",
+      "Send him back to his own people"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whose men copied out the proverbs in chapter 25?",
+     "options": [
+      "Hezekiah king of Judah",
+      "Josiah king of Judah",
+      "David king of Israel",
+      "Jehoshaphat king of Judah"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In chapter 25, what is good news from a far country like?",
+     "options": [
+      "Cold water to a thirsty soul",
+      "Rain on a dry field",
+      "Bread to a hungry man",
+      "Light to a traveler at night"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "A man whose spirit is without restraint is like what?",
+     "options": [
+      "A city broken down and without walls",
+      "A ship without a rudder",
+      "A field with no fence",
+      "A horse without a bridle"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "A word fitly spoken is like apples of gold ____.",
+     "answer": "in settings of silver",
+     "wrong": [
+      "on a table of cedar",
+      "in a basket of reeds",
+      "in a bowl of bronze"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "By patience a ruler is persuaded. ____ breaks the bone.",
+     "answer": "A soft tongue",
+     "wrong": [
+      "A gentle hand",
+      "A quiet answer",
+      "A kind word"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Let your foot be seldom in your neighbor's house, lest ____.",
+     "answer": "he be weary of you",
+     "wrong": [
+      "you learn his ways",
+      "his servants despise you",
+      "you covet his goods"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "As clouds and wind without rain, so is he who ____.",
+     "answer": "boasts of gifts deceptively",
+     "wrong": [
+      "promises but never pays",
+      "speaks much but does little",
+      "flatters his neighbor falsely"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 25 says it is not good to eat much honey.",
+     "answer": true,
+     "v": 27
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 25 says it is the glory of kings to conceal a thing, but the glory of God to search out a matter.",
+     "answer": false,
+     "v": 2
+    }
+   ]
+  },
+  "26": {
+   "keyVerse": 20,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In chapter 26, a fool who repeats his folly is like what?",
+     "options": [
+      "A dog that returns to his vomit",
+      "A pig that returns to the mud",
+      "A moth that returns to the flame",
+      "A bird that returns to the snare"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does chapter 26 say the sluggard turns on his bed?",
+     "options": [
+      "As a door turns on its hinges",
+      "As a wheel turns on its axle",
+      "As a millstone turns over grain",
+      "As a sheep rolls in the grass"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "One who meddles in a quarrel not his own is like whom?",
+     "options": [
+      "One who grabs a dog's ears",
+      "One who steps on a snake",
+      "One who kicks a hornet's nest",
+      "One who wakes a sleeping bear"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Honor is not fitting for a fool, just like what?",
+     "options": [
+      "Snow in summer and rain in harvest",
+      "Frost in spring and heat in winter",
+      "A crown on a donkey's head",
+      "A jewel on a beggar's cloak"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For lack of wood a fire goes out. ____, a quarrel dies down.",
+     "answer": "Without gossip",
+     "wrong": [
+      "Without anger",
+      "With a soft answer",
+      "Without pride"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Whoever digs a pit shall fall into it. Whoever rolls a stone, ____.",
+     "answer": "it will come back on him",
+     "wrong": [
+      "it will crush his feet",
+      "he will be buried beneath it",
+      "it will block his own path"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "A whip is for the horse, a bridle for the donkey, and a rod ____.",
+     "answer": "for the back of fools",
+     "wrong": [
+      "for the stubborn son",
+      "for the lazy servant",
+      "for the mocker's pride"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Do you see a man wise in his own eyes? There is more hope ____ than for him.",
+     "answer": "for a fool",
+     "wrong": [
+      "for a sluggard",
+      "for a drunkard",
+      "for a thief"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 26 tells you both not to answer a fool according to his folly and to answer a fool according to his folly.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 26 says the sluggard thinks he is wiser than three men who answer with discretion.",
+     "answer": false,
+     "v": 16
+    }
+   ]
+  },
+  "27": {
+   "keyVerse": 17,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does chapter 27 open by telling you not to boast about?",
+     "options": [
+      "Tomorrow",
+      "Your wealth",
+      "Your strength",
+      "Your wisdom"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to chapter 27, what is better than hidden love?",
+     "options": [
+      "Open rebuke",
+      "Honest silence",
+      "A faithful enemy",
+      "A quiet word"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "A man who wanders from his home is like what?",
+     "options": [
+      "A bird that wanders from her nest",
+      "A sheep that strays from the flock",
+      "A ship that drifts from the harbor",
+      "A star that falls from the sky"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In chapter 27, restraining a contentious wife is like what?",
+     "options": [
+      "Restraining the wind or grasping oil",
+      "Holding water in a sieve",
+      "Taming a wild donkey",
+      "Carrying fire in your hands"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Iron sharpens iron; so ____.",
+     "answer": "a man sharpens his friend's countenance",
+     "wrong": [
+      "a friend strengthens his brother",
+      "wisdom sharpens the wise",
+      "one heart shapes another"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Let another man praise you, and ____; a stranger, and not your own lips.",
+     "answer": "not your own mouth",
+     "wrong": [
+      "not your own household",
+      "not your own servants",
+      "not the crowd at the gate"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The wounds of a friend are faithful, although the kisses of an enemy ____.",
+     "answer": "are profuse",
+     "wrong": [
+      "are sweet",
+      "are gentle",
+      "are hidden"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Like water reflects a face, so ____.",
+     "answer": "a man's heart reflects the man",
+     "wrong": [
+      "a friend reflects your soul",
+      "a child reflects his father",
+      "the eyes reflect the heart"
+     ],
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 27 says a neighbor who is near is better than a distant brother.",
+     "answer": true,
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 27 says grinding a fool in a mortar along with grain will finally remove his foolishness.",
+     "answer": false,
+     "v": 22
+    }
+   ]
+  },
+  "28": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In the first verse of chapter 28, how are the righteous described?",
+     "options": [
+      "As bold as a lion",
+      "As steady as a rock",
+      "As strong as an ox",
+      "As swift as an eagle"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to chapter 28, what happens to one who conceals his sins?",
+     "options": [
+      "He doesn't prosper",
+      "He is found out in the end",
+      "His bones waste away",
+      "He loses his friends"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What is a wicked ruler over helpless people like?",
+     "options": [
+      "A roaring lion or a charging bear",
+      "A wolf among the sheep",
+      "A storm over a field of grain",
+      "A fire in a dry forest"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "A needy man who oppresses the poor is like what?",
+     "options": [
+      "A driving rain which leaves no crops",
+      "A locust that eats the last grain",
+      "A dry wind at harvest time",
+      "A thief who robs a beggar"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "One who trusts in himself is a fool; but one who walks in wisdom ____.",
+     "answer": "is kept safe",
+     "wrong": [
+      "will be honored",
+      "finds great peace",
+      "will never stumble"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "One who gives to the poor has no lack; but one who closes his eyes ____.",
+     "answer": "will have many curses",
+     "wrong": [
+      "will lose his own wealth",
+      "will be forgotten by God",
+      "will one day beg for bread"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "One who rebukes a man will afterward find more favor than ____.",
+     "answer": "one who flatters with the tongue",
+     "wrong": [
+      "one who keeps silent",
+      "one who gives him gifts",
+      "one who hides his faults"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "To show partiality is not good, yet a man will do wrong for ____.",
+     "answer": "a piece of bread",
+     "wrong": [
+      "a handful of silver",
+      "a moment of praise",
+      "a cup of wine"
+     ],
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 28 says one who is eager to be rich will be rich with blessings.",
+     "answer": false,
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 28 says he who increases his wealth by excessive interest gathers it for one who has pity on the poor.",
+     "answer": true,
+     "v": 8
+    }
+   ]
+  },
+  "29": {
+   "keyVerse": 25,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "According to chapter 29, what does the fear of man prove to be?",
+     "options": [
+      "A snare",
+      "A burden",
+      "A prison",
+      "A heavy yoke"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In chapter 29, what happens where there is no revelation?",
+     "options": [
+      "The people cast off restraint",
+      "The people wander in darkness",
+      "The land falls into ruin",
+      "The priests go astray"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does a man who flatters his neighbor do?",
+     "options": [
+      "Spreads a net for his feet",
+      "Digs a pit for himself",
+      "Builds his house on sand",
+      "Sows seeds of strife"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What happens to a servant who is pampered from his youth?",
+     "options": [
+      "He will become a son in the end",
+      "He will despise his master",
+      "He will refuse to work",
+      "He will run away when grown"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "A man's pride brings him low, but ____.",
+     "answer": "one of lowly spirit gains honor",
+     "wrong": [
+      "the humble walk in safety",
+      "the meek are lifted up",
+      "a gentle heart finds favor"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "A fool vents all of his anger, but a wise man ____.",
+     "answer": "brings himself under control",
+     "wrong": [
+      "waits for the right time",
+      "turns his anger to prayer",
+      "keeps his words to himself"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Correct your son, and he will give you peace; yes, he will bring delight ____.",
+     "answer": "to your soul",
+     "wrong": [
+      "to your old age",
+      "to your whole house",
+      "to his mother"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Do you see a man who is hasty in his words? ____ for a fool than for him.",
+     "answer": "There is more hope",
+     "wrong": [
+      "There is more honor",
+      "There is more patience",
+      "There is more mercy"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 29 says when the righteous thrive the people rejoice, but when the wicked rule the people groan.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 29 says a servant can be corrected by words alone once he understands them.",
+     "answer": false,
+     "v": 19
+    }
+   ]
+  },
+  "30": {
+   "keyVerse": 5,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whose words are recorded in chapter 30?",
+     "options": [
+      "Agur the son of Jakeh",
+      "King Lemuel",
+      "Solomon the son of David",
+      "Ucal the son of Ithiel"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Agur asks God to give him neither poverty nor riches. What else does he ask?",
+     "options": [
+      "To remove falsehood and lies far from him",
+      "To give him wisdom before he dies",
+      "To keep him from the adulterous woman",
+      "To let him see the ends of the earth"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does chapter 30 say the leech has?",
+     "options": [
+      "Two daughters who cry, \"Give, give\"",
+      "Two mouths that are never full",
+      "Three sons who say, \"More, more\"",
+      "A thirst that is never quenched"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Agur say about the hyraxes?",
+     "options": [
+      "They make their houses in the rocks",
+      "They provide their food in the summer",
+      "They advance in ranks without a king",
+      "They are found in kings' palaces"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Every word of God is flawless. ____ to those who take refuge in him.",
+     "answer": "He is a shield",
+     "wrong": [
+      "He is a fortress",
+      "He is a light",
+      "He is a rock"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The locusts have no king, yet ____.",
+     "answer": "they advance in ranks",
+     "wrong": [
+      "they strip the fields bare",
+      "they find food in the desert",
+      "they know their seasons"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "As the churning of milk produces butter, and the wringing of the nose produces blood, so ____.",
+     "answer": "the forcing of wrath produces strife",
+     "wrong": [
+      "the stirring of anger brings ruin",
+      "the pressing of words brings shame",
+      "the heat of pride produces war"
+     ],
+     "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "If you have done foolishly in lifting up yourself, or if you have thought evil, ____.",
+     "answer": "put your hand over your mouth",
+     "wrong": [
+      "turn back and seek counsel",
+      "go and humble yourself",
+      "bow down before the LORD"
+     ],
+     "v": 32
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Agur says the way of an eagle in the air is something he fully understands.",
+     "answer": false,
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Chapter 30 lists a servant who becomes king as one of the things under which the earth trembles.",
+     "answer": true,
+     "v": 22
+    }
+   ]
+  },
+  "31": {
+   "keyVerse": 30,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who taught King Lemuel the words in chapter 31?",
+     "options": [
+      "His mother",
+      "His father",
+      "The prophet Nathan",
+      "Agur the son of Jakeh"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does Lemuel's mother say kings should not drink wine?",
+     "options": [
+      "Lest they forget the law and pervert justice",
+      "Lest they grow lazy and lose their kingdom",
+      "Lest they speak foolishly before the people",
+      "Lest their enemies find them weak"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What is the worthy woman like, since she brings her bread from afar?",
+     "options": [
+      "The merchant ships",
+      "A caravan of camels",
+      "A traveling trader",
+      "The ant in summer"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why is the worthy woman not afraid of the snow for her household?",
+     "options": [
+      "All her household are clothed with scarlet",
+      "She has stored wood for the winter",
+      "Her house is built of stone",
+      "She has woven thick blankets of wool"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Who can find a worthy woman? For her value is ____.",
+     "answer": "far above rubies",
+     "wrong": [
+      "more than fine gold",
+      "beyond all silver",
+      "greater than a kingdom"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "She looks well to the ways of her household, and doesn't eat ____.",
+     "answer": "the bread of idleness",
+     "wrong": [
+      "the bread of sorrow",
+      "the food of strangers",
+      "the bread of deceit"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Strength and dignity are her clothing. She laughs ____.",
+     "answer": "at the time to come",
+     "wrong": [
+      "at the troubles of today",
+      "with her children at night",
+      "in the face of her fears"
+     ],
+     "v": 25
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "She seeks wool and flax",
+      "She considers a field, and buys it",
+      "She opens her arms to the poor",
+      "Her children rise up and call her blessed"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Chapter 31 says charm is deceitful and beauty is vain, but a woman who fears the LORD shall be praised.",
+     "answer": true,
+     "v": 30
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "In chapter 31, the worthy woman lets her lamp go out early each night so she can rise before dawn.",
+     "answer": false,
+     "v": 18
+    }
+   ]
+  }
+ }
+}

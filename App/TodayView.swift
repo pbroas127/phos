@@ -42,6 +42,8 @@ struct TodayScreen: View {
                     case .path: PathView(picked: $picked, libraryShown: $libraryShown)
                     case .calendar: CalendarView(picked: $picked)
                     }
+
+                    TodayTrophies().padding(.top, 8)
                 }
                 .padding(20)
             }

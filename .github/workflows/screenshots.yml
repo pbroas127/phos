@@ -39,7 +39,7 @@ jobs:
           APP=$(find build/Build/Products -name "Phos.app" -maxdepth 3 | head -1)
           xcrun simctl install "$UDID" "$APP"
           mkdir -p shots
-          for SCREEN in shield today path calendar reading reflect speak quizChoice quizBlank quizOrder pass missed recall unlocked streak time journal settings focus recite library book locks lockEditor protection; do
+          for SCREEN in shield today path calendar reading reflect speak quizChoice quizBlank quizOrder pass missed recall unlocked streak time journal settings focus recite library book locks lockEditor protection trophies; do
             xcrun simctl terminate "$UDID" com.peterbroas.phos 2>/dev/null || true
             sleep 1
             xcrun simctl launch "$UDID" com.peterbroas.phos -demoData -screen "$SCREEN"

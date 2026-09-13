@@ -8,6 +8,11 @@ class DeviceActivityMonitorExtension: DeviceActivityMonitor {
         LockEngine.handleIntervalStart(activity)
     }
 
+    override func eventDidReachThreshold(_ event: DeviceActivityEvent.Name, activity: DeviceActivityName) {
+        super.eventDidReachThreshold(event, activity: activity)
+        LockEngine.recordUsage(event)
+    }
+
     override func intervalDidEnd(for activity: DeviceActivityName) {
         super.intervalDidEnd(for: activity)
         LockEngine.handleIntervalEnd(activity)

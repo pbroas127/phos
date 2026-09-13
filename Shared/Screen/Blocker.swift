@@ -74,11 +74,24 @@ enum Blocker {
         DeviceActivitySchedule(intervalStart: start.components, intervalEnd: end.components, repeats: true)
     }
 
+    static let usageThresholds = [15, 30, 60, 120]
+
     /// Registers the day boundary and every scheduled lock window.
     static func registerDaily(settings: AppSettings) {
         let center = DeviceActivityCenter()
         center.stopMonitoring(center.activities.filter { $0.unlockLockID == nil })
-        try? center.startMonitoring(.day, during: daily(TimeOfDay(hour: 0, minute: 0), TimeOfDay(hour: 23, minute: 59)))
+        // Usage thresholds on everything locked feed the Time Redeemed trophies.
+        // ponytail: re-registering mid day restarts the count for that day; lock edits are protected, so this stays rare.
+        let sel = union(settings.lockSets.filter(\.enabled))
+        var events: [DeviceActivityEvent.Name: DeviceActivityEvent] = [:]
+        if lockedCount(sel) > 0 {
+            for minutes in usageThresholds {
+                events[DeviceActivityEvent.Name("phos.use.\(minutes)")] = DeviceActivityEvent(
+                    applications: sel.applicationTokens, categories: sel.categoryTokens, webDomains: sel.webDomainTokens,
+                    threshold: DateComponents(minute: minutes))
+            }
+        }
+        try? center.startMonitoring(.day, during: daily(TimeOfDay(hour: 0, minute: 0), TimeOfDay(hour: 23, minute: 59)), events: events)
         for lock in settings.lockSets where lock.enabled && !lock.allDay && lock.windowMinutes >= 15 && lock.windowMinutes < 1440 {
             try? center.startMonitoring(.window(lock.id), during: daily(lock.start, lock.end))
         }
@@ -133,6 +146,11 @@ enum LockEngine {
     static func handleIntervalStart(_ activity: DeviceActivityName, store: SharedStore = .shared, now: Date = Date()) {
         // An unlock starting needs no work, and syncing here could reapply a shield from data older than the unlock.
         guard activity.unlockLockID == nil else { return }
+        if activity == .day {
+            var watched = store.watchedDays
+            watched.insert(DayKey.key(for: now, morning: store.settings.schedule.morning))
+            store.watchedDays = watched
+        }
         sync(store: store, now: now)
     }
 
@@ -146,6 +164,17 @@ enum LockEngine {
             today.unlocks[id] = day
         }
         sync(store: store, now: now, today: today)
+    }
+}
+
+extension LockEngine {
+    /// Saves the highest screen time threshold reached today. Only touches the usage key, never today's lock state.
+    static func recordUsage(_ event: DeviceActivityEvent.Name, store: SharedStore = .shared, now: Date = Date()) {
+        guard let minutes = Int(event.rawValue.replacingOccurrences(of: "phos.use.", with: "")) else { return }
+        let key = DayKey.key(for: now, morning: store.settings.schedule.morning)
+        var usage = store.usage
+        usage[key] = max(usage[key] ?? 0, minutes)
+        store.usage = usage
     }
 }
 

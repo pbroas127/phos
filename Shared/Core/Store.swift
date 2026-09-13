@@ -55,6 +55,24 @@ final class SharedStore {
         set { defaults.set(newValue, forKey: "selection") }
     }
 
+    /// Highest usage threshold, in minutes, that locked apps reached each day. Only the activity monitor writes it.
+    var usage: [String: Int] {
+        get { load("usage", as: [String: Int].self) ?? [:] }
+        set { save(newValue, "usage") }
+    }
+
+    /// Days the activity monitor was watching screen time.
+    var watchedDays: Set<String> {
+        get { Set(defaults.stringArray(forKey: "watchedDays") ?? []) }
+        set { defaults.set(Array(newValue).sorted(), forKey: "watchedDays") }
+    }
+
+    /// Achievement ids and when each was first earned.
+    var earned: [String: Date] {
+        get { load("earned", as: [String: Date].self) ?? [:] }
+        set { save(newValue, "earned") }
+    }
+
     var storedToday: TodayState? {
         get { load("today", as: TodayState.self) }
         set { save(newValue, "today") }

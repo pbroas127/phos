@@ -138,7 +138,7 @@ enum DemoData {
 enum DemoScreen: String {
     case today, path, calendar, reading, reflect, speak, quizChoice, quizBlank, quizOrder, pass, missed, recall, unlocked
     case streak, time, journal, settings, shield, focus, recite
-    case library, book, locks, lockEditor, protection
+    case library, book, locks, lockEditor, protection, trophies
 
     static var requested: DemoScreen? {
         let args = ProcessInfo.processInfo.arguments
@@ -150,6 +150,7 @@ enum DemoScreen: String {
         switch requested {
         case .streak, .time, .journal: return 1
         case .settings, .lockEditor: return 2
+        case .trophies: return 3
         default: return 0
         }
     }
@@ -178,7 +179,7 @@ struct DemoRouter: View {
 
     var body: some View {
         switch screen {
-        case .today, .path, .calendar, .streak, .time, .journal, .settings, .unlocked, .library, .lockEditor:
+        case .today, .path, .calendar, .streak, .time, .journal, .settings, .unlocked, .library, .lockEditor, .trophies:
             MainTabs()
         case .book:
             NavigationStack { PathDetailView(planID: "book.MRK") { _ in } }

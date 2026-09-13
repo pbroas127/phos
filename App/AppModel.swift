@@ -30,6 +30,12 @@ final class AppModel {
     var lastAfter: PathLogic.After?
     /// Locks the last reading or other unlock opened, for the result screen.
     var lastUnlocked: [LockSet] = []
+    var tab = DemoScreen.startTab
+    /// Trophy history, recomputed after readings and on refresh.
+    private(set) var stats: AchievementStats
+    private(set) var earned: [String: Date] = [:]
+    /// Newly earned trophies waiting to be celebrated.
+    var celebrating: [Achievement] = []
 
     init(store: SharedStore = .shared, demo: Bool = ProcessInfo.processInfo.arguments.contains("-demoData")) {
         self.store = store
@@ -38,6 +44,7 @@ final class AppModel {
         settings = store.settings
         today = store.today()
         records = store.records
+        stats = AchievementStats(records: [], passUses: [], usage: [:], watchedDays: [], todayKey: "")
         authorized = demo || AuthorizationCenter.shared.authorizationStatus == .approved
         migrate()
         refresh()
@@ -348,8 +355,37 @@ final class AppModel {
         records = store.records
         writeSnapshot()
         if settings.onboarded && !demo { LockEngine.sync(store: store, now: now) }
+        checkAchievements()
         WidgetCenter.shared.reloadAllTimelines()
     }
+
+    /// Recomputes trophy progress and queues a celebration for anything newly earned.
+    func checkAchievements() {
+        stats = AchievementStats(records: records, passUses: settings.passUses, usage: store.usage, watchedDays: store.watchedDays,
+                                 todayKey: today.dayKey, morning: settings.schedule.morning)
+        var saved = store.earned
+        let firstLook = saved.isEmpty
+        let new = Achievements.all.filter { saved[$0.id] == nil && $0.done(stats) }
+        guard !new.isEmpty else {
+            earned = saved
+            return
+        }
+        for a in new { saved[a.id] = demo ? Date().addingTimeInterval(-86_400) : Date() }
+        store.earned = saved
+        earned = saved
+        // History from before trophies existed is awarded quietly, so the first launch is not a parade.
+        if !firstLook && !demo { celebrating += new }
+    }
+
+    func togglePin(_ a: Achievement) {
+        if let i = settings.pinnedTrophies.firstIndex(of: a.id) {
+            settings.pinnedTrophies.remove(at: i)
+        } else {
+            settings.pinnedTrophies.append(a.id)
+        }
+        store.settings = settings
+    }
+
 
     func writeSnapshot() {
         var snap = store.snapshot
@@ -477,7 +513,8 @@ final class AppModel {
         let seconds = Int(Date().timeIntervalSince(today.readingStartedAt ?? Date()))
         let record = DayRecord(dayKey: today.dayKey, ref: ref, title: BookNames.title(ref), readMode: readMode,
                                reflectMode: reflectMode, reflection: reflection, score: score, total: total,
-                               completedAt: Date(), readingSeconds: max(0, seconds), fromPlan: contextPlan != nil)
+                               completedAt: Date(), readingSeconds: max(0, seconds), fromPlan: contextPlan != nil,
+                               misses: today.missesToday)
         var all = store.records
         all.append(record)
         store.records = all
@@ -504,6 +541,7 @@ final class AppModel {
         saveToday()
         clearDraft()
         for lock in waiting { unlock(lock, method: .reading) }
+        checkAchievements()
         lastUnlocked = waiting
         lastAfter = after
         return after

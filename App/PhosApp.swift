@@ -88,19 +88,31 @@ struct RootView: View {
 }
 
 struct MainTabs: View {
-    @State private var tab = DemoScreen.startTab
+    @Environment(AppModel.self) private var model
 
     var body: some View {
-        TabView(selection: $tab) {
+        @Bindable var model = model
+        TabView(selection: $model.tab) {
             TodayScreen()
                 .tabItem { Label("Today", systemImage: "sun.max") }
                 .tag(0)
             ProgressScreen()
                 .tabItem { Label("Progress", systemImage: "flame") }
                 .tag(1)
+            TrophyScreen()
+                .tabItem { Label("Trophies", systemImage: "trophy") }
+                .tag(3)
             SettingsScreen()
                 .tabItem { Label("Settings", systemImage: "gearshape") }
                 .tag(2)
+        }
+        .overlay {
+            if let first = model.celebrating.first {
+                TrophyCelebration(achievement: first, more: model.celebrating.count - 1) {
+                    withAnimation(.easeOut(duration: 0.25)) { model.celebrating.removeAll() }
+                }
+                .transition(.opacity)
+            }
         }
     }
 }

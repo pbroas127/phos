@@ -474,3 +474,59 @@ final class ReadAlongTests: XCTestCase {
     }
 }
 
+final class AchievementTests: XCTestCase {
+    func record(_ day: String, _ book: String, _ chapter: Int, score: Int = 5, reflection: String = "") -> DayRecord {
+        DayRecord(dayKey: day, ref: ChapterRef(book: book, chapter: chapter), title: "", readMode: .paper, reflectMode: .typed,
+                  reflection: reflection, score: score, total: 5, completedAt: DayKey.date(from: day)!.addingTimeInterval(12 * 3600),
+                  readingSeconds: 300, fromPlan: true)
+    }
+
+    func stats(_ records: [DayRecord], usage: [String: Int] = [:], watched: Set<String> = [], today: String = "2026-04-20") -> AchievementStats {
+        AchievementStats(records: records, passUses: [], usage: usage, watchedDays: watched, todayKey: today)
+    }
+
+    func find(_ id: String) -> Achievement { Achievements.all.first { $0.id == id }! }
+
+    func testIdsAreUniqueAndEveryTrophyHasArt() {
+        XCTAssertEqual(Set(Achievements.all.map(\.id)).count, Achievements.all.count)
+        XCTAssertEqual(Set(Achievements.all.map(\.art)).count, Achievements.all.count)
+        XCTAssertGreaterThan(Achievements.all.count, 100)
+    }
+
+    func testEaster() {
+        XCTAssertEqual(AchievementStats.easter(2026), "2026-04-05")
+        XCTAssertEqual(AchievementStats.easter(2027), "2027-03-28")
+    }
+
+    func testJourneyNeedsTheWindow() {
+        let signs = find("journey.mountain")
+        let spread = stats([record("2026-04-01", "MAT", 5), record("2026-04-02", "MAT", 6), record("2026-04-09", "MAT", 7)])
+        XCTAssertEqual(signs.progress(spread), 2)
+        XCTAssertFalse(signs.done(spread))
+        let tight = stats([record("2026-04-01", "MAT", 5), record("2026-04-02", "MAT", 6), record("2026-04-03", "MAT", 7)])
+        XCTAssertTrue(signs.done(tight))
+    }
+
+    func testEasterReadingAndStreaks() {
+        let s = stats([record("2026-04-04", "JHN", 19), record("2026-04-05", "JHN", 20), record("2026-04-06", "JHN", 21)])
+        XCTAssertTrue(find("holy.easter").done(s))
+        XCTAssertTrue(find("streak.3").done(s))
+        XCTAssertFalse(find("holy.friday").done(s))
+    }
+
+    func testScreenTimeCountsOnlyFinishedWatchedDays() {
+        let watched: Set<String> = ["2026-04-17", "2026-04-18", "2026-04-19", "2026-04-20"]
+        let s = stats([], usage: ["2026-04-18": 60, "2026-04-19": 15], watched: watched)
+        XCTAssertEqual(s.daysUnder(60).count, 2) // the 17th had no usage, the 19th stayed under an hour, today is not finished
+        XCTAssertEqual(s.daysUnder(15).count, 1)
+    }
+
+    func testPerfectWeekAndBooks() {
+        let week = (1...7).map { record(String(format: "2026-04-%02d", $0), "PHP", min($0, 4)) }
+        let s = stats(week)
+        XCTAssertTrue(find("quiz.week").done(s))
+        XCTAssertEqual(s.booksDone(["PHP"]), 1)
+        XCTAssertFalse(find("quiz.scribe").done(s))
+    }
+}
+

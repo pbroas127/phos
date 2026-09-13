@@ -447,6 +447,8 @@ struct DayRecord: Codable, Identifiable, Hashable {
     var completedAt: Date
     var readingSeconds: Int
     var fromPlan: Bool
+    /// Quizzes missed that day before this one passed.
+    var misses: Int? = nil
 }
 
 /// One lock's unlock state for the current day.
@@ -574,6 +576,8 @@ struct AppSettings: Codable, Equatable {
     var preferredReflect: ReflectMode = .typed
     /// Read aloud voice: kokoro:<name>, system:<identifier>, or empty for the best iPhone voice.
     var voiceID = ""
+    /// Trophies shown on the Today screen.
+    var pinnedTrophies: [String] = []
     var schemaVersion = 3
 
     init() {}
@@ -594,6 +598,7 @@ struct AppSettings: Codable, Equatable {
         preferredRead = (try? c.decode(ReadMode.self, forKey: .preferredRead)) ?? d.preferredRead
         preferredReflect = (try? c.decode(ReflectMode.self, forKey: .preferredReflect)) ?? d.preferredReflect
         voiceID = (try? c.decode(String.self, forKey: .voiceID)) ?? d.voiceID
+        pinnedTrophies = (try? c.decode([String].self, forKey: .pinnedTrophies)) ?? d.pinnedTrophies
         let version = (try? c.decode(Int.self, forKey: .schemaVersion)) ?? 1
         schemaVersion = 3
 

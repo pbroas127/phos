@@ -1,0 +1,2879 @@
+{
+ "book": "JER",
+ "chapters": {
+  "27": {
+   "keyVerse": 17,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD tell Jeremiah to make and put on his neck?",
+     "options": [
+      "Bonds and bars",
+      "A linen belt",
+      "A clay jar",
+      "Sackcloth and ashes"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jeremiah told Zedekiah to bring his neck under the yoke of the king of Babylon and live.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Now I have given all these lands into the hand of Nebuchadnezzar the king of Babylon, ____.",
+     "answer": "my servant",
+     "wrong": [
+      "my chosen one",
+      "the proud destroyer",
+      "my rod of anger"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What would happen to the nation that refused to serve Nebuchadnezzar?",
+     "options": [
+      "It would be punished with sword, famine, and pestilence",
+      "It would be sold as slaves to Egypt",
+      "It would be scattered to the distant islands",
+      "Its king would be struck with blindness"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which kings were to receive the message sent with the bonds and bars?",
+     "options": [
+      "Edom, Moab, Ammon, Tyre, and Sidon",
+      "Egypt, Assyria, Philistia, and Damascus",
+      "Elam, Kedar, Hazor, and Arabia",
+      "Persia, Media, Cush, and Put"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What would happen to the nation that served the king of Babylon?",
+     "options": [
+      "It would remain in its own land and till it",
+      "It would be carried to Babylon in peace",
+      "It would be spared famine but lose its king",
+      "It would receive the vessels of the temple"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Jeremiah said the vessels still left in Jerusalem would stay there safely.",
+     "answer": false,
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "All the nations will serve him, his son, and his son's son, until ____ comes.",
+     "answer": "the time of his own land",
+     "wrong": [
+      "the day of the LORD's anger",
+      "the end of seventy years",
+      "the Branch of David"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Jeremiah say true prophets should pray to the LORD about?",
+     "options": [
+      "That the remaining vessels would not go to Babylon",
+      "That Nebuchadnezzar would die quickly",
+      "That rain would return to the land",
+      "That Jeconiah would be released from prison"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They will be carried to Babylon, and there they will be, until ____, says the LORD.",
+     "answer": "the day that I visit them",
+     "wrong": [
+      "the seventy years are complete",
+      "the king of Babylon dies",
+      "Zion repents of her sin"
+     ],
+     "v": 22
+    }
+   ]
+  },
+  "28": {
+   "keyVerse": 15,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which prophet broke the bar off Jeremiah's neck?",
+     "options": [
+      "Hananiah",
+      "Shemaiah",
+      "Pashhur",
+      "Uriah"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Hananiah prophesied that Jeconiah and the captives of Judah would be brought back.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "order",
+     "d": 1,
+     "items": [
+      "Hananiah announces the yoke of Babylon is broken",
+      "Jeremiah answers, \"Amen! May the LORD do so\"",
+      "Hananiah breaks the bar from Jeremiah's neck",
+      "Hananiah dies in the seventh month"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD say Hananiah had made in place of the bars of wood?",
+     "options": [
+      "Bars of iron",
+      "Chains of bronze",
+      "A yoke of stone",
+      "Ropes of cord"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Hananiah the son of Azzur, the prophet, who was of Gibeon, spoke to me in ____.",
+     "answer": "the LORD's house",
+     "wrong": [
+      "the king's court",
+      "the city gate",
+      "the court of the guard"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The LORD has not sent you, but you make this people ____.",
+     "answer": "trust in a lie",
+     "wrong": [
+      "turn from their God",
+      "forget my covenant",
+      "walk in darkness"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When Hananiah broke the bar, Jeremiah immediately answered him with a word of judgment.",
+     "answer": false,
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to Jeremiah, how would a prophet who prophesies peace be known as truly sent?",
+     "options": [
+      "When his word comes to pass",
+      "When he performs a sign",
+      "When the priests confirm him",
+      "When he suffers for his message"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Even so I will break the yoke of Nebuchadnezzar king of Babylon from off the neck of all the nations ____.",
+     "answer": "within two full years",
+     "wrong": [
+      "after seventy years",
+      "in the seventh month",
+      "before the next harvest"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Jeremiah say Hananiah would die that year?",
+     "options": [
+      "He had spoken rebellion against the LORD",
+      "He had broken the king's covenant",
+      "He had struck Jeremiah in the temple",
+      "He had burned incense to the queen of heaven"
+     ],
+     "v": 16
+    }
+   ]
+  },
+  "29": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did Jeremiah send his message to the captives in Babylon?",
+     "options": [
+      "By a letter",
+      "By a sign acted out in the temple",
+      "By a scroll read aloud by Baruch",
+      "By a word spoken through Hananiah"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Build houses and dwell in them. ____ and eat their fruit.",
+     "answer": "Plant gardens",
+     "wrong": [
+      "Plant vineyards",
+      "Sow your fields",
+      "Tend olive trees"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jeremiah told the captives to seek the peace of the city where they had been carried away.",
+     "answer": true,
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "You shall seek me and find me, when you search for me ____.",
+     "answer": "with all your heart",
+     "wrong": [
+      "in the land of captivity",
+      "with fasting and tears",
+      "in my holy temple"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "After ____ are accomplished for Babylon, I will visit you and perform my good word toward you.",
+     "answer": "seventy years",
+     "wrong": [
+      "forty years",
+      "two full years",
+      "seven weeks"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD say he would make the people still in Jerusalem like?",
+     "options": [
+      "Rotten figs that can't be eaten",
+      "Chaff blown by the wind",
+      "A broken clay pot",
+      "Dry bones in a valley"
+     ],
+     "v": 17
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jeremiah writes to the captives in Babylon",
+      "Ahab and Zedekiah are condemned as false prophets",
+      "Shemaiah's letters to Jerusalem are exposed",
+      "Zephaniah reads the letter to Jeremiah"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the curse in the chapter say happened to the false prophets Ahab and Zedekiah?",
+     "options": [
+      "The king of Babylon roasted them in the fire",
+      "They were thrown into a pit",
+      "They were stoned by the captives",
+      "They died of plague in Babylon"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who sent letters urging the priest Zephaniah to rebuke Jeremiah?",
+     "options": [
+      "Shemaiah the Nehelamite",
+      "Hananiah of Gibeon",
+      "Pashhur the son of Immer",
+      "Elasah the son of Shaphan"
+     ],
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Zephaniah the priest put Jeremiah in the stocks after reading Shemaiah's letter.",
+     "answer": false,
+     "v": 29
+    }
+   ]
+  },
+  "30": {
+   "keyVerse": 22,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD tell Jeremiah to do with all the words he had spoken?",
+     "options": [
+      "Write them in a book",
+      "Speak them at the city gate",
+      "Bury them by the Euphrates",
+      "Read them to the king"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Alas, for that day is great, so that none is like it! It is even the time of ____; but he will be saved out of it.",
+     "answer": "Jacob's trouble",
+     "wrong": [
+      "Judah's shame",
+      "Zion's mourning",
+      "Israel's judgment"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD said all of Zion's lovers were still seeking her.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What picture did the LORD use to describe men gripped by fear?",
+     "options": [
+      "Hands on their waist like a woman in labor",
+      "Hiding in caves like frightened animals",
+      "Staggering like drunken men",
+      "Scattered like sheep without a shepherd"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom did the LORD say his freed people would serve instead of strangers?",
+     "options": [
+      "The LORD their God and David their king",
+      "The priests and the Levites",
+      "The elders of the captivity",
+      "The king of Babylon and his son"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will correct you in measure, and will ____ unpunished.",
+     "answer": "in no way leave you",
+     "wrong": [
+      "not forever count you",
+      "no longer hold you",
+      "not always keep you"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD said he would make a full end of his people, but not of the nations where they were scattered.",
+     "answer": false,
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What had enemies said about Zion that moved the LORD to promise healing?",
+     "options": [
+      "She is an outcast whom no man seeks",
+      "She is a widow with no children",
+      "She is a ruin that will never rise",
+      "She is forgotten by her God"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The city will be built on ____, and the palace will be inhabited in its own place.",
+     "answer": "its own hill",
+     "wrong": [
+      "the ancient ruins",
+      "the mountain of Zion",
+      "the rock of David"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The LORD said their prince would be one of them and their ruler would come from among them.",
+     "answer": true,
+     "v": 21
+    }
+   ]
+  },
+  "31": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Yes, I have loved you with ____. Therefore I have drawn you with loving kindness.",
+     "answer": "an everlasting love",
+     "wrong": [
+      "a jealous love",
+      "a father's love",
+      "an unfailing mercy"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD say he would make with the house of Israel and the house of Judah?",
+     "options": [
+      "A new covenant",
+      "A covenant of salt",
+      "A covenant with the nations",
+      "A covenant of the Sabbath"
+     ],
+     "v": 31
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD said he would forgive their iniquity and remember their sin no more.",
+     "answer": true,
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will put my law in their inward parts, and I will ____.",
+     "answer": "write it in their heart",
+     "wrong": [
+      "set it before their eyes",
+      "bind it on their hands",
+      "teach it to their children"
+     ],
+     "v": 33
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who is heard in Ramah weeping for her children?",
+     "options": [
+      "Rachel",
+      "Leah",
+      "Sarah",
+      "Hannah"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which saying did the LORD say people would no longer use?",
+     "options": [
+      "The fathers ate sour grapes; the children's teeth are set on edge",
+      "As is the mother, so is her daughter",
+      "The days are prolonged, and every vision fails",
+      "The harvest is past, and we are not saved"
+     ],
+     "v": 29
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "In this chapter the LORD calls Judah his firstborn.",
+     "answer": false,
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Jeremiah say when he awoke?",
+     "options": [
+      "His sleep was sweet to him",
+      "His heart was troubled within him",
+      "He had wept through the night",
+      "His bones were shaking"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "If heaven above can be measured, and the foundations of the earth ____, then I will also cast off all the offspring of Israel.",
+     "answer": "searched out beneath",
+     "wrong": [
+      "shaken to pieces",
+      "moved from their place",
+      "counted by men"
+     ],
+     "v": 37
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What would the watchmen on the hills of Ephraim cry?",
+     "options": [
+      "Arise! Let's go up to Zion to the LORD our God",
+      "Flee from the north country",
+      "Build again the walls of Samaria",
+      "The enemy is at the gates"
+     ],
+     "v": 6
+    }
+   ]
+  },
+  "32": {
+   "keyVerse": 27,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where was Jeremiah shut up when this word came to him?",
+     "options": [
+      "In the court of the guard",
+      "In a muddy cistern",
+      "In the stocks at the Benjamin gate",
+      "In the house of Jonathan the scribe"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jeremiah buy from his cousin Hanamel?",
+     "options": [
+      "A field in Anathoth",
+      "A house in Jerusalem",
+      "A vineyard in Samaria",
+      "A threshing floor in Bethlehem"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jeremiah made his purchase while the king of Babylon's army was besieging Jerusalem.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Ah Lord GOD! You have made the heavens and the earth by your great power. There is ____ for you.",
+     "answer": "nothing too hard",
+     "wrong": [
+      "no rival anywhere",
+      "no secret kept",
+      "no end of days"
+     ],
+     "v": 17
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Hanamel visits Jeremiah in the court of the guard",
+      "Jeremiah weighs out the silver and signs the deed",
+      "Jeremiah hands the deed to Baruch",
+      "Jeremiah prays to the Lord GOD"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Houses and fields and vineyards will ____ in this land.",
+     "answer": "yet again be bought",
+     "wrong": [
+      "never again be planted",
+      "soon be given away",
+      "be left desolate"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Zedekiah locked Jeremiah up for prophesying that Zedekiah would escape the Chaldeans.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where were the purchase deeds to be kept so they would last many days?",
+     "options": [
+      "In an earthen vessel",
+      "In the temple treasury",
+      "In a cave in Benjamin",
+      "In the king's archives"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did Jeremiah know that Hanamel's request was the LORD's word?",
+     "options": [
+      "Hanamel came just as the LORD had said",
+      "An angel confirmed it in a dream",
+      "The witnesses told him so",
+      "Baruch received the same message"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I will give them ____, that they may fear me forever.",
+     "answer": "one heart and one way",
+     "wrong": [
+      "a new spirit and mind",
+      "a heart of flesh",
+      "wisdom and understanding"
+     ],
+     "v": 39
+    }
+   ]
+  },
+  "33": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Call to me, and I will answer you, and will show you ____, which you don't know.",
+     "answer": "great and difficult things",
+     "wrong": [
+      "the secrets of the ages",
+      "visions of the night",
+      "the end from the beginning"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where was Jeremiah when the LORD's word came to him the second time?",
+     "options": [
+      "Still locked up in the court of the guard",
+      "In the house of the potter",
+      "At the gate of the temple",
+      "In Anathoth among his family"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD promised that the voice of the bridegroom and the bride would again be heard in the land.",
+     "answer": true,
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "By what name would Jerusalem be called?",
+     "options": [
+      "The LORD our righteousness",
+      "The city of peace",
+      "The LORD is there",
+      "The faithful city"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "In those days and at that time, I will cause ____ to grow up to David.",
+     "answer": "a Branch of righteousness",
+     "wrong": [
+      "a shoot of peace",
+      "a mighty cedar",
+      "a root of blessing"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD compare his unbreakable covenant with David to?",
+     "options": [
+      "His covenant of the day and the night",
+      "The rainbow in the clouds",
+      "The mountains that cannot be moved",
+      "The sea that never runs dry"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD said the Levitical priests would lack a man to offer sacrifices.",
+     "answer": false,
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why had the houses of the city and of the kings of Judah been broken down?",
+     "options": [
+      "To make a defense against the mounds and sword",
+      "To pay tribute to the king of Babylon",
+      "To build altars for other gods",
+      "To make room for the Chaldean camp"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The flocks will again pass under the hands of ____, says the LORD.",
+     "answer": "him who counts them",
+     "wrong": [
+      "the shepherd of Israel",
+      "the king's servants",
+      "the Levites of Judah"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "People were saying the LORD had cast off the two families he had chosen.",
+     "answer": true,
+     "v": 24
+    }
+   ]
+  },
+  "34": {
+   "keyVerse": 4,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What had King Zedekiah and the people made a covenant to do?",
+     "options": [
+      "Set their Hebrew servants free",
+      "Tear down the altars of Baal",
+      "Keep the Sabbath day holy",
+      "Surrender the city to Babylon"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After freeing their servants, the people later forced them back into servitude.",
+     "answer": true,
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Behold, I proclaim to you a liberty, says the LORD, ____, to the pestilence, and to the famine.",
+     "answer": "to the sword",
+     "wrong": [
+      "to the captivity",
+      "to the fire",
+      "to the wild beasts"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD tell Zedekiah about how he would die?",
+     "options": [
+      "In peace, with burnings made for him",
+      "By the sword in battle",
+      "By famine during the siege",
+      "In chains on the road to Babylon"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "At the end of ____, every man of you shall release his brother who is a Hebrew.",
+     "answer": "seven years",
+     "wrong": [
+      "fifty years",
+      "three years",
+      "the harvest"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "At first only the poor obeyed the covenant, while the princes refused to free anyone.",
+     "answer": false,
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD said he would cause the king of Babylon's army to return and burn the city.",
+     "answer": true,
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which two fortified cities of Judah were the only ones still left?",
+     "options": [
+      "Lachish and Azekah",
+      "Bethel and Gilgal",
+      "Hebron and Beersheba",
+      "Anathoth and Mizpah"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What had the people done when they made the covenant before the LORD?",
+     "options": [
+      "Cut a calf in two and passed between its parts",
+      "Sprinkled blood on the altar",
+      "Poured oil on a standing stone",
+      "Shared bread and salt together"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "But you turned and ____, and every man caused his servant and every man his handmaid to return.",
+     "answer": "profaned my name",
+     "wrong": [
+      "broke my Sabbath",
+      "hardened your hearts",
+      "forgot your oath"
+     ],
+     "v": 16
+    }
+   ]
+  },
+  "35": {
+   "keyVerse": 19,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jeremiah set before the Rechabites in the LORD's house?",
+     "options": [
+      "Bowls full of wine and cups",
+      "Bread and roasted meat",
+      "A scroll of the law",
+      "Oil and incense"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Rechabites refused to drink the wine Jeremiah offered them.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who had commanded the Rechabites never to drink wine?",
+     "options": [
+      "Jonadab the son of Rechab",
+      "Jaazaniah the son of Jeremiah",
+      "Hanan the man of God",
+      "Maaseiah the keeper of the threshold"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "All your days you shall ____, that you may live many days in the land in which you live as nomads.",
+     "answer": "dwell in tents",
+     "wrong": [
+      "keep my Sabbaths",
+      "work the fields",
+      "walk in my ways"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why had the Rechabites come to live in Jerusalem?",
+     "options": [
+      "For fear of the Chaldean and Syrian armies",
+      "Because Jeremiah invited them",
+      "To worship at the LORD's house",
+      "Because a famine struck their land"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What lesson did the LORD draw from the Rechabites for Judah?",
+     "options": [
+      "They obeyed their father, but Judah did not obey God",
+      "Wine leads a nation into ruin",
+      "Living in tents is holier than living in houses",
+      "Strangers will inherit the land of Judah"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The Rechabites said they owned vineyards and fields but never drank the wine.",
+     "answer": false,
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I have spoken to you, ____, and you have not listened to me.",
+     "answer": "rising up early and speaking",
+     "wrong": [
+      "day and night pleading",
+      "by the mouth of kings",
+      "again and again warning"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jonadab the son of Rechab will not lack ____ forever.",
+     "answer": "a man to stand before me",
+     "wrong": [
+      "a son on David's throne",
+      "a portion in the land",
+      "a tent to dwell in"
+     ],
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jonadab allowed his descendants to sow seed as long as they lived in tents.",
+     "answer": false,
+     "v": 7
+    }
+   ]
+  },
+  "36": {
+   "keyVerse": 28,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who wrote down the LORD's words as Jeremiah spoke them?",
+     "options": [
+      "Baruch the son of Neriah",
+      "Jehudi the son of Nethaniah",
+      "Elishama the scribe",
+      "Gemariah the son of Shaphan"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did King Jehoiakim do with the scroll as it was read to him?",
+     "options": [
+      "Cut it and threw it into the fire",
+      "Tore it and trampled it",
+      "Sealed it in a jar",
+      "Sent it to the king of Babylon"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After the scroll was burned, the LORD told Jeremiah to write the same words on another scroll.",
+     "answer": true,
+     "v": 28
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Baruch writes as Jeremiah dictates",
+      "Baruch reads the scroll in the LORD's house",
+      "The princes hear Baruch read the scroll",
+      "The king burns the scroll in the brazier"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Jeremiah send Baruch to read the scroll instead of going himself?",
+     "options": [
+      "Jeremiah was restricted from the LORD's house",
+      "Jeremiah was sick in bed",
+      "Jeremiah had fled to Egypt",
+      "Jeremiah was locked in the stocks"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The king and his servants who heard all these words ____, and didn't tear their garments.",
+     "answer": "were not afraid",
+     "wrong": [
+      "bowed their heads",
+      "wept in silence",
+      "laughed at Baruch"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the princes tell Baruch after they heard the scroll?",
+     "options": [
+      "You and Jeremiah go hide",
+      "Bring Jeremiah to the king at once",
+      "Burn the scroll before the king sees it",
+      "Read it again at the city gate"
+     ],
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Elnathan, Delaiah, and Gemariah urged the king to burn the scroll.",
+     "answer": false,
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "His dead body will be cast out in the day to the heat, and ____.",
+     "answer": "in the night to the frost",
+     "wrong": [
+      "at evening to the dogs",
+      "in the field to the birds",
+      "by night to the jackals"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where was the king sitting when the scroll was read to him?",
+     "options": [
+      "In the winter house, with a fire burning before him",
+      "On his throne at the city gate",
+      "In the upper court of the LORD's house",
+      "In the scribe's room with the princes"
+     ],
+     "v": 22
+    }
+   ]
+  },
+  "37": {
+   "keyVerse": 17,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the Chaldeans withdraw from Jerusalem for a time?",
+     "options": [
+      "Pharaoh's army had come out of Egypt",
+      "A plague broke out in their camp",
+      "Zedekiah paid them tribute",
+      "Their king died in Babylon"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jeremiah told Zedekiah that the Chaldeans would come back and burn the city.",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Irijah accuse Jeremiah of at Benjamin's gate?",
+     "options": [
+      "Defecting to the Chaldeans",
+      "Stealing from the temple",
+      "Cursing the king",
+      "Prophesying falsely"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did the princes imprison Jeremiah after beating him?",
+     "options": [
+      "In the house of Jonathan the scribe",
+      "In the dungeon of Malchijah",
+      "In a cell under the king's palace",
+      "In the temple storerooms"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Don't deceive yourselves, saying, \"The Chaldeans will ____;\" for they will not depart.",
+     "answer": "surely depart from us",
+     "wrong": [
+      "never take this city",
+      "be struck by Pharaoh",
+      "make peace with us"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Though only wounded men remained among them, they would each rise up in his tent and ____.",
+     "answer": "burn this city with fire",
+     "wrong": [
+      "march against your walls",
+      "cry out to their gods",
+      "carry you to Babylon"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When Zedekiah secretly asked for a word from the LORD, Jeremiah said there was none.",
+     "answer": false,
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why was Jeremiah leaving Jerusalem when he was arrested?",
+     "options": [
+      "To go to Benjamin to receive his portion",
+      "To escape to Egypt",
+      "To meet with the Chaldean commanders",
+      "To visit his uncle in Ramah"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Now where are your prophets who prophesied to you, saying, \"The king of Babylon ____\"?",
+     "answer": "will not come against you",
+     "wrong": [
+      "has broken his yoke",
+      "will soon return home",
+      "fears the God of Israel"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was Jeremiah given each day in the court of the guard?",
+     "options": [
+      "A loaf of bread from the bakers' street",
+      "A jar of water from the king's well",
+      "A portion of the king's meat",
+      "Barley bread and lentils"
+     ],
+     "v": 21
+    }
+   ]
+  },
+  "38": {
+   "keyVerse": 20,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did the princes throw Jeremiah?",
+     "options": [
+      "Into a dungeon with mire and no water",
+      "Into the house of Jonathan the scribe",
+      "Into the stocks at the upper gate",
+      "Into a guarded tower on the wall"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who went to the king to plead for Jeremiah's rescue?",
+     "options": [
+      "Ebedmelech the Ethiopian",
+      "Baruch the son of Neriah",
+      "Ahikam the son of Shaphan",
+      "Jucal the son of Shelemiah"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Zedekiah told the princes that Jeremiah was in their hand because the king could not oppose them.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Ebedmelech tell Jeremiah to put under his armpits?",
+     "options": [
+      "Rags and worn out garments",
+      "Soft sheepskins",
+      "His own cloak",
+      "Folded linen sashes"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the princes want Jeremiah put to death?",
+     "options": [
+      "He weakened the hands of the men of war",
+      "He cursed the king in public",
+      "He stole bread during the famine",
+      "He sent letters to Pharaoh"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He who goes out to the Chaldeans will live. He will ____ and he will live.",
+     "answer": "escape with his life",
+     "wrong": [
+      "be taken to Babylon",
+      "find bread to eat",
+      "see his home again"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When the princes questioned Jeremiah, he told them everything the king had said.",
+     "answer": false,
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What would the women of the king's house say to Zedekiah if he refused to surrender?",
+     "options": [
+      "Your feet are sunk in the mire",
+      "Your crown has fallen from your head",
+      "You have sold us to the Chaldeans",
+      "Your prophets deceived you with dreams"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "As the LORD lives, ____, I will not put you to death.",
+     "answer": "who made our souls",
+     "wrong": [
+      "who sees in secret",
+      "who brought us out",
+      "the God of our fathers"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Zedekiah tell Jeremiah to say if the princes questioned him?",
+     "options": [
+      "That he begged not to return to Jonathan's house",
+      "That the king asked about the harvest",
+      "That he prayed for the king's health",
+      "That the king refused to see him"
+     ],
+     "v": 26
+    }
+   ]
+  },
+  "39": {
+   "keyVerse": 18,
+   "questions": [
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The king of Babylon put out Zedekiah's eyes and bound him to take him to Babylon.",
+     "answer": true,
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the Chaldeans do to Jerusalem?",
+     "options": [
+      "Burned its houses and broke down its walls",
+      "Rebuilt it as a Babylonian fortress",
+      "Left it standing but took its people",
+      "Gave it to the king of Edom"
+     ],
+     "v": 8
+    },
+    {
+     "t": "order",
+     "d": 1,
+     "items": [
+      "Nebuchadnezzar's army besieges Jerusalem",
+      "A breach is made in the city",
+      "Zedekiah flees by night",
+      "Zedekiah is judged at Riblah"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where was Zedekiah overtaken after fleeing the city?",
+     "options": [
+      "In the plains of Jericho",
+      "At the gate of Benjamin",
+      "On the road to Egypt",
+      "Near the brook Kidron"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Nebuzaradan give to the poor people left in Judah?",
+     "options": [
+      "Vineyards and fields",
+      "Silver and gold",
+      "Houses in Jerusalem",
+      "Grain from Babylon"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Take him and take care of him. ____; but do to him even as he tells you.",
+     "answer": "Do him no harm",
+     "wrong": [
+      "Bring him to Babylon",
+      "Give him a present",
+      "Keep him in chains"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Zedekiah's sons were taken safely to Babylon along with him.",
+     "answer": false,
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did the LORD promise to save Ebedmelech?",
+     "options": [
+      "Because he had put his trust in the LORD",
+      "Because he had freed his servants",
+      "Because he was a friend of the king",
+      "Because he had fed the prophets"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Zedekiah fled by night, by the way of the king's garden, through ____.",
+     "answer": "the gate between the two walls",
+     "wrong": [
+      "the Benjamin gate at night",
+      "the valley of Hinnom",
+      "the tunnel by the spring"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The princes of the king of Babylon came in and sat in the middle gate.",
+     "answer": true,
+     "v": 3
+    }
+   ]
+  },
+  "40": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who released Jeremiah from his chains at Ramah?",
+     "options": [
+      "Nebuzaradan the captain of the guard",
+      "Gedaliah the son of Ahikam",
+      "Johanan the son of Kareah",
+      "Ebedmelech the Ethiopian"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Jeremiah go to live after he was released?",
+     "options": [
+      "With Gedaliah at Mizpah",
+      "With the captives in Babylon",
+      "With his family in Anathoth",
+      "With the Rechabites in the wilderness"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Gedaliah told the captains not to be afraid to serve the Chaldeans.",
+     "answer": true,
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Johanan warn Gedaliah about?",
+     "options": [
+      "Baalis king of Ammon had sent Ishmael to kill him",
+      "The Chaldeans planned to remove him",
+      "The Jews in Moab would rebel",
+      "Pharaoh's army was coming against Mizpah"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Behold, ____. Where it seems good and right to you to go, go there.",
+     "answer": "all the land is before you",
+     "wrong": [
+      "the road to Babylon is open",
+      "the LORD has set you free",
+      "I have given you a home"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Gedaliah believed Johanan's warning and prepared to defend himself.",
+     "answer": false,
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the captain of the guard say had brought this evil on the people?",
+     "options": [
+      "They sinned against the LORD and did not obey him",
+      "Zedekiah broke his oath to Babylon",
+      "They trusted in Pharaoh's army",
+      "Their prophets had lied to them"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Gather wine and ____ and oil, and put them in your vessels.",
+     "answer": "summer fruits",
+     "wrong": [
+      "barley and wheat",
+      "figs and honey",
+      "grain and flax"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Johanan secretly offer to do for Gedaliah?",
+     "options": [
+      "Kill Ishmael so that no one would know",
+      "Take Gedaliah to safety in Egypt",
+      "Spy on the king of Ammon",
+      "Carry a warning to Babylon"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jews who had been in Moab, Ammon, and Edom came back to Gedaliah at Mizpah.",
+     "answer": true,
+     "v": 12
+    }
+   ]
+  },
+  "41": {
+   "keyVerse": 13,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who killed Gedaliah at Mizpah?",
+     "options": [
+      "Ishmael the son of Nethaniah",
+      "Johanan the son of Kareah",
+      "Baalis king of Ammon",
+      "Seraiah the son of Tanhumeth"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Ishmael escaped from Johanan and went to the children of Ammon.",
+     "answer": true,
+     "v": 15
+    },
+    {
+     "t": "order",
+     "d": 1,
+     "items": [
+      "Ishmael eats bread with Gedaliah",
+      "Ishmael kills Gedaliah",
+      "Ishmael carries off the people of Mizpah",
+      "Johanan finds Ishmael at Gibeon"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Ishmael act as he went out to meet the men from Shechem, Shiloh, and Samaria?",
+     "options": [
+      "He wept all along as he went",
+      "He offered them bread and wine",
+      "He hid behind the city wall",
+      "He blew a trumpet to greet them"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Don't kill us; for we have ____, of wheat, and of barley, and of oil, and of honey.",
+     "answer": "stores hidden in the field",
+     "wrong": [
+      "gold buried in the ground",
+      "silver stored in Mizpah",
+      "cattle kept in the hills"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Johanan and the captains find Ishmael?",
+     "options": [
+      "By the great waters in Gibeon",
+      "At the fords of the Jordan",
+      "In the plains of Jericho",
+      "At the border of Ammon"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The captives with Ishmael were grieved when they saw Johanan coming.",
+     "answer": false,
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who had first made the pit where Ishmael threw the bodies?",
+     "options": [
+      "King Asa, for fear of Baasha",
+      "King Hezekiah, during the Assyrian siege",
+      "King David, as a cistern",
+      "King Josiah, to store grain"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They stayed by Bethlehem, planning to enter Egypt because of the Chaldeans; for ____.",
+     "answer": "they were afraid of them",
+     "wrong": [
+      "the land was desolate",
+      "Jeremiah had told them",
+      "Ishmael was pursuing them"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What were the eighty men bringing to the LORD's house?",
+     "options": [
+      "Meal offerings and frankincense",
+      "Firstborn lambs and doves",
+      "Gold and silver vessels",
+      "Firstfruits of the harvest"
+     ],
+     "v": 5
+    }
+   ]
+  },
+  "42": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Johanan and the people ask Jeremiah to do for them?",
+     "options": [
+      "Pray that the LORD would show them the way",
+      "Lead them safely into Egypt",
+      "Make peace with the king of Babylon",
+      "Anoint a new governor over them"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The people promised to obey the LORD's voice whether his answer was good or bad.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD warn would happen if the remnant went to Egypt?",
+     "options": [
+      "The sword and famine they feared would overtake them",
+      "Pharaoh would make them slaves again",
+      "They would be scattered to the islands",
+      "The Nile would rise and drown them"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "If you will still live in this land, then I will build you, and not pull you down, and I will plant you, and ____.",
+     "answer": "not pluck you up",
+     "wrong": [
+      "give you rest",
+      "make you fruitful",
+      "water you with rain"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How long did Jeremiah wait before the LORD's word came to him?",
+     "options": [
+      "Ten days",
+      "Three days",
+      "Forty days",
+      "Seven days"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "We will go into the land of Egypt, where we will see no war, nor hear ____, nor have hunger of bread.",
+     "answer": "the sound of the trumpet",
+     "wrong": [
+      "the cry of the watchman",
+      "the tramp of armies",
+      "the roar of chariots"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Jeremiah told the people he would keep back part of the LORD's answer from them.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Jeremiah say the people had dealt deceitfully against their own souls?",
+     "options": [
+      "They asked for the LORD's word but would not obey it",
+      "They secretly worshiped the queen of the sky",
+      "They had lied about Ishmael's plot",
+      "They had already sent gifts to Pharaoh"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "May the LORD be ____ among us, if we don't do according to all the word with which the LORD your God sends you.",
+     "answer": "a true and faithful witness",
+     "wrong": [
+      "a consuming fire",
+      "a righteous judge",
+      "a strong tower"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The LORD said he grieved over the distress he had brought on the people.",
+     "answer": true,
+     "v": 10
+    }
+   ]
+  },
+  "43": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did Azariah and Johanan respond to Jeremiah's message?",
+     "options": [
+      "They said he was speaking falsely",
+      "They repented in sackcloth",
+      "They asked for more time to decide",
+      "They agreed to stay in Judah"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jeremiah and Baruch were taken along to Egypt with the remnant.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In which Egyptian city did the remnant arrive?",
+     "options": [
+      "Tahpanhes",
+      "Memphis",
+      "Migdol",
+      "Pathros"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom did the proud men accuse of turning Jeremiah against them?",
+     "options": [
+      "Baruch the son of Neriah",
+      "Ebedmelech the Ethiopian",
+      "Gedaliah the son of Ahikam",
+      "Jezaniah the son of Hoshaiah"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He will array himself with the land of Egypt, as ____; and he will go out from there in peace.",
+     "answer": "a shepherd puts on his garment",
+     "wrong": [
+      "a bride puts on her jewels",
+      "a king puts on his crown",
+      "a warrior girds on his sword"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD say Nebuchadnezzar would set over the hidden stones?",
+     "options": [
+      "His throne",
+      "A pillar of victory",
+      "An altar to his gods",
+      "His battle standard"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD said Nebuchadnezzar would spare the houses of the gods of Egypt.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Jeremiah finishes speaking the LORD's words",
+      "The proud men call Jeremiah a liar",
+      "The remnant travels into Egypt",
+      "Jeremiah hides great stones in the brickwork"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the LORD say Nebuchadnezzar would break in the land of Egypt?",
+     "options": [
+      "The pillars of Beth Shemesh",
+      "The gates of Memphis",
+      "The walls of Migdol",
+      "The idols of Pathros"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Such as are for death will be put to death, and ____ to captivity.",
+     "answer": "such as are for captivity",
+     "wrong": [
+      "those who flee in fear",
+      "the young men of Egypt",
+      "such as are for famine"
+     ],
+     "v": 11
+    }
+   ]
+  },
+  "44": {
+   "keyVerse": 4,
+   "questions": [
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I sent to you all my servants the prophets, saying, \"Oh, don't do ____ that I hate.\"",
+     "answer": "this abominable thing",
+     "wrong": [
+      "this wicked deed",
+      "these evil works",
+      "this shameful act"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The people told Jeremiah they would not listen to the word he spoke in the LORD's name.",
+     "answer": true,
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the people say they had come to lack all things?",
+     "options": [
+      "They had stopped burning incense to the queen of the sky",
+      "They had left the land of Judah",
+      "They had refused to pay tribute to Babylon",
+      "They had angered Pharaoh"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the women say they made to worship the queen of the sky?",
+     "options": [
+      "Cakes",
+      "Garments of fine linen",
+      "Golden images",
+      "Clay lamps"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Have you forgotten ____, the wickedness of the kings of Judah, the wickedness of their wives?",
+     "answer": "the wickedness of your fathers",
+     "wrong": [
+      "the covenant of your fathers",
+      "the law given at Sinai",
+      "the days of King Josiah"
+     ],
+     "v": 9
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The LORD recalls the ruin of Jerusalem",
+      "The LORD warns the Jews living in Egypt",
+      "The people vow to keep burning incense",
+      "Jeremiah announces a sign of coming punishment"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The women said they had made their offerings without their husbands' knowledge.",
+     "answer": false,
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What words did the LORD say would no longer be spoken by any man of Judah in Egypt?",
+     "options": [
+      "As the Lord GOD lives",
+      "The LORD is our God",
+      "Blessed be the God of Israel",
+      "Hear, O Israel"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which king of Egypt did the LORD say he would give into the hand of his enemies?",
+     "options": [
+      "Pharaoh Hophra",
+      "Pharaoh Necoh",
+      "Pharaoh Shishak",
+      "Pharaoh So"
+     ],
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Those who escape the sword will return out of the land of Egypt into the land of Judah ____.",
+     "answer": "few in number",
+     "wrong": [
+      "with great joy",
+      "in the latter days",
+      "as a great company"
+     ],
+     "v": 28
+    }
+   ]
+  },
+  "45": {
+   "keyVerse": 5,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "To whom was the LORD's message in this chapter spoken?",
+     "options": [
+      "Baruch the son of Neriah",
+      "Ebedmelech the Ethiopian",
+      "Zedekiah king of Judah",
+      "Seraiah the son of Neriah"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Baruch had complained that the LORD had added sorrow to his pain.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Do you seek ____ for yourself? Don't seek them.",
+     "answer": "great things",
+     "wrong": [
+      "a long life",
+      "honor and riches",
+      "a safe place"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD promise Baruch?",
+     "options": [
+      "He would escape with his life wherever he went",
+      "He would become a great scribe in Babylon",
+      "He would receive a field in Anathoth",
+      "He would return home within two years"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Woe is me now! For the LORD has added sorrow to my pain! I am weary with my groaning, and ____.",
+     "answer": "I find no rest",
+     "wrong": [
+      "my eyes fail me",
+      "my bones are dried up",
+      "no one comforts me"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The LORD said he would break down what he had built only in the city of Jerusalem.",
+     "answer": false,
+     "v": 4
+    }
+   ]
+  },
+  "46": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where was Pharaoh Necoh's army struck by Nebuchadnezzar?",
+     "options": [
+      "By the river Euphrates in Carchemish",
+      "At the border of Gaza",
+      "By the Nile at Memphis",
+      "In the plains of Megiddo"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter ends with the LORD telling Jacob his servant not to be afraid.",
+     "answer": true,
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "To what river is Egypt compared as it rises up?",
+     "options": [
+      "The Nile",
+      "The Euphrates",
+      "The Jordan",
+      "The Tigris"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Go up into Gilead, and take balm, virgin daughter of Egypt. You use many medicines in vain. ____.",
+     "answer": "There is no healing for you",
+     "wrong": [
+      "Your wound will soon close",
+      "Your strength will return",
+      "The LORD will bind you up"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the soldiers cry about Pharaoh king of Egypt?",
+     "options": [
+      "He is but a noise",
+      "He is a broken reed",
+      "He is a lion without teeth",
+      "He is a shepherd who fled"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What animal is Egypt compared to?",
+     "options": [
+      "A very beautiful heifer",
+      "A proud lion",
+      "A wild donkey",
+      "A swift gazelle"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD said Egypt would never again be inhabited after its defeat.",
+     "answer": false,
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Surely like Tabor among the mountains, and ____, so he will come.",
+     "answer": "like Carmel by the sea",
+     "wrong": [
+      "like Lebanon in the north",
+      "like Hermon above the plain",
+      "like Sinai in the desert"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why could Egypt's forest not stand against the invaders with axes?",
+     "options": [
+      "They were more than the locusts",
+      "They carried torches of fire",
+      "They came with iron chariots",
+      "The LORD had dried up her rivers"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Cush and Put are named as mighty men who handle the shield.",
+     "answer": true,
+     "v": 9
+    }
+   ]
+  },
+  "47": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which people is this prophecy against?",
+     "options": [
+      "The Philistines",
+      "The Moabites",
+      "The Edomites",
+      "The Ammonites"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Behold, waters rise up out of the north, and will become ____.",
+     "answer": "an overflowing stream",
+     "wrong": [
+      "a great sea",
+      "a raging flood",
+      "a mighty river"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "This word came to Jeremiah before Pharaoh struck Gaza.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why do the fathers not look back for their children?",
+     "options": [
+      "Their hands are so feeble",
+      "They are blinded by smoke",
+      "They have already fled to Egypt",
+      "They are bound in chains"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which sounds make the people panic?",
+     "options": [
+      "Stamping hoofs, rushing chariots, and rumbling wheels",
+      "Trumpets, shouting, and war drums",
+      "Thunder, wind, and crashing waves",
+      "Clashing swords and falling walls"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You sword of the LORD, how long will it be before you are quiet? ____ into your scabbard; rest, and be still.",
+     "answer": "Put yourself back",
+     "wrong": [
+      "Return with blood",
+      "Go down again",
+      "Hide yourself away"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which two places are said to have baldness come on them and be brought to nothing?",
+     "options": [
+      "Gaza and Ashkelon",
+      "Tyre and Sidon",
+      "Ekron and Gath",
+      "Ashdod and Joppa"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The sword of the LORD could rest because its work was already finished.",
+     "answer": false,
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For the LORD will destroy the Philistines, the remnant of ____.",
+     "answer": "the isle of Caphtor",
+     "wrong": [
+      "the coast of Tyre",
+      "the land of Gaza",
+      "the plains of Sharon"
+     ],
+     "v": 4
+    }
+   ]
+  },
+  "48": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which nation is this long prophecy against?",
+     "options": [
+      "Moab",
+      "Ammon",
+      "Edom",
+      "Damascus"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which god did the LORD say would go into captivity with his priests and princes?",
+     "options": [
+      "Chemosh",
+      "Molech",
+      "Dagon",
+      "Baal"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter ends with a promise that the LORD will reverse Moab's captivity in the latter days.",
+     "answer": true,
+     "v": 47
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Moab has been at ease from his youth, and he has ____.",
+     "answer": "settled on his dregs",
+     "wrong": [
+      "grown fat in his pastures",
+      "hidden in his strongholds",
+      "trusted in his walls"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why would Moab be made drunk and wallow in his vomit?",
+     "options": [
+      "He magnified himself against the LORD",
+      "He sold Israel's children as slaves",
+      "He refused water to the thirsty",
+      "He burned the bones of Edom's king"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD tell the people of Moab to do, like the dove?",
+     "options": [
+      "Leave the cities and dwell in the rock",
+      "Flee to the wilderness",
+      "Hide in the forests",
+      "Go down to the sea"
+     ],
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD said Moab had often gone into captivity and been poured from vessel to vessel.",
+     "answer": false,
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Moab will be ashamed of Chemosh, as the house of Israel was ashamed of ____.",
+     "answer": "Bethel, their confidence",
+     "wrong": [
+      "Samaria, their capital",
+      "the golden calf",
+      "Baal, their god"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He who flees from the terror will fall into the pit; and he who gets up out of the pit ____.",
+     "answer": "will be taken in the snare",
+     "wrong": [
+      "will fall by the sword",
+      "will be torn by lions",
+      "will perish in the fire"
+     ],
+     "v": 44
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the LORD say his heart sounds like for Moab?",
+     "options": [
+      "Flutes",
+      "Drums",
+      "Harps",
+      "Trumpets"
+     ],
+     "v": 36
+    }
+   ]
+  },
+  "49": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Leave your fatherless children. I will preserve them alive. Let ____.",
+     "answer": "your widows trust in me",
+     "wrong": [
+      "your orphans come to me",
+      "your mothers cry to me",
+      "your elders seek my face"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD said Hazor would become a dwelling place of jackals.",
+     "answer": true,
+     "v": 33
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD say he would break in Elam?",
+     "options": [
+      "The bow of Elam, the chief of their might",
+      "The chariots of Elam",
+      "The walls of Elam's cities",
+      "The idols of Elam"
+     ],
+     "v": 35
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The prophecy against Ammon",
+      "The prophecy against Edom",
+      "The prophecy against Damascus",
+      "The prophecy against Elam"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which two peoples are promised that the LORD will reverse their captivity in this chapter?",
+     "options": [
+      "Ammon and Elam",
+      "Edom and Damascus",
+      "Kedar and Hazor",
+      "Edom and Ammon"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Though you should make your nest ____, I will bring you down from there, says the LORD.",
+     "answer": "as high as the eagle",
+     "wrong": [
+      "among the stars of heaven",
+      "on the peak of the mountains",
+      "above the clouds of the sky"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What question did the LORD ask about Teman?",
+     "options": [
+      "Is wisdom no more in Teman?",
+      "Where are the mighty men of Teman?",
+      "Why does Teman trust in horses?",
+      "Who will rebuild Teman's walls?"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Ammon was condemned because its god Malcam had taken possession of Reuben.",
+     "answer": false,
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whose palaces would the fire in the wall of Damascus devour?",
+     "options": [
+      "Ben Hadad's",
+      "Hazael's",
+      "Rezin's",
+      "Tiglath Pileser's"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How is the nation Nebuchadnezzar would attack at Kedar and Hazor described?",
+     "options": [
+      "At ease, with neither gates nor bars",
+      "Proud, dwelling in high towers",
+      "Rich in gold and silver",
+      "Strong with many chariots"
+     ],
+     "v": 31
+    }
+   ]
+  },
+  "50": {
+   "keyVerse": 34,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which city is this prophecy against?",
+     "options": [
+      "Babylon",
+      "Nineveh",
+      "Tyre",
+      "Damascus"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "My people have been ____. Their shepherds have caused them to go astray.",
+     "answer": "lost sheep",
+     "wrong": [
+      "a wandering flock",
+      "scattered goats",
+      "sheep without pasture"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD said a nation would come up out of the north against Babylon.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which gods of Babylon are said to be disappointed and dismayed?",
+     "options": [
+      "Bel and Merodach",
+      "Chemosh and Malcam",
+      "Baal and Ashtoreth",
+      "Dagon and Molech"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who devoured Israel first, before Nebuchadnezzar broke his bones?",
+     "options": [
+      "The king of Assyria",
+      "The king of Egypt",
+      "The king of Edom",
+      "The king of the Medes"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "How ____ is cut apart and broken! How Babylon has become a desolation among the nations!",
+     "answer": "the hammer of the whole earth",
+     "wrong": [
+      "the proud city of gold",
+      "the glory of the Chaldeans",
+      "the crown of all kingdoms"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD said that when Israel's iniquity was searched for, it would still be found.",
+     "answer": false,
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did the LORD say Israel would feed when brought back to his pasture?",
+     "options": [
+      "Carmel and Bashan",
+      "Sharon and Jezreel",
+      "Moab and Ammon",
+      "Lebanon and Hermon"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Their Redeemer is strong. ____ is his name.",
+     "answer": "The LORD of Armies",
+     "wrong": [
+      "The Holy One of Israel",
+      "The Mighty One of Jacob",
+      "The God of all flesh"
+     ],
+     "v": 34
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What were the people fleeing Babylon told to be like?",
+     "options": [
+      "Male goats before the flocks",
+      "Doves returning to their nests",
+      "Deer running from hunters",
+      "Sparrows escaping a snare"
+     ],
+     "v": 8
+    }
+   ]
+  },
+  "51": {
+   "keyVerse": 15,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD tell his people to do concerning Babylon?",
+     "options": [
+      "Flee out of the middle of her",
+      "Pray for her peace",
+      "Build houses in her",
+      "Fight against her gates"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "He has made the earth by his power. He has established the world ____.",
+     "answer": "by his wisdom",
+     "wrong": [
+      "by his word",
+      "with his hands",
+      "in his strength"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Babylon is described as a golden cup in the LORD's hand that made all the earth drunk.",
+     "answer": true,
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whose spirit did the LORD stir up against Babylon?",
+     "options": [
+      "The kings of the Medes",
+      "The kings of Egypt",
+      "The princes of Edom",
+      "The chiefs of Kedar"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Behold, I am against you, ____, says the LORD, which destroys all the earth.",
+     "answer": "destroying mountain",
+     "wrong": [
+      "proud city",
+      "golden cup",
+      "mighty fortress"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD call the one he would use to break nations in pieces?",
+     "options": [
+      "My battle ax and weapons of war",
+      "My rod and my staff",
+      "My sword and my shield",
+      "My hammer and my fire"
+     ],
+     "v": 20
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jeremiah writes the evil against Babylon in a book",
+      "Seraiah reads the words in Babylon",
+      "Seraiah binds a stone to the book",
+      "Babylon is declared to sink and not rise"
+     ],
+     "v": 60
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jeremiah went to Babylon himself to read the book against it.",
+     "answer": false,
+     "v": 61
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They won't take ____ from you, nor a stone for foundations; but you will be desolate forever.",
+     "answer": "a cornerstone",
+     "wrong": [
+      "a pillar of stone",
+      "a hewn block",
+      "a threshold stone"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the inhabitant of Zion say Nebuchadnezzar has done like a monster?",
+     "options": [
+      "Swallowed me up",
+      "Trampled my vineyards",
+      "Burned my gates",
+      "Scattered my flock"
+     ],
+     "v": 34
+    }
+   ]
+  },
+  "52": {
+   "keyVerse": 32,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which king of Babylon released Jehoiachin from prison?",
+     "options": [
+      "Evilmerodach",
+      "Nebuchadnezzar",
+      "Nergal Sharezer",
+      "Merodach Baladan"
+     ],
+     "v": 31
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Nebuzaradan burned the LORD's house, the king's house, and all the houses of Jerusalem.",
+     "answer": true,
+     "v": 13
+    },
+    {
+     "t": "order",
+     "d": 1,
+     "items": [
+      "Nebuchadnezzar besieges Jerusalem",
+      "Famine grows severe in the city",
+      "Zedekiah is captured in the plains of Jericho",
+      "Nebuzaradan burns the LORD's house"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the Chaldeans do with the bronze pillars and the bronze sea?",
+     "options": [
+      "Broke them in pieces and carried the bronze to Babylon",
+      "Left them standing in the ruins",
+      "Melted them into weapons in Jerusalem",
+      "Sent them to Pharaoh as tribute"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The king of Babylon bound Zedekiah in fetters, carried him to Babylon, and put him in prison ____.",
+     "answer": "until the day of his death",
+     "wrong": [
+      "for thirty seven years",
+      "until Babylon fell",
+      "in the house of Bel"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom did Nebuzaradan leave behind in the land?",
+     "options": [
+      "Some of the poorest, as vineyard keepers and farmers",
+      "The priests, to keep the temple",
+      "The princes, to govern the cities",
+      "The soldiers, to guard the walls"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Zedekiah stayed loyal to the king of Babylon until the end.",
+     "answer": false,
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who had made the two pillars, the sea, and the twelve bronze bulls?",
+     "options": [
+      "King Solomon",
+      "King David",
+      "King Hezekiah",
+      "King Josiah"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He spoke kindly to him, and set his throne ____ of the kings who were with him in Babylon.",
+     "answer": "above the throne",
+     "wrong": [
+      "beside the thrones",
+      "among the thrones",
+      "below the throne"
+     ],
+     "v": 32
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Seraiah the chief priest and Zephaniah the second priest were taken to the king of Babylon at Riblah.",
+     "answer": true,
+     "v": 24
+    }
+   ]
+  }
+ }
+}

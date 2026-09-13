@@ -1,0 +1,2732 @@
+{
+ "book": "2SA",
+ "chapters": {
+  "1": {
+   "keyVerse": 23,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the Amalekite claim Saul died?",
+     "options": [
+      "He said he killed Saul at Saul's own request",
+      "He said Saul fell on his own sword",
+      "He said Philistine archers killed Saul",
+      "He said Jonathan killed Saul to spare him"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the young man bring to David?",
+     "options": [
+      "Saul's crown and bracelet",
+      "Saul's spear and shield",
+      "Saul's sword and robe",
+      "Jonathan's bow and belt"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did the young man say he happened upon Saul?",
+     "options": [
+      "Mount Gilboa",
+      "Mount Carmel",
+      "The valley of Elah",
+      "The hill of Gibeah"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did David say the Amalekite's blood was on his own head?",
+     "options": [
+      "His own mouth said he killed the LORD's anointed",
+      "He had stolen the king's crown",
+      "He had deserted Israel's army",
+      "He had lied about Jonathan's death"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "\"Your glory, Israel, was slain on your high places! ____!\"",
+     "answer": "How the mighty have fallen",
+     "wrong": [
+      "How the brave have perished",
+      "How the strong are laid low",
+      "How the proud have stumbled"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"Don't tell it in Gath. Don't publish it in ____.\"",
+     "answer": "the streets of Ashkelon",
+     "wrong": [
+      "the gates of Gaza",
+      "the markets of Ekron",
+      "the towns of Ashdod"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"Saul and Jonathan were lovely and pleasant in their lives. In their death, ____.\"",
+     "answer": "they were not divided",
+     "wrong": [
+      "they were not forgotten",
+      "they were not ashamed",
+      "they were laid together"
+     ],
+     "v": 23
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "A man arrives from Saul's camp with torn clothes",
+      "He reports that Saul and Jonathan are dead",
+      "David has the Amalekite struck down",
+      "David laments over Saul and Jonathan"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "David and his men mourned and fasted until evening for Saul and Jonathan.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "In his lament, David asked that the mountains of Gilboa receive plenty of dew and rain.",
+     "answer": false,
+     "v": 21
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 4,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "To which city did the LORD tell David to go up?",
+     "options": [
+      "Hebron",
+      "Bethlehem",
+      "Ziklag",
+      "Jerusalem"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom did Abner make king over Israel?",
+     "options": [
+      "Ishbosheth, Saul's son",
+      "Mephibosheth, Jonathan's son",
+      "Ner, Abner's father",
+      "Joab, son of Zeruiah"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did David bless the men of Jabesh Gilead?",
+     "options": [
+      "They had buried Saul",
+      "They had anointed David king",
+      "They had fought the Philistines",
+      "They had sheltered David's family"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was Asahel compared to?",
+     "options": [
+      "A wild gazelle",
+      "A young lion",
+      "An eagle",
+      "A swift horse"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Abner said to Joab, \"Please let the young men ____ before us!\"",
+     "answer": "arise and compete",
+     "wrong": [
+      "come out and fight",
+      "draw their swords",
+      "stand and wrestle"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Abner called to Joab, \"____ forever?\"",
+     "answer": "Shall the sword devour",
+     "wrong": [
+      "Shall brothers keep fighting",
+      "Shall Israel keep bleeding",
+      "Shall the battle rage"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The men of Judah came, and there they anointed David king over ____.",
+     "answer": "the house of Judah",
+     "wrong": [
+      "all the tribes of Israel",
+      "the house of Benjamin",
+      "the land of Gilead"
+     ],
+     "v": 4
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "David is anointed king over Judah in Hebron",
+      "Abner makes Ishbosheth king over Israel",
+      "Twelve young men from each side fight at Gibeon",
+      "Abner kills Asahel with his spear"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Asahel kept chasing Abner even after Abner warned him to turn away.",
+     "answer": true,
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Asahel was buried in the tomb of his father in Hebron.",
+     "answer": false,
+     "v": 32
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who struck Abner down in the gate at Hebron?",
+     "options": [
+      "Joab",
+      "Ishbosheth",
+      "Paltiel",
+      "One of David's young men"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Ishbosheth accuse Abner of?",
+     "options": [
+      "Going in to Saul's concubine Rizpah",
+      "Sending messengers to David",
+      "Losing the battle at Gibeon",
+      "Taking Michal from her husband"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What condition did David set before Abner could see his face?",
+     "options": [
+      "He must bring Michal, Saul's daughter",
+      "He must bring Ishbosheth's crown",
+      "He must hand over Saul's sword",
+      "He must bring the elders of Israel"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Joab say Abner had come to David?",
+     "options": [
+      "To deceive him and learn his movements",
+      "To ask for a share of the plunder",
+      "To make peace for Benjamin",
+      "To seek revenge for Saul"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Michal's husband went with her, ____, and followed her to Bahurim.",
+     "answer": "weeping as he went",
+     "wrong": [
+      "begging the messengers",
+      "crying out for help",
+      "pleading with Abner"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The king lamented for Abner, and said, \"Should Abner ____?\"",
+     "answer": "die as a fool dies",
+     "wrong": [
+      "be buried without honor",
+      "fall by a brother's hand",
+      "die like a common man"
+     ],
+     "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "There was a long war between Saul's house and David's house. David grew ____.",
+     "answer": "stronger and stronger",
+     "wrong": [
+      "bolder and bolder",
+      "richer and richer",
+      "wiser and wiser"
+     ],
+     "v": 1
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Ishbosheth accuses Abner about Saul's concubine",
+      "Michal is taken from Paltiel",
+      "Abner feasts with David in Hebron",
+      "Joab kills Abner in the gate"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "David wept at Abner's grave and refused to eat until the sun went down.",
+     "answer": true,
+     "v": 35
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Joab killed Abner to avenge his brother Abishai.",
+     "answer": false,
+     "v": 30
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who killed Ishbosheth?",
+     "options": [
+      "Rechab and Baanah",
+      "Joab and Abishai",
+      "Abner and his men",
+      "An Amalekite messenger"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Mephibosheth become lame?",
+     "options": [
+      "His nurse fled with him and he fell",
+      "He was wounded in battle at Gilboa",
+      "He was born lame in his feet",
+      "Philistines struck him as a child"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the killers bring to David at Hebron?",
+     "options": [
+      "Ishbosheth's head",
+      "Ishbosheth's crown",
+      "Ishbosheth's spear",
+      "Ishbosheth's royal robe"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where was Ishbosheth's head buried?",
+     "options": [
+      "In Abner's grave in Hebron",
+      "In Saul's tomb at Jabesh",
+      "Beside the pool in Hebron",
+      "In the city of Mahanaim"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "When Saul's son heard that Abner was dead in Hebron, ____.",
+     "answer": "his hands became feeble",
+     "wrong": [
+      "he fled to Mahanaim",
+      "he tore his clothes",
+      "his heart grew bold"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They came into the middle of the house as though they would have ____.",
+     "answer": "fetched wheat",
+     "wrong": [
+      "brought a message",
+      "sold some grain",
+      "delivered tribute"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "David said, \"How much more, when wicked men have slain ____ in his own house on his bed?\"",
+     "answer": "a righteous person",
+     "wrong": [
+      "the LORD's anointed",
+      "their own master",
+      "a sleeping king"
+     ],
+     "v": 11
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Ishbosheth hears that Abner is dead",
+      "Two captains kill Ishbosheth on his bed",
+      "They bring their trophy to David at Hebron",
+      "David has the two men put to death"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "David rewarded the men who killed Ishbosheth.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Ishbosheth was killed while he rested at noon.",
+     "answer": true,
+     "v": 5
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which stronghold did David take from the Jebusites?",
+     "options": [
+      "Zion",
+      "Hebron",
+      "Gibeon",
+      "Ziklag"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Hiram king of Tyre send to David?",
+     "options": [
+      "Cedar trees, carpenters, and masons",
+      "Gold, silver, and bronze",
+      "Horses and chariots",
+      "Soldiers for his army"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who did the Jebusites say would keep David out?",
+     "options": [
+      "The blind and the lame",
+      "Their mighty men of war",
+      "The watchmen on the walls",
+      "The Philistine army"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What signal told David to attack the Philistines the second time?",
+     "options": [
+      "Marching in the tops of the mulberry trees",
+      "A trumpet blast from the hill",
+      "Thunder from the sky",
+      "Wind blowing through the valley"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "All the tribes of Israel said to David, \"Behold, we are ____.\"",
+     "answer": "your bone and your flesh",
+     "wrong": [
+      "your servants and your people",
+      "your brothers and your kin",
+      "your sheep and your flock"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "David grew greater and greater, for ____ was with him.",
+     "answer": "the LORD, the God of Armies",
+     "wrong": [
+      "the whole army of Israel",
+      "the might of all Judah",
+      "the favor of the elders"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "David said, \"The LORD has broken my enemies before me, like ____.\"",
+     "answer": "the breach of waters",
+     "wrong": [
+      "a potter's clay jar",
+      "the rush of wind",
+      "a flood in spring"
+     ],
+     "v": 20
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The elders anoint David king over Israel at Hebron",
+      "David takes the stronghold of Zion",
+      "Hiram's workers build David a house",
+      "David defeats the Philistines at Baal Perazim"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The second time, the LORD told David to go straight up against the Philistines.",
+     "answer": false,
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Philistines left their images behind, and David and his men took them away.",
+     "answer": true,
+     "v": 21
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did God strike Uzzah?",
+     "options": [
+      "He took hold of the ark",
+      "He looked inside the ark",
+      "He drove the cart carelessly",
+      "He refused to carry the ark"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did the ark stay for three months?",
+     "options": [
+      "In Obed-Edom the Gittite's house",
+      "In Abinadab's house on the hill",
+      "At the threshing floor of Nacon",
+      "In the tent in David's city"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was David wearing as he danced?",
+     "options": [
+      "A linen ephod",
+      "A royal robe",
+      "Sackcloth",
+      "A purple cloak"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did David give to every person after the ark was brought in?",
+     "options": [
+      "Bread, dates, and raisins",
+      "Meat, wine, and oil",
+      "Bread, figs, and honey",
+      "Grain, wine, and wool"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "David danced before the LORD ____.",
+     "answer": "with all his might",
+     "wrong": [
+      "with a joyful heart",
+      "with all the people",
+      "with harps and cymbals"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Michal saw King David leaping and dancing before the LORD; and she ____.",
+     "answer": "despised him in her heart",
+     "wrong": [
+      "wept for her father",
+      "hid herself in shame",
+      "rejoiced with the women"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "David said to Michal, \"I will be ____ than this.\"",
+     "answer": "yet more undignified",
+     "wrong": [
+      "even more joyful",
+      "far more humble",
+      "yet more glorious"
+     ],
+     "v": 22
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Uzzah dies beside the ark",
+      "The ark stays with Obed-Edom",
+      "David dances as the ark enters the city",
+      "Michal rebukes David"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "David was afraid of the LORD after Uzzah died.",
+     "answer": true,
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When the ark bearers had gone six paces, David sacrificed a lamb and a goat.",
+     "answer": false,
+     "v": 13
+    }
+   ]
+  },
+  "7": {
+   "keyVerse": 16,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was troubling David at the start of the chapter?",
+     "options": [
+      "He lived in cedar while God's ark was in curtains",
+      "The Philistines were still attacking Israel",
+      "He had no son to reign after him",
+      "The people had stopped worshiping the LORD"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Nathan first tell David?",
+     "options": [
+      "Go, do all that is in your heart",
+      "Wait until the LORD speaks to you",
+      "You are not the one to build",
+      "Ask the priests before you begin"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did the LORD say he took David from?",
+     "options": [
+      "The sheep pen, following the sheep",
+      "The house of his father",
+      "The caves of the wilderness",
+      "The army of King Saul"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did God say he would do if David's offspring committed iniquity?",
+     "options": [
+      "Chasten him with the rod of men",
+      "Tear the whole kingdom from him",
+      "Give his throne to another family",
+      "Send him away into exile"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "\"He will build a house for my name, and I will establish ____ forever.\"",
+     "answer": "the throne of his kingdom",
+     "wrong": [
+      "the walls of his city",
+      "the glory of his name",
+      "the strength of his army"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"I will be his father, and ____.\"",
+     "answer": "he will be my son",
+     "wrong": [
+      "he will be my servant",
+      "he will walk before me",
+      "he will be my chosen"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "David said, \"Who am I, Lord GOD, and what is my house, that ____?\"",
+     "answer": "you have brought me this far",
+     "wrong": [
+      "you have chosen me as king",
+      "you would speak with me",
+      "you have remembered your servant"
+     ],
+     "v": 18
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "David tells Nathan the ark dwells within curtains",
+      "The LORD's word comes to Nathan that night",
+      "Nathan tells David all the words of the vision",
+      "David sits before the LORD and prays"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD promised that David's house and kingdom would be made sure forever.",
+     "answer": true,
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "God said he had often asked Israel's leaders why they had not built him a house of cedar.",
+     "answer": false,
+     "v": 7
+    }
+   ]
+  },
+  "8": {
+   "keyVerse": 15,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who was over David's army?",
+     "options": [
+      "Joab the son of Zeruiah",
+      "Benaiah the son of Jehoiada",
+      "Abishai the son of Zeruiah",
+      "Jehoshaphat the son of Ahilud"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did David take from Hadadezer's servants and bring to Jerusalem?",
+     "options": [
+      "Shields of gold",
+      "Crowns of silver",
+      "Swords of bronze",
+      "Chariots of iron"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did David do with the silver and gold from Toi and the conquered nations?",
+     "options": [
+      "He dedicated it to the LORD",
+      "He gave it to his mighty men",
+      "He stored it in his own house",
+      "He sent it back as gifts"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Toi king of Hamath send his son to bless David?",
+     "options": [
+      "Hadadezer had been at war with Toi",
+      "Toi wanted to marry into David's house",
+      "David had spared Hamath in battle",
+      "Toi had been defeated by David"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The LORD gave ____ wherever he went.",
+     "answer": "victory to David",
+     "wrong": [
+      "rest to David",
+      "honor to the king",
+      "riches to David"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "David reigned over all Israel; and David executed ____ for all his people.",
+     "answer": "justice and righteousness",
+     "wrong": [
+      "mercy and kindness",
+      "truth and peace",
+      "judgment and wisdom"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The Moabites became servants to David, and ____.",
+     "answer": "brought tribute",
+     "wrong": [
+      "paid him silver",
+      "served in his army",
+      "gave him their land"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Syrians of Damascus came to help Hadadezer and were struck down by David.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Benaiah the son of Jehoiada served as David's recorder.",
+     "answer": false,
+     "v": 16
+    }
+   ]
+  },
+  "9": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "For whose sake did David want to show kindness to someone of Saul's house?",
+     "options": [
+      "Jonathan's",
+      "Saul's",
+      "Michal's",
+      "Abner's"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Mephibosheth answer when David said his name?",
+     "options": [
+      "Behold, your servant!",
+      "Have mercy on me, my lord!",
+      "Why have you called for me?",
+      "Here I am, my king."
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where was Mephibosheth living when David sent for him?",
+     "options": [
+      "In the house of Machir in Lo Debar",
+      "In Ziba's house in Gibeah",
+      "In a cave near Jabesh Gilead",
+      "In Mahanaim across the Jordan"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Mephibosheth call himself when he bowed before David?",
+     "options": [
+      "A dead dog",
+      "A lame servant",
+      "A worm and no man",
+      "A broken reed"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "David said to Mephibosheth, \"You will eat bread ____.\"",
+     "answer": "at my table continually",
+     "wrong": [
+      "in my house tonight",
+      "with my own servants",
+      "in the city of Jerusalem"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"I will surely show you kindness for Jonathan your father's sake, and will restore to you ____.\"",
+     "answer": "all the land of Saul",
+     "wrong": [
+      "the throne of Israel",
+      "your father's house in Gibeah",
+      "all the servants of Saul"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "So Mephibosheth ate at the king's table ____.",
+     "answer": "like one of the king's sons",
+     "wrong": [
+      "as an honored guest",
+      "like a prince of Judah",
+      "as the king had promised"
+     ],
+     "v": 11
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "David asks if anyone is left of Saul's house",
+      "A servant tells of Jonathan's lame son",
+      "Mephibosheth falls on his face before David",
+      "Ziba is ordered to work the land"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Mephibosheth was lame in both his feet.",
+     "answer": true,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "David told Mephibosheth to farm Saul's land himself so he would have bread.",
+     "answer": false,
+     "v": 10
+    }
+   ]
+  },
+  "10": {
+   "keyVerse": 12,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did David send his servants to Hanun?",
+     "options": [
+      "To comfort him about his father's death",
+      "To demand tribute from Ammon",
+      "To spy out the city",
+      "To arrange a marriage alliance"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Hanun do to David's servants?",
+     "options": [
+      "Shaved half their beards and cut their garments",
+      "Threw them into prison",
+      "Killed all of them but one",
+      "Sent them back with gifts"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom did the children of Ammon hire to fight David?",
+     "options": [
+      "The Syrians",
+      "The Philistines",
+      "The Moabites",
+      "The Edomites"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who was the captain of Hadadezer's army struck down at Helam?",
+     "options": [
+      "Shobach",
+      "Hanun",
+      "Nahash",
+      "Toi"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The king said, \"Wait at Jericho ____, and then return.\"",
+     "answer": "until your beards have grown",
+     "wrong": [
+      "until your clothes are mended",
+      "until the war is over",
+      "until I send for you"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The princes said, \"Hasn't David sent his servants to you to search the city, ____, and to overthrow it?\"",
+     "answer": "to spy it out",
+     "wrong": [
+      "to count its people",
+      "to test its walls",
+      "to find its weakness"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Joab said, \"Be courageous, and let's be strong for our people and for ____.\"",
+     "answer": "the cities of our God",
+     "wrong": [
+      "the house of David",
+      "the ark of the LORD",
+      "the land of our fathers"
+     ],
+     "v": 12
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Hanun humiliates David's servants",
+      "Ammon hires soldiers from other nations",
+      "Joab and Abishai divide the army",
+      "David defeats the Syrians at Helam"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Joab put Abishai in charge of the troops facing the children of Ammon.",
+     "answer": true,
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "After their defeat at Helam, the Syrians kept helping the children of Ammon.",
+     "answer": false,
+     "v": 19
+    }
+   ]
+  },
+  "11": {
+   "keyVerse": 27,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whose wife was Bathsheba?",
+     "options": [
+      "Uriah the Hittite's",
+      "Joab's",
+      "Nathan's",
+      "Abishai's"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Uriah refuse to go down to his house?",
+     "options": [
+      "The ark and the army were staying in tents",
+      "He did not trust the king's gift",
+      "Joab had ordered him to stay",
+      "He was unclean from the battle"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did David send his order about Uriah to Joab?",
+     "options": [
+      "In a letter carried by Uriah",
+      "By a secret messenger",
+      "Through Nathan the prophet",
+      "By one of Bathsheba's servants"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whose death did Joab expect an angry David to bring up?",
+     "options": [
+      "Abimelech's, killed by a woman from a wall",
+      "Asahel's, killed by Abner",
+      "Saul's, killed on Mount Gilboa",
+      "Abner's, killed in the gate"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "David wrote in the letter, \"Send Uriah to ____, and retreat from him.\"",
+     "answer": "the forefront of the hottest battle",
+     "wrong": [
+      "the gate of the city",
+      "the front of the army",
+      "the wall of Rabbah"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "David told the messenger, \"Don't let this thing displease you, for the sword devours ____.\"",
+     "answer": "one as well as another",
+     "wrong": [
+      "the strong and the weak",
+      "the brave and the bold",
+      "the young and the old"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "At the return of the year, at the time when ____, David sent Joab and all Israel.",
+     "answer": "kings go out",
+     "wrong": [
+      "the rains had ended",
+      "the harvest was gathered",
+      "the grain was ripe"
+     ],
+     "v": 1
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "David sees a woman bathing from the roof",
+      "Bathsheba sends word that she is with child",
+      "Uriah sleeps at the door of the king's house",
+      "Uriah dies in battle near the city"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "David went out to battle with Joab against the children of Ammon.",
+     "answer": false,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "David made Uriah drunk, but Uriah still did not go down to his house.",
+     "answer": true,
+     "v": 13
+    }
+   ]
+  },
+  "12": {
+   "keyVerse": 13,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In Nathan's story, what did the rich man take?",
+     "options": [
+      "The poor man's one little ewe lamb",
+      "The poor man's only field",
+      "The poor man's only ox",
+      "The poor man's house"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did David say the rich man must do?",
+     "options": [
+      "Restore the lamb fourfold",
+      "Give up his whole flock",
+      "Leave the city forever",
+      "Serve the poor man for a year"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did David fast and weep while the child was still alive?",
+     "options": [
+      "The LORD might be gracious and let him live",
+      "To show the elders he had repented",
+      "Nathan had commanded him to fast",
+      "He was mourning for Uriah"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What name did the LORD send through Nathan for Solomon?",
+     "options": [
+      "Jedidiah",
+      "Jehoiada",
+      "Eliada",
+      "Jerubbesheth"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Nathan said to David, \"____! This is what the LORD, the God of Israel, says.\"",
+     "answer": "You are the man",
+     "wrong": [
+      "You have sinned greatly",
+      "You are that rich man",
+      "You have done evil"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"Now therefore ____ from your house.\"",
+     "answer": "the sword will never depart",
+     "wrong": [
+      "the blessing will be taken",
+      "the kingdom will be torn",
+      "peace will always be gone"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "David said of the child, \"I will go to him, but ____.\"",
+     "answer": "he will not return to me",
+     "wrong": [
+      "he cannot hear my voice",
+      "he will wait for me there",
+      "he will not know my face"
+     ],
+     "v": 23
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Nathan tells David a story of two men",
+      "David confesses his sin against the LORD",
+      "The child dies on the seventh day",
+      "David goes to Rabbah and takes it"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After the child died, David washed, worshiped in the LORD's house, and then ate.",
+     "answer": true,
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Joab took Rabbah himself so that the city would be called by his name.",
+     "answer": false,
+     "v": 28
+    }
+   ]
+  },
+  "13": {
+   "keyVerse": 21,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How was Amnon killed?",
+     "options": [
+      "Absalom's servants struck him at Absalom's command",
+      "Absalom killed him with his own sword",
+      "Jonadab killed him at the feast",
+      "David's guards put him to death"
+     ],
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jonadab advise Amnon to do?",
+     "options": [
+      "Pretend to be sick and ask for Tamar",
+      "Ask the king to give him Tamar",
+      "Send Tamar a secret message",
+      "Visit Tamar at Absalom's house"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What false news first reached David after the shearing feast?",
+     "options": [
+      "Absalom had killed all the king's sons",
+      "Amnon had killed Absalom",
+      "Absalom had made himself king",
+      "Philistines had attacked the feast"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "To whom did Absalom flee?",
+     "options": [
+      "Talmai king of Geshur",
+      "Hiram king of Tyre",
+      "Achish king of Gath",
+      "Hanun king of Ammon"
+     ],
+     "v": 37
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Tamar put ashes on her head, and tore ____ that was on her.",
+     "answer": "her garment of various colors",
+     "wrong": [
+      "her fine linen robe",
+      "the veil on her head",
+      "her royal purple cloak"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Absalom commanded his servants, \"Mark now, when Amnon's heart is ____, and when I tell you, 'Strike Amnon,' then kill him.\"",
+     "answer": "merry with wine",
+     "wrong": [
+      "heavy with sleep",
+      "full of pride",
+      "at ease with food"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Absalom said to Tamar, \"Now hold your peace, my sister. He is your brother. ____.\"",
+     "answer": "Don't take this thing to heart",
+     "wrong": [
+      "The king will judge him",
+      "Let the LORD avenge you",
+      "Go back to your house"
+     ],
+     "v": 20
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Amnon pretends to be sick",
+      "Tamar is put out and the door bolted",
+      "Absalom invites the king's sons to the shearing",
+      "Absalom flees to Geshur"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "David was very angry when he heard what Amnon had done.",
+     "answer": true,
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Absalom waited seven full years before taking revenge on Amnon.",
+     "answer": false,
+     "v": 23
+    }
+   ]
+  },
+  "14": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who arranged for a wise woman to speak to the king about Absalom?",
+     "options": [
+      "Joab",
+      "Nathan",
+      "Absalom",
+      "Hushai"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What story did the woman tell the king?",
+     "options": [
+      "One of her two sons killed the other",
+      "Her only son was taken as a slave",
+      "Her husband was murdered by a neighbor",
+      "Her family stole her husband's land"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Absalom do to get Joab to come to him?",
+     "options": [
+      "Had his servants set Joab's barley field on fire",
+      "Sent Joab a gift of gold",
+      "Went to Joab's house at night",
+      "Threatened to tell the king about Joab"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "The woman said the king could discern good and bad like whom?",
+     "options": [
+      "An angel of God",
+      "A wise judge of Israel",
+      "A prophet of the LORD",
+      "A father with his children"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The king said, \"Let him return to his own house, but ____.\"",
+     "answer": "let him not see my face",
+     "wrong": [
+      "let him not enter the city",
+      "let him stay there quietly",
+      "keep him from my sons"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The king said, \"As the LORD lives, ____ shall fall to the earth.\"",
+     "answer": "not one hair of your son",
+     "wrong": [
+      "not one of your sons",
+      "no blood of your house",
+      "no stone against your son"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"For we must die, and are like ____, which can't be gathered up again.\"",
+     "answer": "water spilled on the ground",
+     "wrong": [
+      "dust blown by the wind",
+      "grass cut in the field",
+      "smoke rising from a fire"
+     ],
+     "v": 14
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "A woman comes before the king dressed as a mourner",
+      "The king allows Absalom to be brought back",
+      "Absalom returns but does not see the king",
+      "The king kisses Absalom"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Absalom lived two full years in Jerusalem without seeing the king's face.",
+     "answer": true,
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Absalom's beautiful daughter was named Maacah.",
+     "answer": false,
+     "v": 27
+    }
+   ]
+  },
+  "15": {
+   "keyVerse": 26,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did Absalom steal the hearts of the men of Israel?",
+     "options": [
+      "He met people at the gate and promised justice",
+      "He gave gold to the elders of each tribe",
+      "He won battles against the Philistines",
+      "He held great feasts in Jerusalem"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What reason did Absalom give for going to Hebron?",
+     "options": [
+      "To pay a vow to the LORD",
+      "To visit his mother's family",
+      "To hold a sheep shearing",
+      "To offer sacrifices for Amnon"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did David tell Zadok to do with God's ark?",
+     "options": [
+      "Carry it back into the city",
+      "Bring it with him into the wilderness",
+      "Hide it by the brook Kidron",
+      "Send it on to Hebron"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did David send Hushai back to Jerusalem?",
+     "options": [
+      "To defeat the counsel of Ahithophel",
+      "To guard the king's household",
+      "To carry the ark to safety",
+      "To make peace with Absalom"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Absalom's spies were told, \"As soon as you hear the sound of the trumpet, then you shall say, '____!'\"",
+     "answer": "Absalom is king in Hebron",
+     "wrong": [
+      "Absalom reigns over Israel",
+      "Long live King Absalom",
+      "The LORD has chosen Absalom"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "David said, \"LORD, please turn the counsel of Ahithophel ____.\"",
+     "answer": "into foolishness",
+     "wrong": [
+      "against Absalom",
+      "into confusion",
+      "back on him"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Ittai said, \"Surely in what place my lord the king is, ____, your servant will be there also.\"",
+     "answer": "whether for death or for life",
+     "wrong": [
+      "whether in peace or war",
+      "in the city or wilderness",
+      "wherever the LORD may lead"
+     ],
+     "v": 21
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Absalom stands by the gate winning hearts",
+      "Absalom asks leave to go to Hebron",
+      "David flees Jerusalem with his household",
+      "Hushai returns to the city for David"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "David went up the Mount of Olives weeping, with his head covered and barefoot.",
+     "answer": true,
+     "v": 30
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Ittai the Gittite obeyed David and went back to Jerusalem.",
+     "answer": false,
+     "v": 22
+    }
+   ]
+  },
+  "16": {
+   "keyVerse": 12,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Shimei do when David came to Bahurim?",
+     "options": [
+      "Cursed him and threw stones",
+      "Brought him bread and wine",
+      "Warned him about Absalom",
+      "Bowed down and begged for mercy"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Ziba claim Mephibosheth was hoping for?",
+     "options": [
+      "That Israel would restore his father's kingdom",
+      "That Absalom would give him land",
+      "That David would be killed",
+      "That he could flee to Lo Debar"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Abishai want to do to Shimei?",
+     "options": [
+      "Take off his head",
+      "Throw him into prison",
+      "Drive him out of Bahurim",
+      "Throw stones back at him"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did David say to leave Shimei alone?",
+     "options": [
+      "The LORD may have told him to curse David",
+      "Shimei was a relative of David's wife",
+      "David's men were too weary to fight",
+      "Shimei would soon be punished by Absalom"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Shimei said when he cursed, \"Be gone, be gone, ____, and wicked fellow!\"",
+     "answer": "you man of blood",
+     "wrong": [
+      "you son of Jesse",
+      "you shepherd boy",
+      "you false king"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Ahithophel said, \"All Israel will hear that you are abhorred by your father. Then the hands of all who are with you ____.\"",
+     "answer": "will be strong",
+     "wrong": [
+      "will be many",
+      "will be ready",
+      "will be blessed"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The counsel of Ahithophel was as if a man inquired at ____.",
+     "answer": "the inner sanctuary of God",
+     "wrong": [
+      "the mouth of a prophet",
+      "the ark of the covenant",
+      "the altar of the LORD"
+     ],
+     "v": 23
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Ziba meets David with donkeys and food",
+      "A man at Bahurim confronts David",
+      "Hushai greets Absalom in Jerusalem",
+      "Ahithophel gives Absalom his counsel"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "David gave Ziba everything that belonged to Mephibosheth.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Absalom welcomed Hushai without questioning his loyalty.",
+     "answer": false,
+     "v": 17
+    }
+   ]
+  },
+  "17": {
+   "keyVerse": 22,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whose counsel did Absalom and the men of Israel decide was better?",
+     "options": [
+      "Hushai's",
+      "Ahithophel's",
+      "Amasa's",
+      "Zadok's"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Hushai compare David and his men to?",
+     "options": [
+      "A bear robbed of her cubs",
+      "Lions hunting in the night",
+      "Wolves in the wilderness",
+      "A flood breaking its banks"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Jonathan and Ahimaaz hide from Absalom's servants?",
+     "options": [
+      "In a well in a courtyard in Bahurim",
+      "In a cave near En Rogel",
+      "In a room of Zadok's house",
+      "In the reeds by the Jordan"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why had the LORD ordained to defeat Ahithophel's good counsel?",
+     "options": [
+      "To bring evil on Absalom",
+      "To test David's faith",
+      "To spare the city of Jerusalem",
+      "To humble Ahithophel's pride"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "When Ahithophel saw that his counsel was not followed, he went home to his city, set his house in order, and ____.",
+     "answer": "hanged himself",
+     "wrong": [
+      "went over to David",
+      "fled across the Jordan",
+      "waited for Absalom"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Hushai said, \"I counsel that all Israel be gathered together to you, ____, as the sand that is by the sea for multitude.\"",
+     "answer": "from Dan even to Beersheba",
+     "wrong": [
+      "from Gilead to the sea",
+      "from Jericho to Hebron",
+      "from Ephraim to Judah"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Hushai said, \"We will light on him as ____.\"",
+     "answer": "the dew falls on the ground",
+     "wrong": [
+      "a hawk falls on its prey",
+      "the rain falls on the field",
+      "a lion falls on sheep"
+     ],
+     "v": 12
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Ahithophel offers to pursue David that night",
+      "Hushai gives different counsel",
+      "Two messengers hide from Absalom's servants",
+      "David and his people cross the Jordan"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Absalom set Amasa over the army instead of Joab.",
+     "answer": true,
+     "v": 25
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The woman in Bahurim told Absalom's servants that the men had gone back to Jerusalem.",
+     "answer": false,
+     "v": 20
+    }
+   ]
+  },
+  "18": {
+   "keyVerse": 33,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who killed Absalom?",
+     "options": [
+      "Joab and the young men who bore his armor",
+      "The Cushite runner",
+      "Abishai and Ittai",
+      "Ahimaaz the son of Zadok"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did David command the captains about Absalom?",
+     "options": [
+      "Deal gently with the young man for my sake",
+      "Bring him to me alive in chains",
+      "Let him escape across the Jordan",
+      "Do to him whatever seems good"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Joab not want Ahimaaz to carry the news that day?",
+     "options": [
+      "Because the king's son was dead",
+      "Because Ahimaaz was too young",
+      "Because the Cushite was faster",
+      "Because the battle was not over"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did the people not want David to go out to the battle?",
+     "options": [
+      "He was worth ten thousand of them",
+      "He was too old to fight",
+      "The LORD had forbidden it",
+      "Absalom was hunting for him"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "David wept, \"My son Absalom! My son, my son Absalom! ____ instead of you, Absalom, my son, my son!\"",
+     "answer": "I wish I had died",
+     "wrong": [
+      "I would have fallen",
+      "Let the sword take me",
+      "I should have gone"
+     ],
+     "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The forest devoured more people that day than ____.",
+     "answer": "the sword devoured",
+     "wrong": [
+      "the arrows struck down",
+      "the enemy destroyed",
+      "the spears had killed"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Absalom had set up a pillar, for he said, \"I have no son to ____.\"",
+     "answer": "keep my name in memory",
+     "wrong": [
+      "sit upon my throne",
+      "inherit my father's house",
+      "carry on my line"
+     ],
+     "v": 18
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "David divides the army into three parts",
+      "Absalom is caught hanging in an oak",
+      "Ahimaaz outruns the Cushite",
+      "David weeps in the room over the gate"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The battle between David's servants and Israel took place in the forest of Ephraim.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Ahimaaz told David plainly that Absalom was dead.",
+     "answer": false,
+     "v": 29
+    }
+   ]
+  },
+  "19": {
+   "keyVerse": 23,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Joab tell the grieving king to do?",
+     "options": [
+      "Go out and speak to comfort his servants",
+      "Return to Jerusalem at once",
+      "Punish the men of Israel",
+      "Give Absalom a royal burial"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom did David promise to make captain of the army instead of Joab?",
+     "options": [
+      "Amasa",
+      "Abishai",
+      "Ittai",
+      "Benaiah"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What reason did Mephibosheth give for not going with David?",
+     "options": [
+      "His servant deceived him",
+      "He was too sick to travel",
+      "Absalom had held him captive",
+      "He never heard the king had left"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Barzillai decline to go up to Jerusalem with the king?",
+     "options": [
+      "He was very old and wished to die in his own city",
+      "He had to care for his fields",
+      "He feared the men of Judah",
+      "He was grieved over Absalom"
+     ],
+     "v": 37
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Joab said to the king, \"You love those who hate you and ____.\"",
+     "answer": "hate those who love you",
+     "wrong": [
+      "forget those who serve you",
+      "scorn those who saved you",
+      "reject those who fought for you"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The king said to Mephibosheth, \"I say, you and Ziba ____.\"",
+     "answer": "divide the land",
+     "wrong": [
+      "share the house",
+      "serve me together",
+      "go in peace"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The men of Israel said to the men of Judah, \"We have ____ in the king.\"",
+     "answer": "ten parts",
+     "wrong": [
+      "a greater share",
+      "more brothers",
+      "the first claim"
+     ],
+     "v": 43
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "David mourns aloud for Absalom",
+      "The king sits in the gate",
+      "Shimei begs David for mercy",
+      "Barzillai crosses the Jordan with the king"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "David swore to Shimei that he would not die.",
+     "answer": true,
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Mephibosheth had trimmed his beard and washed his clothes while the king was away.",
+     "answer": false,
+     "v": 24
+    }
+   ]
+  },
+  "20": {
+   "keyVerse": 19,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who led Israel away from following David?",
+     "options": [
+      "Sheba the son of Bichri",
+      "Shimei the son of Gera",
+      "Amasa the son of Ithra",
+      "Ziba the servant of Saul"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Joab kill Amasa?",
+     "options": [
+      "He struck him while taking his beard to kiss him",
+      "He ambushed him at night",
+      "He shot him with an arrow",
+      "He had his young men surround him"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did David do with the ten concubines left to keep the house?",
+     "options": [
+      "Kept them provided for, shut up in widowhood",
+      "Sent them back to their fathers' houses",
+      "Gave them to his servants as wives",
+      "Sent them away to Hebron"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In which city was Sheba besieged?",
+     "options": [
+      "Abel of Beth Maacah",
+      "Gibeon",
+      "Beth Shan",
+      "Mahanaim"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "\"We have no portion in David, neither have we inheritance in the son of Jesse. ____, Israel!\"",
+     "answer": "Every man to his tents",
+     "wrong": [
+      "Every man follow me",
+      "Go home to your fields",
+      "Turn away from David"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The woman said to Joab, \"Behold, his head will be thrown to you ____.\"",
+     "answer": "over the wall",
+     "wrong": [
+      "from the gate",
+      "out the window",
+      "before the city"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The wise woman said to Joab, \"You seek to destroy a city and ____.\"",
+     "answer": "a mother in Israel",
+     "wrong": [
+      "a light in Israel",
+      "a refuge for many",
+      "the LORD's own people"
+     ],
+     "v": 19
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "A Benjamite calls Israel away from David",
+      "Amasa is late gathering Judah",
+      "Joab kills Amasa at Gibeon",
+      "A wise woman speaks to Joab from the city"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The people of the besieged city threw the rebel's head out to Joab.",
+     "answer": true,
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Amasa gathered the men of Judah within the three days the king set.",
+     "answer": false,
+     "v": 5
+    }
+   ]
+  },
+  "21": {
+   "keyVerse": 17,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD say caused the three year famine?",
+     "options": [
+      "Saul had put the Gibeonites to death",
+      "David had counted the people",
+      "Israel had served other gods",
+      "Absalom had rebelled against David"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom did David spare because of his oath with Jonathan?",
+     "options": [
+      "Mephibosheth, Jonathan's son",
+      "Armoni, Rizpah's son",
+      "Adriel, Merab's husband",
+      "Chimham, Barzillai's servant"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Rizpah do after her sons were hanged?",
+     "options": [
+      "Guarded the bodies from birds and animals",
+      "Buried them in the tomb of Kish",
+      "Carried them to Jabesh Gilead",
+      "Went to David to beg for their bodies"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where were the bones of Saul and Jonathan finally buried?",
+     "options": [
+      "In the tomb of Kish in Benjamin",
+      "In Hebron beside Abner",
+      "In Jabesh Gilead",
+      "In Bethlehem with Asahel"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They performed all that the king commanded. After that, God ____ for the land.",
+     "answer": "answered prayer",
+     "wrong": [
+      "sent rain",
+      "gave bread",
+      "showed mercy"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "David's men said, \"Don't go out with us to battle any more, so that you don't ____.\"",
+     "answer": "quench the lamp of Israel",
+     "wrong": [
+      "leave Israel without a king",
+      "fall before the Philistines",
+      "put your life in danger"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Elhanan killed Goliath the Gittite's brother, the staff of whose spear was like ____.",
+     "answer": "a weaver's beam",
+     "wrong": [
+      "a cedar post",
+      "a ship's mast",
+      "a gate's bar"
+     ],
+     "v": 19
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Famine strikes Israel for three years",
+      "Seven of Saul's descendants are handed over",
+      "David buries the bones of Saul and Jonathan",
+      "War with the Philistines breaks out again"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Abishai saved David from a Philistine giant when David grew faint in battle.",
+     "answer": true,
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The Gibeonites asked David for silver and gold to make atonement.",
+     "answer": false,
+     "v": 4
+    }
+   ]
+  },
+  "22": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "When did David speak the words of this song?",
+     "options": [
+      "When the LORD delivered him from all his enemies",
+      "When the ark came into Jerusalem",
+      "When Solomon was born",
+      "When he was anointed king at Hebron"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In the song, how is the LORD pictured coming down?",
+     "options": [
+      "He rode on a cherub and flew",
+      "He walked on the waves of the sea",
+      "He came in a chariot of fire",
+      "He stood on a mountain of gold"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the LORD deliver David, according to the song?",
+     "options": [
+      "He delighted in him",
+      "David had built him a house",
+      "David was the son of Jesse",
+      "David had many mighty men"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "With whom does God show himself shrewd?",
+     "options": [
+      "The crooked",
+      "The merciful",
+      "The pure",
+      "The afflicted"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did David say God makes his feet like?",
+     "options": [
+      "Hinds' feet",
+      "Eagles' wings",
+      "A lion's paws",
+      "A runner's feet"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "\"The LORD is my rock, ____, and my deliverer, even mine.\"",
+     "answer": "my fortress",
+     "wrong": [
+      "my shepherd",
+      "my shield",
+      "my strength"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"For you are my lamp, LORD. The LORD will ____.\"",
+     "answer": "light up my darkness",
+     "wrong": [
+      "guide my feet",
+      "show me the way",
+      "shine upon my path"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"For by you, I run against a troop. By my God, ____.\"",
+     "answer": "I leap over a wall",
+     "wrong": [
+      "I break down a gate",
+      "I climb a mountain",
+      "I stand against armies"
+     ],
+     "v": 30
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "David sang that the waves of death surrounded him and the cords of Sheol were around him.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "David sang that God trained his arms to bend a bow of iron.",
+     "answer": false,
+     "v": 35
+    }
+   ]
+  },
+  "23": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What is the second part of this chapter mainly about?",
+     "options": [
+      "The mighty men David had",
+      "The sons born to David",
+      "The priests who served the ark",
+      "The cities David captured"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did David do with the water brought from the well of Bethlehem?",
+     "options": [
+      "Poured it out to the LORD",
+      "Drank it with his mighty men",
+      "Gave it back to the three men",
+      "Used it for a sacrifice of peace"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why would David not drink the water?",
+     "options": [
+      "The men had risked their lives to get it",
+      "It came from a Philistine garrison",
+      "He had vowed to fast that day",
+      "The well had been defiled"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Shammah stand and defend against the Philistines?",
+     "options": [
+      "A plot of ground full of lentils",
+      "A field of ripe barley",
+      "The gate of Bethlehem",
+      "A well beside the road"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What happened to Eleazar's hand as he struck the Philistines?",
+     "options": [
+      "It froze to the sword",
+      "It was badly wounded",
+      "It was burned by fire",
+      "It lost hold of his spear"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "David the son of Jesse, the anointed of the God of Jacob, ____, says...",
+     "answer": "the sweet psalmist of Israel",
+     "wrong": [
+      "the shepherd king of Israel",
+      "the mighty man of Judah",
+      "the chosen servant of God"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "One who rules over men righteously shall be as ____ when the sun rises.",
+     "answer": "the light of the morning",
+     "wrong": [
+      "the dew on the grass",
+      "the rain upon the fields",
+      "a lamp in the darkness"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Benaiah went down and killed a lion in the middle of a pit ____.",
+     "answer": "in a time of snow",
+     "wrong": [
+      "in the heat of summer",
+      "in the dark of night",
+      "at the barley harvest"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Benaiah killed a huge Egyptian with the Egyptian's own spear.",
+     "answer": true,
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Abishai was counted as one of the three mighty men.",
+     "answer": false,
+     "v": 19
+    }
+   ]
+  },
+  "24": {
+   "keyVerse": 24,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did David command Joab to do?",
+     "options": [
+      "Count the people of Israel and Judah",
+      "Build an altar in Jerusalem",
+      "Gather the army against the Philistines",
+      "Collect silver for the LORD's house"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who brought David the LORD's offer of three choices?",
+     "options": [
+      "The prophet Gad",
+      "Nathan the prophet",
+      "Joab the captain",
+      "Zadok the priest"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where was the LORD's angel when the LORD said, \"It is enough\"?",
+     "options": [
+      "By the threshing floor of Araunah",
+      "At the gate of Jerusalem",
+      "On the Mount of Olives",
+      "Beside the pool of Gibeon"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did Joab first respond to the king's order?",
+     "options": [
+      "He asked why the king delighted in this",
+      "He refused and left the king",
+      "He obeyed without a word",
+      "He sent a prophet to warn David"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "David said, \"I will not offer burnt offerings to the LORD my God ____.\"",
+     "answer": "which cost me nothing",
+     "wrong": [
+      "from another man's flock",
+      "without paying a price",
+      "on a stranger's land"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "David said to Gad, \"I am in distress. Let us fall now into the LORD's hand, for ____.\"",
+     "answer": "his mercies are great",
+     "wrong": [
+      "his anger is short",
+      "he is a righteous judge",
+      "his love endures forever"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "David said, \"I have sinned, and I have done perversely; but ____, what have they done?\"",
+     "answer": "these sheep",
+     "wrong": [
+      "these people",
+      "my servants",
+      "these children"
+     ],
+     "v": 17
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Joab goes through all the land counting",
+      "A prophet brings David three choices",
+      "The LORD tells the angel, It is enough",
+      "David builds an altar to the LORD"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Araunah offered to give the king his threshing floor and oxen as a gift.",
+     "answer": true,
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The angel destroyed Jerusalem before the LORD relented.",
+     "answer": false,
+     "v": 16
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,347 @@
+{
+ "book": "HAB",
+ "chapters": {
+  "1": {
+   "keyVerse": 5,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What word does Habakkuk cry out to the LORD at the start of the book?",
+     "options": [
+      "Violence!",
+      "Mercy!",
+      "Deliver us!",
+      "Remember us!"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which nation does the LORD say he is raising up?",
+     "options": [
+      "The Chaldeans",
+      "The Assyrians",
+      "The Egyptians",
+      "The Philistines"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "The invaders' horses are said to be swifter than what?",
+     "options": [
+      "Leopards",
+      "Lions",
+      "Deer",
+      "Wild donkeys"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the invader sacrifice and burn incense to?",
+     "options": [
+      "His net and his dragnet",
+      "His horses and chariots",
+      "His sword and spear",
+      "The gods of his fathers"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I am working a work in your days which you will not believe ____.",
+     "answer": "though it is told you",
+     "wrong": [
+      "until you see it done",
+      "though you look for it",
+      "even when it comes"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You who have ____ than to see evil, and who cannot look on perversity.",
+     "answer": "purer eyes",
+     "wrong": [
+      "a holier heart",
+      "a greater glory",
+      "keener sight"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They are indeed guilty, ____.",
+     "answer": "whose strength is their god",
+     "wrong": [
+      "whose sword is their law",
+      "whose pride is their crown",
+      "whose greed is their guide"
+     ],
+     "v": 11
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Habakkuk complains that God does not save",
+      "The LORD says he is raising up an invader",
+      "Habakkuk asks why God tolerates the treacherous",
+      "The invader is pictured catching men like fish"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Habakkuk complains that the law is paralyzed and justice never prevails.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Habakkuk compares people caught by the invader to birds caught in a snare.",
+     "answer": false,
+     "v": 14
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the LORD tell Habakkuk to do with the vision?",
+     "options": [
+      "Write it plainly on tablets",
+      "Seal it up in a scroll",
+      "Tell it only to the priests",
+      "Proclaim it at the city gate"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where does Habakkuk wait to hear what God will say?",
+     "options": [
+      "At his watch on the ramparts",
+      "In the temple courts",
+      "On the top of Mount Zion",
+      "Beside the city gate"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the chapter say will cry out of the wall?",
+     "options": [
+      "The stone",
+      "The blood",
+      "The gold",
+      "The watchman"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the final woe say is missing from an idol overlaid with gold?",
+     "options": [
+      "Any breath at all",
+      "A name among the nations",
+      "A priest to serve it",
+      "A place in the temple"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "His soul is puffed up, but the righteous will live ____.",
+     "answer": "by his faith",
+     "wrong": [
+      "by his works",
+      "in his land",
+      "by God's law"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Woe to him who builds a town ____, and establishes a city by iniquity!",
+     "answer": "with blood",
+     "wrong": [
+      "with stolen gold",
+      "on the sand",
+      "with forced labor"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But the LORD is in his holy temple. ____ before him!",
+     "answer": "Let all the earth be silent",
+     "wrong": [
+      "Let all the nations bow down",
+      "Let all the peoples tremble",
+      "Let all creation sing"
+     ],
+     "v": 20
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Habakkuk stands at his watch",
+      "The LORD says to write the vision",
+      "A woe on the one who plunders nations",
+      "All the earth is told to be silent"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD tells Habakkuk the vision will be delayed for many generations.",
+     "answer": false,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "One woe is against a man who gives his neighbor drink so he can see him exposed.",
+     "answer": true,
+     "v": 15
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 18,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Even if the fig tree doesn't flourish and the fields fail, what will Habakkuk do?",
+     "options": [
+      "Rejoice in the LORD",
+      "Mourn in sackcloth",
+      "Flee to the mountains",
+      "Plead for rain"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "From where does the chapter say God came?",
+     "options": [
+      "Teman and Mount Paran",
+      "Sinai and Horeb",
+      "Zion and Lebanon",
+      "Bashan and Carmel"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the LORD make Habakkuk's feet like?",
+     "options": [
+      "Deer's feet",
+      "A mountain goat's feet",
+      "A lion's paws",
+      "A runner's feet"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What stood still at the light of God's arrows?",
+     "options": [
+      "The sun and moon",
+      "The sea and rivers",
+      "The mountains and hills",
+      "The stars of heaven"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "In wrath, you ____.",
+     "answer": "remember mercy",
+     "wrong": [
+      "show your power",
+      "bring justice",
+      "hide your face"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Plague went before him, and ____.",
+     "answer": "pestilence followed his feet",
+     "wrong": [
+      "fire devoured his path",
+      "thunder shook the ground",
+      "darkness covered his way"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "His splendor is like the sunrise. ____ from his hand, where his power is hidden.",
+     "answer": "Rays shine",
+     "wrong": [
+      "Lightning flashes",
+      "Fire burns",
+      "Light pours"
+     ],
+     "v": 4
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "God comes from Teman",
+      "The sun and moon stand still",
+      "Habakkuk's body trembles at the voice",
+      "Habakkuk resolves to rejoice in the LORD"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Habakkuk says his body trembled and his lips quivered when he heard.",
+     "answer": true,
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Habakkuk says God pierced the heads of the enemy warriors with arrows from heaven.",
+     "answer": false,
+     "v": 14
+    }
+   ]
+  }
+ }
+}

@@ -203,6 +203,7 @@ struct ModeChoice: View {
         switch m {
         case .paper: return "Put the phone down and read your own Bible."
         case .inApp: return "The full chapter, with the words of Jesus in red."
+        case .speak: return "Read the chapter out loud. Words light up as you say them, with no timer."
         case .listen: return "Your iPhone reads the chapter aloud."
         }
     }
@@ -223,7 +224,7 @@ struct ReadStep: View {
     var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { context in
             let minimum = TimeInterval(model.readingCheck.minutes * 60)
-            let remaining = (model.demo || finished) ? 0 : max(0, minimum - context.date.timeIntervalSince(start))
+            let remaining = (model.demo || finished || mode == .speak) ? 0 : max(0, minimum - context.date.timeIntervalSince(start))
             VStack(spacing: 0) {
                 if restarted && remaining > 0 {
                     Label("You left Phos, so the timer started over.", systemImage: "arrow.counterclockwise")
@@ -233,6 +234,7 @@ struct ReadStep: View {
                 switch mode {
                 case .paper: PaperRead(ref: ref, remaining: remaining, minimum: minimum, onDone: onDone)
                 case .inApp: InAppRead(ref: ref, remaining: remaining, onDone: onDone)
+                case .speak: SpeakRead(ref: ref, onDone: onDone)
                 case .listen: ListenRead(ref: ref, remaining: remaining, onDone: onDone)
                 }
             }

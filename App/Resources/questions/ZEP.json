@@ -1,0 +1,348 @@
+{
+ "book": "ZEP",
+ "chapters": {
+  "1": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In the days of which king of Judah did the LORD's word come to Zephaniah?",
+     "options": [
+      "Josiah",
+      "Manasseh",
+      "Jehoiakim",
+      "Uzziah"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Besides the LORD, whom do some people in Judah also swear by?",
+     "options": [
+      "Malcam",
+      "Chemosh",
+      "Dagon",
+      "Asherah"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the LORD say he will search Jerusalem with?",
+     "options": [
+      "Lamps",
+      "A measuring line",
+      "A sword",
+      "A plumb line"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides the princes and the king's sons, whom will the LORD punish?",
+     "options": [
+      "Those clothed in foreign clothing",
+      "Those who trade on the Sabbath",
+      "Those who marry foreign wives",
+      "Those who eat unclean food"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What has the LORD prepared for his day?",
+     "options": [
+      "A sacrifice",
+      "A great harvest",
+      "A battle line",
+      "A banquet for the humble"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Neither their silver nor their gold will be able to ____ in the day of the LORD's wrath.",
+     "answer": "deliver them",
+     "wrong": [
+      "buy them peace",
+      "hide them away",
+      "ransom their lives"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Yes, they will build houses, but ____.",
+     "answer": "won't inhabit them",
+     "wrong": [
+      "won't finish them",
+      "will lose their roofs",
+      "won't sell them"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "That day is a day of wrath, a day of ____.",
+     "answer": "distress and anguish",
+     "wrong": [
+      "fire and smoke",
+      "weeping and mourning",
+      "judgment and fear"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says he will sweep away man and animal, the birds, and the fish.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The chapter says a cry will come from the sheep gate on that day.",
+     "answer": false,
+     "v": 10
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom does Zephaniah urge to seek the LORD?",
+     "options": [
+      "All the humble of the land",
+      "The kings of Judah",
+      "The priests of the temple",
+      "The nations of the coast"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will Moab and Ammon become like?",
+     "options": [
+      "Sodom and Gomorrah",
+      "Tyre and Sidon",
+      "Egypt and Edom",
+      "Babylon and Nineveh"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the joyous city say in her heart?",
+     "options": [
+      "I am, and there is no one besides me",
+      "No enemy can reach my walls",
+      "My gods will protect me forever",
+      "I will sit as a queen forever"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why will Moab and Ammon be punished?",
+     "options": [
+      "They reproached and insulted God's people",
+      "They refused Israel passage",
+      "They worshiped Baal on the hills",
+      "They burned Jerusalem's gates"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Seek humility. It may be that you will be hidden in ____.",
+     "answer": "the day of the LORD's anger",
+     "wrong": [
+      "the shadow of his wings",
+      "the cleft of the rock",
+      "the house of the LORD"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Both the pelican and the porcupine will ____.",
+     "answer": "lodge in its capitals",
+     "wrong": [
+      "nest in its towers",
+      "dwell in its gates",
+      "rest in its palaces"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The sea coast will be pastures, with ____ and folds for flocks.",
+     "answer": "cottages for shepherds",
+     "wrong": [
+      "tents for travelers",
+      "fields for farmers",
+      "walls for vineyards"
+     ],
+     "v": 6
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Gaza and Ashkelon",
+      "Moab and Ammon",
+      "The Cushites",
+      "Assyria"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says the coast will be given to the remnant of the house of Judah.",
+     "answer": true,
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Everyone who passes by the desolate joyous city will weep and mourn for her.",
+     "answer": false,
+     "v": 15
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 17,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What are the judges of the oppressing city compared to?",
+     "options": [
+      "Evening wolves",
+      "Hungry bears",
+      "Wild dogs",
+      "Crouching leopards"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the LORD purify so that all may call on his name?",
+     "options": [
+      "The lips of the peoples",
+      "The hearts of the kings",
+      "The hands of the priests",
+      "The eyes of the nations"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "From where will God's worshipers bring his offering?",
+     "options": [
+      "Beyond the rivers of Cush",
+      "The coasts of the Philistines",
+      "The mountains of Lebanon",
+      "The far side of Egypt"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What kind of people will the LORD leave in Jerusalem?",
+     "options": [
+      "An afflicted and poor people",
+      "A mighty and wealthy people",
+      "A band of faithful priests",
+      "A small army of warriors"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "He will calm you in his love. He will rejoice over you ____.",
+     "answer": "with singing",
+     "wrong": [
+      "with a shout",
+      "like a father",
+      "with great mercy"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Every morning he brings ____. He doesn't fail.",
+     "answer": "his justice to light",
+     "wrong": [
+      "his mercy to the poor",
+      "new rain on the land",
+      "his word to the prophets"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "It will be said to Jerusalem, \"Don't be afraid, Zion. ____.\"",
+     "answer": "Don't let your hands be weak",
+     "wrong": [
+      "Don't let your heart be troubled",
+      "Don't let your enemies boast",
+      "Don't let your songs be silent"
+     ],
+     "v": 16
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Woe to the rebellious, oppressing city",
+      "God plans to gather the nations for judgment",
+      "The remnant will speak no lies",
+      "Daughter of Zion is told to sing"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD promises to scatter the lame and those who were driven away.",
+     "answer": false,
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The chapter says the city's priests have profaned the sanctuary.",
+     "answer": true,
+     "v": 4
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,4098 @@
+{
+ "book": "2CH",
+ "chapters": {
+  "1": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Solomon ask God to give him?",
+     "options": [
+      "Wisdom and knowledge to judge the people",
+      "Riches and honor for his kingdom",
+      "Long life and many sons",
+      "Victory over those who hated him"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Solomon and the assembly go to offer sacrifices?",
+     "options": [
+      "The high place at Gibeon",
+      "Mount Moriah in Jerusalem",
+      "The city of Hebron",
+      "Bethel near the Jordan"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where was the ark at this time?",
+     "options": [
+      "In a tent David pitched in Jerusalem",
+      "In the Tent of Meeting at Gibeon",
+      "In the house of Obed-Edom",
+      "At Kiriath Jearim"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did Solomon's horses come from?",
+     "options": [
+      "Egypt and Kue",
+      "Tyre and Sidon",
+      "Assyria and Babylon",
+      "Moab and Edom"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "That night, God appeared to Solomon and said to him, \"Ask for what you want ____.\"",
+     "answer": "me to give you",
+     "wrong": [
+      "and it is yours",
+      "before this night ends",
+      "from my hand today"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The king made silver and gold to be ____ in Jerusalem.",
+     "answer": "as common as stones",
+     "wrong": [
+      "as plentiful as sand",
+      "as abundant as dust",
+      "as common as grass"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Solomon gathered chariots and horsemen that he placed in ____, and with the king at Jerusalem.",
+     "answer": "the chariot cities",
+     "wrong": [
+      "the store cities",
+      "the cities of refuge",
+      "the fortified towns"
+     ],
+     "v": 14
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Solomon goes to the high place at Gibeon",
+      "Solomon offers a thousand burnt offerings",
+      "God appears to Solomon at night",
+      "Solomon returns to Jerusalem and reigns"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God promised Solomon riches, wealth, and honor even though he did not ask for them.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The bronze altar at Gibeon had been made by Huram of Tyre.",
+     "answer": false,
+     "v": 5
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 5,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "To which king did Solomon send for help in building?",
+     "options": [
+      "Huram king of Tyre",
+      "Hiram king of Sidon",
+      "Pharaoh king of Egypt",
+      "The king of Hamath"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Solomon ask the king of Tyre to send from Lebanon?",
+     "options": [
+      "Cedar, cypress, and algum trees",
+      "Oak, olive, and acacia wood",
+      "Gold, silver, and bronze",
+      "Horses and chariots"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Solomon promise to give the timber cutters?",
+     "options": [
+      "Wheat, barley, wine, and oil",
+      "Silver and gold by weight",
+      "Cities in Galilee",
+      "Cattle, sheep, and goats"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who was the mother of the skilled craftsman sent to Solomon?",
+     "options": [
+      "A woman of the daughters of Dan",
+      "A woman of the tribe of Judah",
+      "A woman of Tyre",
+      "A daughter of Naphtali"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The house which I am building will be great, for our God is ____.",
+     "answer": "greater than all gods",
+     "wrong": [
+      "above the heavens",
+      "mighty in all the earth",
+      "the Maker of all"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Who is able to build him a house, since heaven and ____ can't contain him?",
+     "answer": "the heaven of heavens",
+     "wrong": [
+      "the whole earth",
+      "the depths of the sea",
+      "all the mountains"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "We will bring it to you ____; then you shall carry it up to Jerusalem.",
+     "answer": "in rafts by sea to Joppa",
+     "wrong": [
+      "on camels through the desert",
+      "by ship to Ezion Geber",
+      "in carts along the coast"
+     ],
+     "v": 16
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Solomon decides to build a house for the LORD",
+      "Solomon writes to Huram for help",
+      "Huram answers in writing and blesses the LORD",
+      "Solomon counts the foreigners in Israel"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Huram said the LORD made Solomon king because the LORD loves his people.",
+     "answer": true,
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Solomon used the Israelites he had counted as his burden bearers and stone cutters.",
+     "answer": false,
+     "v": 17
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "On which mountain did Solomon build the LORD's house?",
+     "options": [
+      "Mount Moriah",
+      "Mount Zion",
+      "Mount Carmel",
+      "Mount Gilboa"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whose threshing floor was the temple built on?",
+     "options": [
+      "Ornan the Jebusite",
+      "Boaz of Bethlehem",
+      "Araunah the Hittite",
+      "Gideon of Ophrah"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Solomon make for the most holy place?",
+     "options": [
+      "Two carved cherubim overlaid with gold",
+      "Two golden lamp stands",
+      "A table for the show bread",
+      "Ten bronze basins"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What were the two pillars before the temple named?",
+     "options": [
+      "Jachin and Boaz",
+      "Ephraim and Manasseh",
+      "Asaph and Heman",
+      "Hiram and Huram"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "He overlaid the house, the beams, the thresholds, its walls, and its doors with gold, and ____.",
+     "answer": "engraved cherubim on the walls",
+     "wrong": [
+      "carved palm trees on the doors",
+      "set precious stones in them",
+      "hung linen curtains inside"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He made the veil of blue, purple, crimson, and ____.",
+     "answer": "fine linen, ornamented with cherubim",
+     "wrong": [
+      "goats' hair and rams' skins",
+      "gold thread and silver",
+      "purple wool and fine silk"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He made one hundred pomegranates, and put them on ____.",
+     "answer": "the chains",
+     "wrong": [
+      "the doors",
+      "the capitals",
+      "the veil"
+     ],
+     "v": 16
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Solomon begins building on Mount Moriah",
+      "He overlays the larger room with fine gold",
+      "He makes the most holy place and cherubim",
+      "He sets up the pillars Jachin and Boaz"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The temple site was where the LORD had appeared to David.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The faces of the cherubim in the most holy place were turned toward each other.",
+     "answer": false,
+     "v": 13
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was the large round bronze basin called?",
+     "options": [
+      "The molten sea",
+      "The great laver",
+      "The bronze bowl",
+      "The water altar"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the molten sea stand on?",
+     "options": [
+      "Twelve oxen",
+      "Twelve lions",
+      "Four bronze wheels",
+      "Two carved pillars"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was the molten sea used for?",
+     "options": [
+      "For the priests to wash in",
+      "For washing the burnt offerings",
+      "For storing oil for the lamps",
+      "For the people to purify themselves"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did the king cast the bronze vessels?",
+     "options": [
+      "In the plain of the Jordan",
+      "In the valley of Kidron",
+      "On the hills of Lebanon",
+      "At the port of Joppa"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Solomon made all these vessels in great abundance, so that ____ could not be determined.",
+     "answer": "the weight of the bronze",
+     "wrong": [
+      "the number of the vessels",
+      "the cost of the gold",
+      "the size of the work"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Its brim was made like the brim of a cup, like ____.",
+     "answer": "the flower of a lily",
+     "wrong": [
+      "a ring of pomegranates",
+      "the rim of a basin",
+      "an opening rose"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He made the ten lamp stands of gold according to ____ concerning them.",
+     "answer": "the ordinance",
+     "wrong": [
+      "David's plan",
+      "Moses' pattern",
+      "the priests' counsel"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Besides lamp stands, what did Solomon place in the temple, five on each side?",
+     "options": [
+      "Ten tables",
+      "Ten altars",
+      "Ten chests",
+      "Ten pillars"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Huram finished the work he did for King Solomon in God's house.",
+     "answer": true,
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The altar Solomon made at the start of this chapter was made of gold.",
+     "answer": false,
+     "v": 1
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 13,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who carried the ark up to the temple?",
+     "options": [
+      "The Levites",
+      "The elders of Israel",
+      "The king's mighty men",
+      "The sons of Aaron only"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was inside the ark?",
+     "options": [
+      "The two tablets Moses put there",
+      "Manna and Aaron's rod",
+      "The book of the law",
+      "Gold vessels from David"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What filled the house when the singers and trumpeters praised the LORD?",
+     "options": [
+      "A cloud",
+      "Fire from heaven",
+      "A mighty wind",
+      "Bright light"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "At which feast did Israel assemble to the king?",
+     "options": [
+      "The feast in the seventh month",
+      "The Passover in the first month",
+      "The feast of weeks",
+      "The new moon feast"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For he is good, for ____ endures forever!",
+     "answer": "his loving kindness",
+     "wrong": [
+      "his faithfulness",
+      "his righteousness",
+      "his mercy toward us"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The priests could not stand to minister by reason of the cloud; for ____ filled God's house.",
+     "answer": "the LORD's glory",
+     "wrong": [
+      "the smoke of incense",
+      "the sound of trumpets",
+      "the LORD's presence"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The trumpeters and singers were as one, to make ____ to be heard.",
+     "answer": "one sound",
+     "wrong": [
+      "a joyful noise",
+      "a great shout",
+      "one song"
+     ],
+     "v": 13
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Solomon brings in the things David had dedicated",
+      "The ark is brought up from David's city",
+      "The priests set the ark under the cherubim",
+      "The house is filled with a cloud"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Solomon put the silver and gold David had dedicated into the treasuries of God's house.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The ends of the ark's poles could be seen from outside the temple.",
+     "answer": false,
+     "v": 9
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Solomon stand and kneel on to pray?",
+     "options": [
+      "A bronze platform in the court",
+      "The steps of the altar",
+      "A wooden stage by the gate",
+      "The threshold of the most holy place"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What had the LORD told David about building the house?",
+     "options": [
+      "His son would build it instead",
+      "He must build it after his wars",
+      "He should build it at Gibeon",
+      "He should wait for a prophet's word"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Solomon ask God to do when a foreigner prays toward the house?",
+     "options": [
+      "Do all the foreigner calls for",
+      "Send him back to his own land",
+      "Make him join the tribe of Judah",
+      "Accept him only after sacrifice"
+     ],
+     "v": 32
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What trouble did Solomon mention when the sky is shut up?",
+     "options": [
+      "No rain because of their sin",
+      "An enemy siege on the city",
+      "Locusts eating the harvest",
+      "Plague among the cattle"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Heaven and the heaven of heavens can't contain you; ____ which I have built!",
+     "answer": "how much less this house",
+     "wrong": [
+      "how could this temple",
+      "how great is this place",
+      "how small this dwelling"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Hear from your dwelling place, ____; and when you hear, forgive.",
+     "answer": "even from heaven",
+     "wrong": [
+      "even from Zion",
+      "from your holy mountain",
+      "from the cloud of glory"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "If they sin against you (for there is no man ____), and you are angry with them.",
+     "answer": "who doesn't sin",
+     "wrong": [
+      "who is righteous",
+      "who is without fault",
+      "who can stand before you"
+     ],
+     "v": 36
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to Solomon's prayer, who alone knows the hearts of people?",
+     "options": [
+      "God",
+      "The priests",
+      "The king",
+      "Each man himself"
+     ],
+     "v": 30
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Solomon said God had chosen Jerusalem for his name and David to be over Israel.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Solomon asked God to hear captives only if they returned to Jerusalem first.",
+     "answer": false,
+     "v": 37
+    }
+   ]
+  },
+  "7": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What happened when Solomon finished praying?",
+     "options": [
+      "Fire came down from heaven and consumed the offerings",
+      "An earthquake shook the temple",
+      "A voice spoke from the most holy place",
+      "Rain fell on the dry land"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Solomon make the middle of the court holy for offerings?",
+     "options": [
+      "The bronze altar could not hold all the offerings",
+      "The priests refused to use the altar",
+      "The altar was not yet finished",
+      "The LORD commanded it in a dream"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD say he had chosen the temple to be?",
+     "options": [
+      "A house of sacrifice",
+      "A house of prayer for all peoples",
+      "A house of judgment",
+      "A treasury for Israel"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What would people passing the ruined house ask?",
+     "options": [
+      "Why has the LORD done this to this land and house?",
+      "Where has the glory of Israel gone?",
+      "Who destroyed this great city?",
+      "When will the LORD rebuild this house?"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "If my people who are called by my name will humble themselves, pray, seek my face, and turn from their wicked ways, then I will hear from heaven, will forgive their sin, and ____.",
+     "answer": "will heal their land",
+     "wrong": [
+      "will bless their harvest",
+      "will restore their king",
+      "will defeat their enemies"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will make it a proverb and ____ among all peoples.",
+     "answer": "a byword",
+     "wrong": [
+      "a desolation",
+      "a warning sign",
+      "a heap of ruins"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He sent the people away to their tents, ____ for the goodness that the LORD had shown.",
+     "answer": "joyful and glad of heart",
+     "wrong": [
+      "weeping with thanksgiving",
+      "singing songs of praise",
+      "full of awe and wonder"
+     ],
+     "v": 10
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Fire falls and consumes the sacrifices",
+      "The people bow on the pavement and give thanks",
+      "Solomon keeps the feast for seven days",
+      "The LORD appears to Solomon by night"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The priests could not enter the LORD's house because his glory filled it.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "God told Solomon to walk before him as Moses had walked.",
+     "answer": false,
+     "v": 17
+    }
+   ]
+  },
+  "8": {
+   "keyVerse": 16,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Solomon move Pharaoh's daughter?",
+     "options": [
+      "To a house he built for her",
+      "To the house of David",
+      "To the city of Gezer",
+      "To the palace in Lebanon"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Solomon make the children of Israel?",
+     "options": [
+      "Men of war, captains, and rulers",
+      "Forced laborers for his building",
+      "Stone cutters in the mountains",
+      "Servants in the temple"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Solomon go on the seashore in Edom?",
+     "options": [
+      "Ezion Geber and Eloth",
+      "Joppa and Tyre",
+      "Gaza and Ashkelon",
+      "Dor and Acco"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did the ships bring gold from?",
+     "options": [
+      "Ophir",
+      "Tarshish",
+      "Sheba",
+      "Egypt"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "At the end of ____, Solomon had built the LORD's house and his own house.",
+     "answer": "twenty years",
+     "wrong": [
+      "seven years",
+      "forty years",
+      "twelve years"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "My wife shall not dwell in the house of David, because the places where ____ are holy.",
+     "answer": "the LORD's ark has come",
+     "wrong": [
+      "the priests have served",
+      "David worshiped the LORD",
+      "the glory of God rested"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He appointed, according to the ordinance of David his father, ____ to their service.",
+     "answer": "the divisions of the priests",
+     "wrong": [
+      "the singers and doorkeepers",
+      "the captains of thousands",
+      "the sons of Asaph"
+     ],
+     "v": 14
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Solomon builds the cities Huram had given him",
+      "Solomon prevails against Hamath Zobah",
+      "Solomon moves Pharaoh's daughter to her house",
+      "Solomon's ships bring gold from Ophir"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD's house was completed from its foundation to its finish.",
+     "answer": true,
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Solomon conscripted forced labor from the children of Israel.",
+     "answer": false,
+     "v": 8
+    }
+   ]
+  },
+  "9": {
+   "keyVerse": 8,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the queen of Sheba come to Jerusalem?",
+     "options": [
+      "To test Solomon with hard questions",
+      "To make a marriage alliance",
+      "To ask for help against an enemy",
+      "To trade horses and chariots"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the queen say about the report she had heard?",
+     "options": [
+      "Not even half had been told her",
+      "It was greatly exaggerated",
+      "It was exactly what she saw",
+      "She had never heard of him before"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was Solomon's great throne made of?",
+     "options": [
+      "Ivory overlaid with pure gold",
+      "Cedar overlaid with silver",
+      "Bronze set with jewels",
+      "Gold with algum wood inlays"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Solomon make from algum wood?",
+     "options": [
+      "Terraces, harps, and stringed instruments",
+      "Doors for the most holy place",
+      "Shields for the palace guard",
+      "Ships for the voyage to Tarshish"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Happy are your men, and happy are these your servants, who ____ and hear your wisdom.",
+     "answer": "stand continually before you",
+     "wrong": [
+      "sit at your table daily",
+      "serve in your house",
+      "walk in your courts"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "All the vessels were of pure gold. ____ in the days of Solomon.",
+     "answer": "Silver was not considered valuable",
+     "wrong": [
+      "Bronze was used for nothing",
+      "Iron was hardly seen",
+      "Copper was thrown away"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Once every three years, the ships of Tarshish came bringing gold, silver, ivory, ____.",
+     "answer": "apes, and peacocks",
+     "wrong": [
+      "spices, and linen",
+      "horses, and mules",
+      "cedar, and cypress"
+     ],
+     "v": 21
+    },
+    {
+     "t": "order",
+     "d": 1,
+     "items": [
+      "The queen of Sheba arrives with a great caravan",
+      "Solomon answers all her questions",
+      "The queen praises the LORD for Solomon",
+      "The queen returns to her own land"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Solomon reigned in Jerusalem over all Israel forty years.",
+     "answer": true,
+     "v": 30
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Twelve lions stood beside the armrests of Solomon's throne.",
+     "answer": false,
+     "v": 19
+    }
+   ]
+  },
+  "10": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the people ask Rehoboam to do?",
+     "options": [
+      "Lighten the heavy yoke of his father",
+      "Lower the taxes on their crops",
+      "Let them choose their own judges",
+      "Build a temple in the north"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whose counsel did Rehoboam follow?",
+     "options": [
+      "The young men who grew up with him",
+      "The old men who served Solomon",
+      "The prophet Ahijah",
+      "Jeroboam and the elders of Israel"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who did Rehoboam send that the Israelites stoned to death?",
+     "options": [
+      "Hadoram, over the forced labor",
+      "Shemaiah the man of God",
+      "His captain of the guard",
+      "Abijah his son"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did all Israel come to make Rehoboam king?",
+     "options": [
+      "Shechem",
+      "Jerusalem",
+      "Bethel",
+      "Hebron"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "My father chastised you with whips, but I will chastise you ____.",
+     "answer": "with scorpions",
+     "wrong": [
+      "with rods of iron",
+      "with heavy chains",
+      "with double the lashes"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "My little finger is thicker than ____.",
+     "answer": "my father's waist",
+     "wrong": [
+      "my father's arm",
+      "the pillars of the temple",
+      "the hand of Solomon"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "What portion do we have in David? ____, Israel!",
+     "answer": "Every man to your tents",
+     "wrong": [
+      "Return to your cities",
+      "Go home to your fields",
+      "Each to his own house"
+     ],
+     "v": 16
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jeroboam returns from Egypt",
+      "The people ask Rehoboam for a lighter yoke",
+      "Rehoboam answers the people roughly",
+      "Israel rebels against David's house"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The text says the king's refusal was brought about by God to fulfill his word.",
+     "answer": true,
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Rehoboam told the people to come back after seven days.",
+     "answer": false,
+     "v": 5
+    }
+   ]
+  },
+  "11": {
+   "keyVerse": 16,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Rehoboam not fight against Israel?",
+     "options": [
+      "The LORD told him through Shemaiah not to",
+      "His army was too small",
+      "Jeroboam offered him peace",
+      "The elders of Judah refused"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the Levites leave their lands and come to Judah?",
+     "options": [
+      "Jeroboam cast them off from serving as priests",
+      "Rehoboam offered them rich land",
+      "A famine struck the north",
+      "Their cities were destroyed in war"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "For what did Jeroboam appoint his own priests?",
+     "options": [
+      "The high places and the goat and calf idols",
+      "The temple in Jerusalem",
+      "The army of Israel",
+      "The house of Baal in Samaria"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which wife did Rehoboam love above all others?",
+     "options": [
+      "Maacah the granddaughter of Absalom",
+      "Mahalath the daughter of Jerimoth",
+      "Naamah the Ammonitess",
+      "Abihail the daughter of Eliab"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "You shall not go up, nor fight against your brothers! Every man return to his house; for ____.",
+     "answer": "this thing is of me",
+     "wrong": [
+      "I have given them the land",
+      "the kingdom is divided",
+      "I have spoken it"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They made Rehoboam strong for three years, for they walked three years in the way of ____.",
+     "answer": "David and Solomon",
+     "wrong": [
+      "Moses and Aaron",
+      "Samuel and David",
+      "Abraham and Isaac"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He fortified the strongholds and put captains in them with stores of ____.",
+     "answer": "food, oil and wine",
+     "wrong": [
+      "gold and silver",
+      "shields and spears",
+      "grain and cattle"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which son did Rehoboam appoint as chief among his brothers?",
+     "options": [
+      "Abijah",
+      "Jeush",
+      "Shemariah",
+      "Attai"
+     ],
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Rehoboam built cities for defense in Judah.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Those in Israel who sought the LORD went to Bethel to sacrifice.",
+     "answer": false,
+     "v": 16
+    }
+   ]
+  },
+  "12": {
+   "keyVerse": 12,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which king of Egypt came up against Jerusalem?",
+     "options": [
+      "Shishak",
+      "Pharaoh Neco",
+      "So",
+      "Tirhakah"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the king and princes respond to Shemaiah's message?",
+     "options": [
+      "They humbled themselves",
+      "They prepared for battle",
+      "They fled to the mountains",
+      "They sent gifts to Egypt"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Rehoboam make to replace Solomon's gold shields?",
+     "options": [
+      "Shields of bronze",
+      "Shields of silver",
+      "Shields of iron",
+      "Shields of wood and leather"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did the LORD say Judah would become Shishak's servants?",
+     "options": [
+      "To know the difference between his service and the kingdoms' service",
+      "To punish Rehoboam's sons",
+      "To bring Egypt to repentance",
+      "To test whether Judah would rebel"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The LORD says, 'You have forsaken me, therefore ____ in the hand of Shishak.'",
+     "answer": "I have also left you",
+     "wrong": [
+      "I will give you over",
+      "you will fall",
+      "I have delivered you"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He did that which was evil, because he didn't set his heart ____.",
+     "answer": "to seek the LORD",
+     "wrong": [
+      "to keep the law",
+      "on David's ways",
+      "to hear the prophets"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When the kingdom of Rehoboam was established and he was strong, ____.",
+     "answer": "he abandoned the LORD's law",
+     "wrong": [
+      "he went to war with Israel",
+      "he built many cities",
+      "he took many wives"
+     ],
+     "v": 1
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Rehoboam and Israel abandon the LORD's law",
+      "Shishak takes Judah's fortified cities",
+      "Shemaiah brings the LORD's message",
+      "Shishak takes the temple treasures"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Because Rehoboam humbled himself, the LORD's wrath turned from him.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When Rehoboam died, Jeroboam's son reigned in his place.",
+     "answer": false,
+     "v": 16
+    }
+   ]
+  },
+  "13": {
+   "keyVerse": 18,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Abijah stand to speak to Jeroboam and Israel?",
+     "options": [
+      "Mount Zemaraim",
+      "Mount Carmel",
+      "Mount Gerizim",
+      "Mount Tabor"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Abijah say Israel had with them as gods?",
+     "options": [
+      "The golden calves Jeroboam made",
+      "The Asherah poles of Samaria",
+      "The idols of Sidon",
+      "The bronze serpent"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What tactic did Jeroboam use in the battle?",
+     "options": [
+      "He set an ambush behind Judah",
+      "He attacked at night",
+      "He surrounded Jerusalem",
+      "He hired Egyptian chariots"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which city did Abijah take from Jeroboam?",
+     "options": [
+      "Bethel",
+      "Shechem",
+      "Samaria",
+      "Dan"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The children of Judah prevailed, because they ____, the God of their fathers.",
+     "answer": "relied on the LORD",
+     "wrong": [
+      "prayed to the LORD",
+      "sacrificed to the LORD",
+      "called on the LORD"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The LORD gave the kingdom over Israel to David forever, even to him and to his sons by ____.",
+     "answer": "a covenant of salt",
+     "wrong": [
+      "an everlasting oath",
+      "a covenant of peace",
+      "the word of a prophet"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Children of Israel, don't fight against the LORD, the God of your fathers; for ____.",
+     "answer": "you will not prosper",
+     "wrong": [
+      "he will surely destroy you",
+      "your calves cannot save you",
+      "the battle is his"
+     ],
+     "v": 12
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Abijah speaks from the mountain to Israel",
+      "Jeroboam sets an ambush behind Judah",
+      "Judah cries out and the priests sound trumpets",
+      "Abijah pursues Jeroboam and takes cities"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God struck Jeroboam and Israel as the men of Judah shouted.",
+     "answer": true,
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jeroboam recovered his strength and fought Abijah again later.",
+     "answer": false,
+     "v": 20
+    }
+   ]
+  },
+  "14": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who came against Asa with a huge army?",
+     "options": [
+      "Zerah the Ethiopian",
+      "Shishak king of Egypt",
+      "Baasha king of Israel",
+      "Ben Hadad of Syria"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why was Asa able to build fortified cities?",
+     "options": [
+      "The land was quiet and the LORD gave him rest",
+      "Egypt paid for the building",
+      "He used captives from war",
+      "Israel helped him build"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How far did Asa pursue the Ethiopians?",
+     "options": [
+      "To Gerar",
+      "To Egypt",
+      "To Beersheba",
+      "To the Red Sea"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Judah carry away from the tents of those with livestock?",
+     "options": [
+      "Sheep and camels in abundance",
+      "Horses and chariots",
+      "Gold and silver idols",
+      "Cattle and donkeys"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Help us, LORD our God; for we rely on you, and ____ we have come against this multitude.",
+     "answer": "in your name",
+     "wrong": [
+      "by your strength",
+      "with your blessing",
+      "at your command"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "LORD, you are our God. Don't let ____ against you.",
+     "answer": "man prevail",
+     "wrong": [
+      "the nations rise",
+      "our enemies boast",
+      "this army stand"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The land is yet before us, because ____ the LORD our God.",
+     "answer": "we have sought",
+     "wrong": [
+      "we have obeyed",
+      "we have served",
+      "we have feared"
+     ],
+     "v": 7
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Asa removes the foreign altars and high places",
+      "Asa builds fortified cities in Judah",
+      "Zerah comes with a huge army",
+      "Asa cries to the LORD for help"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Asa did what was good and right in the LORD's eyes.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "In Asa's early days the land was at war for ten years.",
+     "answer": false,
+     "v": 1
+    }
+   ]
+  },
+  "15": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "On whom did the Spirit of God come to speak to Asa?",
+     "options": [
+      "Azariah the son of Oded",
+      "Hanani the seer",
+      "Shemaiah the man of God",
+      "Jehu the son of Hanani"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Asa remove his mother Maacah as queen mother?",
+     "options": [
+      "She made an abominable image for an Asherah",
+      "She plotted to take the throne",
+      "She married a foreign king",
+      "She mocked the prophet"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What covenant did the people enter into?",
+     "options": [
+      "To seek the LORD with all their heart and soul",
+      "To rebuild the walls of Jerusalem",
+      "To go to war against Israel",
+      "To give a tenth of their plunder"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did people from Ephraim, Manasseh, and Simeon come to Asa?",
+     "options": [
+      "They saw the LORD his God was with him",
+      "A famine drove them south",
+      "Baasha had expelled them",
+      "Asa offered them land"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The LORD is with you while you are with him; and if you seek him, ____.",
+     "answer": "he will be found by you",
+     "wrong": [
+      "he will bless your land",
+      "he will give you rest",
+      "he will fight for you"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But you be strong! Don't let your hands be slack, for ____.",
+     "answer": "your work will be rewarded",
+     "wrong": [
+      "the LORD is with you",
+      "the battle is almost won",
+      "your enemies are weak"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Asa cut down her image, ground it into dust, and burned it at ____.",
+     "answer": "the brook Kidron",
+     "wrong": [
+      "the gate of the city",
+      "the valley of Hinnom",
+      "the Jordan River"
+     ],
+     "v": 16
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Azariah prophesies to Asa",
+      "Asa puts away the abominations from the land",
+      "The people gather at Jerusalem and sacrifice",
+      "Judah swears an oath with shouting and trumpets"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "All Judah rejoiced at the oath, and the LORD gave them rest all around.",
+     "answer": true,
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The high places were taken away out of Israel during Asa's reign.",
+     "answer": false,
+     "v": 17
+    }
+   ]
+  },
+  "16": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom did Asa pay to break his treaty with Baasha?",
+     "options": [
+      "Ben Hadad king of Syria",
+      "Pharaoh king of Egypt",
+      "Huram king of Tyre",
+      "The king of Assyria"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Asa do with the stones and timber of Ramah?",
+     "options": [
+      "He built Geba and Mizpah",
+      "He repaired the temple",
+      "He built a palace in Jerusalem",
+      "He burned them at the Kidron"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Asa respond to Hanani's rebuke?",
+     "options": [
+      "He put the seer in prison",
+      "He repented in sackcloth",
+      "He sent gifts to the temple",
+      "He ignored him and went to war"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "When Asa's feet became diseased, whom did he seek?",
+     "options": [
+      "The physicians, not the LORD",
+      "The prophets of the LORD",
+      "The priests in the temple",
+      "Healers from Syria"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For the LORD's eyes run back and forth throughout the whole earth, to ____ in the behalf of them whose heart is perfect toward him.",
+     "answer": "show himself strong",
+     "wrong": [
+      "pour out his blessing",
+      "give victory quickly",
+      "reveal his glory"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Because you have relied on the king of Syria, and ____, the army of the king of Syria has escaped.",
+     "answer": "have not relied on the LORD",
+     "wrong": [
+      "have not asked the prophets",
+      "have forgotten your father's God",
+      "have robbed the LORD's house"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You have done foolishly in this; for from now on ____.",
+     "answer": "you will have wars",
+     "wrong": [
+      "your kingdom will fall",
+      "you will have no rest",
+      "Syria will rule over you"
+     ],
+     "v": 9
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Baasha builds Ramah against Judah",
+      "Asa sends silver and gold to Ben Hadad",
+      "Baasha stops building Ramah",
+      "Hanani the seer rebukes Asa"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Asa took silver and gold from the LORD's house to send to Syria.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Asa was buried with no burning and no honor.",
+     "answer": false,
+     "v": 14
+    }
+   ]
+  },
+  "17": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why was the LORD with Jehoshaphat?",
+     "options": [
+      "He walked in the first ways of David and didn't seek the Baals",
+      "He built a new temple",
+      "He defeated the Philistines",
+      "He married a daughter of the priest"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Jehoshaphat send princes, Levites, and priests to the cities of Judah?",
+     "options": [
+      "To teach the people",
+      "To collect taxes",
+      "To count the fighting men",
+      "To tear down idols"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the surrounding kingdoms make no war against Jehoshaphat?",
+     "options": [
+      "The fear of the LORD fell on them",
+      "He paid them tribute",
+      "His army was the largest",
+      "They were at war with Egypt"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the Arabians bring Jehoshaphat?",
+     "options": [
+      "Flocks of rams and male goats",
+      "Camels loaded with spices",
+      "Gold and precious stones",
+      "Horses and chariots"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They taught in Judah, having ____ with them.",
+     "answer": "the book of the LORD's law",
+     "wrong": [
+      "the ark of the covenant",
+      "the tablets of stone",
+      "the priests of Aaron"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "His heart was ____ in the ways of the LORD.",
+     "answer": "lifted up",
+     "wrong": [
+      "made strong",
+      "fully set",
+      "kept pure"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Amasiah the son of Zichri ____, and with him two hundred thousand.",
+     "answer": "willingly offered himself to the LORD",
+     "wrong": [
+      "was captain over the chariots",
+      "came from the tribe of Benjamin",
+      "guarded the king's house"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did Jehoshaphat set garrisons besides Judah?",
+     "options": [
+      "In the cities of Ephraim Asa had taken",
+      "In the towns of Moab",
+      "Along the coast of Philistia",
+      "In the land of Edom"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jehoshaphat took away the high places and Asherah poles out of Judah.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Some of the Egyptians brought Jehoshaphat presents and silver for tribute.",
+     "answer": false,
+     "v": 11
+    }
+   ]
+  },
+  "18": {
+   "keyVerse": 13,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Ahab want Jehoshaphat to go to battle with him?",
+     "options": [
+      "Ramoth Gilead",
+      "Damascus",
+      "Samaria",
+      "Moab"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Ahab hate Micaiah?",
+     "options": [
+      "He never prophesied good about Ahab",
+      "He had supported Jehoshaphat",
+      "He had mocked Ahab's prophets",
+      "He had refused to come to court"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Zedekiah the son of Chenaanah make?",
+     "options": [
+      "Horns of iron",
+      "A yoke of wood",
+      "A bronze shield",
+      "A crown of gold"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Ahab do before going into battle?",
+     "options": [
+      "He disguised himself",
+      "He put on his royal robes",
+      "He stayed behind in Samaria",
+      "He hid in an inner room"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Micaiah said, \"As the LORD lives, I will say ____.\"",
+     "answer": "what my God says",
+     "wrong": [
+      "nothing but good",
+      "what the king wants",
+      "only the truth"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I saw all Israel scattered on the mountains, as ____.",
+     "answer": "sheep that have no shepherd",
+     "wrong": [
+      "chaff before the wind",
+      "leaves in the storm",
+      "an army without a king"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I will go, and will be ____ in the mouth of all his prophets.",
+     "answer": "a lying spirit",
+     "wrong": [
+      "a word of doom",
+      "a voice of warning",
+      "a spirit of confusion"
+     ],
+     "v": 21
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jehoshaphat asks to inquire of the LORD",
+      "Four hundred prophets say go up",
+      "Micaiah foretells Israel scattered",
+      "A random arrow strikes the king of Israel"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When the chariot captains attacked Jehoshaphat, he cried out and the LORD helped him.",
+     "answer": true,
+     "v": 31
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Ahab struck Micaiah on the cheek.",
+     "answer": false,
+     "v": 23
+    }
+   ]
+  },
+  "19": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who rebuked Jehoshaphat when he returned from battle?",
+     "options": [
+      "Jehu the son of Hanani",
+      "Micaiah the son of Imla",
+      "Elijah the Tishbite",
+      "Azariah the son of Oded"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Jehoshaphat set judges?",
+     "options": [
+      "In all the fortified cities of Judah",
+      "Only in Jerusalem",
+      "At the gates of the temple",
+      "In the cities of Ephraim"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What good thing did Jehu say was found in Jehoshaphat?",
+     "options": [
+      "He put away the Asheroth and sought God",
+      "He built many cities",
+      "He gave generously to the poor",
+      "He defeated Moab"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who was over the judges in all matters of the LORD?",
+     "options": [
+      "Amariah the chief priest",
+      "Zebadiah the son of Ishmael",
+      "Jehoiada the priest",
+      "Hanani the seer"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Should you help the wicked, and ____ the LORD?",
+     "answer": "love those who hate",
+     "wrong": [
+      "make peace with enemies of",
+      "serve those who mock",
+      "join those who reject"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Consider what you do, for you don't judge for man, but ____.",
+     "answer": "for the LORD",
+     "wrong": [
+      "for the king",
+      "for the elders",
+      "for the people"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Deal courageously, and may the LORD ____.",
+     "answer": "be with the good",
+     "wrong": [
+      "judge between you",
+      "give you wisdom",
+      "reward your work"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to Jehoshaphat, what is not found with the LORD?",
+     "options": [
+      "Iniquity, respect of persons, or bribes",
+      "Anger, delay, or sorrow",
+      "Weakness, fear, or doubt",
+      "Mercy for the wicked"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jehoshaphat went out among the people and brought them back to the LORD.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Jehoshaphat appointed only priests to judge controversies in Jerusalem.",
+     "answer": false,
+     "v": 8
+    }
+   ]
+  },
+  "20": {
+   "keyVerse": 15,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jehoshaphat proclaim when the armies came against him?",
+     "options": [
+      "A fast throughout all Judah",
+      "A call to arms for every man",
+      "A day of feasting",
+      "A tax to pay the enemy"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "On whom did the LORD's Spirit come in the assembly?",
+     "options": [
+      "Jahaziel, a Levite of the sons of Asaph",
+      "Eliezer of Mareshah",
+      "Jehu the son of Hanani",
+      "Zechariah the priest"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom did Jehoshaphat appoint to go out before the army?",
+     "options": [
+      "Singers giving praise in holy array",
+      "The priests with the ark",
+      "The mighty men of valor",
+      "Archers from Benjamin"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was the valley called where they blessed the LORD?",
+     "options": [
+      "Beracah Valley",
+      "The valley of Zephathah",
+      "The valley of Salt",
+      "The valley of Elah"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Don't be afraid, and don't be dismayed because of this great multitude; for the battle is ____.",
+     "answer": "not yours, but God's",
+     "wrong": [
+      "already won for you",
+      "the LORD's to fight",
+      "against a weak foe"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "We don't know what to do, but ____.",
+     "answer": "our eyes are on you",
+     "wrong": [
+      "our hope is in you",
+      "our strength is in you",
+      "we trust your name"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Believe in the LORD your God, so you will be established! ____, so you will prosper.",
+     "answer": "Believe his prophets",
+     "wrong": [
+      "Keep his commandments",
+      "Seek his face",
+      "Fear his name"
+     ],
+     "v": 20
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jehoshaphat proclaims a fast in Judah",
+      "Jahaziel says the battle is God's",
+      "The singers praise as the army goes out",
+      "Judah blesses the LORD in Beracah Valley"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The enemy armies turned and destroyed each other.",
+     "answer": true,
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The ships Jehoshaphat built with Ahaziah reached Tarshish safely.",
+     "answer": false,
+     "v": 37
+    }
+   ]
+  },
+  "21": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jehoram do once he strengthened himself as king?",
+     "options": [
+      "Killed all his brothers with the sword",
+      "Repaired the LORD's house",
+      "Made peace with Edom",
+      "Gave gifts to his brothers"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Jehoram walk in the ways of Ahab's house?",
+     "options": [
+      "He had Ahab's daughter as his wife",
+      "Ahab had raised him",
+      "He feared Ahab's army",
+      "His mother was from Samaria"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What came to Jehoram from Elijah the prophet?",
+     "options": [
+      "A letter",
+      "A messenger with a cloak",
+      "A vision in the night",
+      "A broken jar"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which son was left to Jehoram after the invaders came?",
+     "options": [
+      "Jehoahaz, his youngest",
+      "Azariah, his firstborn",
+      "Joash, his grandson",
+      "Ahaziah, his eldest"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The LORD would not destroy David's house, because of the covenant, and as he promised to give ____ to him and to his children always.",
+     "answer": "a lamp",
+     "wrong": [
+      "a throne",
+      "a crown",
+      "a kingdom"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He departed with ____. They buried him in David's city.",
+     "answer": "no one's regret",
+     "wrong": [
+      "great mourning",
+      "honor and burning",
+      "the tears of Judah"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Libnah revolted from under his hand, because he had ____, the God of his fathers.",
+     "answer": "forsaken the LORD",
+     "wrong": [
+      "angered the LORD",
+      "mocked the LORD",
+      "disobeyed the LORD"
+     ],
+     "v": 10
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jehoshaphat gives the kingdom to Jehoram",
+      "Jehoram kills his brothers",
+      "Edom revolts from Judah",
+      "Jehoram dies of a disease of the bowels"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jehoshaphat gave the kingdom to Jehoram because he was the firstborn.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jehoram was buried in the tombs of the kings.",
+     "answer": false,
+     "v": 20
+    }
+   ]
+  },
+  "22": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who was Ahaziah's counselor in acting wickedly?",
+     "options": [
+      "His mother Athaliah",
+      "Jehoiada the priest",
+      "His uncle Jehoram",
+      "The prophets of Baal"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who rescued young Joash from being killed?",
+     "options": [
+      "Jehoshabeath, the king's daughter",
+      "Athaliah the queen mother",
+      "Jehoiada's servant",
+      "A nurse from Beersheba"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom had the LORD anointed to cut off Ahab's house?",
+     "options": [
+      "Jehu the son of Nimshi",
+      "Hazael king of Syria",
+      "Joram the son of Ahab",
+      "Elisha the prophet"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did they bury Ahaziah after killing him?",
+     "options": [
+      "He was the son of Jehoshaphat, who sought the LORD",
+      "His mother begged Jehu",
+      "He had repented before dying",
+      "The priests demanded it"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "When Athaliah saw that her son was dead, she arose and destroyed ____ of the house of Judah.",
+     "answer": "all the royal offspring",
+     "wrong": [
+      "the priests and Levites",
+      "the fortified cities",
+      "the princes and captains"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He was with them hidden in ____ six years while Athaliah reigned.",
+     "answer": "God's house",
+     "wrong": [
+      "the king's palace",
+      "the priest's village",
+      "a cave near Jerusalem"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They were his counselors after the death of his father, ____.",
+     "answer": "to his destruction",
+     "wrong": [
+      "to his great shame",
+      "for his ruin in battle",
+      "for evil all his days"
+     ],
+     "v": 4
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Ahaziah is made king in Jerusalem",
+      "Ahaziah visits Joram in Jezreel",
+      "Jehu kills Ahaziah",
+      "Athaliah destroys the royal offspring"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jehoshabeath was the wife of Jehoiada the priest.",
+     "answer": true,
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Ahaziah was caught hiding in Jezreel.",
+     "answer": false,
+     "v": 9
+    }
+   ]
+  },
+  "23": {
+   "keyVerse": 16,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the people shout when Joash was crowned?",
+     "options": [
+      "Long live the king!",
+      "The LORD has saved us!",
+      "Hosanna to David's son!",
+      "The LORD reigns!"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Athaliah cry out when she saw the new king?",
+     "options": [
+      "Treason! Treason!",
+      "Save the queen!",
+      "Seize him!",
+      "Rebellion!"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why was Athaliah taken out before she was killed?",
+     "options": [
+      "The priest said not to kill her in the LORD's house",
+      "She asked to die outside the city",
+      "The people wanted to stone her",
+      "The king ordered her exile first"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What weapons did Jehoiada give the captains?",
+     "options": [
+      "Spears and shields that had been David's",
+      "Swords taken from Athaliah's guard",
+      "Bows from the tribe of Benjamin",
+      "New spears made in the temple"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jehoiada made a covenant between himself, all the people, and the king, that they should be ____.",
+     "answer": "the LORD's people",
+     "wrong": [
+      "faithful to the throne",
+      "free from Baal",
+      "servants of David's house"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "All the people went to the house of Baal, broke it down, and killed Mattan ____.",
+     "answer": "the priest of Baal",
+     "wrong": [
+      "the servant of Athaliah",
+      "the captain of the guard",
+      "the scribe of the king"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He set the gatekeepers at the gates, that no one who was ____ should enter in.",
+     "answer": "unclean in anything",
+     "wrong": [
+      "a foreigner in Israel",
+      "armed with a weapon",
+      "loyal to Athaliah"
+     ],
+     "v": 19
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jehoiada makes a covenant with the captains",
+      "The king's son is crowned",
+      "Athaliah is killed at the horse gate",
+      "The people break down the house of Baal"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After Athaliah was killed, the people of the land rejoiced and the city was quiet.",
+     "answer": true,
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jehoiada commanded the Levites to guard only the gates, not the king himself.",
+     "answer": false,
+     "v": 7
+    }
+   ]
+  },
+  "24": {
+   "keyVerse": 20,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How long did Joash do what was right in the LORD's eyes?",
+     "options": [
+      "All the days of Jehoiada the priest",
+      "All the days of his life",
+      "Until he was twenty years old",
+      "Until the temple was finished"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the king have made to collect money for the temple?",
+     "options": [
+      "A chest set outside the gate",
+      "A golden bowl by the altar",
+      "A treasury room in the court",
+      "A box in the king's house"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How was Zechariah the son of Jehoiada killed?",
+     "options": [
+      "He was stoned in the court of the LORD's house",
+      "He was struck down with a sword",
+      "He was thrown from the wall",
+      "He died in prison"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How large was the Syrian army that defeated Judah?",
+     "options": [
+      "A small company of men",
+      "A million soldiers",
+      "Equal to Judah's army",
+      "Three hundred chariots"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Because you have forsaken the LORD, ____.",
+     "answer": "he has also forsaken you",
+     "wrong": [
+      "he will surely punish you",
+      "your enemies will rule you",
+      "he will not hear you"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Joash the king didn't remember ____ which Jehoiada his father had done to him.",
+     "answer": "the kindness",
+     "wrong": [
+      "the covenant",
+      "the good deeds",
+      "the service"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When he died, he said, \"May the LORD ____.\"",
+     "answer": "look at it, and repay it",
+     "wrong": [
+      "forgive you for this",
+      "remember my blood",
+      "judge between us"
+     ],
+     "v": 22
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Joash plans to restore the LORD's house",
+      "The people fill the chest with money",
+      "Jehoiada dies at a great age",
+      "Zechariah is stoned in the temple court"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After Jehoiada died, Joash listened to the princes of Judah.",
+     "answer": true,
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Jehoiada was buried outside the city because he was only a priest.",
+     "answer": false,
+     "v": 16
+    }
+   ]
+  },
+  "25": {
+   "keyVerse": 4,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the man of God tell Amaziah about the hired army of Israel?",
+     "options": [
+      "Don't let it go with you, for the LORD is not with Israel",
+      "Pay them double for their service",
+      "Send them ahead into battle",
+      "Make them serve as guards in Jerusalem"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Amaziah do after defeating the Edomites?",
+     "options": [
+      "Set up the gods of Seir as his gods",
+      "Tore down their idols",
+      "Gave thanks at the temple",
+      "Married an Edomite princess"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Joash and Amaziah meet in battle?",
+     "options": [
+      "Beth Shemesh",
+      "Ramoth Gilead",
+      "The Valley of Salt",
+      "Lachish"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the sent back Israelite soldiers do?",
+     "options": [
+      "Attacked the cities of Judah and took plunder",
+      "Returned home in peace",
+      "Joined the Edomites",
+      "Complained to the king of Israel"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The fathers shall not die for the children, neither shall the children die for the fathers; but every man shall ____.",
+     "answer": "die for his own sin",
+     "wrong": [
+      "answer for his deeds",
+      "bear his own guilt",
+      "be judged by God"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The man of God answered, \"The LORD is able to give you ____.\"",
+     "answer": "much more than this",
+     "wrong": [
+      "silver beyond counting",
+      "a greater army",
+      "riches and honor"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The thistle that was in Lebanon sent to ____ that was in Lebanon.",
+     "answer": "the cedar",
+     "wrong": [
+      "the cypress",
+      "the oak",
+      "the vine"
+     ],
+     "v": 18
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Amaziah hires men of valor from Israel",
+      "Amaziah sends the Israelite army home",
+      "Amaziah defeats Seir in the Valley of Salt",
+      "Joash of Israel defeats Judah at Beth Shemesh"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Amaziah did what was right in the LORD's eyes, but not with a perfect heart.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Amaziah was killed in Jerusalem after a conspiracy.",
+     "answer": false,
+     "v": 27
+    }
+   ]
+  },
+  "26": {
+   "keyVerse": 5,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What sin did Uzziah commit when he became strong?",
+     "options": [
+      "He went into the temple to burn incense",
+      "He built an altar to Baal",
+      "He robbed the temple treasury",
+      "He killed a prophet"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What broke out on Uzziah's forehead?",
+     "options": [
+      "Leprosy",
+      "Boils",
+      "A deep wound",
+      "A burning rash"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Uzziah build towers and dig cisterns in the wilderness?",
+     "options": [
+      "He had much livestock and loved farming",
+      "To defend against Egypt",
+      "To store weapons for war",
+      "To prepare for a drought"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who wrote the rest of the acts of Uzziah?",
+     "options": [
+      "Isaiah the prophet, the son of Amoz",
+      "Iddo the seer",
+      "Zechariah who understood visions",
+      "Jeiel the scribe"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "As long as he sought the LORD, ____.",
+     "answer": "God made him prosper",
+     "wrong": [
+      "he had rest on every side",
+      "his enemies feared him",
+      "his kingdom grew"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But when he was strong, ____, so that he did corruptly.",
+     "answer": "his heart was lifted up",
+     "wrong": [
+      "he forgot the LORD",
+      "he trusted in his army",
+      "he despised the priests"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "His name spread far abroad, because he was ____ until he was strong.",
+     "answer": "marvelously helped",
+     "wrong": [
+      "greatly blessed",
+      "richly rewarded",
+      "wisely counseled"
+     ],
+     "v": 15
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Uzziah fights against the Philistines",
+      "Uzziah builds towers and makes war devices",
+      "Uzziah enters the temple to burn incense",
+      "Uzziah lives in a separate house as a leper"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Azariah the priest and other priests resisted Uzziah in the temple.",
+     "answer": true,
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "While Uzziah was a leper, his son Ahaz judged the people.",
+     "answer": false,
+     "v": 21
+    }
+   ]
+  },
+  "27": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Jotham become mighty?",
+     "options": [
+      "He ordered his ways before the LORD his God",
+      "He made alliances with Assyria",
+      "He took the treasures of Ammon",
+      "His army was very large"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom did Jotham fight and prevail against?",
+     "options": [
+      "The king of the children of Ammon",
+      "The Philistines",
+      "The king of Edom",
+      "The king of Syria"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Jotham build at the LORD's house?",
+     "options": [
+      "The upper gate",
+      "A new altar",
+      "The porch",
+      "The treasury"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "He did that which was right in the LORD's eyes. However ____ into the LORD's temple.",
+     "answer": "he didn't enter",
+     "wrong": [
+      "he brought no gifts",
+      "he sent no priests",
+      "he carried no incense"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He did right according to all that his father Uzziah had done. ____ acted corruptly.",
+     "answer": "The people still",
+     "wrong": [
+      "His princes also",
+      "The priests still",
+      "His servants also"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "In the forests he built ____.",
+     "answer": "fortresses and towers",
+     "wrong": [
+      "altars and high places",
+      "storehouses and cisterns",
+      "walls and gates"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When Jotham died, Ahaz his son reigned in his place.",
+     "answer": true,
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The children of Ammon paid Jotham tribute for only one year.",
+     "answer": false,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jotham built much on the wall of Ophel.",
+     "answer": true,
+     "v": 3
+    }
+   ]
+  },
+  "28": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Into whose hands did the LORD deliver Ahaz?",
+     "options": [
+      "The king of Syria and the king of Israel",
+      "The king of Egypt and Edom",
+      "The Philistines and Moab",
+      "The king of Babylon"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which prophet met Israel's army returning to Samaria?",
+     "options": [
+      "Oded",
+      "Isaiah",
+      "Micah",
+      "Hosea"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To whom did Ahaz send for help?",
+     "options": [
+      "The kings of Assyria",
+      "The king of Egypt",
+      "The king of Babylon",
+      "The king of Tyre"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Ahaz sacrifice to the gods of Damascus?",
+     "options": [
+      "He thought they had helped the kings of Syria",
+      "His wife worshiped them",
+      "The king of Assyria commanded it",
+      "His priests advised it"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Ahaz cut the vessels of God's house in pieces, and ____ of the LORD's house.",
+     "answer": "shut up the doors",
+     "wrong": [
+      "broke down the walls",
+      "burned the treasuries",
+      "defiled the altar"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Send back the captives that you have taken from your brothers, for ____ is on you.",
+     "answer": "the fierce wrath of the LORD",
+     "wrong": [
+      "the judgment of heaven",
+      "the curse of the covenant",
+      "the anger of Judah"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Tilgath-pilneser king of Assyria came to him and gave him trouble, but ____.",
+     "answer": "didn't strengthen him",
+     "wrong": [
+      "took all his gold",
+      "left him in peace",
+      "made him a servant"
+     ],
+     "v": 20
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Syria and Israel defeat Ahaz",
+      "Oded tells Israel to send back the captives",
+      "The captives are clothed and brought to Jericho",
+      "Ahaz sacrifices to the gods of Damascus"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The leaders of Ephraim clothed, fed, and returned the captives from Judah.",
+     "answer": true,
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Ahaz was buried in the tombs of the kings of Israel.",
+     "answer": false,
+     "v": 27
+    }
+   ]
+  },
+  "29": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Hezekiah do in the first month of his first year?",
+     "options": [
+      "Opened the doors of the LORD's house and repaired them",
+      "Went to war against Assyria",
+      "Tore down the high places",
+      "Held the Passover"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did the Levites carry the uncleanness taken from the temple?",
+     "options": [
+      "To the brook Kidron",
+      "To the valley of Hinnom",
+      "Outside the city gate",
+      "To the Jordan River"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whose commandment did Hezekiah follow in setting the Levites with instruments?",
+     "options": [
+      "David, Gad the seer, and Nathan the prophet",
+      "Moses and Aaron",
+      "Solomon and Asaph",
+      "Samuel and Elijah"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did the Levites help the priests skin the burnt offerings?",
+     "options": [
+      "The priests were too few",
+      "The priests were unclean from war",
+      "The king ordered the priests to rest",
+      "The Levites asked to share the work"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Now it is in my heart to make ____ with the LORD, the God of Israel.",
+     "answer": "a covenant",
+     "wrong": [
+      "a new altar",
+      "a great offering",
+      "a house of prayer"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "My sons, don't be ____; for the LORD has chosen you to stand before him.",
+     "answer": "negligent now",
+     "wrong": [
+      "afraid now",
+      "ashamed today",
+      "slow to act"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When the burnt offering began, ____ also began, along with the trumpets.",
+     "answer": "the LORD's song",
+     "wrong": [
+      "the people's shout",
+      "the priests' blessing",
+      "the Levites' prayer"
+     ],
+     "v": 27
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Hezekiah opens the doors of the temple",
+      "The priests and Levites cleanse the house",
+      "Sin offerings are made for all Israel",
+      "The assembly brings thank offerings"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Hezekiah and the people rejoiced because the thing was done suddenly.",
+     "answer": true,
+     "v": 36
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The priests were more upright in heart to sanctify themselves than the Levites.",
+     "answer": false,
+     "v": 34
+    }
+   ]
+  },
+  "30": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "To what feast did Hezekiah invite all Israel and Judah?",
+     "options": [
+      "The Passover",
+      "The feast of booths",
+      "The feast of weeks",
+      "The day of atonement"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did many people in Ephraim and Manasseh respond to the couriers?",
+     "options": [
+      "They ridiculed and mocked them",
+      "They wept and came at once",
+      "They sent gifts instead",
+      "They arrested the couriers"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In which month did they keep the Passover?",
+     "options": [
+      "The second month",
+      "The first month",
+      "The seventh month",
+      "The twelfth month"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Hezekiah pray for those who ate the Passover while unclean?",
+     "options": [
+      "That the good LORD would pardon everyone who seeks God",
+      "That they would be sent home",
+      "That the priests would purify them",
+      "That they would offer a guilt offering"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The LORD your God is ____, and will not turn away his face from you if you return to him.",
+     "answer": "gracious and merciful",
+     "wrong": [
+      "slow to anger",
+      "faithful and true",
+      "great and mighty"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Don't be stiff-necked, as your fathers were, but ____.",
+     "answer": "yield yourselves to the LORD",
+     "wrong": [
+      "offer sacrifices at Jerusalem",
+      "remember the law of Moses",
+      "return to your own cities"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Since the time of Solomon ____ there was nothing like this in Jerusalem.",
+     "answer": "the son of David",
+     "wrong": [
+      "king over all Israel",
+      "when the temple was built",
+      "and the queen of Sheba"
+     ],
+     "v": 26
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Hezekiah sends letters to Israel and Judah",
+      "Couriers are mocked in Ephraim and Manasseh",
+      "The people throw the altars into the Kidron",
+      "The assembly keeps another seven days"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD listened to Hezekiah and healed the people.",
+     "answer": true,
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "No one from the northern tribes came to Jerusalem for the Passover.",
+     "answer": false,
+     "v": 11
+    }
+   ]
+  },
+  "31": {
+   "keyVerse": 21,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Israel do after the Passover in the cities of Judah?",
+     "options": [
+      "Broke the pillars and cut down the Asherah poles",
+      "Built new storehouses",
+      "Counted the fighting men",
+      "Repaired the city walls"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the people bring in abundance after Hezekiah's command?",
+     "options": [
+      "First fruits and tithes",
+      "Weapons and shields",
+      "Silver for the king",
+      "Timber and stone"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Hezekiah command be prepared for the offerings?",
+     "options": [
+      "Rooms in the LORD's house",
+      "New altars in the court",
+      "Storehouses in every city",
+      "Carts to carry them"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who explained to Hezekiah why there was a great store?",
+     "options": [
+      "Azariah the chief priest of the house of Zadok",
+      "Conaniah the Levite",
+      "Kore the gatekeeper",
+      "Isaiah the prophet"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "In every work that he began, to seek his God, he did it ____ and prospered.",
+     "answer": "with all his heart",
+     "wrong": [
+      "with great wisdom",
+      "with the priests' help",
+      "without delay"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "We have eaten and had enough, and have plenty left over, for ____.",
+     "answer": "the LORD has blessed his people",
+     "wrong": [
+      "the harvest was great",
+      "the king has given much",
+      "the tithes were doubled"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They brought in the tithe of cattle and sheep, and ____.",
+     "answer": "laid them in heaps",
+     "wrong": [
+      "stored them in rooms",
+      "gave them to the king",
+      "offered them on the altar"
+     ],
+     "v": 6
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Israel breaks down the high places",
+      "Hezekiah appoints the divisions of priests",
+      "The people bring tithes in heaps",
+      "Hezekiah commands rooms be prepared"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Hezekiah did what was good, right, and faithful before the LORD.",
+     "answer": true,
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When Hezekiah saw the heaps, he rebuked the people for wasting so much.",
+     "answer": false,
+     "v": 8
+    }
+   ]
+  },
+  "32": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which king of Assyria came against Judah?",
+     "options": [
+      "Sennacherib",
+      "Tilgath-pilneser",
+      "Shalmaneser",
+      "Esarhaddon"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Hezekiah and his princes stop to hinder the Assyrians?",
+     "options": [
+      "The springs of water outside the city",
+      "The roads into Jerusalem",
+      "The trade routes to Egypt",
+      "The gates of Lachish"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD send to save Jerusalem?",
+     "options": [
+      "An angel who cut off the Assyrian leaders",
+      "A great hailstorm",
+      "A plague of locusts",
+      "The army of Egypt"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did God leave Hezekiah alone with the envoys from Babylon?",
+     "options": [
+      "To test him and know all in his heart",
+      "To punish him for pride",
+      "To teach him to trust Egypt",
+      "To warn him of the exile"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "An arm of flesh is with him, but ____ is with us to help us.",
+     "answer": "the LORD our God",
+     "wrong": [
+      "the host of heaven",
+      "the God of David",
+      "a mighty army"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Don't be afraid or dismayed because of the king of Assyria; for there is ____.",
+     "answer": "a greater one with us",
+     "wrong": [
+      "a strong wall around us",
+      "an angel before us",
+      "no god like ours"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They called out with a loud voice ____ to the people of Jerusalem who were on the wall.",
+     "answer": "in the Jews' language",
+     "wrong": [
+      "in the Aramaic tongue",
+      "from outside the gate",
+      "with trumpets and horns"
+     ],
+     "v": 18
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Sennacherib invades Judah",
+      "Hezekiah stops the springs and builds the wall",
+      "Sennacherib's servants mock the LORD",
+      "An angel cuts off the Assyrian leaders"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Hezekiah and Isaiah the prophet prayed and cried to heaven.",
+     "answer": true,
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Sennacherib was killed in battle outside Jerusalem.",
+     "answer": false,
+     "v": 21
+    }
+   ]
+  },
+  "33": {
+   "keyVerse": 13,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did the Assyrian captains carry Manasseh in chains?",
+     "options": [
+      "Babylon",
+      "Nineveh",
+      "Damascus",
+      "Egypt"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Manasseh do when he was in distress?",
+     "options": [
+      "Humbled himself greatly and prayed",
+      "Cursed the LORD",
+      "Bribed his captors",
+      "Tried to escape"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Manasseh do after returning to Jerusalem?",
+     "options": [
+      "Took away the foreign gods and the idol from the temple",
+      "Built more altars to Baal",
+      "Went to war against Assyria",
+      "Stopped all worship at the temple"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Even after Manasseh's reforms, what did the people still do?",
+     "options": [
+      "Sacrificed in the high places, but only to the LORD",
+      "Worshiped the army of the sky",
+      "Offered their children in the fire",
+      "Kept the idol in the temple"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "He brought him again to Jerusalem into his kingdom. Then Manasseh knew that ____.",
+     "answer": "the LORD was God",
+     "wrong": [
+      "his sins were forgiven",
+      "he had been foolish",
+      "Assyria was weak"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Manasseh seduced Judah, so that they did more evil than did ____.",
+     "answer": "the nations whom the LORD destroyed",
+     "wrong": [
+      "the kings of Israel before them",
+      "their fathers in the wilderness",
+      "the people of Samaria"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He didn't humble himself before the LORD, as Manasseh his father had; but this same Amon ____.",
+     "answer": "trespassed more and more",
+     "wrong": [
+      "died in his youth",
+      "served the Baals",
+      "fled from Jerusalem"
+     ],
+     "v": 23
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Manasseh rebuilds the high places",
+      "The Assyrians take Manasseh to Babylon",
+      "Manasseh humbles himself and is restored",
+      "Amon is killed by his servants"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Manasseh practiced sorcery and made his children pass through the fire.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Amon was killed by the people of the land.",
+     "answer": false,
+     "v": 24
+    }
+   ]
+  },
+  "34": {
+   "keyVerse": 27,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Hilkiah the priest find in the LORD's house?",
+     "options": [
+      "The book of the LORD's law given by Moses",
+      "The golden vessels of Solomon",
+      "A letter from Elijah",
+      "The lost ark of the covenant"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Josiah do when he heard the words of the law?",
+     "options": [
+      "He tore his clothes",
+      "He burned the book",
+      "He called for a feast",
+      "He fled the city"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To whom did Hilkiah and the others go to inquire of the LORD?",
+     "options": [
+      "Huldah the prophetess",
+      "Jeremiah the prophet",
+      "Shaphan the scribe",
+      "Zephaniah the priest"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Josiah do with the dust of the broken idols?",
+     "options": [
+      "Scattered it on the graves of those who sacrificed to them",
+      "Threw it into the brook Kidron",
+      "Mixed it in the people's water",
+      "Buried it under the temple"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Because your heart was tender, and you ____ before God when you heard his words, I also have heard you.",
+     "answer": "humbled yourself",
+     "wrong": [
+      "offered sacrifices",
+      "poured out prayers",
+      "stood in fear"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You will be gathered to your grave in peace. Your eyes won't see all the evil that ____.",
+     "answer": "I will bring on this place",
+     "wrong": [
+      "will come upon Jerusalem",
+      "the nations will do here",
+      "your enemies will bring here"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "In the eighth year of his reign, ____, he began to seek after the God of David his father.",
+     "answer": "while he was yet young",
+     "wrong": [
+      "when he had grown strong",
+      "after the temple was cleansed",
+      "when Hilkiah found the book"
+     ],
+     "v": 3
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Josiah begins to seek the God of David",
+      "Josiah purges Judah of idols",
+      "Hilkiah finds the book of the law",
+      "Josiah makes a covenant before the LORD"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Josiah was eight years old when he began to reign.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "After Josiah's covenant, the people turned away from the LORD later in his days.",
+     "answer": false,
+     "v": 33
+    }
+   ]
+  },
+  "35": {
+   "keyVerse": 18,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did the lambs, goats, and bulls Josiah gave the people come from?",
+     "options": [
+      "The king's own substance",
+      "The temple treasury",
+      "The tithes of Judah",
+      "The spoil of Egypt"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which king did Josiah go out to fight?",
+     "options": [
+      "Neco king of Egypt",
+      "Nebuchadnezzar of Babylon",
+      "Sennacherib of Assyria",
+      "The king of Syria"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where was Josiah wounded?",
+     "options": [
+      "In the valley of Megiddo",
+      "At Carchemish",
+      "At Lachish",
+      "In the valley of Salt"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Josiah tell the Levites the ark would no longer be?",
+     "options": [
+      "A burden on their shoulders",
+      "Hidden from the people",
+      "Carried into battle",
+      "Kept in a tent"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jeremiah ____, and all the singing men and women spoke of Josiah.",
+     "answer": "lamented for Josiah",
+     "wrong": [
+      "wrote of Josiah",
+      "prayed for Josiah",
+      "prophesied of Josiah"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Beware that it is God who is with me, ____.",
+     "answer": "that he not destroy you",
+     "wrong": [
+      "and he fights for Egypt",
+      "so turn back home",
+      "and he sent me here"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They roasted the Passover with fire according to the ordinance, and ____ in pots.",
+     "answer": "boiled the holy offerings",
+     "wrong": [
+      "cooked the bread",
+      "prepared the lambs",
+      "burned the fat"
+     ],
+     "v": 13
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Josiah keeps the Passover",
+      "Neco goes up to fight at Carchemish",
+      "Archers shoot King Josiah",
+      "All Judah mourns for Josiah"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "No Passover like Josiah's had been kept since the days of Samuel the prophet.",
+     "answer": true,
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Josiah listened to Neco's warning and turned back.",
+     "answer": false,
+     "v": 22
+    }
+   ]
+  },
+  "36": {
+   "keyVerse": 15,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which king of Babylon came against Jehoiakim?",
+     "options": [
+      "Nebuchadnezzar",
+      "Evil-merodach",
+      "Cyrus",
+      "Neco"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which king made a proclamation to build the LORD's house in Jerusalem?",
+     "options": [
+      "Cyrus king of Persia",
+      "Darius the Mede",
+      "Artaxerxes",
+      "Nebuchadnezzar"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Before which prophet did Zedekiah refuse to humble himself?",
+     "options": [
+      "Jeremiah",
+      "Ezekiel",
+      "Isaiah",
+      "Habakkuk"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What new name did the king of Egypt give to Eliakim?",
+     "options": [
+      "Jehoiakim",
+      "Jehoiachin",
+      "Zedekiah",
+      "Jehoahaz"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They mocked the messengers of God, despised his words, and scoffed at his prophets, until ____.",
+     "answer": "there was no remedy",
+     "wrong": [
+      "the city was burned",
+      "the king was taken",
+      "the LORD departed"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The LORD sent to them by his messengers, ____, because he had compassion on his people.",
+     "answer": "rising up early and sending",
+     "wrong": [
+      "again and again with warnings",
+      "day and night without ceasing",
+      "one after another in love"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "As long as it lay desolate, it kept Sabbath, to fulfill ____.",
+     "answer": "seventy years",
+     "wrong": [
+      "the law of Moses",
+      "the days of mourning",
+      "forty years"
+     ],
+     "v": 21
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jehoahaz is removed by the king of Egypt",
+      "Jehoiakim is bound and taken toward Babylon",
+      "The Chaldeans burn God's house",
+      "Cyrus proclaims the return to Jerusalem"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Chaldeans burned God's house and broke down the wall of Jerusalem.",
+     "answer": true,
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Zedekiah stayed loyal to Nebuchadnezzar, who had made him swear by God.",
+     "answer": false,
+     "v": 13
+    }
+   ]
+  }
+ }
+}

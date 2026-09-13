@@ -1,0 +1,86 @@
+{"book":"MIC","chapters":{
+"1":{"keyVerse":3,"questions":[
+{"t": "choice", "d": 1, "q": "Which two cities does the LORD name as the disobedience of Jacob and the high places of Judah?", "options": ["Samaria and Jerusalem", "Samaria and Bethel", "Jerusalem and Hebron", "Dan and Bethel"], "v": 5},
+{"t": "choice", "d": 1, "q": "What will God make Samaria like?", "options": ["A rubble heap of the field", "A desert without water", "A threshing floor after harvest", "A city with broken gates"], "v": 6},
+{"t": "choice", "d": 2, "q": "What does the prophet say he will do because of the coming judgment?", "options": ["Go stripped and naked, wailing", "Tear his robe and fast", "Sit silent in sackcloth", "Flee to the hills of Judah"], "v": 8},
+{"t": "choice", "d": 3, "q": "Which town is called the beginning of sin to the daughter of Zion?", "options": ["Lachish", "Gath", "Mareshah", "Achzib"], "v": 13},
+{"t": "blank", "d": 2, "q": "The mountains melt under him, and the valleys split apart like ____.", "answer": "wax before the fire", "wrong": ["chaff before the wind", "ice under the sun", "clay in the rain"], "v": 4},
+{"t": "blank", "d": 3, "q": "For of the hire of a prostitute has she gathered them, and to ____ shall they return.", "answer": "the hire of a prostitute", "wrong": ["the dust of the earth", "the fire of the altar", "the house of her lovers"], "v": 7},
+{"t": "blank", "d": 3, "q": "Shave your heads, and cut off your hair for ____.", "answer": "the children of your delight", "wrong": ["the dead of your city", "the sins of your fathers", "the fall of your walls"], "v": 16},
+{"t": "order", "d": 2, "items": ["The LORD comes down and the mountains melt", "Samaria is made a rubble heap", "The prophet wails like the jackals", "Lachish is told to harness the chariot"], "v": 3},
+{"t": "tf", "d": 1, "q": "The LORD's word came to Micah in the days of Jotham, Ahaz, and Hezekiah, kings of Judah.", "answer": true, "v": 1},
+{"t": "tf", "d": 2, "q": "The prophet says Samaria's wound will stop before it reaches Judah.", "answer": false, "v": 9}
+]},
+"2":{"keyVerse":1,"questions":[
+{"t": "choice", "d": 1, "q": "What do the people in the opening woe covet and seize?", "options": ["Fields and houses", "Cattle and sheep", "Gold and silver", "Servants and donkeys"], "v": 2},
+{"t": "choice", "d": 1, "q": "What do the people tell the prophets?", "options": ["Don't prophesy about these things", "Speak only smooth words to us", "Prophesy only in the temple", "Go back to your own land"], "v": 6},
+{"t": "choice", "d": 2, "q": "What kind of prophet would this people gladly accept?", "options": ["One who prophesies of wine and strong drink", "One who promises victory in battle", "One who reads signs in the stars", "One who speaks in the king's name"], "v": 11},
+{"t": "choice", "d": 3, "q": "What does God say his people strip from those who pass by?", "options": ["The robe and clothing", "Their sandals and staffs", "Their bread and water", "Their weapons and shields"], "v": 8},
+{"t": "blank", "d": 2, "q": "They oppress a man and his house, even ____.", "answer": "a man and his heritage", "wrong": ["a widow and her children", "a stranger and his flock", "a priest and his altar"], "v": 2},
+{"t": "blank", "d": 3, "q": "I will put them together as ____, as a flock in the middle of their pasture.", "answer": "the sheep of Bozrah", "wrong": ["the sheep of Bashan", "the goats of Gilead", "the lambs of Sharon"], "v": 12},
+{"t": "blank", "d": 2, "q": "Arise, and depart! For this is not ____.", "answer": "your resting place", "wrong": ["your promised inheritance", "your father's house", "your land forever"], "v": 10},
+{"t": "order", "d": 2, "items": ["Woe to those who plot evil on their beds", "God plans a disaster against these people", "The people say, Don't prophesy", "God promises to gather the remnant of Israel"], "v": 1},
+{"t": "tf", "d": 3, "q": "At the end of the chapter, their king passes on before them with the LORD at their head.", "answer": true, "v": 13},
+{"t": "tf", "d": 1, "q": "The oppressors plan their evil in the morning and carry it out at night.", "answer": false, "v": 1}
+]},
+"3":{"keyVerse":8,"questions":[
+{"t": "choice", "d": 1, "q": "Whom does Micah ask, \"Isn't it for you to know justice?\"", "options": ["The heads of Jacob and rulers of Israel", "The priests of the temple", "The kings of the nations", "The elders of Moab"], "v": 1},
+{"t": "choice", "d": 1, "q": "What will happen to Zion because of its leaders?", "options": ["It will be plowed like a field", "It will be flooded by waters", "It will be sold to Egypt", "It will be rebuilt in gold"], "v": 12},
+{"t": "choice", "d": 2, "q": "When do the false prophets proclaim \"Peace\"?", "options": ["When they are given food", "When the king is present", "When the enemy retreats", "When sacrifices are offered"], "v": 5},
+{"t": "choice", "d": 2, "q": "What happens when the evil rulers cry to the LORD?", "options": ["He will not answer them", "He forgives them at once", "He sends them a new prophet", "He gives them one more year"], "v": 4},
+{"t": "choice", "d": 3, "q": "By what does Micah say he is full of power?", "options": ["The LORD's Spirit", "The words of the law", "The prayers of the people", "The anointing of the priests"], "v": 8},
+{"t": "blank", "d": 2, "q": "Her leaders judge for bribes, and her priests ____.", "answer": "teach for a price", "wrong": ["sacrifice for gain", "bless for silver", "pray for rewards"], "v": 11},
+{"t": "blank", "d": 3, "q": "Who build up Zion with blood, and Jerusalem ____.", "answer": "with iniquity", "wrong": ["with violence", "with false weights", "with stolen silver"], "v": 10},
+{"t": "blank", "d": 2, "q": "They lean on the LORD, and say, \"Isn't the LORD among us? ____.\"", "answer": "No disaster will come on us", "wrong": ["He will fight our battles", "Our walls will never fall", "His temple stands forever"], "v": 11},
+{"t": "tf", "d": 1, "q": "Micah describes the rulers as chopping up God's people like meat for the pot.", "answer": true, "v": 3},
+{"t": "tf", "d": 3, "q": "Micah says the sun will go down on the priests, and the day will be black over them.", "answer": false, "v": 6}
+]},
+"4":{"keyVerse":4,"questions":[
+{"t": "choice", "d": 1, "q": "What will the nations beat their swords into?", "options": ["Plowshares", "Pruning hooks", "Sickles", "Crowns"], "v": 3},
+{"t": "choice", "d": 1, "q": "From where will the law go out?", "options": ["Zion", "Bethel", "Samaria", "Sinai"], "v": 2},
+{"t": "choice", "d": 3, "q": "What question is asked of the daughter of Zion as she cries aloud?", "options": ["Is there no king in you?", "Where are your prophets now?", "Why have you forsaken God?", "Who will build your walls?"], "v": 9},
+{"t": "choice", "d": 2, "q": "What does God gather the hostile nations like?", "options": ["Sheaves to the threshing floor", "Sheep into a pen", "Fish into a net", "Stones into a heap"], "v": 12},
+{"t": "blank", "d": 2, "q": "Nation will not lift up sword against nation, neither will they ____.", "answer": "learn war any more", "wrong": ["go out to battle", "count their soldiers", "build their fortresses"], "v": 3},
+{"t": "blank", "d": 3, "q": "I will make your horn iron, and I will make ____.", "answer": "your hoofs bronze", "wrong": ["your teeth sharp", "your shield gold", "your walls stone"], "v": 13},
+{"t": "blank", "d": 3, "q": "I will assemble that which is lame, and I will gather ____.", "answer": "that which is driven away", "wrong": ["that which is broken", "the sheep that are lost", "the poor of the land"], "v": 6},
+{"t": "order", "d": 2, "items": ["Nations stream to the LORD's mountain", "The lame are made a remnant", "Zion goes out to Babylon and is rescued", "Zion is told to arise and thresh"], "v": 1},
+{"t": "tf", "d": 1, "q": "Many nations will say, \"Let's go up to the mountain of the LORD.\"", "answer": true, "v": 2},
+{"t": "tf", "d": 2, "q": "The nations gathered against Zion understand the LORD's counsel.", "answer": false, "v": 12}
+]},
+"5":{"keyVerse":2,"questions":[
+{"t": "choice", "d": 1, "q": "Which town is called small among the clans of Judah?", "options": ["Bethlehem Ephrathah", "Hebron", "Moresheth Gath", "Bethel"], "v": 2},
+{"t": "choice", "d": 1, "q": "From which invader will the coming ruler deliver them?", "options": ["The Assyrian", "The Babylonian", "The Egyptian", "The Philistine"], "v": 6},
+{"t": "choice", "d": 3, "q": "What will be raised against the Assyrian when he invades?", "options": ["Seven shepherds and eight leaders", "Three shepherds and four leaders", "Twelve shepherds and seventy elders", "Two captains and one king"], "v": 5},
+{"t": "choice", "d": 2, "q": "Among the nations, the remnant of Jacob will be like what among the flocks of sheep?", "options": ["A young lion", "A hungry wolf", "A bear robbed of cubs", "A strong shepherd"], "v": 8},
+{"t": "choice", "d": 2, "q": "Which of these does God say he will cut off in that day?", "options": ["Horses and chariots", "Priests and Levites", "Fields and vineyards", "Songs and feasts"], "v": 10},
+{"t": "blank", "d": 3, "q": "They will strike the judge of Israel with ____.", "answer": "a rod on the cheek", "wrong": ["a sword in the side", "a stone on the head", "a whip on the back"], "v": 1},
+{"t": "blank", "d": 2, "q": "Whose goings out are from of old, from ____.", "answer": "ancient times", "wrong": ["the house of David", "the ends of the earth", "the days of Moses"], "v": 2},
+{"t": "blank", "d": 2, "q": "He will be ____ when Assyria invades our land.", "answer": "our peace", "wrong": ["our shield", "our strong tower", "our mighty king"], "v": 5},
+{"t": "tf", "d": 1, "q": "God says he will uproot Asherah poles and cut off engraved images.", "answer": true, "v": 14},
+{"t": "tf", "d": 3, "q": "The remnant of Jacob is compared to dew that waits for the sons of men.", "answer": false, "v": 7}
+]},
+"6":{"keyVerse":8,"questions":[
+{"t": "blank", "d": 1, "q": "What does the LORD require of you, but to act justly, ____, and to walk humbly with your God?", "answer": "to love mercy", "wrong": ["to keep his law", "to offer sacrifice", "to seek peace"], "v": 8},
+{"t": "choice", "d": 1, "q": "Before what does the LORD tell his people to plead their case?", "options": ["The mountains and hills", "The elders at the gate", "The priests in the temple", "The kings of the nations"], "v": 1},
+{"t": "choice", "d": 2, "q": "Whom did God send before Israel when he brought them out of Egypt?", "options": ["Moses, Aaron, and Miriam", "Moses, Joshua, and Caleb", "Aaron, Eleazar, and Phinehas", "Moses, Jethro, and Aaron"], "v": 4},
+{"t": "choice", "d": 2, "q": "Which king of Moab does God tell his people to remember?", "options": ["Balak", "Eglon", "Mesha", "Sihon"], "v": 5},
+{"t": "choice", "d": 3, "q": "Whose statutes and works do the people keep, leading to their ruin?", "options": ["Omri and Ahab's house", "Jeroboam and Nadab", "Manasseh and Amon", "Ahaz and his sons"], "v": 16},
+{"t": "blank", "d": 2, "q": "Will the LORD be pleased with thousands of rams? With tens of thousands of ____?", "answer": "rivers of oil", "wrong": ["jars of wine", "bushels of wheat", "bars of gold"], "v": 7},
+{"t": "blank", "d": 3, "q": "Shall I tolerate dishonest scales, and ____?", "answer": "a bag of deceitful weights", "wrong": ["a false measuring rod", "a cup of stolen wine", "a purse of unjust silver"], "v": 11},
+{"t": "blank", "d": 2, "q": "My people, what have I done to you? ____? Answer me!", "answer": "How have I burdened you", "wrong": ["Why have you forsaken me", "Where did I fail you", "Why do you forget me"], "v": 3},
+{"t": "tf", "d": 1, "q": "The speaker asks whether he should give his firstborn for his disobedience.", "answer": true, "v": 7},
+{"t": "tf", "d": 3, "q": "God says the people will sow and reap, but will not eat the bread.", "answer": false, "v": 15}
+]},
+"7":{"keyVerse":7,"questions":[
+{"t": "choice", "d": 1, "q": "Where will God cast all their sins?", "options": ["Into the depths of the sea", "Into the wilderness", "Behind his back", "Into the fire"], "v": 19},
+{"t": "choice", "d": 2, "q": "Who are a man's enemies, according to the prophet?", "options": ["The men of his own house", "The rulers of his city", "The nations around him", "The priests of the temple"], "v": 6},
+{"t": "choice", "d": 3, "q": "What does the prophet say the best of them is like?", "options": ["A brier", "A broken reed", "A dry thistle", "A wild vine"], "v": 4},
+{"t": "choice", "d": 3, "q": "In which fertile lands does the prophet ask God to let his flock feed?", "options": ["Bashan and Gilead", "Sharon and Carmel", "Jericho and the Jordan", "Moab and Edom"], "v": 14},
+{"t": "blank", "d": 2, "q": "When I fall, I will arise. When I sit in darkness, the LORD will be ____.", "answer": "a light to me", "wrong": ["my shield and strength", "a lamp for my feet", "a strong tower"], "v": 8},
+{"t": "blank", "d": 2, "q": "He doesn't retain his anger forever, because ____.", "answer": "he delights in loving kindness", "wrong": ["he remembers his covenant", "his people have repented", "he is slow to wrath"], "v": 18},
+{"t": "blank", "d": 3, "q": "Shepherd your people with your staff, ____.", "answer": "the flock of your heritage", "wrong": ["the sheep of your pasture", "the lambs of your fold", "the children of your house"], "v": 14},
+{"t": "order", "d": 2, "items": ["The godly man has perished from the earth", "Don't trust a neighbor or a friend", "A day to build your walls is announced", "Who is a God like you?"], "v": 2},
+{"t": "tf", "d": 1, "q": "The enemy who said, \"Where is the LORD your God?\" will be trodden down like mire.", "answer": true, "v": 10},
+{"t": "tf", "d": 1, "q": "The prophet says the ruler and the judge refuse to take bribes.", "answer": false, "v": 3}
+]}
+}}

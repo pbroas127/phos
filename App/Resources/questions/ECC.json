@@ -1,0 +1,1353 @@
+{
+ "book": "ECC",
+ "chapters": {
+  "1": {
+   "keyVerse": 18,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How is the Preacher described at the start of the book?",
+     "options": [
+      "The son of David, king in Jerusalem",
+      "A priest in the house of God",
+      "A prophet in Judah",
+      "A servant of the king of Israel"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the Preacher say about the rivers?",
+     "options": [
+      "They run into the sea, yet it is not full",
+      "They dry up in the summer",
+      "They carry the dust of the earth away",
+      "They will one day stop flowing"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the Preacher say is not satisfied with seeing?",
+     "options": [
+      "The eye",
+      "The heart",
+      "The soul",
+      "The mind"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the Preacher call the task of searching out all that is done under the sky?",
+     "options": [
+      "A heavy burden God has given",
+      "A gift from the hand of God",
+      "The beginning of wisdom",
+      "The work of fools"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "That which has been is that which shall be; and there is ____.",
+     "answer": "no new thing under the sun",
+     "wrong": [
+      "no rest for the weary",
+      "nothing that lasts forever",
+      "no end to man's labor"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I have seen all the works that are done under the sun; and behold, all is vanity and ____.",
+     "answer": "a chasing after wind",
+     "wrong": [
+      "a vapor in the morning",
+      "a shadow that passes",
+      "a dream in the night"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "That which is crooked can't be made straight; and that which is lacking ____.",
+     "answer": "can't be counted",
+     "wrong": [
+      "can't be filled",
+      "can't be restored",
+      "can't be hidden"
+     ],
+     "v": 15
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Vanity of vanities, all is vanity",
+      "Generations go, but the earth remains",
+      "The Preacher was king over Israel",
+      "In much wisdom is much grief"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Preacher says one generation goes and another comes, but the earth remains forever.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The Preacher says that he who increases knowledge increases joy.",
+     "answer": false,
+     "v": 18
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 13,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the Preacher first test his heart with?",
+     "options": [
+      "Mirth and pleasure",
+      "Fasting and prayer",
+      "War and conquest",
+      "Study of the law"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the Preacher find when he looked at all the works his hands had done?",
+     "options": [
+      "All was vanity, with no profit",
+      "He had earned lasting rest",
+      "His name would be remembered",
+      "God was pleased with his labor"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the Preacher hate all his labor?",
+     "options": [
+      "He must leave it to the man after him",
+      "It had made him poor",
+      "His servants had wasted it",
+      "It had turned his heart from God"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does God give to the sinner, according to the end of the chapter?",
+     "options": [
+      "Travail, to gather and heap up",
+      "Wisdom, knowledge, and joy",
+      "Long life and riches",
+      "Rest from all his enemies"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Then I saw that wisdom excels folly, as far as ____.",
+     "answer": "light excels darkness",
+     "wrong": [
+      "the heavens excel the earth",
+      "gold excels silver",
+      "the day excels the night"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The wise man's eyes are in his head, and ____.",
+     "answer": "the fool walks in darkness",
+     "wrong": [
+      "the fool stumbles at noon",
+      "the fool closes his eyes",
+      "the fool follows his heart"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For all his days are sorrows; yes, even in the night ____.",
+     "answer": "his heart takes no rest",
+     "wrong": [
+      "his eyes see no sleep",
+      "his soul finds no peace",
+      "his labor does not end"
+     ],
+     "v": 23
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "He tests himself with mirth",
+      "He builds houses and plants vineyards",
+      "He sees that wisdom excels folly",
+      "He hates all his labor"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Preacher says the wise man will be remembered forever, unlike the fool.",
+     "answer": false,
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Preacher says the ability to eat, drink, and enjoy good in labor is from the hand of God.",
+     "answer": true,
+     "v": 24
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What has God set in the hearts of men?",
+     "options": [
+      "Eternity",
+      "Wisdom",
+      "Fear",
+      "Joy"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In the list of times, what is paired with a time to weep?",
+     "options": [
+      "A time to laugh",
+      "A time to mourn",
+      "A time to heal",
+      "A time to sing"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why has God made what he does last forever, with nothing added or taken away?",
+     "options": [
+      "That men should fear before him",
+      "That men should rest in it",
+      "That the wise may understand it",
+      "That nothing should be forgotten"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the Preacher see in the place of justice?",
+     "options": [
+      "Wickedness",
+      "Mercy",
+      "Silence",
+      "Weeping"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "A time to tear, and a time to sew; a time to keep silence, and ____.",
+     "answer": "a time to speak",
+     "wrong": [
+      "a time to sing",
+      "a time to listen",
+      "a time to shout"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He has made ____.",
+     "answer": "everything beautiful in its time",
+     "wrong": [
+      "all things new in their season",
+      "every work perfect from the start",
+      "each day good for the righteous"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "All go to one place. All are from the dust, and ____.",
+     "answer": "all turn to dust again",
+     "wrong": [
+      "all return to God",
+      "all rise up again",
+      "all sleep in the earth"
+     ],
+     "v": 20
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "A time to be born",
+      "A time to kill",
+      "A time to embrace",
+      "A time for peace"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Preacher says man has an advantage over the animals because man does not die as they do.",
+     "answer": false,
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Preacher says God seeks again that which is passed away.",
+     "answer": true,
+     "v": 15
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 12,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why does the Preacher say two are better than one?",
+     "options": [
+      "If one falls, the other lifts him up",
+      "Two can own more land",
+      "Two can divide the labor evenly",
+      "The king favors those with friends"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the oppressed lack, as the Preacher says twice?",
+     "options": [
+      "A comforter",
+      "Bread",
+      "A king",
+      "A home"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the Preacher say all labor and achievement come from?",
+     "options": [
+      "The envy of a man's neighbor",
+      "The fear of poverty",
+      "The desire for honor",
+      "The command of the king"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What is said of the man who is alone, with neither son nor brother?",
+     "options": [
+      "His eyes are not satisfied with wealth",
+      "He finds peace in quietness",
+      "He gives his wealth to the poor",
+      "He rests from his labor"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "If two lie together, what do they have?",
+     "options": [
+      "Warmth",
+      "Rest",
+      "Safety",
+      "Comfort"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Two shall withstand him; and a threefold cord ____.",
+     "answer": "is not quickly broken",
+     "wrong": [
+      "is stronger than iron",
+      "cannot be cut apart",
+      "will hold the heaviest load"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Better is a handful, with quietness, than ____ and chasing after wind.",
+     "answer": "two handfuls with labor",
+     "wrong": [
+      "a storehouse full of grain",
+      "a house full of feasting",
+      "great riches with trouble"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Better is a poor and wise youth than ____ who doesn't know how to receive admonition any more.",
+     "answer": "an old and foolish king",
+     "wrong": [
+      "a rich and proud man",
+      "a mighty and wicked ruler",
+      "an old and wealthy prince"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The Preacher praised the living more than the dead.",
+     "answer": false,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Preacher says the fool folds his hands together and ruins himself.",
+     "answer": true,
+     "v": 5
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the Preacher say about making vows to God?",
+     "options": [
+      "Better not to vow than to vow and not pay",
+      "Vows should be made only in the temple",
+      "Every vow is foolish and should be avoided",
+      "A vow may be changed if it was a mistake"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why should your words be few before God?",
+     "options": [
+      "God is in heaven, and you on earth",
+      "God already knows your needs",
+      "Many words anger the priests",
+      "Silence is the sacrifice of the wise"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why should you not marvel at the oppression of the poor in a district?",
+     "options": [
+      "Each official is watched by a higher one",
+      "The poor will be repaid later",
+      "The king will soon judge it",
+      "It has always been this way"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does a man leave this life, according to the Preacher?",
+     "options": [
+      "Naked, as he came",
+      "With his riches in his hand",
+      "With a good name",
+      "In peace, full of days"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the Preacher call wealth kept by its owner to his harm?",
+     "options": [
+      "A grievous evil",
+      "A vanity of fools",
+      "A snare of the rich",
+      "A burden from God"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The sleep of a laboring man is sweet, whether he eats little or much; but ____ will not allow him to sleep.",
+     "answer": "the abundance of the rich",
+     "wrong": [
+      "the worry of the proud",
+      "the hunger of the poor",
+      "the noise of the city"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Guard your steps when you go to God's house; for to draw near to listen is better than ____.",
+     "answer": "to give the sacrifice of fools",
+     "wrong": [
+      "to offer many burnt offerings",
+      "to make a vow in haste",
+      "to sing with the congregation"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For as a dream comes with a multitude of cares, so a fool's speech ____.",
+     "answer": "with a multitude of words",
+     "wrong": [
+      "with a heart full of pride",
+      "with the laughter of mockers",
+      "with empty and hasty vows"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Preacher says he who loves silver will be satisfied with silver.",
+     "answer": false,
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Preacher says God occupies a man with the joy of his heart.",
+     "answer": true,
+     "v": 20
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What evil does the Preacher describe in the rich man's life?",
+     "options": [
+      "God gives him no power to enjoy it",
+      "He loses it all in war",
+      "His sons waste it",
+      "The king takes it away"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who eats the rich man's wealth instead of him?",
+     "options": [
+      "An alien",
+      "His servant",
+      "His son",
+      "The king"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the Preacher ask about the wise man?",
+     "options": [
+      "What advantage has he more than the fool?",
+      "Why does he not rule the city?",
+      "Who will remember his name?",
+      "Why does he labor at night?"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What can man not do with him who is mightier than he?",
+     "options": [
+      "Contend with him",
+      "Hide from him",
+      "Know his name",
+      "Serve him"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "All the labor of man is for his mouth, and yet ____.",
+     "answer": "the appetite is not filled",
+     "wrong": [
+      "the heart is not glad",
+      "the eye is not satisfied",
+      "the soul finds no rest"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Better is the sight of the eyes than ____.",
+     "answer": "the wandering of the desire",
+     "wrong": [
+      "the dreams of the night",
+      "the words of the foolish",
+      "the hope of the heart"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For who knows what is good for man in life, all the days of his vain life which he spends ____?",
+     "answer": "like a shadow",
+     "wrong": [
+      "like a vapor",
+      "like a dream",
+      "like the grass"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Preacher says that even if a man lives a thousand years twice and fails to enjoy good, all go to one place.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Preacher says a man with a hundred children and many years is better off than a stillborn child, even if he is not filled with good.",
+     "answer": false,
+     "v": 3
+    }
+   ]
+  },
+  "7": {
+   "keyVerse": 20,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the Preacher say a good name is better than?",
+     "options": [
+      "Fine perfume",
+      "Great riches",
+      "A long life",
+      "Silver and gold"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where is the heart of the wise, according to the Preacher?",
+     "options": [
+      "In the house of mourning",
+      "In the house of feasting",
+      "In the king's court",
+      "In the house of mirth"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What is the laughter of the fool compared to?",
+     "options": [
+      "The crackling of thorns under a pot",
+      "The noise of a flowing river",
+      "The chatter of birds",
+      "The clanging of cymbals"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did God make mankind, before they searched for many inventions?",
+     "options": [
+      "Upright",
+      "Wise",
+      "Free",
+      "Humble"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Surely there is not a righteous man on earth who ____.",
+     "answer": "does good and doesn't sin",
+     "wrong": [
+      "fears God all his days",
+      "keeps all the commandments",
+      "has never been tempted"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Don't be hasty in your spirit to be angry, for anger rests ____.",
+     "answer": "in the bosom of fools",
+     "wrong": [
+      "in the heart of the proud",
+      "on the lips of the wicked",
+      "in the house of mirth"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Don't say, ____ than these? For you do not ask wisely about this.",
+     "answer": "Why were the former days better",
+     "wrong": [
+      "Why were the old ways wiser",
+      "Why were our fathers happier",
+      "Why were the early years richer"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "It is better to hear the rebuke of the wise than for a man to hear ____.",
+     "answer": "the song of fools",
+     "wrong": [
+      "the praise of kings",
+      "the laughter of friends",
+      "the flattery of men"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Preacher says the day of one's birth is better than the day of death.",
+     "answer": false,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Preacher says wisdom is a strength to the wise man more than ten rulers in a city.",
+     "answer": true,
+     "v": 19
+    }
+   ]
+  },
+  "8": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does the Preacher say to keep the king's command?",
+     "options": [
+      "Because of the oath to God",
+      "Because the king is always wise",
+      "Because the law of Moses requires it",
+      "Because the people will praise you"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does a man's wisdom do to his face?",
+     "options": [
+      "Makes it shine",
+      "Makes it pale",
+      "Makes it humble",
+      "Makes it stern"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why are the hearts of men fully set to do evil?",
+     "options": [
+      "Sentence against evil is not carried out speedily",
+      "The king does whatever he pleases",
+      "The righteous are forgotten in the city",
+      "Wisdom is despised by all"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the Preacher say there is no discharge in?",
+     "options": [
+      "War",
+      "Death",
+      "Labor",
+      "Debt"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the Preacher say about the king's word?",
+     "options": [
+      "It is supreme",
+      "It is often foolish",
+      "It passes like the wind",
+      "It must be tested"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "A man has no better thing under the sun than to eat, to drink, and ____.",
+     "answer": "to be joyful",
+     "wrong": [
+      "to rest in peace",
+      "to seek wisdom",
+      "to fear the king"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Surely I know that it will be better with those who fear God, ____.",
+     "answer": "who are reverent before him",
+     "wrong": [
+      "who keep the king's command",
+      "who labor under the sun",
+      "who give to the poor"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Even though a wise man thinks he can comprehend it, he won't ____.",
+     "answer": "be able to find it",
+     "wrong": [
+      "grow any wiser for it",
+      "see the end of it",
+      "escape its weariness"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Preacher says the wicked will lengthen their days like a shadow.",
+     "answer": false,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Preacher says there are righteous men to whom it happens according to the work of the wicked.",
+     "answer": true,
+     "v": 14
+    }
+   ]
+  },
+  "9": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who delivered the little city from the great king?",
+     "options": [
+      "A poor wise man",
+      "A mighty warrior",
+      "The city's prince",
+      "A prophet of God"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happened to that man after the city was delivered?",
+     "options": [
+      "No one remembered him",
+      "He was made ruler",
+      "He was given great riches",
+      "He was put to death"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the Preacher say about the dead?",
+     "options": [
+      "They don't know anything",
+      "They watch over the living",
+      "They rest in great joy",
+      "They remember their works"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What are men snared in an evil time compared to?",
+     "options": [
+      "Fish taken in an evil net",
+      "Sheep without a shepherd",
+      "Grass cut down in the field",
+      "Deer caught in a pit"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the Preacher say about the words of the wise heard in quiet?",
+     "options": [
+      "They are better than a ruler's cry among fools",
+      "They are like the crackling of thorns",
+      "They bring riches to the speaker",
+      "They are heavier than gold"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For to him who is joined with all the living there is hope; for a living dog is better than ____.",
+     "answer": "a dead lion",
+     "wrong": [
+      "a sleeping lion",
+      "a caged bear",
+      "a fallen king"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The race is not to the swift, nor the battle to the strong; but ____ happen to them all.",
+     "answer": "time and chance",
+     "wrong": [
+      "sorrow and trouble",
+      "death and judgment",
+      "good and evil"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Let your garments be always white, and ____.",
+     "answer": "don't let your head lack oil",
+     "wrong": [
+      "don't let your cup be empty",
+      "don't let your lamp go out",
+      "don't let your feet be bare"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Preacher says there is work, planning, and wisdom in Sheol.",
+     "answer": false,
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Preacher says wisdom is better than weapons of war, but one sinner destroys much good.",
+     "answer": true,
+     "v": 18
+    }
+   ]
+  },
+  "10": {
+   "keyVerse": 12,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What causes the oil of the perfumer to produce an evil odor?",
+     "options": [
+      "Dead flies",
+      "Too much heat",
+      "A cracked jar",
+      "Old age"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why should you not curse the king, even in your thoughts?",
+     "options": [
+      "A bird of the sky may carry your voice",
+      "The king knows all hearts",
+      "Your servant will betray you",
+      "God will curse you in return"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What upside down sight does the Preacher say he has seen?",
+     "options": [
+      "Servants on horses, princes walking",
+      "Fools giving wise counsel",
+      "Kings bowing to beggars",
+      "Priests working in the fields"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happens by slothfulness, according to the Preacher?",
+     "options": [
+      "The roof sinks in",
+      "The field grows thorns",
+      "The vineyard is lost",
+      "The storehouse is empty"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the Preacher say if the snake bites before it is charmed?",
+     "options": [
+      "The charmer's tongue has no profit",
+      "The charmer must flee",
+      "The snake loses its venom",
+      "The charmer dies at once"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "He who digs a pit ____.",
+     "answer": "may fall into it",
+     "wrong": [
+      "will find treasure",
+      "may bury his enemy",
+      "will surely escape"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "If the ax is blunt, and one doesn't sharpen the edge, then he must use more strength; but ____.",
+     "answer": "skill brings success",
+     "wrong": [
+      "patience brings reward",
+      "wisdom saves labor",
+      "rest restores strength"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "A wise man's heart is at his right hand, but ____.",
+     "answer": "a fool's heart at his left",
+     "wrong": [
+      "a fool's heart is in his mouth",
+      "a fool's heart wanders far",
+      "a fool's heart is in his feet"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The Preacher says that if the ruler's anger rises against you, you should leave your place.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Preacher says, Woe to you, land, when your king is a child, and your princes eat in the morning.",
+     "answer": true,
+     "v": 16
+    }
+   ]
+  },
+  "11": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the Preacher say will happen to bread cast on the waters?",
+     "options": [
+      "You shall find it after many days",
+      "The fish will eat it",
+      "It will be lost forever",
+      "It will feed the poor"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What will the one who observes the wind fail to do?",
+     "options": [
+      "Sow",
+      "Reap",
+      "Travel",
+      "Build"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why should you give a portion to seven, even to eight?",
+     "options": [
+      "You don't know what evil will be on the earth",
+      "The poor will repay you",
+      "God rewards the generous",
+      "Your neighbor will praise you"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Rejoice, young man, in your youth; but know that for all these things ____.",
+     "answer": "God will bring you into judgment",
+     "wrong": [
+      "you will give an account to men",
+      "your days will pass like a shadow",
+      "your strength will soon fail"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "In the morning sow your seed, and in the evening ____.",
+     "answer": "don't withhold your hand",
+     "wrong": [
+      "rest from your labor",
+      "gather in your harvest",
+      "count what you have sown"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Truly the light is sweet, and it is a pleasant thing for the eyes ____.",
+     "answer": "to see the sun",
+     "wrong": [
+      "to behold the stars",
+      "to rest at evening",
+      "to look on the fields"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The Preacher says a man who lives many years should remember the days of darkness, for they shall be many.",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Preacher says that where a tree falls, the wind will move it again.",
+     "answer": false,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Preacher says we can know how the bones grow in the womb.",
+     "answer": false,
+     "v": 5
+    }
+   ]
+  },
+  "12": {
+   "keyVerse": 13,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "When does the Preacher say to remember your Creator?",
+     "options": [
+      "In the days of your youth",
+      "In the day of trouble",
+      "At the end of your life",
+      "When you go to God's house"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What are the words of the wise compared to?",
+     "options": [
+      "Goads",
+      "Honey",
+      "Arrows",
+      "Lamps"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What happens to the spirit when the dust returns to the earth?",
+     "options": [
+      "It returns to God who gave it",
+      "It goes down to Sheol",
+      "It sleeps until judgment",
+      "It wanders the earth"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the Preacher say of making many books?",
+     "options": [
+      "There is no end",
+      "It brings great honor",
+      "It is the work of the wise",
+      "It gives rest to the soul"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What saying does the Preacher repeat near the end of the book?",
+     "options": [
+      "Vanity of vanities, all is vanity",
+      "There is no new thing under the sun",
+      "For everything there is a season",
+      "Two are better than one"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Fear God and keep his commandments; for this is ____.",
+     "answer": "the whole duty of man",
+     "wrong": [
+      "the beginning of wisdom",
+      "the path of life",
+      "the gift of God"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Furthermore, my son, be admonished: much study is ____.",
+     "answer": "a weariness of the flesh",
+     "wrong": [
+      "a burden to the soul",
+      "the way of the wise",
+      "a chasing after wind"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Before the silver cord is severed, or ____ is broken.",
+     "answer": "the golden bowl",
+     "wrong": [
+      "the clay vessel",
+      "the silver cup",
+      "the bronze lamp"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The Preacher says God will bring every work into judgment, with every hidden thing, whether good or evil.",
+     "answer": true,
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Once the Preacher became wise, he stopped teaching the people.",
+     "answer": false,
+     "v": 9
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,935 @@
+{
+ "book": "SNG",
+ "chapters": {
+  "1": {
+   "keyVerse": 15,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the speaker say is better than wine?",
+     "options": [
+      "Your love",
+      "Your words",
+      "Your name",
+      "Your voice"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "To whom does the woman say, \"I am dark, but lovely\"?",
+     "options": [
+      "The daughters of Jerusalem",
+      "The watchmen of the city",
+      "The shepherds' companions",
+      "Her mother's sons"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does the woman say she is dark?",
+     "options": [
+      "The sun has scorched her",
+      "She came from the tents of Kedar",
+      "She was born in Egypt",
+      "She traveled through the desert"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To what does he compare his love?",
+     "options": [
+      "A steed in Pharaoh's chariots",
+      "A dove in the clefts of the rock",
+      "A lily among thorns",
+      "A gazelle on the hills"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where does the cluster of henna blossoms come from?",
+     "options": [
+      "The vineyards of En Gedi",
+      "The gardens of Lebanon",
+      "The fields of Sharon",
+      "The hills of Gilead"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Behold, you are beautiful, my love. Behold, you are beautiful. Your eyes are ____.",
+     "answer": "like doves",
+     "wrong": [
+      "like pools of water",
+      "like the morning",
+      "like precious jewels"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They made me keeper of the vineyards. ____.",
+     "answer": "I haven't kept my own vineyard",
+     "wrong": [
+      "I have no rest at noon",
+      "I have lost my own flock",
+      "I have no time for love"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Tell me, you whom my soul loves, where you graze your flock, where you ____.",
+     "answer": "rest them at noon",
+     "wrong": [
+      "lead them at dawn",
+      "water them at evening",
+      "keep them by night"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The woman says the king has brought her into his rooms.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The rafters of their house are made of cedar.",
+     "answer": false,
+     "v": 17
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 4,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the woman call herself at the start of the chapter?",
+     "options": [
+      "A rose of Sharon, a lily of the valleys",
+      "A dove in the clefts of the rock",
+      "A locked up garden",
+      "A vine in blossom"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What is his banner over her?",
+     "options": [
+      "Love",
+      "Peace",
+      "Joy",
+      "Faithfulness"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What are the little foxes doing?",
+     "options": [
+      "Plundering the vineyards",
+      "Digging in the gardens",
+      "Stealing the lambs",
+      "Hiding in the hills"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where does the beloved stand and look in?",
+     "options": [
+      "Behind our wall, at the windows",
+      "At the gate of the city",
+      "In the doorway of the house",
+      "Under the apple tree"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "To what does she compare her beloved among the sons?",
+     "options": [
+      "The apple tree among the trees of the wood",
+      "The cedar among the trees of Lebanon",
+      "The palm tree in the desert",
+      "The fig tree beside the vineyard"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "My beloved is mine, and ____. He browses among the lilies.",
+     "answer": "I am his",
+     "wrong": [
+      "he is my friend",
+      "he is my portion",
+      "he is my delight"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For behold, the winter is past. ____.",
+     "answer": "The rain is over and gone",
+     "wrong": [
+      "The snow has melted away",
+      "The cold winds have ceased",
+      "The long nights are ended"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I adjure you, daughters of Jerusalem, that you not stir up, nor awaken love, ____.",
+     "answer": "until it so desires",
+     "wrong": [
+      "before its proper time",
+      "until the day breaks",
+      "while it is sleeping"
+     ],
+     "v": 7
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "The beloved comes leaping on the mountains",
+      "He says, Rise up and come away",
+      "He calls her his dove in the rock",
+      "Catch for us the little foxes"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "She asks to be refreshed with apples because she is faint with love.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The voice of the nightingale is heard in our land.",
+     "answer": false,
+     "v": 12
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did she first seek the one her soul loves?",
+     "options": [
+      "On her bed by night",
+      "In the vineyards at dawn",
+      "In the fields at noon",
+      "At the gate of the city"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who found her as she went about the city?",
+     "options": [
+      "The watchmen",
+      "The daughters of Jerusalem",
+      "The shepherds",
+      "Her mother's sons"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did she bring him after she found him?",
+     "options": [
+      "Into her mother's house",
+      "Into the king's rooms",
+      "To the vineyard",
+      "To the banquet hall"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whose carriage comes up from the wilderness?",
+     "options": [
+      "Solomon's",
+      "Pharaoh's",
+      "The queen of Sheba's",
+      "David's"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why does every mighty man have his sword on his thigh?",
+     "options": [
+      "Because of fear in the night",
+      "To honor the king's wedding",
+      "Because robbers are near",
+      "As a sign of his rank"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I held him, and ____, until I had brought him into my mother's house.",
+     "answer": "would not let him go",
+     "wrong": [
+      "called him by name",
+      "wept for joy",
+      "kissed his hand"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Who is this who comes up from the wilderness like ____?",
+     "answer": "pillars of smoke",
+     "wrong": [
+      "clouds of dust",
+      "a flame of fire",
+      "the morning star"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "See King Solomon, with the crown with which ____ crowned him, in the day of his weddings.",
+     "answer": "his mother has",
+     "wrong": [
+      "the people have",
+      "the priests have",
+      "his father has"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When she sought him on her bed by night, she found him at once.",
+     "answer": false,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The pillars of Solomon's carriage were made of gold.",
+     "answer": false,
+     "v": 10
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Along with a locked up spring and a sealed fountain, what does he call his bride?",
+     "options": [
+      "A locked up garden",
+      "A vineyard in blossom",
+      "A rose of Sharon",
+      "A tower of ivory"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "To what are her eyes compared at the start of the chapter?",
+     "options": [
+      "Doves behind her veil",
+      "Pools in Heshbon",
+      "Jewels of gold",
+      "Stars in the night"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To what is her neck compared?",
+     "options": [
+      "David's tower built for an armory",
+      "An ivory tower",
+      "The tower of Lebanon",
+      "A pillar of marble"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "From where does he call his bride to come with him?",
+     "options": [
+      "Lebanon",
+      "Egypt",
+      "Gilead",
+      "Carmel"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which winds does she call to blow on her garden?",
+     "options": [
+      "The north wind and the south",
+      "The east wind and the west",
+      "The morning wind",
+      "The wind from the desert"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "You are all beautiful, my love. ____.",
+     "answer": "There is no spot in you",
+     "wrong": [
+      "None can compare with you",
+      "Your beauty has no end",
+      "You are pure as snow"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You have ravished my heart, ____, my bride.",
+     "answer": "my sister",
+     "wrong": [
+      "my dove",
+      "my love",
+      "my friend"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Your lips are like ____. Your mouth is lovely.",
+     "answer": "scarlet thread",
+     "wrong": [
+      "a crimson ribbon",
+      "the finest wine",
+      "a bed of roses"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Her teeth are compared to a newly shorn flock come up from the washing.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The smell of her garments is like the smell of Carmel.",
+     "answer": false,
+     "v": 11
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 16,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does she want the daughters of Jerusalem to tell her beloved?",
+     "options": [
+      "That she is faint with love",
+      "That she is waiting at home",
+      "That the watchmen hurt her",
+      "That she forgives him"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the watchmen do to her this time?",
+     "options": [
+      "Beat her and took her cloak",
+      "Brought her home safely",
+      "Helped her search the city",
+      "Ignored her questions"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To what is the color of his hair compared?",
+     "options": [
+      "Black as a raven",
+      "Dark as the tents of Kedar",
+      "A flock of goats",
+      "Purple wool"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What excuse does she give for not opening at once?",
+     "options": [
+      "She has taken off her robe and washed her feet",
+      "She is afraid of the dark",
+      "Her door is barred shut",
+      "Her mother is sleeping"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I was asleep, but ____. It is the voice of my beloved who knocks.",
+     "answer": "my heart was awake",
+     "wrong": [
+      "my mind was restless",
+      "my eyes were open",
+      "my soul was troubled"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "My beloved is white and ruddy. ____.",
+     "answer": "The best among ten thousand",
+     "wrong": [
+      "The fairest of all men",
+      "A prince among the people",
+      "The finest of all the sons"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "His mouth is sweetness; yes, ____.",
+     "answer": "he is altogether lovely",
+     "wrong": [
+      "he is my delight",
+      "his words are pure",
+      "he is my strength"
+     ],
+     "v": 16
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Her beloved knocks and asks her to open",
+      "She opens, but he has gone",
+      "The watchmen find and beat her",
+      "She describes her beloved to the daughters"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When she rose to open, her hands dripped with myrrh.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "She says his legs are like pillars of cedar.",
+     "answer": false,
+     "v": 15
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where has her beloved gone?",
+     "options": [
+      "Down to his garden",
+      "To the city gate",
+      "To the mountains of Bether",
+      "Away to Lebanon"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "By what name is she called to return?",
+     "options": [
+      "Shulammite",
+      "Daughter of Zion",
+      "Rose of Sharon",
+      "Prince's daughter"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides Jerusalem, what city is she said to be as beautiful as?",
+     "options": [
+      "Tirzah",
+      "Samaria",
+      "Hebron",
+      "Bethel"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does he say about his dove, his perfect one?",
+     "options": [
+      "She is unique, her mother's only daughter",
+      "She is the youngest of many sisters",
+      "She is a queen among queens",
+      "She was raised in the king's house"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did he go down to the nut tree grove?",
+     "options": [
+      "To see whether the vine budded",
+      "To gather lilies",
+      "To find his beloved",
+      "To rest in the shade"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I am my beloved's, and ____. He browses among the lilies.",
+     "answer": "my beloved is mine",
+     "wrong": [
+      "he is my shepherd",
+      "my heart is his",
+      "he is my friend"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You are beautiful, my love, lovely as Jerusalem, awesome as ____.",
+     "answer": "an army with banners",
+     "wrong": [
+      "the rising sun",
+      "a mighty tower",
+      "the mountains of Lebanon"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Who is she who looks out as the morning, beautiful as the moon, ____?",
+     "answer": "clear as the sun",
+     "wrong": [
+      "bright as the stars",
+      "fair as the dawn",
+      "pure as the snow"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "He asks her to turn her eyes away because they have overcome him.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When the queens and concubines saw her, they scorned her.",
+     "answer": false,
+     "v": 9
+    }
+   ]
+  },
+  "7": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "To what tree is her stature compared?",
+     "options": [
+      "A palm tree",
+      "A cedar",
+      "An apple tree",
+      "An olive tree"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where does she invite her beloved to go?",
+     "options": [
+      "Out into the field and the villages",
+      "Into the king's rooms",
+      "Up to Jerusalem",
+      "Down to the sea"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To what is her neck compared in this chapter?",
+     "options": [
+      "An ivory tower",
+      "David's tower",
+      "A pillar of marble",
+      "A string of jewels"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To what mountain is her head compared?",
+     "options": [
+      "Carmel",
+      "Lebanon",
+      "Hermon",
+      "Gilead"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Her eyes are like the pools in which place?",
+     "options": [
+      "Heshbon",
+      "Gibeon",
+      "Siloam",
+      "Hebron"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I am my beloved's. ____.",
+     "answer": "His desire is toward me",
+     "wrong": [
+      "He is mine forever",
+      "His love is better than wine",
+      "He browses among the lilies"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Let's see whether the vine has budded, and the pomegranates are in flower. There I will ____.",
+     "answer": "give you my love",
+     "wrong": [
+      "wait for you",
+      "sing to you",
+      "rest with you"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "How beautiful are your feet in sandals, ____!",
+     "answer": "prince's daughter",
+     "wrong": [
+      "my sister, my bride",
+      "fairest among women",
+      "daughter of Zion"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "She says she has stored up precious fruits, new and old, for her beloved.",
+     "answer": true,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Her nose is compared to the tower of Lebanon which looks toward Samaria.",
+     "answer": false,
+     "v": 4
+    }
+   ]
+  },
+  "8": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the speaker ask to be set as on the heart and arm?",
+     "options": [
+      "A seal",
+      "A crown",
+      "A jewel",
+      "A banner"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the chapter say can't quench love?",
+     "options": [
+      "Many waters",
+      "Strong wine",
+      "Great riches",
+      "Long years"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did Solomon have a vineyard?",
+     "options": [
+      "Baal Hamon",
+      "En Gedi",
+      "Baal Perazim",
+      "Jezreel"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do the speakers wonder about their little sister?",
+     "options": [
+      "What to do for her when she is spoken for",
+      "Whether to send her to the king",
+      "Who will keep her vineyard",
+      "Why she has left her mother's house"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "If the little sister is a wall, what will they build on her?",
+     "options": [
+      "A turret of silver",
+      "Boards of cedar",
+      "A tower of ivory",
+      "A gate of gold"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Set me as a seal on your heart, as a seal on your arm; for love is ____.",
+     "answer": "strong as death",
+     "wrong": [
+      "sweeter than honey",
+      "better than wine",
+      "higher than the heavens"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "If a man would give all the wealth of his house for love, ____.",
+     "answer": "he would be utterly scorned",
+     "wrong": [
+      "he could never buy it",
+      "he would still be poor",
+      "it would not be enough"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Come away, my beloved! Be like a gazelle or a young stag ____!",
+     "answer": "on the mountains of spices",
+     "wrong": [
+      "on the hills of Lebanon",
+      "on the mountains of Bether",
+      "in the fields of Sharon"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Someone comes up from the wilderness leaning on her beloved.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "In this chapter the daughters of Jerusalem are urged to awaken love quickly.",
+     "answer": false,
+     "v": 4
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,120 @@
+{
+ "book": "OBA",
+ "chapters": {
+  "1": {
+   "keyVerse": 15,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which nation is Obadiah's vision about?",
+     "options": [
+      "Edom",
+      "Moab",
+      "Assyria",
+      "Babylon"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "According to the prophecy, what has deceived Edom?",
+     "options": [
+      "The pride of its heart",
+      "Its alliance with Egypt",
+      "The words of false prophets",
+      "Its great wealth"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does God say shame will cover Edom?",
+     "options": [
+      "For the violence done to its brother Jacob",
+      "For worshiping the gods of Moab",
+      "For robbing travelers on the roads",
+      "For attacking the city of Teman"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who does the prophecy say deceived Edom and prevailed against it?",
+     "options": [
+      "The men of its own alliance",
+      "The armies of Babylon",
+      "The prophets of Israel",
+      "The wise men of Teman"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What comparison shows Edom will be stripped more completely than usual?",
+     "options": [
+      "Grape pickers would at least leave gleanings",
+      "Locusts would at least leave the roots",
+      "A fire would at least spare the stubble",
+      "Shepherds would at least leave the lambs"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Though you mount on high as the eagle, and though your nest is set ____, I will bring you down from there.",
+     "answer": "among the stars",
+     "wrong": [
+      "above the clouds",
+      "on the top of the cliffs",
+      "in the tall cedars"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "As you have done, it will be done to you. Your deeds will return ____.",
+     "answer": "upon your own head",
+     "wrong": [
+      "to your own house",
+      "against your own children",
+      "on your own land"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The house of Jacob will be a fire, the house of Joseph a flame, and the house of Esau ____.",
+     "answer": "for stubble",
+     "wrong": [
+      "for ashes",
+      "for dry wood",
+      "for chaff"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The prophecy warns Edom not to rejoice over the children of Judah in the day of their destruction.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The chapter ends by saying saviors will go up on Mount Sinai to judge the mountains of Esau.",
+     "answer": false,
+     "v": 21
+    }
+   ]
+  }
+ }
+}

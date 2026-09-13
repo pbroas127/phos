@@ -1,0 +1,3527 @@
+{
+ "book": "ISA",
+ "chapters": {
+  "1": {
+   "keyVerse": 18,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which animals does the LORD say know their owner and master, while Israel does not know?",
+     "options": [
+      "The ox and the donkey",
+      "The sheep and the goat",
+      "The horse and the mule",
+      "The dog and the camel"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the LORD say about Israel's many sacrifices, New Moons, and feasts?",
+     "options": [
+      "He hates them and is weary of them",
+      "He delights in them",
+      "They must be doubled",
+      "They must be moved to Bethel"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which two cities does Isaiah use to address Jerusalem's rulers and people?",
+     "options": [
+      "Sodom and Gomorrah",
+      "Tyre and Sidon",
+      "Babylon and Nineveh",
+      "Samaria and Damascus"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What is the daughter of Zion left like?",
+     "options": [
+      "A hut in a field of melons",
+      "A tent in the wilderness",
+      "A tower in a ruined city",
+      "A shepherd's booth on a hill"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What has happened to the faithful city's silver and wine?",
+     "options": [
+      "Silver became dross, wine mixed with water",
+      "Silver was stolen, wine poured out",
+      "Silver turned to tin, wine turned sour",
+      "Silver was hoarded, wine was spilled"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Though your sins are as scarlet, they shall be ____.",
+     "answer": "as white as snow",
+     "wrong": [
+      "washed in the river",
+      "as pure as gold",
+      "as clean as linen"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Seek justice. Relieve the oppressed. Defend the fatherless. ____.",
+     "answer": "Plead for the widow",
+     "wrong": [
+      "Feed the hungry stranger",
+      "Free the captive slave",
+      "Honor the aged priest"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Afterward you shall be called 'The city of righteousness, ____.'",
+     "answer": "a faithful town",
+     "wrong": [
+      "a holy mountain",
+      "a joyful dwelling",
+      "a light to nations"
+     ],
+     "v": 26
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says that if they are willing and obedient, they will eat the good of the land.",
+     "answer": true,
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD says that when they spread out their hands and make many prayers, he will listen.",
+     "answer": false,
+     "v": 15
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 5,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In the latter days, what will the nations do with their swords?",
+     "options": [
+      "Beat them into plowshares",
+      "Bury them in the ground",
+      "Melt them into idols",
+      "Lay them at the temple"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides silver and gold, what is the land said to be full of?",
+     "options": [
+      "Horses and chariots",
+      "Grain and new wine",
+      "Sheep and cattle",
+      "Priests and prophets"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where will people go to escape the terror of the LORD?",
+     "options": [
+      "Into caves and holes of the earth",
+      "Across the sea to Tarshish",
+      "To the horns of the altar",
+      "Down into the cities of Egypt"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "To what creatures will men throw away their idols of silver and gold?",
+     "options": [
+      "The moles and the bats",
+      "The dogs and the pigs",
+      "The owls and the jackals",
+      "The lions and the bears"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The arrogance of men shall be brought low; and ____ in that day.",
+     "answer": "the LORD alone shall be exalted",
+     "wrong": [
+      "the nations shall be gathered",
+      "the idols shall be restored",
+      "the proud shall be rewarded"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For the law shall go out of Zion, and ____ from Jerusalem.",
+     "answer": "the LORD's word",
+     "wrong": [
+      "the king's decree",
+      "the priests' blessing",
+      "the prophets' song"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Stop trusting in man, whose breath ____; for of what account is he?",
+     "answer": "is in his nostrils",
+     "wrong": [
+      "is like the wind",
+      "passes like a shadow",
+      "fades like the grass"
+     ],
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Isaiah calls the house of Jacob to come and walk in the light of the LORD.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The day of the LORD is against all that is lifted up, including the cedars of Lebanon and the ships of Tarshish.",
+     "answer": true,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The house of Jacob is filled with diviners from the west, like the Egyptians.",
+     "answer": false,
+     "v": 6
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom does the LORD say he will give to be Judah's princes?",
+     "options": [
+      "Boys and children",
+      "Priests and Levites",
+      "Foreign captains",
+      "The oldest elders"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When a man is urged to become ruler, why does he refuse?",
+     "options": [
+      "His house has neither bread nor clothing",
+      "He is too old to lead",
+      "He fears the king of Assyria",
+      "He is not from David's house"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why does the LORD bring judgment on the daughters of Zion?",
+     "options": [
+      "They are arrogant and walk with flirting eyes",
+      "They worship the queen of heaven",
+      "They married foreign husbands",
+      "They refused to mourn for Zion"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the LORD accuse the elders and leaders of eating up?",
+     "options": [
+      "The vineyard",
+      "The firstfruits",
+      "The temple offerings",
+      "The widow's bread"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Tell the righteous that it will be well with them, for they will eat ____.",
+     "answer": "the fruit of their deeds",
+     "wrong": [
+      "the bread of the kingdom",
+      "the best of the land",
+      "the reward of the faithful"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "What do you mean that you crush my people, and ____?",
+     "answer": "grind the face of the poor",
+     "wrong": [
+      "steal the bread of widows",
+      "sell the orphans for silver",
+      "break the backs of laborers"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Instead of well set hair, baldness; instead of a robe, ____.",
+     "answer": "a wearing of sackcloth",
+     "wrong": [
+      "a garment of ashes",
+      "a cloak of shame",
+      "a covering of rags"
+     ],
+     "v": 24
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The LORD takes away bread, water, and leaders",
+      "Tell the righteous it will be well with them",
+      "The LORD enters into judgment with the elders",
+      "The daughters of Zion lose their fine ornaments"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jerusalem is ruined because their tongue and their doings are against the LORD.",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "A man urges his brother to be ruler because his brother owns a sword.",
+     "answer": false,
+     "v": 6
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In that day, how many women take hold of one man?",
+     "options": [
+      "Seven",
+      "Three",
+      "Ten",
+      "Twelve"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the LORD create over Mount Zion by day?",
+     "options": [
+      "A cloud and smoke",
+      "A pillar of fire",
+      "A rainbow of peace",
+      "A shining star"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "In that day, the LORD's branch will be ____.",
+     "answer": "beautiful and glorious",
+     "wrong": [
+      "strong and fruitful",
+      "holy and exalted",
+      "green and flourishing"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The Lord washes away the filth of Zion by the spirit of justice and by ____.",
+     "answer": "the spirit of burning",
+     "wrong": [
+      "the spirit of mercy",
+      "the spirit of wisdom",
+      "the spirit of holiness"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Whoever is left in Zion and remains in Jerusalem shall be called holy.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The women ask the man to give them bread and clothing.",
+     "answer": false,
+     "v": 1
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 20,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In the song of the vineyard, what did the vineyard yield?",
+     "options": [
+      "Wild grapes",
+      "No fruit at all",
+      "Bitter olives",
+      "Sour figs"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the owner say he will command the clouds to do?",
+     "options": [
+      "Rain no rain on it",
+      "Hide the sun from it",
+      "Send hail upon it",
+      "Flood it with water"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the chapter say the vineyard of the LORD of Armies is?",
+     "options": [
+      "The house of Israel",
+      "The city of Babylon",
+      "The nations of the earth",
+      "The priests of the temple"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What do the champions at mixing strong drink do for a bribe?",
+     "options": [
+      "Acquit the guilty",
+      "Sell their fields",
+      "Curse the prophets",
+      "Move boundary stones"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Woe to those who call evil good, ____; who put darkness for light.",
+     "answer": "and good evil",
+     "wrong": [
+      "and praise the wicked",
+      "and hate the righteous",
+      "and bless the proud"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Woe to those who are ____, and prudent in their own sight!",
+     "answer": "wise in their own eyes",
+     "wrong": [
+      "rich in their own houses",
+      "strong in their own arms",
+      "proud of their own deeds"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Therefore my people go into captivity ____.",
+     "answer": "for lack of knowledge",
+     "wrong": [
+      "for the sins of their fathers",
+      "because of their many idols",
+      "for breaking the Sabbath"
+     ],
+     "v": 13
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The song of the beloved's vineyard",
+      "Woe to those who join house to house",
+      "Woe to those who call evil good",
+      "A distant nation comes swiftly to attack"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The coming army's horses have hoofs like flint and wheels like a whirlwind.",
+     "answer": true,
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Those who rise early for strong drink are said to respect the work of the LORD.",
+     "answer": false,
+     "v": 12
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 8,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "When did Isaiah see the Lord sitting on a throne?",
+     "options": [
+      "In the year King Uzziah died",
+      "In the year King Ahaz died",
+      "When Hezekiah became king",
+      "When Jotham began to reign"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the seraphim cover with two of their wings?",
+     "options": [
+      "Their faces and their feet",
+      "Their eyes and their mouths",
+      "Their heads and their hands",
+      "The throne and the altar"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the seraph say the touch on Isaiah's lips did?",
+     "options": [
+      "Took away his iniquity and forgave his sin",
+      "Gave him the words to speak",
+      "Healed his stammering tongue",
+      "Anointed him as a prophet"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "After hearing his hard message, what did Isaiah ask?",
+     "options": [
+      "Lord, how long?",
+      "Why have you chosen me?",
+      "Will anyone listen?",
+      "What sign will you give?"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Holy, holy, holy, is the LORD of Armies! The whole earth is full of ____!",
+     "answer": "his glory",
+     "wrong": [
+      "his mercy",
+      "his praise",
+      "his wonders"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Woe is me! For I am undone, because I am ____.",
+     "answer": "a man of unclean lips",
+     "wrong": [
+      "a sinner among sinners",
+      "a man of little faith",
+      "the least in my father's house"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "As an oak whose stump remains when they are cut down, so ____ is its stump.",
+     "answer": "the holy seed",
+     "wrong": [
+      "the faithful remnant",
+      "the royal branch",
+      "the chosen vine"
+     ],
+     "v": 13
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Isaiah sees the Lord on a high throne",
+      "The house is filled with smoke",
+      "A seraph touches Isaiah's mouth with a coal",
+      "The Lord asks whom he shall send"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When the Lord asked who would go, Isaiah answered, 'Here I am. Send me!'",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Isaiah is told that the people will understand, turn again, and be healed.",
+     "answer": false,
+     "v": 10
+    }
+   ]
+  },
+  "7": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What sign does the Lord himself give to the house of David?",
+     "options": [
+      "A virgin will conceive and bear a son",
+      "The shadow on the steps goes back",
+      "Fire falls on the altar",
+      "A fleece is wet on dry ground"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where was Isaiah told to meet King Ahaz?",
+     "options": [
+      "At the end of the conduit of the upper pool",
+      "At the gate of the temple",
+      "Beside the brook Kidron",
+      "In the courts of the palace"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which son went with Isaiah to meet Ahaz?",
+     "options": [
+      "Shearjashub",
+      "Maher Shalal Hash Baz",
+      "Immanuel",
+      "Remaliah"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Isaiah call Rezin and the son of Remaliah?",
+     "options": [
+      "Two tails of smoking torches",
+      "Two broken reeds",
+      "Two roaring lions",
+      "Two withered branches"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He shall eat ____ when he knows to refuse the evil and choose the good.",
+     "answer": "butter and honey",
+     "wrong": [
+      "bread and wine",
+      "milk and figs",
+      "manna and quail"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "If you will not believe, ____.",
+     "answer": "surely you shall not be established",
+     "wrong": [
+      "surely your city will fall",
+      "you will not see the sign",
+      "your house will be cut off"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "In that day the Lord will shave with ____ beyond the River, even with the king of Assyria.",
+     "answer": "a razor that is hired",
+     "wrong": [
+      "a sword that is sharpened",
+      "a knife that is borrowed",
+      "a blade that is forged"
+     ],
+     "v": 20
+    },
+    {
+     "t": "order",
+     "d": 1,
+     "items": [
+      "Syria and Israel go up against Jerusalem",
+      "Isaiah is sent to meet Ahaz",
+      "Ahaz refuses to ask for a sign",
+      "The LORD warns of the king of Assyria"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Isaiah tells Ahaz to be afraid and prepare for a long war.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Places once full of valuable vines will become briers and thorns.",
+     "answer": true,
+     "v": 23
+    }
+   ]
+  },
+  "8": {
+   "keyVerse": 13,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What name did the LORD tell Isaiah to write on a large tablet and give to his son?",
+     "options": [
+      "Maher Shalal Hash Baz",
+      "Shearjashub",
+      "Immanuel",
+      "Jeberechiah"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will happen before the child knows how to say 'My father' and 'My mother'?",
+     "options": [
+      "Assyria carries off the riches of Damascus and Samaria",
+      "Babylon besieges Jerusalem",
+      "Egypt invades the land of Judah",
+      "King Ahaz dies in his palace"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What waters does the LORD say this people has refused?",
+     "options": [
+      "The waters of Shiloah that go softly",
+      "The waters of the Jordan",
+      "The springs of Gihon",
+      "The pools of Heshbon"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What image describes the coming of the king of Assyria?",
+     "options": [
+      "Flood waters of the River reaching to the neck",
+      "A swarm of locusts covering the land",
+      "A fire burning through the forest",
+      "A lion coming up from the thicket"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Speak the word, and it will not stand, for ____.",
+     "answer": "God is with us",
+     "wrong": [
+      "the LORD is king",
+      "Zion is his dwelling",
+      "his hand is strong"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He will be a sanctuary, but for both houses of Israel, he will be ____.",
+     "answer": "a stumbling stone",
+     "wrong": [
+      "a strong fortress",
+      "a consuming fire",
+      "a hidden refuge"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Shouldn't a people consult with their God? Should they consult ____ on behalf of the living?",
+     "answer": "the dead",
+     "wrong": [
+      "the stars",
+      "the idols",
+      "the kings"
+     ],
+     "v": 19
+    },
+    {
+     "t": "order",
+     "d": 1,
+     "items": [
+      "Isaiah writes a name on a large tablet",
+      "The prophetess bears a son",
+      "The LORD warns of the River's flood waters",
+      "Isaiah is told not to walk in this people's way"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Isaiah is told to call a conspiracy whatever this people calls a conspiracy and to fear their threats.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Isaiah says he and the children the LORD gave him are for signs and wonders in Israel.",
+     "answer": true,
+     "v": 18
+    }
+   ]
+  },
+  "9": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What will the child who is born to us be called?",
+     "options": [
+      "Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace",
+      "Faithful Shepherd, Holy One, King of Kings",
+      "Branch of Jesse, Righteous Judge, Light of Nations",
+      "Son of David, Rock of Ages, Lord of Hosts"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which lands were once brought into contempt but later made glorious?",
+     "options": [
+      "Zebulun and Naphtali",
+      "Ephraim and Manasseh",
+      "Moab and Edom",
+      "Benjamin and Judah"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In their pride, what do Ephraim and Samaria say they will do now that the bricks have fallen?",
+     "options": [
+      "Build with cut stone",
+      "Flee down to Egypt",
+      "Rebuild with silver and gold",
+      "Ask Assyria for help"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to the chapter, who is the tail that the LORD will cut off?",
+     "options": [
+      "The prophet who teaches lies",
+      "The elder and honorable man",
+      "The king's counselor",
+      "The priest who takes bribes"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The people who walked in darkness have seen ____.",
+     "answer": "a great light",
+     "wrong": [
+      "a new dawn",
+      "the glory of God",
+      "a shining star"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For all this, his anger is not turned away, but ____.",
+     "answer": "his hand is stretched out still",
+     "wrong": [
+      "his sword is lifted high",
+      "his eyes are on Zion",
+      "his wrath will soon pass"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The rod of his oppressor, you have broken as in ____.",
+     "answer": "the day of Midian",
+     "wrong": [
+      "the days of Noah",
+      "the day of Jezreel",
+      "the night of Passover"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The increase of the child's government and of peace will have no end, on David's throne.",
+     "answer": true,
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Manasseh and Ephraim join together with Judah against their enemies.",
+     "answer": false,
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Israel is attacked by the Philistines in front and the Syrians behind.",
+     "answer": false,
+     "v": 12
+    }
+   ]
+  },
+  "10": {
+   "keyVerse": 21,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the LORD call the Assyrian?",
+     "options": [
+      "The rod of my anger",
+      "The hammer of the earth",
+      "My chosen servant",
+      "The lion from the north"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom does the woe at the start of the chapter condemn?",
+     "options": [
+      "Those who write oppressive decrees",
+      "Those who worship idols of gold",
+      "Those who drink wine in the morning",
+      "Those who consult the dead"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "The king of Assyria boasts he gathered the riches of the peoples like what?",
+     "options": [
+      "Eggs that are abandoned",
+      "Grain at harvest time",
+      "Sheep without a shepherd",
+      "Stones from a field"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the LORD do when he has finished his work on Mount Zion?",
+     "options": [
+      "Punish the proud heart of Assyria's king",
+      "Rebuild the temple walls",
+      "Send Israel into exile",
+      "Gather all nations to Zion"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Instead of the one who struck them, whom will the remnant of Israel lean on?",
+     "options": [
+      "The LORD, the Holy One of Israel",
+      "The king of Egypt",
+      "The mighty men of Judah",
+      "Their own strength and wisdom"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Should an ax brag against ____?",
+     "answer": "him who chops with it",
+     "wrong": [
+      "the tree it cuts down",
+      "the smith who forged it",
+      "the forest it clears"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "His yoke will depart from off your neck, and the yoke shall be destroyed because of ____.",
+     "answer": "the anointing oil",
+     "wrong": [
+      "the blood of the lamb",
+      "the breath of the LORD",
+      "the cry of the poor"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Though your people, Israel, are like the sand of the sea, ____ will return.",
+     "answer": "only a remnant of them",
+     "wrong": [
+      "every one of them",
+      "only the righteous ones",
+      "only the priests"
+     ],
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD tells his people in Zion not to be afraid of the Assyrian.",
+     "answer": true,
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Assyrian means only to carry out God's command and has no wish to destroy many nations.",
+     "answer": false,
+     "v": 7
+    }
+   ]
+  },
+  "11": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "From whose stock will the shoot come out?",
+     "options": [
+      "Jesse",
+      "Aaron",
+      "Saul",
+      "Levi"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who will lead the wolf, the lamb, the leopard, and the young lion together?",
+     "options": [
+      "A little child",
+      "A shepherd boy",
+      "A prophet of the LORD",
+      "An angel from heaven"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the coming ruler NOT judge by?",
+     "options": [
+      "What his eyes see and his ears hear",
+      "The law given to Moses",
+      "The counsel of the elders",
+      "Righteousness and equity"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What will the LORD do to the River with his scorching wind?",
+     "options": [
+      "Split it into seven streams",
+      "Dry it up completely",
+      "Turn it into blood",
+      "Make it flow backward"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The earth will be full of the knowledge of the LORD, ____.",
+     "answer": "as the waters cover the sea",
+     "wrong": [
+      "as the stars fill the sky",
+      "as the sun lights the day",
+      "as the dew covers the grass"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The cow and the bear will graze. The lion will eat straw ____.",
+     "answer": "like the ox",
+     "wrong": [
+      "with the lamb",
+      "from the manger",
+      "in the field"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He will strike the earth with ____; and with the breath of his lips he will kill the wicked.",
+     "answer": "the rod of his mouth",
+     "wrong": [
+      "the sword of his hand",
+      "the staff of his power",
+      "the fire of his anger"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD will gather the dispersed of Judah from the four corners of the earth.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Ephraim will still envy Judah, but Judah will stop persecuting Ephraim.",
+     "answer": false,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The highway in this chapter is for the remnant of his people left in Babylon.",
+     "answer": false,
+     "v": 16
+    }
+   ]
+  },
+  "12": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Therefore with joy you will draw water ____.",
+     "answer": "out of the wells of salvation",
+     "wrong": [
+      "from the river of life",
+      "from the springs of Zion",
+      "out of the rock of refuge"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The LORD, the LORD, is ____; and he has become my salvation.",
+     "answer": "my strength and song",
+     "wrong": [
+      "my shield and fortress",
+      "my light and portion",
+      "my rock and refuge"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does the speaker give thanks at the start of the chapter?",
+     "options": [
+      "The LORD's anger turned away and he comforts",
+      "Their enemies have been defeated",
+      "The temple has been rebuilt",
+      "The rain has returned to the land"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What reason is given for the inhabitant of Zion to cry aloud and shout?",
+     "options": [
+      "The Holy One of Israel is great among you",
+      "The king has returned to Jerusalem",
+      "The walls of Zion are rebuilt",
+      "The nations bring their treasures"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The speaker says, 'I will trust, and will not be afraid.'",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The people are told to keep the LORD's doings quiet among themselves.",
+     "answer": false,
+     "v": 4
+    }
+   ]
+  },
+  "13": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which people does the LORD stir up against Babylon?",
+     "options": [
+      "The Medes",
+      "The Assyrians",
+      "The Egyptians",
+      "The Philistines"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the attackers the LORD stirs up not value or delight in?",
+     "options": [
+      "Silver and gold",
+      "Horses and chariots",
+      "Wine and feasts",
+      "Fields and vineyards"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will happen to the stars, sun, and moon in the day of the LORD?",
+     "options": [
+      "They will not give their light",
+      "They will fall to the earth",
+      "They will turn to blood",
+      "They will stand still"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "The LORD says he will make people more rare than what?",
+     "options": [
+      "The pure gold of Ophir",
+      "The cedars of Lebanon",
+      "The rubies of Sheba",
+      "The pearls of the sea"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who will not pitch a tent in ruined Babylon?",
+     "options": [
+      "The Arabian",
+      "The Philistine",
+      "The Edomite",
+      "The Midianite"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Babylon, the glory of kingdoms, will be like when God overthrew ____.",
+     "answer": "Sodom and Gomorrah",
+     "wrong": [
+      "Egypt and Pharaoh",
+      "Nineveh of Assyria",
+      "the tower of Babel"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Pangs and sorrows will seize them. They will be in pain like ____.",
+     "answer": "a woman in labor",
+     "wrong": [
+      "a man struck by a sword",
+      "a wounded deer",
+      "a slave under the rod"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Like a hunted gazelle and like ____, they will each turn to their own people.",
+     "answer": "sheep that no one gathers",
+     "wrong": [
+      "birds without a nest",
+      "chaff before the wind",
+      "cattle without a herdsman"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Babylon will never be inhabited again, and jackals will fill its houses.",
+     "answer": true,
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The army the LORD musters comes from a nearby country.",
+     "answer": false,
+     "v": 5
+    }
+   ]
+  },
+  "14": {
+   "keyVerse": 27,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Against whom do the people take up the taunt, 'How the oppressor has ceased!'?",
+     "options": [
+      "The king of Babylon",
+      "The king of Assyria",
+      "Pharaoh of Egypt",
+      "The king of Moab"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why do the cypress trees and the cedars of Lebanon rejoice?",
+     "options": [
+      "No lumberjack comes up against them anymore",
+      "The rains have returned to them",
+      "Israel has replanted the forests",
+      "The fire has passed them by"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do the kings in Sheol ask the fallen king?",
+     "options": [
+      "Have you also become as weak as we are?",
+      "Why have you come down so soon?",
+      "Where is your great army now?",
+      "Who has struck you down?"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Philistia is warned that the fruit of the serpent's root will be what?",
+     "options": [
+      "A fiery flying serpent",
+      "A roaring young lion",
+      "A poisonous vine",
+      "A great sea monster"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "How you have fallen from heaven, ____!",
+     "answer": "shining one, son of the dawn",
+     "wrong": [
+      "mighty one, lord of kings",
+      "proud one, king of Babylon",
+      "bright star, prince of morning"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will ascend above the heights of the clouds! I will make myself like ____!",
+     "answer": "the Most High",
+     "wrong": [
+      "the gods of Babylon",
+      "the stars of heaven",
+      "the King of kings"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I will sweep it with ____, says the LORD of Armies.",
+     "answer": "the broom of destruction",
+     "wrong": [
+      "the wind of judgment",
+      "the fire of my anger",
+      "the flood of my wrath"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The fallen king is buried with honor among the kings of the nations.",
+     "answer": false,
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD swears he will break the Assyrian in his land and tread him down on his mountains.",
+     "answer": true,
+     "v": 25
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The burden against Philistia came in the year that King Hezekiah died.",
+     "answer": false,
+     "v": 28
+    }
+   ]
+  },
+  "15": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How quickly were Ar and Kir of Moab laid waste?",
+     "options": [
+      "In a night",
+      "In three days",
+      "In a single hour",
+      "Over seven years"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What signs of mourning are on the heads and beards of Moab?",
+     "options": [
+      "Baldness, and every beard cut off",
+      "Ashes and dust poured on them",
+      "Oil wiped away from them",
+      "Crowns taken off them"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where do the people of Moab go up to weep?",
+     "options": [
+      "To the high places",
+      "To the temple in Jerusalem",
+      "To the shore of the sea",
+      "To the gates of their cities"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What will the LORD bring on those of Moab who escape?",
+     "options": [
+      "A lion",
+      "A famine",
+      "A plague",
+      "A flood"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "My heart ____! Her nobles flee to Zoar.",
+     "answer": "cries out for Moab",
+     "wrong": [
+      "rejoices over Moab",
+      "is hardened against Moab",
+      "turns away from Moab"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "In their streets and on their housetops, everyone wails, ____.",
+     "answer": "weeping abundantly",
+     "wrong": [
+      "tearing their clothes",
+      "crying for help",
+      "beating their chests"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The grass has withered away, the tender grass fails, ____.",
+     "answer": "there is no green thing",
+     "wrong": [
+      "the fields are burned",
+      "the rivers run dry",
+      "the flocks are scattered"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The armed men of Moab shout for joy at their victory.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Moab's nobles flee to Zoar, going up the ascent of Luhith with weeping.",
+     "answer": true,
+     "v": 5
+    }
+   ]
+  },
+  "16": {
+   "keyVerse": 5,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What is sent from Selah to the ruler of the land at Mount Zion?",
+     "options": [
+      "Lambs",
+      "Gold",
+      "Grain",
+      "Horses"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What sin of Moab has been heard of?",
+     "options": [
+      "His great pride and arrogance",
+      "His worship of idols",
+      "His cruelty to captives",
+      "His love of strong drink"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What are the daughters of Moab like at the fords of the Arnon?",
+     "options": [
+      "Wandering birds and a scattered nest",
+      "Sheep without a shepherd",
+      "Reeds shaken by the wind",
+      "Chaff blown before the storm"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Within how long will the glory of Moab be brought into contempt?",
+     "options": [
+      "Three years",
+      "Seven years",
+      "Seventy years",
+      "Forty days"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What happens when Moab wearies himself on the high place and comes to his sanctuary to pray?",
+     "options": [
+      "He will not prevail",
+      "He is heard and healed",
+      "His idols fall down",
+      "He is taken captive"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "A throne will be established in loving kindness. One will sit on it in truth, ____.",
+     "answer": "in the tent of David",
+     "wrong": [
+      "in the house of Moab",
+      "in the city of Selah",
+      "on the hill of Samaria"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Therefore my heart sounds like ____ for Moab.",
+     "answer": "a harp",
+     "wrong": [
+      "a drum",
+      "a trumpet",
+      "a flute"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Make your shade like the night in the middle of the noonday! Hide the outcasts! ____!",
+     "answer": "Don't betray the fugitive",
+     "wrong": [
+      "Feed the hungry stranger",
+      "Open the city gates",
+      "Shelter the poor widow"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "In Moab's vineyards there will be no singing and no one treading out wine.",
+     "answer": true,
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The speaker rejoices over the destruction of the vine of Sibmah.",
+     "answer": false,
+     "v": 9
+    }
+   ]
+  },
+  "17": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What will Damascus become?",
+     "options": [
+      "A ruinous heap",
+      "A city of refuge",
+      "The capital of Assyria",
+      "A place of worship"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the chapter compare the few gleanings left in Jacob to?",
+     "options": [
+      "The shaking of an olive tree",
+      "The cutting of a cedar",
+      "A threshing floor after harvest",
+      "A vineyard burned by fire"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In that day, to whom will people look instead of their altars?",
+     "options": [
+      "Their Maker, the Holy One of Israel",
+      "The king of Assyria",
+      "The priests of Damascus",
+      "The elders of Ephraim"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Because they forgot God, what does the chapter say they plant?",
+     "options": [
+      "Pleasant plants and foreign seedlings",
+      "Vineyards on every hill",
+      "Groves for their idols",
+      "Fig trees by the gates"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You have forgotten the God of your salvation, and have not remembered ____.",
+     "answer": "the rock of your strength",
+     "wrong": [
+      "the law of your fathers",
+      "the days of old",
+      "the covenant of Abraham"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He will rebuke them, and they will be chased like ____ before the wind.",
+     "answer": "the chaff of the mountains",
+     "wrong": [
+      "the leaves of autumn",
+      "the smoke of a fire",
+      "the sand of the desert"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "At evening, behold, terror! ____, they are no more.",
+     "answer": "Before the morning",
+     "wrong": [
+      "By the next day",
+      "At the dawning",
+      "Before the sun sets"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The cities of Aroer are forsaken and will be for flocks to lie down in.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "In that day the people will keep respecting the Asherah poles and incense altars.",
+     "answer": false,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The thinning of Jacob's glory is compared to gleaning grain in the valley of Rephaim.",
+     "answer": true,
+     "v": 5
+    }
+   ]
+  },
+  "18": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where is the land of the rustling of wings?",
+     "options": [
+      "Beyond the rivers of Ethiopia",
+      "Beyond the Euphrates River",
+      "By the sea of Kittim",
+      "South of the land of Edom"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In what kind of vessels does this land send ambassadors?",
+     "options": [
+      "Vessels of papyrus",
+      "Ships of Tarshish",
+      "Boats of cedar",
+      "Rafts of reeds"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How is the nation the messengers go to described?",
+     "options": [
+      "Tall and smooth",
+      "Short and strong",
+      "Rich and proud",
+      "Few and fearful"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the LORD say he will do in his dwelling place?",
+     "options": [
+      "Be still and see",
+      "Roar like a lion",
+      "Send down fire",
+      "Call up his armies"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "When a banner is lifted up on the mountains, look! When ____, listen!",
+     "answer": "the trumpet is blown",
+     "wrong": [
+      "the watchman cries out",
+      "the thunder rolls",
+      "the king speaks"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Like clear heat in sunshine, like ____ in the heat of harvest.",
+     "answer": "a cloud of dew",
+     "wrong": [
+      "a cool breeze",
+      "a shade tree",
+      "a spring of water"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "In that time, a present will be brought to the LORD of Armies at Mount Zion.",
+     "answer": true,
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The ravenous birds eat the cut off branches in winter, and the animals eat them in summer.",
+     "answer": false,
+     "v": 6
+    }
+   ]
+  },
+  "19": {
+   "keyVerse": 25,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How does the LORD come to Egypt?",
+     "options": [
+      "Riding on a swift cloud",
+      "In a chariot of fire",
+      "On a great east wind",
+      "In a pillar of smoke"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who will lament and mourn when the Nile dries up?",
+     "options": [
+      "The fishermen",
+      "The priests",
+      "The shepherds",
+      "The merchants"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whose princes does the chapter call utterly foolish?",
+     "options": [
+      "The princes of Zoan",
+      "The princes of Ashdod",
+      "The princes of Tyre",
+      "The princes of Damascus"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many cities in Egypt will speak the language of Canaan?",
+     "options": [
+      "Five",
+      "Two",
+      "Seven",
+      "Twelve"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will stand in the middle of Egypt and at its border?",
+     "options": [
+      "An altar and a pillar to the LORD",
+      "A temple and a tower",
+      "Two statues of Pharaoh",
+      "A throne and a gate"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Blessed be Egypt my people, Assyria the work of my hands, and ____.",
+     "answer": "Israel my inheritance",
+     "wrong": [
+      "Judah my firstborn",
+      "Zion my holy hill",
+      "Jacob my chosen"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The LORD will strike Egypt, ____. They will return to the LORD.",
+     "answer": "striking and healing",
+     "wrong": [
+      "wounding and scattering",
+      "tearing and devouring",
+      "breaking and burning"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They have caused Egypt to go astray in all of its works, like ____ staggers in his vomit.",
+     "answer": "a drunken man",
+     "wrong": [
+      "a blind beggar",
+      "a wounded soldier",
+      "a sick old man"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "A highway will run from Egypt to Assyria, and they will worship together.",
+     "answer": true,
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD gives the Egyptians over to a kind and gentle king.",
+     "answer": false,
+     "v": 4
+    }
+   ]
+  },
+  "20": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How long did Isaiah walk naked and barefoot as a sign?",
+     "options": [
+      "Three years",
+      "Forty days",
+      "Seven months",
+      "One year"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which king of Assyria sent Tartan to fight against Ashdod?",
+     "options": [
+      "Sargon",
+      "Sennacherib",
+      "Tiglath Pileser",
+      "Shalmaneser"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Isaiah's sign was a warning concerning which two nations?",
+     "options": [
+      "Egypt and Ethiopia",
+      "Babylon and Elam",
+      "Moab and Edom",
+      "Tyre and Sidon"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Go, and loosen ____ from off your waist, and take your sandals from off your feet.",
+     "answer": "the sackcloth",
+     "wrong": [
+      "the leather belt",
+      "your linen robe",
+      "the iron chains"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The captives of Egypt will be led away by the king of Babylon.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The people of the coast land say they had fled to this expectation for help against the king of Assyria.",
+     "answer": true,
+     "v": 6
+    }
+   ]
+  },
+  "21": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How does the prophet react to the grievous vision?",
+     "options": [
+      "Pains seize him like a woman in labor",
+      "He sings for joy",
+      "He falls into a deep sleep",
+      "He shouts in anger at the nations"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the watchman first see coming?",
+     "options": [
+      "A troop of men, horsemen in pairs",
+      "A great army of chariots",
+      "A lone runner with news",
+      "Ships sailing on the sea"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What question does someone call out of Seir?",
+     "options": [
+      "Watchman, what of the night?",
+      "Watchman, who is coming near?",
+      "Watchman, has the city fallen?",
+      "Watchman, when will the war end?"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who met the fugitives with their bread?",
+     "options": [
+      "The inhabitants of Tema",
+      "The caravans of Dedanites",
+      "The children of Kedar",
+      "The men of Elam"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Fallen, fallen is Babylon; and all ____ are broken to the ground.",
+     "answer": "the engraved images of her gods",
+     "wrong": [
+      "the towers of her walls",
+      "the thrones of her kings",
+      "the gates of her palaces"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He cried like a lion: 'Lord, I stand continually on ____ in the daytime.'",
+     "answer": "the watchtower",
+     "wrong": [
+      "the city wall",
+      "the mountain top",
+      "the palace roof"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The watchman said, 'The morning comes, and ____. If you will inquire, inquire.'",
+     "answer": "also the night",
+     "wrong": [
+      "the light returns",
+      "the enemy flees",
+      "the day is near"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Lord told Isaiah to set a watchman to declare what he sees.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The twilight the prophet desired was turned into trembling for him.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "All the glory of Kedar will fail within seven years.",
+     "answer": false,
+     "v": 16
+    }
+   ]
+  },
+  "22": {
+   "keyVerse": 22,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What do the people say while feasting when the Lord has called them to mourn?",
+     "options": [
+      "Let's eat and drink, for tomorrow we will die",
+      "Let us rejoice, for the LORD has saved us",
+      "Let us build, for the enemy has fled",
+      "Let us drink, for the harvest is in"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why is Shebna the treasurer rebuked?",
+     "options": [
+      "He cut out a tomb for himself on high",
+      "He stole silver from the temple",
+      "He made an alliance with Egypt",
+      "He mocked the prophet Isaiah"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom will the LORD call to replace Shebna?",
+     "options": [
+      "Eliakim the son of Hilkiah",
+      "Joah the son of Asaph",
+      "Uriah the priest",
+      "Zechariah the son of Jeberechiah"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the people break down to fortify the wall?",
+     "options": [
+      "The houses of Jerusalem",
+      "The gates of the temple",
+      "The altars of Baal",
+      "The king's palace"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What will finally happen to the nail fastened in a sure place?",
+     "options": [
+      "It will give way and fall",
+      "It will never be moved",
+      "It will be covered in gold",
+      "It will hold up the temple"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I will lay the key of David's house on his shoulder. He will open, and ____.",
+     "answer": "no one will shut",
+     "wrong": [
+      "all will enter in",
+      "the gates will stand",
+      "the poor will come"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He will surely wind you around and around, and throw you like ____ into a large country.",
+     "answer": "a ball",
+     "wrong": [
+      "a stone",
+      "a spear",
+      "a broken pot"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You made a reservoir between the two walls. But you didn't look to ____.",
+     "answer": "him who had done this",
+     "wrong": [
+      "the LORD of your fathers",
+      "the prophet among you",
+      "the covenant of David"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The prophet asks the people to come and comfort him as he weeps.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD says Shebna's successor will be a father to the inhabitants of Jerusalem.",
+     "answer": true,
+     "v": 21
+    }
+   ]
+  },
+  "23": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who has planned the destruction of Tyre?",
+     "options": [
+      "The LORD of Armies",
+      "The king of Assyria",
+      "Pharaoh of Egypt",
+      "The merchants of Sidon"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How long will Tyre be forgotten?",
+     "options": [
+      "Seventy years",
+      "Forty years",
+      "Seven years",
+      "Three years"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will Tyre's merchandise and wages become in the end?",
+     "options": [
+      "Holiness to the LORD",
+      "Plunder for Babylon",
+      "Tribute for Assyria",
+      "Treasure for Egypt"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What is the forgotten prostitute told to take as she goes about the city?",
+     "options": [
+      "A harp",
+      "A tambourine",
+      "A lamp",
+      "A mirror"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Howl, you ships of Tarshish, for ____!",
+     "answer": "your stronghold is laid waste",
+     "wrong": [
+      "your sails are torn",
+      "your merchants are slain",
+      "your harbors are dry"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Tyre, the giver of crowns, whose merchants are princes, whose traders are ____.",
+     "answer": "the honorable of the earth",
+     "wrong": [
+      "the masters of the sea",
+      "the kings of the nations",
+      "the richest of all lands"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Be ashamed, Sidon; for ____ has spoken, the stronghold of the sea.",
+     "answer": "the sea",
+     "wrong": [
+      "the LORD",
+      "the king",
+      "the harbor"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When the report of Tyre reaches Egypt, they will be in anguish.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The virgin daughter of Sidon is told she will find rest if she passes over to Kittim.",
+     "answer": false,
+     "v": 12
+    }
+   ]
+  },
+  "24": {
+   "keyVerse": 5,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the LORD do to the earth at the start of the chapter?",
+     "options": [
+      "Makes it empty and turns it upside down",
+      "Floods it with water",
+      "Fills it with good fruit",
+      "Divides it among the nations"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why is the earth polluted under its inhabitants?",
+     "options": [
+      "They broke the everlasting covenant",
+      "They built a tower to heaven",
+      "They shed innocent blood in Zion",
+      "They married foreign wives"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the earth stagger like?",
+     "options": [
+      "A drunken man",
+      "An old man with a staff",
+      "A wounded soldier",
+      "A ship in a storm"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What will be confounded and ashamed when the LORD of Armies reigns on Mount Zion?",
+     "options": [
+      "The moon and the sun",
+      "The kings and princes",
+      "The idols and diviners",
+      "The stars and the sea"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "It will be as with the people, so with ____; as with the servant, so with his master.",
+     "answer": "the priest",
+     "wrong": [
+      "the prince",
+      "the king",
+      "the prophet"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "It will be as the shaking of an olive tree, as ____ when the vintage is done.",
+     "answer": "the gleanings",
+     "wrong": [
+      "the stubble",
+      "the chaff",
+      "the dregs"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They will not drink wine with a song. ____ will be bitter to those who drink it.",
+     "answer": "Strong drink",
+     "wrong": [
+      "New wine",
+      "Sweet water",
+      "Fresh milk"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The mirth of tambourines and the joy of the harp cease.",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Whoever climbs out of the pit will be safe from the snare.",
+     "answer": false,
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The LORD will punish the army of the high ones on high, and the kings of the earth on the earth.",
+     "answer": true,
+     "v": 21
+    }
+   ]
+  },
+  "25": {
+   "keyVerse": 8,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What will the LORD of Armies make for all peoples on this mountain?",
+     "options": [
+      "A feast of choice meat and wines",
+      "A temple of pure gold",
+      "A wall that cannot fall",
+      "A river of living water"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the LORD destroy on this mountain?",
+     "options": [
+      "The covering and veil over all peoples",
+      "The idols of the nations",
+      "The armies of Assyria",
+      "The thrones of the kings"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which nation will be trodden down like straw in the water of the dunghill?",
+     "options": [
+      "Moab",
+      "Edom",
+      "Egypt",
+      "Babylon"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How is the proud one's struggle in the middle of it described?",
+     "options": [
+      "Spreading out hands like one who swims",
+      "Running like a hunted deer",
+      "Climbing like a wild goat",
+      "Hiding like a mole in the ground"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "He has swallowed up death forever! The Lord GOD will ____ from off all faces.",
+     "answer": "wipe away tears",
+     "wrong": [
+      "remove all shame",
+      "take the veil",
+      "wash the dust"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Behold, this is our God! ____, and he will save us!",
+     "answer": "We have waited for him",
+     "wrong": [
+      "We have called his name",
+      "We have built his altar",
+      "We have kept his law"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You have been a stronghold to the poor, a refuge from the storm, ____.",
+     "answer": "a shade from the heat",
+     "wrong": [
+      "a light in the darkness",
+      "a well in the desert",
+      "a wall against the flood"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The speaker praises the LORD for making a fortified city into a ruin.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The LORD will take away the reproach of his people from Jerusalem only.",
+     "answer": false,
+     "v": 8
+    }
+   ]
+  },
+  "26": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In the song of Judah, what does God appoint for walls and bulwarks?",
+     "options": [
+      "Salvation",
+      "Angels",
+      "Fire",
+      "Righteous men"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the LORD do to the lofty city?",
+     "options": [
+      "Lays it low, even to the dust",
+      "Makes it a refuge for the poor",
+      "Gives it to the house of Judah",
+      "Fills it with singing"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whose feet will tread down the lofty city?",
+     "options": [
+      "The poor and the needy",
+      "The armies of Assyria",
+      "The priests and Levites",
+      "The young children"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When the LORD's judgments are on the earth, what do the inhabitants of the world learn?",
+     "options": [
+      "Righteousness",
+      "Fear",
+      "Humility",
+      "Patience"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "After being in pain like a woman in labor, what do the people say they gave birth to?",
+     "options": [
+      "Only wind",
+      "A great nation",
+      "A new king",
+      "Nothing but tears"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "You will keep whoever's mind is steadfast in ____, because he trusts in you.",
+     "answer": "perfect peace",
+     "wrong": [
+      "great joy",
+      "safe keeping",
+      "your love"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Trust in the LORD forever; for in the LORD, the LORD, is ____.",
+     "answer": "an everlasting Rock",
+     "wrong": [
+      "a mighty fortress",
+      "a strong tower",
+      "a sure refuge"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Come, my people, enter into your rooms, and shut your doors behind you. Hide yourself ____.",
+     "answer": "for a little moment",
+     "wrong": [
+      "until the morning comes",
+      "in the secret place",
+      "for seven days"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter says, 'Your dead shall live. Their dead bodies shall arise.'",
+     "answer": true,
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When favor is shown to the wicked, he will learn righteousness.",
+     "answer": false,
+     "v": 10
+    }
+   ]
+  },
+  "27": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What will the LORD punish with his hard and great and strong sword?",
+     "options": [
+      "Leviathan, the fleeing serpent",
+      "Behemoth, the great beast",
+      "The lion of the forest",
+      "The eagle of the mountains"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How often does the LORD say he will water his vineyard?",
+     "options": [
+      "Every moment",
+      "Every morning",
+      "Once each year",
+      "Every Sabbath"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What would the LORD do if he found briers and thorns?",
+     "options": [
+      "March on them and burn them",
+      "Let them grow with the vines",
+      "Plant new vines among them",
+      "Give them to the wild animals"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What happens to the stones of the altar when Jacob's sin is taken away?",
+     "options": [
+      "They become like chalk stones beaten in pieces",
+      "They are rebuilt with gold",
+      "They are carried up to Zion",
+      "They are buried in the ground"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Israel will blossom and bud. They will fill the surface of the world ____.",
+     "answer": "with fruit",
+     "wrong": [
+      "with songs",
+      "with light",
+      "with praise"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Those who were outcasts in Egypt shall come; and they will worship the LORD in ____.",
+     "answer": "the holy mountain at Jerusalem",
+     "wrong": [
+      "the land of their fathers",
+      "the courts of Samaria",
+      "the valley of Jezreel"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The LORD will thresh from the flowing stream of the Euphrates to ____.",
+     "answer": "the brook of Egypt",
+     "wrong": [
+      "the great sea",
+      "the Jordan River",
+      "the wilderness of Sinai"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "In that day the people sing of a pleasant vineyard that the LORD keeps night and day.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD says he is full of wrath toward his vineyard.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The women come and set the withered boughs on fire, for they are a people of no understanding.",
+     "answer": true,
+     "v": 11
+    }
+   ]
+  },
+  "28": {
+   "keyVerse": 16,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "The chapter opens with a woe to the crown of pride of whom?",
+     "options": [
+      "The drunkards of Ephraim",
+      "The princes of Judah",
+      "The priests of Jerusalem",
+      "The kings of Assyria"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the Lord GOD lay in Zion for a foundation?",
+     "options": [
+      "A tried and precious cornerstone",
+      "A golden altar",
+      "A pillar of cedar",
+      "A royal throne"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do the scoffers who rule Jerusalem say they have made a covenant with?",
+     "options": [
+      "Death",
+      "Egypt",
+      "Assyria",
+      "The Philistines"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the chapter say is too short and too narrow?",
+     "options": [
+      "The bed and the blanket",
+      "The wall and the gate",
+      "The robe and the belt",
+      "The tent and its cords"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For it is precept on precept, precept on precept; ____; here a little, there a little.",
+     "answer": "line on line, line on line",
+     "wrong": [
+      "word on word, word on word",
+      "stone on stone, stone on stone",
+      "day by day, day by day"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will make justice the measuring line, and ____.",
+     "answer": "righteousness the plumb line",
+     "wrong": [
+      "mercy the foundation stone",
+      "truth the cornerstone",
+      "peace the building line"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The priest and the prophet reel with strong drink. They err in vision. ____.",
+     "answer": "They stumble in judgment",
+     "wrong": [
+      "They fall in the gate",
+      "They forget the law",
+      "They sleep at the altar"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "In that day the LORD of Armies will be a crown of glory to the residue of his people.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The farmer in the parable keeps plowing continually and never plants his seed.",
+     "answer": false,
+     "v": 24
+    }
+   ]
+  },
+  "29": {
+   "keyVerse": 13,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How is Ariel described at the start of the chapter?",
+     "options": [
+      "The city where David encamped",
+      "The city Solomon built",
+      "The city of the Philistines",
+      "The city of palm trees"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why can't the educated man read the book of the vision?",
+     "options": [
+      "It is sealed",
+      "It is in a foreign language",
+      "It is torn and old",
+      "He has lost his sight"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "The nations that fight against Mount Zion will be like what?",
+     "options": [
+      "A hungry man who dreams he eats",
+      "A lion that loses its prey",
+      "Grass that withers in the heat",
+      "A ship without a sail"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In a very little while, what will Lebanon be turned into?",
+     "options": [
+      "A fruitful field",
+      "A desert",
+      "A great city",
+      "A lake"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do those who hide their counsel from the LORD say?",
+     "options": [
+      "Who sees us? Who knows us?",
+      "The LORD is far away",
+      "We will never be judged",
+      "Our idols will protect us"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "This people draws near with their mouth and honors me ____, but they have removed their heart far from me.",
+     "answer": "with their lips",
+     "wrong": [
+      "with their offerings",
+      "with their songs",
+      "with their feasts"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Should the thing made say about him who made it, '____'?",
+     "answer": "He didn't make me",
+     "wrong": [
+      "He has forgotten me",
+      "He cannot see me",
+      "He will break me"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They are drunken, but ____; they stagger, but not with strong drink.",
+     "answer": "not with wine",
+     "wrong": [
+      "not from feasting",
+      "not in the night",
+      "not before the LORD"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "In that day the deaf will hear the words of the book, and the blind will see.",
+     "answer": true,
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD says Jacob will be ashamed and his face will grow pale.",
+     "answer": false,
+     "v": 22
+    }
+   ]
+  },
+  "30": {
+   "keyVerse": 21,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where do the rebellious children go for help without asking the LORD?",
+     "options": [
+      "Egypt",
+      "Assyria",
+      "Babylon",
+      "Damascus"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What name does the LORD give to Egypt?",
+     "options": [
+      "Rahab who sits still",
+      "The broken reed",
+      "The fading flower",
+      "The lion of the south"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do the rebellious people tell the prophets?",
+     "options": [
+      "Tell us pleasant things",
+      "Tell us the truth",
+      "Pray for us",
+      "Go down to Egypt"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many will flee at the threat of one?",
+     "options": [
+      "One thousand",
+      "One hundred",
+      "Ten thousand",
+      "Fifty"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How much brighter will the sun be when the LORD heals his people?",
+     "options": [
+      "Seven times brighter",
+      "Twice as bright",
+      "Ten times brighter",
+      "As bright as fire"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Your ears will hear a voice behind you, saying, '____. Walk in it.'",
+     "answer": "This is the way",
+     "wrong": [
+      "Turn back to me",
+      "Here is your rest",
+      "Do not be afraid"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You will be saved in returning and rest. Your strength will be in ____.",
+     "answer": "quietness and in confidence",
+     "wrong": [
+      "horses and in chariots",
+      "Egypt and in Pharaoh",
+      "armies and in walls"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For the LORD is a God of justice. Blessed are all those who ____.",
+     "answer": "wait for him",
+     "wrong": [
+      "fear his name",
+      "walk in his ways",
+      "trust his word"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When they refused to rest, the people said, 'No, for we will flee on horses.'",
+     "answer": true,
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD tells Isaiah to keep the message secret and not write it down.",
+     "answer": false,
+     "v": 8
+    }
+   ]
+  },
+  "31": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What do those who go down to Egypt for help trust in?",
+     "options": [
+      "Horses, chariots, and horsemen",
+      "Silver and gold",
+      "Walls and towers",
+      "Idols and diviners"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "The LORD coming down to fight on Mount Zion is compared to what?",
+     "options": [
+      "A lion growling over his prey",
+      "A bear robbed of her cubs",
+      "An eagle diving from the sky",
+      "A wild ox charging"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How will the LORD of Armies protect Jerusalem?",
+     "options": [
+      "As birds hovering",
+      "As a wall of fire",
+      "As a shepherd with a staff",
+      "As a mother with her child"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "By what sword will the Assyrian fall?",
+     "options": [
+      "A sword not of man",
+      "The sword of Egypt",
+      "The sword of Judah",
+      "His own sword"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Now the Egyptians are men, and not God; and their horses ____.",
+     "answer": "flesh, and not spirit",
+     "wrong": [
+      "weak, and not strong",
+      "few, and not many",
+      "tired, and not swift"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "In that day everyone shall cast away ____ and his idols of gold.",
+     "answer": "his idols of silver",
+     "wrong": [
+      "his chariots of iron",
+      "his robes of purple",
+      "his altars of stone"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Says the LORD, whose fire is in Zion, and ____.",
+     "answer": "his furnace in Jerusalem",
+     "wrong": [
+      "his throne in heaven",
+      "his altar in Bethel",
+      "his light in Judah"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Those who go down to Egypt for help look to the Holy One of Israel and seek the LORD.",
+     "answer": false,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When the LORD stretches out his hand, both the helper and the one helped will fall.",
+     "answer": true,
+     "v": 3
+    }
+   ]
+  },
+  "32": {
+   "keyVerse": 17,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who are told to rise up and tremble because they are at ease?",
+     "options": [
+      "The careless women",
+      "The princes of Judah",
+      "The false prophets",
+      "The rich merchants"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the fool no longer be called?",
+     "options": [
+      "Noble",
+      "Wise",
+      "Rich",
+      "Righteous"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What happens when the Spirit is poured on us from on high?",
+     "options": [
+      "The wilderness becomes a fruitful field",
+      "The temple is rebuilt",
+      "The enemy flees from Zion",
+      "The king returns to Jerusalem"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why will the careless women be troubled for days beyond a year?",
+     "options": [
+      "The vintage will fail and no harvest will come",
+      "Their husbands have gone to war",
+      "Their houses have been burned",
+      "The king has been taken captive"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who are called blessed at the end of the chapter?",
+     "options": [
+      "Those who sow beside all waters",
+      "Those who build strong cities",
+      "Those who wait at the gate",
+      "Those who keep the feasts"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Behold, a king shall reign in righteousness, and ____.",
+     "answer": "princes shall rule in justice",
+     "wrong": [
+      "the nations shall bow down",
+      "his people shall dwell safely",
+      "priests shall teach the law"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "A man shall be as streams of water in a dry place, as the shade of ____ in a weary land.",
+     "answer": "a large rock",
+     "wrong": [
+      "a tall tree",
+      "a strong tower",
+      "a wide tent"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The work of righteousness will be peace, and the effect of righteousness, ____ forever.",
+     "answer": "quietness and confidence",
+     "wrong": [
+      "joy and gladness",
+      "strength and honor",
+      "safety and rest"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The noble person devises noble things and continues in them.",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The scoundrel makes plans to help the humble with honest words.",
+     "answer": false,
+     "v": 7
+    }
+   ]
+  },
+  "33": {
+   "keyVerse": 22,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who can live with the devouring fire and everlasting burning?",
+     "options": [
+      "He who walks righteously and speaks blamelessly",
+      "He who offers many sacrifices",
+      "He who was born in Zion",
+      "He who is mighty in battle"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the chapter call your treasure?",
+     "options": [
+      "The fear of the LORD",
+      "The gold of the temple",
+      "The law of Moses",
+      "The city of Zion"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How will the plunder be gathered?",
+     "options": [
+      "As the caterpillar gathers",
+      "As the ants store food",
+      "As a farmer reaps grain",
+      "As bees gather honey"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What will not pass through the LORD's place of wide rivers and streams?",
+     "options": [
+      "Galleys with oars and gallant ships",
+      "Enemy armies and chariots",
+      "Unclean animals",
+      "Idols and false prophets"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do the ambassadors of peace do?",
+     "options": [
+      "Weep bitterly",
+      "Sign a covenant",
+      "Flee to Egypt",
+      "Bring gifts of gold"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For the LORD is our judge. The LORD is our lawgiver. ____. He will save us.",
+     "answer": "The LORD is our king",
+     "wrong": [
+      "The LORD is our shepherd",
+      "The LORD is our fortress",
+      "The LORD is our light"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Your eyes will see ____. They will see a distant land.",
+     "answer": "the king in his beauty",
+     "wrong": [
+      "the LORD in his temple",
+      "the city of David",
+      "the glory of Zion"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Your eyes will see Jerusalem, a quiet habitation, ____ that won't be removed.",
+     "answer": "a tent",
+     "wrong": [
+      "a rock",
+      "a tower",
+      "a wall"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The inhabitant of that place will not say, 'I am sick.'",
+     "answer": true,
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The one who walks righteously will dwell in the valley, and his bread will fail.",
+     "answer": false,
+     "v": 16
+    }
+   ]
+  }
+ }
+}

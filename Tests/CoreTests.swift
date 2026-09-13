@@ -418,3 +418,58 @@ final class BundledContentTests: XCTestCase {
         }
     }
 }
+
+final class ReadAlongTests: XCTestCase {
+    let verses = [
+        "Now there was a man of the Pharisees named Nicodemus, a ruler of the Jews.",
+        "The same came to him by night, and said to him, Rabbi, we know that you are a teacher come from God.",
+        "Jesus answered him, Most certainly, I tell you, unless one is born anew, he can't see God's Kingdom."
+    ]
+
+    func testCleanReadingFinishes() {
+        var r = ReadAlong(verses: verses)
+        r.update(transcript: verses.joined(separator: " "))
+        XCTAssertTrue(r.finished)
+        XCTAssertEqual(r.coverage, 1, accuracy: 0.001)
+    }
+
+    func testMisheardNameAndSkippedWordsKeepMoving() {
+        var r = ReadAlong(verses: [verses[0]])
+        r.update(transcript: "now there was a man of the pharisee named nick a deemus a ruler of jews")
+        XCTAssertTrue(r.finished)
+        XCTAssertGreaterThan(r.coverage, 0.8)
+    }
+
+    func testPartialResultsDoNotRunAhead() {
+        var r = ReadAlong(verses: verses)
+        r.update(transcript: "now there was")
+        XCTAssertEqual(r.cursor, 3)
+        r.update(transcript: "now there was a man")
+        XCTAssertEqual(r.cursor, 5)
+        r.update(transcript: "now there was a man")
+        XCTAssertEqual(r.cursor, 5)
+    }
+
+    func testSegmentsContinueWhereTheLastEnded() {
+        var r = ReadAlong(verses: verses)
+        r.update(transcript: verses[0])
+        r.beginSegment()
+        r.update(transcript: verses[1])
+        XCTAssertEqual(r.currentVerse, 3)
+        XCTAssertGreaterThan(r.coverage, 0.6)
+    }
+
+    func testJumpingAheadAVerseReanchors() {
+        var r = ReadAlong(verses: verses)
+        r.update(transcript: "now there was a man of the pharisees jesus answered him most certainly I tell you")
+        XCTAssertEqual(r.currentVerse, 3)
+        XCTAssertNotNil(r.firstMissed)
+    }
+
+    func testNumbersMatchSpokenWords() {
+        XCTAssertEqual(ReadAlong.key("12"), ReadAlong.key("twelve"))
+        XCTAssertTrue(ReadAlong.close("pharisee", "pharisees"))
+        XCTAssertFalse(ReadAlong.close("man", "god"))
+    }
+}
+

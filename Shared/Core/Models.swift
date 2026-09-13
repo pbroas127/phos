@@ -385,12 +385,13 @@ enum ShieldTheme: String, Codable, CaseIterable, Identifiable {
 }
 
 enum ReadMode: String, Codable, CaseIterable, Identifiable {
-    case paper, inApp, listen
+    case paper, inApp, speak, listen
     var id: String { rawValue }
     var title: String {
         switch self {
         case .paper: return "Paper Bible"
         case .inApp: return "Read in Phos"
+        case .speak: return "Read it aloud"
         case .listen: return "Listen"
         }
     }
@@ -398,6 +399,7 @@ enum ReadMode: String, Codable, CaseIterable, Identifiable {
         switch self {
         case .paper: return "book.closed"
         case .inApp: return "text.book.closed"
+        case .speak: return "waveform"
         case .listen: return "headphones"
         }
     }

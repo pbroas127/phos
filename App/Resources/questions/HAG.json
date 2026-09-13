@@ -1,0 +1,233 @@
+{
+ "book": "HAG",
+ "chapters": {
+  "1": {
+   "keyVerse": 8,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What were the people saying about the LORD's house?",
+     "options": [
+      "The time hasn't come to build it",
+      "It should be built in Babylon",
+      "They were too poor to rebuild it",
+      "The LORD had abandoned it"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the LORD tell them to go up to the mountain and bring?",
+     "options": [
+      "Wood",
+      "Stones",
+      "Gold",
+      "Water"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why does the LORD say the heavens withhold the dew?",
+     "options": [
+      "His house lies waste while they tend their own",
+      "They worship idols on the hills",
+      "They have broken the Sabbath",
+      "They married foreign wives"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What is Haggai called when he tells the people \"I am with you\"?",
+     "options": [
+      "The LORD's messenger",
+      "The LORD's watchman",
+      "The servant of Darius",
+      "The prophet of Judah"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Is it a time for you yourselves to dwell in ____, while this house lies waste?",
+     "answer": "your paneled houses",
+     "wrong": [
+      "your fortified cities",
+      "your fine tents",
+      "your stone palaces"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He who earns wages earns wages to put them into ____.",
+     "answer": "a bag with holes in it",
+     "wrong": [
+      "a jar with cracks",
+      "a torn purse",
+      "his neighbor's hand"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Now therefore this is what the LORD of Armies says: '____.'",
+     "answer": "Consider your ways",
+     "wrong": [
+      "Return to me",
+      "Build my house",
+      "Be strong and work"
+     ],
+     "v": 5
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The LORD's word comes in Darius' second year",
+      "The LORD explains why he called a drought",
+      "Zerubbabel, Joshua, and the people obey",
+      "They begin work on the LORD's house"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After the people obeyed, the LORD told them, \"I am with you.\"",
+     "answer": true,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Only Zerubbabel and Joshua obeyed, while the rest of the people refused.",
+     "answer": false,
+     "v": 12
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the LORD tell Zerubbabel, Joshua, and the people to do?",
+     "options": [
+      "Be strong and work",
+      "Rest and wait",
+      "Fast and pray",
+      "Return to Babylon"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the LORD say about the silver and the gold?",
+     "options": [
+      "They are his",
+      "They cannot save",
+      "The nations will take them",
+      "They must not be used"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the LORD say he will make Zerubbabel like?",
+     "options": [
+      "A signet ring",
+      "A cornerstone",
+      "A shepherd's staff",
+      "A crown of gold"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "With what did the LORD strike the work of their hands?",
+     "options": [
+      "Blight, mildew, and hail",
+      "Locusts, drought, and fire",
+      "Plague, famine, and sword",
+      "Frost, wind, and flood"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The latter glory of this house will be ____.",
+     "answer": "greater than the former",
+     "wrong": [
+      "equal to the former",
+      "seen by all nations",
+      "restored in your days"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The treasure of all nations will come, and I will ____.",
+     "answer": "fill this house with glory",
+     "wrong": [
+      "rebuild Jerusalem's walls",
+      "restore the kingdom to Judah",
+      "dwell among my people"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Is the seed yet in the barn? ... From today ____.",
+     "answer": "I will bless you",
+     "wrong": [
+      "I will remember you",
+      "you will have plenty",
+      "the rains will return"
+     ],
+     "v": 19
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The LORD asks who saw the house's former glory",
+      "Haggai asks the priests about the law",
+      "The LORD recalls their lean harvests",
+      "A message comes for Zerubbabel alone"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The priests said food touched by someone unclean from a dead body becomes unclean.",
+     "answer": true,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The LORD says the horses and riders will fall by fire from heaven.",
+     "answer": false,
+     "v": 22
+    }
+   ]
+  }
+ }
+}

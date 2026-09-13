@@ -1,0 +1,2471 @@
+{
+ "book": "1KI",
+ "chapters": {
+  "1": {
+   "keyVerse": 39,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who exalted himself, saying \"I will be king,\" while David was old?",
+     "options": [
+      "Adonijah the son of Haggith",
+      "Absalom the son of Maacah",
+      "Amnon the son of Ahinoam",
+      "Joab the son of Zeruiah"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who followed Adonijah and helped him?",
+     "options": [
+      "Joab and Abiathar the priest",
+      "Zadok and Nathan",
+      "Benaiah and Shimei",
+      "Hushai and Ahithophel"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where was Solomon anointed king?",
+     "options": [
+      "Gihon",
+      "En Rogel",
+      "Hebron",
+      "Gibeon"
+     ],
+     "v": 38
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who brought Adonijah the news that Solomon had been made king?",
+     "options": [
+      "Jonathan the son of Abiathar",
+      "Ahimaaz the son of Zadok",
+      "Benaiah the son of Jehoiada",
+      "Joab the son of Zeruiah"
+     ],
+     "v": 42
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "David said, \"Cause Solomon my son to ride on ____.\"",
+     "answer": "my own mule",
+     "wrong": [
+      "a royal chariot",
+      "a white horse",
+      "a young donkey"
+     ],
+     "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They blew the trumpet; and all the people said, \"____!\"",
+     "answer": "Long live King Solomon",
+     "wrong": [
+      "Blessed be King Solomon",
+      "The LORD save the king",
+      "Solomon reigns over Israel"
+     ],
+     "v": 39
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Solomon said of Adonijah, \"If he shows himself a worthy man, ____ shall fall to the earth.\"",
+     "answer": "not a hair of his",
+     "wrong": [
+      "no blood of his",
+      "not one of his sons",
+      "no stone of his house"
+     ],
+     "v": 52
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Abishag is brought to serve the king",
+      "Nathan speaks to Bathsheba",
+      "David vows that Solomon will reign",
+      "Adonijah's guests are afraid and scatter"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Adonijah invited Solomon and Nathan the prophet to his feast.",
+     "answer": false,
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Solomon sent Adonijah to his house instead of putting him to death that day.",
+     "answer": true,
+     "v": 53
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Adonijah ask Bathsheba to request from Solomon?",
+     "options": [
+      "Abishag the Shunammite as his wife",
+      "A share of the kingdom",
+      "Fields at Anathoth",
+      "A place at the king's table"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Solomon send Abiathar the priest?",
+     "options": [
+      "To his own fields at Anathoth",
+      "To prison in Jerusalem",
+      "Into exile in Egypt",
+      "To serve at Gibeon"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Solomon not put Abiathar to death?",
+     "options": [
+      "He had carried the ark before David",
+      "He had helped Solomon become king",
+      "He was a son of Zadok",
+      "He had fled to the altar"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did David tell Solomon to do for the sons of Barzillai?",
+     "options": [
+      "Let them eat at his table",
+      "Give them land in Gilead",
+      "Make them officers of the army",
+      "Send them home with gifts"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "David said, \"I am going the way of all the earth. You be strong therefore, and ____.\"",
+     "answer": "show yourself a man",
+     "wrong": [
+      "fear the LORD your God",
+      "guard your father's house",
+      "trust in the LORD"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Solomon told Shimei, \"On the day you go out and pass over ____, know for certain that you will surely die.\"",
+     "answer": "the brook Kidron",
+     "wrong": [
+      "the river Jordan",
+      "the gate of Jerusalem",
+      "the Mount of Olives"
+     ],
+     "v": 37
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When Benaiah told Joab to come out, Joab said, \"No; but ____.\"",
+     "answer": "I will die here",
+     "wrong": [
+      "I will not come",
+      "let the king come",
+      "I will stay here"
+     ],
+     "v": 30
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "David gives Solomon his final charge",
+      "Adonijah is put to death",
+      "Joab is killed at the LORD's Tent",
+      "Shimei goes to Gath for his slaves"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Shimei died after he left Jerusalem to bring back his runaway slaves.",
+     "answer": true,
+     "v": 40
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Solomon put Abiathar over the army in Joab's place.",
+     "answer": false,
+     "v": 35
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the true mother respond when the king ordered the child divided?",
+     "options": [
+      "She begged him to give the child to the other woman",
+      "She agreed the child should be divided",
+      "She fell silent and wept",
+      "She tried to take the child and run"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why were the people still sacrificing in the high places?",
+     "options": [
+      "No house was yet built for the LORD's name",
+      "The ark had been taken away",
+      "The priests had commanded it",
+      "Solomon had ordered it"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did God give Solomon that he had not asked for?",
+     "options": [
+      "Riches and honor",
+      "The lives of his enemies",
+      "A great army",
+      "Many sons"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did God promise to do if Solomon walked in his ways as David had?",
+     "options": [
+      "Lengthen his days",
+      "Give him wisdom",
+      "Make his name great",
+      "Give him rest from enemies"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Solomon said, \"Give your servant therefore ____ to judge your people.\"",
+     "answer": "an understanding heart",
+     "wrong": [
+      "a mighty arm",
+      "a righteous spirit",
+      "great strength"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "All Israel feared the king, for they saw that ____ was in him to do justice.",
+     "answer": "the wisdom of God",
+     "wrong": [
+      "the Spirit of the LORD",
+      "the fear of God",
+      "the heart of David"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Solomon said, \"I am just a little child. I don't know ____ or come in.\"",
+     "answer": "how to go out",
+     "wrong": [
+      "how to rule",
+      "the way to lead",
+      "how to judge"
+     ],
+     "v": 7
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Solomon marries Pharaoh's daughter",
+      "Solomon offers sacrifices at Gibeon",
+      "God speaks to Solomon in a dream",
+      "Two women bring their dispute to the king"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God was pleased that Solomon had not asked for long life or riches for himself.",
+     "answer": true,
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When Solomon awoke from the dream, he offered sacrifices before the ark at Gibeon.",
+     "answer": false,
+     "v": 15
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 29,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was the job of Solomon's twelve officers?",
+     "options": [
+      "Provide food for the king's household, a month each",
+      "Command twelve divisions of the army",
+      "Judge the twelve tribes",
+      "Collect silver for the LORD's house"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who was over Solomon's army?",
+     "options": [
+      "Benaiah the son of Jehoiada",
+      "Joab the son of Zeruiah",
+      "Azariah the son of Nathan",
+      "Zabud the son of Nathan"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did people of all nations come to Solomon?",
+     "options": [
+      "To hear his wisdom",
+      "To trade for his horses",
+      "To bring gifts for the temple",
+      "To make treaties of peace"
+     ],
+     "v": 34
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Solomon's wisdom excelled the wisdom of whom?",
+     "options": [
+      "All the children of the east and all Egypt",
+      "All the kings of Tyre and Sidon",
+      "The wise men of Babylon",
+      "The prophets of Israel"
+     ],
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Judah and Israel lived safely, every man under his vine and under ____, all the days of Solomon.",
+     "answer": "his fig tree",
+     "wrong": [
+      "his olive tree",
+      "his own roof",
+      "his tent door"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Judah and Israel were numerous as the sand which is by the sea in multitude, ____.",
+     "answer": "eating and drinking and making merry",
+     "wrong": [
+      "living in peace and safety",
+      "working the fields of the land",
+      "serving the king with joy"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Solomon spoke of trees, from the cedar that is in Lebanon even to the hyssop that grows ____.",
+     "answer": "out of the wall",
+     "wrong": [
+      "beside the river",
+      "in the desert",
+      "on the hillside"
+     ],
+     "v": 33
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Solomon had peace on all sides around him.",
+     "answer": true,
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The kingdoms Solomon ruled refused to bring him tribute.",
+     "answer": false,
+     "v": 21
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 4,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Solomon say David could not build a house for the LORD?",
+     "options": [
+      "Because of the wars all around him",
+      "Because Nathan had forbidden it",
+      "Because he had no cedar",
+      "Because the ark was not in Jerusalem"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Solomon ask Hiram king of Tyre to provide?",
+     "options": [
+      "Cedar trees cut out of Lebanon",
+      "Gold and precious stones",
+      "Ships to carry stone",
+      "Soldiers to guard the work"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Solomon give Hiram year by year?",
+     "options": [
+      "Wheat and pure oil",
+      "Silver and gold",
+      "Horses and chariots",
+      "Cattle and sheep"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Solomon want Hiram's servants to cut the timber?",
+     "options": [
+      "No one in Israel could cut timber like the Sidonians",
+      "Israel's men were busy fighting wars",
+      "Hiram's people owned all the forests",
+      "The LORD had told David to use them"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Hiram said, \"Blessed is the LORD today, who has given to David ____ to rule over this great people.\"",
+     "answer": "a wise son",
+     "wrong": [
+      "a mighty son",
+      "a faithful heir",
+      "a chosen king"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Solomon said, \"But now the LORD my God has given me ____. There is no enemy and no evil occurrence.\"",
+     "answer": "rest on every side",
+     "wrong": [
+      "victory over all nations",
+      "peace with all kings",
+      "a strong kingdom"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They cut out large stones, costly stones, to lay ____ with worked stone.",
+     "answer": "the foundation of the house",
+     "wrong": [
+      "the walls of the city",
+      "the floor of the court",
+      "the steps of the altar"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Hiram king of Tyre had always loved David.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The workers Solomon sent to Lebanon stayed there until the house was finished.",
+     "answer": false,
+     "v": 14
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 13,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was the inner sanctuary prepared for?",
+     "options": [
+      "To set the ark of the LORD's covenant there",
+      "To store the king's treasures",
+      "To be a place for the priests to live",
+      "To hold the bronze sea"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was unusual about the building work on the house?",
+     "options": [
+      "No hammer, ax, or iron tool was heard there",
+      "It was done only at night",
+      "Only priests were allowed to build it",
+      "It was finished in a single year"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Solomon overlay the inside of the house with?",
+     "options": [
+      "Pure gold",
+      "Silver",
+      "Polished bronze",
+      "Ivory"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How long did Solomon spend building the LORD's house?",
+     "options": [
+      "Seven years",
+      "Three years",
+      "Thirteen years",
+      "Twenty years"
+     ],
+     "v": 38
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was carved on the walls of the house?",
+     "options": [
+      "Cherubim, palm trees, and open flowers",
+      "Lions, oxen, and eagles",
+      "Grapes, figs, and pomegranates",
+      "The names of the twelve tribes"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The LORD said, \"I will dwell among the children of Israel, and ____.\"",
+     "answer": "will not forsake my people Israel",
+     "wrong": [
+      "will bless them forever",
+      "will give them rest",
+      "will be their God"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The wings of the cherubim were stretched out, and their wings touched ____ in the middle of the house.",
+     "answer": "one another",
+     "wrong": [
+      "the ark",
+      "the ceiling",
+      "the altar"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "There was cedar on the house within, carved with buds and open flowers. All was cedar. ____.",
+     "answer": "No stone was visible",
+     "wrong": [
+      "No gold was used",
+      "No iron was seen",
+      "Nothing was left bare"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God told Solomon he would establish his word with him if Solomon walked in his statutes.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The two cherubim in the inner sanctuary were made of cedar wood.",
+     "answer": false,
+     "v": 23
+    }
+   ]
+  },
+  "7": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the molten sea stand on?",
+     "options": [
+      "Twelve oxen",
+      "Twelve lions",
+      "Ten bronze bases",
+      "Two pillars"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How long did Solomon spend building his own house?",
+     "options": [
+      "Thirteen years",
+      "Seven years",
+      "Four years",
+      "Forty years"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why were the bronze vessels never weighed?",
+     "options": [
+      "There were so many of them",
+      "The scales had been lost",
+      "Hiram refused to weigh them",
+      "The priests forbade it"
+     ],
+     "v": 47
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What names were given to the two pillars at the porch?",
+     "options": [
+      "Jachin and Boaz",
+      "Ziv and Bul",
+      "Gihon and Kidron",
+      "Ophir and Tarshish"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Solomon brought in the things David his father had dedicated and put them in ____.",
+     "answer": "the treasuries of the LORD's house",
+     "wrong": [
+      "the storehouses of his palace",
+      "the house of the Forest",
+      "the chambers of the priests"
+     ],
+     "v": 51
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Solomon built the House of ____, on four rows of cedar pillars.",
+     "answer": "the Forest of Lebanon",
+     "wrong": [
+      "the Cedars of Tyre",
+      "the Mighty Men",
+      "the Kings of Judah"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He made the porch of the throne where he was to judge, even ____.",
+     "answer": "the porch of judgment",
+     "wrong": [
+      "the hall of kings",
+      "the court of justice",
+      "the house of pillars"
+     ],
+     "v": 7
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Solomon builds his own house",
+      "Hiram is brought from Tyre",
+      "The two pillars are set up at the porch",
+      "David's dedicated things are brought in"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Solomon also built a house for Pharaoh's daughter.",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The king cast the bronze vessels in Jerusalem near the temple.",
+     "answer": false,
+     "v": 46
+    }
+   ]
+  },
+  "8": {
+   "keyVerse": 27,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What filled the LORD's house when the priests came out of the holy place?",
+     "options": [
+      "The cloud of the LORD's glory",
+      "Smoke from the sacrifices",
+      "Fire from heaven",
+      "A great sound of wind"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was inside the ark?",
+     "options": [
+      "Only the two stone tablets from Horeb",
+      "The tablets, manna, and Aaron's rod",
+      "The book of the law of Moses",
+      "Gold vessels from the Tent"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Solomon ask God to do when a foreigner prays toward the house?",
+     "options": [
+      "Hear and do all the foreigner asks",
+      "Turn him away from the house",
+      "Hear only if he joins Israel",
+      "Let the priests decide for him"
+     ],
+     "v": 43
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How long did the feast with all Israel last?",
+     "options": [
+      "Seven days and seven more days",
+      "Three days",
+      "Forty days",
+      "One day and one night"
+     ],
+     "v": 65
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Solomon prayed that all the peoples of the earth may know that ____. There is no one else.",
+     "answer": "the LORD himself is God",
+     "wrong": [
+      "the LORD is with Israel",
+      "this house is holy",
+      "Israel is his people"
+     ],
+     "v": 60
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"There has not failed one word of ____, which he promised by Moses his servant.\"",
+     "answer": "all his good promise",
+     "wrong": [
+      "all his holy law",
+      "his covenant with Israel",
+      "all his mighty works"
+     ],
+     "v": 56
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"If they sin against you (for there is no man ____), and you are angry with them...\"",
+     "answer": "who doesn't sin",
+     "wrong": [
+      "who is righteous",
+      "without some fault",
+      "who can stand"
+     ],
+     "v": 46
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "A man sins against his neighbor",
+      "Israel is struck down before the enemy",
+      "The sky is shut up with no rain",
+      "A foreigner comes from a far country"
+     ],
+     "v": 31
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Solomon said that even heaven cannot contain God.",
+     "answer": true,
+     "v": 27
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Solomon prayed the dedication prayer from inside the most holy place.",
+     "answer": false,
+     "v": 22
+    }
+   ]
+  },
+  "9": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did God warn would happen if Israel turned away to serve other gods?",
+     "options": [
+      "Israel would be cut off from the land",
+      "Solomon's wisdom would be taken away",
+      "The ark would be captured",
+      "Israel would lose all its gold"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Hiram feel about the twenty cities Solomon gave him?",
+     "options": [
+      "They didn't please him",
+      "He rejoiced greatly over them",
+      "He thought them too generous",
+      "He gave them to his sons"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What would people say about why the LORD brought ruin on the house?",
+     "options": [
+      "They abandoned the LORD and served other gods",
+      "Their king was not wise",
+      "Their enemies were too strong",
+      "They failed to pay their tribute"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did King Solomon build a fleet of ships?",
+     "options": [
+      "Ezion Geber, on the shore of the Red Sea",
+      "Joppa, on the Great Sea",
+      "Tyre, beside Hiram's city",
+      "Gaza, in the land of the Philistines"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did Solomon's wife, Pharaoh's daughter, come to have Gezer?",
+     "options": [
+      "Pharaoh took it and gave it as a wedding gift",
+      "Solomon captured it for her",
+      "She bought it with her own gold",
+      "Hiram gave it to her as a gift"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The LORD said, \"I have made this house holy, to put my name there forever; and ____ shall be there perpetually.\"",
+     "answer": "my eyes and my heart",
+     "wrong": [
+      "my glory and my power",
+      "my cloud and my fire",
+      "my love and my mercy"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"Israel will be ____ among all peoples.\"",
+     "answer": "a proverb and a byword",
+     "wrong": [
+      "a warning and a shame",
+      "a curse and a reproach",
+      "scattered and forgotten"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Hiram called the cities Solomon gave him ____ to this day.",
+     "answer": "the land of Cabul",
+     "wrong": [
+      "the land of Galilee",
+      "the cities of Tyre",
+      "the border of Asher"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD appeared to Solomon a second time, as he had appeared to him at Gibeon.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Solomon made the children of Israel his bondservants for forced labor.",
+     "answer": false,
+     "v": 22
+    }
+   ]
+  },
+  "10": {
+   "keyVerse": 23,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the queen of Sheba come to Solomon?",
+     "options": [
+      "To test him with hard questions",
+      "To make a marriage alliance",
+      "To seek help against her enemies",
+      "To buy horses from Egypt"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Solomon make from the almug trees?",
+     "options": [
+      "Pillars for the houses, and harps",
+      "Ships for the fleet of Tarshish",
+      "His great throne",
+      "Doors for the inner sanctuary"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why were none of Solomon's drinking vessels made of silver?",
+     "options": [
+      "Silver was considered of little value",
+      "Silver was forbidden by the law",
+      "Hiram kept all the silver",
+      "Silver had run out in Israel"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What stood on the six steps of Solomon's ivory throne?",
+     "options": [
+      "Twelve lions",
+      "Twelve oxen",
+      "Two cherubim",
+      "Golden palm trees"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The queen of Sheba said, \"I didn't believe the words until I came and my eyes had seen it. Behold, ____ was told me!\"",
+     "answer": "not even half",
+     "wrong": [
+      "not a single word",
+      "only the truth",
+      "not the smallest part"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"Because the LORD loved Israel forever, therefore he made you king, ____.\"",
+     "answer": "to do justice and righteousness",
+     "wrong": [
+      "to build his holy house",
+      "to rule over the nations",
+      "to lead his people in peace"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The king made silver as common as stones in Jerusalem, and cedars as common as ____ in the lowland.",
+     "answer": "the sycamore trees",
+     "wrong": [
+      "the olive trees",
+      "the reeds by the river",
+      "the grass of the field"
+     ],
+     "v": 27
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The queen of Sheba hears of Solomon's fame",
+      "She sees his wisdom, house, and table",
+      "She blesses the LORD for making him king",
+      "She returns to her own land"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Solomon answered all of the queen of Sheba's questions.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The queen of Sheba said she believed the report as soon as she heard it in her own land.",
+     "answer": false,
+     "v": 7
+    }
+   ]
+  },
+  "11": {
+   "keyVerse": 13,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What turned Solomon's heart away from the LORD in his old age?",
+     "options": [
+      "His wives turned his heart after other gods",
+      "His great wealth made him proud",
+      "His advisors gave him bad counsel",
+      "His wars with Edom and Syria"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did God say he would not tear away the kingdom in Solomon's days?",
+     "options": [
+      "For David his father's sake",
+      "Because Solomon repented",
+      "Because the temple was built",
+      "Because Solomon was already old"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the prophet Ahijah do with his new garment?",
+     "options": [
+      "Tore it into twelve pieces",
+      "Put it on Jeroboam",
+      "Burned it before the LORD",
+      "Spread it on the road"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "To whom did Jeroboam flee when Solomon sought to kill him?",
+     "options": [
+      "Shishak king of Egypt",
+      "Hiram king of Tyre",
+      "Rezon in Damascus",
+      "Hadad in Edom"
+     ],
+     "v": 40
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "His heart was not perfect with the LORD his God, as the heart of ____ was.",
+     "answer": "David his father",
+     "wrong": [
+      "Moses the servant",
+      "Samuel the prophet",
+      "Abraham their father"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"I will give one tribe to his son, that David my servant may have ____ in Jerusalem.\"",
+     "answer": "a lamp always before me",
+     "wrong": [
+      "a throne always before me",
+      "a name forever in Israel",
+      "a house forever standing"
+     ],
+     "v": 36
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"I will afflict the offspring of David for this, but ____.\"",
+     "answer": "not forever",
+     "wrong": [
+      "only for a time",
+      "not in his days",
+      "with great mercy"
+     ],
+     "v": 39
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Solomon's heart turns to other gods",
+      "The LORD raises up Hadad the Edomite",
+      "A prophet meets Jeroboam in the field",
+      "Rehoboam reigns in Solomon's place"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Solomon built high places for the gods of Moab and Ammon.",
+     "answer": true,
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Solomon put Jeroboam in charge of the army of Judah.",
+     "answer": false,
+     "v": 28
+    }
+   ]
+  },
+  "12": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whose counsel did Rehoboam follow when answering the people?",
+     "options": [
+      "The young men who grew up with him",
+      "The old men who served Solomon",
+      "Jeroboam and the assembly",
+      "Shemaiah the man of God"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the old men advise Rehoboam to do?",
+     "options": [
+      "Serve the people and answer them with good words",
+      "Make the yoke heavier to show his strength",
+      "Send the people home for good",
+      "Ask Jeroboam to rule with him"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Jeroboam set up the two calves of gold?",
+     "options": [
+      "Bethel and Dan",
+      "Shechem and Penuel",
+      "Samaria and Jezreel",
+      "Gilgal and Shiloh"
+     ],
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Rehoboam's army not go up to fight against Israel?",
+     "options": [
+      "The LORD's word through Shemaiah forbade it",
+      "The army was too small",
+      "The men of Benjamin refused",
+      "Jeroboam asked for peace"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Rehoboam said, \"My father chastised you with whips, but I will chastise you ____.\"",
+     "answer": "with scorpions",
+     "wrong": [
+      "with rods of iron",
+      "with heavy chains",
+      "with sharp swords"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The young men said, \"Tell them, 'My little finger is thicker than ____.'\"",
+     "answer": "my father's waist",
+     "wrong": [
+      "my father's arm",
+      "my father's throne",
+      "my father's spear"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jeroboam said, \"Look and behold your gods, Israel, which brought you up ____!\"",
+     "answer": "out of the land of Egypt",
+     "wrong": [
+      "from the house of bondage",
+      "through the Red Sea",
+      "into this good land"
+     ],
+     "v": 28
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Israel asks Rehoboam to lighten their yoke",
+      "Rehoboam answers the people roughly",
+      "Israel makes Jeroboam king",
+      "Jeroboam makes two calves of gold"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Only the tribe of Judah kept following David's house.",
+     "answer": true,
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jeroboam chose his priests only from the sons of Levi.",
+     "answer": false,
+     "v": 31
+    }
+   ]
+  },
+  "13": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did Jeroboam respond after all these things happened?",
+     "options": [
+      "He did not turn from his evil way",
+      "He tore down the altar at Bethel",
+      "He sent away the priests of the high places",
+      "He went to Jerusalem to worship"
+     ],
+     "v": 33
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happened when Jeroboam stretched out his hand against the man of God?",
+     "options": [
+      "It dried up so he could not draw it back",
+      "It was struck with leprosy",
+      "It was burned by fire from the altar",
+      "It shook until he fell down"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the old prophet get the man of God to come back with him?",
+     "options": [
+      "He lied, saying an angel had told him to",
+      "He offered him a great reward",
+      "He said the king commanded it",
+      "He said the man of God was sick"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who did the man of God say would one day sacrifice the priests on the altar?",
+     "options": [
+      "A son of David's house named Josiah",
+      "Jeroboam's own son",
+      "A prophet from Judah",
+      "Rehoboam king of Judah"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The king said to the man of God, \"Come home with me and refresh yourself, and ____.\"",
+     "answer": "I will give you a reward",
+     "wrong": [
+      "you will eat at my table",
+      "I will make you my prophet",
+      "I will honor you greatly"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The man of God was commanded, \"You shall eat no bread, drink no water, and don't return by ____.\"",
+     "answer": "the way that you came",
+     "wrong": [
+      "the road to Bethel",
+      "the gate of the city",
+      "the way of the king"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The old prophet said, \"When I am dead, bury me in the tomb in which the man of God is buried. ____.\"",
+     "answer": "Lay my bones beside his bones",
+     "wrong": [
+      "Mourn for me as for him",
+      "Remember the word he spoke",
+      "Let no one move his bones"
+     ],
+     "v": 31
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The man of God cries against the altar at Bethel",
+      "The king's hand is restored",
+      "The old prophet brings him back to eat",
+      "A lion kills him on the road"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The altar at Bethel split apart and its ashes poured out, as the man of God had said.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The lion ate the body of the man of God and killed the donkey.",
+     "answer": false,
+     "v": 28
+    }
+   ]
+  },
+  "14": {
+   "keyVerse": 12,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Jeroboam send his wife to Ahijah the prophet?",
+     "options": [
+      "To learn what would become of their sick son",
+      "To ask forgiveness for the golden calves",
+      "To bring Ahijah back to the palace",
+      "To ask about the war with Rehoboam"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Ahijah know who was coming, even though he could not see?",
+     "options": [
+      "The LORD told him beforehand",
+      "He recognized her voice",
+      "Her servant told him at the door",
+      "He knew the gifts she carried"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Shishak king of Egypt take from Jerusalem?",
+     "options": [
+      "The treasures of both houses, and the gold shields",
+      "The ark of the LORD's covenant",
+      "Rehoboam's sons as hostages",
+      "The bronze pillars of the temple"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why would Jeroboam's son be the only one of his house to be buried?",
+     "options": [
+      "Some good thing toward the LORD was found in him",
+      "He was the firstborn son",
+      "He had never worshiped the calves",
+      "His mother had prayed for him"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Ahijah said, \"Arise therefore, and go to your house. When your feet enter into the city, ____.\"",
+     "answer": "the child will die",
+     "wrong": [
+      "the child will live",
+      "the king will weep",
+      "your house will fall"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"For the LORD will strike Israel, as a reed is shaken ____.\"",
+     "answer": "in the water",
+     "wrong": [
+      "by the wind",
+      "in the field",
+      "on the riverbank"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "After Shishak's raid, King Rehoboam made ____ in their place.",
+     "answer": "shields of bronze",
+     "wrong": [
+      "shields of silver",
+      "spears of iron",
+      "shields of cedar"
+     ],
+     "v": 27
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jeroboam's wife goes to Shiloh in disguise",
+      "Ahijah hears the sound of her feet",
+      "She returns to Tirzah",
+      "Shishak comes up against Jerusalem"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jeroboam told his wife to disguise herself before going to the prophet.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Under Rehoboam, Judah did what was right in the LORD's sight.",
+     "answer": false,
+     "v": 22
+    }
+   ]
+  },
+  "15": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How is King Asa of Judah described?",
+     "options": [
+      "He did what was right, as David did",
+      "He walked in all the sins of his father",
+      "He did evil like Jeroboam",
+      "He worshiped the golden calves"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Asa remove his mother Maacah from being queen?",
+     "options": [
+      "She made an abominable image for an Asherah",
+      "She plotted to kill him",
+      "She worshiped the calf at Bethel",
+      "She sided with Baasha king of Israel"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Baasha king of Israel build Ramah?",
+     "options": [
+      "To stop anyone going out or coming in to Asa",
+      "To make it his royal city",
+      "To guard against Syria",
+      "To build a house for his gods"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did Asa get Baasha to stop building Ramah?",
+     "options": [
+      "He sent silver and gold to Ben Hadad of Syria",
+      "He attacked Ramah with all Judah",
+      "He married his son to Baasha's daughter",
+      "He prayed and the LORD sent a plague"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "David did what was right in the LORD's eyes all his life, except only in the matter of ____.",
+     "answer": "Uriah the Hittite",
+     "wrong": [
+      "the census of Israel",
+      "Absalom his son",
+      "Amnon and Tamar"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For David's sake, the LORD gave Abijam ____, to set up his son after him.",
+     "answer": "a lamp in Jerusalem",
+     "wrong": [
+      "a throne in Judah",
+      "rest from his enemies",
+      "a long life in Jerusalem"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "In the time of his old age, Asa was ____.",
+     "answer": "diseased in his feet",
+     "wrong": [
+      "blind in his eyes",
+      "weak in his body",
+      "troubled in his heart"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Baasha killed Nadab and struck down the whole house of Jeroboam.",
+     "answer": true,
+     "v": 29
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Asa took away all the high places in Judah.",
+     "answer": false,
+     "v": 14
+    }
+   ]
+  },
+  "16": {
+   "keyVerse": 30,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom did Ahab take as his wife?",
+     "options": [
+      "Jezebel, daughter of the king of the Sidonians",
+      "Athaliah, daughter of Omri",
+      "Maacah, daughter of Abishalom",
+      "Naamah the Ammonitess"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Zimri die?",
+     "options": [
+      "He burned the king's house over himself",
+      "He was killed by Omri in battle",
+      "He was stoned by the people",
+      "He was struck down by Tibni"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What city did Omri build on the hill he bought from Shemer?",
+     "options": [
+      "Samaria",
+      "Tirzah",
+      "Jezreel",
+      "Gibbethon"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which prophet brought the LORD's word against Baasha?",
+     "options": [
+      "Jehu the son of Hanani",
+      "Ahijah the Shilonite",
+      "Elijah the Tishbite",
+      "Shemaiah the man of God"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Ahab the son of Omri did that which was evil in the LORD's sight ____.",
+     "answer": "above all that were before him",
+     "wrong": [
+      "like Jeroboam his father",
+      "all the days of his life",
+      "in the city of Samaria"
+     ],
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Ahab raised up an altar for Baal in ____, which he had built in Samaria.",
+     "answer": "the house of Baal",
+     "wrong": [
+      "the high place of Dan",
+      "the gate of the city",
+      "the king's own court"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Zimri reigned ____ in Tirzah.",
+     "answer": "seven days",
+     "wrong": [
+      "seven months",
+      "two years",
+      "three days"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Zimri killed King Elah while Elah was drinking himself drunk.",
+     "answer": true,
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "After Zimri died, all Israel united behind Omri with no rival.",
+     "answer": false,
+     "v": 21
+    }
+   ]
+  },
+  "17": {
+   "keyVerse": 24,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What fed Elijah by the brook Cherith?",
+     "options": [
+      "Ravens",
+      "An angel",
+      "A widow",
+      "Obadiah's servants"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was the widow doing when Elijah met her?",
+     "options": [
+      "Gathering sticks at the city gate",
+      "Drawing water from a well",
+      "Baking bread in her house",
+      "Grinding meal for her son"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the brook where Elijah stayed dry up?",
+     "options": [
+      "There was no rain in the land",
+      "Ahab had it blocked",
+      "The ravens stopped coming",
+      "The LORD struck it for Elijah's sin"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the widow accuse Elijah of when her son stopped breathing?",
+     "options": [
+      "Coming to bring her sin to memory",
+      "Using up her last meal",
+      "Bringing the famine on her land",
+      "Lying about the LORD's word"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "\"The jar of meal will not run out, and the jar of oil ____, until the day that the LORD sends rain on the earth.\"",
+     "answer": "will not fail",
+     "wrong": [
+      "will stay full",
+      "will overflow",
+      "will not dry"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Elijah said to Ahab, \"There shall not be ____ these years, but according to my word.\"",
+     "answer": "dew nor rain",
+     "wrong": [
+      "bread nor water",
+      "grain nor wine",
+      "food nor drink"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The woman said, \"Now I know that you are a man of God, and that the LORD's word in your mouth ____.\"",
+     "answer": "is truth",
+     "wrong": [
+      "has power",
+      "is life",
+      "brings healing"
+     ],
+     "v": 24
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Elijah tells Ahab no dew or rain will come",
+      "Elijah hides by the brook Cherith",
+      "Elijah goes to a widow in Zarephath",
+      "The widow's son is revived"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Elijah asked the widow to make him a little cake first, before feeding herself and her son.",
+     "answer": true,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The widow had plenty of food but did not want to share it.",
+     "answer": false,
+     "v": 12
+    }
+   ]
+  },
+  "18": {
+   "keyVerse": 39,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What test did Elijah set on Mount Carmel?",
+     "options": [
+      "The God who answers by fire is God",
+      "The God who sends rain is God",
+      "The prophets who survive are right",
+      "The altar left standing is holy"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What had Obadiah done when Jezebel killed the LORD's prophets?",
+     "options": [
+      "Hid a hundred prophets in caves and fed them",
+      "Warned Elijah to flee to the wilderness",
+      "Spoken against Jezebel before Ahab",
+      "Buried the prophets in secret"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Elijah's servant see the seventh time he looked toward the sea?",
+     "options": [
+      "A small cloud like a man's hand",
+      "Lightning over the water",
+      "A great storm of wind",
+      "Dark clouds covering the sky"
+     ],
+     "v": 44
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Elijah use twelve stones to build the altar?",
+     "options": [
+      "For the number of the tribes of Jacob's sons",
+      "For the prophets Jezebel had killed",
+      "For the months without rain",
+      "For the jars of water poured out"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "When all the people saw the fire, they fell on their faces. They said, \"____!\"",
+     "answer": "The LORD, he is God",
+     "wrong": [
+      "Great is the God of Elijah",
+      "Baal has been put to shame",
+      "Holy is the God of Israel"
+     ],
+     "v": 39
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Elijah mocked them: \"He is deep in thought, or he has gone somewhere, or he is on a journey, or perhaps he sleeps and ____.\"",
+     "answer": "must be awakened",
+     "wrong": [
+      "cannot hear you",
+      "will not wake",
+      "is far away"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The LORD's fire consumed the burnt offering, the wood, the stones, and the dust; and it ____ that was in the trench.",
+     "answer": "licked up the water",
+     "wrong": [
+      "dried up the ground",
+      "burned the wood",
+      "scorched the stones"
+     ],
+     "v": 38
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Obadiah meets Elijah on the way",
+      "Baal's prophets cry out from morning until noon",
+      "Elijah pours water on the offering three times",
+      "A great rain falls"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "At noon Baal answered his prophets with a voice.",
+     "answer": false,
+     "v": 26
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Elijah tucked his cloak into his belt and ran before Ahab to the entrance of Jezreel.",
+     "answer": true,
+     "v": 46
+    }
+   ]
+  },
+  "19": {
+   "keyVerse": 12,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Elijah run for his life?",
+     "options": [
+      "Jezebel sent word that she would kill him",
+      "Ahab sent soldiers after him",
+      "The famine came back",
+      "The people turned against him"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Elijah sit down and ask the LORD to take his life?",
+     "options": [
+      "Under a juniper tree in the wilderness",
+      "In a cave on Mount Horeb",
+      "By the brook Cherith",
+      "At the gate of Beersheba"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was Elisha doing when Elijah found him?",
+     "options": [
+      "Plowing with twelve yoke of oxen",
+      "Tending sheep in the field",
+      "Gathering the harvest",
+      "Drawing water at a well"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How many did the LORD say he had reserved in Israel who had not bowed to Baal?",
+     "options": [
+      "Seven thousand",
+      "Seven hundred",
+      "One hundred",
+      "Twelve thousand"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "After the earthquake a fire passed; but the LORD was not in the fire. After the fire, there was ____.",
+     "answer": "a still small voice",
+     "wrong": [
+      "a mighty rushing wind",
+      "a great shining light",
+      "a sound of thunder"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The LORD's word came to him, and he said to him, \"____, Elijah?\"",
+     "answer": "What are you doing here",
+     "wrong": [
+      "Why have you run away",
+      "Where are you going now",
+      "Why are you so afraid"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Elijah said, \"It is enough. Now, O LORD, take away my life; for I am not better than ____.\"",
+     "answer": "my fathers",
+     "wrong": [
+      "the prophets",
+      "my brothers",
+      "your servants"
+     ],
+     "v": 4
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "An angel wakes Elijah to eat",
+      "Elijah travels forty days to Horeb",
+      "The LORD passes by on the mountain",
+      "Elijah puts his mantle on Elisha"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD was in the great wind that tore the mountains.",
+     "answer": false,
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Elisha asked to kiss his father and mother before following Elijah.",
+     "answer": true,
+     "v": 20
+    }
+   ]
+  },
+  "20": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Ahab do with Ben Hadad after the battle at Aphek?",
+     "options": [
+      "Made a covenant with him and let him go",
+      "Put him to death",
+      "Took him captive to Samaria",
+      "Gave him to the prophet"
+     ],
+     "v": 34
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Ahab refuse Ben Hadad's second demand?",
+     "options": [
+      "The elders and people told him not to consent",
+      "A prophet warned him to refuse",
+      "His army was already prepared",
+      "Jezebel forbade him to agree"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the Syrians want to fight Israel in the plain?",
+     "options": [
+      "They said Israel's god was a god of the hills",
+      "The plain was closer to Damascus",
+      "Their chariots were stuck in the hills",
+      "A prophet told them to go there"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did Ben Hadad's servants come to Ahab to beg for his life?",
+     "options": [
+      "With sackcloth on their bodies and ropes on their heads",
+      "Carrying gifts of silver and gold",
+      "With ashes on their heads and torn clothes",
+      "Holding branches as a sign of peace"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "When told that Ben Hadad begged to live, Ahab said, \"Is he still alive? ____.\"",
+     "answer": "He is my brother",
+     "wrong": [
+      "He is my enemy",
+      "He shall surely die",
+      "Let him be killed"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Ahab answered, \"Tell him, 'Don't let him who puts on his armor brag like ____.'\"",
+     "answer": "he who takes it off",
+     "wrong": [
+      "he who wins the battle",
+      "he who returns home",
+      "he who has conquered"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The prophet said, \"Because you have let go the man whom I had devoted to destruction, ____ will take the place of his life.\"",
+     "answer": "your life",
+     "wrong": [
+      "your son",
+      "your kingdom",
+      "your servant"
+     ],
+     "v": 42
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Ben Hadad besieges Samaria",
+      "Young men of the provinces lead Israel out",
+      "The Syrians fight Israel again at Aphek",
+      "A disguised prophet confronts Ahab"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Ben Hadad was drinking himself drunk in the pavilions when Israel went out to attack.",
+     "answer": true,
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "At Aphek, Israel's camp was so large that it filled the country.",
+     "answer": false,
+     "v": 27
+    }
+   ]
+  },
+  "21": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Naboth refuse to give Ahab his vineyard?",
+     "options": [
+      "It was the inheritance of his fathers",
+      "Ahab offered too little money",
+      "He needed it to feed his family",
+      "A prophet told him to keep it"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How was Naboth put to death?",
+     "options": [
+      "Two wicked men falsely accused him, and he was stoned",
+      "Soldiers came to his house at night",
+      "He was poisoned at a feast",
+      "Ahab's guard struck him with a sword"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Ahab call Elijah when Elijah found him?",
+     "options": [
+      "My enemy",
+      "Troubler of Israel",
+      "Man of God",
+      "False prophet"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did the LORD say he would not bring the disaster in Ahab's days?",
+     "options": [
+      "Ahab humbled himself before the LORD",
+      "Jezebel would be punished instead",
+      "Naboth's family forgave Ahab",
+      "Elijah prayed for mercy on Ahab"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jezebel said, \"Do you now govern the kingdom of Israel? Arise, and eat bread, and let your heart be merry. ____.\"",
+     "answer": "I will give you the vineyard",
+     "wrong": [
+      "I will deal with this man",
+      "I will find you another",
+      "The land is already yours"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The wicked fellows were told to testify against Naboth, saying, \"You cursed ____!\"",
+     "answer": "God and the king",
+     "wrong": [
+      "the LORD and his altar",
+      "the elders of the city",
+      "the house of Ahab"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"In the place where dogs licked the blood of Naboth, ____, even yours.\"",
+     "answer": "dogs will lick your blood",
+     "wrong": [
+      "birds will eat your flesh",
+      "your house will be destroyed",
+      "your blood will be poured out"
+     ],
+     "v": 19
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Naboth refuses to give up his vineyard",
+      "Jezebel writes letters in Ahab's name",
+      "Ahab goes down to take the vineyard",
+      "Ahab tears his clothes and fasts"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After Naboth refused, Ahab lay on his bed, turned away his face, and would not eat.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jezebel sealed the letters to the elders with her own seal.",
+     "answer": false,
+     "v": 8
+    }
+   ]
+  },
+  "22": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which prophet did the king of Israel say he hated?",
+     "options": [
+      "Micaiah the son of Imlah",
+      "Zedekiah the son of Chenaanah",
+      "Elijah the Tishbite",
+      "Jehu the son of Hanani"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Zedekiah make to act out his prophecy?",
+     "options": [
+      "Horns of iron",
+      "A wooden yoke",
+      "A bow and arrows",
+      "A broken jar"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the king of Israel do before going into battle?",
+     "options": [
+      "Disguised himself",
+      "Stayed behind in Samaria",
+      "Put on Jehoshaphat's robes",
+      "Hid in an inner room"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In Micaiah's vision, what did the spirit offer to do?",
+     "options": [
+      "Be a lying spirit in the mouth of the prophets",
+      "Lead the Syrians into a trap",
+      "Appear to Ahab in a dream",
+      "Turn Jehoshaphat against Ahab"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Micaiah said, \"I saw all Israel scattered on the mountains, as ____.\"",
+     "answer": "sheep that have no shepherd",
+     "wrong": [
+      "chaff blown by the wind",
+      "a flock without a fold",
+      "lost sheep in the wilderness"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "A certain man drew his bow ____, and struck the king of Israel between the joints of the armor.",
+     "answer": "at random",
+     "wrong": [
+      "from the hill",
+      "in great anger",
+      "from far away"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Micaiah said, \"If you return at all in peace, the LORD ____.\"",
+     "answer": "has not spoken by me",
+     "wrong": [
+      "has blessed your way",
+      "has heard your prayer",
+      "will judge between us"
+     ],
+     "v": 28
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jehoshaphat asks to inquire of the LORD",
+      "Four hundred prophets tell the king to go up",
+      "Micaiah is sent to prison",
+      "The king of Israel is wounded in battle"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Dogs licked up the king's blood when his chariot was washed by the pool of Samaria.",
+     "answer": true,
+     "v": 38
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Jehoshaphat took away the high places in Judah.",
+     "answer": false,
+     "v": 43
+    }
+   ]
+  }
+ }
+}

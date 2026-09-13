@@ -1,0 +1,406 @@
+{
+ "book": "MAL",
+ "chapters": {
+  "1": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the LORD say to Israel at the start of the book?",
+     "options": [
+      "I have loved you",
+      "I have forsaken you",
+      "Return to me",
+      "I am coming soon"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What kinds of animals were being offered on the LORD's altar?",
+     "options": [
+      "The blind, lame, and sick",
+      "Firstborn males without blemish",
+      "Wild animals from the hills",
+      "Animals bought from foreigners"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To whom does God dare them to present such offerings?",
+     "options": [
+      "Their governor",
+      "The king of Persia",
+      "The high priest",
+      "Their own fathers"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does God wish someone among the priests would do?",
+     "options": [
+      "Shut the doors",
+      "Tear down the altar",
+      "Leave the priesthood",
+      "Pray all night"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Yet I loved Jacob; but ____.",
+     "answer": "Esau I hated",
+     "wrong": [
+      "Esau I blessed",
+      "Esau I forgot",
+      "Esau I scattered"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "From the rising of the sun even to its going down, ____ among the nations.",
+     "answer": "my name is great",
+     "wrong": [
+      "my glory is seen",
+      "my law is kept",
+      "my people are scattered"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You say also, 'Behold, ____!' And you have sniffed at it.",
+     "answer": "what a weariness it is",
+     "wrong": [
+      "what a waste this is",
+      "what a burden we carry",
+      "how costly this is"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Edom says it will rebuild its ruins, but the LORD says he will throw them down.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The LORD calls himself a great Priest whose name is awesome among the nations.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says his name is despised among the nations but honored by the priests.",
+     "answer": false,
+     "v": 11
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whose covenant do the priests corrupt?",
+     "options": [
+      "Levi's",
+      "Aaron's",
+      "Moses'",
+      "Abraham's"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the LORD threaten to spread on the priests' faces?",
+     "options": [
+      "The dung of their feasts",
+      "The ashes of the altar",
+      "The blood of their sacrifices",
+      "The dust of the ground"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why do the people cover the LORD's altar with tears?",
+     "options": [
+      "He no longer regards their offering",
+      "A drought has struck the land",
+      "Their sons were taken captive",
+      "The temple lies in ruins"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to the chapter, whom has Judah married?",
+     "options": [
+      "The daughter of a foreign god",
+      "The daughters of Edom",
+      "The widows of the priests",
+      "The daughters of Babylon"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Don't we all have one father? ____?",
+     "answer": "Hasn't one God created us",
+     "wrong": [
+      "Aren't we all one people",
+      "Isn't the LORD our king",
+      "Didn't one God redeem us"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The priest's lips should keep knowledge, for he is ____ of Armies.",
+     "answer": "the messenger of the LORD",
+     "wrong": [
+      "the servant of the people",
+      "the keeper of the temple",
+      "the voice of the prophets"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "One who hates and divorces covers his garment ____.",
+     "answer": "with violence",
+     "wrong": [
+      "with shame",
+      "with ashes",
+      "with guilt"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says he has already cursed the priests' blessings.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD says unrighteousness was found on the lips of the faithful priest of old.",
+     "answer": false,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The people weary the LORD by asking, \"Where is the God of mercy?\"",
+     "answer": false,
+     "v": 17
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In what does the LORD say the people rob him?",
+     "options": [
+      "Tithes and offerings",
+      "Sabbaths and feasts",
+      "Prayers and praises",
+      "Firstborn sons"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What two things is the coming messenger of the covenant compared to?",
+     "options": [
+      "A refiner's fire and launderers' soap",
+      "A hammer and an anvil",
+      "A storm and a flood",
+      "A lamp and a sword"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was written before the LORD for those who feared him?",
+     "options": [
+      "A book of memory",
+      "A scroll of blessing",
+      "A covenant of peace",
+      "A list of the priests"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What will the LORD rebuke so that it won't destroy their crops?",
+     "options": [
+      "The devourer",
+      "The drought",
+      "The invading armies",
+      "The hailstorm"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Test me now in this, if I will not open you ____.",
+     "answer": "the windows of heaven",
+     "wrong": [
+      "the gates of the city",
+      "the storehouses of rain",
+      "the doors of the temple"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Return to me, and ____.",
+     "answer": "I will return to you",
+     "wrong": [
+      "I will heal your land",
+      "I will forgive your sin",
+      "you will surely live"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I will spare them, as a man spares ____.",
+     "answer": "his own son who serves him",
+     "wrong": [
+      "his flock from the wolves",
+      "the vine he has planted",
+      "his firstborn in battle"
+     ],
+     "v": 17
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "A messenger will prepare the way",
+      "God says he does not change",
+      "God challenges them to test him",
+      "Those who fear the LORD speak together"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says the Lord whom they seek will come slowly to his temple.",
+     "answer": false,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The people complain that it is vain to serve God because the proud are punished.",
+     "answer": false,
+     "v": 15
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 5,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom will the LORD send before the great and terrible day?",
+     "options": [
+      "Elijah the prophet",
+      "Moses his servant",
+      "Isaiah the prophet",
+      "Enoch"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will those who fear his name go out and leap like?",
+     "options": [
+      "Calves of the stall",
+      "Deer on the mountains",
+      "Lambs in the spring",
+      "Young goats"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "To you who fear my name shall the sun of righteousness arise ____.",
+     "answer": "with healing in its wings",
+     "wrong": [
+      "with fire in its path",
+      "with light for the nations",
+      "with glory on the hills"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He will turn the hearts of the fathers ____.",
+     "answer": "to the children",
+     "wrong": [
+      "to the LORD",
+      "to the law of Moses",
+      "to the temple"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD tells them to remember the law of Moses his servant.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The LORD says the proud will be like chaff blown away by the wind.",
+     "answer": false,
+     "v": 1
+    }
+   ]
+  }
+ }
+}

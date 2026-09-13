@@ -1,0 +1,116 @@
+{"book":"EST","chapters":{
+"1":{"keyVerse":12,"questions":[
+{"t":"choice","d":1,"q":"What did Queen Vashti refuse to do?","options":["Come before the king when he called her","Attend the king's seven day feast","Give up her royal crown","Bow down to the king's princes"],"v":12},
+{"t":"choice","d":2,"q":"Why did the king want Vashti brought before him wearing the royal crown?","options":["To show the people and princes her beauty","To announce a new decree","To honor her at her own feast","To present her to the army of Persia"],"v":11},
+{"t":"choice","d":2,"q":"Which wise prince gave the king advice about Vashti?","options":["Memucan","Hegai","Harbona","Haman"],"v":16},
+{"t":"choice","d":3,"q":"What rule did the king give about drinking at the feast?","options":["No one was forced to drink","Every guest had to drink royal wine","Only princes could drink from golden vessels","Drinking stopped at sunset"],"v":8},
+{"t":"blank","d":1,"q":"Memucan warned that the queen's deed would cause all women to ____.","answer":"show contempt for their husbands","wrong":["refuse the king's commands","demand their own feasts","leave their husbands' houses"],"v":17},
+{"t":"blank","d":2,"q":"The decree was to be written among the laws of the Persians and the Medes, so that ____.","answer":"it cannot be altered","wrong":["all women may read it","it will be remembered forever","every prince may obey it"],"v":19},
+{"t":"blank","d":3,"q":"The king sent letters saying that every man should ____.","answer":"rule his own house","wrong":["honor the royal queen","keep the seven day feast","obey the seven princes"],"v":22},
+{"t":"order","d":2,"items":["The king displays his riches for many days","The king holds a seven day feast in Susa","Vashti refuses to come","Letters are sent to all the provinces"],"v":4},
+{"t":"tf","d":1,"q":"While the king feasted with the men, Vashti made a feast for the women.","answer":true,"v":9},
+{"t":"tf","d":3,"q":"Memucan said Vashti had wronged only the king himself.","answer":false,"v":16}
+]},
+"2":{"keyVerse":17,"questions":[
+{"t":"choice","d":1,"q":"How was Mordecai related to Esther?","options":["She was his uncle's daughter","She was his own daughter","She was his sister's daughter","She was his younger sister"],"v":7},
+{"t":"choice","d":1,"q":"What plot did Mordecai uncover while sitting in the king's gate?","options":["Two doorkeepers planned to kill the king","Haman planned to destroy the Jews","The princes planned to restore Vashti","Hegai planned to steal from the treasury"],"v":21},
+{"t":"choice","d":2,"q":"What had Mordecai told Esther not to make known?","options":["Her people and her relatives","Her Hebrew name, Hadassah","That she was an orphan","That he walked by the court every day"],"v":10},
+{"t":"choice","d":3,"q":"When her turn came to go to the king, what did Esther ask for?","options":["Only what Hegai advised","Jewels from the king's treasury","Her seven choice maidens","Nothing but oil of myrrh"],"v":15},
+{"t":"blank","d":1,"q":"The king set the royal crown on her head, and made her ____.","answer":"queen instead of Vashti","wrong":["ruler over the provinces","keeper of the women","first among the princes"],"v":17},
+{"t":"blank","d":2,"q":"Mordecai walked every day in front of the court of the women's house, to find out ____.","answer":"how Esther was doing","wrong":["what the king had decreed","who guarded the king","where the maidens were kept"],"v":11},
+{"t":"blank","d":3,"q":"Esther informed the king ____.","answer":"in Mordecai's name","wrong":["in a sealed letter","through Hegai the eunuch","at the royal feast"],"v":22},
+{"t":"order","d":2,"items":["Young virgins are gathered to Susa","Esther is placed under Hegai's care","The king makes Esther queen","Mordecai learns of the plot against the king"],"v":3},
+{"t":"tf","d":2,"q":"Mordecai had been carried away from Jerusalem with the captives of Jeconiah.","answer":true,"v":6},
+{"t":"tf","d":3,"q":"Mordecai was richly rewarded as soon as the plot against the king was investigated.","answer":false,"v":23}
+]},
+"3":{"keyVerse":2,"questions":[
+{"t":"choice","d":1,"q":"Why was Haman full of wrath against Mordecai?","options":["Mordecai would not bow down to him","Mordecai insulted him at the gate","Mordecai told the king about his plans","Mordecai refused to pay tribute"],"v":5},
+{"t":"choice","d":2,"q":"What did Haman offer to pay into the king's treasuries?","options":["Ten thousand talents of silver","Half of his own house","The plunder of the Jews","A crown of gold"],"v":9},
+{"t":"choice","d":2,"q":"What does the word Pur mean in this chapter?","options":["The lot","The decree","The feast","The ring"],"v":7},
+{"t":"choice","d":3,"q":"What charge did Haman make against the scattered people?","options":["They don't keep the king's laws","They refuse to pay taxes","They plot to kill the king","They worship foreign gods in Susa"],"v":8},
+{"t":"blank","d":1,"q":"The king took his ring from his hand, and gave it to ____.","answer":"Haman, the Jews' enemy","wrong":["Mordecai the Jew","his chief scribe","the governors of Persia"],"v":10},
+{"t":"blank","d":2,"q":"Haman scorned the thought of laying hands on ____.","answer":"Mordecai alone","wrong":["the king's servants","the queen's people","the Jews of Susa"],"v":6},
+{"t":"blank","d":3,"q":"The king and Haman sat down to drink; but ____.","answer":"the city of Susa was perplexed","wrong":["the Jews began to mourn","Mordecai tore his clothes","the couriers were delayed"],"v":15},
+{"t":"order","d":2,"items":["Haman is promoted above all the princes","Mordecai refuses to bow","Haman persuades the king","Couriers carry the decree to every province"],"v":1},
+{"t":"tf","d":1,"q":"The decree ordered all Jews to be destroyed on one day in the month Adar.","answer":true,"v":13},
+{"t":"tf","d":3,"q":"Mordecai hid from the king's servants that he was a Jew.","answer":false,"v":4}
+]},
+"4":{"keyVerse":14,"questions":[
+{"t":"choice","d":1,"q":"How did Mordecai respond when he learned of the decree?","options":["He tore his clothes and put on sackcloth","He went straight in to the king","He gathered the Jews to fight","He fled from Susa"],"v":1},
+{"t":"choice","d":2,"q":"What did Esther send to Mordecai that he refused?","options":["Clothing to replace his sackcloth","Food and wine","A letter from the king","Money from her house"],"v":4},
+{"t":"choice","d":2,"q":"Why was Esther afraid to go to the king?","options":["Anyone coming uncalled could be put to death","Haman was always with the king","The king had banished her from his presence","Her people would be discovered"],"v":11},
+{"t":"choice","d":3,"q":"Which eunuch carried messages between Esther and Mordecai?","options":["Hathach","Hegai","Harbona","Shaashgaz"],"v":5},
+{"t":"blank","d":1,"q":"\"Who knows if you haven't come to the kingdom ____?\"","answer":"for such a time as this","wrong":["to save your father's house","for the good of the king","by the hand of the LORD"],"v":14},
+{"t":"blank","d":2,"q":"Esther said, \"Then I will go in to the king, which is against the law; and ____.\"","answer":"if I perish, I perish","wrong":["may God be with me","if I die, I die","let the king decide"],"v":16},
+{"t":"blank","d":3,"q":"Esther said, \"I have not been called to come in to the king ____.\"","answer":"these thirty days","wrong":["since the last feast","these seven days","since I became queen"],"v":11},
+{"t":"order","d":2,"items":["Mordecai wails in the city","Esther sends Hathach to Mordecai","Mordecai urges Esther to plead with the king","Esther asks the Jews to fast for her"],"v":1},
+{"t":"tf","d":1,"q":"Esther asked the Jews in Susa to fast for three days, night or day.","answer":true,"v":16},
+{"t":"tf","d":3,"q":"Mordecai said that if Esther stayed silent, the Jews would have no hope of deliverance.","answer":false,"v":14}
+]},
+"5":{"keyVerse":2,"questions":[
+{"t":"choice","d":1,"q":"What did the king hold out to Esther when she stood in the inner court?","options":["The golden scepter","His royal ring","A crown of gold","A written decree"],"v":2},
+{"t":"choice","d":1,"q":"What did Esther first ask the king to do?","options":["Come with Haman to her banquet","Cancel the decree against the Jews","Punish Haman at once","Honor Mordecai"],"v":4},
+{"t":"choice","d":2,"q":"Who suggested building a gallows for Mordecai?","options":["Zeresh and Haman's friends","The king's servants","Haman's ten sons","Harbona the eunuch"],"v":14},
+{"t":"choice","d":3,"q":"What happened to Haman's joy after the first banquet?","options":["He saw Mordecai not standing for him","The king ignored him","Esther refused to invite him again","His wife mocked him"],"v":9},
+{"t":"blank","d":2,"q":"The king said, \"What is your request? It shall be given you even to ____.\"","answer":"the half of the kingdom","wrong":["the ends of the earth","the last of my treasures","the whole of Persia"],"v":3},
+{"t":"blank","d":3,"q":"Haman said, \"Yet all this avails me nothing, so long as I see ____.\"","answer":"Mordecai the Jew sitting","wrong":["the queen's people alive","any Jew in Susa","Mordecai honored by the king"],"v":13},
+{"t":"order","d":2,"items":["Esther stands in the inner court","Esther holds her first banquet","Haman boasts to his friends","Haman has a gallows made"],"v":1},
+{"t":"tf","d":1,"q":"At the first banquet, Esther revealed Haman's plot to the king.","answer":false,"v":8},
+{"t":"tf","d":2,"q":"Haman bragged that the queen had invited only him with the king to her banquet.","answer":true,"v":12}
+]},
+"6":{"keyVerse":6,"questions":[
+{"t":"choice","d":1,"q":"What did the king do the night he couldn't sleep?","options":["Had the book of the chronicles read","Walked in the palace garden","Called for Esther","Sent for his wise men"],"v":1},
+{"t":"choice","d":2,"q":"Why had Haman come to the outer court that night?","options":["To ask to hang Mordecai","To report on the Jews","To invite the king to a banquet","To collect his reward"],"v":4},
+{"t":"choice","d":2,"q":"Who had to lead Mordecai through the city square in honor?","options":["Haman","The king himself","Harbona","One of Esther's eunuchs"],"v":11},
+{"t":"choice","d":3,"q":"What did Haman's wise men and Zeresh predict?","options":["He would surely fall before Mordecai","The king would soon forget Mordecai","Esther would plead for him","He would still prevail at the banquet"],"v":13},
+{"t":"blank","d":1,"q":"\"What shall be done to the man whom ____?\"","answer":"the king delights to honor","wrong":["the queen has chosen","the people love most","the princes all obey"],"v":6},
+{"t":"blank","d":2,"q":"When the king asked what had been done for Mordecai, the servants said, \"____ for him.\"","answer":"Nothing has been done","wrong":["A great feast was made","Gold has been given","A crown was prepared"],"v":3},
+{"t":"blank","d":3,"q":"Haman hurried to his house, mourning and ____.","answer":"having his head covered","wrong":["tearing his clothes","throwing dust on himself","weeping before his sons"],"v":12},
+{"t":"order","d":2,"items":["The king cannot sleep","The king learns Mordecai was not rewarded","Haman describes how to honor a man","Haman leads Mordecai through the square"],"v":1},
+{"t":"tf","d":1,"q":"Haman thought the king wanted to honor him.","answer":true,"v":6},
+{"t":"tf","d":3,"q":"Haman suggested the honored man be given the king's own ring.","answer":false,"v":8}
+]},
+"7":{"keyVerse":3,"questions":[
+{"t":"choice","d":1,"q":"Whom did Esther name as the enemy of her people?","options":["Haman","Memucan","Bigthan","Zeresh"],"v":6},
+{"t":"choice","d":2,"q":"Where did the king go when he rose in his wrath?","options":["Into the palace garden","To his royal throne","To Haman's house","To the king's gate"],"v":7},
+{"t":"choice","d":2,"q":"Who pointed out that Haman's gallows was already standing?","options":["Harbonah","Hathach","Hegai","Mordecai"],"v":9},
+{"t":"choice","d":3,"q":"Esther said she would have kept silent if her people had only been sold as what?","options":["Slaves","Soldiers","Captives to Babylon","Laborers for the king"],"v":4},
+{"t":"blank","d":1,"q":"Esther said, \"Let my life be given me at my petition, and ____.\"","answer":"my people at my request","wrong":["my house at your word","my uncle at your command","my enemy into my hand"],"v":3},
+{"t":"blank","d":2,"q":"Esther said, \"We are sold, I and my people, to be destroyed, ____.\"","answer":"to be slain, and to perish","wrong":["to be carried into captivity","to be scattered among nations","to be plundered and sold"],"v":4},
+{"t":"blank","d":3,"q":"As the word went out of the king's mouth, they ____.","answer":"covered Haman's face","wrong":["bound Haman's hands","took Haman's ring","dragged Haman outside"],"v":8},
+{"t":"order","d":2,"items":["Esther pleads for her life","Esther names Haman","Haman falls on Esther's couch","Haman is hanged on his own gallows"],"v":3},
+{"t":"tf","d":1,"q":"Haman was hanged on the gallows he had prepared for Mordecai.","answer":true,"v":10},
+{"t":"tf","d":3,"q":"Haman begged the king, not Esther, to spare his life.","answer":false,"v":7}
+]},
+"8":{"keyVerse":16,"questions":[
+{"t":"choice","d":1,"q":"What did the king give Esther after Haman's death?","options":["The house of Haman","Haman's ten sons as servants","A second crown","Half of the kingdom"],"v":1},
+{"t":"choice","d":2,"q":"Why couldn't the king simply cancel Haman's decree?","options":["A sealed decree in the king's name could not be reversed","Haman's sons still held the ring","The princes refused to agree","The letters had already reached Egypt"],"v":8},
+{"t":"choice","d":2,"q":"What did the new letters allow the Jews to do?","options":["Gather together and defend their lives","Flee the provinces before Adar","Take over the governors' offices","Return to Jerusalem"],"v":11},
+{"t":"choice","d":3,"q":"Why did many from the peoples of the land become Jews?","options":["The fear of the Jews had fallen on them","The king commanded it","Mordecai invited them to Purim","They wanted to share in the plunder"],"v":17},
+{"t":"blank","d":1,"q":"The king took off his ring, which he had taken from Haman, and ____.","answer":"gave it to Mordecai","wrong":["gave it to Esther","sealed the new letters","threw it into the fire"],"v":2},
+{"t":"blank","d":2,"q":"Esther said, \"How can I endure to see ____?\"","answer":"the destruction of my relatives","wrong":["the plunder of my house","my uncle hanged at the gate","the end of the kingdom"],"v":6},
+{"t":"blank","d":3,"q":"The Jews had light, gladness, ____.","answer":"joy, and honor","wrong":["peace, and rest","feasting, and wine","safety, and wealth"],"v":16},
+{"t":"order","d":2,"items":["Esther receives Haman's house","Esther begs the king with tears","Mordecai writes letters sealed with the ring","Mordecai goes out in royal clothing"],"v":1},
+{"t":"tf","d":1,"q":"When Mordecai went out in royal clothing, the city of Susa shouted and was glad.","answer":true,"v":15},
+{"t":"tf","d":3,"q":"Mordecai's letters were written only in the Persian language.","answer":false,"v":9}
+]},
+"9":{"keyVerse":22,"questions":[
+{"t":"choice","d":1,"q":"What feast did the Jews establish because of these events?","options":["Purim","Passover","Tabernacles","The Feast of Weeks"],"v":26},
+{"t":"choice","d":2,"q":"Why did the princes and governors help the Jews?","options":["The fear of Mordecai had fallen on them","Esther paid them from Haman's house","The king ordered them to fight","They also hated Haman"],"v":3},
+{"t":"choice","d":2,"q":"What did Esther ask for when the king offered a further request?","options":["Another day for the Jews in Susa","Mordecai's promotion","The plunder of Haman's house","Peace in all the provinces"],"v":13},
+{"t":"choice","d":3,"q":"What did the Jews give during the days of Purim?","options":["Presents of food and gifts to the needy","Offerings of silver to the king","Sacrifices at the temple","New clothing to their servants"],"v":22},
+{"t":"blank","d":1,"q":"The month was turned to them from sorrow to gladness, and from ____.","answer":"mourning into a holiday","wrong":["fear into rejoicing","death into life","darkness into light"],"v":22},
+{"t":"blank","d":2,"q":"The Jews killed their enemies, but ____ on the plunder.","answer":"they didn't lay their hand","wrong":["they kept their eyes","the king placed his seal","the governors had claim"],"v":10},
+{"t":"blank","d":3,"q":"On the day their enemies hoped to conquer them, it turned out that ____.","answer":"the opposite happened","wrong":["no one came against them","the king changed his mind","their enemies fled away"],"v":1},
+{"t":"order","d":2,"items":["The Jews defeat their enemies on the thirteenth","Haman's ten sons are hanged","The Jews rest and feast","Mordecai writes to keep the days yearly"],"v":1},
+{"t":"tf","d":1,"q":"The days were named Purim after the word Pur, meaning the lot.","answer":true,"v":26},
+{"t":"tf","d":3,"q":"The Jews in Susa rested and feasted on the fourteenth day, the same as those in the villages.","answer":false,"v":18}
+]},
+"10":{"keyVerse":3,"questions":[
+{"t":"choice","d":1,"q":"What position did Mordecai hold at the end of the book?","options":["Next to King Ahasuerus","Keeper of the king's gate","Governor of Judah","Chief of the seven princes"],"v":3},
+{"t":"choice","d":2,"q":"Where is the account of Mordecai's greatness said to be written?","options":["The book of the chronicles of Media and Persia","The laws of the Persians and the Medes","The letters of Purim","The scroll of Esther the queen"],"v":2},
+{"t":"blank","d":2,"q":"Mordecai was great among the Jews, seeking the good of his people and ____.","answer":"speaking peace to all his descendants","wrong":["defending them from all enemies","ruling over all the provinces","keeping the days of Purim"],"v":3},
+{"t":"tf","d":1,"q":"King Ahasuerus laid a tribute on the land and on the islands of the sea.","answer":true,"v":1},
+{"t":"tf","d":3,"q":"Chapter 10 says Mordecai was accepted by only a few of his brothers.","answer":false,"v":3}
+]}
+}}

@@ -1,0 +1,2714 @@
+{
+ "book": "EZK",
+ "chapters": {
+  "25": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the children of Ammon say when God's sanctuary was profaned?",
+     "options": [
+      "Aha!",
+      "Woe to us!",
+      "Serves them right!",
+      "It is finished!"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I will destroy you. Then you will know ____.",
+     "answer": "that I am the LORD",
+     "wrong": [
+      "that I have spoken",
+      "that my hand is strong",
+      "that I am holy"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did God say Rabbah would become?",
+     "options": [
+      "A stable for camels",
+      "A heap of ruins",
+      "A place for spreading nets",
+      "A den of jackals"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Moab and Seir say about the house of Judah?",
+     "options": [
+      "Judah is like all the nations",
+      "Judah is broken forever",
+      "Judah's God has abandoned them",
+      "Judah will never return"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "To whom would God give the land of Ammon as a possession?",
+     "options": [
+      "The children of the east",
+      "The Philistines",
+      "The house of Judah",
+      "The king of Babylon"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Because you have clapped your hands, ____, and rejoiced with all the contempt of your soul.",
+     "answer": "stamped with the feet",
+     "wrong": [
+      "shouted with a loud voice",
+      "danced in the streets",
+      "laughed with scorn"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will cut off the Cherethites, and destroy ____.",
+     "answer": "the remnant of the sea coast",
+     "wrong": [
+      "the cities of Gaza",
+      "the strongholds of Philistia",
+      "the ships of the sea"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Edom was judged for taking vengeance on the house of Judah.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "God said He would lay His vengeance on Edom by the hand of Babylon.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Judgment on Ammon",
+      "Judgment on Moab and Seir",
+      "Judgment on Edom",
+      "Judgment on the Philistines"
+     ],
+     "v": 2
+    }
+   ]
+  },
+  "26": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why was God against Tyre in this chapter?",
+     "options": [
+      "It rejoiced that Jerusalem was broken",
+      "It worshiped Baal in Jerusalem",
+      "It attacked Judah with its ships",
+      "It made an alliance with Egypt"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which king did God say He would bring against Tyre?",
+     "options": [
+      "Nebuchadnezzar king of Babylon",
+      "Pharaoh king of Egypt",
+      "The king of Assyria",
+      "Cyrus king of Persia"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I will make you a bare rock. You will be a place for ____.",
+     "answer": "the spreading of nets",
+     "wrong": [
+      "the wild animals",
+      "the drying of fish",
+      "the owls and jackals"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Tyre described Jerusalem as \"the gateway of the peoples.\"",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "God said Tyre would be rebuilt after a time of desolation.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the princes of the sea do at Tyre's fall?",
+     "options": [
+      "Came down from their thrones and trembled",
+      "Sent ships to rescue her people",
+      "Rejoiced and clapped their hands",
+      "Fled across the sea to Tarshish"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will cause the noise of your songs to cease. ____ won't be heard any more.",
+     "answer": "The sound of your harps",
+     "wrong": [
+      "The shouts of your merchants",
+      "The cry of your watchmen",
+      "The voice of the bride"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What would be done with Tyre's stones, timber, and dust?",
+     "options": [
+      "Laid in the middle of the waters",
+      "Carried away to Babylon",
+      "Burned in a great fire",
+      "Used to build forts against Egypt"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "How you are destroyed, the renowned city, who was ____, she and her inhabitants!",
+     "answer": "strong in the sea",
+     "wrong": [
+      "rich in merchandise",
+      "perfect in beauty",
+      "the queen of islands"
+     ],
+     "v": 17
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Tyre gloats over Jerusalem's fall",
+      "An army breaks down Tyre's walls and towers",
+      "The princes of the sea lament over Tyre",
+      "Tyre is brought down to the pit"
+     ],
+     "v": 2
+    }
+   ]
+  },
+  "27": {
+   "keyVerse": 26,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In this lament, Tyre is pictured as what?",
+     "options": [
+      "A great ship",
+      "A proud cedar tree",
+      "A roaring lion",
+      "A golden vine"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "You, Tyre, have said, '____.'",
+     "answer": "I am perfect in beauty",
+     "wrong": [
+      "I am queen of the seas",
+      "I will never be moved",
+      "I am rich forever"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The north wind broke Tyre in the heart of the seas.",
+     "answer": false,
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was Tyre's mast made from?",
+     "options": [
+      "A cedar from Lebanon",
+      "An oak of Bashan",
+      "A cypress from Senir",
+      "A palm tree from Egypt"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was Tyre's sail made of?",
+     "options": [
+      "Fine embroidered linen from Egypt",
+      "Blue and purple cloth from Elishah",
+      "Goat hair from Kedar",
+      "White wool from Damascus"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the mariners mourn for Tyre?",
+     "options": [
+      "Cast dust on their heads and wore sackcloth",
+      "Burned their ships on the shore",
+      "Sailed away to Tarshish",
+      "Fasted in silence for seven days"
+     ],
+     "v": 30
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Judah and the land of Israel were among Tyre's traders.",
+     "answer": true,
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The ships of Tarshish were ____ for your merchandise.",
+     "answer": "your caravans",
+     "wrong": [
+      "your warships",
+      "your storehouses",
+      "your messengers"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Who is there like Tyre, like her who is ____ in the middle of the sea?",
+     "answer": "brought to silence",
+     "wrong": [
+      "cast down",
+      "left desolate",
+      "sunk forever"
+     ],
+     "v": 32
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Tyre's boast about herself",
+      "Her builders and crew are described",
+      "Many lands trade in her wares",
+      "Tyre sinks in the heart of the seas"
+     ],
+     "v": 3
+    }
+   ]
+  },
+  "28": {
+   "keyVerse": 17,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the prince of Tyre claim about himself?",
+     "options": [
+      "I am a god",
+      "I am the king of kings",
+      "I will ascend to heaven",
+      "I am wiser than all men"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Behold, you are ____. There is no secret that is hidden from you.",
+     "answer": "wiser than Daniel",
+     "wrong": [
+      "wiser than Solomon",
+      "greater than the kings",
+      "a son of the gods"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The king of Tyre is described as having been in Eden, the garden of God.",
+     "answer": true,
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the prince of Tyre gain his riches?",
+     "options": [
+      "By his wisdom and trading",
+      "By plundering Jerusalem",
+      "By tribute from Egypt",
+      "By the gold of Ophir"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You were ____ who covers.",
+     "answer": "the anointed cherub",
+     "wrong": [
+      "the morning star",
+      "the chosen servant",
+      "the guardian angel"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What filled the king of Tyre with violence?",
+     "options": [
+      "The abundance of his commerce",
+      "The wars of his fathers",
+      "The idols of his temples",
+      "The pride of his armies"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which city is prophesied against after Tyre?",
+     "options": [
+      "Sidon",
+      "Gaza",
+      "Damascus",
+      "Arvad"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "There will no longer be ____ to the house of Israel, nor a hurting thorn.",
+     "answer": "a pricking brier",
+     "wrong": [
+      "a stumbling stone",
+      "a biting serpent",
+      "a heavy yoke"
+     ],
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "God said the prince of Tyre would die the death of the uncircumcised by the hand of his own servants.",
+     "answer": false,
+     "v": 10
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "A message to the prince of Tyre",
+      "A lament over the king of Tyre",
+      "A prophecy against Sidon",
+      "Israel will dwell securely in their land"
+     ],
+     "v": 2
+    }
+   ]
+  },
+  "29": {
+   "keyVerse": 21,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How is Pharaoh king of Egypt described?",
+     "options": [
+      "The great monster in the middle of his rivers",
+      "A proud cedar in Lebanon",
+      "A lion among the nations",
+      "A shepherd who scattered his flock"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Pharaoh has said, 'My river is my own, and ____.'",
+     "answer": "I have made it for myself",
+     "wrong": [
+      "no one can take it",
+      "it will never run dry",
+      "my gods have given it"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did God say He would put in Pharaoh's jaws?",
+     "options": [
+      "Hooks",
+      "A bridle",
+      "A bit",
+      "Thorns"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Egypt will know that I am the LORD, because they have been ____ to the house of Israel.",
+     "answer": "a staff of reed",
+     "wrong": [
+      "a wall of bronze",
+      "a broken cistern",
+      "a shelter from storms"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God said Egypt would be desolate and uninhabited for seventy years.",
+     "answer": false,
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What would Egypt become after God gathered the Egyptians back?",
+     "options": [
+      "The lowest of the kingdoms",
+      "A great empire again",
+      "A province of Israel",
+      "A desert with no people"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "God said He would bring the Egyptians back to the land of Pathros.",
+     "answer": true,
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did God give the land of Egypt to Nebuchadnezzar?",
+     "options": [
+      "As wages for his army's work against Tyre",
+      "Because Pharaoh attacked Babylon",
+      "To punish Egypt for enslaving Israel",
+      "Because Egypt sheltered the king of Judah"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "In that day I will cause ____ for the house of Israel.",
+     "answer": "a horn to sprout",
+     "wrong": [
+      "a light to shine",
+      "a branch to grow",
+      "a king to rise"
+     ],
+     "v": 21
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Pharaoh is called a great monster in the rivers",
+      "Egypt is to be made an utter waste",
+      "Egypt returns as a lowly kingdom",
+      "Egypt is given to Nebuchadnezzar as wages"
+     ],
+     "v": 3
+    }
+   ]
+  },
+  "30": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For the day is near, even ____ is near.",
+     "answer": "the LORD's day",
+     "wrong": [
+      "the day of wrath",
+      "the end of Egypt",
+      "the time of harvest"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "By whose hand would God make the multitude of Egypt cease?",
+     "options": [
+      "Nebuchadnezzar king of Babylon",
+      "The king of Assyria",
+      "The prince of Tyre",
+      "The king of Ethiopia"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Ethiopia and the peoples allied with Egypt would fall by the sword with her.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did God say He would put into the hand of the king of Babylon?",
+     "options": [
+      "His sword",
+      "His scepter",
+      "The keys of Egypt",
+      "A cup of wrath"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did God say He would cause to cease from Memphis?",
+     "options": [
+      "The idols and images",
+      "The walls and towers",
+      "The palaces of Pharaoh",
+      "The ships of the river"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Messengers will go out from before me in ships to make ____ afraid.",
+     "answer": "the careless Ethiopians",
+     "wrong": [
+      "the proud Egyptians",
+      "the princes of Tyre",
+      "the islands of the sea"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Pharaoh's broken arm was bound up with medicines and a bandage.",
+     "answer": false,
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did God say He would do to the rivers of Egypt?",
+     "options": [
+      "Make them dry",
+      "Turn them to blood",
+      "Fill them with dead fish",
+      "Make them overflow"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He will groan before the king of Babylon with the groaning of ____.",
+     "answer": "a mortally wounded man",
+     "wrong": [
+      "a woman in labor",
+      "a captive in chains",
+      "a beast led to slaughter"
+     ],
+     "v": 24
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "A call to wail over the coming day",
+      "Nebuchadnezzar is brought in to destroy Egypt",
+      "Fire is set in Zoan and judgments on No",
+      "Pharaoh's arm is broken"
+     ],
+     "v": 2
+    }
+   ]
+  },
+  "31": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Assyria is compared to what in this chapter?",
+     "options": [
+      "A cedar in Lebanon",
+      "A vine planted in Egypt",
+      "An oak of Bashan",
+      "A palm tree by the river"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "To whom is the picture of the great tree addressed?",
+     "options": [
+      "Pharaoh king of Egypt and his multitude",
+      "The prince of Tyre",
+      "The house of Israel",
+      "The king of Babylon"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What reason is given for the tree being cut down?",
+     "options": [
+      "Its heart was lifted up in its height",
+      "It shaded out the other trees",
+      "Its roots dried up",
+      "It bore no fruit"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did God do to the deep on the day the tree went down to Sheol?",
+     "options": [
+      "Covered it and restrained its rivers",
+      "Made it overflow its banks",
+      "Dried it up completely",
+      "Turned its waters to blood"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "All great nations lived under the tree's shadow.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "God said the house of Israel would cut the tree down.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "All the trees of Eden, that were in the garden of God, ____.",
+     "answer": "envied it",
+     "wrong": [
+      "bowed to it",
+      "feared it",
+      "praised it"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The waters nourished it. ____ made it to grow.",
+     "answer": "The deep",
+     "wrong": [
+      "The rain",
+      "The morning dew",
+      "The river Nile"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You will lie in the middle of ____, with those who are slain by the sword.",
+     "answer": "the uncircumcised",
+     "wrong": [
+      "the kings of the earth",
+      "the trees of Eden",
+      "your fathers"
+     ],
+     "v": 18
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The tree grows great by many waters",
+      "Birds nest in its boughs",
+      "It is cut down and its branches fall",
+      "It goes down to Sheol"
+     ],
+     "v": 4
+    }
+   ]
+  },
+  "32": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Pharaoh was likened to a young lion, yet he is described as what?",
+     "options": [
+      "A monster in the seas",
+      "A serpent in the desert",
+      "A wolf among sheep",
+      "A broken reed"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whose sword did God say would come on Egypt?",
+     "options": [
+      "The king of Babylon",
+      "The king of Assyria",
+      "The prince of Elam",
+      "The king of Edom"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I will spread out ____ on you with a company of many peoples.",
+     "answer": "my net",
+     "wrong": [
+      "my hand",
+      "my sword",
+      "my wrath"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "God said the moon would turn to blood over Egypt.",
+     "answer": false,
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "After destroying Egypt's animals, God said He would make its rivers run like what?",
+     "options": [
+      "Oil",
+      "Blood",
+      "Honey",
+      "Milk"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What is repeatedly said about the nations lying slain in the pit?",
+     "options": [
+      "They caused terror in the land of the living",
+      "They worshiped idols of wood and stone",
+      "They refused to help Israel",
+      "They built great cities"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When Pharaoh sees the other slain nations in the pit, he will be comforted.",
+     "answer": true,
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Whom do you pass in beauty? Go down, and ____.",
+     "answer": "be laid with the uncircumcised",
+     "wrong": [
+      "sit among the princes",
+      "be counted with the mighty",
+      "rest with your fathers"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Their kings will be horribly afraid for you, when I ____ before them.",
+     "answer": "brandish my sword",
+     "wrong": [
+      "lift up my hand",
+      "send my fire",
+      "sound my trumpet"
+     ],
+     "v": 10
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "A lament over Pharaoh as a sea monster",
+      "Darkness covers the lights of the sky",
+      "Kings of many peoples are horribly afraid",
+      "Egypt goes down to the pit among the slain"
+     ],
+     "v": 2
+    }
+   ]
+  },
+  "33": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does a faithful watchman do when he sees the sword coming?",
+     "options": [
+      "Blows the trumpet and warns the people",
+      "Shuts the gates of the city",
+      "Runs to tell the king",
+      "Lights a signal fire"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "If the watchman fails to warn the people, God will require their blood at the watchman's hand.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I have no pleasure in ____, but that the wicked turn from his way and live.",
+     "answer": "the death of the wicked",
+     "wrong": [
+      "the sacrifices of the wicked",
+      "the tears of my people",
+      "the ruin of the nations"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the house of Israel say about their sins?",
+     "options": [
+      "We pine away in them. How can we live?",
+      "God has already forgiven them",
+      "Our fathers sinned, not us",
+      "They are too small to punish"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The righteousness of a righteous man will save him even in the day he turns to sin.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What news did the man who escaped from Jerusalem bring?",
+     "options": [
+      "The city has been defeated",
+      "The king has been captured",
+      "The siege has been lifted",
+      "The people have turned back to God"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He had opened my mouth until he came to me in the morning, and I was ____.",
+     "answer": "no longer mute",
+     "wrong": [
+      "filled with the Spirit",
+      "able to prophesy",
+      "no longer afraid"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Abraham was one, and he inherited the land; but ____.",
+     "answer": "we are many",
+     "wrong": [
+      "we are his children",
+      "we have remained",
+      "we are his heirs"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "God said Ezekiel was like what to the people who listened but did not obey?",
+     "options": [
+      "A very lovely song with a pleasant voice",
+      "A watchman asleep on the wall",
+      "A trumpet blown in the night",
+      "A stranger speaking a foreign tongue"
+     ],
+     "v": 32
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The picture of the watchman",
+      "A call to turn from evil ways and live",
+      "A man who escaped arrives with news",
+      "People hear Ezekiel's words but don't do them"
+     ],
+     "v": 2
+    }
+   ]
+  },
+  "34": {
+   "keyVerse": 15,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was the main charge against the shepherds of Israel?",
+     "options": [
+      "They fed themselves, not the sheep",
+      "They sold the sheep to foreigners",
+      "They let wolves into the fold",
+      "They slept while on watch"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I will set up one shepherd over them, and he will feed them, even ____.",
+     "answer": "my servant David",
+     "wrong": [
+      "my chosen one",
+      "the son of man",
+      "my servant Jacob"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God said He Himself would search for His sheep and seek them out.",
+     "answer": true,
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which of these had the shepherds failed to do?",
+     "options": [
+      "Seek the sheep that were lost",
+      "Shear the sheep in season",
+      "Count the sheep each evening",
+      "Build folds on the hills"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the strong sheep do to the pasture and the water?",
+     "options": [
+      "Trampled and fouled them with their feet",
+      "Ate and drank until nothing was left",
+      "Hid them from the lean sheep",
+      "Gave them to the male goats"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will make with them ____, and will cause evil animals to cease out of the land.",
+     "answer": "a covenant of peace",
+     "wrong": [
+      "an everlasting covenant",
+      "a new covenant",
+      "a covenant of salt"
+     ],
+     "v": 25
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "God said He would feed the fat and the strong but destroy the weak.",
+     "answer": false,
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I will cause the shower to come down in its season. There will be ____.",
+     "answer": "showers of blessing",
+     "wrong": [
+      "rivers of water",
+      "rain on the mountains",
+      "streams in the desert"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why were God's sheep scattered, according to the chapter?",
+     "options": [
+      "There was no shepherd",
+      "Wolves attacked the flock",
+      "The pasture dried up",
+      "The sheep refused to follow"
+     ],
+     "v": 5
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Woe to shepherds who feed themselves",
+      "God gathers His sheep into their own land",
+      "God judges between fat and lean sheep",
+      "Evil animals cease from the land"
+     ],
+     "v": 2
+    }
+   ]
+  },
+  "35": {
+   "keyVerse": 4,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Against which place did Ezekiel set his face in this prophecy?",
+     "options": [
+      "Mount Seir",
+      "Mount Hermon",
+      "Mount Carmel",
+      "Mount Lebanon"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When did Mount Seir give the children of Israel over to the sword?",
+     "options": [
+      "In the time of their calamity",
+      "When they came out of Egypt",
+      "During the reign of David",
+      "When they rebuilt Jerusalem"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Since you have not hated blood, therefore ____.",
+     "answer": "blood will pursue you",
+     "wrong": [
+      "the sword will find you",
+      "your land will be desolate",
+      "I will hate you"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Mount Seir rejoiced when the inheritance of the house of Israel became desolate.",
+     "answer": true,
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "God said He would make Mount Seir desolate when the whole earth mourned.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Edom say about the mountains of Israel?",
+     "options": [
+      "They have been given to us to devour",
+      "Their God has forsaken them",
+      "They will never be rebuilt",
+      "Let us burn their high places"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I will make you ____, and your cities will not be inhabited.",
+     "answer": "a perpetual desolation",
+     "wrong": [
+      "a heap of ruins",
+      "a byword among nations",
+      "a place for thorns"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When Edom planned to possess the two nations and two countries, who does the text say was there?",
+     "options": [
+      "The LORD",
+      "Nebuchadnezzar",
+      "The remnant of Judah",
+      "The king of Israel"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You have magnified yourselves against me with your mouth, and ____ against me.",
+     "answer": "have multiplied your words",
+     "wrong": [
+      "have spoken lies",
+      "have sharpened your tongues",
+      "have lifted your hands"
+     ],
+     "v": 13
+    }
+   ]
+  },
+  "36": {
+   "keyVerse": 26,
+   "questions": [
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I will take away the stony heart out of your flesh, and I will give you ____.",
+     "answer": "a heart of flesh",
+     "wrong": [
+      "a heart of wisdom",
+      "a clean heart",
+      "a willing heart"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "For whose sake did God say He would restore Israel?",
+     "options": [
+      "For His holy name",
+      "For Israel's own sake",
+      "For the sake of their fathers",
+      "For the sake of the nations"
+     ],
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God said He would sprinkle clean water on Israel to cleanse them from their idols.",
+     "answer": true,
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What would people say the desolate land had become like?",
+     "options": [
+      "The garden of Eden",
+      "The land of Egypt",
+      "The forests of Lebanon",
+      "The plain of the Jordan"
+     ],
+     "v": 35
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "God told the mountains of Israel they would be tilled and sown by foreigners.",
+     "answer": false,
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did Israel profane God's holy name among the nations?",
+     "options": [
+      "People saw they had been driven from His land",
+      "They worshiped the gods of Babylon",
+      "They married foreign wives",
+      "They broke the Sabbath in exile"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You mountains of Israel, you shall shoot out your branches and ____ to my people Israel.",
+     "answer": "yield your fruit",
+     "wrong": [
+      "give your shade",
+      "pour out your streams",
+      "open your gates"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What had the land been called, which God said it would no longer be?",
+     "options": [
+      "A devourer of men",
+      "A land of thorns",
+      "A desert of salt",
+      "A home for jackals"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "As the flock of Jerusalem in her appointed feasts, so the waste cities will be filled with ____.",
+     "answer": "flocks of men",
+     "wrong": [
+      "shouts of joy",
+      "sheep and cattle",
+      "songs of praise"
+     ],
+     "v": 38
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The mountains of Israel are promised fruit and people",
+      "Israel profaned God's name among the nations",
+      "God gives a new heart and a new spirit",
+      "Waste cities are filled with people"
+     ],
+     "v": 8
+    }
+   ]
+  },
+  "37": {
+   "keyVerse": 5,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was the valley full of when the LORD set Ezekiel down in it?",
+     "options": [
+      "Very dry bones",
+      "Slain soldiers",
+      "Broken idols",
+      "Empty graves"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "\"Son of man, can these bones live?\" I answered, \"____.\"",
+     "answer": "Lord GOD, you know",
+     "wrong": [
+      "Yes, Lord, they can",
+      "No, they are too dry",
+      "Only if you speak"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "After Ezekiel first prophesied, the bones were covered with flesh and skin but had no breath in them.",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To what was Ezekiel told to prophesy so that breath would come?",
+     "options": [
+      "The wind",
+      "The bones",
+      "The graves",
+      "The mountains of Israel"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did God say the bones represented?",
+     "options": [
+      "The whole house of Israel",
+      "The nations slain by the sword",
+      "The prophets who had died",
+      "The army of Babylon"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They say, 'Our bones are dried up, and ____. We are completely cut off.'",
+     "answer": "our hope is lost",
+     "wrong": [
+      "our strength is gone",
+      "our God has left",
+      "our land is taken"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Ezekiel write on the two sticks?",
+     "options": [
+      "One for Judah, one for Joseph and Ephraim",
+      "The names of two kings",
+      "Blessings on one, curses on the other",
+      "The law on one, the prophets on the other"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "God said Israel would again be divided into two kingdoms.",
+     "answer": false,
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Moreover I will make a covenant of peace with them. It will be ____ with them.",
+     "answer": "an everlasting covenant",
+     "wrong": [
+      "a covenant of salt",
+      "a new covenant",
+      "a sure covenant"
+     ],
+     "v": 26
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The LORD's Spirit sets Ezekiel down in a valley",
+      "The bones come together and flesh covers them",
+      "Breath enters them and they stand up",
+      "Two sticks are joined into one"
+     ],
+     "v": 1
+    }
+   ]
+  },
+  "38": {
+   "keyVerse": 23,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Against whom was Ezekiel told to prophesy in this chapter?",
+     "options": [
+      "Gog, of the land of Magog",
+      "Pharaoh king of Egypt",
+      "The prince of Tyre",
+      "Nebuchadnezzar king of Babylon"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What kind of land did Gog plan to go up against?",
+     "options": [
+      "A land of unwalled villages",
+      "A land of fortified cities",
+      "A land full of armies",
+      "A desolate land with no people"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "You will come like a storm. You will be like ____ to cover the land.",
+     "answer": "a cloud",
+     "wrong": [
+      "a flood",
+      "a swarm",
+      "the darkness"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Gog's plan was to take plunder, livestock, and goods.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "From where would Gog come against Israel?",
+     "options": [
+      "The uttermost parts of the north",
+      "The far south beyond Egypt",
+      "The desert to the east",
+      "The islands of the west"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "God said Gog would be defeated by the army of Israel's king.",
+     "answer": false,
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who asked Gog, \"Have you come to take the plunder?\"",
+     "options": [
+      "Sheba, Dedan, and the merchants of Tarshish",
+      "The kings of Persia and Cush",
+      "The elders of Israel",
+      "The princes of Egypt"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will turn you around, and ____, and I will bring you out, with all your army.",
+     "answer": "put hooks into your jaws",
+     "wrong": [
+      "put a bridle on you",
+      "break your bow",
+      "lead you by the hand"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When Gog comes against the land of Israel, my wrath will come up ____.",
+     "answer": "into my nostrils",
+     "wrong": [
+      "like a fire",
+      "against the nations",
+      "from the north"
+     ],
+     "v": 18
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Gog gathers his army and many allies",
+      "Gog devises an evil plan",
+      "Gog marches against God's people Israel",
+      "Hailstones, fire, and sulfur fall on Gog"
+     ],
+     "v": 4
+    }
+   ]
+  },
+  "39": {
+   "keyVerse": 29,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What would the people of Israel do with the weapons of Gog's army?",
+     "options": [
+      "Burn them as fuel",
+      "Bury them in the valley",
+      "Beat them into plows",
+      "Store them in the temple"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The house of Israel would spend seven months burying Gog's army to cleanse the land.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will strike your bow out of your left hand, and will cause ____ to fall out of your right hand.",
+     "answer": "your arrows",
+     "wrong": [
+      "your sword",
+      "your spear",
+      "your shield"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What would the valley where Gog was buried be called?",
+     "options": [
+      "The valley of Hamon Gog",
+      "The valley of Achor",
+      "The valley of Slaughter",
+      "The valley of Magog"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom did God invite to His great sacrifice on the mountains of Israel?",
+     "options": [
+      "The birds and the animals of the field",
+      "The priests and the Levites",
+      "The nations around Israel",
+      "The poor of the land"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Anyone who found a man's bone was to bury it right where he found it.",
+     "answer": false,
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They will plunder those who plundered them, and ____.",
+     "answer": "rob those who robbed them",
+     "wrong": [
+      "slay those who slew them",
+      "burn those who burned them",
+      "bind those who bound them"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why would the nations know that Israel went into captivity?",
+     "options": [
+      "For their iniquity, so God hid His face",
+      "Babylon's gods were stronger",
+      "Israel's army was too small",
+      "Their kings trusted in Egypt"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I won't hide my face from them any more, for I have ____ on the house of Israel.",
+     "answer": "poured out my Spirit",
+     "wrong": [
+      "set my glory",
+      "laid my hand",
+      "shown my mercy"
+     ],
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did God say He would send on Magog?",
+     "options": [
+      "A fire",
+      "A plague",
+      "A flood",
+      "A famine"
+     ],
+     "v": 6
+    }
+   ]
+  },
+  "40": {
+   "keyVerse": 4,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the man in Ezekiel's vision look like?",
+     "options": [
+      "His appearance was like bronze",
+      "He was like a flame of fire",
+      "He had the face of a cherub",
+      "He was an old man in linen"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the man hold in his hand?",
+     "options": [
+      "A line of flax and a measuring reed",
+      "A scroll and a writer's inkhorn",
+      "A sword and a shield",
+      "A golden rod and a lamp"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "See with your eyes, and hear with your ears, and ____ on all that I will show you.",
+     "answer": "set your heart",
+     "wrong": [
+      "fix your mind",
+      "keep your eyes",
+      "write your words"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Ezekiel was told to declare all that he saw to the house of Israel.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "In the visions of God he brought me into the land of Israel, and set me down on ____.",
+     "answer": "a very high mountain",
+     "wrong": [
+      "the Mount of Olives",
+      "the walls of Jerusalem",
+      "a great plain"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What decoration was on the posts of the gates?",
+     "options": [
+      "Palm trees",
+      "Cherubim",
+      "Lions",
+      "Pomegranates"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was washed in the room by the posts at the gates?",
+     "options": [
+      "The burnt offering",
+      "The priests' garments",
+      "The vessels of the altar",
+      "The hands of the Levites"
+     ],
+     "v": 38
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The sons of Zadok were the priests who kept the duty of the gates.",
+     "answer": false,
+     "v": 46
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He brought me into the outer court. Behold, there were rooms and ____ made for the court all around.",
+     "answer": "a pavement",
+     "wrong": [
+      "a wall",
+      "a porch",
+      "a row of pillars"
+     ],
+     "v": 17
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The gate facing east is measured",
+      "The outer court and its rooms",
+      "The gates of the inner court",
+      "Tables for killing the offerings"
+     ],
+     "v": 6
+    }
+   ]
+  },
+  "41": {
+   "keyVerse": 4,
+   "questions": [
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "He measured the inner room before the nave, and he said to me, \"____.\"",
+     "answer": "This is the most holy place",
+     "wrong": [
+      "This is the house of the LORD",
+      "This is the place of my throne",
+      "This is the room of the priests"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What carvings covered the temple walls and doors?",
+     "options": [
+      "Cherubim and palm trees",
+      "Lions and oxen",
+      "Pomegranates and lilies",
+      "Eagles and vines"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What two faces did each carved cherub have?",
+     "options": [
+      "A man and a young lion",
+      "A man and an eagle",
+      "An ox and a lion",
+      "An eagle and an ox"
+     ],
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The side rooms around the temple were built in three stories.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The windows of the galleries were left open.",
+     "answer": false,
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He said to me, \"This is ____ that is before the LORD.\"",
+     "answer": "the table",
+     "wrong": [
+      "the altar",
+      "the ark",
+      "the lampstand"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was the altar near the end of the chapter made of?",
+     "options": [
+      "Wood",
+      "Bronze",
+      "Gold",
+      "Cut stone"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "One went up from the lowest level to the highest through ____.",
+     "answer": "the middle level",
+     "wrong": [
+      "a winding stair",
+      "the outer wall",
+      "the open area"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which part of the temple did the man measure first in this chapter?",
+     "options": [
+      "The nave",
+      "The porch",
+      "The inner court",
+      "The outer wall"
+     ],
+     "v": 1
+    }
+   ]
+  },
+  "42": {
+   "keyVerse": 20,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What were the holy rooms on the north and south used for?",
+     "options": [
+      "Priests eating the most holy things",
+      "Storing the temple treasures",
+      "Housing the singers",
+      "Keeping the weapons of the guards"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The wall made a separation between that which was holy and ____.",
+     "answer": "that which was common",
+     "wrong": [
+      "that which was unclean",
+      "the house of the prince",
+      "the city of Jerusalem"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Priests could wear their ministering garments out into the outer court among the people.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why were the upper rooms shorter than the lower ones?",
+     "options": [
+      "The galleries took away more space from them",
+      "The roof sloped downward",
+      "The priests needed less room above",
+      "The walls were thicker there"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did these rooms lack that the courts had?",
+     "options": [
+      "Pillars",
+      "Windows",
+      "Doors",
+      "Steps"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The wall around the whole area measured the same on all four sides.",
+     "answer": true,
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He brought me out by the way of the gate which faces toward ____, and measured it all around.",
+     "answer": "the east",
+     "wrong": [
+      "the north",
+      "the south",
+      "the west"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Opposite the pavement which belonged to the outer court was gallery against gallery in ____.",
+     "answer": "the three stories",
+     "wrong": [
+      "the upper rooms",
+      "the outer court",
+      "the inner walls"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which offerings were to be laid in the holy rooms?",
+     "options": [
+      "The meal, sin, and trespass offerings",
+      "The peace and thank offerings",
+      "The firstfruits and the tithes",
+      "The drink and wave offerings"
+     ],
+     "v": 13
+    }
+   ]
+  },
+  "43": {
+   "keyVerse": 5,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "From which direction did the glory of the God of Israel come?",
+     "options": [
+      "The east",
+      "The north",
+      "The south",
+      "The west"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "His voice was like ____; and the earth was illuminated with his glory.",
+     "answer": "the sound of many waters",
+     "wrong": [
+      "the roar of a lion",
+      "a mighty rushing wind",
+      "the sound of thunder"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When Ezekiel saw the glory, he fell on his face.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did God call the temple?",
+     "options": [
+      "The place of my throne and my feet",
+      "The house of my rest",
+      "The mountain of my inheritance",
+      "The footstool of the nations"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why was Ezekiel to show the house to the house of Israel?",
+     "options": [
+      "So they would be ashamed of their iniquities",
+      "So they would rebuild it at once",
+      "So they would bring gifts for it",
+      "So the nations would fear them"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "On the top of the mountain the whole limit around it shall be most holy. Behold, this is ____.",
+     "answer": "the law of the house",
+     "wrong": [
+      "the glory of the LORD",
+      "the pattern of the altar",
+      "the place of my throne"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the priests cast on the offerings before offering them up?",
+     "options": [
+      "Salt",
+      "Oil",
+      "Incense",
+      "Ashes"
+     ],
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The altar was to be cleansed and consecrated over three days.",
+     "answer": false,
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was given first as a sin offering to cleanse the new altar?",
+     "options": [
+      "A young bull",
+      "A lamb",
+      "A ram",
+      "Two doves"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They will no more defile my holy name by their prostitution and by ____ in their high places.",
+     "answer": "the dead bodies of their kings",
+     "wrong": [
+      "the idols of their fathers",
+      "the blood of their children",
+      "the altars of their gods"
+     ],
+     "v": 7
+    }
+   ]
+  },
+  "44": {
+   "keyVerse": 23,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why was the outer east gate of the sanctuary to stay shut?",
+     "options": [
+      "The LORD, the God of Israel, had entered by it",
+      "Enemies had once come through it",
+      "The prince had defiled it",
+      "It faced the rising sun"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who could sit in the shut gate to eat bread before the LORD?",
+     "options": [
+      "The prince",
+      "The high priest",
+      "The sons of Zadok",
+      "The Levites"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God rebuked Israel for bringing uncircumcised foreigners into His sanctuary.",
+     "answer": true,
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why were the Levites kept from coming near to serve as priests?",
+     "options": [
+      "They went astray after idols",
+      "They married foreign wives",
+      "They refused to guard the gates",
+      "They ate unclean food"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But the Levitical priests, ____, who performed the duty of my sanctuary when Israel went astray, shall come near to me.",
+     "answer": "the sons of Zadok",
+     "wrong": [
+      "the sons of Aaron",
+      "the sons of Levi",
+      "the sons of Phinehas"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What were the priests to wear in the inner court?",
+     "options": [
+      "Linen garments, with no wool",
+      "Wool robes and gold turbans",
+      "Sackcloth tied with a belt",
+      "Blue and purple embroidered robes"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Priests were allowed to drink wine when they entered the inner court.",
+     "answer": false,
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They shall have an inheritance: ____; and you shall give them no possession in Israel.",
+     "answer": "I am their inheritance",
+     "wrong": [
+      "the land of Levi",
+      "the cities of refuge",
+      "the tithe of Israel"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You shall also give to the priests the first of your dough, to cause ____ on your house.",
+     "answer": "a blessing to rest",
+     "wrong": [
+      "a curse to depart",
+      "peace to dwell",
+      "the glory to remain"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What rule did the priests follow about their hair?",
+     "options": [
+      "Neither shave it nor let it grow long",
+      "Shave their heads completely",
+      "Let it grow long like a Nazirite",
+      "Keep it covered with a turban only"
+     ],
+     "v": 20
+    }
+   ]
+  },
+  "45": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What were the people to offer the LORD when they divided the land?",
+     "options": [
+      "A holy portion of the land",
+      "A tenth of every city",
+      "The best field of each tribe",
+      "The land beside Jerusalem's walls"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Enough, you princes of Israel! Remove violence and plunder, and ____!",
+     "answer": "execute justice and righteousness",
+     "wrong": [
+      "show mercy to the poor",
+      "return to your inheritance",
+      "keep my Sabbaths holy"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God commanded Israel to have just balances and just measures.",
+     "answer": true,
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who was the holy portion containing the sanctuary for?",
+     "options": [
+      "The priests who minister to the LORD",
+      "The prince and his sons",
+      "The whole house of Israel",
+      "The foreigners among Israel"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who was to provide the offerings at the feasts, new moons, and Sabbaths?",
+     "options": [
+      "The prince",
+      "The high priest",
+      "The elders of each tribe",
+      "The Levites"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "My princes shall no more ____, but they shall give the land to the house of Israel according to their tribes.",
+     "answer": "oppress my people",
+     "wrong": [
+      "take bribes",
+      "build high places",
+      "go to war"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The possession of the city was given to the tribe of Judah alone.",
+     "answer": false,
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "On the first day of the first month, what was used to cleanse the sanctuary?",
+     "options": [
+      "A young bull without defect",
+      "A Passover lamb",
+      "A male goat",
+      "A red heifer"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "So you shall do on the seventh day of the month for everyone who errs, and for ____.",
+     "answer": "him who is simple",
+     "wrong": [
+      "the stranger among you",
+      "him who is poor",
+      "the unclean person"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which feast was to be kept starting on the fourteenth day of the first month?",
+     "options": [
+      "The Passover",
+      "The feast of weeks",
+      "The day of trumpets",
+      "The feast of tents"
+     ],
+     "v": 21
+    }
+   ]
+  },
+  "46": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "When was the east gate of the inner court opened?",
+     "options": [
+      "On the Sabbath and the new moon",
+      "Only on the Day of Atonement",
+      "Every morning at sunrise",
+      "Only during the Passover"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "After the prince's free will offering, the gate stayed open until evening.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did the prince worship when he came in by the east gate?",
+     "options": [
+      "At the threshold of the gate",
+      "Before the altar",
+      "In the most holy place",
+      "In the outer court with the people"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "He shall not return by the way of the gate by which he came in, but shall ____.",
+     "answer": "go out straight before him",
+     "wrong": [
+      "stand by the post of the gate",
+      "wait until the evening",
+      "go out with the priests"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "You shall prepare a lamb a year old without defect for a burnt offering daily. ____ you shall prepare it.",
+     "answer": "Morning by morning",
+     "wrong": [
+      "Evening by evening",
+      "Day and night",
+      "At the ninth hour"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "If the prince gives a gift from his inheritance to a servant, it returns to the prince in the year of liberty.",
+     "answer": true,
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why must the prince not take the people's inheritance?",
+     "options": [
+      "So God's people are not scattered from their possession",
+      "So the priests have enough land",
+      "So the tribes do not go to war",
+      "So the temple treasury stays full"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The priests shall bake the meal offering there, that they not bring it out into the outer court, ____.",
+     "answer": "to sanctify the people",
+     "wrong": [
+      "to defile the offerings",
+      "to feed the people",
+      "to show the prince"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What were the enclosed courts in the four corners of the outer court for?",
+     "options": [
+      "Boiling the sacrifices of the people",
+      "Housing the singers",
+      "Storing grain and oil",
+      "Washing the priests' garments"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who went in and out with the people at the appointed feasts?",
+     "options": [
+      "The prince",
+      "The high priest",
+      "The Levites",
+      "The sons of Zadok"
+     ],
+     "v": 10
+    }
+   ]
+  },
+  "47": {
+   "keyVerse": 12,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did the waters in Ezekiel's vision flow out from?",
+     "options": [
+      "Under the threshold of the temple",
+      "A rock on the mountain",
+      "The spring below the city",
+      "Beneath the gate of the outer court"
+     ],
+     "v": 1
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Waters up to the ankles",
+      "Waters up to the knees",
+      "Waters up to the waist",
+      "A river too deep to walk through"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Its fruit will be for food, and ____.",
+     "answer": "its leaf for healing",
+     "wrong": [
+      "its shade for rest",
+      "its wood for building",
+      "its roots for medicine"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Wherever the river went, living creatures would live and the waters would be healed.",
+     "answer": true,
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What would happen to the swamps and marshes?",
+     "options": [
+      "They would be given up to salt",
+      "They would be healed",
+      "They would dry up completely",
+      "They would become gardens"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How often would the trees by the river produce new fruit?",
+     "options": [
+      "Every month",
+      "Every year",
+      "Every seven years",
+      "Twice a year"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When the land was divided, Joseph was to receive only one portion like the other tribes.",
+     "answer": false,
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He said to me, \"Son of man, ____?\"",
+     "answer": "have you seen this",
+     "wrong": [
+      "do you understand this",
+      "can you cross it",
+      "do you believe this"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How were the aliens living among Israel to be treated when the land was divided?",
+     "options": [
+      "Given an inheritance like the native born",
+      "Left out of any inheritance",
+      "Given land outside the borders",
+      "Made servants of the tribes"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You shall inherit it, one as well as another; for ____ to your fathers.",
+     "answer": "I swore to give it",
+     "wrong": [
+      "I promised the land",
+      "I spoke of it",
+      "I have sworn peace"
+     ],
+     "v": 14
+    }
+   ]
+  },
+  "48": {
+   "keyVerse": 35,
+   "questions": [
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The name of the city from that day shall be, '____.'",
+     "answer": "The LORD is there",
+     "wrong": [
+      "The LORD our righteousness",
+      "The city of peace",
+      "The holy mountain"
+     ],
+     "v": 35
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What were the gates of the city named after?",
+     "options": [
+      "The tribes of Israel",
+      "The kings of Judah",
+      "The prophets of old",
+      "The patriarchs"
+     ],
+     "v": 31
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The sanctuary of the LORD was to be at the northern edge of the holy offering of land.",
+     "answer": false,
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why were the sons of Zadok given the most holy portion of land?",
+     "options": [
+      "They didn't go astray when Israel went astray",
+      "They were the oldest family of Levi",
+      "They had fought beside David",
+      "They had built the altar"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The city was to measure the same on all four sides.",
+     "answer": true,
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How was the land divided among the tribes?",
+     "options": [
+      "Each tribe got one portion stretching east to west",
+      "Each portion was sized by the tribe's population",
+      "The tribes received circles of land around the city",
+      "Only the northern tribes received land"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who would work the land beside the holy offering to feed the city's workers?",
+     "options": [
+      "Workers from all the tribes of Israel",
+      "The Levites alone",
+      "The prince's servants",
+      "The tribe of Judah"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The Levites shall sell none of it, nor exchange it, for it is ____.",
+     "answer": "holy to the LORD",
+     "wrong": [
+      "the prince's possession",
+      "the portion of Judah",
+      "an everlasting gift"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The five thousand cubits that are left shall be for common use, for the city, for dwelling and ____.",
+     "answer": "for pasture lands",
+     "wrong": [
+      "for vineyards",
+      "for the prince's house",
+      "for gardens and orchards"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who received the land on both sides of the holy offering and the city?",
+     "options": [
+      "The prince",
+      "The Levites",
+      "The priests",
+      "The tribe of Judah"
+     ],
+     "v": 21
+    }
+   ]
+  }
+ }
+}

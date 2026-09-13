@@ -1,0 +1,62 @@
+{"book":"LAM","chapters":{
+"1":{"keyVerse":12,"questions":[
+{"t":"choice","d":1,"q":"In chapter 1, what is the lonely city compared to at the very start?","options":["A widow","An orphan","A ruined vineyard","A captive bride"],"v":1},
+{"t":"choice","d":1,"q":"What does the city repeatedly say she lacks?","options":["Anyone to comfort her","Water to drink","A king to lead her","Walls to protect her"],"v":2},
+{"t":"choice","d":2,"q":"Why do the roads to Zion mourn?","options":["No one comes to the solemn assembly","The enemy blocks every road","Pilgrims have been killed on them","The harvest has failed"],"v":4},
+{"t":"choice","d":2,"q":"What had the nations done that God had commanded should not happen?","options":["Entered into her sanctuary","Taken her king captive","Burned her gates","Carried off her priests"],"v":10},
+{"t":"choice","d":3,"q":"Jerusalem's princes are said to have become like what?","options":["Deer that find no pasture","Sheep without a shepherd","Chaff before the wind","Birds caught in a net"],"v":6},
+{"t":"blank","d":1,"q":"\"Is it nothing to you, all you who pass by? Look, and see if there is ____.\"","answer":"any sorrow like my sorrow","wrong":["any city like my city","any grief like my grief","any comfort left for me"],"v":12},
+{"t":"blank","d":2,"q":"\"The Lord has trodden the virgin daughter of Judah as ____.\"","answer":"in a wine press","wrong":["grain on a threshing floor","dust in the streets","straw under the feet"],"v":15},
+{"t":"blank","d":3,"q":"\"The LORD is righteous, for I have ____.\"","answer":"rebelled against his commandment","wrong":["forgotten his holy covenant","turned to other lovers","despised his holy name"],"v":18},
+{"t":"tf","d":1,"q":"The chapter says Jerusalem has grievously sinned and so has become unclean.","answer":true,"v":8},
+{"t":"tf","d":3,"q":"When the city called for her lovers, they came and helped her.","answer":false,"v":19}
+]},
+"2":{"keyVerse":17,"questions":[
+{"t":"choice","d":1,"q":"In chapter 2, who is described as acting like an enemy against Israel?","options":["The Lord","The king of Babylon","The false prophets","Edom"],"v":5},
+{"t":"choice","d":2,"q":"What were the elders of Zion doing in their grief?","options":["Sitting on the ground with dust on their heads","Crying out at the city gates","Tearing down the altars","Fleeing to the mountains"],"v":10},
+{"t":"choice","d":2,"q":"What is wrong with Jerusalem's prophets in this chapter?","options":["They saw false and foolish visions","They were all killed by the sword","They refused to speak at all","They fled to Egypt"],"v":14},
+{"t":"choice","d":3,"q":"What do the young children ask their mothers as they faint in the streets?","options":["Where is grain and wine?","Where is our father?","Why has God left us?","When will the enemy go?"],"v":12},
+{"t":"blank","d":1,"q":"\"The LORD has done that which ____.\"","answer":"he planned","wrong":["the enemy wanted","his people feared","the prophets foretold"],"v":17},
+{"t":"blank","d":2,"q":"\"For your breach is ____. Who can heal you?\"","answer":"as big as the sea","wrong":["as deep as the pit","as wide as the desert","as high as the heavens"],"v":13},
+{"t":"blank","d":3,"q":"\"Arise, cry out in the night... Pour out your heart ____ before the face of the Lord.\"","answer":"like water","wrong":["like wine","like smoke","like oil"],"v":19},
+{"t":"choice","d":3,"q":"Passersby mock Jerusalem as the city once called what?","options":["The perfection of beauty, the joy of the whole earth","The city of the great King","The crown of the nations","The holy mountain of peace"],"v":15},
+{"t":"tf","d":1,"q":"Chapter 2 says the Lord took pity on Jacob's dwellings as he destroyed them.","answer":false,"v":2},
+{"t":"tf","d":3,"q":"The chapter says the LORD caused solemn assembly and Sabbath to be forgotten in Zion.","answer":true,"v":6}
+]},
+"3":{"keyVerse":23,"questions":[
+{"t":"choice","d":1,"q":"How does chapter 3 begin describing the speaker?","options":["A man who has seen affliction by the rod of his wrath","A prophet sent to warn the city","A king who has lost his throne","A priest weeping in the temple"],"v":1},
+{"t":"choice","d":2,"q":"God is compared to which animals lying in wait?","options":["A bear and a lion","A wolf and a leopard","A lion and a serpent","A bear and a jackal"],"v":10},
+{"t":"choice","d":2,"q":"What does the speaker say is good for a man to bear in his youth?","options":["The yoke","Hunger","The rod of discipline","Hard labor"],"v":27},
+{"t":"choice","d":3,"q":"From where did the speaker call on the LORD's name?","options":["The lowest dungeon","The top of the wall","The ruined temple","The land of captivity"],"v":55},
+{"t":"blank","d":1,"q":"\"His mercies don't fail. They are ____. Great is your faithfulness.\"","answer":"new every morning","wrong":["from generation to generation","higher than the heavens","sure for all time"],"v":23},
+{"t":"blank","d":2,"q":"\"It is good that a man should hope and ____ for the salvation of the LORD.\"","answer":"quietly wait","wrong":["cry aloud","daily pray","humbly fast"],"v":26},
+{"t":"blank","d":3,"q":"\"Let us search and try our ways, and ____.\"","answer":"turn again to the LORD","wrong":["cry out to the Most High","put away our idols","remember his holy covenant"],"v":40},
+{"t":"order","d":3,"items":["He describes his affliction from God","He recalls the LORD's mercies and has hope","He calls the people to search their ways","He asks the LORD to repay his enemies"],"v":1},
+{"t":"tf","d":1,"q":"The speaker says, \"The LORD is my portion,\" and so he will hope in him.","answer":true,"v":24},
+{"t":"tf","d":2,"q":"Chapter 3 says the Lord afflicts the children of men willingly.","answer":false,"v":33}
+]},
+"4":{"keyVerse":22,"questions":[
+{"t":"choice","d":1,"q":"How does chapter 4 open its lament?","options":["The gold has become dim","The city sits solitary","The Lord has covered Zion with a cloud","Remember, LORD, what has come on us"],"v":1},
+{"t":"choice","d":2,"q":"The precious sons of Zion are now treated like what?","options":["Earthen pitchers made by a potter","Chaff blown by the wind","Broken idols in the street","Sheep led to slaughter"],"v":2},
+{"t":"choice","d":2,"q":"Whose sins are blamed for the shedding of the blood of the just?","options":["Her prophets and her priests","Her kings and her princes","The Babylonians","The people of Edom"],"v":13},
+{"t":"choice","d":3,"q":"The punishment of Zion's people is called greater than the sin of which city?","options":["Sodom","Nineveh","Babylon","Gomorrah"],"v":6},
+{"t":"blank","d":1,"q":"\"The LORD has accomplished his wrath... He has kindled a fire in Zion, which ____.\"","answer":"has devoured its foundations","wrong":["has burned its gates","has consumed its palaces","has scattered its people"],"v":11},
+{"t":"blank","d":2,"q":"\"Those who are killed with the sword are better than those who are ____.\"","answer":"killed with hunger","wrong":["carried into captivity","left in the city","taken by disease"],"v":9},
+{"t":"blank","d":3,"q":"\"Our pursuers were swifter than ____.\"","answer":"the eagles of the sky","wrong":["the horses of Egypt","the deer on the mountains","the wind in the wilderness"],"v":19},
+{"t":"choice","d":3,"q":"Which nation is told to rejoice now, though the cup will pass to it also?","options":["Edom","Moab","Egypt","Assyria"],"v":21},
+{"t":"tf","d":1,"q":"The chapter says the kings of the earth expected the enemy to enter Jerusalem's gates.","answer":false,"v":12},
+{"t":"tf","d":3,"q":"The people watched in vain for a nation that could not save them.","answer":true,"v":17}
+]},
+"5":{"keyVerse":21,"questions":[
+{"t":"choice","d":1,"q":"What does chapter 5 ask the LORD to do first?","options":["Remember what has come on us","Destroy our enemies","Rebuild the temple","Bring back our king"],"v":1},
+{"t":"choice","d":2,"q":"What must the people now pay for?","options":["Water to drink and their wood","Bread from the priests","Passage through the wilderness","Their own houses"],"v":4},
+{"t":"choice","d":2,"q":"What animals walk on the desolate mountain of Zion?","options":["Foxes","Jackals","Wolves","Wild donkeys"],"v":18},
+{"t":"choice","d":3,"q":"Who rules over the people now?","options":["Servants","Foreign kings","Egyptian princes","Their own elders"],"v":8},
+{"t":"blank","d":1,"q":"\"Turn us to yourself, LORD, and we will be turned. ____.\"","answer":"Renew our days as of old","wrong":["Restore our crown to us","Bring us back to Zion","Remember your covenant with us"],"v":21},
+{"t":"blank","d":2,"q":"\"Our fathers sinned, and are no more. We have ____.\"","answer":"borne their iniquities","wrong":["forgotten their ways","paid for their pride","wept for their graves"],"v":7},
+{"t":"blank","d":3,"q":"\"The crown has fallen from our head. ____, for we have sinned!\"","answer":"Woe to us","wrong":["Have mercy","Forgive us","Remember us"],"v":16},
+{"t":"choice","d":3,"q":"Which nations did the people give their hands to for bread?","options":["The Egyptians and the Assyrians","The Babylonians and the Edomites","The Moabites and the Ammonites","The Philistines and the Egyptians"],"v":6},
+{"t":"tf","d":1,"q":"Chapter 5 says the LORD remains forever and his throne is from generation to generation.","answer":true,"v":19},
+{"t":"tf","d":2,"q":"The chapter says the young men still play their music at the gate.","answer":false,"v":14}
+]}
+}}

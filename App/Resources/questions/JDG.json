@@ -1,0 +1,2388 @@
+{
+ "book": "JDG",
+ "chapters": {
+  "1": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which tribe did the LORD say should go up first against the Canaanites?",
+     "options": [
+      "Judah",
+      "Benjamin",
+      "Ephraim",
+      "Levi"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Israel do to Adoni-Bezek after catching him?",
+     "options": [
+      "Cut off his thumbs and big toes",
+      "Put out his eyes",
+      "Hanged him on a tree",
+      "Sold him as a slave"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why couldn't Judah drive out the people of the valley?",
+     "options": [
+      "They had chariots of iron",
+      "Their cities had high walls",
+      "They were the sons of Anak",
+      "Judah was afraid of them"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What happened to the man who showed the spies the way into Bethel?",
+     "options": [
+      "He was spared and built a city called Luz",
+      "He became a servant in Israel",
+      "He was killed along with the city",
+      "He joined the house of Joseph"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Adoni-Bezek said, \"As I have done, ____.\"",
+     "answer": "so God has done to me",
+     "wrong": [
+      "so my people have done",
+      "so my enemies will do",
+      "so Judah has repaid me"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Caleb said, \"I will give ____ as wife to the man who strikes Kiriath Sepher, and takes it.\"",
+     "answer": "Achsah my daughter",
+     "wrong": [
+      "my youngest daughter",
+      "my brother's daughter",
+      "Miriam my daughter"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The children of Benjamin didn't drive out ____ who inhabited Jerusalem.",
+     "answer": "the Jebusites",
+     "wrong": [
+      "the Amorites",
+      "the Hittites",
+      "the Perizzites"
+     ],
+     "v": 21
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Judah and Simeon fight at Bezek",
+      "Adoni-Bezek dies in Jerusalem",
+      "Othniel takes Kiriath Sepher",
+      "The house of Joseph takes Bethel"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Several tribes failed to drive the Canaanites out of their land.",
+     "answer": true,
+     "v": 27
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Amorites forced the children of Dan down into the valley.",
+     "answer": false,
+     "v": 34
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 16,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the people do after the LORD's angel spoke to them at Bochim?",
+     "options": [
+      "They wept and sacrificed to the LORD",
+      "They tore down Baal's altars",
+      "They made a covenant with the Canaanites",
+      "They went back to Gilgal"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was wrong with the generation that arose after Joshua's generation died?",
+     "options": [
+      "They didn't know the LORD or his works",
+      "They refused to farm the land",
+      "They wanted to return to Egypt",
+      "They had no elders at all"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happened each time a judge died?",
+     "options": [
+      "The people turned back and grew more corrupt",
+      "A new judge was chosen by lot",
+      "The land had rest forty years",
+      "The people wept and repented"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did the LORD say he would no longer drive out the nations Joshua left?",
+     "options": [
+      "To test whether Israel would keep his way",
+      "To punish the Canaanites later",
+      "Because Israel's army was too weak",
+      "To give Israel servants for labor"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They abandoned the LORD, and served ____.",
+     "answer": "Baal and the Ashtaroth",
+     "wrong": [
+      "Dagon and Chemosh",
+      "the gods of Egypt",
+      "Molech and the stars"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will not drive them out from before you; but they shall be in your sides, and their gods will be ____ to you.",
+     "answer": "a snare",
+     "wrong": [
+      "a curse",
+      "a heavy yoke",
+      "a thorn"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The LORD was with the judge and saved them all his days; for it grieved the LORD because of ____.",
+     "answer": "their groaning",
+     "wrong": [
+      "their sins",
+      "their idols",
+      "their stubbornness"
+     ],
+     "v": 18
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The LORD's angel speaks at Bochim",
+      "Joshua dies and is buried",
+      "A generation arises that doesn't know the LORD",
+      "The LORD raises up judges"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Israel listened to their judges and stayed faithful to the LORD.",
+     "answer": false,
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Joshua was buried in Timnath Heres in the hill country of Ephraim.",
+     "answer": true,
+     "v": 9
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 28,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was unusual about Ehud?",
+     "options": [
+      "He was left-handed",
+      "He was a Levite",
+      "He was very tall",
+      "He was blind in one eye"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to the start of the chapter, why were some nations left in the land?",
+     "options": [
+      "To test Israel and teach them war",
+      "To serve as Israel's slaves",
+      "To guard Israel's borders",
+      "To punish Joshua's generation"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Eglon's servants assume when they found the upper room doors locked?",
+     "options": [
+      "He was relieving himself",
+      "He was sleeping after a feast",
+      "He was praying to his gods",
+      "He was still meeting with Ehud"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Shamgar use to strike six hundred Philistines?",
+     "options": [
+      "An ox goad",
+      "A jawbone",
+      "A tent peg",
+      "A sling"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Ehud said, \"I have ____ to you.\" He arose out of his seat.",
+     "answer": "a message from God",
+     "wrong": [
+      "a gift from Israel",
+      "a word from Moab",
+      "tribute from the elders"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Ehud made himself a sword which had two edges, and he wore it under his clothing on ____.",
+     "answer": "his right thigh",
+     "wrong": [
+      "his left side",
+      "his back",
+      "his left thigh"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They followed him, and took ____ against the Moabites, and didn't allow any man to pass over.",
+     "answer": "the fords of the Jordan",
+     "wrong": [
+      "the pass by Gilgal",
+      "the gates of Jericho",
+      "the road to Moab"
+     ],
+     "v": 28
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Othniel delivers Israel from Cushan Rishathaim",
+      "Eglon king of Moab oppresses Israel",
+      "Ehud kills Eglon in his upper room",
+      "Israel strikes Moab at the Jordan"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD's Spirit came on Ehud, and he defeated Cushan Rishathaim.",
+     "answer": false,
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Ehud escaped while Eglon's servants waited outside the locked doors.",
+     "answer": true,
+     "v": 26
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who killed Sisera?",
+     "options": [
+      "Jael the wife of Heber",
+      "Deborah the prophetess",
+      "Barak the son of Abinoam",
+      "A soldier of Naphtali"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Barak say when Deborah told him to lead the way to Mount Tabor?",
+     "options": [
+      "He would only go if she went with him",
+      "He would first gather all the tribes",
+      "He needed a sign from God",
+      "He was too young to lead"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Deborah live when Israel came to her for judgment?",
+     "options": [
+      "Under Deborah's palm tree",
+      "At the gate of Shiloh",
+      "By the oak in Zaanannim",
+      "On Mount Tabor"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Sisera run to the tent of Heber's wife?",
+     "options": [
+      "There was peace between Jabin and Heber's house",
+      "She was a relative of Sisera",
+      "It was beside the river Kishon",
+      "Heber had fought in Jabin's army"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The journey that you take won't be for your honor; for the LORD will sell Sisera into ____.",
+     "answer": "a woman's hand",
+     "wrong": [
+      "a prophet's hand",
+      "the Kenite's hand",
+      "a stranger's hand"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He said, \"Please give me a little water to drink.\" She opened ____, and gave him a drink.",
+     "answer": "a container of milk",
+     "wrong": [
+      "a skin of wine",
+      "a jar of water",
+      "a bowl of broth"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The children of Israel cried to the LORD, for he had ____; and he mightily oppressed them.",
+     "answer": "nine hundred chariots of iron",
+     "wrong": [
+      "a thousand horsemen",
+      "many mighty men",
+      "strong walled cities"
+     ],
+     "v": 3
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Deborah calls Barak from Kedesh Naphtali",
+      "Barak goes down from Mount Tabor",
+      "Sisera flees on foot",
+      "Barak finds Sisera dead in the tent"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Sisera escaped from the battle in his chariot.",
+     "answer": false,
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Sisera told Jael to say no man was there if anyone asked.",
+     "answer": true,
+     "v": 20
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 31,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who sang this song?",
+     "options": [
+      "Deborah and Barak",
+      "Miriam and Moses",
+      "Jael and Heber",
+      "Deborah and Jael"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which place did the LORD's angel say to curse for not coming to help?",
+     "options": [
+      "Meroz",
+      "Reuben",
+      "Kedesh",
+      "Harosheth"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to the song, what fought against Sisera from the sky?",
+     "options": [
+      "The stars",
+      "The clouds",
+      "The angels",
+      "The winds"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How is Sisera's mother pictured near the end of the song?",
+     "options": [
+      "Looking through the lattice for his chariot",
+      "Weeping at the city gate",
+      "Praying to her gods",
+      "Dividing plunder with her ladies"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The rulers ceased in Israel. They ceased until I, Deborah, arose; until I arose ____.",
+     "answer": "a mother in Israel",
+     "wrong": [
+      "a judge over Israel",
+      "a prophetess for Israel",
+      "a light in Israel"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He asked for water. She gave him milk. She brought him butter in ____.",
+     "answer": "a lordly dish",
+     "wrong": [
+      "a clay bowl",
+      "a golden cup",
+      "a wooden bowl"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The river Kishon swept them away, that ancient river, the river Kishon. ____, march on with strength.",
+     "answer": "My soul",
+     "wrong": [
+      "O Israel",
+      "O Barak",
+      "My people"
+     ],
+     "v": 21
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Praise for leaders who took the lead",
+      "Tribes who came and tribes who stayed home",
+      "Jael strikes Sisera",
+      "Sisera's mother waits at the window"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The song calls Jael blessed above women.",
+     "answer": true,
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The song praises Reuben for rushing into the valley with Barak.",
+     "answer": false,
+     "v": 16
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 12,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Gideon put on the threshing floor to ask God for a sign?",
+     "options": [
+      "A fleece of wool",
+      "A bowl of water",
+      "A sheaf of wheat",
+      "His father's sword"
+     ],
+     "v": 37
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where was Gideon beating out wheat when the LORD's angel came?",
+     "options": [
+      "In the wine press",
+      "On the threshing floor",
+      "In a mountain cave",
+      "In his father's house"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Gideon describe himself to the LORD?",
+     "options": [
+      "The least in the poorest family in Manasseh",
+      "The youngest son of a priest",
+      "A stranger living in Ophrah",
+      "A man of unclean lips"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What name did Joash give Gideon after he tore down the altar?",
+     "options": [
+      "Jerub-Baal",
+      "Abiezer",
+      "Jether",
+      "Purah"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Gideon built an altar there to the LORD, and called it ____.",
+     "answer": "The LORD is Peace",
+     "wrong": [
+      "The LORD Will Provide",
+      "The LORD My Banner",
+      "The LORD Who Sees"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Joash said, \"If he is a god, ____, because someone has broken down his altar!\"",
+     "answer": "let him contend for himself",
+     "wrong": [
+      "let him strike my son",
+      "let him rebuild it himself",
+      "let him answer by fire"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They came in as locusts for multitude. Both they and ____ were without number.",
+     "answer": "their camels",
+     "wrong": [
+      "their horses",
+      "their chariots",
+      "their flocks"
+     ],
+     "v": 5
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Midian oppresses Israel seven years",
+      "The LORD's angel appears to Gideon",
+      "Gideon tears down his father's altar of Baal",
+      "Gideon blows a trumpet and gathers Abiezer"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Gideon tore down Baal's altar by night because he feared his family and the city.",
+     "answer": true,
+     "v": 27
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "On the second test, Gideon asked for dew on the fleece only.",
+     "answer": false,
+     "v": 39
+    }
+   ]
+  },
+  "7": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the LORD choose the three hundred men?",
+     "options": [
+      "By how they drank the water",
+      "By casting lots",
+      "By their tribes",
+      "By a test of strength"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the LORD say Gideon's army was too large?",
+     "options": [
+      "Israel would brag its own hand saved it",
+      "Midian would flee before the battle",
+      "There wasn't enough food for them",
+      "Most of the men were untrained"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Gideon give his men to hold in the attack?",
+     "options": [
+      "Trumpets and pitchers with torches",
+      "Swords and shields",
+      "Spears and slings",
+      "Bows and arrows"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the Midianite soldier dream?",
+     "options": [
+      "A barley loaf rolled in and flattened a tent",
+      "A lion attacked the camels",
+      "Torches fell from the sky",
+      "A sword came down from heaven"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They held the torches and the trumpets, and they shouted, \"The sword of ____!\"",
+     "answer": "the LORD and of Gideon",
+     "wrong": [
+      "the God of Israel",
+      "Israel and of Manasseh",
+      "the mighty Jerubbaal"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Whoever is ____, let him return and depart from Mount Gilead.",
+     "answer": "fearful and trembling",
+     "wrong": [
+      "weary and faint",
+      "young and untrained",
+      "sick or wounded"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "But if you are afraid to go down, go with ____ down to the camp.",
+     "answer": "Purah your servant",
+     "wrong": [
+      "Jether your son",
+      "Joash your father",
+      "ten of your men"
+     ],
+     "v": 10
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Twenty-two thousand men return home",
+      "The men are tested at the water",
+      "Gideon overhears talk in Midian's camp",
+      "Oreb and Zeeb are captured and killed"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD set the Midianites' swords against one another.",
+     "answer": true,
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Gideon went down to spy on the enemy camp all alone.",
+     "answer": false,
+     "v": 11
+    }
+   ]
+  },
+  "8": {
+   "keyVerse": 23,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Gideon make from the gold earrings?",
+     "options": [
+      "An ephod",
+      "A golden calf",
+      "A crown",
+      "A lampstand"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Gideon calm the angry men of Ephraim?",
+     "options": [
+      "He said their gleaning beat Abiezer's vintage",
+      "He gave them all the plunder",
+      "He offered them the kingship",
+      "He offered a sacrifice for them"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the princes of Succoth respond to Gideon's request for bread?",
+     "options": [
+      "They mocked him and refused",
+      "They gave bread and wine",
+      "They joined his army",
+      "They sent him on to Penuel"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why didn't Jether kill Zebah and Zalmunna when Gideon told him to?",
+     "options": [
+      "He was afraid, being still a youth",
+      "He had no sword with him",
+      "He pitied the kings",
+      "The kings begged for mercy"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I will not rule over you, neither shall my son rule over you. ____.",
+     "answer": "The LORD shall rule over you",
+     "wrong": [
+      "The elders shall judge you",
+      "The priests shall lead you",
+      "Ephraim shall guide you"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Gideon came to the Jordan and passed over, he and the three hundred men who were with him, ____.",
+     "answer": "faint, yet pursuing",
+     "wrong": [
+      "weary and hungry",
+      "strong and fearless",
+      "tired but rejoicing"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "All Israel played the prostitute with it there; and it became ____ to Gideon and to his house.",
+     "answer": "a snare",
+     "wrong": [
+      "a curse",
+      "a burden",
+      "a disgrace"
+     ],
+     "v": 27
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Gideon calms the men of Ephraim",
+      "Succoth and Penuel refuse to give bread",
+      "Gideon captures Zebah and Zalmunna",
+      "Israel asks Gideon to rule over them"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "As soon as Gideon died, Israel turned back to following the Baals.",
+     "answer": true,
+     "v": 33
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Abimelech was born to one of Gideon's wives in Ophrah.",
+     "answer": false,
+     "v": 31
+    }
+   ]
+  },
+  "9": {
+   "keyVerse": 56,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which son of Jerubbaal escaped when Abimelech killed his brothers?",
+     "options": [
+      "Jotham, the youngest",
+      "Jether, the firstborn",
+      "Gaal the son of Ebed",
+      "Zebul the ruler"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Jotham stand to call out to the men of Shechem?",
+     "options": [
+      "On top of Mount Gerizim",
+      "At the gate of Shechem",
+      "By the oak of the pillar",
+      "On Mount Zalmon"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In Jotham's story, what did the olive tree say it would have to give up to reign?",
+     "options": [
+      "Its oil that honors God and man",
+      "Its sweetness and good fruit",
+      "Its new wine",
+      "Its cool shade"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Abimelech do to the city of Shechem after taking it?",
+     "options": [
+      "Beat it down and sowed it with salt",
+      "Made it his royal city",
+      "Gave it to Zebul to rule",
+      "Rebuilt its walls and tower"
+     ],
+     "v": 45
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Abimelech said to his armor bearer, \"Draw your sword and kill me, that men not say of me, '____.'\"",
+     "answer": "A woman killed him",
+     "wrong": [
+      "A servant killed him",
+      "Gaal defeated him",
+      "He fled from battle"
+     ],
+     "v": 54
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The bramble said to the trees, \"If in truth you anoint me king over you, then come and ____.\"",
+     "answer": "take refuge in my shade",
+     "wrong": [
+      "eat of my fruit",
+      "bow down before me",
+      "dwell beneath my branches"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Then God sent ____ between Abimelech and the men of Shechem.",
+     "answer": "an evil spirit",
+     "wrong": [
+      "a great fear",
+      "a strong wind",
+      "a lying prophet"
+     ],
+     "v": 23
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Abimelech kills his seventy brothers",
+      "Jotham tells the story of the trees",
+      "Gaal stirs up Shechem against Abimelech",
+      "Abimelech attacks the tower of Thebez"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Abimelech ruled over Israel for three years before Shechem turned against him.",
+     "answer": true,
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Zebul, the ruler of Shechem, joined Gaal in rebelling against Abimelech.",
+     "answer": false,
+     "v": 31
+    }
+   ]
+  },
+  "10": {
+   "keyVerse": 16,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which two peoples did the LORD sell Israel into the hands of?",
+     "options": [
+      "The Philistines and the children of Ammon",
+      "Moab and Edom",
+      "Midian and Amalek",
+      "Egypt and Syria"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD first tell Israel when they cried out to him?",
+     "options": [
+      "Go cry to the gods you have chosen",
+      "I will send you a judge today",
+      "Go back to Bochim and weep",
+      "Offer a sacrifice at Shiloh"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Israel do after confessing their sin?",
+     "options": [
+      "Put away foreign gods and served the LORD",
+      "Built a new altar at Mizpah",
+      "Fasted for seven days",
+      "Sent gifts to the Ammonites"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the princes of Gilead promise to the man who would begin the fight against Ammon?",
+     "options": [
+      "He would be head over all Gilead",
+      "He would marry a prince's daughter",
+      "He would receive a tenth of the plunder",
+      "He would be given thirty cities"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "We have sinned! Do to us whatever seems good to you; ____.",
+     "answer": "only deliver us, please, today",
+     "wrong": [
+      "only do not destroy us",
+      "only forgive our fathers",
+      "only send us a judge"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jair had thirty sons who rode on ____.",
+     "answer": "thirty donkey colts",
+     "wrong": [
+      "thirty white horses",
+      "thirty young camels",
+      "thirty chariots"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The LORD's soul was grieved for ____.",
+     "answer": "the misery of Israel",
+     "wrong": [
+      "the sins of Israel",
+      "the death of Jair",
+      "the land of Gilead"
+     ],
+     "v": 16
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Tola judges Israel",
+      "Jair judges Israel",
+      "Israel serves many gods and is oppressed",
+      "Ammon camps in Gilead and Israel at Mizpah"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD told Israel he had never saved them from their enemies before.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Ammonites crossed the Jordan to fight against Judah, Benjamin, and Ephraim.",
+     "answer": true,
+     "v": 9
+    }
+   ]
+  },
+  "11": {
+   "keyVerse": 27,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jephthah vow to the LORD?",
+     "options": [
+      "To offer whatever came out of his house to meet him",
+      "To build an altar at Mizpah",
+      "To give a tenth of the plunder",
+      "To never cut his hair"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why had Jephthah's brothers driven him out?",
+     "options": [
+      "He was the son of another woman",
+      "He had killed a man",
+      "He served other gods",
+      "He refused to fight Ammon"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the king of Ammon claim as his reason for war?",
+     "options": [
+      "Israel took his land when it came from Egypt",
+      "Israel had killed his son",
+      "Gilead owed him tribute",
+      "Jephthah had raided his cities"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Jephthah's daughter ask for before the vow was carried out?",
+     "options": [
+      "Two months on the mountains with her companions",
+      "A husband from Gilead",
+      "Seven days of feasting",
+      "A blessing from the priest"
+     ],
+     "v": 37
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "His daughter came out to meet him with tambourines and with dances. She was ____.",
+     "answer": "his only child",
+     "wrong": [
+      "his firstborn daughter",
+      "the joy of his house",
+      "dressed in fine linen"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Then Jephthah fled from his brothers and lived in ____.",
+     "answer": "the land of Tob",
+     "wrong": [
+      "the land of Gilead",
+      "the hills of Ephraim",
+      "the city of Mizpah"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "May the LORD ____ be judge today between the children of Israel and the children of Ammon.",
+     "answer": "the Judge",
+     "wrong": [
+      "the Mighty One",
+      "God of heaven",
+      "of our fathers"
+     ],
+     "v": 27
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jephthah's brothers drive him out",
+      "The elders of Gilead ask him to lead",
+      "Jephthah sends messengers to Ammon's king",
+      "His daughter comes out to meet him"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jephthah's daughter told him to do to her what he had vowed to the LORD.",
+     "answer": true,
+     "v": 36
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The king of Ammon listened to Jephthah's message and withdrew.",
+     "answer": false,
+     "v": 28
+    }
+   ]
+  },
+  "12": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the men of Gilead identify fleeing Ephraimites?",
+     "options": [
+      "They made them say Shibboleth",
+      "They checked their clothing",
+      "They asked their fathers' names",
+      "They looked at their weapons"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the men of Ephraim threaten to do to Jephthah?",
+     "options": [
+      "Burn his house around him",
+      "Take away his cattle",
+      "Drive him back to Tob",
+      "Stone him at Mizpah"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Jephthah answer Ephraim's complaint?",
+     "options": [
+      "He had called them, but they didn't save him",
+      "He had never heard about the war",
+      "He feared they would take the plunder",
+      "The LORD told him not to call them"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which of the later judges was from Bethlehem?",
+     "options": [
+      "Ibzan",
+      "Elon",
+      "Abdon",
+      "Tola"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The Gileadites took ____ against the Ephraimites.",
+     "answer": "the fords of the Jordan",
+     "wrong": [
+      "the pass of Mizpah",
+      "the roads of Gilead",
+      "the gates of Shechem"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "When I saw that you didn't save me, I put ____, and passed over against the children of Ammon.",
+     "answer": "my life in my hand",
+     "wrong": [
+      "my trust in Gilead",
+      "my sword on my thigh",
+      "my men in order"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Abdon had forty sons and thirty grandsons who rode on ____.",
+     "answer": "seventy donkey colts",
+     "wrong": [
+      "seventy white horses",
+      "seventy camels",
+      "seventy chariots"
+     ],
+     "v": 14
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Ephraim threatens Jephthah",
+      "Gilead fights Ephraim at the river crossings",
+      "Jephthah dies after judging Israel",
+      "Ibzan, Elon, and Abdon judge Israel"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jephthah gathered the men of Gilead and fought against Ephraim.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jephthah was buried in Mizpah.",
+     "answer": false,
+     "v": 7
+    }
+   ]
+  },
+  "13": {
+   "keyVerse": 24,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who ruled over Israel for forty years at the start of this chapter?",
+     "options": [
+      "The Philistines",
+      "The Ammonites",
+      "The Midianites",
+      "The Moabites"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the angel answer when Manoah asked his name?",
+     "options": [
+      "He asked why, since it is incomprehensible",
+      "He said his name was Wonderful",
+      "He said he was Gabriel",
+      "He told Manoah to ask the priest"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the angel do as Manoah and his wife watched their offering burn?",
+     "options": [
+      "Ascended in the flame of the altar",
+      "Touched the meat with his staff",
+      "Vanished into a cloud",
+      "Wrote on the rock"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did Manoah's wife reason that they would not die?",
+     "options": [
+      "The LORD had accepted their offerings",
+      "The angel had blessed their son",
+      "They had not seen his face",
+      "They had kept every command"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "No razor shall come on his head, for the child shall be ____ from the womb.",
+     "answer": "a Nazirite to God",
+     "wrong": [
+      "holy to the LORD",
+      "a priest to God",
+      "a judge for Israel"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Manoah said to his wife, \"We shall surely die, because ____.\"",
+     "answer": "we have seen God",
+     "wrong": [
+      "we have sinned greatly",
+      "we doubted his word",
+      "we touched the altar"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The LORD's Spirit began to move him in ____, between Zorah and Eshtaol.",
+     "answer": "Mahaneh Dan",
+     "wrong": [
+      "Ramath Lehi",
+      "the camp of Judah",
+      "Timnah"
+     ],
+     "v": 25
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The angel appears to Manoah's wife",
+      "Manoah prays for the man of God to return",
+      "The angel comes again as she sits in the field",
+      "Manoah offers a young goat on the rock"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Manoah's wife was told to drink no wine or strong drink.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Manoah was with his wife in the field when the angel came the second time.",
+     "answer": false,
+     "v": 9
+    }
+   ]
+  },
+  "14": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Samson find in the lion's carcass?",
+     "options": [
+      "A swarm of bees and honey",
+      "A nest of birds",
+      "A golden ring",
+      "A bronze sword"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the Philistine companions learn the answer to the riddle?",
+     "options": [
+      "They threatened his wife, and she pressed him",
+      "They followed him to the lion",
+      "His parents told them",
+      "They guessed it on the third day"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Samson's parents object to the woman he wanted?",
+     "options": [
+      "She was from the uncircumcised Philistines",
+      "She was promised to another man",
+      "She was a widow",
+      "She was from a poor family"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did Samson go to strike thirty men and take their clothing?",
+     "options": [
+      "Ashkelon",
+      "Gaza",
+      "Timnah",
+      "Lehi"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Out of the eater came out food. ____ came out sweetness.",
+     "answer": "Out of the strong",
+     "wrong": [
+      "Out of the dead",
+      "Out of the lion",
+      "Out of the rock"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "If you hadn't plowed with ____, you wouldn't have found out my riddle.",
+     "answer": "my heifer",
+     "wrong": [
+      "my donkey",
+      "my ox",
+      "my field"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "His parents didn't know that it was of the LORD; for he sought ____ against the Philistines.",
+     "answer": "an occasion",
+     "wrong": [
+      "a quarrel",
+      "revenge",
+      "a war"
+     ],
+     "v": 4
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Samson sees a woman in Timnah",
+      "Samson tears apart a young lion",
+      "Samson tells his riddle at the feast",
+      "Samson's wife is given to his companion"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Samson told his parents that the honey came from the lion's body.",
+     "answer": false,
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Samson's wife wept before him for the seven days of the feast.",
+     "answer": true,
+     "v": 17
+    }
+   ]
+  },
+  "15": {
+   "keyVerse": 16,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did Samson burn the Philistines' grain?",
+     "options": [
+      "He tied torches between the tails of foxes",
+      "He shot flaming arrows into the fields",
+      "He set fire to their threshing floors",
+      "He called down fire from heaven"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why wouldn't Samson's father-in-law let him in to see his wife?",
+     "options": [
+      "He had given her to Samson's companion",
+      "She had gone back to Timnah's elders",
+      "She was sick in her room",
+      "She had died"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did three thousand men of Judah come to Samson?",
+     "options": [
+      "To bind him and hand him to the Philistines",
+      "To make him their king",
+      "To join him against the Philistines",
+      "To bring him food and water"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the Philistines do after learning why Samson burned their fields?",
+     "options": [
+      "They burned his wife and her father",
+      "They attacked the city of Zorah",
+      "They paid him a ransom",
+      "They offered him her younger sister"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "He found a fresh ____, put out his hand, took it, and struck a thousand men with it.",
+     "answer": "jawbone of a donkey",
+     "wrong": [
+      "branch of an oak",
+      "horn of a ram",
+      "staff of a shepherd"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The ropes that were on his arms became as ____; and his bands dropped from off his hands.",
+     "answer": "flax that was burned",
+     "wrong": [
+      "threads in the wind",
+      "reeds in the water",
+      "straw in the fire"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "God split the hollow place that is in Lehi, and water came out of it. When he had drunk, ____, and he revived.",
+     "answer": "his spirit came again",
+     "wrong": [
+      "his strength returned",
+      "his eyes grew bright",
+      "his thirst was gone"
+     ],
+     "v": 19
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Samson is refused his wife",
+      "Samson burns the Philistines' grain",
+      "Samson lives in the cave in Etam's rock",
+      "Samson strikes a thousand men at Lehi"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Samson called on the LORD because he was very thirsty.",
+     "answer": true,
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The men of Judah bound Samson with seven green cords.",
+     "answer": false,
+     "v": 13
+    }
+   ]
+  },
+  "16": {
+   "keyVerse": 28,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Samson do in Dagon's house at the end of his life?",
+     "options": [
+      "Pushed on the middle pillars until the house fell",
+      "Killed the lords with a sword",
+      "Set the house on fire",
+      "Escaped through the roof"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Samson carry to the top of the mountain before Hebron?",
+     "options": [
+      "The doors and posts of Gaza's gate",
+      "The pillars of Dagon's house",
+      "A millstone from the prison",
+      "The body of a lion"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the Philistines do to Samson after capturing him?",
+     "options": [
+      "Put out his eyes and made him grind at the mill",
+      "Beat him daily in the city square",
+      "Sold him as a slave to Egypt",
+      "Chained him inside Dagon's temple"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was the second thing Samson falsely told Delilah could bind him?",
+     "options": [
+      "New ropes never used for work",
+      "Seven green cords",
+      "Chains of bronze",
+      "Weaving his hair on a loom"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "He said, \"I will go out as at other times, and shake myself free.\" But he didn't know that ____.",
+     "answer": "the LORD had departed from him",
+     "wrong": [
+      "his hair had been shaved",
+      "the Philistines were waiting",
+      "Delilah had betrayed him"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The lords of the Philistines gathered together to offer a great sacrifice to ____.",
+     "answer": "Dagon their god",
+     "wrong": [
+      "Baal their lord",
+      "Ashtoreth their goddess",
+      "Chemosh their god"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "However, ____ began to grow again after he was shaved.",
+     "answer": "the hair of his head",
+     "wrong": [
+      "the strength of his arms",
+      "the sight of his eyes",
+      "the beard on his face"
+     ],
+     "v": 22
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Samson carries away Gaza's city gate",
+      "Delilah asks the secret of his strength",
+      "The Philistines put out his eyes",
+      "Samson is brought out to entertain them"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The lords of the Philistines offered Delilah silver to find Samson's secret.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Samson's family buried him in Gaza.",
+     "answer": false,
+     "v": 31
+    }
+   ]
+  },
+  "17": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Micah's mother have made from the silver?",
+     "options": [
+      "A carved image and a molten image",
+      "A golden ephod",
+      "An altar to the LORD",
+      "A lampstand for the house of God"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What had happened to Micah's mother's missing silver?",
+     "options": [
+      "Micah had taken it himself",
+      "A Levite had stolen it",
+      "A servant had buried it",
+      "It was taken by the Philistines"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where was the young Levite from?",
+     "options": [
+      "Bethlehem Judah",
+      "Shiloh",
+      "Zorah",
+      "Gibeah"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Micah offer to give the Levite?",
+     "options": [
+      "Ten pieces of silver a year, clothing, and food",
+      "A field and a house",
+      "Two hundred pieces of silver",
+      "A share of his flocks"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "In those days there was no king in Israel. Everyone did that which was right ____.",
+     "answer": "in his own eyes",
+     "wrong": [
+      "in the LORD's sight",
+      "before his elders",
+      "by the law of Moses"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Micah said to him, \"Dwell with me, and be to me ____.\"",
+     "answer": "a father and a priest",
+     "wrong": [
+      "a son and a servant",
+      "a teacher and a friend",
+      "a judge and a guide"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Now I know that the LORD will do good to me, since I have ____ as my priest.",
+     "answer": "a Levite",
+     "wrong": [
+      "my own son",
+      "a Danite",
+      "an Ephraimite"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Micah made one of his own sons a priest before the Levite arrived.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Micah's mother gave all eleven hundred pieces of silver to the silversmith.",
+     "answer": false,
+     "v": 4
+    }
+   ]
+  },
+  "18": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the Danites take from Micah?",
+     "options": [
+      "His images, ephod, teraphim, and priest",
+      "His silver and livestock",
+      "His sons as servants",
+      "His house and land"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the five spies find the people of Laish living?",
+     "options": [
+      "Quiet, secure, and unsuspecting",
+      "As mighty giants with chariots",
+      "As close allies of Sidon",
+      "Poor and scattered"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What argument persuaded the Levite to go with the Danites?",
+     "options": [
+      "Being priest to a tribe, not one man's house",
+      "A promise of much silver",
+      "The threat of being killed",
+      "A word he received from the LORD"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the Danites name the city of Laish after capturing it?",
+     "options": [
+      "Dan",
+      "Leshem",
+      "Mahaneh Dan",
+      "Zorah"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Micah said, \"You have taken away ____ which I made, and the priest, and have gone away!\"",
+     "answer": "my gods",
+     "wrong": [
+      "my silver",
+      "my sons",
+      "my treasure"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They said to the priest, \"Hold your peace, ____, and go with us.\"",
+     "answer": "put your hand on your mouth",
+     "wrong": [
+      "bow your head low",
+      "take up your staff",
+      "gather your belongings"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They set up Micah's engraved image, and it remained all the time that ____ was in Shiloh.",
+     "answer": "God's house",
+     "wrong": [
+      "the ark",
+      "Eli the priest",
+      "the camp of Israel"
+     ],
+     "v": 31
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Five Danite spies lodge at Micah's house",
+      "The spies see the people of Laish",
+      "Six hundred Danites take Micah's priest",
+      "Dan burns Laish and rebuilds it"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Micah and his neighbors fought the Danites and won back his images.",
+     "answer": false,
+     "v": 26
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Laish had no deliverer because it was far from Sidon.",
+     "answer": true,
+     "v": 28
+    }
+   ]
+  },
+  "19": {
+   "keyVerse": 30,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In which town did the Levite and his concubine stop for the night?",
+     "options": [
+      "Gibeah of Benjamin",
+      "Jebus",
+      "Ramah",
+      "Bethel"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why wouldn't the Levite stay in Jebus?",
+     "options": [
+      "It was a city of foreigners, not Israelites",
+      "The gates were already shut",
+      "His servant was afraid of it",
+      "Her father had warned him"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who took the travelers into his house?",
+     "options": [
+      "An old man from the hill country of Ephraim",
+      "A Benjamite elder of the city",
+      "A Levite who lived in the town",
+      "The judge of the city"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did the concubine's father keep delaying the Levite's departure?",
+     "options": [
+      "He urged him to eat and stay longer",
+      "He hid his donkeys",
+      "He said the roads were unsafe",
+      "He refused to let his daughter go"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Such a deed has not been done or seen from the day that the children of Israel came up out of ____ to this day!",
+     "answer": "the land of Egypt",
+     "wrong": [
+      "the wilderness of Sinai",
+      "the Jordan River",
+      "the plains of Moab"
+     ],
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The old man said, \"Peace be to you! Just let me supply all your needs, but ____.\"",
+     "answer": "don't sleep in the street",
+     "wrong": [
+      "don't go on to Ramah",
+      "don't trust these men",
+      "don't leave before morning"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The woman his concubine had fallen down at the door of the house, with ____.",
+     "answer": "her hands on the threshold",
+     "wrong": [
+      "her face to the ground",
+      "her cloak over her head",
+      "her feet toward the street"
+     ],
+     "v": 27
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The concubine goes back to her father's house",
+      "The Levite stays several days with her father",
+      "They pass by Jebus toward evening",
+      "An old man takes them into his house"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Levite divided his concubine's body into pieces and sent them throughout Israel.",
+     "answer": true,
+     "v": 29
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Levite's servant suggested they spend the night in Gibeah.",
+     "answer": false,
+     "v": 11
+    }
+   ]
+  },
+  "20": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Israel demand that the tribe of Benjamin do?",
+     "options": [
+      "Hand over the wicked men of Gibeah",
+      "Pay for the Levite's loss",
+      "Leave the land of Israel",
+      "Destroy their idols"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was special about seven hundred of Benjamin's chosen men?",
+     "options": [
+      "They were left-handed slingers who never missed",
+      "They were sons of Anak",
+      "They fought from chariots",
+      "They were the king's guards"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which tribe did the LORD say should go up first against Benjamin?",
+     "options": [
+      "Judah",
+      "Ephraim",
+      "Levi",
+      "Dan"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was the signal between Israel's army and the ambushers?",
+     "options": [
+      "A great cloud of smoke from the city",
+      "A blast on the ram's horn",
+      "A torch raised on a hill",
+      "A shout from the whole army"
+     ],
+     "v": 38
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "All the people arose as one man, saying, \"None of us will go to his tent, neither will any of us ____.\"",
+     "answer": "turn to his house",
+     "wrong": [
+      "eat bread today",
+      "rest until morning",
+      "lay down his arms"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They came to Bethel, and wept, and sat there before the LORD, and ____ until evening.",
+     "answer": "fasted that day",
+     "wrong": [
+      "slept that day",
+      "feasted that day",
+      "rested that day"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Phinehas, the son of Eleazar, the son of Aaron, ____ in those days.",
+     "answer": "stood before it",
+     "wrong": [
+      "judged all Israel",
+      "led the army",
+      "served at Mizpah"
+     ],
+     "v": 28
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Israel gathers at Mizpah and hears the Levite",
+      "Benjamin refuses to hand over the men",
+      "Israel loses the first two battles",
+      "Israel wins on the third day with an ambush"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Benjamin defeated Israel in the first battle at Gibeah.",
+     "answer": true,
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The ark of the covenant was at Mizpah in those days.",
+     "answer": false,
+     "v": 27
+    }
+   ]
+  },
+  "21": {
+   "keyVerse": 25,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What oath had the men of Israel sworn at Mizpah?",
+     "options": [
+      "Not to give their daughters to Benjamin as wives",
+      "To destroy every city of Benjamin",
+      "Never to return to Gibeah",
+      "To appoint a king over Israel"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why was Jabesh Gilead attacked?",
+     "options": [
+      "No one from there came to the assembly",
+      "It had sheltered the men of Gibeah",
+      "It refused to pay tribute",
+      "It worshiped Baal"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where were the remaining Benjamites told to lie in wait for wives?",
+     "options": [
+      "In the vineyards near Shiloh",
+      "In the rock of Rimmon",
+      "By the gate of Bethel",
+      "In the fields of Mizpah"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the people ask the LORD while weeping at Bethel?",
+     "options": [
+      "Why one tribe was lacking in Israel",
+      "Why the Levite's wife had died",
+      "Whether to attack Jabesh Gilead",
+      "When a king would be given"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "If the daughters of Shiloh come out to ____, then come out of the vineyards.",
+     "answer": "dance in the dances",
+     "wrong": [
+      "draw water at the well",
+      "gather grapes for harvest",
+      "bring offerings to the feast"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The people grieved for Benjamin, because the LORD had made ____.",
+     "answer": "a breach in the tribes",
+     "wrong": [
+      "an end of their name",
+      "a curse on their land",
+      "a judgment on Gibeah"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They found among the inhabitants of Jabesh Gilead ____, and brought them to the camp at Shiloh.",
+     "answer": "four hundred young virgins",
+     "wrong": [
+      "two hundred young women",
+      "six hundred daughters",
+      "a thousand maidens"
+     ],
+     "v": 12
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Israel weeps at Bethel over Benjamin",
+      "Men are sent against Jabesh Gilead",
+      "Peace is proclaimed to Benjamin at Rimmon",
+      "Benjamites take wives from Shiloh's dancers"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The women from Jabesh Gilead were enough wives for all the men of Benjamin.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The elders said Shiloh's fathers would not be guilty of breaking the oath, since they hadn't given their daughters.",
+     "answer": true,
+     "v": 22
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1038 @@
+{
+ "book": "AMO",
+ "chapters": {
+  "1": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was Amos's background, according to the first verse?",
+     "options": [
+      "A herdsman of Tekoa",
+      "A priest of Bethel",
+      "A scribe in Jerusalem",
+      "A soldier of Jeroboam"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For three transgressions of Damascus, ____, I will not turn away its punishment.",
+     "answer": "yes, for four",
+     "wrong": [
+      "yes, for seven",
+      "and for many more",
+      "yes, for ten"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "For each nation condemned in this chapter, the LORD says he will send or kindle a fire.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Damascus do to Gilead?",
+     "options": [
+      "Threshed it with instruments of iron",
+      "Burned its cities with fire",
+      "Sold its people to Egypt",
+      "Cut down its forests"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To whom did Gaza and Tyre hand over whole communities as captives?",
+     "options": [
+      "Edom",
+      "Egypt",
+      "Assyria",
+      "Moab"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The LORD will roar from Zion... and the pastures of the shepherds will mourn, and ____.",
+     "answer": "the top of Carmel will wither",
+     "wrong": [
+      "the cedars of Lebanon will fall",
+      "the streams of Jordan will fail",
+      "the fields of Sharon will burn"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Amos saw these words two years after the earthquake.",
+     "answer": false,
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What covenant did Tyre fail to remember?",
+     "options": [
+      "The brotherly covenant",
+      "The covenant of salt",
+      "The covenant with David",
+      "The treaty with Egypt"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What sin is Edom condemned for?",
+     "options": [
+      "Pursuing his brother with the sword",
+      "Burning the bones of a king",
+      "Selling the needy for sandals",
+      "Rejecting the LORD's law"
+     ],
+     "v": 11
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Damascus is condemned",
+      "Gaza is condemned",
+      "Tyre is condemned",
+      "Edom is condemned"
+     ],
+     "v": 3
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "For what did Israel sell the needy?",
+     "options": [
+      "A pair of sandals",
+      "A loaf of bread",
+      "A jar of wine",
+      "A handful of barley"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Judah is condemned for rejecting the LORD's law and not keeping his statutes.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They trample the heads of the poor ____ and deny justice to the oppressed.",
+     "answer": "into the dust of the earth",
+     "wrong": [
+      "under their chariot wheels",
+      "at the gates of the city",
+      "beneath their feet daily"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What sin is Moab condemned for?",
+     "options": [
+      "Burning the bones of Edom's king into lime",
+      "Ripping open pregnant women",
+      "Threshing Gilead with iron",
+      "Handing captives over to Edom"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Israel make the Nazirites do?",
+     "options": [
+      "Drink wine",
+      "Cut their hair",
+      "Eat unclean food",
+      "Leave the land"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They lay themselves down beside every altar ____.",
+     "answer": "on clothes taken in pledge",
+     "wrong": [
+      "on beds of carved ivory",
+      "with wine in their hands",
+      "on skins of sacrificed lambs"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD says he raised up some of Israel's young men to be kings.",
+     "answer": false,
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How does the LORD describe the Amorite he destroyed?",
+     "options": [
+      "Tall as cedars and strong as oaks",
+      "Swift as eagles and fierce as lions",
+      "Many as locusts and bold as bears",
+      "Hard as iron and proud as Lebanon"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Behold, I will crush you in your place, as a cart crushes that is ____.",
+     "answer": "full of grain",
+     "wrong": [
+      "loaded with stones",
+      "heavy with wood",
+      "piled with sheaves"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What will the most courageous of the mighty do on that day?",
+     "options": [
+      "Flee away naked",
+      "Fall by the sword",
+      "Be taken captive",
+      "Hide in the rocks"
+     ],
+     "v": 16
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Do two walk together, ____?",
+     "answer": "unless they have agreed",
+     "wrong": [
+      "unless they are brothers",
+      "if one of them is lame",
+      "without a road to follow"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Amos say the Lord GOD does before he acts?",
+     "options": [
+      "Reveals his secret to the prophets",
+      "Sends a sign in the heavens",
+      "Warns the kings of the earth",
+      "Speaks through the priests at Bethel"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Amos says, \"The lion has roared. Who will not fear?\"",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Because the LORD chose only Israel of all families of the earth, what will he do?",
+     "options": [
+      "Punish them for all their sins",
+      "Forgive all their sins",
+      "Protect them from every enemy",
+      "Give them the nations"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The Lord GOD has spoken. ____?",
+     "answer": "Who can but prophesy",
+     "wrong": [
+      "Who can stand before him",
+      "Who can answer him",
+      "Who will not obey"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does a shepherd rescue from the mouth of the lion, as a picture of Israel's rescue?",
+     "options": [
+      "Two legs or a piece of an ear",
+      "A whole lamb from its jaws",
+      "The skin and the bones",
+      "A single horn"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD says the horns of the altar in Jerusalem will be cut off.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which houses does the LORD say will perish?",
+     "options": [
+      "The houses of ivory",
+      "The houses of cedar",
+      "The houses of the priests",
+      "The houses of the prophets"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"Indeed they don't know to do right,\" says the LORD, \"who hoard ____ in their palaces.\"",
+     "answer": "plunder and loot",
+     "wrong": [
+      "grain and wine",
+      "silver and gold",
+      "oil and spices"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "The palaces of which two places are called to witness the oppression in Samaria?",
+     "options": [
+      "Ashdod and Egypt",
+      "Tyre and Sidon",
+      "Damascus and Assyria",
+      "Gaza and Edom"
+     ],
+     "v": 9
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 12,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Amos call the women on the mountain of Samaria who oppress the poor?",
+     "options": [
+      "Cows of Bashan",
+      "Daughters of Zion",
+      "Rams of Nebaioth",
+      "Goats of Gilead"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Because I will do this to you, ____, Israel.",
+     "answer": "prepare to meet your God",
+     "wrong": [
+      "turn and seek your God",
+      "remember the LORD your God",
+      "humble yourself before God"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After each disaster the LORD sent, the chapter repeats, \"yet you haven't returned to me.\"",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do these women tell their husbands?",
+     "options": [
+      "Bring us drinks!",
+      "Buy us jewels!",
+      "Take us to Bethel!",
+      "Give us bread!"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD give Israel in all their cities, along with lack of bread?",
+     "options": [
+      "Cleanness of teeth",
+      "Plagues of frogs",
+      "Boils and sores",
+      "Floods of water"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Go to Bethel, and sin; ____. Bring your sacrifices every morning.",
+     "answer": "to Gilgal, and sin more",
+     "wrong": [
+      "to Dan, and sin again",
+      "to Samaria, and sin more",
+      "to Beersheba, and sin again"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD sent rain equally on every city, but the people still ignored him.",
+     "answer": false,
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the swarming locusts devour?",
+     "options": [
+      "Fig trees and olive trees",
+      "Wheat and barley",
+      "Palm trees and cedars",
+      "Grapevines and pomegranates"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I have overthrown some of you, and you were like ____ plucked out of the fire.",
+     "answer": "a burning stick",
+     "wrong": [
+      "a golden vessel",
+      "a smoking coal",
+      "a lamb"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "The overthrow of which cities does the LORD compare to what he did to some of Israel?",
+     "options": [
+      "Sodom and Gomorrah",
+      "Jericho and Ai",
+      "Admah and Zeboiim",
+      "Nineveh and Babylon"
+     ],
+     "v": 11
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 24,
+   "questions": [
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "But let justice roll on like rivers, and ____.",
+     "answer": "righteousness like a mighty stream",
+     "wrong": [
+      "mercy like the morning dew",
+      "truth like a flowing spring",
+      "peace like the ocean waves"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Amos say the day of the LORD will be?",
+     "options": [
+      "Darkness, and not light",
+      "Light, and not darkness",
+      "A day of great feasting",
+      "A day of rest for Israel"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says he hates and despises Israel's feasts.",
+     "answer": true,
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What picture describes the day of the LORD?",
+     "options": [
+      "Fleeing a lion only to meet a bear",
+      "A thief breaking in at night",
+      "A storm at harvest time",
+      "A woman in labor"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Seek good, and not evil, ____; and so the LORD, the God of Armies, will be with you.",
+     "answer": "that you may live",
+     "wrong": [
+      "that you may prosper",
+      "that you may be wise",
+      "that you may be blessed"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which places are the people told not to seek?",
+     "options": [
+      "Bethel, Gilgal, and Beersheba",
+      "Dan, Samaria, and Shechem",
+      "Jerusalem, Hebron, and Bethlehem",
+      "Shiloh, Mizpah, and Ramah"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The chapter says a city that sent out a hundred will have fifty left.",
+     "answer": false,
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whom do the people hate in the gate?",
+     "options": [
+      "Him who reproves",
+      "The stranger",
+      "The priest",
+      "The king's messenger"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You who turn justice ____, and cast down righteousness to the earth!",
+     "answer": "to wormwood",
+     "wrong": [
+      "to ashes",
+      "to a lie",
+      "to stone"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which stars are named as made by the one Israel should seek?",
+     "options": [
+      "The Pleiades and Orion",
+      "The Bear and her cubs",
+      "The morning star and moon",
+      "The twelve constellations"
+     ],
+     "v": 8
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Against whom is the woe pronounced at the start of the chapter?",
+     "options": [
+      "Those at ease in Zion and Samaria",
+      "The priests of Bethel",
+      "The kings of Philistia",
+      "The poor of the land"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The rich lie on beds of ivory and eat lambs from the flock.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They drink wine in bowls, and anoint themselves with the best oils, but they are not grieved ____.",
+     "answer": "for the affliction of Joseph",
+     "wrong": [
+      "for the sins of Judah",
+      "for the poor at the gate",
+      "for the ruin of Samaria"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Like whom do the idle rich invent instruments of music?",
+     "options": [
+      "David",
+      "Solomon",
+      "Asaph",
+      "Moses"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Therefore they will now go captive ____. The feasting and lounging will end.",
+     "answer": "with the first who go captive",
+     "wrong": [
+      "to a land beyond Damascus",
+      "in chains to the north",
+      "before the eyes of all"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the LORD say he abhors?",
+     "options": [
+      "The pride of Jacob",
+      "The feasts of Israel",
+      "The idols of Samaria",
+      "The walls of Zion"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The chapter says that if ten men remain in one house, they will survive.",
+     "answer": false,
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which question does Amos ask to show how unnatural Israel's injustice is?",
+     "options": [
+      "Do horses run on the rocky crags?",
+      "Does an ox eat meat?",
+      "Can a leopard change its spots?",
+      "Can oxen swim the river?"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "But you have turned justice into poison, and ____.",
+     "answer": "the fruit of righteousness into bitterness",
+     "wrong": [
+      "the song of praise into wailing",
+      "the joy of feasts into mourning",
+      "the bread of life into ashes"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the survivor say when bodies are carried out of the house?",
+     "options": [
+      "Hush! We must not mention the LORD's name",
+      "Bury them quickly before night",
+      "The LORD has struck this house",
+      "Call for the mourning women"
+     ],
+     "v": 10
+    }
+   ]
+  },
+  "7": {
+   "keyVerse": 15,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the Lord hold in his hand as he stood beside the wall?",
+     "options": [
+      "A plumb line",
+      "A measuring rod",
+      "A sword",
+      "A basket of fruit"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which priest of Bethel opposed Amos?",
+     "options": [
+      "Amaziah",
+      "Hilkiah",
+      "Jehoiada",
+      "Eli"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Amos told Amaziah that he was a prophet and the son of a prophet.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "A vision of locusts eating the grass",
+      "A vision of judgment by fire",
+      "A vision of the plumb line",
+      "Amaziah tells Amos to flee to Judah"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Lord GOD, forgive, I beg you! How could Jacob stand? ____.",
+     "answer": "For he is small",
+     "wrong": [
+      "For he is weak",
+      "For his sins are many",
+      "For he has no king"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Amaziah tell Amos to go and prophesy instead?",
+     "options": [
+      "The land of Judah",
+      "Samaria",
+      "Damascus",
+      "Egypt"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD relented after Amos pleaded with him about the locusts.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was Amos's work before the LORD called him?",
+     "options": [
+      "A herdsman and farmer of sycamore figs",
+      "A shepherd and potter",
+      "A vine dresser and scribe",
+      "A stonecutter and builder"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Don't prophesy again any more at Bethel; for it is ____, and it is a royal house!",
+     "answer": "the king's sanctuary",
+     "wrong": [
+      "the house of God",
+      "the city of Jeroboam",
+      "the holy mountain"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Amaziah report that Amos was saying about Jeroboam?",
+     "options": [
+      "He will die by the sword",
+      "He will be taken to Assyria",
+      "He will lose his throne to Judah",
+      "He will be struck with leprosy"
+     ],
+     "v": 11
+    }
+   ]
+  },
+  "8": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Amos see in the vision at the start of the chapter?",
+     "options": [
+      "A basket of summer fruit",
+      "A plumb line",
+      "A swarm of locusts",
+      "A boiling pot"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I will send a famine in the land, not a famine of bread, nor a thirst for water, but ____.",
+     "answer": "of hearing the LORD's words",
+     "wrong": [
+      "of seeing the LORD's face",
+      "of justice in the gates",
+      "of the prophets' visions"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says the end has come on his people Israel.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the greedy merchants want to be over so they could sell grain?",
+     "options": [
+      "The new moon and the Sabbath",
+      "The harvest and the rains",
+      "The Feast of Booths",
+      "The Passover week"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Making the ephah small, and the shekel large, and dealing falsely ____.",
+     "answer": "with balances of deceit",
+     "wrong": [
+      "with the widow's field",
+      "in the gates of the city",
+      "with the poor man's grain"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the LORD do to the sun in that day?",
+     "options": [
+      "Cause it to go down at noon",
+      "Make it stand still",
+      "Turn it to blood",
+      "Hide it for three days"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD swore by his holy name that he would forget their works.",
+     "answer": false,
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What will the mourning in that day be like?",
+     "options": [
+      "The mourning for an only son",
+      "The mourning for a king",
+      "The weeping of a widow",
+      "The wailing at a funeral"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They will wander from sea to sea, and from the north ____; they will run back and forth to seek the LORD's word.",
+     "answer": "even to the east",
+     "wrong": [
+      "even to the south",
+      "down to the river",
+      "over to the desert"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which oath do those who will fall and never rise again use?",
+     "options": [
+      "As your god, Dan, lives",
+      "As Baal of Peor lives",
+      "As the queen of heaven lives",
+      "As Molech of Ammon lives"
+     ],
+     "v": 14
+    }
+   ]
+  },
+  "9": {
+   "keyVerse": 15,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Amos see the Lord standing?",
+     "options": [
+      "Beside the altar",
+      "On the city wall",
+      "At the gate of Samaria",
+      "On Mount Carmel"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "In that day I will raise up ____ who is fallen and close up its breaches.",
+     "answer": "the tent of David",
+     "wrong": [
+      "the house of Jacob",
+      "the walls of Zion",
+      "the throne of Israel"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD promises his people will rebuild ruined cities and plant vineyards.",
+     "answer": true,
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the LORD command to bite those who hide at the bottom of the sea?",
+     "options": [
+      "The serpent",
+      "The great fish",
+      "The waves",
+      "The sword"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will sift the house of Israel among all the nations as grain is sifted in a sieve, yet ____ on the earth.",
+     "answer": "not the least kernel will fall",
+     "wrong": [
+      "only the chaff will fall",
+      "not one stone will fall",
+      "no good seed will land"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To whom does the LORD compare the children of Israel?",
+     "options": [
+      "The children of the Ethiopians",
+      "The children of Edom",
+      "The sons of Abraham",
+      "The people of Egypt"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD says he will utterly destroy the house of Jacob.",
+     "answer": false,
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "From where did the LORD bring up the Philistines?",
+     "options": [
+      "Caphtor",
+      "Kir",
+      "Tarshish",
+      "Sidon"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The plowman shall overtake the reaper, and ____ him who sows seed.",
+     "answer": "the one treading grapes",
+     "wrong": [
+      "the shepherd with his flock",
+      "the gleaner of wheat",
+      "the keeper of vineyards"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What do the sinners of the people say before they die by the sword?",
+     "options": [
+      "Evil won't overtake nor meet us",
+      "The LORD does not see us",
+      "Let us eat and drink today",
+      "Our strength will save us"
+     ],
+     "v": 10
+    }
+   ]
+  }
+ }
+}

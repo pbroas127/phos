@@ -1,0 +1,1366 @@
+{
+ "book": "DAN",
+ "chapters": {
+  "1": {
+   "keyVerse": 8,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Daniel ask to be given instead of the king's food and wine?",
+     "options": [
+      "Vegetables and water",
+      "Bread and milk",
+      "Fruit and honey",
+      "Barley bread and lentils"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "At the end of the test, Daniel and his friends looked healthier than the youths who ate the king's food.",
+     "answer": true,
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "But Daniel purposed in his heart that he would not ____ with the king's delicacies, nor with the wine which he drank.",
+     "answer": "defile himself",
+     "wrong": [
+      "fill himself",
+      "delight himself",
+      "weaken himself"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why was the prince of the eunuchs afraid to change Daniel's food?",
+     "options": [
+      "The king might see their faces looking worse",
+      "The food was a gift from the king's god",
+      "The steward would report him",
+      "Daniel's friends might grow sick"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "In every matter of wisdom and understanding, he found them ____ than all the magicians and enchanters in all his realm.",
+     "answer": "ten times better",
+     "wrong": [
+      "seven times wiser",
+      "far more skillful",
+      "twice as learned"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The youths were to be taught the learning and the language of the Egyptians.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Nebuchadnezzar besieges Jerusalem",
+      "The youths are given new names",
+      "Daniel asks the steward for a test",
+      "The four youths stand before the king"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What new name was given to Daniel?",
+     "options": [
+      "Belteshazzar",
+      "Shadrach",
+      "Abednego",
+      "Meshach"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who was the master of the king's eunuchs?",
+     "options": [
+      "Ashpenaz",
+      "Arioch",
+      "Nebuzaradan",
+      "Belshazzar"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to the last verse, how long did Daniel continue?",
+     "options": [
+      "To the first year of King Cyrus",
+      "To the reign of Darius the Mede",
+      "To the death of Nebuchadnezzar",
+      "To the fall of Babylon"
+     ],
+     "v": 21
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 22,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Nebuchadnezzar demand of his wise men?",
+     "options": [
+      "Tell him both the dream and its interpretation",
+      "Interpret the dream he described to them",
+      "Make him an image of gold",
+      "Pray to their gods for him"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was the head of the great image made of?",
+     "options": [
+      "Fine gold",
+      "Silver",
+      "Bronze",
+      "Iron"
+     ],
+     "v": 32
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "In the dream, a stone cut out without hands struck the image on its feet.",
+     "answer": true,
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He changes the times and the seasons. He ____ and sets up kings.",
+     "answer": "removes kings",
+     "wrong": [
+      "judges nations",
+      "humbles princes",
+      "scatters rulers"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom did Daniel ask to seek mercy from the God of heaven about the secret?",
+     "options": [
+      "Hananiah, Mishael, and Azariah",
+      "Arioch and the king's guard",
+      "Ashpenaz and the steward",
+      "The Chaldeans and enchanters"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the stone become after it struck the image?",
+     "options": [
+      "A great mountain that filled the whole earth",
+      "A mighty river flowing to the sea",
+      "A tall tree reaching to the sky",
+      "A shining temple on a hill"
+     ],
+     "v": 35
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Daniel said the secret was revealed to him because he was wiser than anyone living.",
+     "answer": false,
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They will mingle themselves with the seed of men; but they won't cling to one another, even as ____.",
+     "answer": "iron does not mix with clay",
+     "wrong": [
+      "oil does not mix with water",
+      "gold does not blend with silver",
+      "the wind cannot be held"
+     ],
+     "v": 43
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who was the captain of the king's guard sent out to kill the wise men?",
+     "options": [
+      "Arioch",
+      "Ashpenaz",
+      "Nebuzaradan",
+      "Belshazzar"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the king do for Shadrach, Meshach, and Abednego at Daniel's request?",
+     "options": [
+      "Appointed them over the affairs of the province of Babylon",
+      "Made them chief governors over the wise men",
+      "Made them captains of the king's guard",
+      "Made them keepers of the king's treasury"
+     ],
+     "v": 49
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 18,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was the punishment for not worshiping the golden image?",
+     "options": [
+      "Being cast into a burning fiery furnace",
+      "Being thrown into a den of lions",
+      "Being sold into slavery",
+      "Being sent into exile"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I see four men loose, walking in the middle of the fire, and they are unharmed. The appearance of the fourth is ____.",
+     "answer": "like a son of the gods",
+     "wrong": [
+      "like an angel of light",
+      "like a mighty warrior",
+      "like the Ancient of Days"
+     ],
+     "v": 25
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Nebuchadnezzar commanded that the furnace be heated seven times more than usual.",
+     "answer": true,
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Nebuchadnezzar set up the golden image?",
+     "options": [
+      "In the plain of Dura",
+      "By the river Ulai",
+      "In the king's gate",
+      "In the citadel of Susa"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When the king asked, his counselors denied that three men had been thrown into the fire.",
+     "answer": false,
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "If it happens, our God whom we serve ____ from the burning fiery furnace; and he will deliver us out of your hand, O king.",
+     "answer": "is able to deliver us",
+     "wrong": [
+      "will surely rescue us",
+      "has promised to save us",
+      "will send his fire"
+     ],
+     "v": 17
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Rulers gather to dedicate the image",
+      "The three Jews are accused before the king",
+      "The three are bound and thrown into the furnace",
+      "The king sees four men walking in the fire"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who brought the accusation against Shadrach, Meshach, and Abednego?",
+     "options": [
+      "Certain Chaldeans",
+      "The presidents and local governors",
+      "The king's counselors",
+      "The mighty men of the army"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What decree did Nebuchadnezzar make at the end of the chapter?",
+     "options": [
+      "Anyone who speaks evil against their God will be cut in pieces",
+      "All must pray only to the God of heaven",
+      "The golden image must be destroyed",
+      "The Jews may return to Jerusalem"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The hair of their head wasn't singed. Their pants weren't changed. ____ wasn't even on them.",
+     "answer": "The smell of fire",
+     "wrong": [
+      "The ash of the furnace",
+      "A mark of the flame",
+      "The heat of the fire"
+     ],
+     "v": 27
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Nebuchadnezzar see in this dream?",
+     "options": [
+      "A great tree whose height reached the sky",
+      "An image of gold, silver, and clay",
+      "Four great animals rising from the sea",
+      "A ram and a goat fighting"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Nebuchadnezzar was driven from men and ate grass like oxen.",
+     "answer": true,
+     "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Seven times shall pass over you, until you know that ____ in the kingdom of men, and gives it to whomever he will.",
+     "answer": "the Most High rules",
+     "wrong": [
+      "the God of Daniel reigns",
+      "the King of heaven judges",
+      "the holy watchers rule"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who came down from the sky and cried out to cut down the tree?",
+     "options": [
+      "A holy watcher",
+      "The Ancient of Days",
+      "Gabriel",
+      "A son of the gods"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was to be left of the tree?",
+     "options": [
+      "The stump of its roots, bound with iron and bronze",
+      "One green branch",
+      "Its seed scattered on the earth",
+      "Its fruit for the birds"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Daniel counsel the king to do?",
+     "options": [
+      "Break off his sins by righteousness and show mercy to the poor",
+      "Offer sacrifices to the God of heaven",
+      "Tear down his golden image",
+      "Release the captives of Judah"
+     ],
+     "v": 27
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Daniel was eager to interpret the dream and answered the king at once.",
+     "answer": false,
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Is not this great Babylon, which I have built for the royal dwelling place by ____ and for the glory of my majesty?",
+     "answer": "the might of my power",
+     "wrong": [
+      "the labor of my captives",
+      "the wisdom of my counsel",
+      "the favor of my gods"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did his hair and nails grow like while he lived among the animals?",
+     "options": [
+      "Eagles' feathers and birds' claws",
+      "Lions' manes and bears' claws",
+      "White wool and iron",
+      "Goat hair and hooves"
+     ],
+     "v": 33
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When his understanding returned, Nebuchadnezzar was established in his kingdom and greatness was added to him.",
+     "answer": true,
+     "v": 36
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 27,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Belshazzar and his guests drink from at the feast?",
+     "options": [
+      "The gold and silver vessels from the temple in Jerusalem",
+      "Cups made from the horns of rams",
+      "Bowls sent by the king of Persia",
+      "The cups of the temple of Bel"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What appeared and wrote on the wall of the palace?",
+     "options": [
+      "The fingers of a man's hand",
+      "A flaming sword",
+      "A voice from heaven",
+      "A shining angel"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Belshazzar was slain that very night.",
+     "answer": true,
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "TEKEL: you are ____, and are found wanting.",
+     "answer": "weighed in the balances",
+     "wrong": [
+      "measured by the rod",
+      "judged by the Most High",
+      "counted among the proud"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who told Belshazzar to call for Daniel?",
+     "options": [
+      "The queen",
+      "Arioch the captain",
+      "The chief enchanter",
+      "Darius the Mede"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What reward did Belshazzar offer for reading the writing?",
+     "options": [
+      "Purple clothing, a gold chain, and third ruler",
+      "Half of his kingdom",
+      "A palace in Babylon",
+      "Rule over the wise men"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Daniel gladly accepted the king's gifts before reading the writing.",
+     "answer": false,
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did PERES mean?",
+     "options": [
+      "The kingdom is divided and given to the Medes and Persians",
+      "God has counted the kingdom and ended it",
+      "The king is weighed and found wanting",
+      "The kingdom will pass to the king's son"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You have not glorified the God in whose hand ____, and whose are all your ways.",
+     "answer": "your breath is",
+     "wrong": [
+      "the kingdom rests",
+      "your life is held",
+      "all nations are"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who received the kingdom after Belshazzar?",
+     "options": [
+      "Darius the Mede",
+      "Cyrus the Persian",
+      "Evilmerodach",
+      "Ahasuerus"
+     ],
+     "v": 31
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 22,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was the punishment named in the decree Darius signed?",
+     "options": [
+      "Being cast into the den of lions",
+      "Being thrown into a fiery furnace",
+      "Being sold into slavery",
+      "Being banished from the kingdom"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Darius was pleased when he heard that Daniel had broken the decree.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "My God has sent his angel, and has ____, and they have not hurt me.",
+     "answer": "shut the lions' mouths",
+     "wrong": [
+      "tamed the wild beasts",
+      "struck the lions blind",
+      "filled the den with light"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which way did Daniel's open windows face when he prayed?",
+     "options": [
+      "Toward Jerusalem",
+      "Toward the rising sun",
+      "Toward the king's palace",
+      "Toward the river"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the officials plan to find a charge against Daniel?",
+     "options": [
+      "Through the law of his God",
+      "Through his handling of the king's accounts",
+      "Through his foreign birth",
+      "Through a false witness"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Sign the writing, that it not be changed, according to the law of the ____, which doesn't alter.",
+     "answer": "Medes and Persians",
+     "wrong": [
+      "kings of Babylon",
+      "Chaldeans and Greeks",
+      "gods of Babylon"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The king spent that night feasting with music to forget his trouble.",
+     "answer": false,
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How was the den secured after Daniel was put inside?",
+     "options": [
+      "A stone was laid over it and sealed with signets",
+      "Guards stood at its mouth all night",
+      "It was locked with iron bars",
+      "It was covered with a bronze lid"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "So Daniel was taken up out of the den, and no kind of harm was found on him, because ____.",
+     "answer": "he had trusted in his God",
+     "wrong": [
+      "the king had prayed for him",
+      "an angel stood beside him",
+      "the lions were not hungry"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Daniel prospered in the reign of Darius and in the reign of Cyrus the Persian.",
+     "answer": true,
+     "v": 28
+    }
+   ]
+  },
+  "7": {
+   "keyVerse": 18,
+   "questions": [
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "But the saints of the Most High will receive the kingdom, and ____, even forever and ever.",
+     "answer": "possess the kingdom forever",
+     "wrong": [
+      "rule over the nations",
+      "judge the whole earth",
+      "build the holy city"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was the first animal in Daniel's vision like?",
+     "options": [
+      "A lion with eagle's wings",
+      "A bear with three ribs in its mouth",
+      "A leopard with four heads",
+      "A goat with one horn"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Daniel wrote down his dream and told the sum of the matters.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "His clothing was white as snow, and the hair of his head ____.",
+     "answer": "like pure wool",
+     "wrong": [
+      "like flames of fire",
+      "like fine gold",
+      "like the morning light"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the one standing by say the great animals are?",
+     "options": [
+      "Kings who will arise out of the earth",
+      "The winds of heaven",
+      "Ages of the world",
+      "Angels of judgment"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the little horn that came up among the other horns have?",
+     "options": [
+      "Eyes like a man's and a mouth speaking arrogantly",
+      "A crown of gold and a sword",
+      "Wings of fire and bronze claws",
+      "A seal and a scroll"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The animal like a bear had four heads and four wings on its back.",
+     "answer": false,
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Ten thousand times ten thousand stood before him. The judgment was set. ____.",
+     "answer": "The books were opened",
+     "wrong": [
+      "The trumpet was sounded",
+      "The thrones were cast down",
+      "The seals were broken"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the fourth animal have?",
+     "options": [
+      "Great iron teeth and ten horns",
+      "Bronze wings and seven heads",
+      "A lion's mane and eagle's feet",
+      "Silver horns and a bear's paws"
+     ],
+     "v": 7
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "The four winds stir up the great sea",
+      "Four great animals come up from the sea",
+      "Thrones are placed and the Ancient of Days sits",
+      "Daniel asks about the fourth animal"
+     ],
+     "v": 2
+    }
+   ]
+  },
+  "8": {
+   "keyVerse": 17,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which two animals fought in this vision?",
+     "options": [
+      "A ram and a male goat",
+      "A lion and a bear",
+      "A leopard and an eagle",
+      "A bull and a lamb"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who was told to make Daniel understand the vision?",
+     "options": [
+      "Gabriel",
+      "Michael",
+      "The Ancient of Days",
+      "A holy watcher"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The ram with two horns stood for the kings of Media and Persia.",
+     "answer": true,
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the little horn take away from the prince of the army?",
+     "options": [
+      "The continual burnt offering",
+      "His crown and throne",
+      "The holy city",
+      "The book of truth"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The rough male goat is ____. The great horn that is between his eyes is the first king.",
+     "answer": "the king of Greece",
+     "wrong": [
+      "the king of Babylon",
+      "the king of Egypt",
+      "the king of the north"
+     ],
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The goat came from the east, pounding the ground as it ran.",
+     "answer": false,
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How was Daniel affected after the vision?",
+     "options": [
+      "He fainted and was sick for some days",
+      "He fasted for three weeks",
+      "He could not speak for a year",
+      "He rejoiced and praised God"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He will also stand up against the prince of princes, but he will be broken ____.",
+     "answer": "without human hands",
+     "wrong": [
+      "by the sword of Michael",
+      "in the glorious land",
+      "at the appointed time"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where was Daniel in the vision?",
+     "options": [
+      "In the citadel of Susa, by the river Ulai",
+      "By the river Chebar in Babylon",
+      "In the king's palace in Babylon",
+      "On the banks of the Euphrates"
+     ],
+     "v": 2
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "The ram pushes west, north, and south",
+      "The goat breaks the ram's two horns",
+      "Four horns replace the great horn",
+      "A little horn grows exceedingly great"
+     ],
+     "v": 4
+    }
+   ]
+  },
+  "9": {
+   "keyVerse": 19,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Daniel understand from the books about Jeremiah's prophecy?",
+     "options": [
+      "The desolations of Jerusalem would last seventy years",
+      "The temple would be rebuilt by Cyrus",
+      "Babylon would fall to Greece",
+      "Israel would return within two years"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Daniel sought the Lord with prayer, fasting, sackcloth, and ashes.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who came flying swiftly to Daniel while he was still praying?",
+     "options": [
+      "Gabriel",
+      "Michael",
+      "Jeremiah",
+      "The Ancient of Days"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "We do not present our petitions before you for our righteousness, but ____.",
+     "answer": "for your great mercies' sake",
+     "wrong": [
+      "for the sake of our fathers",
+      "for your holy city's sake",
+      "because we have repented"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Lord, righteousness belongs to you, but to us ____, as it is today.",
+     "answer": "confusion of face",
+     "wrong": [
+      "shame and sorrow",
+      "the wages of sin",
+      "darkness and trouble"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Daniel said the curse written in the law of Joshua had been poured out on Israel.",
+     "answer": false,
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In whose first year did Daniel pray this prayer?",
+     "options": [
+      "Darius the son of Ahasuerus",
+      "Cyrus king of Persia",
+      "Belshazzar king of Babylon",
+      "Nebuchadnezzar king of Babylon"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "At what time did the angel touch Daniel as he prayed?",
+     "options": [
+      "About the time of the evening offering",
+      "At midnight",
+      "At sunrise",
+      "At the time of the morning sacrifice"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How many weeks were decreed on Daniel's people and holy city?",
+     "options": [
+      "Seventy weeks",
+      "Seven weeks",
+      "Forty weeks",
+      "Twelve weeks"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Oh, Lord, the great and dreadful God, who keeps covenant and ____ with those who love him.",
+     "answer": "loving kindness",
+     "wrong": [
+      "tender mercy",
+      "faithful promises",
+      "everlasting peace"
+     ],
+     "v": 4
+    }
+   ]
+  },
+  "10": {
+   "keyVerse": 19,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How long had Daniel been mourning before this vision?",
+     "options": [
+      "Three whole weeks",
+      "Seven days",
+      "Forty days",
+      "Ten days"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The men who were with Daniel also saw the vision.",
+     "answer": false,
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Greatly beloved man, ____. Peace be to you. Be strong.",
+     "answer": "don't be afraid",
+     "wrong": [
+      "stand on your feet",
+      "listen to my words",
+      "lift up your eyes"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who came to help the messenger when the prince of Persia withstood him?",
+     "options": [
+      "Michael, one of the chief princes",
+      "Gabriel, who stands before God",
+      "The prince of Greece",
+      "Cyrus king of Persia"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "By which river was Daniel when he saw the man clothed in linen?",
+     "options": [
+      "Hiddekel, the great river",
+      "Ulai",
+      "Jordan",
+      "Chebar"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "His face was as the appearance of lightning, and his eyes ____.",
+     "answer": "as flaming torches",
+     "wrong": [
+      "as burning coals",
+      "like the morning star",
+      "like polished bronze"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "During his mourning Daniel ate no meat and drank no wine.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did one in the likeness of the sons of men touch so Daniel could speak?",
+     "options": [
+      "His lips",
+      "His eyes",
+      "His shoulder",
+      "His forehead"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "But I will tell you that which is inscribed in ____.",
+     "answer": "the writing of truth",
+     "wrong": [
+      "the book of life",
+      "the scroll of heaven",
+      "the law of Moses"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to the messenger, when were Daniel's words heard?",
+     "options": [
+      "From the first day he set his heart to understand",
+      "After the three weeks were fulfilled",
+      "When he fell on his face by the river",
+      "When Michael spoke on his behalf"
+     ],
+     "v": 12
+    }
+   ]
+  },
+  "11": {
+   "keyVerse": 32,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which two kings struggle against each other through most of this chapter?",
+     "options": [
+      "The king of the north and the king of the south",
+      "The king of Babylon and the king of Egypt",
+      "The king of Persia and the king of Greece",
+      "The king of Media and the king of Assyria"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "He will corrupt those who do wickedly against the covenant by flatteries; but the people who know their God ____ and take action.",
+     "answer": "will be strong",
+     "wrong": [
+      "will stand firm",
+      "will cry out",
+      "will be delivered"
+     ],
+     "v": 32
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "A mighty king's kingdom would be broken and divided toward the four winds of the sky.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What would forces set up after taking away the continual burnt offering?",
+     "options": [
+      "The abomination that makes desolate",
+      "A golden image of the king",
+      "A throne in the holy place",
+      "An altar to the god of fortresses"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will those who are wise among the people do?",
+     "options": [
+      "Instruct many",
+      "Flee to the mountains",
+      "Rule over the nations",
+      "Rebuild the sanctuary"
+     ],
+     "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "As for both these kings, their hearts will be to do evil, and they will ____; but it won't prosper.",
+     "answer": "speak lies at one table",
+     "wrong": [
+      "make war in the glorious land",
+      "divide the spoil together",
+      "break their covenant in anger"
+     ],
+     "v": 27
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The contemptible person would obtain the kingdom by winning a great battle.",
+     "answer": false,
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which peoples would be delivered out of the northern king's hand at the time of the end?",
+     "options": [
+      "Edom, Moab, and the chief of Ammon",
+      "Egypt, Libya, and Ethiopia",
+      "Tyre, Sidon, and Philistia",
+      "Persia, Media, and Elam"
+     ],
+     "v": 41
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What god will the king honor in place of the gods of his fathers?",
+     "options": [
+      "The god of fortresses",
+      "The queen of the sky",
+      "The god of the sea",
+      "The gods of Egypt"
+     ],
+     "v": 38
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For ____ will come against him. Therefore he will be grieved, and will return.",
+     "answer": "ships of Kittim",
+     "wrong": [
+      "armies of Egypt",
+      "horsemen of Persia",
+      "princes of Greece"
+     ],
+     "v": 30
+    }
+   ]
+  },
+  "12": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Those who turn many to righteousness will shine ____.",
+     "answer": "as the stars forever and ever",
+     "wrong": [
+      "like the sun at noonday",
+      "as the brightness of dawn",
+      "like lamps in the temple"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who will stand up at that time for Daniel's people?",
+     "options": [
+      "Michael, the great prince",
+      "Gabriel, the messenger",
+      "The man clothed in linen",
+      "The Ancient of Days"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Many who sleep in the dust of the earth will awake, some to everlasting life and some to everlasting contempt.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which of Daniel's people will be delivered in the time of trouble?",
+     "options": [
+      "Everyone found written in the book",
+      "All who live in Jerusalem",
+      "Those who return from exile",
+      "The priests and Levites"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Many will run back and forth, and ____.",
+     "answer": "knowledge will be increased",
+     "wrong": [
+      "wickedness will abound",
+      "the end will come",
+      "the wise will fall"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Daniel said he understood everything he heard about the end.",
+     "answer": false,
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was Daniel told to do with the words of the book?",
+     "options": [
+      "Shut them up and seal the book",
+      "Read them to the king of Persia",
+      "Write them on tablets of stone",
+      "Teach them to all the wise"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the man clothed in linen do as he swore by him who lives forever?",
+     "options": [
+      "Held up his right hand and his left hand to heaven",
+      "Laid his hand on Daniel's head",
+      "Stretched his rod over the river",
+      "Knelt beside the waters"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "None of the wicked will understand, but ____.",
+     "answer": "those who are wise will understand",
+     "wrong": [
+      "the humble will see it",
+      "the saints will know it",
+      "the faithful will be shown"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Daniel was told that he would rest and stand in his inheritance at the end of the days.",
+     "answer": true,
+     "v": 13
+    }
+   ]
+  }
+ }
+}

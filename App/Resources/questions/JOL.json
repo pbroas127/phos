@@ -1,0 +1,340 @@
+{
+ "book": "JOL",
+ "chapters": {
+  "1": {
+   "keyVerse": 15,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What disaster has stripped the land in chapter 1?",
+     "options": [
+      "Waves of locusts",
+      "A great flood",
+      "A hard winter frost",
+      "A plague on the cattle"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who does Joel tell to wake up and weep because the sweet wine is cut off?",
+     "options": [
+      "The drunkards",
+      "The priests",
+      "The elders",
+      "The farmers"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Joel say the invading nation's teeth are like?",
+     "options": [
+      "The teeth of a lion",
+      "The teeth of a wolf",
+      "The teeth of a bear",
+      "The teeth of a serpent"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Joel say has been cut off from the LORD's house?",
+     "options": [
+      "The meal offering and drink offering",
+      "The lampstand and the incense",
+      "The Levites and the singers",
+      "The firstborn lambs"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Joel tells the land to mourn like whom?",
+     "options": [
+      "A virgin in sackcloth for the husband of her youth",
+      "A widow weeping at the city gate",
+      "A mother mourning her only son",
+      "A shepherd who has lost his flock"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Sanctify a fast. Call ____. Gather the elders to the house of the LORD.",
+     "answer": "a solemn assembly",
+     "wrong": [
+      "the watchmen home",
+      "a day of rest",
+      "the prophets together"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Tell your children about it, and have your children tell ____, and their children, another generation.",
+     "answer": "their children",
+     "wrong": [
+      "the elders",
+      "the nations",
+      "the priests"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "LORD, I cry to you, for the fire has devoured ____.",
+     "answer": "the pastures of the wilderness",
+     "wrong": [
+      "the vineyards of the valley",
+      "the grain of the fields",
+      "the cedars of Lebanon"
+     ],
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Joel calls on the priests to put on sackcloth and mourn.",
+     "answer": true,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Joel says the herds groan because enemy soldiers carried them off as plunder.",
+     "answer": false,
+     "v": 18
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 12,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where does Joel say to blow the trumpet and sound an alarm?",
+     "options": [
+      "In Zion",
+      "In Samaria",
+      "At the Jordan",
+      "In Bethel"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does God promise to pour out on all flesh?",
+     "options": [
+      "His Spirit",
+      "His wrath",
+      "Rain from heaven",
+      "Oil and wine"
+     ],
+     "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How is the land described before and behind the great army?",
+     "options": [
+      "Like Eden before them, a wilderness behind",
+      "A wilderness before them, Eden behind",
+      "Like a sea before them, dry behind",
+      "Green before them, flooded behind"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does the army get into the houses?",
+     "options": [
+      "In at the windows like thieves",
+      "Through the gates like kings",
+      "Over the rooftops like birds",
+      "Under the walls like foxes"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where are the priests told to weep?",
+     "options": [
+      "Between the porch and the altar",
+      "At the gate of the city",
+      "On the steps of the palace",
+      "Beside the bronze basin"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Tear your heart and ____, and turn to the LORD, your God.",
+     "answer": "not your garments",
+     "wrong": [
+      "not your sackcloth",
+      "cover your head",
+      "not your hair"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will restore to you the years that ____ has eaten.",
+     "answer": "the swarming locust",
+     "wrong": [
+      "the northern army",
+      "the fire and flame",
+      "the enemy's sword"
+     ],
+     "v": 25
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter says whoever calls on the LORD's name will be saved.",
+     "answer": true,
+     "v": 32
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "God promises grain, new wine, and oil, but says Israel will stay a reproach among the nations.",
+     "answer": false,
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "God says he will bring the northern army into Jerusalem to punish his people.",
+     "answer": false,
+     "v": 20
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where does God say he will gather all nations for judgment?",
+     "options": [
+      "The valley of Jehoshaphat",
+      "The valley of Hinnom",
+      "The plain of Megiddo",
+      "The valley of Shittim"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which peoples does God ask, Will you repay me?",
+     "options": [
+      "Tyre, Sidon, and Philistia",
+      "Egypt, Edom, and Moab",
+      "Assyria and Babylon",
+      "Ammon and the Arabians"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To whom had the children of Judah been sold?",
+     "options": [
+      "The sons of the Greeks",
+      "The men of Sheba",
+      "The Egyptians",
+      "The Edomites"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the chapter say will flow out from the LORD's house?",
+     "options": [
+      "A fountain",
+      "A river of oil",
+      "Streams of milk",
+      "Sweet wine"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Beat your plowshares into swords, and ____ into spears.",
+     "answer": "your pruning hooks",
+     "wrong": [
+      "your sickles and scythes",
+      "your shepherd's staffs",
+      "your threshing sledges"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Multitudes, multitudes in ____! For the day of the LORD is near.",
+     "answer": "the valley of decision",
+     "wrong": [
+      "the valley of judgment",
+      "the gates of Zion",
+      "the plain of battle"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Put in the sickle; for ____. Come, tread, for the wine press is full.",
+     "answer": "the harvest is ripe",
+     "wrong": [
+      "the grain is ready",
+      "the day is near",
+      "the field is white"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter says the LORD will be a refuge to his people and a stronghold to Israel.",
+     "answer": true,
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The chapter says Egypt and Assyria will become desolate for the violence done to Judah.",
+     "answer": false,
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The chapter says strangers will still pass through Jerusalem after God dwells in Zion.",
+     "answer": false,
+     "v": 17
+    }
+   ]
+  }
+ }
+}

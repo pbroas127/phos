@@ -1,0 +1,335 @@
+{
+ "book": "NAM",
+ "chapters": {
+  "1": {
+   "keyVerse": 7,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which city is Nahum's revelation about?",
+     "options": [
+      "Nineveh",
+      "Babylon",
+      "Tyre",
+      "Samaria"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Nahum call the clouds?",
+     "options": [
+      "The dust of his feet",
+      "The chariots of God",
+      "The curtains of heaven",
+      "The smoke of his anger"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does Nahum say God will make a full end of her place?",
+     "options": [
+      "With an overflowing flood",
+      "With a great earthquake",
+      "With fire from heaven",
+      "With a plague of locusts"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Nahum says the enemies are consumed utterly like what?",
+     "options": [
+      "Dry stubble",
+      "Chaff in the wind",
+      "Wax before fire",
+      "Withered grass"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The LORD is slow to anger, and great in power, and will by no means leave ____.",
+     "answer": "the guilty unpunished",
+     "wrong": [
+      "his people forsaken",
+      "the proud standing",
+      "the wicked in peace"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Now I will break ____ from off you, and will burst your bonds apart.",
+     "answer": "his yoke",
+     "wrong": [
+      "his heavy chains",
+      "the iron rod",
+      "his cruel whip"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Behold, on the mountains the feet of him who brings good news, who ____!",
+     "answer": "publishes peace",
+     "wrong": [
+      "proclaims salvation",
+      "announces victory",
+      "sounds the trumpet"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Nahum describes the LORD as a jealous God who avenges.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Nahum tells Israel to keep their feasts and perform their vows.",
+     "answer": false,
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "God promises that many descendants will carry on Nineveh's name.",
+     "answer": false,
+     "v": 14
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How are the chariots described as they rage in the streets?",
+     "options": [
+      "Like torches, running like lightning",
+      "Like lions, roaring in the night",
+      "Like floods, sweeping all away",
+      "Like eagles, swooping from the sky"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What are the valiant men dressed in?",
+     "options": [
+      "Scarlet",
+      "Purple",
+      "White linen",
+      "Sackcloth"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What are the attackers told to take as plunder from Nineveh?",
+     "options": [
+      "Silver and gold",
+      "Horses and chariots",
+      "Cattle and sheep",
+      "Grain and wine"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How do Nineveh's servants moan as she is carried away?",
+     "options": [
+      "Like the voice of doves",
+      "Like wounded lions",
+      "Like wind in the reeds",
+      "Like jackals in the desert"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Where is the den of the lions, and the feeding place of ____?",
+     "answer": "the young lions",
+     "wrong": [
+      "the mighty bears",
+      "the hungry wolves",
+      "the great eagles"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Nineveh has been from of old like ____, yet they flee away.",
+     "answer": "a pool of water",
+     "wrong": [
+      "a strong tower",
+      "a mighty cedar",
+      "a fortress of stone"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The gates of the rivers are opened, and ____.",
+     "answer": "the palace is dissolved",
+     "wrong": [
+      "the walls fall down",
+      "the city is flooded",
+      "the king flees away"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "In this chapter, the LORD of Armies declares that he is against Nineveh.",
+     "answer": true,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When the people of Nineveh hear the cry Stop! Stop!, they turn back to defend the city.",
+     "answer": false,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "God says the voice of Nineveh's messengers will still be heard among the nations.",
+     "answer": false,
+     "v": 13
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Nahum call Nineveh at the start of chapter 3?",
+     "options": [
+      "The bloody city",
+      "The proud city",
+      "The city of kings",
+      "The city of idols"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which city, surrounded by water yet still captured, does Nahum compare Nineveh to?",
+     "options": [
+      "No-Amon",
+      "Tyre",
+      "Babylon",
+      "Sidon"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What are Nineveh's fortresses compared to?",
+     "options": [
+      "Fig trees with first-ripe figs",
+      "Tents in a windstorm",
+      "Sand walls by the sea",
+      "Towers of dry clay"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What do the locusts do when the sun appears?",
+     "options": [
+      "They flee away",
+      "They devour the fields",
+      "They settle on the walls",
+      "They multiply greatly"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "There is no healing your wound, for ____.",
+     "answer": "your injury is fatal",
+     "wrong": [
+      "your sin is great",
+      "your pride is deep",
+      "no physician remains"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Your shepherds slumber, ____. Your nobles lie down.",
+     "answer": "king of Assyria",
+     "wrong": [
+      "king of Babylon",
+      "prince of Egypt",
+      "lord of Tyre"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The gates of your land are set ____ to your enemies.",
+     "answer": "wide open",
+     "wrong": [
+      "tightly shut",
+      "on fire",
+      "broken down"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Those who look at Nineveh will flee and ask, Who will mourn for her?",
+     "answer": true,
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Nahum says Nineveh increased its merchants more than the sand of the sea.",
+     "answer": false,
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Nahum mockingly tells Nineveh to draw water for the siege and strengthen its fortresses.",
+     "answer": true,
+     "v": 14
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,2716 @@
+{
+ "book": "JOS",
+ "chapters": {
+  "1": {
+   "keyVerse": 9,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD tell Joshua to do now that Moses was dead?",
+     "options": [
+      "Cross the Jordan with all the people",
+      "Return to Mount Sinai for the law",
+      "Wait at Shittim for forty days",
+      "Send spies into the land of Moab"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Joshua tell the officers to have the people prepare?",
+     "options": [
+      "Food",
+      "Weapons",
+      "Tents",
+      "Offerings"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which tribes did Joshua remind of Moses' command to cross over armed with their brothers?",
+     "options": [
+      "Reuben, Gad, and half of Manasseh",
+      "Judah, Benjamin, and Simeon",
+      "Ephraim, Dan, and Naphtali",
+      "Levi, Issachar, and Zebulun"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to the people's answer, what should happen to anyone who rebels against Joshua's command?",
+     "options": [
+      "He should be put to death",
+      "He should be sent back beyond the Jordan",
+      "He should lose his inheritance",
+      "He should be shut out of the camp"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "This book of the law shall not depart from your mouth, but you shall ____.",
+     "answer": "meditate on it day and night",
+     "wrong": [
+      "read it every Sabbath day",
+      "teach it to your children",
+      "write it on your doorposts"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "As I was with Moses, so I will be with you. I will not fail you ____.",
+     "answer": "nor forsake you",
+     "wrong": [
+      "nor turn from you",
+      "nor leave you alone",
+      "nor hide my face"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Don't turn from it to the right hand or to the left, that you may ____ wherever you go.",
+     "answer": "have good success",
+     "wrong": [
+      "find peace and rest",
+      "be kept from harm",
+      "see the LORD's glory"
+     ],
+     "v": 7
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The LORD speaks to Joshua after Moses dies",
+      "Joshua tells the officers to have people prepare",
+      "Joshua reminds the eastern tribes of Moses' word",
+      "The eastern tribes promise to obey Joshua"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God promised Joshua that no man would be able to stand before him all his life.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Joshua told the people they would cross the Jordan within seven days.",
+     "answer": false,
+     "v": 11
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 11,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Rahab hide the two spies?",
+     "options": [
+      "Under stalks of flax on her roof",
+      "In a cellar beneath her house",
+      "In a cave outside the city",
+      "Behind the city gate"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Rahab tell the king's messengers about the spies?",
+     "options": [
+      "They left around the time the gate was shut",
+      "They were still asleep in her house",
+      "They had gone up toward Ai",
+      "They had never come to her house"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Rahab help the spies get out of the city?",
+     "options": [
+      "She let them down by a cord through her window",
+      "She led them out the gate at night",
+      "She hid them in a cart of flax",
+      "She disguised them as merchants"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did Rahab tell the spies to hide for three days?",
+     "options": [
+      "The mountain",
+      "The fords of the Jordan",
+      "The wilderness",
+      "The plains of Moab"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "When we come into the land, tie this line of ____ in the window which you used to let us down.",
+     "answer": "scarlet thread",
+     "wrong": [
+      "blue linen cord",
+      "white wool yarn",
+      "purple silk"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For the LORD your God, he is God in heaven above, and ____.",
+     "answer": "on earth beneath",
+     "wrong": [
+      "in the sea below",
+      "over every nation",
+      "among all peoples"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Truly the LORD has delivered all the land into our hands. Moreover, all the inhabitants of the land ____.",
+     "answer": "melt away before us",
+     "wrong": [
+      "are gathering for war",
+      "have fled to the hills",
+      "hide behind their walls"
+     ],
+     "v": 24
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Joshua secretly sends two spies from Shittim",
+      "The king of Jericho sends word to Rahab",
+      "Rahab lets the spies down through the window",
+      "The spies report back to Joshua"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Rahab told the spies she had heard how the LORD dried up the Red Sea.",
+     "answer": true,
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The spies said anyone who went out of Rahab's house into the street would still be protected.",
+     "answer": false,
+     "v": 19
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 5,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What happened when the feet of the priests carrying the ark touched the Jordan?",
+     "options": [
+      "The waters stood up in one heap",
+      "A strong east wind blew all night",
+      "The river slowly drained into the sea",
+      "The ark floated across the water"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD say he would begin to do for Joshua that day?",
+     "options": [
+      "Magnify him in the sight of all Israel",
+      "Give him victory over Jericho",
+      "Show him the whole land",
+      "Speak with him face to face"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was the Jordan like at that time of year?",
+     "options": [
+      "Overflowing its banks during harvest",
+      "Nearly dry from the summer heat",
+      "Frozen at the edges",
+      "Low after a long drought"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why were the people told to keep a space between themselves and the ark?",
+     "options": [
+      "So they would know the way they had never gone",
+      "So the priests could cross without crowding",
+      "So the waters would not sweep the people away",
+      "So their enemies could not reach the ark"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Sanctify yourselves; for tomorrow the LORD will ____.",
+     "answer": "do wonders among you",
+     "wrong": [
+      "fight against your enemies",
+      "speak from the cloud",
+      "give you the city"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Behold, the ark of the covenant of ____ passes over before you into the Jordan.",
+     "answer": "the Lord of all the earth",
+     "wrong": [
+      "the God of your fathers",
+      "the Holy One of Israel",
+      "the King of all heaven"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The priests who bore the ark of the LORD's covenant stood firm on ____ in the middle of the Jordan.",
+     "answer": "dry ground",
+     "wrong": [
+      "a great rock",
+      "the river stones",
+      "a wooden platform"
+     ],
+     "v": 17
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Israel moves from Shittim and camps by the Jordan",
+      "Officers tell the people to follow the ark",
+      "The priests' feet dip into the water's edge",
+      "All Israel crosses on dry ground"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The priests carrying the ark entered the river only after all the people had crossed.",
+     "answer": false,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Joshua told Israel to take twelve men, one from every tribe.",
+     "answer": true,
+     "v": 12
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 24,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the twelve men carry out of the middle of the Jordan?",
+     "options": [
+      "Twelve stones",
+      "Twelve jars of water",
+      "Twelve pieces of wood",
+      "Twelve bundles of reeds"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What were the stones meant to prompt children to ask in the future?",
+     "options": [
+      "What the stones mean",
+      "Why Israel left Egypt",
+      "Where the ark was kept",
+      "Who led the fathers across"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happened when the priests' feet were lifted up onto dry ground?",
+     "options": [
+      "The Jordan returned and overflowed its banks",
+      "The people shouted and blew trumpets",
+      "A pillar of cloud went before them",
+      "The kings of Canaan attacked"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did Israel camp after coming up out of the Jordan?",
+     "options": [
+      "Gilgal",
+      "Shittim",
+      "Bethel",
+      "Ai"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "On that day, the LORD magnified Joshua in the sight of all Israel; and they feared him, ____, all the days of his life.",
+     "answer": "as they feared Moses",
+     "wrong": [
+      "as they feared the LORD",
+      "as they feared their enemies",
+      "as they feared Aaron"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "That all the peoples of the earth may know that ____ is mighty.",
+     "answer": "the LORD's hand",
+     "wrong": [
+      "Israel's great army",
+      "the covenant's power",
+      "Joshua's sword"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Joshua set up twelve stones in the middle of the Jordan, in the place where ____ stood.",
+     "answer": "the feet of the priests",
+     "wrong": [
+      "the twelve men",
+      "the elders of Israel",
+      "the eastern tribes"
+     ],
+     "v": 9
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The LORD commands twelve men to take stones",
+      "The people hurry across the river",
+      "The priests come up out of the Jordan",
+      "Joshua sets up the stones at Gilgal"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The men of Reuben and Gad crossed the Jordan armed, ahead of the rest of Israel.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "After crossing, the people camped on the west border of Jericho.",
+     "answer": false,
+     "v": 19
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 15,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who did Joshua meet near Jericho holding a drawn sword?",
+     "options": [
+      "The commander of the LORD's army",
+      "The king of Jericho",
+      "One of the two spies",
+      "A Canaanite warrior"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the men of Israel need to be circumcised at this time?",
+     "options": [
+      "Those born in the wilderness had not been",
+      "They had broken the covenant at Sinai",
+      "Moses had forbidden it in the desert",
+      "The Passover required it every year"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What stopped the day after Israel ate the produce of the land?",
+     "options": [
+      "The manna",
+      "The pillar of cloud",
+      "The water from the rock",
+      "The quail"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the LORD say he had rolled away that day?",
+     "options": [
+      "The reproach of Egypt",
+      "The sins of their fathers",
+      "The waters of the Jordan",
+      "The fear of the Canaanites"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Take off your sandals, for the place ____.",
+     "answer": "on which you stand is holy",
+     "wrong": [
+      "before the ark is holy",
+      "where I spoke is holy",
+      "around this city is holy"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Joshua made himself ____, and circumcised the sons of Israel.",
+     "answer": "flint knives",
+     "wrong": [
+      "bronze knives",
+      "iron blades",
+      "sharp swords"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Joshua went to him and said to him, \"____, or for our enemies?\"",
+     "answer": "Are you for us",
+     "wrong": [
+      "Have you come to help",
+      "Do you fight with us",
+      "Were you sent to us"
+     ],
+     "v": 13
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The kings of the Amorites hear and lose heart",
+      "Joshua circumcises the sons of Israel",
+      "Israel keeps the Passover at Gilgal",
+      "Joshua meets the commander of the LORD's army"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Israel kept the Passover in the plains of Jericho.",
+     "answer": true,
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When Joshua asked whose side he was on, the commander answered that he was for Israel.",
+     "answer": false,
+     "v": 14
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 27,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who alone in Jericho was to be spared?",
+     "options": [
+      "Rahab and those in her house",
+      "The king and his family",
+      "The children of the city",
+      "The priests of the city"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Joshua command the people not to do while they marched until he gave the word?",
+     "options": [
+      "Shout or speak a word",
+      "Blow the trumpets",
+      "Look at the walls",
+      "Draw their swords"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was to be done with the silver, gold, bronze, and iron?",
+     "options": [
+      "Put into the LORD's treasury",
+      "Divided among the tribes",
+      "Buried under the ruins",
+      "Burned with the city"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What curse did Joshua pronounce on the man who rebuilds Jericho?",
+     "options": [
+      "He would lose his firstborn and youngest sons",
+      "He would be struck with leprosy",
+      "His fields would never yield crops",
+      "He would be stoned outside the camp"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "So the LORD was with Joshua; and ____ was in all the land.",
+     "answer": "his fame",
+     "wrong": [
+      "the fear of Israel",
+      "his great army",
+      "his law"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Seven priests shall bear seven trumpets of ____ before the ark.",
+     "answer": "rams' horns",
+     "wrong": [
+      "polished silver",
+      "hammered bronze",
+      "goats' horns"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Keep yourselves from what is devoted to destruction, lest you take of the devoted thing; so you would make ____ accursed and trouble it.",
+     "answer": "the camp of Israel",
+     "wrong": [
+      "the ark of the covenant",
+      "the whole land",
+      "the house of Joshua"
+     ],
+     "v": 18
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Israel marches around the city once a day",
+      "They march around seven times on the seventh day",
+      "The people shout and the wall falls flat",
+      "The spies bring Rahab's family out"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Israel burned Jericho with fire after taking it.",
+     "answer": true,
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Rahab and her relatives were brought out and settled inside the camp of Israel.",
+     "answer": false,
+     "v": 23
+    }
+   ]
+  },
+  "7": {
+   "keyVerse": 25,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Israel lose the first battle at Ai?",
+     "options": [
+      "Achan took some of the devoted things",
+      "They attacked on the Sabbath",
+      "Joshua did not send spies",
+      "The ark stayed behind at Gilgal"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the spies advise Joshua about attacking Ai?",
+     "options": [
+      "Send only two or three thousand men",
+      "Send all the fighting men",
+      "Wait until the harvest was over",
+      "Set an ambush behind the city"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the LORD say the guilty man would be found?",
+     "options": [
+      "By tribe, then family, then household, then man",
+      "By asking the elders of each tribe",
+      "By a dream given to Joshua",
+      "By searching every tent in the camp"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Achan say he took from the plunder?",
+     "options": [
+      "A Babylonian robe, silver, and a wedge of gold",
+      "A golden idol and bronze vessels",
+      "A Babylonian sword and a crown",
+      "Silver cups from the king's house"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Joshua tore his clothes, and fell to the earth on his face ____ until the evening.",
+     "answer": "before the LORD's ark",
+     "wrong": [
+      "at the gate of Ai",
+      "in the middle of camp",
+      "beside the Jordan River"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "When I saw among the plunder a beautiful robe, then I ____ and took them.",
+     "answer": "coveted them",
+     "wrong": [
+      "counted them",
+      "wanted them badly",
+      "weighed them"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The Canaanites will surround us, and cut off our name from the earth. What will you do for ____?",
+     "answer": "your great name",
+     "wrong": [
+      "your chosen people",
+      "your holy covenant",
+      "your servant Moses"
+     ],
+     "v": 9
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "About three thousand men flee before Ai",
+      "Joshua falls on his face before the ark",
+      "The tribes are brought near to be selected",
+      "Achan is stoned in the valley of Achor"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Achan hid the stolen things in the ground inside his tent.",
+     "answer": true,
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When Joshua urged Achan to confess and give glory to the LORD, Achan refused.",
+     "answer": false,
+     "v": 20
+    }
+   ]
+  },
+  "8": {
+   "keyVerse": 1,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What strategy did the LORD tell Joshua to use against Ai?",
+     "options": [
+      "An ambush behind the city",
+      "Marching around it seven times",
+      "A long siege",
+      "A night attack from the south"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Unlike at Jericho, what could Israel keep from Ai?",
+     "options": [
+      "Its goods and livestock",
+      "Its silver and gold only",
+      "Its captives and weapons",
+      "Its houses and fields"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Joshua do when the LORD told him to signal the attack?",
+     "options": [
+      "He stretched out his javelin toward Ai",
+      "He blew a ram's horn",
+      "He lit a fire on the hill",
+      "He lifted up the ark"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did Joshua build an altar to the LORD after Ai was taken?",
+     "options": [
+      "Mount Ebal",
+      "Mount Gerizim",
+      "Gilgal",
+      "Bethel"
+     ],
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Joshua and all Israel made as if they were beaten before them, and fled by ____.",
+     "answer": "the way of the wilderness",
+     "wrong": [
+      "the road to Gilgal",
+      "the valley toward Bethel",
+      "the fords of the Jordan"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "When the men of Ai looked behind them, they saw ____ ascended up to heaven.",
+     "answer": "the smoke of the city",
+     "wrong": [
+      "the dust of the army",
+      "the fire of the altar",
+      "the flames of their fields"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "An altar of uncut stones, on which ____ any iron.",
+     "answer": "no one had lifted up",
+     "wrong": [
+      "no smith had ever used",
+      "no builder had ever struck",
+      "no worker had ever laid"
+     ],
+     "v": 31
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Joshua sends men to lie in ambush",
+      "Israel pretends to flee before Ai",
+      "The ambush takes the city and burns it",
+      "Joshua reads the law before all Israel"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Joshua read all the words of the law, the blessing and the curse, before the assembly.",
+     "answer": true,
+     "v": 34
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The king of Ai was killed in the battle before he could be captured.",
+     "answer": false,
+     "v": 23
+    }
+   ]
+  },
+  "9": {
+   "keyVerse": 14,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the Gibeonites trick Israel?",
+     "options": [
+      "They pretended to come from a far country",
+      "They offered Joshua gold and silver",
+      "They claimed to be Israelites",
+      "They pretended to be Levites"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What mistake did the men of Israel make when they examined the Gibeonites' supplies?",
+     "options": [
+      "They didn't ask counsel from the LORD",
+      "They didn't count the Gibeonites",
+      "They didn't send spies to check",
+      "They didn't consult the elders"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why didn't Israel attack the Gibeonites after learning the truth?",
+     "options": [
+      "The princes had sworn to them by the LORD",
+      "The Gibeonites paid heavy tribute",
+      "The Gibeonite army was too strong",
+      "Joshua pitied their children"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What work did the Gibeonites have to do for Israel?",
+     "options": [
+      "Cut wood and draw water",
+      "Shepherd the tribes' flocks",
+      "Build the altar at Ebal",
+      "Guard the gates of Gilgal"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "This our bread we took hot out of our houses on the day we went out; but now, behold, it is dry, and ____.",
+     "answer": "has become moldy",
+     "wrong": [
+      "has been eaten",
+      "is full of worms",
+      "has turned to dust"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "We will do this to them, and let them live; ____, because of the oath which we swore to them.",
+     "answer": "lest wrath be on us",
+     "wrong": [
+      "lest the LORD forget us",
+      "lest our enemies hear",
+      "lest the people rebel"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Therefore we were very afraid ____ because of you, and have done this thing.",
+     "answer": "for our lives",
+     "wrong": [
+      "for our children",
+      "for our cities",
+      "for our elders"
+     ],
+     "v": 24
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Kings gather together to fight Joshua",
+      "Gibeonites arrive at Gilgal in worn clothes",
+      "Joshua makes a covenant with them",
+      "Israel learns they are neighbors"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Gibeonites said they came because they had heard of the fame of the LORD.",
+     "answer": true,
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When the congregation learned the truth, they praised the princes for their oath.",
+     "answer": false,
+     "v": 18
+    }
+   ]
+  },
+  "10": {
+   "keyVerse": 25,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the five Amorite kings attack Gibeon?",
+     "options": [
+      "Gibeon had made peace with Israel",
+      "Gibeon refused to pay tribute",
+      "Gibeon had captured Jerusalem",
+      "Gibeon had sheltered Israel's spies"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD tell Joshua before he went up to help Gibeon?",
+     "options": [
+      "Don't fear them; not one will stand before you",
+      "Wait for the ark to go before you",
+      "Send only three thousand men",
+      "Make peace with the Amorite kings"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Joshua order done when the kings were found hiding?",
+     "options": [
+      "Roll large stones over the cave and guard it",
+      "Set the cave on fire at once",
+      "Bring them out and kill them immediately",
+      "Seal the cave and leave it forever"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Joshua tell the chiefs of his army to do to the five kings?",
+     "options": [
+      "Put their feet on the kings' necks",
+      "Strip the kings of their crowns",
+      "Bind the kings in bronze chains",
+      "Parade the kings through the camp"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Sun, stand still on Gibeon! You, moon, ____!",
+     "answer": "stop in the valley of Aijalon",
+     "wrong": [
+      "stay over the hills of Hebron",
+      "stand above the Salt Sea",
+      "halt over Beth Horon"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "There was no day like that before it or after it, that the LORD listened to ____; for the LORD fought for Israel.",
+     "answer": "the voice of a man",
+     "wrong": [
+      "the cry of his people",
+      "the prayer of the priests",
+      "the pleading of Gibeon"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Be strong and courageous, for the LORD will do this to ____ against whom you fight.",
+     "answer": "all your enemies",
+     "wrong": [
+      "every king of Canaan",
+      "the Anakim",
+      "all the Amorites"
+     ],
+     "v": 25
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Five Amorite kings camp against Gibeon",
+      "Joshua marches all night from Gilgal",
+      "The sun stands still over Gibeon",
+      "The five kings are brought out to Joshua"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "More of the enemy died from hailstones than from Israel's swords.",
+     "answer": true,
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Joshua took three days to march his army from Gilgal to Gibeon.",
+     "answer": false,
+     "v": 9
+    }
+   ]
+  },
+  "11": {
+   "keyVerse": 15,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who gathered the northern kings to fight against Israel?",
+     "options": [
+      "Jabin king of Hazor",
+      "Adoni-Zedek king of Jerusalem",
+      "Og king of Bashan",
+      "Horam king of Gezer"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD tell Joshua to do with the enemy's horses and chariots?",
+     "options": [
+      "Hamstring the horses and burn the chariots",
+      "Take them as plunder for Israel",
+      "Give them to the Levites",
+      "Drive them into the sea"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which was the only city standing on its mound that Israel burned?",
+     "options": [
+      "Hazor",
+      "Madon",
+      "Dor",
+      "Achshaph"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which people did Joshua cut off from the hill country, leaving some only in Gaza, Gath, and Ashdod?",
+     "options": [
+      "The Anakim",
+      "The Philistines",
+      "The Gibeonites",
+      "The Rephaim"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They went out with all their armies, many people, even as the sand ____ in multitude.",
+     "answer": "that is on the seashore",
+     "wrong": [
+      "of the great desert",
+      "that lines the river",
+      "of the Jordan valley"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "So Joshua took the whole land, and gave it for an inheritance to Israel. Then the land ____.",
+     "answer": "had rest from war",
+     "wrong": [
+      "was divided by lot",
+      "was filled with grain",
+      "belonged to Judah"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For it was of the LORD to ____, to come against Israel in battle.",
+     "answer": "harden their hearts",
+     "wrong": [
+      "confuse their minds",
+      "stir up their kings",
+      "gather their armies"
+     ],
+     "v": 20
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Jabin sends word to the northern kings",
+      "The kings camp together to fight Israel",
+      "Joshua comes against them suddenly",
+      "Joshua turns back and takes their leading city"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Apart from the Gibeonites, not a single city made peace with Israel.",
+     "answer": true,
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Israel took no plunder or livestock from the northern cities.",
+     "answer": false,
+     "v": 14
+    }
+   ]
+  },
+  "12": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What is this chapter mainly a record of?",
+     "options": [
+      "The kings Israel defeated",
+      "The cities given to the Levites",
+      "The tribes who received land by lot",
+      "The men who spied out the land"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which two kings east of the Jordan are described as defeated under Moses?",
+     "options": [
+      "Sihon and Og",
+      "Jabin and Jobab",
+      "Adoni-Zedek and Horam",
+      "Balak and Balaam"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How far did the conquered land east of the Jordan stretch?",
+     "options": [
+      "From the valley of the Arnon to Mount Hermon",
+      "From Gaza to great Sidon",
+      "From Jericho to the Salt Sea",
+      "From Kadesh Barnea to Gibeon"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which king is listed first among the kings Joshua struck west of the Jordan?",
+     "options": [
+      "The king of Jericho",
+      "The king of Jerusalem",
+      "The king of Hazor",
+      "The king of Hebron"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How many kings west of the Jordan are counted in total?",
+     "options": [
+      "Thirty-one",
+      "Twelve",
+      "Forty",
+      "Twenty-two"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Joshua gave it to the tribes of Israel for a possession ____.",
+     "answer": "according to their divisions",
+     "wrong": [
+      "according to their fathers",
+      "by the casting of lots",
+      "as Moses had sworn"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The king of Ai, which is ____, one.",
+     "answer": "beside Bethel",
+     "wrong": [
+      "near Jericho",
+      "beside Gibeon",
+      "near Gilgal"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The border of Og king of Bashan, of the remnant of ____, who lived at Ashtaroth and at Edrei.",
+     "answer": "the Rephaim",
+     "wrong": [
+      "the Anakim",
+      "the Amorites",
+      "the Hittites"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The lands east of the Jordan were conquered under Moses before Joshua's campaigns.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Joshua gave the land west of the Jordan to the Reubenites and Gadites.",
+     "answer": false,
+     "v": 6
+    }
+   ]
+  },
+  "13": {
+   "keyVerse": 33,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD tell Joshua when he was old?",
+     "options": [
+      "Very much land still remained to be possessed",
+      "His work of conquest was complete",
+      "He should appoint a king over Israel",
+      "He should return to Gilgal and rest"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Among whom was Joshua told to divide the land?",
+     "options": [
+      "The nine tribes and half of Manasseh",
+      "The two and a half eastern tribes",
+      "The Levites and the priests",
+      "Only Judah and Joseph"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to verse 14, what was the inheritance of Levi instead of land?",
+     "options": [
+      "The LORD's offerings made by fire",
+      "The cities of refuge",
+      "The spoil of the conquered kings",
+      "A tenth of Judah's land"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which soothsayer did Israel kill with the sword among the slain?",
+     "options": [
+      "Balaam the son of Beor",
+      "Balak the son of Zippor",
+      "Sihon king of Heshbon",
+      "Evi the prince of Midian"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Nevertheless the children of Israel didn't drive out ____: but they live within Israel to this day.",
+     "answer": "the Geshurites, nor the Maacathites",
+     "wrong": [
+      "the Philistines, nor the Sidonians",
+      "the Jebusites, nor the Hivites",
+      "the Amorites, nor the Hittites"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "All the kingdom of Og in Bashan; for Moses attacked these, and ____.",
+     "answer": "drove them out",
+     "wrong": [
+      "made peace with them",
+      "spared their kings",
+      "burned their cities"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "But Moses gave no inheritance to the tribe of Levi. ____ is their inheritance.",
+     "answer": "The LORD, the God of Israel",
+     "wrong": [
+      "The altar of burnt offering",
+      "The tent of meeting",
+      "The tithe of the people"
+     ],
+     "v": 33
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The LORD tells Joshua much land remains",
+      "The land east of the Jordan is described",
+      "Reuben's inheritance is described",
+      "Manasseh's eastern inheritance is described"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter says the regions of the Philistines had already been fully conquered.",
+     "answer": false,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The inheritance of the half tribe of Manasseh included the villages of Jair in Bashan.",
+     "answer": true,
+     "v": 30
+    }
+   ]
+  },
+  "14": {
+   "keyVerse": 8,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which city did Joshua give to Caleb?",
+     "options": [
+      "Hebron",
+      "Debir",
+      "Gilgal",
+      "Jericho"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Moses promise Caleb the land where he had walked?",
+     "options": [
+      "He had wholly followed the LORD",
+      "He was the oldest man in Judah",
+      "He had defeated the Anakim",
+      "He was Joshua's close friend"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Caleb describe his strength at eighty-five years old?",
+     "options": [
+      "As strong as the day Moses sent him",
+      "Weak, but still willing to fight",
+      "Stronger than ever before",
+      "Failing, but trusting the LORD"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How old was Caleb when Moses sent him from Kadesh Barnea to spy out the land?",
+     "options": [
+      "Forty",
+      "Twenty",
+      "Fifty",
+      "Thirty"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Now therefore give me ____, of which the LORD spoke in that day.",
+     "answer": "this hill country",
+     "wrong": [
+      "this fertile valley",
+      "the plains of Jericho",
+      "the city of Gilgal"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The name of Hebron before was Kiriath Arba, after ____ among the Anakim.",
+     "answer": "the greatest man",
+     "wrong": [
+      "the first king",
+      "the oldest priest",
+      "the tallest warrior"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "It may be that ____, and I shall drive them out, as the LORD said.",
+     "answer": "the LORD will be with me",
+     "wrong": [
+      "my sons will fight beside me",
+      "Judah will go up with me",
+      "the Anakim will flee from me"
+     ],
+     "v": 12
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Eleazar and Joshua distribute the land by lot",
+      "The children of Judah come to Joshua at Gilgal",
+      "Caleb recalls spying out the land",
+      "Joshua blesses Caleb and grants his request"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Levites received cities to live in with pasture lands, but no portion of land.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Caleb said the Anakim had left the hill country long ago.",
+     "answer": false,
+     "v": 12
+    }
+   ]
+  },
+  "15": {
+   "keyVerse": 19,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which tribe's inheritance does this chapter describe?",
+     "options": [
+      "Judah",
+      "Benjamin",
+      "Ephraim",
+      "Simeon"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who captured Kiriath Sepher and received Caleb's daughter as his wife?",
+     "options": [
+      "Othniel the son of Kenaz",
+      "Jephunneh the Kenizzite",
+      "Talmai the son of Anak",
+      "Achan the son of Carmi"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Achsah first have her husband ask her father for?",
+     "options": [
+      "A field",
+      "A flock",
+      "Servants",
+      "A house"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which people could the children of Judah not drive out of Jerusalem?",
+     "options": [
+      "The Jebusites",
+      "The Philistines",
+      "The Anakim",
+      "The Geshurites"
+     ],
+     "v": 63
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Caleb drove out ____: Sheshai, and Ahiman, and Talmai.",
+     "answer": "the three sons of Anak",
+     "wrong": [
+      "the three kings of Hebron",
+      "the three Amorite princes",
+      "the three sons of Og"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The west border was to the shore of ____. This is the border of the children of Judah.",
+     "answer": "the great sea",
+     "wrong": [
+      "the Salt Sea",
+      "the Jordan River",
+      "the brook of Kanah"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The lot for the tribe of Judah was to ____, even to the wilderness of Zin southward.",
+     "answer": "the border of Edom",
+     "wrong": [
+      "the border of Moab",
+      "the land of Egypt",
+      "the hills of Gilead"
+     ],
+     "v": 1
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Judah's borders are traced",
+      "Caleb is given a portion within Judah",
+      "Caleb's daughter asks him for a blessing",
+      "Judah's cities are listed by region"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Caleb received Kiriath Arba, also called Hebron, as his portion.",
+     "answer": true,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Achsah asked for springs because her father had set her in the hill country.",
+     "answer": false,
+     "v": 19
+    }
+   ]
+  },
+  "16": {
+   "keyVerse": 4,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which tribe's borders are traced in detail after the lot for Joseph is described?",
+     "options": [
+      "Ephraim",
+      "Manasseh",
+      "Benjamin",
+      "Dan"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happened to the Canaanites living in Gezer?",
+     "options": [
+      "They stayed and were put to forced labor",
+      "They fled to the Philistines",
+      "They were struck with the sword",
+      "They moved beyond the Jordan"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where were some of the cities set apart for Ephraim located?",
+     "options": [
+      "In the middle of Manasseh's inheritance",
+      "Along the border of Judah",
+      "Beyond the Jordan eastward",
+      "Along the coast by Joppa"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The children of Joseph, ____, took their inheritance.",
+     "answer": "Manasseh and Ephraim",
+     "wrong": [
+      "Reuben and Gad",
+      "Simeon and Levi",
+      "Judah and Benjamin"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "From Tappuah the border went along westward to the brook of Kanah; and ____.",
+     "answer": "ended at the sea",
+     "wrong": [
+      "ended at the Jordan",
+      "turned toward Shiloh",
+      "reached to Bethel"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The lot came out for the children of Joseph from the Jordan at Jericho, at ____ on the east.",
+     "answer": "the waters of Jericho",
+     "wrong": [
+      "the plains of Moab",
+      "the fords of Jordan",
+      "the walls of Jericho"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The children of Joseph received their inheritance by lot.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The border of Joseph's lot passed Beth Horon and Gezer on its way to the sea.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "All the cities of Ephraim lay outside the land given to Manasseh.",
+     "answer": false,
+     "v": 9
+    }
+   ]
+  },
+  "17": {
+   "keyVerse": 18,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the daughters of Zelophehad receive an inheritance?",
+     "options": [
+      "Their father had no sons",
+      "They married men of Ephraim",
+      "Their brothers died in battle",
+      "Caleb gave them his portion"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who did the daughters of Zelophehad come to with their request?",
+     "options": [
+      "Eleazar, Joshua, and the princes",
+      "Moses and Aaron",
+      "Caleb and Othniel",
+      "The elders of Ephraim"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the children of Joseph complain about to Joshua?",
+     "options": [
+      "They had only one lot though they were numerous",
+      "Their land had no springs of water",
+      "The Levites took their best cities",
+      "Judah's border crossed into theirs"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Machir receive Gilead and Bashan?",
+     "options": [
+      "He was a man of war",
+      "He was the youngest son",
+      "He had spied out the land",
+      "He had married Caleb's daughter"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "If you are a numerous people, go up to ____, and clear land for yourself there.",
+     "answer": "the forest",
+     "wrong": [
+      "the valley",
+      "the high mountains",
+      "the wilderness"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "All the Canaanites who dwell in the land of the valley have ____.",
+     "answer": "chariots of iron",
+     "wrong": [
+      "walled cities",
+      "great armies",
+      "horses of war"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When the children of Israel had grown strong, they put the Canaanites to ____, and didn't utterly drive them out.",
+     "answer": "forced labor",
+     "wrong": [
+      "heavy tribute",
+      "the sword",
+      "hard service"
+     ],
+     "v": 13
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Manasseh's lot is given, with Gilead for Machir",
+      "Zelophehad's daughters ask for an inheritance",
+      "The border of Manasseh is described",
+      "The children of Joseph complain of one lot"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Joshua agreed that the house of Joseph should not have only one lot.",
+     "answer": true,
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The children of Manasseh drove out all the inhabitants of Beth Shean and Megiddo.",
+     "answer": false,
+     "v": 12
+    }
+   ]
+  },
+  "18": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did the congregation set up the Tent of Meeting?",
+     "options": [
+      "Shiloh",
+      "Gilgal",
+      "Shechem",
+      "Bethel"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many men from each tribe did Joshua tell Israel to appoint to survey the land?",
+     "options": [
+      "Three",
+      "One",
+      "Two",
+      "Twelve"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the Levites have no portion of land among the tribes?",
+     "options": [
+      "The priesthood of the LORD was their inheritance",
+      "They already lived beyond the Jordan",
+      "They had sinned at Peor",
+      "They chose to live in Judah"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Between which two peoples did Benjamin's lot fall?",
+     "options": [
+      "Judah and Joseph",
+      "Judah and Simeon",
+      "Ephraim and Dan",
+      "Reuben and Gad"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "How long will ____ to go in to possess the land, which the LORD has given you?",
+     "answer": "you neglect",
+     "wrong": [
+      "you wait",
+      "you refuse",
+      "you fear"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Bring the description here to me; and I will cast lots for you here ____.",
+     "answer": "before the LORD our God",
+     "wrong": [
+      "at the gate of Shiloh",
+      "in front of the elders",
+      "beside the great altar"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The men passed through the land, and surveyed it by cities into seven portions ____.",
+     "answer": "in a book",
+     "wrong": [
+      "on a stone",
+      "with a line",
+      "by a cord"
+     ],
+     "v": 9
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The congregation assembles and sets up the Tent",
+      "Joshua rebukes the tribes for their delay",
+      "Men survey the land into seven portions",
+      "Joshua casts lots and Benjamin's lot comes up"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Seven tribes had not yet divided their inheritance.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Joshua told the surveyors that Judah would stay in the north and Joseph in the south.",
+     "answer": false,
+     "v": 5
+    }
+   ]
+  },
+  "19": {
+   "keyVerse": 49,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the children of Israel do once they finished distributing the land by borders?",
+     "options": [
+      "Gave an inheritance to Joshua",
+      "Built an altar at Shiloh",
+      "Returned to Gilgal",
+      "Made Joshua their king"
+     ],
+     "v": 49
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why was Simeon's inheritance inside Judah's?",
+     "options": [
+      "Judah's portion was too much for them",
+      "Simeon was too small to fight",
+      "Joshua was angry with Simeon",
+      "Simeon asked to live near Hebron"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which city did the children of Dan capture and rename Dan?",
+     "options": [
+      "Leshem",
+      "Laish",
+      "Joppa",
+      "Ekron"
+     ],
+     "v": 47
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which tribe received the seventh and last lot?",
+     "options": [
+      "Dan",
+      "Naphtali",
+      "Asher",
+      "Zebulun"
+     ],
+     "v": 40
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They gave him the city which he asked, even Timnathserah in ____; and he built the city.",
+     "answer": "the hill country of Ephraim",
+     "wrong": [
+      "the hill country of Judah",
+      "the valley of Jezreel",
+      "the land of Benjamin"
+     ],
+     "v": 50
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They distributed the inheritances by lot in Shiloh before the LORD, at the door of ____.",
+     "answer": "the Tent of Meeting",
+     "wrong": [
+      "the house of Eleazar",
+      "the city gate",
+      "the great altar"
+     ],
+     "v": 51
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Asher's border reached Ebron, Rehob, Hammon, and Kanah, even to ____.",
+     "answer": "great Sidon",
+     "wrong": [
+      "the Jordan",
+      "Mount Carmel",
+      "the Salt Sea"
+     ],
+     "v": 28
+    },
+    {
+     "t": "order",
+     "d": 3,
+     "items": [
+      "Simeon's lot",
+      "Zebulun's lot",
+      "Issachar's lot",
+      "Asher's lot"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Eleazar, Joshua, and the heads of the fathers' houses divided the land by lot.",
+     "answer": true,
+     "v": 51
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Joshua received his own inheritance before any of the tribes received theirs.",
+     "answer": false,
+     "v": 49
+    }
+   ]
+  },
+  "20": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who was allowed to flee to a city of refuge?",
+     "options": [
+      "Someone who killed a person accidentally",
+      "Anyone accused of theft",
+      "A foreigner fleeing war",
+      "A servant escaping his master"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did the man slayer first stand to declare his case?",
+     "options": [
+      "At the entrance of the city gate",
+      "Before the altar at Shiloh",
+      "In the house of the high priest",
+      "At the edge of the city fields"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Until whose death was the man slayer to stay in the city?",
+     "options": [
+      "The high priest of those days",
+      "The one who pursued him",
+      "Joshua the son of Nun",
+      "The eldest judge of his city"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which city of refuge was in the hill country of Judah?",
+     "options": [
+      "Kiriath Arba, also called Hebron",
+      "Shechem",
+      "Kedesh in Galilee",
+      "Bezer in the wilderness"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They shall be to you for a refuge from ____.",
+     "answer": "the avenger of blood",
+     "wrong": [
+      "the hand of your enemy",
+      "the anger of the congregation",
+      "the judges of the land"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They shall not deliver him up, because he struck his neighbor unintentionally, and ____.",
+     "answer": "didn't hate him before",
+     "wrong": [
+      "didn't know his name",
+      "didn't mean to rob him",
+      "didn't carry a weapon"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "These were the appointed cities for all the children of Israel, and for ____ who lives among them.",
+     "answer": "the alien",
+     "wrong": [
+      "the Levite",
+      "the widow",
+      "the servant"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Cities of refuge were set apart on both sides of the Jordan.",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "If the avenger came, the elders were to hand the man slayer over to him.",
+     "answer": false,
+     "v": 5
+    }
+   ]
+  },
+  "21": {
+   "keyVerse": 45,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the heads of the Levites ask for?",
+     "options": [
+      "Cities to live in with pasture lands",
+      "A share of the land by lot",
+      "A portion of the plunder",
+      "A place to live at Shiloh only"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which Levite family received the first lot?",
+     "options": [
+      "The children of Aaron, of the Kohathites",
+      "The Gershonites",
+      "The Merarites",
+      "The sons of Phinehas"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who kept the fields and villages around Hebron?",
+     "options": [
+      "Caleb the son of Jephunneh",
+      "The children of Aaron",
+      "Joshua the son of Nun",
+      "Othniel the son of Kenaz"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How many cities did the Levites receive in all?",
+     "options": [
+      "Forty-eight",
+      "Twelve",
+      "Thirty-one",
+      "Sixty"
+     ],
+     "v": 41
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Nothing failed of ____ which the LORD had spoken to the house of Israel. All came to pass.",
+     "answer": "any good thing",
+     "wrong": [
+      "any word",
+      "any promise",
+      "any blessing"
+     ],
+     "v": 45
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The LORD gave them rest all around. Not a man of all their enemies ____.",
+     "answer": "stood before them",
+     "wrong": [
+      "remained in the land",
+      "escaped their hand",
+      "dared to fight"
+     ],
+     "v": 44
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "To the children of Aaron the priest they gave Hebron with its pasture lands, ____ for the man slayer.",
+     "answer": "the city of refuge",
+     "wrong": [
+      "the place of judgment",
+      "the house of safety",
+      "the town of mercy"
+     ],
+     "v": 13
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The children of Aaron receive their cities",
+      "The rest of the Kohathites receive cities",
+      "The Gershonites receive cities",
+      "The Merarites receive cities"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter says the LORD gave Israel all the land he swore to their fathers.",
+     "answer": true,
+     "v": 43
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The Levites' cities were given without the pasture lands around them.",
+     "answer": false,
+     "v": 42
+    }
+   ]
+  },
+  "22": {
+   "keyVerse": 34,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the eastern tribes build by the Jordan?",
+     "options": [
+      "A great altar",
+      "A watchtower",
+      "A pile of memorial stones",
+      "A walled city"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who led the group sent to confront the eastern tribes?",
+     "options": [
+      "Phinehas the son of Eleazar",
+      "Joshua the son of Nun",
+      "Caleb the son of Jephunneh",
+      "Eleazar the priest"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides Peor, what past sin did the delegation mention as a warning?",
+     "options": [
+      "Achan's trespass in the devoted thing",
+      "The golden calf at Sinai",
+      "The spies' bad report",
+      "The Gibeonite covenant"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the delegation offer if the eastern land was unclean?",
+     "options": [
+      "Cross over and take land among them",
+      "Offer sacrifices to cleanse it",
+      "Move the tabernacle to Gilead",
+      "Send priests to live there"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Not for burnt offering, nor for sacrifice; but it will be ____ between us and you.",
+     "answer": "a witness",
+     "wrong": [
+      "a boundary",
+      "a warning",
+      "a covenant"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "To love the LORD your God, to walk in all his ways, to keep his commandments, ____, and to serve him with all your heart.",
+     "answer": "to hold fast to him",
+     "wrong": [
+      "to fear his name",
+      "to bless his people",
+      "to seek his face"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "That your children may not tell our children in time to come, 'You have ____.'",
+     "answer": "no portion in the LORD",
+     "wrong": [
+      "no place in Israel",
+      "no share in the land",
+      "no right to the altar"
+     ],
+     "v": 27
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Joshua blesses the eastern tribes and sends them home",
+      "The eastern tribes build an altar by the Jordan",
+      "Phinehas and ten princes confront them",
+      "The tribes explain, and Israel is pleased"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Israel gathered at Shiloh to go to war against the eastern tribes.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The eastern tribes said they built the altar to offer burnt offerings on it.",
+     "answer": false,
+     "v": 26
+    }
+   ]
+  },
+  "23": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who did Joshua call together to hear his farewell words?",
+     "options": [
+      "All Israel with their elders and leaders",
+      "Only the priests and Levites",
+      "Only the eastern tribes",
+      "The heads of the tribe of Ephraim"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Joshua say he was about to do?",
+     "options": [
+      "Go the way of all the earth",
+      "Return to Gilgal to rest",
+      "Move the tabernacle to Shechem",
+      "Appoint a king over Israel"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Joshua forbid concerning the gods of the remaining nations?",
+     "options": [
+      "Mentioning their names or swearing by them",
+      "Tearing down their altars",
+      "Speaking with their priests",
+      "Entering their cities"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Joshua urge Israel to be very courageous to do?",
+     "options": [
+      "Keep all that is written in the law of Moses",
+      "Drive out every remaining nation at once",
+      "Build altars in every tribe",
+      "Guard the borders of the land"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Joshua warn the LORD would bring on Israel if they served other gods?",
+     "options": [
+      "All the evil things",
+      "A new leader like Moses",
+      "A long famine only",
+      "A return to Egypt"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "One man of you shall chase ____; for it is the LORD your God who fights for you.",
+     "answer": "a thousand",
+     "wrong": [
+      "ten thousand",
+      "a hundred",
+      "a whole army"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They shall be a snare and a trap to you, a scourge in your sides, and ____.",
+     "answer": "thorns in your eyes",
+     "wrong": [
+      "stones in your path",
+      "a sword at your gates",
+      "a thorn in your feet"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Not one thing has failed of all ____ which the LORD your God spoke concerning you.",
+     "answer": "the good things",
+     "wrong": [
+      "the promises",
+      "the covenant words",
+      "the warnings"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Joshua gave this speech when he was young and newly in command.",
+     "answer": false,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Joshua told Israel to hold fast to the LORD, as they had done to this day.",
+     "answer": true,
+     "v": 8
+    }
+   ]
+  },
+  "24": {
+   "keyVerse": 24,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Joshua gather all the tribes of Israel?",
+     "options": [
+      "Shechem",
+      "Shiloh",
+      "Gilgal",
+      "Jericho"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Joshua set up as a witness against the people?",
+     "options": [
+      "A great stone under the oak",
+      "An altar of uncut stones",
+      "Twelve stones from the Jordan",
+      "A pillar at Shiloh"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD send before Israel that drove out the two kings of the Amorites?",
+     "options": [
+      "The hornet",
+      "Hailstones",
+      "A plague",
+      "A great darkness"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What reason did Joshua give when he told the people they could not serve the LORD?",
+     "options": [
+      "He is a holy and jealous God",
+      "The people were too few",
+      "Their fathers had failed",
+      "The land was not yet conquered"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "If it seems evil to you to serve the LORD, choose today ____.",
+     "answer": "whom you will serve",
+     "wrong": [
+      "where you will live",
+      "which land you will take",
+      "who will lead you"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I gave you a land on which you had not labored, and ____, and you live in them.",
+     "answer": "cities which you didn't build",
+     "wrong": [
+      "houses you didn't buy",
+      "walls you didn't raise",
+      "towns you didn't conquer"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "But I would not listen to Balaam; therefore ____. So I delivered you out of his hand.",
+     "answer": "he blessed you still",
+     "wrong": [
+      "he cursed Moab instead",
+      "he fled to his land",
+      "he turned back home"
+     ],
+     "v": 10
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Abraham is taken from beyond the River",
+      "Moses and Aaron are sent to Egypt",
+      "Balaam is called to curse Israel",
+      "Israel crosses the Jordan to Jericho"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The people told Joshua they would serve other gods alongside the LORD.",
+     "answer": false,
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The bones of Joseph were buried in Timnathserah beside Joshua.",
+     "answer": false,
+     "v": 32
+    }
+   ]
+  }
+ }
+}

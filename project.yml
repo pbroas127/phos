@@ -67,6 +67,8 @@ targets:
       - package: MLXSwift
         product: MLX
       - package: MLXUtilsLibrary
+      - sdk: Metal.framework
+      - sdk: Accelerate.framework
       - target: PhosWidgets
         embed: true
       - target: PhosShieldConfig

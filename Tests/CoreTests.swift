@@ -252,7 +252,8 @@ final class PathLogicTests: XCTestCase {
     func testPlans() {
         XCTAssertEqual(ReadingPlans.canonical("mark"), "book.MRK")
         XCTAssertEqual(ReadingPlans.plan("john").id, "book.JHN")
-        XCTAssertEqual(ReadingPlans.bookPlans.count, 30)
+        XCTAssertEqual(ReadingPlans.bookPlans.count, 66)
+        XCTAssertEqual(ReadingPlans.plan("bible").chapters.count, 1189)
         XCTAssertEqual(ReadingPlans.plan("nt").chapters.count, 260)
         XCTAssertEqual(Set(ReadingPlans.all.map(\.id)).count, ReadingPlans.all.count)
     }

@@ -75,7 +75,7 @@
 {"t": "choice", "d": 1, "q": "Where will God cast all their sins?", "options": ["Into the depths of the sea", "Into the wilderness", "Behind his back", "Into the fire"], "v": 19},
 {"t": "choice", "d": 2, "q": "Who are a man's enemies, according to the prophet?", "options": ["The men of his own house", "The rulers of his city", "The nations around him", "The priests of the temple"], "v": 6},
 {"t": "choice", "d": 3, "q": "What does the prophet say the best of them is like?", "options": ["A brier", "A broken reed", "A dry thistle", "A wild vine"], "v": 4},
-{"t": "choice", "d": 3, "q": "In which fertile lands does the prophet ask God to let his flock feed?", "options": ["Bashan and Gilead", "Sharon and Carmel", "Jericho and the Jordan", "Moab and Edom"], "v": 14},
+{"t": "choice", "d": 3, "q": "In which fertile lands does the prophet ask God to let his flock feed?", "options": ["Bashan and Gilead", "Sharon and Lebanon", "Jericho and the Jordan", "Moab and Edom"], "v": 14},
 {"t": "blank", "d": 2, "q": "When I fall, I will arise. When I sit in darkness, the LORD will be ____.", "answer": "a light to me", "wrong": ["my shield and strength", "a lamp for my feet", "a strong tower"], "v": 8},
 {"t": "blank", "d": 2, "q": "He doesn't retain his anger forever, because ____.", "answer": "he delights in loving kindness", "wrong": ["he remembers his covenant", "his people have repented", "he is slow to wrath"], "v": 18},
 {"t": "blank", "d": 3, "q": "Shepherd your people with your staff, ____.", "answer": "the flock of your heritage", "wrong": ["the sheep of your pasture", "the lambs of your fold", "the children of your house"], "v": 14},

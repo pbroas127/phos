@@ -129,7 +129,10 @@ struct PlanCard: View {
                 VStack(alignment: .leading, spacing: 10) {
                     Eyebrow(text: eyebrow(inPath: inPath))
                     Text(model.todaysTitle).font(Theme.serif(52)).foregroundStyle(Theme.ink).minimumScaleFactor(0.6).lineLimit(1)
-                    Text(subtitle(chapter)).font(.subheadline).foregroundStyle(Theme.dim).lineLimit(2)
+                    if let title = ChapterTitles.title(ref) {
+                        Text(title).font(Theme.serif(21, .regular)).foregroundStyle(Theme.ink).lineLimit(2)
+                    }
+                    Text(subtitle(chapter)).font(.subheadline).foregroundStyle(Theme.dim).lineLimit(1)
                     ProgressBar(value: Double(model.readCount(model.plan)) / Double(max(1, model.plan.chapters.count)))
                         .padding(.top, 6)
                     HStack {
@@ -175,7 +178,6 @@ struct PlanCard: View {
                     }
                     Button("Choose another chapter") { libraryShown = true }.buttonStyle(.phosQuiet)
                 }
-                OtherUnlocks()
             }
         }
     }
@@ -188,39 +190,7 @@ struct PlanCard: View {
 
     private func subtitle(_ chapter: BibleChapter?) -> String {
         guard let chapter else { return "" }
-        if let t = chapter.title { return t }
-        let first = TextChecks.plain(chapter.verses.first ?? "")
-        let short = first.count > 70 ? String(first.prefix(70)).trimmingCharacters(in: .whitespaces) + "…" : first
-        return "\(chapter.verses.count) verses · \(short)"
-    }
-}
-
-struct OtherUnlocks: View {
-    @Environment(AppModel.self) private var model
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Eyebrow(text: "Other ways to open apps")
-            HStack(spacing: 10) {
-                tile("Focus session", "iphone.gen3", .focus)
-                tile("Recite a verse", "text.quote", .recite)
-            }
-        }
-        .padding(.top, 6)
-    }
-
-    private func tile(_ title: String, _ symbol: String, _ route: Route) -> some View {
-        Button { model.route = route } label: {
-            VStack(alignment: .leading, spacing: 10) {
-                Image(systemName: symbol).font(.title3).foregroundStyle(Theme.gold)
-                Text(title).font(.subheadline.weight(.semibold)).foregroundStyle(Theme.ink)
-            }
-            .padding(16)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(Theme.card, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-            .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).stroke(Theme.line))
-        }
-        .buttonStyle(.plain)
+        return chapter.verses.count == 1 ? "1 verse" : "\(chapter.verses.count) verses"
     }
 }
 

@@ -87,6 +87,7 @@ struct ReflectStep: View {
     @Binding var prompts: [String]
     @Binding var speechSeconds: Double
     var onDone: () -> Void
+    @State private var textShown = false
 
     init(ref: ChapterRef, mode: Binding<ReflectMode>, text: Binding<String>,
          prompts: Binding<[String]> = .constant(["", "", ""]), speechSeconds: Binding<Double> = .constant(0),
@@ -112,6 +113,46 @@ struct ReflectStep: View {
             case .spoken: SpeakReflect(ref: ref, text: $text, savedSeconds: $speechSeconds, onDone: onDone)
             case .prompts: PromptsReflect(ref: ref, text: $text, answers: $prompts, onDone: onDone)
             }
+
+            // Looking back is fine while reflecting. The questions keep the chapter hidden.
+            Button { textShown = true } label: {
+                Label("View text", systemImage: "book")
+                    .font(.subheadline.weight(.semibold))
+                    .padding(.horizontal, 16).padding(.vertical, 8)
+                    .background(Theme.soft, in: Capsule())
+                    .foregroundStyle(Theme.ink)
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.bottom, 8)
+        }
+        .sheet(isPresented: $textShown) { ChapterTextSheet(ref: ref) }
+    }
+}
+
+/// The chapter to look back at while reflecting.
+struct ChapterTextSheet: View {
+    let ref: ChapterRef
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        let chapter = Bible.shared.chapter(ref)
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 14) {
+                    ForEach(Array((chapter?.verses ?? []).enumerated()), id: \.offset) { i, verse in
+                        if !verse.isEmpty {
+                            RedLetterText(verse: verse, number: i + 1)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                    }
+                }
+                .padding(.horizontal, 22)
+                .padding(.vertical, 12)
+            }
+            .background(Theme.paper.ignoresSafeArea())
+            .navigationTitle(BookNames.title(ref))
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
         }
     }
 }

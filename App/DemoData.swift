@@ -137,7 +137,7 @@ enum DemoData {
 /// Screens the screenshot workflow can open directly with -screen name.
 enum DemoScreen: String {
     case today, path, calendar, reading, reflect, speak, quizChoice, quizBlank, quizOrder, pass, missed, recall, unlocked
-    case streak, time, journal, settings, shield, focus, recite
+    case streak, time, journal, settings, shield
     case library, book, locks, lockEditor, protection, trophies, readAloud, listen
 
     static var requested: DemoScreen? {
@@ -213,10 +213,6 @@ struct DemoRouter: View {
             UnlockCenter()
         case .shield:
             ShieldPreview(style: .verse, large: true).ignoresSafeArea()
-        case .focus:
-            FocusSessionView()
-        case .recite:
-            ReciteView()
         }
     }
 

@@ -322,12 +322,6 @@ final class TextCheckTests: XCTestCase {
         XCTAssertEqual(TextChecks.plain("{red} text"), "red text")
     }
 
-    func testRecite() {
-        let target = "For God so loved the world, that he gave his only born Son"
-        XCTAssertEqual(TextChecks.reciteMatch(spoken: "for god so loved the world that he gave his only born son", target: target).matched, 13)
-        XCTAssertLessThan(TextChecks.reciteMatch(spoken: "god loved people", target: target).matched, 4)
-    }
-
     func testQuote() {
         XCTAssertEqual(TextChecks.quote("He came at night. Then more."), "He came at night.")
     }
@@ -400,10 +394,26 @@ final class BundledContentTests: XCTestCase {
         Bundle(for: BundledContentTests.self).url(forResource: name, withExtension: "json")
     }
 
+    func testEveryChapterHasATitle() throws {
+        let data = try Data(contentsOf: XCTUnwrap(url("chapter_titles")))
+        let titles = try JSONDecoder().decode([String: String].self, from: data)
+        let bible = try Bible(data: Data(contentsOf: XCTUnwrap(url("bible"))))
+        var count = 0
+        for book in bible.books {
+            for n in 1...book.chapters.count {
+                let title = titles["\(book.id).\(n)"]
+                XCTAssertNotNil(title, "\(book.id).\(n)")
+                XCTAssertFalse(title?.contains("-") ?? false)
+                count += 1
+            }
+        }
+        XCTAssertEqual(count, 1189)
+    }
+
     func testEveryPlanChapterHasQuestionsAndText() throws {
         let bundle = Bundle(for: BundledContentTests.self)
         let files = (bundle.urls(forResourcesWithExtension: "json", subdirectory: nil) ?? [])
-            .filter { $0.lastPathComponent != "bible.json" }
+            .filter { !["bible.json", "chapter_titles.json"].contains($0.lastPathComponent) }
             .compactMap { try? Data(contentsOf: $0) }
         let bank = QuestionBank(files: files)
         let bibleURL = try XCTUnwrap(url("bible"))

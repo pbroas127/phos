@@ -88,20 +88,6 @@ enum TextChecks {
         verse.replacingOccurrences(of: "{", with: "").replacingOccurrences(of: "}", with: "")
     }
 
-    /// Longest run of target words spoken in order.
-    static func reciteMatch(spoken: String, target: String) -> (matched: Int, total: Int) {
-        let a = words(spoken), b = words(target)
-        guard !a.isEmpty, !b.isEmpty else { return (0, b.count) }
-        var prev = [Int](repeating: 0, count: b.count + 1)
-        for x in a {
-            var cur = [Int](repeating: 0, count: b.count + 1)
-            for (j, y) in b.enumerated() {
-                cur[j + 1] = x == y ? prev[j] + 1 : max(prev[j + 1], cur[j])
-            }
-            prev = cur
-        }
-        return (prev[b.count], b.count)
-    }
 
     /// First sentence of a reflection, trimmed for quoting back.
     static func quote(_ reflection: String, limit: Int = 140) -> String {

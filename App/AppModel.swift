@@ -7,12 +7,12 @@ import UserNotifications
 import WidgetKit
 
 enum Route: String, Identifiable {
-    case reading, unlock, focus, recite
+    case reading, unlock
     var id: String { rawValue }
 }
 
 enum UnlockMethod {
-    case reading, question, tap, otherWay, pass
+    case reading, question, tap, pass
 }
 
 @Observable

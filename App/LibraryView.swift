@@ -13,16 +13,17 @@ struct LibraryView: View {
     @Environment(\.dismiss) private var dismiss
     /// Called when a chapter should be read now.
     var onRead: (ChapterPick) -> Void
+    @State private var open: Set<String> = []
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 26) {
                     continueSection
-                    group("Reading plans", ReadingPlans.curated)
-                    group("Old Testament", ReadingPlans.oldTestament.compactMap(ReadingPlans.bookPlan))
-                    group("New Testament", ReadingPlans.newTestament.compactMap(ReadingPlans.bookPlan))
-                    comingSoon
+                    group("plans", "Reading plans", "Whole books and the whole Bible", ReadingPlans.curated)
+                    ForEach(ReadingPlans.topicGroups) { g in group(g.id, g.title, g.subtitle, g.plans) }
+                    group("ot", "Old Testament", "39 books, Genesis to Malachi", ReadingPlans.oldTestament.compactMap(ReadingPlans.bookPlan))
+                    group("nt", "New Testament", "27 books, Matthew to Revelation", ReadingPlans.newTestament.compactMap(ReadingPlans.bookPlan))
                 }
                 .padding(20)
             }
@@ -56,27 +57,42 @@ struct LibraryView: View {
         }
     }
 
-    private func group(_ title: String, _ plans: [ReadingPlan]) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Eyebrow(text: title)
-            VStack(spacing: 0) {
-                ForEach(plans) { p in
-                    NavigationLink(value: p.id) { PathRow(plan: p, compact: true) }
-                        .buttonStyle(.plain)
-                    if p.id != plans.last?.id { Divider().overlay(Theme.line).padding(.leading, 16) }
+    private func group(_ id: String, _ title: String, _ subtitle: String, _ plans: [ReadingPlan]) -> some View {
+        let isOpen = open.contains(id)
+        return VStack(alignment: .leading, spacing: 10) {
+            Button {
+                withAnimation(.easeInOut(duration: 0.22)) {
+                    if isOpen { open.remove(id) } else { open.insert(id) }
                 }
+            } label: {
+                HStack(spacing: 12) {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(title).font(Theme.serif(22)).foregroundStyle(Theme.ink)
+                        Text("\(subtitle) · \(plans.count)").font(.caption).foregroundStyle(Theme.dim)
+                    }
+                    Spacer()
+                    Image(systemName: "chevron.down").font(.subheadline.weight(.semibold)).foregroundStyle(Theme.gold)
+                        .rotationEffect(.degrees(isOpen ? 180 : 0))
+                }
+                .padding(.vertical, 14).padding(.horizontal, 16)
+                .background(Theme.card, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).stroke(Theme.line))
+                .contentShape(Rectangle())
             }
-            .background(Theme.card, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-            .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).stroke(Theme.line))
-        }
-    }
+            .buttonStyle(.plain)
+            .accessibilityHint(isOpen ? "Collapses the list" : "Shows the list")
 
-    private var comingSoon: some View {
-        let missing = BookNames.order.filter { ReadingPlans.chapterCounts[$0] == nil }
-        return VStack(alignment: .leading, spacing: 6) {
-            Eyebrow(text: "Questions coming soon")
-            Text(missing.map(BookNames.name).joined(separator: ", "))
-                .font(.footnote).foregroundStyle(Theme.dim)
+            if isOpen {
+                VStack(spacing: 0) {
+                    ForEach(plans) { p in
+                        NavigationLink(value: p.id) { PathRow(plan: p, compact: true) }
+                            .buttonStyle(.plain)
+                        if p.id != plans.last?.id { Divider().overlay(Theme.line).padding(.leading, 16) }
+                    }
+                }
+                .background(Theme.card, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).stroke(Theme.line))
+            }
         }
     }
 }

@@ -67,6 +67,18 @@ final class Bible {
     }
 }
 
+/// A short title for every chapter, like "Nicodemus Comes by Night".
+enum ChapterTitles {
+    static let all: [String: String] = {
+        guard let url = Bundle.main.url(forResource: "chapter_titles", withExtension: "json"),
+              let data = try? Data(contentsOf: url),
+              let dict = try? JSONDecoder().decode([String: String].self, from: data) else { return [:] }
+        return dict
+    }()
+
+    static func title(_ ref: ChapterRef) -> String? { all[ref.id] }
+}
+
 /// Names that work in the widget and shield extensions without loading the whole Bible.
 enum BookNames {
     static let names: [String: String] = [

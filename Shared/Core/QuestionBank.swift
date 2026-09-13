@@ -72,7 +72,7 @@ private struct QuestionFile: Decodable {
 final class QuestionBank {
     static let shared: QuestionBank = {
         let urls = Bundle.main.urls(forResourcesWithExtension: "json", subdirectory: nil) ?? []
-        let data = urls.filter { $0.lastPathComponent != "bible.json" }.compactMap { try? Data(contentsOf: $0) }
+        let data = urls.filter { !["bible.json", "chapter_titles.json"].contains($0.lastPathComponent) }.compactMap { try? Data(contentsOf: $0) }
         return QuestionBank(files: data)
     }()
 

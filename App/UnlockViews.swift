@@ -1,4 +1,3 @@
-import CoreMotion
 import SwiftUI
 
 /// Result screen after a reading or another way of earning time: which locks opened and for how long.
@@ -123,9 +122,6 @@ struct UnlockCenter: View {
                                        onQuestion: { questionLock = lock },
                                        onPass: { passLock = lock })
                     }
-                    if model.locks.contains(where: { $0.otherWays && [.needsQuestion, .needsTap].contains(model.state($0)) }) {
-                        OtherUnlocks().padding(.top, 8)
-                    }
                 }
                 .padding(20)
             }
@@ -163,6 +159,9 @@ struct LockStatusCard: View {
                         Text(status(state, day)).font(.subheadline).foregroundStyle(Theme.dim)
                     }
                     Spacer()
+                }
+                if lock.policy == .limited && state != .inactive {
+                    UnlockDots(left: max(0, lock.limit - day.count), total: lock.limit)
                 }
                 switch state {
                 case .needsReading:
@@ -312,205 +311,25 @@ struct EmergencyPassSheet: View {
     }
 }
 
-/// Opens apps after the phone stays face down for a while.
-final class FaceDownMonitor: ObservableObject {
-    @Published var faceDown = false
-    @Published var elapsed: TimeInterval = 0
-    private let motion = CMMotionManager()
-    private var last: Date?
-
-    func start() {
-        guard motion.isDeviceMotionAvailable else { return }
-        motion.deviceMotionUpdateInterval = 0.5
-        motion.startDeviceMotionUpdates(to: .main) { [weak self] data, _ in
-            guard let self, let data else { return }
-            let down = data.gravity.z > 0.75
-            let now = Date()
-            if down {
-                if let last { self.elapsed += now.timeIntervalSince(last) }
-                self.last = now
-            } else {
-                self.elapsed = 0
-                self.last = nil
-            }
-            self.faceDown = down
-        }
-    }
-
-    func stop() {
-        motion.stopDeviceMotionUpdates()
-    }
-}
-
-/// Unlocks every lock that allows other ways and is waiting on a question or a tap.
-private func unlockOtherWays(_ model: AppModel) {
-    let targets = model.locks.filter { $0.otherWays && [.needsQuestion, .needsTap].contains(model.state($0)) }
-    for lock in targets { model.unlock(lock, method: .otherWay) }
-    model.lastUnlocked = targets
-}
-
-struct FocusSessionView: View {
-    @Environment(AppModel.self) private var model
-    @Environment(\.dismiss) private var dismiss
-    @Environment(\.scenePhase) private var phase
-    @StateObject private var monitor = FaceDownMonitor()
-    @State private var minutes = 30
-    @State private var running = false
-    @State private var done = false
+/// Unlocks left today for a limited lock: filled dots are left, empty dots are used.
+struct UnlockDots: View {
+    let left: Int
+    let total: Int
 
     var body: some View {
-        VStack(spacing: 0) {
-            FlowHeader(title: "Focus session", subtitle: "Other ways to open apps") { finish() }
-                .padding(.horizontal, 20).padding(.top, 12)
-            if done {
-                UnlockSummary(title: "Focus complete") { finish() }
-            } else {
-                VStack(spacing: 24) {
-                    Spacer()
-                    let total = Double(minutes * 60)
-                    let shown = model.demo && !running ? total * 0.2 : monitor.elapsed
-                    RingProgress(value: shown / total, lineWidth: 8) {
-                        VStack(spacing: 4) {
-                            Text(countdownText(max(0, total - shown))).font(Theme.serif(54)).monospacedDigit().foregroundStyle(Theme.ink)
-                            Text("of \(minutes):00").foregroundStyle(Theme.dim)
-                        }
-                    }
-                    .frame(width: 250, height: 250)
-                    CardBox(padding: 16) {
-                        Label(running ? (monitor.faceDown ? "Face down. Keep going." : "Turn your phone face down to start counting.") : "Place your phone face down. Pick it up and the timer starts over.",
-                              systemImage: "iphone.gen3")
-                            .foregroundStyle(Theme.ink)
-                    }
-                    if !running {
-                        HStack(spacing: 10) {
-                            ForEach([15, 30, 45, 60], id: \.self) { m in
-                                Button { minutes = m } label: {
-                                    Text("\(m) min").font(.subheadline.weight(.semibold))
-                                        .padding(.horizontal, 14).padding(.vertical, 10)
-                                        .foregroundStyle(minutes == m ? Color.white : Theme.ink)
-                                        .background(minutes == m ? Theme.gold : Theme.card, in: Capsule())
-                                        .overlay(Capsule().stroke(Theme.line))
-                                }
-                                .buttonStyle(.plain)
-                            }
-                        }
-                    }
-                    Spacer()
-                    Button(running ? "Stop" : "Start focus session") {
-                        if running { monitor.stop(); running = false } else { start() }
-                    }
-                    .buttonStyle(PrimaryButtonStyle(kind: running ? .secondary : .primary))
+        HStack(spacing: 10) {
+            HStack(spacing: 6) {
+                ForEach(0..<min(total, 10), id: \.self) { i in
+                    Circle()
+                        .fill(i < left ? Theme.gold : Color.clear)
+                        .overlay(Circle().stroke(i < left ? Theme.gold : Theme.line, lineWidth: 1.5))
+                        .frame(width: 11, height: 11)
                 }
-                .padding(.horizontal, 20).padding(.bottom, 12)
             }
+            Text(ShieldArt.unlocksLabel(left)).font(.subheadline.weight(.semibold)).foregroundStyle(Theme.ink)
         }
-        .background(Theme.paper.ignoresSafeArea())
-        .onChange(of: monitor.elapsed) { _, e in
-            if running && e >= Double(minutes * 60) {
-                monitor.stop()
-                running = false
-                unlockOtherWays(model)
-                done = true
-            }
-        }
-        .onChange(of: phase) { _, p in
-            if p != .active && running { monitor.elapsed = 0 }
-        }
-        .onDisappear {
-            monitor.stop()
-            UIApplication.shared.isIdleTimerDisabled = false
-        }
-    }
-
-    private func start() {
-        running = true
-        UIApplication.shared.isIdleTimerDisabled = true
-        monitor.start()
-    }
-
-    private func finish() {
-        monitor.stop()
-        UIApplication.shared.isIdleTimerDisabled = false
-        dismiss()
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(left) of \(total) unlocks left today")
     }
 }
 
-struct ReciteView: View {
-    @Environment(AppModel.self) private var model
-    @Environment(\.dismiss) private var dismiss
-    @StateObject private var recorder = SpeechRecorder()
-    @State private var showVerse = true
-    @State private var passed = false
-    @State private var notice: String?
-
-    var body: some View {
-        let ref = model.todaysRecord?.ref ?? model.todaysChapter
-        let key = QuestionBank.shared.questions(for: ref)?.keyVerse ?? 1
-        let target = Bible.shared.verse(ref, key)
-        let spoken = model.demo && recorder.transcript.isEmpty ? String(target.split(separator: " ").prefix(9).joined(separator: " ")) : recorder.transcript
-        let match = TextChecks.reciteMatch(spoken: spoken, target: target)
-        let ratio = Double(match.matched) / Double(max(1, match.total))
-        VStack(spacing: 0) {
-            FlowHeader(title: BookNames.verseTitle(ref, key), subtitle: "Recite from memory") { recorder.stop(); dismiss() }
-                .padding(.horizontal, 20).padding(.top, 12)
-            if passed {
-                UnlockSummary(title: "Well said") { dismiss() }
-            } else {
-                VStack(spacing: 18) {
-                    CardBox(padding: 22) {
-                        Text(showVerse ? target : maskedVerse(target, spoken: spoken))
-                            .font(Theme.serif(22, .regular)).lineSpacing(6).foregroundStyle(Theme.ink)
-                    }
-                    Toggle("Show the verse while I study", isOn: $showVerse)
-                        .disabled(recorder.isRecording)
-                    Spacer()
-                    Text("\(match.matched) of \(match.total) words").font(Theme.serif(26)).monospacedDigit().foregroundStyle(Theme.ink)
-                    ProgressBar(value: ratio)
-                    if let notice { Text(notice).font(.footnote).foregroundStyle(Theme.red) }
-                    Button {
-                        if recorder.isRecording { recorder.stop() } else { record() }
-                    } label: {
-                        Image(systemName: recorder.isRecording ? "stop.fill" : "mic.fill").font(.system(size: 36))
-                            .frame(width: 96, height: 96)
-                            .background(recorder.isRecording ? Theme.gold : Theme.soft, in: Circle())
-                            .foregroundStyle(recorder.isRecording ? Color.white : Theme.gold)
-                    }
-                    .accessibilityLabel(recorder.isRecording ? "Stop" : "Start reciting")
-                    Text("Hide the verse, then say it out loud. 85% of the words in order opens locks that allow other ways.")
-                        .font(.caption).foregroundStyle(Theme.dim).multilineTextAlignment(.center)
-                }
-                .padding(20)
-            }
-        }
-        .background(Theme.paper.ignoresSafeArea())
-        .onChange(of: recorder.transcript) { _, _ in
-            if !showVerse && ratio >= 0.85 {
-                recorder.stop()
-                unlockOtherWays(model)
-                passed = true
-            }
-        }
-        .onDisappear { recorder.stop() }
-    }
-
-    private func record() {
-        if showVerse {
-            notice = "Hide the verse first."
-            return
-        }
-        notice = nil
-        recorder.reset()
-        Task {
-            let ok = await SpeechRecorder.requestPermissions()
-            await MainActor.run { if ok { recorder.start() } else { notice = "Allow the microphone and speech recognition in Settings." } }
-        }
-    }
-
-    private func maskedVerse(_ target: String, spoken: String) -> String {
-        let said = Set(TextChecks.words(spoken))
-        return target.split(separator: " ").map { word in
-            let w = TextChecks.words(String(word)).first ?? ""
-            return said.contains(w) ? String(word) : String(repeating: "•", count: max(2, min(8, word.count)))
-        }.joined(separator: " ")
-    }
-}

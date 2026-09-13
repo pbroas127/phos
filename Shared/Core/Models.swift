@@ -263,7 +263,6 @@ struct LockSet: Codable, Identifiable, Hashable {
     var limitNeedsQuestion = false
     /// Seconds each unlock opens the apps for, or untilEnd for the rest of the active time.
     var rewardSeconds = 1800
-    var otherWays = true
     var reading = ReadingCheck()
     var emergencyPasses = 3
     var protection = LockProtection()
@@ -285,7 +284,6 @@ struct LockSet: Codable, Identifiable, Hashable {
         limit = (try? c.decode(Int.self, forKey: .limit)) ?? d.limit
         limitNeedsQuestion = (try? c.decode(Bool.self, forKey: .limitNeedsQuestion)) ?? d.limitNeedsQuestion
         rewardSeconds = (try? c.decode(Int.self, forKey: .rewardSeconds)) ?? d.rewardSeconds
-        otherWays = (try? c.decode(Bool.self, forKey: .otherWays)) ?? d.otherWays
         reading = (try? c.decode(ReadingCheck.self, forKey: .reading)) ?? d.reading
         emergencyPasses = (try? c.decode(Int.self, forKey: .emergencyPasses)) ?? d.emergencyPasses
         protection = (try? c.decode(LockProtection.self, forKey: .protection)) ?? d.protection

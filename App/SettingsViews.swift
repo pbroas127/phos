@@ -241,10 +241,6 @@ struct UnlockFields: View {
                 }
                 Toggle("Each unlock also needs a question", isOn: $lock.limitNeedsQuestion)
             }
-            if lock.policy != .strict {
-                Divider()
-                Toggle("Focus sessions and verse recital also unlock", isOn: $lock.otherWays)
-            }
         }
     }
 }

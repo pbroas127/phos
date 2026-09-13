@@ -47,7 +47,7 @@ jobs:
             head -80 ~/Library/Logs/DiagnosticReports/*hos* || true
             echo "Phos crashed on a normal launch"; exit 1
           fi
-          for SCREEN in shield today path calendar reading reflect speak quizChoice quizBlank quizOrder pass missed recall unlocked streak time journal settings focus recite library book locks lockEditor protection trophies readAloud listen; do
+          for SCREEN in shield today path calendar reading reflect speak quizChoice quizBlank quizOrder pass missed recall unlocked streak time journal settings library book locks lockEditor protection trophies readAloud listen; do
             xcrun simctl terminate "$UDID" com.peterbroas.phos 2>/dev/null || true
             sleep 1
             xcrun simctl launch "$UDID" com.peterbroas.phos -demoData -screen "$SCREEN"

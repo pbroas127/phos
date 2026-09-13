@@ -77,8 +77,6 @@ struct RootView: View {
                 switch route {
                 case .reading: ReadingFlow(ref: model.todaysChapter)
                 case .unlock: UnlockCenter()
-                case .focus: FocusSessionView()
-                case .recite: ReciteView()
                 }
             }
             .environment(model)

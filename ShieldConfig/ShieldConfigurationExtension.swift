@@ -40,7 +40,7 @@ class ShieldConfigurationExtension: ShieldConfigurationDataSource {
         let snap = store.snapshot
         let today = store.today(morning: store.settings.schedule.morning)
         let state = lock.map { LockLogic.state($0, today: today, now: Date()) } ?? .needsReading
-        let copy = ShieldArt.copy(state: state, lock: lock, app: name ?? "This app", snap: snap)
+        let copy = ShieldArt.copy(state: state, lock: lock, app: name ?? "This app", snap: snap, today: today)
         // Bedtime style locks always stay dark. Appearance cannot be read reliably inside a shield.
         let theme: ShieldTheme = state == .strict ? .dark : snap.theme
         let p = ShieldArt.palette(theme)

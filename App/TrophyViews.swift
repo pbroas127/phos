@@ -237,7 +237,7 @@ private struct RaysShape: Shape {
     }
 }
 
-/// Trophies on the Today screen: ones you are tracking, the closest to done, and recent wins.
+/// Trophies on the Today plan view: ones you are tracking, the closest to done, and recent wins.
 struct TodayTrophies: View {
     @Environment(AppModel.self) private var model
     @State private var selected: Achievement?
@@ -251,9 +251,15 @@ struct TodayTrophies: View {
 
         VStack(alignment: .leading, spacing: 14) {
             HStack(alignment: .firstTextBaseline) {
-                Text("Almost there").font(Theme.serif(24)).foregroundStyle(Theme.ink)
+                Text("Your trophies").font(Theme.serif(24)).foregroundStyle(Theme.ink)
                 Spacer()
-                Button("Trophy room") { model.tab = 3 }.font(.subheadline.weight(.semibold)).foregroundStyle(Theme.gold)
+                Button { model.tab = 3 } label: {
+                    Label("Trophy room", systemImage: "trophy.fill")
+                        .font(.subheadline.weight(.semibold))
+                        .padding(.horizontal, 12).padding(.vertical, 8)
+                        .background(Theme.soft, in: Capsule())
+                        .foregroundStyle(Theme.ink)
+                }
             }
             if chasing.isEmpty {
                 Text("Finish today's chapter to start earning trophies.").font(.subheadline).foregroundStyle(Theme.dim)

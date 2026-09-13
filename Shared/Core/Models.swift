@@ -585,6 +585,8 @@ struct AppSettings: Codable, Equatable {
     var voiceID = ""
     /// Trophies shown on the Today screen.
     var pinnedTrophies: [String] = []
+    /// Lets someone who read on their own skip straight to reflecting and the questions.
+    var allowAlreadyRead = false
     var schemaVersion = 3
 
     init() {}
@@ -606,6 +608,7 @@ struct AppSettings: Codable, Equatable {
         preferredReflect = (try? c.decode(ReflectMode.self, forKey: .preferredReflect)) ?? d.preferredReflect
         voiceID = (try? c.decode(String.self, forKey: .voiceID)) ?? d.voiceID
         pinnedTrophies = (try? c.decode([String].self, forKey: .pinnedTrophies)) ?? d.pinnedTrophies
+        allowAlreadyRead = (try? c.decode(Bool.self, forKey: .allowAlreadyRead)) ?? d.allowAlreadyRead
         let version = (try? c.decode(Int.self, forKey: .schemaVersion)) ?? 1
         schemaVersion = 3
 

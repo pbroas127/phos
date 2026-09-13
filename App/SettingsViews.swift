@@ -44,6 +44,13 @@ struct SettingsScreen: View {
                     Picker("Reflection style", selection: $model.settings.preferredReflect) {
                         ForEach(ReflectMode.allCases) { Text($0.title).tag($0) }
                     }
+                    VStack(alignment: .leading, spacing: 4) {
+                        Toggle("Allow “I already read it”", isOn: $model.settings.allowAlreadyRead)
+                        Text(model.settings.allowAlreadyRead
+                             ? "You can skip the reading step and go straight to reflecting and the questions."
+                             : "Every reading uses the timer or reading along, to keep you accountable.")
+                            .font(.footnote).foregroundStyle(Theme.dim)
+                    }
                 }
 
                 Section("Lock screen") {
@@ -74,6 +81,7 @@ struct SettingsScreen: View {
             .onChange(of: model.settings.shieldTheme) { _, _ in model.savePreferences() }
             .onChange(of: model.settings.preferredRead) { _, _ in model.savePreferences() }
             .onChange(of: model.settings.preferredReflect) { _, _ in model.savePreferences() }
+            .onChange(of: model.settings.allowAlreadyRead) { _, _ in model.savePreferences() }
             .sheet(isPresented: $wizardShown) {
                 LockWizard { model.createLock($0) }.environment(model)
             }

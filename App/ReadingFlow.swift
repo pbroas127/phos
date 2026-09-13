@@ -31,7 +31,7 @@ struct ReadingFlow: View {
             Group {
                 switch draft.step {
                 case .mode:
-                    ModeChoice(selected: $draft.readMode) { go(.read) }
+                    ModeChoice(selected: $draft.readMode, onAlreadyRead: model.settings.allowAlreadyRead ? { go(.reflect) } : nil) { go(.read) }
                 case .read:
                     ReadStep(ref: ref, mode: draft.readMode, aloudHeard: $draft.aloudHeard, aloudCursor: $draft.aloudCursor) { go(.reflect) }
                 case .reflect:
@@ -166,6 +166,7 @@ struct ReadingFlow: View {
 
 struct ModeChoice: View {
     @Binding var selected: ReadMode
+    var onAlreadyRead: (() -> Void)? = nil
     var onNext: () -> Void
 
     var body: some View {
@@ -197,7 +198,15 @@ struct ModeChoice: View {
                 }
                 .padding(20)
             }
-            Button("Continue", action: onNext).buttonStyle(.phos).padding(.horizontal, 20).padding(.bottom, 12)
+            VStack(spacing: 6) {
+                Button("Continue", action: onNext).buttonStyle(.phos)
+                if let onAlreadyRead {
+                    Button("I already read it", action: onAlreadyRead)
+                        .font(.body.weight(.semibold)).foregroundStyle(Theme.gold)
+                        .frame(maxWidth: .infinity, minHeight: 44)
+                }
+            }
+            .padding(.horizontal, 20).padding(.bottom, 12)
         }
     }
 

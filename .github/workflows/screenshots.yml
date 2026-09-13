@@ -32,7 +32,7 @@ jobs:
           set -o pipefail
           xcodebuild build -project Phos.xcodeproj -scheme Phos \
             -destination "id=${{ steps.sim.outputs.udid }}" \
-            -derivedDataPath build CODE_SIGNING_ALLOWED=NO | tail -5
+            -derivedDataPath build CODE_SIGNING_ALLOWED=NO 'OTHER_LDFLAGS=$(inherited) -Wl,-undefined,dynamic_lookup' | tail -5
       - name: Capture
         run: |
           UDID="${{ steps.sim.outputs.udid }}"

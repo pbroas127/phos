@@ -197,6 +197,34 @@ final class ProtectionTests: XCTestCase {
     }
 }
 
+final class ReadingDraftTests: XCTestCase {
+    func testResumeSteps() {
+        var d = ReadingDraft(dayKey: "2026-09-13", ref: ChapterRef(book: "JHN", chapter: 3))
+        d.step = .read
+        XCTAssertEqual(d.resumeStep, .mode)
+        d.step = .reflect
+        XCTAssertEqual(d.resumeStep, .reflect)
+        d.step = .quiz
+        XCTAssertEqual(d.resumeStep, .quiz)
+        d.failed = true
+        XCTAssertEqual(d.resumeStep, .quiz)
+        d.step = .read
+        XCTAssertEqual(d.resumeStep, .result)
+        d.step = .result
+        XCTAssertEqual(d.resumeStep, .result)
+    }
+
+    func testRoundTrip() throws {
+        var d = ReadingDraft(dayKey: "2026-09-13", ref: ChapterRef(book: "MRK", chapter: 5))
+        d.reflection = "Legion"
+        d.prompts = ["a", "b", "c"]
+        d.quizIDs = ["MRK.5.1", "MRK.5.2"]
+        d.answered = 1
+        let back = try JSONDecoder().decode(ReadingDraft.self, from: JSONEncoder().encode(d))
+        XCTAssertEqual(back, d)
+    }
+}
+
 final class PathLogicTests: XCTestCase {
     func testOnPathAdvances() {
         let a = PathLogic.after(planID: "book.MRK", index: 4, position: 4, count: 16)

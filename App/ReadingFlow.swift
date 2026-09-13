@@ -33,7 +33,7 @@ struct ReadingFlow: View {
                 case .mode:
                     ModeChoice(selected: $draft.readMode) { go(.read) }
                 case .read:
-                    ReadStep(ref: ref, mode: draft.readMode) { go(.reflect) }
+                    ReadStep(ref: ref, mode: draft.readMode, aloudHeard: $draft.aloudHeard, aloudCursor: $draft.aloudCursor) { go(.reflect) }
                 case .reflect:
                     ReflectStep(ref: ref, mode: $draft.reflectMode, text: $draft.reflection,
                                 prompts: $draft.prompts, speechSeconds: $draft.speechSeconds) { startQuiz() }
@@ -71,6 +71,8 @@ struct ReadingFlow: View {
         .onChange(of: draft.prompts) { _, _ in save() }
         .onChange(of: draft.reflectMode) { _, _ in save() }
         .onChange(of: draft.readMode) { _, _ in save() }
+        .onChange(of: draft.aloudCursor) { _, _ in save() }
+        .onChange(of: draft.aloudHeard.count) { _, _ in save() }
     }
 
     private var stepLabel: String {
@@ -215,6 +217,8 @@ struct ReadStep: View {
     @Environment(\.scenePhase) private var phase
     let ref: ChapterRef
     let mode: ReadMode
+    var aloudHeard: Binding<[Int]> = .constant([])
+    var aloudCursor: Binding<Int> = .constant(0)
     var onDone: () -> Void
 
     @State private var start = Date()
@@ -234,7 +238,7 @@ struct ReadStep: View {
                 switch mode {
                 case .paper: PaperRead(ref: ref, remaining: remaining, minimum: minimum, onDone: onDone)
                 case .inApp: InAppRead(ref: ref, remaining: remaining, onDone: onDone)
-                case .speak: SpeakRead(ref: ref, onDone: onDone)
+                case .speak: SpeakRead(ref: ref, heard: aloudHeard, cursor: aloudCursor, onDone: onDone)
                 case .listen: ListenRead(ref: ref, remaining: remaining, onDone: onDone)
                 }
             }

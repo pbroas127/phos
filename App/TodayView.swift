@@ -38,12 +38,13 @@ struct TodayScreen: View {
                     LockBanner()
 
                     switch view {
-                    case .plan: PlanCard(libraryShown: $libraryShown)
+                    case .plan:
+                        PlanCard(libraryShown: $libraryShown)
+                        TodayTrophies().padding(.top, 8)
                     case .path: PathView(picked: $picked, libraryShown: $libraryShown)
                     case .calendar: CalendarView(picked: $picked)
                     }
 
-                    TodayTrophies().padding(.top, 8)
                 }
                 .padding(20)
             }

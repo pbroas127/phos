@@ -202,6 +202,10 @@ final class ReadingDraftTests: XCTestCase {
         var d = ReadingDraft(dayKey: "2026-09-13", ref: ChapterRef(book: "JHN", chapter: 3))
         d.step = .read
         XCTAssertEqual(d.resumeStep, .mode)
+        d.readMode = .speak
+        d.aloudCursor = 12
+        XCTAssertEqual(d.resumeStep, .read)
+        d.readMode = .paper
         d.step = .reflect
         XCTAssertEqual(d.resumeStep, .reflect)
         d.step = .quiz
@@ -465,6 +469,32 @@ final class ReadAlongTests: XCTestCase {
         r.update(transcript: "now there was a man of the pharisees jesus answered him most certainly I tell you")
         XCTAssertEqual(r.currentVerse, 3)
         XCTAssertNotNil(r.firstMissed)
+    }
+
+    func testRecognizerStartingOverKeepsProgress() {
+        var r = ReadAlong(verses: verses)
+        r.update(transcript: "now there was a man of the pharisees named nicodemus")
+        XCTAssertEqual(r.cursor, 10)
+        // After a pause the recognizer may send only the new words.
+        r.update(transcript: "a ruler of the jews")
+        XCTAssertEqual(r.cursor, 15)
+        XCTAssertTrue(r.heardAll.contains(0))
+        XCTAssertEqual(r.heardAll.count, 15)
+    }
+
+    func testShortWordsDoNotPullAhead() {
+        var r = ReadAlong(verses: ["A man went to the city and the king was in the palace of the land"])
+        r.update(transcript: "a man went")
+        r.update(transcript: "a man went and")
+        XCTAssertEqual(r.cursor, 3)
+    }
+
+    func testRestoreBringsBackProgress() {
+        var r = ReadAlong(verses: verses)
+        r.restore(heard: [0, 1, 2, 3], cursor: 4)
+        r.update(transcript: "man of the")
+        XCTAssertEqual(r.cursor, 7)
+        XCTAssertEqual(r.heardAll.count, 7)
     }
 
     func testNumbersMatchSpokenWords() {

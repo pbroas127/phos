@@ -77,6 +77,10 @@ final class PassageListener: ObservableObject {
         try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
     }
 
+    func restore(heard: [Int], cursor: Int) {
+        along.restore(heard: heard, cursor: cursor)
+    }
+
     func jump(to index: Int) {
         along.jump(to: index)
         if listening { begin() }
@@ -122,6 +126,8 @@ final class PassageListener: ObservableObject {
 
 struct SpeakRead: View {
     let ref: ChapterRef
+    @Binding var savedHeard: [Int]
+    @Binding var savedCursor: Int
     var onDone: () -> Void
     @StateObject private var listener: PassageListener
     @State private var permitted: Bool?
@@ -130,11 +136,18 @@ struct SpeakRead: View {
     /// Share of words that must be heard before the reading counts.
     static let needed = 0.8
 
-    init(ref: ChapterRef, onDone: @escaping () -> Void) {
+    init(ref: ChapterRef, heard: Binding<[Int]> = .constant([]), cursor: Binding<Int> = .constant(0), onDone: @escaping () -> Void) {
         self.ref = ref
         self.onDone = onDone
-        let verses = (Bible.shared.chapter(ref)?.verses ?? []).map(TextChecks.plain)
-        _listener = StateObject(wrappedValue: PassageListener(verses: verses))
+        _savedHeard = heard
+        _savedCursor = cursor
+        let saved = (heard.wrappedValue, cursor.wrappedValue)
+        _listener = StateObject(wrappedValue: {
+            let verses = (Bible.shared.chapter(ref)?.verses ?? []).map(TextChecks.plain)
+            let l = PassageListener(verses: verses)
+            l.restore(heard: saved.0, cursor: saved.1)
+            return l
+        }())
     }
 
     var body: some View {
@@ -165,6 +178,9 @@ struct SpeakRead: View {
             if ok { listener.start() }
         }
         .onChange(of: phase) { _, p in if p != .active { listener.stop() } }
+        // Autosave as words are heard, so leaving and coming back keeps everything read so far.
+        .onChange(of: along.heardAll.count) { _, _ in savedHeard = Array(listener.along.heardAll).sorted() }
+        .onChange(of: along.cursor) { _, c in savedCursor = c }
         .onChange(of: along.finished) { _, done in
             if done { UINotificationFeedbackGenerator().notificationOccurred(.success) }
         }

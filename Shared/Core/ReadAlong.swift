@@ -2,7 +2,7 @@ import Foundation
 
 /// Follows someone reading a passage out loud. Speech recognition is messy, so matching is forgiving:
 /// it looks a few words ahead, accepts close spellings and sound alikes, skips words it never hears,
-/// and jumps ahead when the reader clearly moved on.
+/// and jumps ahead only when the reader clearly moved on. Progress never moves backward by itself.
 struct ReadAlong {
     struct Word: Hashable {
         let text: String
@@ -11,11 +11,15 @@ struct ReadAlong {
     }
 
     let words: [Word]
-    private(set) var cursor = 0
+    /// Words heard so far. Only ever grows: speech recognition revising itself never un-reads a word.
     private(set) var heard: Set<Int> = []
-    /// Where the current recognition segment started. Partial results get revised, so each update re-aligns from here.
-    private var segmentStart = 0
-    private var segmentHeard: Set<Int> = []
+    /// Furthest point reached. Moves backward only when the reader taps a verse.
+    private(set) var cursor = 0
+    /// Where matching continues inside the current recognition segment.
+    private var pos = 0
+    /// Spoken words already processed in this segment, to find what is new in each partial result.
+    private var segmentWords: [String] = []
+    private var recentMisses: [String] = []
 
     /// verses: plain verse text, 1 based by position.
     init(verses: [String]) {
@@ -30,83 +34,93 @@ struct ReadAlong {
     }
 
     var finished: Bool { cursor >= words.count }
-    /// Every word heard so far, including the segment still being recognized.
-    var heardAll: Set<Int> { heard.union(segmentHeard) }
-    var coverage: Double { words.isEmpty ? 1 : Double(heardAll.count) / Double(words.count) }
-    var firstMissed: Int? {
-        let all = heardAll
-        return (0..<min(cursor, words.count)).first { !all.contains($0) }
-    }
+    var heardAll: Set<Int> { heard }
+    var coverage: Double { words.isEmpty ? 1 : Double(heard.count) / Double(words.count) }
+    var firstMissed: Int? { (0..<min(cursor, words.count)).first { !heard.contains($0) } }
     var currentVerse: Int { words.isEmpty ? 1 : words[min(cursor, words.count - 1)].verse }
+
+    /// Brings back saved progress.
+    mutating func restore(heard saved: [Int], cursor savedCursor: Int) {
+        heard = Set(saved.filter { $0 >= 0 && $0 < words.count })
+        cursor = min(max(0, savedCursor), words.count)
+        pos = cursor
+        segmentWords = []
+        recentMisses = []
+    }
 
     /// Call when a new recognition segment begins (a restart or a final result).
     mutating func beginSegment() {
-        heard.formUnion(segmentHeard)
-        segmentHeard = []
-        segmentStart = cursor
+        segmentWords = []
+        recentMisses = []
+        pos = cursor
     }
 
-    /// Moves the reader to a word, like tapping a verse to start there.
+    /// Moves the reader to a word, like tapping a verse to start there. The only way to go backward.
     mutating func jump(to index: Int) {
-        heard.formUnion(segmentHeard)
-        segmentHeard = []
         cursor = min(max(0, index), words.count)
-        segmentStart = cursor
+        beginSegment()
     }
 
-    /// Re-aligns the whole transcript of the current segment.
+    /// Takes the recognizer's whole transcript for this segment and handles only the words that are new.
     mutating func update(transcript: String) {
         let spoken = transcript.split(whereSeparator: { $0.isWhitespace }).map { Self.key(String($0)) }.filter { !$0.isEmpty }
-        var pos = segmentStart
-        var matched: Set<Int> = []
-        var misses = 0
-        var i = 0
+        var shared = 0
+        while shared < min(spoken.count, segmentWords.count) && spoken[shared] == segmentWords[shared] { shared += 1 }
+        // On device recognition sometimes starts its transcript over after a pause. Treat that as a fresh segment
+        // from where the reader already is, instead of matching it again from the start.
+        if shared < segmentWords.count - 3 || spoken.count < segmentWords.count / 2 {
+            beginSegment()
+            shared = 0
+        }
+        var i = max(shared, min(segmentWords.count, spoken.count))
+        if shared < segmentWords.count { i = shared }
         while i < spoken.count && pos < words.count {
-            let h = spoken[i]
-            let joined = i + 1 < spoken.count ? h + spoken[i + 1] : nil
-            if let j = find(h, joined: joined, from: pos, within: 6) {
-                matched.insert(j.index)
-                pos = j.index + 1
-                i += j.used
-                misses = 0
-                continue
-            }
-            misses += 1
-            // Several unmatched words in a row usually means the reader skipped ahead or went back to a spot we lost.
-            if misses >= 3, i + 1 < spoken.count, let jump = anchor(spoken[i], spoken[i + 1], from: pos, within: 60) {
-                matched.insert(jump)
-                matched.insert(jump + 1)
-                pos = jump + 2
-                i += 2
-                misses = 0
-                continue
-            }
-            i += 1
+            let next = i + 1 < spoken.count ? spoken[i + 1] : nil
+            i += consume(spoken[i], next: next)
         }
-        segmentHeard = matched
-        cursor = pos
+        segmentWords = spoken
     }
 
-    private func find(_ h: String, joined: String?, from pos: Int, within window: Int) -> (index: Int, used: Int)? {
-        let end = min(words.count, pos + window)
-        guard pos < end else { return nil }
-        // Exact matches win anywhere in the window, so a common word does not match early by accident.
-        for j in pos..<end where words[j].key == h { return (j, 1) }
-        if let joined {
-            for j in pos..<end where words[j].key == joined { return (j, 2) }
+    /// Matches one spoken word going forward. Returns how many spoken words it used.
+    private mutating func consume(_ h: String, next: String?) -> Int {
+        // Short common words (the, and, of) only match right where the reader is, so they cannot pull the highlight ahead.
+        let reach = h.count <= 3 ? 2 : 7
+        let end = min(words.count, pos + reach)
+        if let j = (pos..<end).first(where: { words[$0].key == h }) {
+            mark(j, through: j)
+            return 1
         }
-        for j in pos..<min(end, pos + 3) where Self.close(h, words[j].key) { return (j, 1) }
-        return nil
+        if let next, let j = (pos..<min(words.count, pos + 3)).first(where: { words[$0].key == h + next }) {
+            mark(j, through: j)
+            return 2
+        }
+        if h.count >= 4, let j = (pos..<min(words.count, pos + 3)).first(where: { Self.close(h, words[$0].key) }) {
+            mark(j, through: j)
+            return 1
+        }
+        recentMisses.append(h)
+        if recentMisses.count > 3 { recentMisses.removeFirst() }
+        // Three unmatched words in a row usually means the reader skipped ahead. Only jump when those same three
+        // words appear together later in the chapter.
+        if recentMisses.count == 3, recentMisses.joined().count >= 9, let j = anchor(recentMisses) {
+            mark(j, through: j + 2)
+        }
+        return 1
     }
 
-    private func anchor(_ a: String, _ b: String, from pos: Int, within window: Int) -> Int? {
-        let lower = max(0, pos - 20)
-        let upper = min(words.count - 1, pos + window)
-        guard lower < upper else { return nil }
-        for j in lower..<upper where words[j].key == a && Self.close(b, words[j + 1].key) && a.count + b.count >= 6 {
-            return j
+    private func anchor(_ three: [String]) -> Int? {
+        let upper = min(words.count - 3, pos + 40)
+        guard pos <= upper else { return nil }
+        return (pos...upper).first { j in
+            (0..<3).allSatisfy { k in words[j + k].key == three[k] || (three[k].count >= 4 && Self.close(three[k], words[j + k].key)) }
         }
-        return nil
+    }
+
+    private mutating func mark(_ first: Int, through last: Int) {
+        for j in first...last { heard.insert(j) }
+        pos = last + 1
+        cursor = max(cursor, pos)
+        recentMisses = []
     }
 
     // MARK: Matching helpers

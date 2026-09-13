@@ -521,6 +521,9 @@ struct ReadingDraft: Codable, Equatable {
     var missedIDs: [String] = []
     /// True after a missed check, so the flow comes back to the result and new questions.
     var failed = false
+    /// Read it aloud progress: words heard and the furthest word reached.
+    var aloudHeard: [Int] = []
+    var aloudCursor = 0
 
     init(dayKey: String, ref: ChapterRef) {
         self.dayKey = dayKey
@@ -542,13 +545,17 @@ struct ReadingDraft: Codable, Equatable {
         correct = (try? c.decode(Int.self, forKey: .correct)) ?? 0
         missedIDs = (try? c.decode([String].self, forKey: .missedIDs)) ?? []
         failed = (try? c.decode(Bool.self, forKey: .failed)) ?? false
+        aloudHeard = (try? c.decode([Int].self, forKey: .aloudHeard)) ?? []
+        aloudCursor = (try? c.decode(Int.self, forKey: .aloudCursor)) ?? 0
     }
 
     /// The step to reopen at. Reading timers never resume, so a partly read chapter starts reading again.
     var resumeStep: Step {
         if failed && (step == .mode || step == .read || step == .result) { return .result }
         switch step {
-        case .mode, .read: return .mode
+        case .mode: return .mode
+        // Reading out loud saves word by word, so it picks up right where it stopped.
+        case .read: return readMode == .speak && aloudCursor > 0 ? .read : .mode
         default: return step
         }
     }

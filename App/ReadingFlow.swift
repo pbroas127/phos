@@ -317,22 +317,47 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
     @Published var verseIndex = 0
     @Published var playing = false
     @Published var finished = false
-    private let synth = AVSpeechSynthesizer()
-    private var verses: [String] = []
+    @Published var preparing = false
+    var voiceID = ""
     var rate: Float = AVSpeechUtteranceDefaultSpeechRate
+
+    private let synth = AVSpeechSynthesizer()
+    private let engine = AVAudioEngine()
+    private let player = AVAudioPlayerNode()
+    private var verses: [String] = []
+    private var started = false
+    /// Bumped whenever playback jumps, so audio finishing from an old verse is ignored.
+    private var generation = 0
 
     override init() {
         super.init()
         synth.delegate = self
+        engine.attach(player)
     }
 
     func load(_ verses: [String]) {
         self.verses = verses.map(TextChecks.plain)
     }
 
+    private var neuralVoice: String? {
+        guard let name = VoiceCatalog.kokoroName(voiceID), VoiceCatalog.naturalSupported, KokoroModel.shared.ready else { return nil }
+        return name
+    }
+
     func toggle() {
-        if synth.isSpeaking {
-            if synth.isPaused { synth.continueSpeaking(); playing = true } else { synth.pauseSpeaking(at: .word); playing = false }
+        if playing {
+            playing = false
+            synth.pauseSpeaking(at: .word)
+            player.pause()
+        } else if started {
+            playing = true
+            if synth.isPaused {
+                synth.continueSpeaking()
+            } else if engine.isRunning {
+                player.play()
+            } else {
+                speak(from: verseIndex)
+            }
         } else {
             try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .spokenAudio)
             try? AVAudioSession.sharedInstance().setActive(true)
@@ -341,48 +366,118 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
     }
 
     func skip(_ delta: Int) {
-        let next = min(max(0, verseIndex + delta), max(0, verses.count - 1))
+        speak(from: min(max(0, verseIndex + delta), max(0, verses.count - 1)))
+    }
+
+    /// Starts the current verse again, used after picking a new voice.
+    func restartVerse() {
+        guard started else { return }
+        speak(from: verseIndex)
+    }
+
+    private func halt() {
+        generation += 1
         synth.stopSpeaking(at: .immediate)
-        speak(from: next)
+        player.stop()
+        preparing = false
     }
 
     private func speak(from index: Int) {
-        guard index < verses.count else { finished = true; playing = false; return }
+        halt()
+        guard index < verses.count else {
+            finished = true
+            playing = false
+            return
+        }
+        started = true
+        playing = true
         verseIndex = index
+        if let voice = neuralVoice { speakNatural(index, voice: voice) } else { speakSystem(index) }
+    }
+
+    private func speakSystem(_ index: Int) {
         let u = AVSpeechUtterance(string: verses[index])
         u.rate = rate
-        u.voice = AVSpeechSynthesisVoice(language: "en-US")
+        u.voice = VoiceCatalog.systemVoice(voiceID)
         u.postUtteranceDelay = 0.15
         synth.speak(u)
-        playing = true
+    }
+
+    private func speakNatural(_ index: Int, voice: String) {
+        let gen = generation
+        preparing = true
+        KokoroEngine.shared.buffer(verses[index], voice: voice) { [weak self] buffer in
+            guard let self, gen == self.generation else { return }
+            self.preparing = false
+            guard let buffer else {
+                // Kokoro could not voice this verse, so the iPhone voice reads it and playback carries on.
+                self.speakSystem(index)
+                return
+            }
+            if !self.engine.isRunning {
+                self.engine.connect(self.player, to: self.engine.mainMixerNode, format: buffer.format)
+                try? self.engine.start()
+            }
+            self.player.scheduleBuffer(buffer) {
+                DispatchQueue.main.async {
+                    guard gen == self.generation else { return }
+                    self.advance(after: index)
+                }
+            }
+            if self.playing { self.player.play() }
+            if index + 1 < self.verses.count { KokoroEngine.shared.prefetch(self.verses[index + 1], voice: voice) }
+        }
+    }
+
+    private func advance(after index: Int) {
+        if index + 1 < verses.count {
+            if playing {
+                speak(from: index + 1)
+            } else {
+                verseIndex = index + 1
+                started = false
+            }
+        } else {
+            finished = true
+            playing = false
+            started = false
+        }
     }
 
     func stop() {
-        synth.stopSpeaking(at: .immediate)
+        halt()
         playing = false
+        started = false
+        if engine.isRunning { engine.stop() }
     }
 
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        let gen = generation
         DispatchQueue.main.async {
-            if self.verseIndex + 1 < self.verses.count && self.playing {
-                self.speak(from: self.verseIndex + 1)
-            } else if self.verseIndex + 1 >= self.verses.count {
-                self.finished = true
-                self.playing = false
-            }
+            guard gen == self.generation else { return }
+            self.advance(after: self.verseIndex)
         }
     }
 }
 
 struct ListenRead: View {
+    @Environment(AppModel.self) private var model
     let ref: ChapterRef
     let remaining: TimeInterval
     var onDone: () -> Void
     @StateObject private var speaker = ChapterSpeaker()
+    @ObservedObject private var kokoro = KokoroModel.shared
+    @State private var pendingVoice: VoiceChoice?
+    @State private var voiceHelp = false
 
     var body: some View {
         let verses = Bible.shared.chapter(ref)?.verses ?? []
         VStack(spacing: 22) {
+            HStack {
+                Spacer()
+                voiceMenu
+            }
+            .padding(.horizontal, 20)
             RoundedRectangle(cornerRadius: 28, style: .continuous)
                 .fill(Theme.soft)
                 .overlay(
@@ -392,9 +487,12 @@ struct ListenRead: View {
                             RedLetterText(verse: verses[speaker.verseIndex], number: speaker.verseIndex + 1, size: 17)
                                 .multilineTextAlignment(.center).lineLimit(6).padding(.horizontal, 20)
                         }
+                        if speaker.preparing {
+                            ProgressView().tint(Theme.gold)
+                        }
                     }
                 )
-                .frame(maxHeight: 340)
+                .frame(maxHeight: 320)
                 .padding(.horizontal, 20)
             VStack(spacing: 6) {
                 ProgressBar(value: verses.isEmpty ? 0 : Double(speaker.verseIndex + (speaker.finished ? 1 : 0)) / Double(verses.count))
@@ -408,12 +506,14 @@ struct ListenRead: View {
             .padding(.horizontal, 24)
             HStack(spacing: 44) {
                 Button { speaker.skip(-1) } label: { Image(systemName: "backward.fill").font(.title2) }
+                    .accessibilityLabel("Previous verse")
                 Button { speaker.toggle() } label: {
                     Image(systemName: speaker.playing ? "pause.fill" : "play.fill").font(.largeTitle)
                         .frame(width: 84, height: 84).background(Theme.gold, in: Circle()).foregroundStyle(.white)
                 }
                 .accessibilityLabel(speaker.playing ? "Pause" : "Play")
                 Button { speaker.skip(1) } label: { Image(systemName: "forward.fill").font(.title2) }
+                    .accessibilityLabel("Next verse")
             }
             .foregroundStyle(Theme.ink)
             Spacer()
@@ -425,8 +525,126 @@ struct ListenRead: View {
             .buttonStyle(.phos).disabled(!ready)
             .padding(.horizontal, 20).padding(.bottom, 12)
         }
-        .padding(.top, 10)
-        .onAppear { speaker.load(verses) }
+        .padding(.top, 6)
+        .onAppear {
+            speaker.load(verses)
+            speaker.voiceID = model.settings.voiceID
+        }
         .onDisappear { speaker.stop() }
+        .sheet(item: $pendingVoice) { voice in
+            NaturalVoiceSheet(voiceName: voice.name) {
+                pendingVoice = nil
+                choose(voice.id)
+            }
+            .presentationDetents([.medium])
+        }
+        .sheet(isPresented: $voiceHelp) {
+            BetterVoicesHelp().presentationDetents([.medium])
+        }
+    }
+
+    private var voiceMenu: some View {
+        Menu {
+            if VoiceCatalog.naturalSupported {
+                Section("Natural voices") {
+                    ForEach(VoiceCatalog.natural) { v in
+                        Button { pick(v) } label: { voiceLabel(v) }
+                    }
+                }
+            }
+            Section("iPhone voices") {
+                ForEach(VoiceCatalog.system()) { v in
+                    Button { pick(v) } label: { voiceLabel(v) }
+                }
+                Button("Get more iPhone voices") { voiceHelp = true }
+            }
+        } label: {
+            Label(VoiceCatalog.name(model.settings.voiceID), systemImage: "person.wave.2.fill")
+                .font(.subheadline.weight(.semibold))
+                .padding(.horizontal, 14).padding(.vertical, 9)
+                .background(Theme.card, in: Capsule())
+                .overlay(Capsule().stroke(Theme.line))
+                .foregroundStyle(Theme.ink)
+        }
+        .accessibilityLabel("Voice")
+    }
+
+    @ViewBuilder
+    private func voiceLabel(_ v: VoiceChoice) -> some View {
+        let current = model.settings.voiceID.isEmpty ? "system:\(VoiceCatalog.systemVoice("").identifier)" : model.settings.voiceID
+        if v.id == current {
+            Label("\(v.name), \(v.detail)", systemImage: "checkmark")
+        } else {
+            Text("\(v.name), \(v.detail)")
+        }
+    }
+
+    private func pick(_ v: VoiceChoice) {
+        if VoiceCatalog.kokoroName(v.id) != nil && !kokoro.ready {
+            pendingVoice = v
+        } else {
+            choose(v.id)
+        }
+    }
+
+    private func choose(_ id: String) {
+        model.settings.voiceID = id
+        model.savePreferences()
+        speaker.voiceID = id
+        speaker.restartVerse()
+    }
+}
+
+/// Explains and runs the one time Kokoro download.
+struct NaturalVoiceSheet: View {
+    let voiceName: String
+    var onReady: () -> Void
+    @ObservedObject private var kokoro = KokoroModel.shared
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            Text("Natural voices").font(Theme.serif(28)).foregroundStyle(Theme.ink)
+            Text("\(voiceName) and 12 more lifelike voices read to you right on your iPhone, even with no connection. They need one download of \(KokoroModel.megabytes) MB, so Wi-Fi is best.")
+                .foregroundStyle(Theme.dim).fixedSize(horizontal: false, vertical: true)
+            if let progress = kokoro.progress {
+                ProgressBar(value: progress)
+                Text("\(Int(progress * 100))% downloaded").font(.caption).foregroundStyle(Theme.dim)
+            }
+            if let problem = kokoro.problem {
+                Text(problem).font(.footnote).foregroundStyle(Theme.red)
+            }
+            Spacer()
+            if kokoro.progress == nil {
+                Button("Download voices") { kokoro.download() }.buttonStyle(.phos)
+            } else {
+                Button("Cancel download") { kokoro.cancel() }.buttonStyle(.phos)
+            }
+            Button("Not now") { dismiss() }.frame(maxWidth: .infinity).foregroundStyle(Theme.dim)
+        }
+        .padding(24)
+        .background(Theme.paper.ignoresSafeArea())
+        .onChange(of: kokoro.ready) { _, ready in if ready { onReady() } }
+    }
+}
+
+struct BetterVoicesHelp: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Text("More iPhone voices").font(Theme.serif(28)).foregroundStyle(Theme.ink)
+            Text("Your iPhone has free Enhanced and Premium voices that sound much more natural. Download any you like, then pick them here.")
+                .foregroundStyle(Theme.dim).fixedSize(horizontal: false, vertical: true)
+            VStack(alignment: .leading, spacing: 8) {
+                Text("1. Open the Settings app")
+                Text("2. Tap Accessibility, then Read and Speak")
+                Text("3. Tap Voices, then English")
+                Text("4. Pick a voice and tap download")
+            }
+            .foregroundStyle(Theme.ink)
+            Spacer()
+        }
+        .padding(24)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Theme.paper.ignoresSafeArea())
     }
 }

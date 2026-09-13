@@ -13,6 +13,8 @@ jobs:
           sudo xcode-select -s "$XCODE"
       - run: brew install xcodegen
       - run: xcodegen generate
+      - name: Metal toolchain for MLX
+        run: xcodebuild -downloadComponent MetalToolchain || true
       - name: Boot simulator
         id: sim
         run: |

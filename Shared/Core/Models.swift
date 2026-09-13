@@ -570,6 +570,8 @@ struct AppSettings: Codable, Equatable {
     var passUses: [PassUse] = []
     var preferredRead: ReadMode = .paper
     var preferredReflect: ReflectMode = .typed
+    /// Read aloud voice: kokoro:<name>, system:<identifier>, or empty for the best iPhone voice.
+    var voiceID = ""
     var schemaVersion = 3
 
     init() {}
@@ -589,6 +591,7 @@ struct AppSettings: Codable, Equatable {
         passUses = (try? c.decode([PassUse].self, forKey: .passUses)) ?? d.passUses
         preferredRead = (try? c.decode(ReadMode.self, forKey: .preferredRead)) ?? d.preferredRead
         preferredReflect = (try? c.decode(ReflectMode.self, forKey: .preferredReflect)) ?? d.preferredReflect
+        voiceID = (try? c.decode(String.self, forKey: .voiceID)) ?? d.voiceID
         let version = (try? c.decode(Int.self, forKey: .schemaVersion)) ?? 1
         schemaVersion = 3
 

@@ -20,6 +20,8 @@ jobs:
           xcodebuild -version
       - run: brew install xcodegen
       - run: xcodegen generate
+      - name: Metal toolchain for MLX
+        run: xcodebuild -downloadComponent MetalToolchain || true
       - name: Pick simulator
         id: sim
         run: |

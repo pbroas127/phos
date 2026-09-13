@@ -21,6 +21,8 @@ jobs:
       - run: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
       - run: brew install xcodegen
       - run: xcodegen generate
+      - name: Metal toolchain for MLX
+        run: xcodebuild -downloadComponent MetalToolchain || true
       - run: which fastlane || brew install fastlane
       - run: fastlane beta
         env:

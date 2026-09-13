@@ -1,8 +1,18 @@
 name: Phos
 options:
   deploymentTarget:
-    iOS: "17.0"
+    iOS: "18.0"
   createIntermediateGroups: true
+packages:
+  KokoroSwift:
+    url: https://github.com/mlalma/kokoro-ios
+    exactVersion: 1.0.11
+  MLXSwift:
+    url: https://github.com/ml-explore/mlx-swift
+    exactVersion: 0.30.2
+  MLXUtilsLibrary:
+    url: https://github.com/mlalma/MLXUtilsLibrary
+    exactVersion: 0.0.6
 settings:
   base:
     SWIFT_VERSION: "5.10"
@@ -53,6 +63,10 @@ targets:
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
         UIUserInterfaceStyle: Light
     dependencies:
+      - package: KokoroSwift
+      - package: MLXSwift
+        product: MLX
+      - package: MLXUtilsLibrary
       - target: PhosWidgets
         embed: true
       - target: PhosShieldConfig

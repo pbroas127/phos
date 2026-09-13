@@ -21,10 +21,16 @@ final class PassageListener: ObservableObject {
         along = ReadAlong(verses: verses)
         // Capitalized words that are not sentence starts are mostly names. Hinting them helps recognition a lot.
         var seen = Set<String>()
-        names = verses.flatMap { $0.split(separator: " ").dropFirst() }
-            .map { String($0).trimmingCharacters(in: .punctuationCharacters) }
-            .filter { $0.count > 3 && $0.first?.isUppercase == true && seen.insert($0).inserted }
-            .prefix(100).map { $0 }
+        var found: [String] = []
+        for verse in verses {
+            for piece in verse.split(separator: " ").dropFirst() {
+                let word = String(piece).trimmingCharacters(in: .punctuationCharacters)
+                guard word.count > 3, word.first?.isUppercase == true, !seen.contains(word) else { continue }
+                seen.insert(word)
+                found.append(word)
+            }
+        }
+        names = Array(found.prefix(100))
     }
 
     func start() {

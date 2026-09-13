@@ -537,13 +537,14 @@ struct AppSettings: Codable, Equatable {
             schedule.morning = TimeOfDay(hour: 0, minute: 0)
             let legacy = try decoder.container(keyedBy: LegacyKeys.self)
             if let rules = try? legacy.decode(LegacyRules.self, forKey: .rules) {
+                let d = ReadingCheck()
                 for i in lockSets.indices {
-                    lockSets[i].reading = ReadingCheck(words: rules.wordsToType, seconds: rules.secondsOfTalking,
-                                                       minutes: rules.minimumReadingMinutes, questions: rules.questionsPerCheck,
-                                                       pass: rules.correctToPass).normalized()
-                    lockSets[i].emergencyPasses = rules.emergencyPasses
-                    if lockSets[i].rewardSeconds != LockSet.untilEnd {
-                        lockSets[i].rewardSeconds = rules.unlockMinutes >= 1440 ? LockSet.untilEnd : rules.unlockMinutes * 60
+                    lockSets[i].reading = ReadingCheck(words: rules.wordsToType ?? d.words, seconds: rules.secondsOfTalking ?? d.seconds,
+                                                       minutes: rules.minimumReadingMinutes ?? d.minutes, questions: rules.questionsPerCheck ?? d.questions,
+                                                       pass: rules.correctToPass ?? d.pass).normalized()
+                    lockSets[i].emergencyPasses = rules.emergencyPasses ?? 3
+                    if lockSets[i].rewardSeconds != LockSet.untilEnd, let minutes = rules.unlockMinutes {
+                        lockSets[i].rewardSeconds = minutes >= 1440 ? LockSet.untilEnd : minutes * 60
                     }
                 }
             }
@@ -553,13 +554,13 @@ struct AppSettings: Codable, Equatable {
     private enum LegacyKeys: String, CodingKey { case rules }
 
     private struct LegacyRules: Decodable {
-        var wordsToType = 60
-        var secondsOfTalking = 45
-        var minimumReadingMinutes = 5
-        var questionsPerCheck = 5
-        var correctToPass = 3
-        var unlockMinutes = 30
-        var emergencyPasses = 3
+        var wordsToType: Int?
+        var secondsOfTalking: Int?
+        var minimumReadingMinutes: Int?
+        var questionsPerCheck: Int?
+        var correctToPass: Int?
+        var unlockMinutes: Int?
+        var emergencyPasses: Int?
     }
 
     func passesLeft(_ lock: LockSet, now: Date, calendar: Calendar = .current) -> Int {

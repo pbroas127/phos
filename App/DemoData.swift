@@ -138,7 +138,7 @@ enum DemoData {
 enum DemoScreen: String {
     case today, path, calendar, reading, reflect, speak, quizChoice, quizBlank, quizOrder, pass, missed, recall, unlocked
     case streak, time, journal, settings, shield, focus, recite
-    case library, book, locks, lockEditor, protection, trophies
+    case library, book, locks, lockEditor, protection, trophies, readAloud, listen
 
     static var requested: DemoScreen? {
         let args = ProcessInfo.processInfo.arguments
@@ -189,6 +189,10 @@ struct DemoRouter: View {
             NavigationStack { LockDetailView(lockID: "games") }
         case .reading:
             flow { InAppRead(ref: john3, remaining: 0) {} }
+        case .readAloud:
+            flow { SpeakRead(ref: john3) {} }
+        case .listen:
+            flow { ListenRead(ref: john3, remaining: 0) {} }
         case .reflect:
             flow { ReflectStep(ref: john3, mode: .constant(.typed), text: .constant(DemoData.reflection)) {} }
         case .speak:

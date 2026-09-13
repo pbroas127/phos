@@ -275,6 +275,9 @@ enum Achievements {
         book("general", "Letters to All", "Read Hebrews through Jude.", "sealed_letters", general),
         book("REV", "Seven Seals", "Read all of Revelation.", "seven_seals", ["REV"]),
         book("short", "Short and Sweet", "Read every one chapter book: Obadiah, Philemon, 2 John, 3 John, and Jude.", "mustard_seed", ["OBA", "PHM", "2JN", "3JN", "JUD"]),
+        Achievement(id: "book.ten", group: .books, name: "Crown of Righteousness", detail: "Finish 10 different books of the Bible.", art: "crown_life", goal: 10) {
+            $0.booksDone(ReadingPlans.oldTestament + ReadingPlans.newTestament)
+        },
         book("ot", "The Old Covenant", "Read the whole Old Testament.", "ark_covenant", ReadingPlans.oldTestament),
         book("nt", "The New Covenant", "Read the whole New Testament.", "chalice_bread", ReadingPlans.newTestament),
         book("bible", "Genesis to Revelation", "Read every chapter of the Bible.", "bible_radiant", ReadingPlans.oldTestament + ReadingPlans.newTestament)
@@ -306,6 +309,7 @@ enum Achievements {
         journey("rainbow", "The Rainbow Promise", "Read Genesis 1 to 9 within nine days.", "rainbow", refs("GEN", 1...9), days: 9),
         journey("home", "Welcome Home", "Read Luke 15, Hosea 11, and Jeremiah 31 within one week.", "signet_ring", ["LUK.15", "HOS.11", "JER.31"], days: 7),
         journey("blessed", "Blessed", "Read Matthew 5 and Luke 6 on the same day.", "lily", ["MAT.5", "LUK.6"], days: 1),
+        journey("baptism", "A Voice from Heaven", "Read the baptism of Jesus in Matthew 3, Mark 1, Luke 3, and John 1 within one week.", "dove_heaven", ["MAT.3", "MRK.1", "LUK.3", "JHN.1"], days: 7),
         journey("revelation", "Things to Come", "Read all 22 chapters of Revelation within 22 days.", "trumpet_angel", refs("REV", 1...22), days: 22)
     ]
 
@@ -355,6 +359,9 @@ enum Achievements {
         },
         Achievement(id: "reflect.voice", group: .reflection, name: "Voice of Praise", detail: "Speak 25 reflections out loud.", art: "shofar", goal: 25) { $0.spokenReflections },
         Achievement(id: "reflect.ways", group: .reflection, name: "Many Ways to Pray", detail: "Reflect by typing, by speaking, and with prompts.", art: "praying_hands", goal: 3) { $0.reflectModes.count },
+        Achievement(id: "reflect.lamp", group: .reflection, name: "Keep the Lamp Burning", detail: "Save a reflection 30 days in a row.", art: "hand_flame", goal: 30) { s in
+            s.longestRun(Set(s.records.filter { !$0.reflection.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }.map(\.dayKey)))
+        },
         Achievement(id: "reflect.100", group: .reflection, name: "Deep Well", detail: "Save 100 reflections.", art: "well_water", goal: 100) { $0.reflections.count }
     ]
 

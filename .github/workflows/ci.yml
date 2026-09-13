@@ -40,7 +40,7 @@ jobs:
           xcodebuild build -project Phos.xcodeproj -scheme Phos \
             -destination "platform=iOS Simulator,name=${{ steps.sim.outputs.name }}" \
             -derivedDataPath build CODE_SIGNING_ALLOWED=NO 2>&1 | tee build.log | grep -E "error:|\*\* BUILD" || true
-          grep -q "\*\* BUILD SUCCEEDED \*\*" build.log
+          grep -q "\*\* BUILD SUCCEEDED \*\*" build.log || { grep -E -A12 "Undefined symbols|ld: |duplicate symbol|error:" build.log | head -120; exit 1; }
       - if: failure()
         uses: actions/upload-artifact@v4
         with:

@@ -3,12 +3,24 @@ import SwiftUI
 /// Runs a set of questions one at a time and reports the score and misses.
 struct QuizRunner: View {
     let items: [QuizItem]
+    var onAnswer: (Int, Int, [Question]) -> Void
     var onFinish: (Int, [Question]) -> Void
 
-    @State private var index = 0
-    @State private var correct = 0
-    @State private var missed: [Question] = []
+    @State private var index: Int
+    @State private var correct: Int
+    @State private var missed: [Question]
     @State private var answered: Bool? = nil
+
+    init(items: [QuizItem], startIndex: Int = 0, startCorrect: Int = 0, startMissed: [Question] = [],
+         onAnswer: @escaping (Int, Int, [Question]) -> Void = { _, _, _ in },
+         onFinish: @escaping (Int, [Question]) -> Void) {
+        self.items = items
+        self.onAnswer = onAnswer
+        self.onFinish = onFinish
+        _index = State(initialValue: min(startIndex, max(items.count - 1, 0)))
+        _correct = State(initialValue: startCorrect)
+        _missed = State(initialValue: startMissed)
+    }
 
     var body: some View {
         if items.isEmpty {
@@ -29,6 +41,7 @@ struct QuizRunner: View {
                 QuestionView(item: item, locked: answered != nil) { isRight in
                     answered = isRight
                     if isRight { correct += 1 } else { missed.append(item.question) }
+                    onAnswer(index + 1, correct, missed)
                 }
                 .id(item.id)
 

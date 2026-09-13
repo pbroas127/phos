@@ -38,6 +38,11 @@ final class SharedStore {
         set { save(newValue, "snapshot") }
     }
 
+    var readingDraft: ReadingDraft? {
+        get { load("readingDraft", as: ReadingDraft.self) }
+        set { save(newValue, "readingDraft") }
+    }
+
     /// Lock ids that have a ManagedSettings store, so deleted locks can be cleared.
     var knownLockIDs: [String] {
         get { defaults.stringArray(forKey: "knownLockIDs") ?? [] }

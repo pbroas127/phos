@@ -1,60 +1,64 @@
 import AVFoundation
 import SwiftUI
 
-/// Read, reflect, answer, unlock.
+/// Read, reflect, answer, unlock. Progress is saved at every step, so leaving never loses work.
 struct ReadingFlow: View {
     @Environment(AppModel.self) private var model
     @Environment(\.dismiss) private var dismiss
 
     let ref: ChapterRef
+    typealias Step = ReadingDraft.Step
 
-    enum Step: Equatable { case mode, read, reflect, quiz, result }
-
-    @State private var step: Step
-    @State private var readMode: ReadMode = .paper
-    @State private var reflectMode: ReflectMode = .typed
-    @State private var reflection = ""
+    @State private var draft: ReadingDraft
     @State private var items: [QuizItem] = []
-    @State private var score = 0
     @State private var missed: [Question] = []
-    @State private var confirmLeave = false
+    @State private var loaded = false
+    private let startStep: Step?
 
-    init(ref: ChapterRef, startStep: Step = .mode) {
+    init(ref: ChapterRef, startStep: Step? = nil) {
         self.ref = ref
-        _step = State(initialValue: startStep)
+        self.startStep = startStep
+        _draft = State(initialValue: ReadingDraft(dayKey: "", ref: ref))
     }
 
     var body: some View {
         VStack(spacing: 0) {
-            FlowHeader(title: BookNames.title(ref), subtitle: stepLabel) {
-                if step == .quiz { confirmLeave = true } else { dismiss() }
-            }
-            .padding(.horizontal, 20)
-            .padding(.top, 12)
-            .padding(.bottom, 8)
+            FlowHeader(title: BookNames.title(ref), subtitle: stepLabel) { dismiss() }
+                .padding(.horizontal, 20)
+                .padding(.top, 12)
+                .padding(.bottom, 8)
 
             Group {
-                switch step {
+                switch draft.step {
                 case .mode:
-                    ModeChoice(selected: $readMode) { go(.read) }
+                    ModeChoice(selected: $draft.readMode) { go(.read) }
                 case .read:
-                    ReadStep(ref: ref, mode: readMode) { go(.reflect) }
+                    ReadStep(ref: ref, mode: draft.readMode) { go(.reflect) }
                 case .reflect:
-                    ReflectStep(ref: ref, mode: $reflectMode, text: $reflection) { startQuiz() }
+                    ReflectStep(ref: ref, mode: $draft.reflectMode, text: $draft.reflection,
+                                prompts: $draft.prompts, speechSeconds: $draft.speechSeconds) { startQuiz() }
                 case .quiz:
-                    QuizRunner(items: items) { correct, missedQuestions in
-                        score = correct
-                        missed = missedQuestions
-                        finishQuiz()
-                    }
+                    QuizRunner(items: items, startIndex: draft.answered, startCorrect: draft.correct, startMissed: missed,
+                               onAnswer: { answered, correct, missedQuestions in
+                                   draft.answered = answered
+                                   draft.correct = correct
+                                   draft.missedIDs = missedQuestions.map(\.id)
+                                   missed = missedQuestions
+                                   save()
+                               },
+                               onFinish: { correct, missedQuestions in
+                                   draft.correct = correct
+                                   missed = missedQuestions
+                                   finishQuiz()
+                               })
                     .id(items.map(\.id).joined())
                 case .result:
-                    if score >= min(model.readingCheck.pass, max(items.count, 1)) || items.isEmpty {
-                        UnlockSummary(title: "\(score) of \(items.count) correct", after: model.lastAfter) {
+                    if !draft.failed {
+                        UnlockSummary(title: "\(draft.correct) of \(items.count) correct", after: model.lastAfter) {
                             dismiss()
                         }
                     } else {
-                        MissedView(ref: ref, score: score, total: items.count, missed: missed,
+                        MissedView(ref: ref, score: draft.correct, total: max(items.count, draft.quizIDs.count), missed: missed,
                                    onRetry: { startQuiz() }, onReread: { go(.read) })
                     }
                 }
@@ -62,45 +66,81 @@ struct ReadingFlow: View {
             .transition(.opacity)
         }
         .background(Theme.paper.ignoresSafeArea())
-        .onAppear {
-            readMode = model.settings.preferredRead
-            reflectMode = model.settings.preferredReflect
-            if reflection.isEmpty, let record = model.record(for: ref) { reflection = record.reflection }
-            model.lastAfter = nil
-            model.beginReading(ref)
-            if step == .quiz && items.isEmpty { startQuiz() }
-        }
-        .confirmationDialog("Leave the questions?", isPresented: $confirmLeave, titleVisibility: .visible) {
-            Button("Leave and count it as a miss", role: .destructive) {
-                model.registerMiss()
-                dismiss()
-            }
-            Button("Keep going", role: .cancel) {}
-        } message: {
-            Text("Leaving now counts as a missed check, so questions cannot be previewed.")
-        }
+        .onAppear(perform: load)
+        .onChange(of: draft.reflection) { _, _ in save() }
+        .onChange(of: draft.prompts) { _, _ in save() }
+        .onChange(of: draft.reflectMode) { _, _ in save() }
+        .onChange(of: draft.readMode) { _, _ in save() }
     }
 
     private var stepLabel: String {
-        switch step {
+        switch draft.step {
         case .mode: return "Today's reading"
-        case .read: return readMode.title
+        case .read: return draft.readMode.title
         case .reflect: return "Reflection"
         case .quiz: return "Questions"
-        case .result: return "Result"
+        case .result: return draft.failed ? "Try again" : "Result"
         }
     }
 
+    private func bank() -> [Question] {
+        QuestionBank.shared.questions(for: ref)?.questions ?? []
+    }
+
+    private func load() {
+        guard !loaded else { return }
+        loaded = true
+        model.lastAfter = nil
+        model.beginReading(ref)
+        if let saved = model.draft(for: ref) {
+            draft = saved
+            let byID = Dictionary(uniqueKeysWithValues: bank().map { ($0.id, $0) })
+            missed = saved.missedIDs.compactMap { byID[$0] }
+            var questions = saved.quizIDs.compactMap { byID[$0] }
+            let resume = saved.resumeStep
+            if resume == .quiz, saved.answered < questions.count {
+                // The question showing when they left may have been seen, so swap it for a fresh one.
+                let used = Set(questions.map(\.id) + model.today.askedQuestionIDs)
+                if let fresh = bank().first(where: { !used.contains($0.id) }) {
+                    questions[saved.answered] = fresh
+                    draft.quizIDs = questions.map(\.id)
+                    model.markAsked([QuizEngine.pick(from: [fresh], count: 1, avoiding: []).first].compactMap { $0 })
+                }
+            }
+            items = questions.map { QuizEngine.pick(from: [$0], count: 1, avoiding: []).first! }
+            draft.step = startStep ?? resume
+            if draft.step == .quiz && items.isEmpty { draft.step = .reflect }
+            save()
+        } else {
+            draft = ReadingDraft(dayKey: model.today.dayKey, ref: ref)
+            draft.readMode = model.settings.preferredRead
+            draft.reflectMode = model.settings.preferredReflect
+            if let record = model.record(for: ref) { draft.reflection = record.reflection }
+            draft.step = startStep ?? .mode
+            if draft.step == .quiz { startQuiz() }
+        }
+    }
+
+    private func save() {
+        guard loaded, !model.demo else { return }
+        model.saveDraft(draft)
+    }
+
     private func go(_ s: Step) {
-        withAnimation(.easeInOut(duration: 0.25)) { step = s }
+        withAnimation(.easeInOut(duration: 0.25)) { draft.step = s }
+        save()
     }
 
     private func startQuiz() {
-        let bank = QuestionBank.shared.questions(for: ref)?.questions ?? []
-        items = QuizEngine.pick(from: bank, count: model.readingCheck.questions, avoiding: Set(model.today.askedQuestionIDs))
+        items = QuizEngine.pick(from: bank(), count: model.readingCheck.questions, avoiding: Set(model.today.askedQuestionIDs))
         model.markAsked(items)
+        draft.quizIDs = items.map(\.id)
+        draft.answered = 0
+        draft.correct = 0
+        draft.missedIDs = []
+        missed = []
         if items.isEmpty {
-            score = model.readingCheck.pass
+            draft.correct = model.readingCheck.pass
             finishQuiz()
         } else {
             go(.quiz)
@@ -109,13 +149,16 @@ struct ReadingFlow: View {
 
     private func finishQuiz() {
         let needed = min(model.readingCheck.pass, max(items.count, 1))
-        if score >= needed || items.isEmpty {
-            model.completeReading(ref: ref, readMode: readMode, reflectMode: reflectMode, reflection: reflection,
-                                  score: score, total: items.count)
+        if draft.correct >= needed || items.isEmpty {
+            draft.failed = false
+            model.completeReading(ref: ref, readMode: draft.readMode, reflectMode: draft.reflectMode, reflection: draft.reflection,
+                                  score: draft.correct, total: items.count)
+            withAnimation { draft.step = .result }
         } else {
             model.registerMiss()
+            draft.failed = true
+            go(.result)
         }
-        go(.result)
     }
 }
 
@@ -147,6 +190,8 @@ struct ModeChoice: View {
                         }
                         .buttonStyle(.plain)
                     }
+                    Text("The reading timer only counts while Phos stays open. Leaving the app or locking your phone starts it over, so the screen stays awake while you read.")
+                        .font(.footnote).foregroundStyle(Theme.dim).padding(.top, 4)
                 }
                 .padding(20)
             }
@@ -163,23 +208,45 @@ struct ModeChoice: View {
     }
 }
 
+/// Runs the minimum reading timer. It starts over whenever the app leaves the screen.
 struct ReadStep: View {
     @Environment(AppModel.self) private var model
+    @Environment(\.scenePhase) private var phase
     let ref: ChapterRef
     let mode: ReadMode
     var onDone: () -> Void
 
+    @State private var start = Date()
+    @State private var restarted = false
+    @State private var finished = false
+
     var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { context in
             let minimum = TimeInterval(model.readingCheck.minutes * 60)
-            let started = model.today.readingStartedAt ?? context.date
-            let elapsed = context.date.timeIntervalSince(started)
-            let remaining = model.demo ? 0 : max(0, minimum - elapsed)
-            switch mode {
-            case .paper: PaperRead(ref: ref, remaining: remaining, minimum: minimum, onDone: onDone)
-            case .inApp: InAppRead(ref: ref, remaining: remaining, onDone: onDone)
-            case .listen: ListenRead(ref: ref, remaining: remaining, onDone: onDone)
+            let remaining = (model.demo || finished) ? 0 : max(0, minimum - context.date.timeIntervalSince(start))
+            VStack(spacing: 0) {
+                if restarted && remaining > 0 {
+                    Label("You left Phos, so the timer started over.", systemImage: "arrow.counterclockwise")
+                        .font(.footnote.weight(.semibold)).foregroundStyle(Theme.red)
+                        .padding(.vertical, 8)
+                }
+                switch mode {
+                case .paper: PaperRead(ref: ref, remaining: remaining, minimum: minimum, onDone: onDone)
+                case .inApp: InAppRead(ref: ref, remaining: remaining, onDone: onDone)
+                case .listen: ListenRead(ref: ref, remaining: remaining, onDone: onDone)
+                }
             }
+            .onChange(of: remaining == 0) { _, done in if done { finished = true } }
+        }
+        .onAppear {
+            start = Date()
+            UIApplication.shared.isIdleTimerDisabled = true
+        }
+        .onDisappear { UIApplication.shared.isIdleTimerDisabled = false }
+        .onChange(of: phase) { _, p in
+            guard p == .background, !finished else { return }
+            start = Date()
+            restarted = true
         }
     }
 }

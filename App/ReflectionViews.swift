@@ -84,7 +84,20 @@ struct ReflectStep: View {
     let ref: ChapterRef
     @Binding var mode: ReflectMode
     @Binding var text: String
+    @Binding var prompts: [String]
+    @Binding var speechSeconds: Double
     var onDone: () -> Void
+
+    init(ref: ChapterRef, mode: Binding<ReflectMode>, text: Binding<String>,
+         prompts: Binding<[String]> = .constant(["", "", ""]), speechSeconds: Binding<Double> = .constant(0),
+         onDone: @escaping () -> Void) {
+        self.ref = ref
+        _mode = mode
+        _text = text
+        _prompts = prompts
+        _speechSeconds = speechSeconds
+        self.onDone = onDone
+    }
 
     var body: some View {
         VStack(spacing: 12) {
@@ -96,8 +109,8 @@ struct ReflectStep: View {
 
             switch mode {
             case .typed: TypeReflect(ref: ref, text: $text, onDone: onDone)
-            case .spoken: SpeakReflect(ref: ref, text: $text, onDone: onDone)
-            case .prompts: PromptsReflect(ref: ref, text: $text, onDone: onDone)
+            case .spoken: SpeakReflect(ref: ref, text: $text, savedSeconds: $speechSeconds, onDone: onDone)
+            case .prompts: PromptsReflect(ref: ref, text: $text, answers: $prompts, onDone: onDone)
             }
         }
     }
@@ -173,6 +186,7 @@ struct SpeakReflect: View {
     @Environment(AppModel.self) private var model
     let ref: ChapterRef
     @Binding var text: String
+    @Binding var savedSeconds: Double
     var onDone: () -> Void
     @StateObject private var recorder = SpeechRecorder()
     @State private var notice: String?
@@ -232,6 +246,11 @@ struct SpeakReflect: View {
         }
         .padding(.horizontal, 20)
         .padding(.bottom, 12)
+        .onAppear {
+            if recorder.transcript.isEmpty && !text.isEmpty { recorder.seed(transcript: text, seconds: savedSeconds) }
+        }
+        .onChange(of: recorder.transcript) { _, t in if !t.isEmpty { text = t } }
+        .onChange(of: Int(recorder.speechSeconds)) { _, s in savedSeconds = Double(s) }
         .onDisappear { recorder.stop() }
     }
 
@@ -250,8 +269,8 @@ struct PromptsReflect: View {
     @Environment(AppModel.self) private var model
     let ref: ChapterRef
     @Binding var text: String
+    @Binding var answers: [String]
     var onDone: () -> Void
-    @State private var answers = ["", "", ""]
     @State private var notice: String?
 
     private let prompts = ["What happened in this chapter?", "What surprised you or stood out?", "What will you do differently today?"]

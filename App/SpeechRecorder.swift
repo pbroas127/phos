@@ -71,6 +71,13 @@ final class SpeechRecorder: ObservableObject {
         try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
     }
 
+    /// Picks up a saved reflection so more talking adds to it.
+    func seed(transcript: String, seconds: Double) {
+        self.transcript = transcript
+        committed = transcript
+        speechSeconds = seconds
+    }
+
     func reset() {
         stop()
         transcript = ""

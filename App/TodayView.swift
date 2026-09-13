@@ -152,7 +152,7 @@ struct PlanCard: View {
                     }
                 }
             } else if !doneNow {
-                Button("Start reading") { model.route = .reading }.buttonStyle(.phos)
+                Button(model.draft(for: ref) == nil ? "Start reading" : "Continue where you left off") { model.route = .reading }.buttonStyle(.phos)
                 Button("Choose a different chapter") { libraryShown = true }.buttonStyle(.phosSecondary)
                 if !model.today.readingDone {
                     HStack(spacing: 6) {

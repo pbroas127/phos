@@ -405,6 +405,20 @@ final class AppModel {
 
     // MARK: Reading
 
+    /// Saved progress for this chapter today, if any.
+    func draft(for ref: ChapterRef) -> ReadingDraft? {
+        guard let d = store.readingDraft, d.dayKey == today.dayKey, d.ref == ref else { return nil }
+        return d
+    }
+
+    func saveDraft(_ draft: ReadingDraft) {
+        store.readingDraft = draft
+    }
+
+    func clearDraft() {
+        store.readingDraft = nil
+    }
+
     var nextAttemptAt: Date? {
         guard let d = today.nextAttemptAt, d > Date() else { return nil }
         return d
@@ -470,6 +484,7 @@ final class AppModel {
         settings.preferredReflect = reflectMode
         store.settings = settings
         saveToday()
+        clearDraft()
         for lock in waiting { unlock(lock, method: .reading) }
         lastUnlocked = waiting
         lastAfter = after

@@ -492,6 +492,58 @@ struct TodayState: Codable, Equatable {
     func day(_ lockID: String) -> LockDay { unlocks[lockID] ?? LockDay() }
 }
 
+/// Where today's reading left off, so leaving the app never loses work.
+struct ReadingDraft: Codable, Equatable {
+    enum Step: String, Codable { case mode, read, reflect, quiz, result }
+
+    var dayKey: String
+    var ref: ChapterRef
+    var step: Step = .mode
+    var readMode: ReadMode = .paper
+    var reflectMode: ReflectMode = .typed
+    var reflection = ""
+    var prompts = ["", "", ""]
+    var speechSeconds: Double = 0
+    /// Question ids for the current check, in order.
+    var quizIDs: [String] = []
+    var answered = 0
+    var correct = 0
+    var missedIDs: [String] = []
+    /// True after a missed check, so the flow comes back to the result and new questions.
+    var failed = false
+
+    init(dayKey: String, ref: ChapterRef) {
+        self.dayKey = dayKey
+        self.ref = ref
+    }
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        dayKey = (try? c.decode(String.self, forKey: .dayKey)) ?? ""
+        ref = (try? c.decode(ChapterRef.self, forKey: .ref)) ?? ChapterRef(book: "JHN", chapter: 1)
+        step = (try? c.decode(Step.self, forKey: .step)) ?? .mode
+        readMode = (try? c.decode(ReadMode.self, forKey: .readMode)) ?? .paper
+        reflectMode = (try? c.decode(ReflectMode.self, forKey: .reflectMode)) ?? .typed
+        reflection = (try? c.decode(String.self, forKey: .reflection)) ?? ""
+        prompts = (try? c.decode([String].self, forKey: .prompts)) ?? ["", "", ""]
+        speechSeconds = (try? c.decode(Double.self, forKey: .speechSeconds)) ?? 0
+        quizIDs = (try? c.decode([String].self, forKey: .quizIDs)) ?? []
+        answered = (try? c.decode(Int.self, forKey: .answered)) ?? 0
+        correct = (try? c.decode(Int.self, forKey: .correct)) ?? 0
+        missedIDs = (try? c.decode([String].self, forKey: .missedIDs)) ?? []
+        failed = (try? c.decode(Bool.self, forKey: .failed)) ?? false
+    }
+
+    /// The step to reopen at. Reading timers never resume, so a partly read chapter starts reading again.
+    var resumeStep: Step {
+        if failed && (step == .mode || step == .read || step == .result) { return .result }
+        switch step {
+        case .mode, .read: return .mode
+        default: return step
+        }
+    }
+}
+
 struct PassUse: Codable, Hashable, Identifiable {
     var id: Date { date }
     var date: Date

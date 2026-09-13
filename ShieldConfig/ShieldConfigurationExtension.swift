@@ -9,11 +9,6 @@ class ShieldConfigurationExtension: ShieldConfigurationDataSource {
         UIColor(red: CGFloat((hex >> 16) & 0xFF) / 255, green: CGFloat((hex >> 8) & 0xFF) / 255, blue: CGFloat(hex & 0xFF) / 255, alpha: 1)
     }
 
-    private func dynamic(light: UInt32, dark: UInt32) -> UIColor {
-        let l = rgb(light), d = rgb(dark)
-        return UIColor { $0.userInterfaceStyle == .dark ? d : l }
-    }
-
     private var isDark: Bool { UITraitCollection.current.userInterfaceStyle == .dark }
 
     override func configuration(shielding application: Application) -> ShieldConfiguration {
@@ -53,10 +48,9 @@ class ShieldConfigurationExtension: ShieldConfigurationDataSource {
         let app = name ?? "This app"
         let state = lock.map { LockLogic.state($0, today: today, now: Date()) } ?? .needsReading
         let reward = lock.map { LockSet.rewardLabel($0.rewardSeconds).lowercased() } ?? "a while"
-        let hint = "\n\nTap below, then open the Phos notification."
 
         let title: String
-        var subtitle: String
+        let subtitle: String
         let button: String
 
         switch state {
@@ -73,37 +67,43 @@ class ShieldConfigurationExtension: ShieldConfigurationDataSource {
             button = "Open Phos"
         case .needsQuestion:
             title = "\(app) is resting"
-            subtitle = "One question about \(snap.chapterTitle) opens it for \(reward)." + hint
+            subtitle = "One question about \(snap.chapterTitle) opens it for \(reward)."
             button = "Answer a question"
         case .needsTap:
             title = "\(app) is resting"
-            subtitle = "You read today. Unlock it for \(reward) from Phos." + hint
+            subtitle = "You read today. Unlock it for \(reward) from Phos."
             button = "Unlock"
         case .needsReading, .open, .inactive:
             switch snap.style {
             case .verse:
                 title = "\(app) can wait"
-                subtitle = "“\(snap.verseText)”\n\(snap.verseRef)" + hint
+                subtitle = "“\(snap.verseText)”\n\(snap.verseRef)"
             case .streak:
                 title = snap.streak > 0 ? "Day \(snap.streak + 1) is waiting" : "Start your streak"
-                subtitle = "Read \(snap.chapterTitle) to open \(app)." + hint
+                subtitle = "Read \(snap.chapterTitle) to open \(app)."
             case .quiet:
                 title = "Read first"
-                subtitle = "\(app) opens after today's chapter." + hint
+                subtitle = "\(app) opens after today's chapter."
             }
             button = "Read today's chapter"
         }
 
+        // Colors are picked for the current appearance directly. Dynamic colors and blur get washed out by the system.
         let dark = isDark
+        let background = dark ? rgb(0x15120E) : rgb(0xFBF9F4)
+        let ink = dark ? rgb(0xF4EEE3) : rgb(0x221D17)
+        let dim = dark ? rgb(0xB9AD9B) : rgb(0x8A7F71)
+        let gold = dark ? rgb(0xE0AE4B) : rgb(0xA87A22)
+        let onGold = dark ? rgb(0x1B1307) : rgb(0xFFFFFF)
         return ShieldConfiguration(
-            backgroundBlurStyle: dark ? .systemChromeMaterialDark : .systemChromeMaterialLight,
-            backgroundColor: dark ? rgb(0x15120E) : rgb(0xFBF9F4),
+            backgroundBlurStyle: nil,
+            backgroundColor: background,
             icon: UIImage(named: dark ? "ShieldIconDark" : "ShieldIcon"),
-            title: ShieldConfiguration.Label(text: title, color: dynamic(light: 0x221D17, dark: 0xF4EEE3)),
-            subtitle: ShieldConfiguration.Label(text: subtitle, color: dynamic(light: 0x6F665B, dark: 0xB9AD9B)),
-            primaryButtonLabel: ShieldConfiguration.Label(text: button, color: dynamic(light: 0xFFFFFF, dark: 0x1B1307)),
-            primaryButtonBackgroundColor: dynamic(light: 0xA87A22, dark: 0xE0AE4B),
-            secondaryButtonLabel: ShieldConfiguration.Label(text: "Not now", color: dynamic(light: 0x8A7F71, dark: 0x9C907F))
+            title: ShieldConfiguration.Label(text: title, color: ink),
+            subtitle: ShieldConfiguration.Label(text: subtitle, color: dim),
+            primaryButtonLabel: ShieldConfiguration.Label(text: button, color: onGold),
+            primaryButtonBackgroundColor: gold,
+            secondaryButtonLabel: nil
         )
     }
 }

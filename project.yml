@@ -5,8 +5,7 @@ options:
   createIntermediateGroups: true
 packages:
   KokoroSwift:
-    url: https://github.com/mlalma/kokoro-ios
-    exactVersion: 1.0.11
+    path: Packages/kokoro-ios
   MLXSwift:
     url: https://github.com/ml-explore/mlx-swift
     exactVersion: 0.30.2

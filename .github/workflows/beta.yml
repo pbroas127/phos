@@ -30,3 +30,9 @@ jobs:
           ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
           ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+      - name: List frameworks inside the app
+        if: always()
+        run: |
+          IPA=$(ls *.ipa 2>/dev/null | head -1)
+          [ -n "$IPA" ] && unzip -l "$IPA" | grep -E "Frameworks/|PlugIns/[^/]+/$|\.bundle/$" | head -40 || echo "no ipa"
+

@@ -39,6 +39,14 @@ jobs:
           APP=$(find build/Build/Products -name "Phos.app" -maxdepth 3 | head -1)
           xcrun simctl install "$UDID" "$APP"
           mkdir -p shots
+          # Launch normally first. A crash here fails the run before any screenshots.
+          xcrun simctl launch "$UDID" com.peterbroas.phos
+          sleep 10
+          xcrun simctl io "$UDID" screenshot "shots/0_launch.png"
+          if ls ~/Library/Logs/DiagnosticReports 2>/dev/null | grep -i phos; then
+            head -80 ~/Library/Logs/DiagnosticReports/*hos* || true
+            echo "Phos crashed on a normal launch"; exit 1
+          fi
           for SCREEN in shield today path calendar reading reflect speak quizChoice quizBlank quizOrder pass missed recall unlocked streak time journal settings focus recite library book locks lockEditor protection trophies readAloud listen; do
             xcrun simctl terminate "$UDID" com.peterbroas.phos 2>/dev/null || true
             sleep 1

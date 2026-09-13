@@ -121,6 +121,7 @@ final class AppModel {
     }
 
     func choose(planID: String, index: Int) {
+        rollover()
         let p = ReadingPlans.plan(planID)
         guard p.chapters.indices.contains(index) else { return }
         let ref = p.chapters[index]
@@ -136,6 +137,7 @@ final class AppModel {
     }
 
     func makeActive(_ planID: String) {
+        rollover()
         let p = ReadingPlans.plan(planID)
         settings.planID = p.id
         store.settings = settings
@@ -147,6 +149,7 @@ final class AppModel {
     }
 
     func setPosition(_ planID: String, _ index: Int) {
+        rollover()
         let p = ReadingPlans.plan(planID)
         settings.planPositions[p.id] = min(max(0, index), p.chapters.count)
         store.settings = settings
@@ -162,6 +165,7 @@ final class AppModel {
     func restart(_ planID: String) { setPosition(planID, 0) }
 
     func beginReading(_ ref: ChapterRef) {
+        rollover()
         if today.chapter != ref {
             today.chapter = ref
             if let i = plan.chapters.firstIndex(of: ref) {
@@ -202,6 +206,7 @@ final class AppModel {
     }
 
     func unlock(_ lock: LockSet, method: UnlockMethod) {
+        rollover()
         let now = Date()
         var day = today.day(lock.id)
         let end: Date
@@ -233,6 +238,7 @@ final class AppModel {
     }
 
     func lockNow(_ lock: LockSet) {
+        rollover()
         var day = today.day(lock.id)
         day.until = nil
         day.passUntil = nil
@@ -366,7 +372,14 @@ final class AppModel {
         store.snapshot = snap
     }
 
+    /// Moves to the new day if midnight passed while Phos was open, so an unlock is saved to the day it belongs to.
+    private func rollover(_ date: Date = Date()) {
+        let key = DayKey.key(for: date, morning: settings.schedule.morning)
+        if today.dayKey != key { today = store.today(now: date, morning: settings.schedule.morning) }
+    }
+
     private func saveToday() {
+        rollover()
         store.storedToday = today
         writeSnapshot()
         WidgetCenter.shared.reloadAllTimelines()
@@ -408,7 +421,8 @@ final class AppModel {
 
     /// Saved progress for this chapter today, if any.
     func draft(for ref: ChapterRef) -> ReadingDraft? {
-        guard let d = store.readingDraft, d.dayKey == today.dayKey, d.ref == ref else { return nil }
+        // A draft left open over midnight still resumes, unless it ended in a failed quiz on an earlier day.
+        guard let d = store.readingDraft, d.ref == ref, d.dayKey == today.dayKey || !d.failed else { return nil }
         return d
     }
 
@@ -426,6 +440,7 @@ final class AppModel {
     }
 
     func markAsked(_ items: [QuizItem]) {
+        rollover()
         let ids = items.map(\.id).filter { !today.askedQuestionIDs.contains($0) }
         today.askedQuestionIDs += ids
         saveToday()
@@ -433,6 +448,7 @@ final class AppModel {
 
     @discardableResult
     func registerMiss() -> Date {
+        rollover()
         today.missesToday += 1
         let next = Date().addingTimeInterval(QuizEngine.waitAfterMiss(missCount: today.missesToday))
         today.nextAttemptAt = next
@@ -443,6 +459,7 @@ final class AppModel {
     /// Saves the reading, moves the path, unlocks waiting locks, and returns where the path picks up.
     @discardableResult
     func completeReading(ref: ChapterRef, readMode: ReadMode, reflectMode: ReflectMode, reflection: String, score: Int, total: Int) -> PathLogic.After? {
+        rollover()
         var contextPlan: ReadingPlan?
         var contextIndex: Int?
         if let id = today.contextPlanID, let i = today.contextIndex, ReadingPlans.plan(id).chapters.indices.contains(i),

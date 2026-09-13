@@ -104,9 +104,9 @@ enum Blocker {
 
 /// Lock decisions shared by the app and the activity monitor extension.
 enum LockEngine {
-    static func sync(store: SharedStore = .shared, now: Date = Date()) {
+    static func sync(store: SharedStore = .shared, now: Date = Date(), today override: TodayState? = nil) {
         let settings = store.settings
-        let today = store.today(now: now, morning: settings.schedule.morning)
+        let today = override ?? store.today(now: now, morning: settings.schedule.morning)
         var deletionBlocked = false
         var lockedCount = 0
         for lock in settings.lockSets {
@@ -131,19 +131,21 @@ enum LockEngine {
     }
 
     static func handleIntervalStart(_ activity: DeviceActivityName, store: SharedStore = .shared, now: Date = Date()) {
+        // An unlock starting needs no work, and syncing here could reapply a shield from data older than the unlock.
+        guard activity.unlockLockID == nil else { return }
         sync(store: store, now: now)
     }
 
     static func handleIntervalEnd(_ activity: DeviceActivityName, store: SharedStore = .shared, now: Date = Date()) {
+        var today = store.today(now: now, morning: store.settings.schedule.morning)
         if let id = activity.unlockLockID {
-            var today = store.today(now: now)
+            // iOS can end the interval a little before the unlock time, so treat the last minute as over. Kept in memory only.
             var day = today.day(id)
             if let u = day.until, u <= now.addingTimeInterval(60) { day.until = nil }
             if let p = day.passUntil, p <= now.addingTimeInterval(60) { day.passUntil = nil }
             today.unlocks[id] = day
-            store.storedToday = today
         }
-        sync(store: store, now: now)
+        sync(store: store, now: now, today: today)
     }
 }
 

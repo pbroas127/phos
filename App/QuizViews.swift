@@ -231,29 +231,62 @@ struct OrderQuestion: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Put these in the order they appear").font(Theme.serif(25)).foregroundStyle(Theme.ink)
-            Text("Drag to reorder").font(.subheadline).foregroundStyle(Theme.dim)
-            List {
+            Text("Hold and drag a card, or use the arrows").font(.subheadline).foregroundStyle(Theme.dim)
+            // Cards size to their text, so long events wrap instead of getting cut off.
+            VStack(spacing: 10) {
                 ForEach(Array(order.enumerated()), id: \.element) { i, text in
-                    HStack(spacing: 12) {
-                        Text("\(i + 1)").font(Theme.serif(20)).foregroundStyle(rowColor(i, text)).frame(width: 22)
-                        Text(text).foregroundStyle(Theme.ink)
-                    }
-                    .padding(.vertical, 6)
-                    .listRowBackground(Theme.card)
+                    card(i, text)
                 }
-                .onMove { from, to in if !locked { order.move(fromOffsets: from, toOffset: to) } }
             }
-            .listStyle(.plain)
-            .scrollDisabled(true)
-            .environment(\.editMode, .constant(locked ? .inactive : .active))
-            .frame(height: CGFloat(order.count) * 64)
-            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-            .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).stroke(Theme.line))
             if !locked {
                 Button("Check order") { onAnswer(item.isCorrect(order: order)) }.buttonStyle(.phos)
             }
         }
         .onAppear { if order.isEmpty { order = item.choices } }
+    }
+
+    private func card(_ i: Int, _ text: String) -> some View {
+        HStack(spacing: 12) {
+            Text("\(i + 1)").font(Theme.serif(20)).foregroundStyle(rowColor(i, text)).frame(width: 22)
+            Text(text).foregroundStyle(Theme.ink).fixedSize(horizontal: false, vertical: true)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            if !locked {
+                VStack(spacing: 2) {
+                    arrow("chevron.up", disabled: i == 0) { move(i, to: i - 1) }
+                    arrow("chevron.down", disabled: i == order.count - 1) { move(i, to: i + 1) }
+                }
+            }
+        }
+        .padding(.vertical, 12)
+        .padding(.leading, 14)
+        .padding(.trailing, 8)
+        .background(Theme.card, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).stroke(Theme.line))
+        .contentShape(.dragPreview, RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .draggable(text)
+        .dropDestination(for: String.self) { dropped, _ in
+            guard !locked, let s = dropped.first, let from = order.firstIndex(of: s), let to = order.firstIndex(of: text), from != to else { return false }
+            move(from, to: to)
+            return true
+        }
+    }
+
+    private func arrow(_ symbol: String, disabled: Bool, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Image(systemName: symbol).font(.system(size: 15, weight: .semibold))
+                .frame(width: 36, height: 30)
+                .foregroundStyle(disabled ? Theme.line : Theme.gold)
+        }
+        .buttonStyle(.plain)
+        .disabled(disabled)
+    }
+
+    private func move(_ from: Int, to: Int) {
+        guard !locked, order.indices.contains(from), order.indices.contains(to) else { return }
+        withAnimation(.easeInOut(duration: 0.2)) {
+            let s = order.remove(at: from)
+            order.insert(s, at: to)
+        }
     }
 
     private func rowColor(_ i: Int, _ text: String) -> Color {

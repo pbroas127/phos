@@ -44,13 +44,13 @@ class ShieldConfigurationExtension: ShieldConfigurationDataSource {
         // Bedtime style locks always stay dark. Appearance cannot be read reliably inside a shield.
         let theme: ShieldTheme = state == .strict ? .dark : snap.theme
         let p = ShieldArt.palette(theme)
-        // All text lives in one image so the system cannot restyle or tint it.
+        // Title must be set, or iOS shows its own "Restricted" text. The light button keeps its label readable if iOS dims it.
         return ShieldConfiguration(
             backgroundBlurStyle: theme == .dark ? .dark : .extraLight,
             backgroundColor: p.background,
-            icon: ShieldArt.render(copy, theme: theme),
-            title: nil,
-            subtitle: nil,
+            icon: ShieldArt.emblem(theme),
+            title: ShieldConfiguration.Label(text: copy.title, color: p.title),
+            subtitle: ShieldConfiguration.Label(text: ShieldArt.subtitle(copy), color: p.body),
             primaryButtonLabel: ShieldConfiguration.Label(text: copy.button, color: p.buttonLabel),
             primaryButtonBackgroundColor: p.buttonFill,
             secondaryButtonLabel: nil

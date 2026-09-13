@@ -64,8 +64,7 @@ final class SharedStore {
     func today(now: Date = Date(), morning: TimeOfDay? = nil) -> TodayState {
         let key = DayKey.key(for: now, morning: morning ?? settings.schedule.morning)
         if let t = storedToday, t.dayKey == key { return t }
-        let fresh = TodayState(dayKey: key)
-        storedToday = fresh
-        return fresh
+        // Read only: extensions must never write today back, or a stale copy can erase an unlock the app just saved.
+        return TodayState(dayKey: key)
     }
 }

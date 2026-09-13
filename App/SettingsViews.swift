@@ -886,25 +886,28 @@ struct ShieldPreview: View {
         snap.style = style
         let copy = ShieldArt.copy(state: .needsReading, lock: nil, app: app, snap: snap)
         let p = ShieldArt.palette(theme)
-        // Same image the real shield uses, laid out like the system screen: art high, buttons at the bottom.
-        return GeometryReader { geo in
-            let s = large ? 1 : geo.size.width / 402
-            VStack(spacing: 0) {
-                Spacer(minLength: 0)
-                Image(uiImage: ShieldArt.render(copy, theme: theme)).resizable().scaledToFit()
-                    .frame(width: ShieldArt.width * s)
-                Spacer(minLength: 0)
-                VStack(spacing: 10 * s) {
-                    Text(copy.button).font(.system(size: 17 * s, weight: .semibold)).foregroundStyle(Color(p.buttonLabel))
-                        .frame(maxWidth: .infinity, minHeight: 54 * s)
-                        .background(Color(p.buttonFill), in: Capsule())
+        // Mirrors the system shield layout: emblem, title, and subtitle centered, the button at the bottom.
+        return VStack(spacing: 0) {
+            Spacer(minLength: large ? 120 : 24)
+            VStack(spacing: large ? 14 : 10) {
+                if let emblem = ShieldArt.emblem(theme) {
+                    Image(uiImage: emblem).resizable().scaledToFit().frame(height: large ? 80 : 56)
                 }
-                .padding(.horizontal, 24 * s)
-                .padding(.bottom, 40 * s)
+                Text(copy.title).font(.system(size: large ? 30 : 22, weight: .bold))
+                    .foregroundStyle(Color(p.title)).multilineTextAlignment(.center)
+                Text(ShieldArt.subtitle(copy)).font(.system(size: large ? 20 : 15))
+                    .foregroundStyle(Color(p.body)).multilineTextAlignment(.center)
             }
-            .frame(width: geo.size.width, height: geo.size.height)
+            .padding(.horizontal, large ? 28 : 20)
+            Spacer(minLength: large ? 120 : 24)
+            Text(copy.button).font(.system(size: large ? 19 : 16, weight: .semibold)).foregroundStyle(Color(p.buttonLabel))
+                .frame(maxWidth: .infinity, minHeight: large ? 56 : 48)
+                .background(Color(p.buttonFill), in: Capsule())
+                .padding(.horizontal, large ? 24 : 16)
+                .padding(.bottom, large ? 40 : 18)
         }
-        .frame(height: large ? nil : 560)
+        .frame(maxWidth: .infinity)
+        .frame(height: large ? nil : 420)
         .background(Color(p.background), in: RoundedRectangle(cornerRadius: large ? 0 : 28, style: .continuous))
     }
 }

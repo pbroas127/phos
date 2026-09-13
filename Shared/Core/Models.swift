@@ -37,7 +37,7 @@ struct TimeOfDay: Codable, Hashable {
     }
 }
 
-/// A reading day starts at the morning lock time, so 1 AM still belongs to yesterday.
+/// A reading day starts at the day start time (midnight by default).
 enum DayKey {
     private static var utc: Calendar {
         var c = Calendar(identifier: .gregorian)
@@ -71,233 +71,203 @@ enum DayKey {
     }
 }
 
-// MARK: - Rules
-
-struct Rules: Codable, Equatable {
-    var wordsToType: Int = 60
-    var secondsOfTalking: Int = 45
-    var minimumReadingMinutes: Int = 5
-    var questionsPerCheck: Int = 5
-    var correctToPass: Int = 3
-    var unlockMinutes: Int = 30
-    var middayQuestions: Int = 1
-    var emergencyPasses: Int = 3
-
-    static let restOfDay = 1440
-    static let unlockChoices = [5, 10, 15, 20, 30, 45, 60, 90, 120, 180, 240, restOfDay]
+struct Schedule: Codable, Equatable {
+    /// When a new reading day begins.
+    var morning = TimeOfDay(hour: 0, minute: 0)
 
     init() {}
 
     init(from decoder: Decoder) throws {
         let c = try decoder.container(keyedBy: CodingKeys.self)
-        let d = Rules()
-        wordsToType = (try? c.decode(Int.self, forKey: .wordsToType)) ?? d.wordsToType
-        secondsOfTalking = (try? c.decode(Int.self, forKey: .secondsOfTalking)) ?? d.secondsOfTalking
-        minimumReadingMinutes = (try? c.decode(Int.self, forKey: .minimumReadingMinutes)) ?? d.minimumReadingMinutes
-        questionsPerCheck = (try? c.decode(Int.self, forKey: .questionsPerCheck)) ?? d.questionsPerCheck
-        correctToPass = (try? c.decode(Int.self, forKey: .correctToPass)) ?? d.correctToPass
-        unlockMinutes = (try? c.decode(Int.self, forKey: .unlockMinutes)) ?? d.unlockMinutes
-        middayQuestions = (try? c.decode(Int.self, forKey: .middayQuestions)) ?? d.middayQuestions
-        emergencyPasses = (try? c.decode(Int.self, forKey: .emergencyPasses)) ?? d.emergencyPasses
+        morning = (try? c.decode(TimeOfDay.self, forKey: .morning)) ?? TimeOfDay(hour: 0, minute: 0)
+    }
+}
+
+// MARK: - Reading check
+
+/// What a reading must include before it unlocks anything.
+struct ReadingCheck: Codable, Hashable {
+    var words = 60
+    var seconds = 45
+    var minutes = 5
+    var questions = 5
+    var pass = 3
+
+    init() {}
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        let d = ReadingCheck()
+        words = (try? c.decode(Int.self, forKey: .words)) ?? d.words
+        seconds = (try? c.decode(Int.self, forKey: .seconds)) ?? d.seconds
+        minutes = (try? c.decode(Int.self, forKey: .minutes)) ?? d.minutes
+        questions = (try? c.decode(Int.self, forKey: .questions)) ?? d.questions
+        pass = (try? c.decode(Int.self, forKey: .pass)) ?? d.pass
     }
 
-    func normalized() -> Rules {
+    func normalized() -> ReadingCheck {
         var r = self
-        for f in RuleField.allCases where f != .unlock {
-            f.set(&r, min(max(f.get(r), f.range.lowerBound), f.range.upperBound))
-        }
-        r.correctToPass = min(max(r.correctToPass, 1), r.questionsPerCheck)
-        r.unlockMinutes = Rules.unlockChoices.min(by: { abs($0 - r.unlockMinutes) < abs($1 - r.unlockMinutes) }) ?? 30
+        r.words = min(max(r.words, 20), 300)
+        r.seconds = min(max(r.seconds, 15), 300)
+        r.minutes = min(max(r.minutes, 0), 30)
+        r.questions = min(max(r.questions, 1), 10)
+        r.pass = min(max(r.pass, 1), r.questions)
         return r
     }
 
-    static func unlockLabel(_ minutes: Int) -> String {
-        if minutes >= restOfDay { return "Rest of the day" }
-        if minutes < 60 { return "\(minutes) min" }
-        let h = minutes / 60, m = minutes % 60
-        return m == 0 ? (h == 1 ? "1 hour" : "\(h) hours") : "\(h) hr \(m) min"
+    /// When several locks are waiting on the same reading, the strictest request wins.
+    static func strictest(_ checks: [ReadingCheck]) -> ReadingCheck {
+        guard var r = checks.first else { return ReadingCheck() }
+        for c in checks.dropFirst() {
+            r.words = max(r.words, c.words)
+            r.seconds = max(r.seconds, c.seconds)
+            r.minutes = max(r.minutes, c.minutes)
+            r.questions = max(r.questions, c.questions)
+            r.pass = max(r.pass, c.pass)
+        }
+        return r.normalized()
     }
 }
 
-enum RuleField: String, CaseIterable, Identifiable {
-    case words, seconds, reading, questions, pass, unlock, midday, passes
+// MARK: - Locks
 
+enum UnlockPolicy: String, Codable, CaseIterable, Identifiable {
+    case readOnce, questionEach, limited, strict
     var id: String { rawValue }
 
     var title: String {
         switch self {
-        case .words: return "Words to type"
-        case .seconds: return "Seconds of talking"
-        case .reading: return "Minimum reading time"
-        case .questions: return "Questions per check"
-        case .pass: return "Correct to pass"
-        case .unlock: return "Apps open for"
-        case .midday: return "Midday questions"
-        case .passes: return "Emergency passes"
+        case .readOnce: return "Read once, then unlock freely"
+        case .questionEach: return "A question every unlock"
+        case .limited: return "Limited unlocks a day"
+        case .strict: return "No unlocks"
         }
     }
 
     var detail: String {
         switch self {
-        case .words: return "How much you write when you type your reflection."
-        case .seconds: return "Only time you are actually talking counts."
-        case .reading: return "The done button waits this long."
-        case .questions: return "Asked after each reading."
-        case .pass: return "Right answers needed to unlock."
-        case .unlock: return "After this, apps lock again until you answer one question."
-        case .midday: return "Each one locks your apps until you answer it."
-        case .passes: return "Skips per month for real emergencies."
-        }
-    }
-
-    var range: ClosedRange<Int> {
-        switch self {
-        case .words: return 20...300
-        case .seconds: return 15...300
-        case .reading: return 0...30
-        case .questions: return 1...10
-        case .pass: return 1...10
-        case .unlock: return 5...Rules.restOfDay
-        case .midday: return 0...6
-        case .passes: return 0...10
-        }
-    }
-
-    var step: Int {
-        switch self {
-        case .words, .seconds: return 5
-        default: return 1
-        }
-    }
-
-    /// True when a bigger number makes the app harder to get past.
-    var higherIsStricter: Bool {
-        switch self {
-        case .unlock, .passes: return false
-        default: return true
-        }
-    }
-
-    func isStricter(_ a: Int, than b: Int) -> Bool {
-        higherIsStricter ? a > b : a < b
-    }
-
-    func get(_ r: Rules) -> Int {
-        switch self {
-        case .words: return r.wordsToType
-        case .seconds: return r.secondsOfTalking
-        case .reading: return r.minimumReadingMinutes
-        case .questions: return r.questionsPerCheck
-        case .pass: return r.correctToPass
-        case .unlock: return r.unlockMinutes
-        case .midday: return r.middayQuestions
-        case .passes: return r.emergencyPasses
-        }
-    }
-
-    func set(_ r: inout Rules, _ v: Int) {
-        switch self {
-        case .words: r.wordsToType = v
-        case .seconds: r.secondsOfTalking = v
-        case .reading: r.minimumReadingMinutes = v
-        case .questions: r.questionsPerCheck = v
-        case .pass: r.correctToPass = v
-        case .unlock: r.unlockMinutes = v
-        case .midday: r.middayQuestions = v
-        case .passes: r.emergencyPasses = v
-        }
-    }
-
-    func valueLabel(_ v: Int) -> String {
-        switch self {
-        case .words: return "\(v) words"
-        case .seconds: return v >= 60 && v % 60 == 0 ? "\(v / 60) min" : "\(v) sec"
-        case .reading: return v == 0 ? "Off" : "\(v) min"
-        case .questions: return "\(v)"
-        case .pass: return "\(v)"
-        case .unlock: return Rules.unlockLabel(v)
-        case .midday: return v == 0 ? "Off" : "\(v) a day"
-        case .passes: return "\(v) a month"
-        }
-    }
-}
-
-// MARK: - Schedule
-
-struct Schedule: Codable, Equatable {
-    var morning = TimeOfDay(hour: 5, minute: 0)
-    var midday = TimeOfDay(hour: 12, minute: 0)
-    /// Older builds had a single evening lock. It becomes a scheduled lock on first launch.
-    var eveningOn = false
-    var evening = TimeOfDay(hour: 21, minute: 30)
-
-    init() {}
-
-    init(from decoder: Decoder) throws {
-        let c = try decoder.container(keyedBy: CodingKeys.self)
-        let d = Schedule()
-        morning = (try? c.decode(TimeOfDay.self, forKey: .morning)) ?? d.morning
-        midday = (try? c.decode(TimeOfDay.self, forKey: .midday)) ?? d.midday
-        eveningOn = (try? c.decode(Bool.self, forKey: .eveningOn)) ?? d.eveningOn
-        evening = (try? c.decode(TimeOfDay.self, forKey: .evening)) ?? d.evening
-    }
-
-    /// Midday questions start at the midday time, three hours apart (two when there are many), before 11 PM.
-    func middayTimes(count: Int) -> [TimeOfDay] {
-        guard count > 0 else { return [] }
-        let spacing = count <= 3 ? 180 : 120
-        return (0..<count).compactMap { i in
-            let m = midday.minutesFromMidnight + i * spacing
-            return m <= 23 * 60 ? TimeOfDay(minutes: m) : nil
-        }
-    }
-}
-
-// MARK: - Locks and protection
-
-enum LockMode: String, Codable, CaseIterable, Identifiable {
-    case untilRead, allDay, scheduled
-    var id: String { rawValue }
-
-    var title: String {
-        switch self {
-        case .untilRead: return "Until I read"
-        case .allDay: return "All day, earn time"
-        case .scheduled: return "Scheduled hours"
-        }
-    }
-
-    var detail: String {
-        switch self {
-        case .untilRead: return "Locked each morning. Today's reading opens these apps for the rest of the day."
-        case .allDay: return "Locked all day. Reading earns open time, and one question earns more later."
-        case .scheduled: return "Locked only during the hours you pick, like school or bedtime."
+        case .readOnce: return "After today's reading, open these apps any time with one tap."
+        case .questionEach: return "After today's reading, each unlock takes one question about it."
+        case .limited: return "After today's reading, only a set number of unlocks."
+        case .strict: return "Nothing opens these apps while the lock is active except an emergency pass."
         }
     }
 
     var symbol: String {
         switch self {
-        case .untilRead: return "book.closed"
-        case .allDay: return "sun.max"
-        case .scheduled: return "clock"
+        case .readOnce: return "book.closed"
+        case .questionEach: return "questionmark.bubble"
+        case .limited: return "number"
+        case .strict: return "lock.fill"
         }
     }
 }
 
-struct LockSet: Codable, Identifiable, Equatable {
+enum ProtectionKind: String, Codable, CaseIterable, Identifiable {
+    case none, passcode, countdown, delay, commitment, afterReading
+    var id: String { rawValue }
+
+    var title: String {
+        switch self {
+        case .none: return "No protection"
+        case .passcode: return "Passcode"
+        case .countdown: return "Waiting timer"
+        case .delay: return "Delayed changes"
+        case .commitment: return "Commitment"
+        case .afterReading: return "Only after reading"
+        }
+    }
+
+    var detail: String {
+        switch self {
+        case .none: return "Change settings any time."
+        case .passcode: return "Enter a passcode to change settings. Let a friend keep it for real accountability."
+        case .countdown: return "Wait on a countdown screen before settings open."
+        case .delay: return "Changes are saved but only start after a wait."
+        case .commitment: return "Settings can't change at all until a date you pick."
+        case .afterReading: return "Settings only open after today's reading is done."
+        }
+    }
+
+    var symbol: String {
+        switch self {
+        case .none: return "lock.open"
+        case .passcode: return "key"
+        case .countdown: return "timer"
+        case .delay: return "clock.arrow.circlepath"
+        case .commitment: return "calendar.badge.clock"
+        case .afterReading: return "book"
+        }
+    }
+}
+
+struct LockProtection: Codable, Hashable {
+    var kind: ProtectionKind = .none
+    var passcodeHash: String?
+    var passcodeSalt: String?
+    var passcodeResetAt: Date?
+    var countdownMinutes = 5
+    var delayHours = 24
+    var commitUntil: Date?
+    /// While this lock is on, iOS blocks deleting apps.
+    var blockDeletion = false
+
+    init() {}
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        let d = LockProtection()
+        kind = (try? c.decode(ProtectionKind.self, forKey: .kind)) ?? d.kind
+        passcodeHash = try? c.decode(String.self, forKey: .passcodeHash)
+        passcodeSalt = try? c.decode(String.self, forKey: .passcodeSalt)
+        passcodeResetAt = try? c.decode(Date.self, forKey: .passcodeResetAt)
+        countdownMinutes = (try? c.decode(Int.self, forKey: .countdownMinutes)) ?? d.countdownMinutes
+        delayHours = (try? c.decode(Int.self, forKey: .delayHours)) ?? d.delayHours
+        commitUntil = try? c.decode(Date.self, forKey: .commitUntil)
+        blockDeletion = (try? c.decode(Bool.self, forKey: .blockDeletion)) ?? d.blockDeletion
+    }
+
+    var hasPasscode: Bool { passcodeHash != nil }
+
+    var summary: String {
+        switch kind {
+        case .none: return "No protection"
+        case .passcode: return "Passcode"
+        case .countdown: return "\(countdownMinutes) min timer"
+        case .delay: return "\(delayHours) hour delay"
+        case .commitment:
+            guard let u = commitUntil else { return "Commitment" }
+            return "Committed until \(u.formatted(.dateTime.month(.abbreviated).day()))"
+        case .afterReading: return "After reading"
+        }
+    }
+}
+
+struct LockSet: Codable, Identifiable, Hashable {
+    static let untilEnd = -1
+    static let rewardChoices = [30, 60, 300, 600, 900, 1800, 3600, 7200, untilEnd]
+
     var id = UUID().uuidString
-    var name = "Distractions"
+    var name = ""
     var enabled = true
-    var mode: LockMode = .allDay
-    var start = TimeOfDay(hour: 21, minute: 0)
-    var end = TimeOfDay(hour: 7, minute: 0)
-    /// Calendar weekday numbers, 1 is Sunday.
-    var days: Set<Int> = Set(1...7)
-    /// Scheduled hours only. When false, nothing but an emergency pass opens these apps during the window.
-    var allowEarning = true
     /// Encoded FamilyActivitySelection.
     var selection: Data?
     var appCount = 0
+    /// Calendar weekday numbers, 1 is Sunday.
+    var days: Set<Int> = Set(1...7)
+    var allDay = true
+    var start = TimeOfDay(hour: 21, minute: 0)
+    var end = TimeOfDay(hour: 7, minute: 0)
+    var policy: UnlockPolicy = .questionEach
+    var limit = 5
+    var limitNeedsQuestion = false
+    /// Seconds each unlock opens the apps for, or untilEnd for the rest of the active time.
+    var rewardSeconds = 1800
+    var otherWays = true
+    var reading = ReadingCheck()
+    var emergencyPasses = 3
+    var protection = LockProtection()
+    var createdAt = Date()
 
     init() {}
 
@@ -305,80 +275,92 @@ struct LockSet: Codable, Identifiable, Equatable {
         let c = try decoder.container(keyedBy: CodingKeys.self)
         let d = LockSet()
         id = (try? c.decode(String.self, forKey: .id)) ?? d.id
-        name = (try? c.decode(String.self, forKey: .name)) ?? d.name
+        name = (try? c.decode(String.self, forKey: .name)) ?? "Lock"
         enabled = (try? c.decode(Bool.self, forKey: .enabled)) ?? d.enabled
-        mode = (try? c.decode(LockMode.self, forKey: .mode)) ?? d.mode
-        start = (try? c.decode(TimeOfDay.self, forKey: .start)) ?? d.start
-        end = (try? c.decode(TimeOfDay.self, forKey: .end)) ?? d.end
-        days = (try? c.decode(Set<Int>.self, forKey: .days)) ?? d.days
-        allowEarning = (try? c.decode(Bool.self, forKey: .allowEarning)) ?? d.allowEarning
         selection = try? c.decode(Data.self, forKey: .selection)
         appCount = (try? c.decode(Int.self, forKey: .appCount)) ?? d.appCount
+        days = (try? c.decode(Set<Int>.self, forKey: .days)) ?? d.days
+        start = (try? c.decode(TimeOfDay.self, forKey: .start)) ?? d.start
+        end = (try? c.decode(TimeOfDay.self, forKey: .end)) ?? d.end
+        limit = (try? c.decode(Int.self, forKey: .limit)) ?? d.limit
+        limitNeedsQuestion = (try? c.decode(Bool.self, forKey: .limitNeedsQuestion)) ?? d.limitNeedsQuestion
+        rewardSeconds = (try? c.decode(Int.self, forKey: .rewardSeconds)) ?? d.rewardSeconds
+        otherWays = (try? c.decode(Bool.self, forKey: .otherWays)) ?? d.otherWays
+        reading = (try? c.decode(ReadingCheck.self, forKey: .reading)) ?? d.reading
+        emergencyPasses = (try? c.decode(Int.self, forKey: .emergencyPasses)) ?? d.emergencyPasses
+        protection = (try? c.decode(LockProtection.self, forKey: .protection)) ?? d.protection
+        createdAt = (try? c.decode(Date.self, forKey: .createdAt)) ?? d.createdAt
+
+        // Build 2 stored a mode instead of hours and a policy.
+        let legacy = try decoder.container(keyedBy: LegacyKeys.self)
+        let legacyMode = try? legacy.decode(String.self, forKey: .mode)
+        if let p = try? c.decode(UnlockPolicy.self, forKey: .policy) {
+            policy = p
+            allDay = (try? c.decode(Bool.self, forKey: .allDay)) ?? d.allDay
+        } else {
+            switch legacyMode {
+            case "untilRead":
+                policy = .readOnce
+                rewardSeconds = LockSet.untilEnd
+                allDay = true
+            case "scheduled":
+                allDay = false
+                policy = ((try? legacy.decode(Bool.self, forKey: .allowEarning)) ?? true) ? .questionEach : .strict
+            default:
+                policy = .questionEach
+                allDay = true
+            }
+        }
+    }
+
+    private enum LegacyKeys: String, CodingKey { case mode, allowEarning }
+
+    static func rewardLabel(_ seconds: Int) -> String {
+        if seconds == untilEnd { return "Until the lock ends" }
+        if seconds < 60 { return "\(seconds) sec" }
+        let m = seconds / 60
+        if m < 60 { return "\(m) min" }
+        return m % 60 == 0 ? (m == 60 ? "1 hour" : "\(m / 60) hours") : "\(m / 60) hr \(m % 60) min"
+    }
+
+    var hoursLabel: String { allDay ? "All day" : "\(start.label) to \(end.label)" }
+
+    var daysLabel: String {
+        if days.count == 7 { return "Every day" }
+        if days == [2, 3, 4, 5, 6] { return "Weekdays" }
+        if days == [1, 7] { return "Weekends" }
+        let symbols = Calendar.current.shortWeekdaySymbols
+        return days.sorted().map { symbols[$0 - 1] }.joined(separator: ", ")
+    }
+
+    var policyLabel: String {
+        switch policy {
+        case .readOnce: return "Read once"
+        case .questionEach: return "Question each unlock"
+        case .limited: return "\(limit) unlocks a day"
+        case .strict: return "No unlocks"
+        }
     }
 
     var summary: String {
         let apps = appCount == 1 ? "1 app" : "\(appCount) apps"
-        switch mode {
-        case .untilRead: return "Until you read · \(apps)"
-        case .allDay: return "All day · \(apps)"
-        case .scheduled: return "\(start.label) to \(end.label)\(allowEarning ? "" : " · strict") · \(apps)"
-        }
+        return "\(hoursLabel) · \(policyLabel) · \(apps)"
     }
 
     /// Length of the scheduled window in minutes. Equal start and end means all 24 hours.
     var windowMinutes: Int {
+        if allDay { return 1440 }
         let s = start.minutesFromMidnight, e = end.minutesFromMidnight
         if s == e { return 1440 }
         return e > s ? e - s : 1440 - s + e
     }
 }
 
-struct Protection: Codable, Equatable {
-    /// Easier changes wait this many hours. Zero applies them right away.
-    var delayHours = 24
-    /// Minutes to wait on a countdown screen before an easier change saves.
-    var cooldownMinutes = 0
-    var passcodeHash: String?
-    var passcodeSalt: String?
-    /// When forgotten, the passcode clears at this time.
-    var passcodeResetAt: Date?
-    /// Settings can only get easier after today's reading is done.
-    var onlyAfterReading = false
-    /// No easier changes at all until this date.
-    var commitUntil: Date?
-    /// While a lock is on, iOS blocks deleting apps.
-    var preventAppRemoval = false
-
-    init() {}
-
-    init(from decoder: Decoder) throws {
-        let c = try decoder.container(keyedBy: CodingKeys.self)
-        let d = Protection()
-        delayHours = (try? c.decode(Int.self, forKey: .delayHours)) ?? d.delayHours
-        cooldownMinutes = (try? c.decode(Int.self, forKey: .cooldownMinutes)) ?? d.cooldownMinutes
-        passcodeHash = try? c.decode(String.self, forKey: .passcodeHash)
-        passcodeSalt = try? c.decode(String.self, forKey: .passcodeSalt)
-        passcodeResetAt = try? c.decode(Date.self, forKey: .passcodeResetAt)
-        onlyAfterReading = (try? c.decode(Bool.self, forKey: .onlyAfterReading)) ?? d.onlyAfterReading
-        commitUntil = try? c.decode(Date.self, forKey: .commitUntil)
-        preventAppRemoval = (try? c.decode(Bool.self, forKey: .preventAppRemoval)) ?? d.preventAppRemoval
-    }
-
-    var hasPasscode: Bool { passcodeHash != nil }
-
-    func committed(at now: Date) -> Bool { (commitUntil ?? .distantPast) > now }
-}
-
-/// Everything that decides how hard Phos is to get past.
-struct LockConfig: Codable, Equatable {
-    var rules: Rules
-    var schedule: Schedule
-    var lockSets: [LockSet]
-    var protection: Protection
-}
-
-struct PendingConfig: Codable, Equatable {
-    var config: LockConfig
+/// A saved change to a lock that starts later because the lock uses delayed changes.
+struct PendingLock: Codable, Equatable, Identifiable {
+    var id: String { lock.id }
+    var lock: LockSet
+    var deleted: Bool
     var effectiveAt: Date
 }
 
@@ -435,7 +417,7 @@ enum ReflectMode: String, Codable, CaseIterable, Identifiable {
 }
 
 enum LockReason: String, Codable {
-    case none, reading, recall, midday, evening
+    case none, reading, recall, tap, usedUp, strict
 }
 
 struct ChapterRef: Codable, Hashable, Identifiable {
@@ -459,22 +441,33 @@ struct DayRecord: Codable, Identifiable, Hashable {
     var fromPlan: Bool
 }
 
+/// One lock's unlock state for the current day.
+struct LockDay: Codable, Equatable {
+    var until: Date?
+    var passUntil: Date?
+    var count = 0
+
+    init() {}
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        until = try? c.decode(Date.self, forKey: .until)
+        passUntil = try? c.decode(Date.self, forKey: .passUntil)
+        count = (try? c.decode(Int.self, forKey: .count)) ?? 0
+    }
+}
+
 struct TodayState: Codable, Equatable {
     var dayKey: String
     var readingDone = false
     var chapter: ChapterRef?
-    /// The path and position the chosen chapter came from.
     var contextPlanID: String?
     var contextIndex: Int?
     var readingStartedAt: Date?
     var missesToday = 0
     var nextAttemptAt: Date?
     var askedQuestionIDs: [String] = []
-    var unlockedUntil: Date?
-    /// Emergency passes open even strict scheduled locks.
-    var passUntil: Date?
-    var middayPending = false
-    var eveningLocked = false
+    var unlocks: [String: LockDay] = [:]
     var recallCount = 0
 
     init(dayKey: String) {
@@ -492,44 +485,33 @@ struct TodayState: Codable, Equatable {
         missesToday = (try? c.decode(Int.self, forKey: .missesToday)) ?? 0
         nextAttemptAt = try? c.decode(Date.self, forKey: .nextAttemptAt)
         askedQuestionIDs = (try? c.decode([String].self, forKey: .askedQuestionIDs)) ?? []
-        unlockedUntil = try? c.decode(Date.self, forKey: .unlockedUntil)
-        passUntil = try? c.decode(Date.self, forKey: .passUntil)
-        middayPending = (try? c.decode(Bool.self, forKey: .middayPending)) ?? false
-        eveningLocked = (try? c.decode(Bool.self, forKey: .eveningLocked)) ?? false
+        unlocks = (try? c.decode([String: LockDay].self, forKey: .unlocks)) ?? [:]
         recallCount = (try? c.decode(Int.self, forKey: .recallCount)) ?? 0
     }
 
-    func isUnlocked(at now: Date) -> Bool {
-        guard let u = unlockedUntil else { return false }
-        return u > now
-    }
-
-    func passOpen(at now: Date) -> Bool {
-        guard let p = passUntil else { return false }
-        return p > now
-    }
+    func day(_ lockID: String) -> LockDay { unlocks[lockID] ?? LockDay() }
 }
 
 struct PassUse: Codable, Hashable, Identifiable {
     var id: Date { date }
     var date: Date
     var minutes: Int
+    var lockID: String?
 }
 
 struct AppSettings: Codable, Equatable {
     var onboarded = false
     var onboardedAt: Date?
-    var rules = Rules()
     var schedule = Schedule()
     var lockSets: [LockSet] = []
-    var protection = Protection()
-    var pendingConfig: PendingConfig?
+    var pendingLocks: [PendingLock] = []
     var shieldStyle: ShieldStyle = .verse
     var planID = "book.JHN"
     var planPositions: [String: Int] = [:]
     var passUses: [PassUse] = []
     var preferredRead: ReadMode = .paper
     var preferredReflect: ReflectMode = .typed
+    var schemaVersion = 3
 
     init() {}
 
@@ -538,35 +520,61 @@ struct AppSettings: Codable, Equatable {
         let d = AppSettings()
         onboarded = (try? c.decode(Bool.self, forKey: .onboarded)) ?? d.onboarded
         onboardedAt = try? c.decode(Date.self, forKey: .onboardedAt)
-        rules = (try? c.decode(Rules.self, forKey: .rules)) ?? d.rules
         schedule = (try? c.decode(Schedule.self, forKey: .schedule)) ?? d.schedule
         lockSets = (try? c.decode([LockSet].self, forKey: .lockSets)) ?? d.lockSets
-        protection = (try? c.decode(Protection.self, forKey: .protection)) ?? d.protection
-        pendingConfig = try? c.decode(PendingConfig.self, forKey: .pendingConfig)
+        pendingLocks = (try? c.decode([PendingLock].self, forKey: .pendingLocks)) ?? d.pendingLocks
         shieldStyle = (try? c.decode(ShieldStyle.self, forKey: .shieldStyle)) ?? d.shieldStyle
         planID = (try? c.decode(String.self, forKey: .planID)) ?? d.planID
         planPositions = (try? c.decode([String: Int].self, forKey: .planPositions)) ?? d.planPositions
         passUses = (try? c.decode([PassUse].self, forKey: .passUses)) ?? d.passUses
         preferredRead = (try? c.decode(ReadMode.self, forKey: .preferredRead)) ?? d.preferredRead
         preferredReflect = (try? c.decode(ReflectMode.self, forKey: .preferredReflect)) ?? d.preferredReflect
-    }
+        let version = (try? c.decode(Int.self, forKey: .schemaVersion)) ?? 1
+        schemaVersion = 3
 
-    var config: LockConfig {
-        get { LockConfig(rules: rules, schedule: schedule, lockSets: lockSets, protection: protection) }
-        set {
-            rules = newValue.rules
-            schedule = newValue.schedule
-            lockSets = newValue.lockSets
-            protection = newValue.protection
+        // Older builds kept reading rules globally and started days at a set morning time.
+        if version < 3 {
+            schedule.morning = TimeOfDay(hour: 0, minute: 0)
+            let legacy = try decoder.container(keyedBy: LegacyKeys.self)
+            if let rules = try? legacy.decode(LegacyRules.self, forKey: .rules) {
+                for i in lockSets.indices {
+                    lockSets[i].reading = ReadingCheck(words: rules.wordsToType, seconds: rules.secondsOfTalking,
+                                                       minutes: rules.minimumReadingMinutes, questions: rules.questionsPerCheck,
+                                                       pass: rules.correctToPass).normalized()
+                    lockSets[i].emergencyPasses = rules.emergencyPasses
+                    if lockSets[i].rewardSeconds != LockSet.untilEnd {
+                        lockSets[i].rewardSeconds = rules.unlockMinutes >= 1440 ? LockSet.untilEnd : rules.unlockMinutes * 60
+                    }
+                }
+            }
         }
     }
 
-    /// Changes apply instantly until this moment, so people can find settings that fit.
-    var setupWindowEnds: Date? { onboardedAt?.addingTimeInterval(86_400) }
+    private enum LegacyKeys: String, CodingKey { case rules }
 
-    func passesLeft(now: Date, calendar: Calendar = .current) -> Int {
-        let used = passUses.filter { calendar.isDate($0.date, equalTo: now, toGranularity: .month) }.count
-        return max(0, rules.emergencyPasses - used)
+    private struct LegacyRules: Decodable {
+        var wordsToType = 60
+        var secondsOfTalking = 45
+        var minimumReadingMinutes = 5
+        var questionsPerCheck = 5
+        var correctToPass = 3
+        var unlockMinutes = 30
+        var emergencyPasses = 3
+    }
+
+    func passesLeft(_ lock: LockSet, now: Date, calendar: Calendar = .current) -> Int {
+        let used = passUses.filter { $0.lockID == lock.id && calendar.isDate($0.date, equalTo: now, toGranularity: .month) }.count
+        return max(0, lock.emergencyPasses - used)
+    }
+}
+
+extension ReadingCheck {
+    init(words: Int, seconds: Int, minutes: Int, questions: Int, pass: Int) {
+        self.words = words
+        self.seconds = seconds
+        self.minutes = minutes
+        self.questions = questions
+        self.pass = pass
     }
 }
 
@@ -583,8 +591,6 @@ struct SharedSnapshot: Codable, Equatable {
     var planName = ""
     var planDay = 0
     var planLength = 0
-    var unlockedUntil: Date?
-    var strictUntil: Date?
 
     init() {}
 
@@ -602,7 +608,5 @@ struct SharedSnapshot: Codable, Equatable {
         planName = (try? c.decode(String.self, forKey: .planName)) ?? d.planName
         planDay = (try? c.decode(Int.self, forKey: .planDay)) ?? d.planDay
         planLength = (try? c.decode(Int.self, forKey: .planLength)) ?? d.planLength
-        unlockedUntil = try? c.decode(Date.self, forKey: .unlockedUntil)
-        strictUntil = try? c.decode(Date.self, forKey: .strictUntil)
     }
 }

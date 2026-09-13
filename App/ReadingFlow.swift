@@ -49,8 +49,8 @@ struct ReadingFlow: View {
                     }
                     .id(items.map(\.id).joined())
                 case .result:
-                    if score >= min(model.settings.rules.correctToPass, max(items.count, 1)) || items.isEmpty {
-                        PickTimeView(title: "\(score) of \(items.count) correct", subtitle: "Your apps open for", after: model.lastAfter) {
+                    if score >= min(model.readingCheck.pass, max(items.count, 1)) || items.isEmpty {
+                        UnlockSummary(title: "\(score) of \(items.count) correct", after: model.lastAfter) {
                             dismiss()
                         }
                     } else {
@@ -97,10 +97,10 @@ struct ReadingFlow: View {
 
     private func startQuiz() {
         let bank = QuestionBank.shared.questions(for: ref)?.questions ?? []
-        items = QuizEngine.pick(from: bank, count: model.settings.rules.questionsPerCheck, avoiding: Set(model.today.askedQuestionIDs))
+        items = QuizEngine.pick(from: bank, count: model.readingCheck.questions, avoiding: Set(model.today.askedQuestionIDs))
         model.markAsked(items)
         if items.isEmpty {
-            score = model.settings.rules.correctToPass
+            score = model.readingCheck.pass
             finishQuiz()
         } else {
             go(.quiz)
@@ -108,7 +108,7 @@ struct ReadingFlow: View {
     }
 
     private func finishQuiz() {
-        let needed = min(model.settings.rules.correctToPass, max(items.count, 1))
+        let needed = min(model.readingCheck.pass, max(items.count, 1))
         if score >= needed || items.isEmpty {
             model.completeReading(ref: ref, readMode: readMode, reflectMode: reflectMode, reflection: reflection,
                                   score: score, total: items.count)
@@ -171,7 +171,7 @@ struct ReadStep: View {
 
     var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { context in
-            let minimum = TimeInterval(model.settings.rules.minimumReadingMinutes * 60)
+            let minimum = TimeInterval(model.readingCheck.minutes * 60)
             let started = model.today.readingStartedAt ?? context.date
             let elapsed = context.date.timeIntervalSince(started)
             let remaining = model.demo ? 0 : max(0, minimum - elapsed)

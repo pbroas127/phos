@@ -24,30 +24,43 @@ enum DemoData {
         settings.onboardedAt = Date().addingTimeInterval(-30 * 86_400)
         settings.planID = "book.JHN"
         settings.planPositions = ["book.JHN": 2, "book.PRO": 31, "book.MRK": 5, "gospels": 12]
+
         var social = LockSet()
+        social.id = "social"
         social.name = "Social media"
-        social.mode = .untilRead
         social.appCount = 4
+        social.policy = .questionEach
+        social.rewardSeconds = 1800
+        let code = Passcode.make("2468")
+        social.protection.kind = .passcode
+        social.protection.passcodeHash = code.hash
+        social.protection.passcodeSalt = code.salt
+        social.protection.blockDeletion = true
+
         var games = LockSet()
+        games.id = "games"
         games.name = "Games and video"
-        games.mode = .allDay
         games.appCount = 3
         games.days = [2, 3, 4, 5, 6]
+        games.policy = .limited
+        games.limit = 3
+        games.rewardSeconds = 900
+        games.protection.kind = .countdown
+        games.protection.countdownMinutes = 5
+
         var night = LockSet()
+        night.id = "bedtime"
         night.name = "Bedtime"
-        night.mode = .scheduled
+        night.appCount = 7
+        night.allDay = false
         night.start = TimeOfDay(hour: 22, minute: 0)
         night.end = TimeOfDay(hour: 6, minute: 0)
-        night.allowEarning = false
-        night.appCount = 7
+        night.policy = .strict
+        night.protection.kind = .commitment
+        night.protection.commitUntil = Date().addingTimeInterval(21 * 86_400)
+
         settings.lockSets = [social, games, night]
-        settings.protection.delayHours = 24
-        settings.protection.cooldownMinutes = 5
-        let code = Passcode.make("2468")
-        settings.protection.passcodeHash = code.hash
-        settings.protection.passcodeSalt = code.salt
-        settings.passUses = [PassUse(date: Date().addingTimeInterval(-8 * 86_400), minutes: 20)]
-        settings.rules.middayQuestions = 1
+        settings.passUses = [PassUse(date: Date().addingTimeInterval(-8 * 86_400), minutes: 15, lockID: "social")]
         store.settings = settings
 
         let todayKey = DayKey.key(for: Date(), morning: settings.schedule.morning)
@@ -70,11 +83,19 @@ enum DemoData {
             today.chapter = ChapterRef(book: "JHN", chapter: 3)
             store.records = records + [DayRecord(dayKey: todayKey, ref: ChapterRef(book: "JHN", chapter: 3), title: "John 3",
                                                  readMode: .paper, reflectMode: .spoken, reflection: reflection, score: 5, total: 5,
-                                                 completedAt: Calendar.current.date(bySettingHour: 7, minute: 48, second: 0, of: Date()) ?? Date(), readingSeconds: 390, fromPlan: true)]
-            settings.planPositions = ["book.JHN": 3, "book.PRO": 31, "book.MRK": 5, "gospels": 12]
+                                                 completedAt: Calendar.current.date(bySettingHour: 7, minute: 48, second: 0, of: Date()) ?? Date(),
+                                                 readingSeconds: 390, fromPlan: true)]
+            settings.planPositions["book.JHN"] = 3
             store.settings = settings
-            if DemoScreen.requested == .recall { today.middayPending = true }
-            if DemoScreen.requested == .unlocked { today.unlockedUntil = Date().addingTimeInterval(22 * 60) }
+            var gamesDay = LockDay()
+            gamesDay.count = 1
+            today.unlocks["games"] = gamesDay
+            if DemoScreen.requested == .unlocked {
+                var socialDay = LockDay()
+                socialDay.until = Date().addingTimeInterval(22 * 60)
+                socialDay.count = 1
+                today.unlocks["social"] = socialDay
+            }
         }
         store.storedToday = today
 
@@ -128,7 +149,7 @@ enum DemoScreen: String {
     static var startTab: Int {
         switch requested {
         case .streak, .time, .journal: return 1
-        case .settings: return 2
+        case .settings, .lockEditor: return 2
         default: return 0
         }
     }
@@ -157,16 +178,14 @@ struct DemoRouter: View {
 
     var body: some View {
         switch screen {
-        case .today, .path, .calendar, .streak, .time, .journal, .settings, .unlocked, .library:
+        case .today, .path, .calendar, .streak, .time, .journal, .settings, .unlocked, .library, .lockEditor:
             MainTabs()
         case .book:
             NavigationStack { PathDetailView(planID: "book.MRK") { _ in } }
         case .locks:
-            NavigationStack { LockSetEditor(existing: model.settings.lockSets.last) }
-        case .lockEditor:
-            NavigationStack { LockSetEditor(existing: model.settings.lockSets.first) }
+            NavigationStack { LockDetailView(lockID: "social") }
         case .protection:
-            NavigationStack { ProtectionView() }
+            NavigationStack { LockDetailView(lockID: "games") }
         case .reading:
             flow { InAppRead(ref: john3, remaining: 0) {} }
         case .reflect:
@@ -180,12 +199,13 @@ struct DemoRouter: View {
         case .quizOrder:
             flow { QuizRunner(items: demoItems(.order)) { _, _ in } }
         case .pass:
-            flow { PickTimeView(title: "5 of 5 correct", subtitle: "Your apps open for") {} }
+            flow { UnlockSummary(title: "5 of 5 correct") {} }
+                .onAppear { model.lastUnlocked = model.locks.filter { $0.policy != .strict } }
         case .missed:
             let missed = (QuestionBank.shared.questions(for: john3)?.questions ?? []).filter { $0.v == 14 || $0.v == 23 }
             flow { MissedView(ref: john3, score: 2, total: 5, missed: Array(missed.prefix(2)), onRetry: {}, onReread: {}) }
         case .recall:
-            RecallFlow()
+            UnlockCenter()
         case .shield:
             ShieldPreview(style: .verse, large: true).ignoresSafeArea()
         case .focus:

@@ -1,88 +1,109 @@
+import FamilyControls
 import ManagedSettings
 import ManagedSettingsUI
 import UIKit
 
-/// Draws the screen people see when they open a locked app.
+/// Draws the screen people see when they open a locked app, in light and dark.
 class ShieldConfigurationExtension: ShieldConfigurationDataSource {
-    private let ink = UIColor(red: 0x22 / 255, green: 0x1D / 255, blue: 0x17 / 255, alpha: 1)
-    private let dim = UIColor(red: 0x8A / 255, green: 0x7F / 255, blue: 0x71 / 255, alpha: 1)
-    private let gold = UIColor(red: 0xA8 / 255, green: 0x7A / 255, blue: 0x22 / 255, alpha: 1)
-    private let paper = UIColor(red: 0xFB / 255, green: 0xF9 / 255, blue: 0xF4 / 255, alpha: 1)
+    private func rgb(_ hex: UInt32) -> UIColor {
+        UIColor(red: CGFloat((hex >> 16) & 0xFF) / 255, green: CGFloat((hex >> 8) & 0xFF) / 255, blue: CGFloat(hex & 0xFF) / 255, alpha: 1)
+    }
+
+    private func dynamic(light: UInt32, dark: UInt32) -> UIColor {
+        let l = rgb(light), d = rgb(dark)
+        return UIColor { $0.userInterfaceStyle == .dark ? d : l }
+    }
+
+    private var isDark: Bool { UITraitCollection.current.userInterfaceStyle == .dark }
 
     override func configuration(shielding application: Application) -> ShieldConfiguration {
-        make(name: application.localizedDisplayName)
+        make(name: application.localizedDisplayName, lock: lock { sel in application.token.map { sel.applicationTokens.contains($0) } ?? false })
     }
 
     override func configuration(shielding application: Application, in category: ActivityCategory) -> ShieldConfiguration {
-        make(name: application.localizedDisplayName ?? category.localizedDisplayName)
+        make(name: application.localizedDisplayName ?? category.localizedDisplayName,
+             lock: lock { sel in category.token.map { sel.categoryTokens.contains($0) } ?? false })
     }
 
     override func configuration(shielding webDomain: WebDomain) -> ShieldConfiguration {
-        make(name: webDomain.domain)
+        make(name: webDomain.domain, lock: lock { sel in webDomain.token.map { sel.webDomainTokens.contains($0) } ?? false })
     }
 
     override func configuration(shielding webDomain: WebDomain, in category: ActivityCategory) -> ShieldConfiguration {
-        make(name: webDomain.domain ?? category.localizedDisplayName)
+        make(name: webDomain.domain ?? category.localizedDisplayName,
+             lock: lock { sel in category.token.map { sel.categoryTokens.contains($0) } ?? false })
     }
 
-    private func make(name: String?) -> ShieldConfiguration {
-        let snap = SharedStore.shared.snapshot
-        let app = name ?? "This app"
-        let title: String
-        let subtitle: String
-        let button: String
-        let hint = "\n\nTap below, then tap the Phos notification."
+    /// The lock that contains this app, preferring the one that is locked right now.
+    private func lock(_ matches: (FamilyActivitySelection) -> Bool) -> LockSet? {
+        let store = SharedStore.shared
+        let settings = store.settings
+        let today = store.today(morning: settings.schedule.morning)
+        let candidates = settings.lockSets.filter { set in
+            guard let data = set.selection, let sel = try? JSONDecoder().decode(FamilyActivitySelection.self, from: data) else { return false }
+            return matches(sel)
+        }
+        return candidates.first { LockLogic.state($0, today: today, now: Date()).isLocked } ?? candidates.first
+    }
 
-        switch snap.reason {
-        case .evening:
-            title = "Strict hours"
-            if let until = snap.strictUntil {
-                let f = DateFormatter()
-                f.timeStyle = .short
-                subtitle = "\(app) is locked until \(f.string(from: until)). Emergency passes are in Phos." + hint
-            } else {
-                subtitle = "\(app) is locked for now. Emergency passes are in Phos." + hint
-            }
+    private func make(name: String?, lock: LockSet?) -> ShieldConfiguration {
+        let store = SharedStore.shared
+        let snap = store.snapshot
+        let today = store.today(morning: store.settings.schedule.morning)
+        let app = name ?? "This app"
+        let state = lock.map { LockLogic.state($0, today: today, now: Date()) } ?? .needsReading
+        let reward = lock.map { LockSet.rewardLabel($0.rewardSeconds).lowercased() } ?? "a while"
+        let hint = "\n\nTap below, then open the Phos notification."
+
+        let title: String
+        var subtitle: String
+        let button: String
+
+        switch state {
+        case .strict:
+            let end = lock.map { LockLogic.activeEnd($0, now: Date()) }
+            let f = DateFormatter()
+            f.timeStyle = .short
+            title = end.map { "Locked until \(f.string(from: $0))" } ?? "Locked for now"
+            subtitle = "\(lock?.name ?? "This lock") is strict. Only an emergency pass opens \(app)."
             button = "Open Phos"
-        case .midday:
-            title = "Midday question"
-            subtitle = "One question about \(snap.chapterTitle) opens \(app)." + hint
-            button = "Answer the question"
-        case .recall:
+        case .usedUp:
+            title = "No unlocks left today"
+            subtitle = "\(lock?.name ?? "This lock") allows \(lock?.limit ?? 0) a day. Emergency passes are in Phos."
+            button = "Open Phos"
+        case .needsQuestion:
             title = "\(app) is resting"
-            subtitle = "Answer one question about \(snap.chapterTitle) to open it again." + hint
+            subtitle = "One question about \(snap.chapterTitle) opens it for \(reward)." + hint
             button = "Answer a question"
-        case .reading, .none:
+        case .needsTap:
+            title = "\(app) is resting"
+            subtitle = "You read today. Unlock it for \(reward) from Phos." + hint
+            button = "Unlock"
+        case .needsReading, .open, .inactive:
             switch snap.style {
             case .verse:
-                title = "\(app) is locked"
+                title = "\(app) can wait"
                 subtitle = "“\(snap.verseText)”\n\(snap.verseRef)" + hint
-                button = "Unlock with today's reading"
             case .streak:
-                if snap.streak > 0 {
-                    title = "Day \(snap.streak + 1) is waiting"
-                    subtitle = "Read \(snap.chapterTitle) to keep your \(snap.streak) day streak and open \(app)." + hint
-                } else {
-                    title = "Start your streak"
-                    subtitle = "Read \(snap.chapterTitle) to open \(app)." + hint
-                }
-                button = "Keep my streak"
+                title = snap.streak > 0 ? "Day \(snap.streak + 1) is waiting" : "Start your streak"
+                subtitle = "Read \(snap.chapterTitle) to open \(app)." + hint
             case .quiet:
-                title = "Locked until you read"
-                subtitle = "Phos opens your apps after today's chapter." + hint
-                button = "Open Phos"
+                title = "Read first"
+                subtitle = "\(app) opens after today's chapter." + hint
             }
+            button = "Read today's chapter"
         }
 
+        let dark = isDark
         return ShieldConfiguration(
-            backgroundBlurStyle: nil,
-            backgroundColor: paper,
-            icon: UIImage(named: "ShieldIcon"),
-            title: ShieldConfiguration.Label(text: title, color: ink),
-            subtitle: ShieldConfiguration.Label(text: subtitle, color: dim),
-            primaryButtonLabel: ShieldConfiguration.Label(text: button, color: .white),
-            primaryButtonBackgroundColor: gold,
-            secondaryButtonLabel: ShieldConfiguration.Label(text: "Close", color: gold)
+            backgroundBlurStyle: dark ? .systemChromeMaterialDark : .systemChromeMaterialLight,
+            backgroundColor: dark ? rgb(0x15120E) : rgb(0xFBF9F4),
+            icon: UIImage(named: dark ? "ShieldIconDark" : "ShieldIcon"),
+            title: ShieldConfiguration.Label(text: title, color: dynamic(light: 0x221D17, dark: 0xF4EEE3)),
+            subtitle: ShieldConfiguration.Label(text: subtitle, color: dynamic(light: 0x6F665B, dark: 0xB9AD9B)),
+            primaryButtonLabel: ShieldConfiguration.Label(text: button, color: dynamic(light: 0xFFFFFF, dark: 0x1B1307)),
+            primaryButtonBackgroundColor: dynamic(light: 0xA87A22, dark: 0xE0AE4B),
+            secondaryButtonLabel: ShieldConfiguration.Label(text: "Not now", color: dynamic(light: 0x8A7F71, dark: 0x9C907F))
         )
     }
 }

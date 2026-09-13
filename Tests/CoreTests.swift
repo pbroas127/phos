@@ -1,149 +1,5 @@
 import XCTest
 
-final class ConfigLogicTests: XCTestCase {
-    let now = Date(timeIntervalSince1970: 1_800_000_000)
-
-    func settings(protection: Protection = Protection()) -> AppSettings {
-        var s = AppSettings()
-        s.onboarded = true
-        s.onboardedAt = now.addingTimeInterval(-10 * 86_400)
-        var lock = LockSet()
-        lock.id = "a"
-        lock.appCount = 4
-        lock.mode = .allDay
-        s.lockSets = [lock]
-        s.protection = protection
-        return s
-    }
-
-    func testStricterChangesApplyNow() {
-        let s = settings()
-        var p = s.config
-        p.rules.wordsToType = 100
-        p.rules.unlockMinutes = 15
-        p.lockSets[0].appCount = 6
-        var extra = LockSet()
-        extra.appCount = 2
-        p.lockSets.append(extra)
-        XCTAssertFalse(ConfigLogic.isEasier(current: s.config, proposed: p))
-        XCTAssertEqual(ConfigLogic.evaluate(settings: s, proposed: p, readingDone: false, now: now, passcodeOK: false, cooldownDone: false), .applied)
-    }
-
-    func testEasierChangesAreSpotted() {
-        let s = settings()
-        func easier(_ edit: (inout LockConfig) -> Void) -> Bool {
-            var p = s.config
-            edit(&p)
-            return ConfigLogic.isEasier(current: s.config, proposed: p)
-        }
-        XCTAssertTrue(easier { $0.rules.wordsToType = 20 })
-        XCTAssertTrue(easier { $0.rules.emergencyPasses = 9 })
-        XCTAssertTrue(easier { $0.lockSets.removeAll() })
-        XCTAssertTrue(easier { $0.lockSets[0].enabled = false })
-        XCTAssertTrue(easier { $0.lockSets[0].appCount = 1 })
-        XCTAssertTrue(easier { $0.lockSets[0].days.remove(1) })
-        XCTAssertTrue(easier { $0.lockSets[0].mode = .scheduled })
-        XCTAssertTrue(easier { $0.lockSets[0].mode = .untilRead })
-        XCTAssertTrue(easier { $0.schedule.morning = TimeOfDay(hour: 9, minute: 0) })
-        XCTAssertTrue(easier { $0.protection.delayHours = 0 })
-        XCTAssertFalse(easier { $0.schedule.morning = TimeOfDay(hour: 4, minute: 0) })
-    }
-
-    func testScheduledWindowShrinkingIsEasier() {
-        var s = settings()
-        s.lockSets[0].mode = .scheduled
-        s.lockSets[0].start = TimeOfDay(hour: 21, minute: 0)
-        s.lockSets[0].end = TimeOfDay(hour: 7, minute: 0)
-        var shorter = s.config
-        shorter.lockSets[0].end = TimeOfDay(hour: 6, minute: 0)
-        XCTAssertTrue(ConfigLogic.isEasier(current: s.config, proposed: shorter))
-        var longer = s.config
-        longer.lockSets[0].start = TimeOfDay(hour: 20, minute: 0)
-        XCTAssertFalse(ConfigLogic.isEasier(current: s.config, proposed: longer))
-        var strict = s.config
-        strict.lockSets[0].allowEarning = false
-        XCTAssertFalse(ConfigLogic.isEasier(current: s.config, proposed: strict))
-        s.lockSets[0].allowEarning = false
-        var relaxed = s.config
-        relaxed.lockSets[0].allowEarning = true
-        XCTAssertTrue(ConfigLogic.isEasier(current: s.config, proposed: relaxed))
-    }
-
-    func testProtectionOrder() {
-        var prot = Protection()
-        let code = Passcode.make("1234")
-        prot.passcodeHash = code.hash
-        prot.passcodeSalt = code.salt
-        prot.cooldownMinutes = 5
-        prot.delayHours = 24
-        prot.onlyAfterReading = true
-        let s = settings(protection: prot)
-        var p = s.config
-        p.rules.wordsToType = 20
-
-        if case .blocked = ConfigLogic.evaluate(settings: s, proposed: p, readingDone: false, now: now, passcodeOK: false, cooldownDone: false) {} else { XCTFail("reading gate") }
-        XCTAssertEqual(ConfigLogic.evaluate(settings: s, proposed: p, readingDone: true, now: now, passcodeOK: false, cooldownDone: false), .needsPasscode)
-        XCTAssertEqual(ConfigLogic.evaluate(settings: s, proposed: p, readingDone: true, now: now, passcodeOK: true, cooldownDone: false), .needsCooldown(5))
-        XCTAssertEqual(ConfigLogic.evaluate(settings: s, proposed: p, readingDone: true, now: now, passcodeOK: true, cooldownDone: true), .pending(now.addingTimeInterval(86_400)))
-    }
-
-    func testCommitmentBlocksEverythingEasier() {
-        var prot = Protection()
-        prot.commitUntil = now.addingTimeInterval(3 * 86_400)
-        let s = settings(protection: prot)
-        var p = s.config
-        p.protection.commitUntil = nil
-        if case .blocked = ConfigLogic.evaluate(settings: s, proposed: p, readingDone: true, now: now, passcodeOK: true, cooldownDone: true) {} else { XCTFail("commitment") }
-        var stricter = s.config
-        stricter.rules.questionsPerCheck = 8
-        XCTAssertEqual(ConfigLogic.evaluate(settings: s, proposed: stricter, readingDone: true, now: now, passcodeOK: false, cooldownDone: false), .applied)
-    }
-
-    func testSetupDaySkipsWaits() {
-        var s = settings()
-        s.onboardedAt = now.addingTimeInterval(-3600)
-        s.protection.cooldownMinutes = 15
-        var p = s.config
-        p.rules.wordsToType = 20
-        XCTAssertEqual(ConfigLogic.evaluate(settings: s, proposed: p, readingDone: false, now: now, passcodeOK: false, cooldownDone: false), .applied)
-    }
-
-    func testPasscode() {
-        let made = Passcode.make("482913")
-        var p = Protection()
-        p.passcodeHash = made.hash
-        p.passcodeSalt = made.salt
-        XCTAssertTrue(Passcode.verify("482913", p))
-        XCTAssertFalse(Passcode.verify("000000", p))
-        XCTAssertTrue(Passcode.isValid("1234"))
-        XCTAssertFalse(Passcode.isValid("12a4"))
-        XCTAssertFalse(Passcode.isValid("123"))
-    }
-
-    func testNormalizeClampsPassToQuestions() {
-        var r = Rules()
-        r.questionsPerCheck = 2
-        r.correctToPass = 5
-        r.wordsToType = 5000
-        r.unlockMinutes = 33
-        let n = r.normalized()
-        XCTAssertEqual(n.correctToPass, 2)
-        XCTAssertEqual(n.wordsToType, 300)
-        XCTAssertEqual(n.unlockMinutes, 30)
-    }
-
-    func testTolerantDecoding() throws {
-        let json = #"{"onboarded":true,"rules":{"wordsToType":80},"lockSets":[{"name":"Old","appCount":2}],"unknownKey":5}"#.data(using: .utf8)!
-        let s = try JSONDecoder().decode(AppSettings.self, from: json)
-        XCTAssertTrue(s.onboarded)
-        XCTAssertEqual(s.rules.wordsToType, 80)
-        XCTAssertEqual(s.rules.questionsPerCheck, 5)
-        XCTAssertEqual(s.lockSets.first?.name, "Old")
-        XCTAssertEqual(s.lockSets.first?.mode, .allDay)
-        XCTAssertEqual(s.protection.delayHours, 24)
-    }
-}
-
 final class LockLogicTests: XCTestCase {
     var cal: Calendar = {
         var c = Calendar(identifier: .gregorian)
@@ -155,67 +11,189 @@ final class LockLogicTests: XCTestCase {
         cal.date(from: DateComponents(year: 2026, month: 9, day: day, hour: hour, minute: minute))!
     }
 
-    func lock(_ mode: LockMode) -> LockSet {
+    func lock(_ policy: UnlockPolicy) -> LockSet {
         var l = LockSet()
-        l.mode = mode
+        l.id = policy.rawValue
+        l.name = "Test"
+        l.policy = policy
         l.appCount = 3
         return l
     }
 
     func testWindowAcrossMidnight() {
-        var night = lock(.scheduled)
+        var night = lock(.strict)
+        night.allDay = false
         night.start = TimeOfDay(hour: 22, minute: 0)
         night.end = TimeOfDay(hour: 6, minute: 0)
-        XCTAssertTrue(LockLogic.inWindow(night, now: date(12, 23), calendar: cal))
-        XCTAssertTrue(LockLogic.inWindow(night, now: date(13, 2), calendar: cal))
-        XCTAssertFalse(LockLogic.inWindow(night, now: date(13, 12), calendar: cal))
-        // Sept 12 2026 is a Saturday (7). Friday night only: Saturday 2 AM belongs to Friday.
+        XCTAssertTrue(LockLogic.isActive(night, now: date(12, 23), calendar: cal))
+        XCTAssertTrue(LockLogic.isActive(night, now: date(13, 2), calendar: cal))
+        XCTAssertFalse(LockLogic.isActive(night, now: date(13, 12), calendar: cal))
+        // Sept 12 2026 is a Saturday (7). Friday nights only: Saturday 2 AM belongs to Friday.
         night.days = [6]
-        XCTAssertTrue(LockLogic.inWindow(night, now: date(12, 2), calendar: cal))
-        XCTAssertFalse(LockLogic.inWindow(night, now: date(12, 23), calendar: cal))
+        XCTAssertTrue(LockLogic.isActive(night, now: date(12, 2), calendar: cal))
+        XCTAssertFalse(LockLogic.isActive(night, now: date(12, 23), calendar: cal))
     }
 
-    func testModes() {
+    func testPolicies() {
         let noon = date(12, 12)
         var today = TodayState(dayKey: "2026-09-12")
-        XCTAssertEqual(LockLogic.state(lock(.untilRead), today: today, now: noon, calendar: cal), .gate)
-        XCTAssertEqual(LockLogic.state(lock(.allDay), today: today, now: noon, calendar: cal), .gate)
+        for p in [UnlockPolicy.readOnce, .questionEach, .limited] {
+            XCTAssertEqual(LockLogic.state(lock(p), today: today, now: noon, calendar: cal), .needsReading)
+        }
+        XCTAssertEqual(LockLogic.state(lock(.strict), today: today, now: noon, calendar: cal), .strict)
+
         today.readingDone = true
-        XCTAssertEqual(LockLogic.state(lock(.untilRead), today: today, now: noon, calendar: cal), .open)
-        XCTAssertEqual(LockLogic.state(lock(.allDay), today: today, now: noon, calendar: cal), .gate)
-        today.middayPending = true
-        XCTAssertEqual(LockLogic.state(lock(.untilRead), today: today, now: noon, calendar: cal), .gate)
-        today.unlockedUntil = noon.addingTimeInterval(600)
-        XCTAssertEqual(LockLogic.state(lock(.allDay), today: today, now: noon, calendar: cal), .open)
+        XCTAssertEqual(LockLogic.state(lock(.readOnce), today: today, now: noon, calendar: cal), .needsTap)
+        XCTAssertEqual(LockLogic.state(lock(.questionEach), today: today, now: noon, calendar: cal), .needsQuestion)
+        XCTAssertEqual(LockLogic.state(lock(.limited), today: today, now: noon, calendar: cal), .needsTap)
 
-        var strict = lock(.scheduled)
-        strict.start = TimeOfDay(hour: 11, minute: 0)
-        strict.end = TimeOfDay(hour: 13, minute: 0)
-        strict.allowEarning = false
-        XCTAssertEqual(LockLogic.state(strict, today: today, now: noon, calendar: cal), .strict)
-        today.passUntil = noon.addingTimeInterval(600)
-        XCTAssertEqual(LockLogic.state(strict, today: today, now: noon, calendar: cal), .open)
+        var limited = lock(.limited)
+        limited.limit = 2
+        var day = LockDay()
+        day.count = 2
+        today.unlocks[limited.id] = day
+        XCTAssertEqual(LockLogic.state(limited, today: today, now: noon, calendar: cal), .usedUp)
+        limited.limitNeedsQuestion = true
+        limited.limit = 5
+        XCTAssertEqual(LockLogic.state(limited, today: today, now: noon, calendar: cal), .needsQuestion)
 
-        var off = lock(.allDay)
-        off.days = [1]
-        XCTAssertEqual(LockLogic.state(off, today: TodayState(dayKey: "2026-09-12"), now: noon, calendar: cal), .open)
-        var empty = lock(.allDay)
+        var open = LockDay()
+        open.until = noon.addingTimeInterval(600)
+        today.unlocks["questionEach"] = open
+        XCTAssertEqual(LockLogic.state(lock(.questionEach), today: today, now: noon, calendar: cal), .open)
+
+        today.unlocks["strict"] = open
+        XCTAssertEqual(LockLogic.state(lock(.strict), today: today, now: noon, calendar: cal), .strict)
+        var pass = LockDay()
+        pass.passUntil = noon.addingTimeInterval(600)
+        today.unlocks["strict"] = pass
+        XCTAssertEqual(LockLogic.state(lock(.strict), today: today, now: noon, calendar: cal), .open)
+    }
+
+    func testInactiveCases() {
+        let noon = date(12, 12)
+        let today = TodayState(dayKey: "2026-09-12")
+        var sundays = lock(.questionEach)
+        sundays.days = [1]
+        XCTAssertEqual(LockLogic.state(sundays, today: today, now: noon, calendar: cal), .inactive)
+        var empty = lock(.questionEach)
         empty.appCount = 0
-        XCTAssertEqual(LockLogic.state(empty, today: TodayState(dayKey: "2026-09-12"), now: noon, calendar: cal), .open)
+        XCTAssertEqual(LockLogic.state(empty, today: today, now: noon, calendar: cal), .inactive)
+        var off = lock(.questionEach)
+        off.enabled = false
+        XCTAssertEqual(LockLogic.state(off, today: today, now: noon, calendar: cal), .inactive)
+    }
+
+    func testRewardEnds() {
+        let noon = date(12, 12)
+        var l = lock(.questionEach)
+        l.rewardSeconds = 30
+        XCTAssertEqual(LockLogic.rewardEnd(l, now: noon, calendar: cal), noon.addingTimeInterval(30))
+        l.rewardSeconds = LockSet.untilEnd
+        XCTAssertEqual(LockLogic.rewardEnd(l, now: noon, calendar: cal), date(13, 0))
+        l.allDay = false
+        l.start = TimeOfDay(hour: 9, minute: 0)
+        l.end = TimeOfDay(hour: 15, minute: 0)
+        XCTAssertEqual(LockLogic.rewardEnd(l, now: noon, calendar: cal), date(12, 15))
+    }
+
+    func testStrictestReadingCheck() {
+        var a = lock(.questionEach)
+        a.reading.questions = 3
+        a.reading.pass = 2
+        a.reading.words = 100
+        var b = lock(.readOnce)
+        b.reading.questions = 8
+        b.reading.pass = 6
+        let today = TodayState(dayKey: "2026-09-12")
+        let check = LockLogic.readingCheck(today: today, locks: [a, b], now: date(12, 12), calendar: cal)
+        XCTAssertEqual(check.questions, 8)
+        XCTAssertEqual(check.pass, 6)
+        XCTAssertEqual(check.words, 100)
     }
 
     func testReasons() {
-        var s = AppSettings()
-        s.lockSets = [lock(.allDay)]
         var today = TodayState(dayKey: "2026-09-12")
         let noon = date(12, 12)
-        XCTAssertEqual(LockLogic.reason(today: today, settings: s, now: noon, calendar: cal), .reading)
+        XCTAssertEqual(LockLogic.reason(today: today, locks: [lock(.questionEach)], now: noon, calendar: cal), .reading)
         today.readingDone = true
-        XCTAssertEqual(LockLogic.reason(today: today, settings: s, now: noon, calendar: cal), .recall)
-        today.middayPending = true
-        XCTAssertEqual(LockLogic.reason(today: today, settings: s, now: noon, calendar: cal), .midday)
-        today.unlockedUntil = noon.addingTimeInterval(60)
-        XCTAssertEqual(LockLogic.reason(today: today, settings: s, now: noon, calendar: cal), .none)
+        XCTAssertEqual(LockLogic.reason(today: today, locks: [lock(.questionEach)], now: noon, calendar: cal), .recall)
+        XCTAssertEqual(LockLogic.reason(today: today, locks: [lock(.readOnce)], now: noon, calendar: cal), .tap)
+        XCTAssertEqual(LockLogic.reason(today: today, locks: [lock(.strict)], now: noon, calendar: cal), .strict)
+        XCTAssertEqual(LockLogic.reason(today: today, locks: [], now: noon, calendar: cal), .none)
+    }
+}
+
+final class ProtectionTests: XCTestCase {
+    let now = Date(timeIntervalSince1970: 1_800_000_000)
+
+    func lock(_ kind: ProtectionKind) -> LockSet {
+        var l = LockSet()
+        l.name = "Social"
+        l.protection.kind = kind
+        return l
+    }
+
+    func testAccess() {
+        XCTAssertEqual(ProtectionLogic.access(lock(.none), readingDone: false, now: now), .open)
+        var pass = lock(.passcode)
+        XCTAssertEqual(ProtectionLogic.access(pass, readingDone: false, now: now), .open)
+        let made = Passcode.make("1234")
+        pass.protection.passcodeHash = made.hash
+        pass.protection.passcodeSalt = made.salt
+        XCTAssertEqual(ProtectionLogic.access(pass, readingDone: false, now: now), .needsPasscode)
+        var timer = lock(.countdown)
+        timer.protection.countdownMinutes = 15
+        XCTAssertEqual(ProtectionLogic.access(timer, readingDone: false, now: now), .needsCountdown(15))
+        XCTAssertEqual(ProtectionLogic.access(lock(.delay), readingDone: false, now: now), .delayed(24))
+        var commit = lock(.commitment)
+        commit.protection.commitUntil = now.addingTimeInterval(3600)
+        if case .blocked = ProtectionLogic.access(commit, readingDone: true, now: now) {} else { XCTFail("commitment") }
+        commit.protection.commitUntil = now.addingTimeInterval(-60)
+        XCTAssertEqual(ProtectionLogic.access(commit, readingDone: true, now: now), .open)
+        if case .blocked = ProtectionLogic.access(lock(.afterReading), readingDone: false, now: now) {} else { XCTFail("reading") }
+        XCTAssertEqual(ProtectionLogic.access(lock(.afterReading), readingDone: true, now: now), .open)
+    }
+
+    func testPasscode() {
+        let made = Passcode.make("482913")
+        var p = LockProtection()
+        p.passcodeHash = made.hash
+        p.passcodeSalt = made.salt
+        XCTAssertTrue(Passcode.verify("482913", p))
+        XCTAssertFalse(Passcode.verify("000000", p))
+        XCTAssertTrue(Passcode.isValid("1234"))
+        XCTAssertFalse(Passcode.isValid("12a4"))
+        XCTAssertFalse(Passcode.isValid("123"))
+    }
+
+    func testLegacySettingsMigrate() throws {
+        let json = #"{"onboarded":true,"schedule":{"morning":{"hour":5,"minute":0}},"rules":{"wordsToType":80,"questionsPerCheck":6,"correctToPass":4,"unlockMinutes":45,"emergencyPasses":2},"lockSets":[{"id":"a","name":"Old","appCount":2,"mode":"allDay"},{"id":"b","name":"Night","appCount":1,"mode":"scheduled","allowEarning":false},{"id":"c","name":"Read","appCount":1,"mode":"untilRead"}]}"#.data(using: .utf8)!
+        let s = try JSONDecoder().decode(AppSettings.self, from: json)
+        XCTAssertEqual(s.schedule.morning.hour, 0)
+        XCTAssertEqual(s.lockSets.count, 3)
+        XCTAssertEqual(s.lockSets[0].policy, .questionEach)
+        XCTAssertEqual(s.lockSets[0].rewardSeconds, 45 * 60)
+        XCTAssertEqual(s.lockSets[0].reading.words, 80)
+        XCTAssertEqual(s.lockSets[0].reading.pass, 4)
+        XCTAssertEqual(s.lockSets[0].emergencyPasses, 2)
+        XCTAssertEqual(s.lockSets[1].policy, .strict)
+        XCTAssertFalse(s.lockSets[1].allDay)
+        XCTAssertEqual(s.lockSets[2].policy, .readOnce)
+        XCTAssertEqual(s.lockSets[2].rewardSeconds, LockSet.untilEnd)
+        let again = try JSONDecoder().decode(AppSettings.self, from: JSONEncoder().encode(s))
+        XCTAssertEqual(again, s)
+    }
+
+    func testPassesResetMonthly() {
+        var s = AppSettings()
+        var l = LockSet()
+        l.id = "x"
+        l.emergencyPasses = 3
+        let now = Date()
+        s.passUses = [PassUse(date: now, minutes: 15, lockID: "x"), PassUse(date: now.addingTimeInterval(-40 * 86_400), minutes: 15, lockID: "x"),
+                      PassUse(date: now, minutes: 15, lockID: "other")]
+        XCTAssertEqual(s.passesLeft(l, now: now), 2)
     }
 }
 
@@ -276,21 +254,7 @@ final class DayAndStreakTests: XCTestCase {
         XCTAssertEqual(Streaks.longest(doneKeys: done.union(["2026-09-01", "2026-09-02"])), 3)
     }
 
-    func testMiddayTimes() {
-        var s = Schedule()
-        s.midday = TimeOfDay(hour: 12, minute: 0)
-        XCTAssertEqual(s.middayTimes(count: 1).map(\.hour), [12])
-        XCTAssertEqual(s.middayTimes(count: 3).map(\.hour), [12, 15, 18])
-        XCTAssertEqual(s.middayTimes(count: 6).map(\.hour), [12, 14, 16, 18, 20, 22])
-        XCTAssertEqual(s.middayTimes(count: 0).count, 0)
-    }
 
-    func testPassesResetMonthly() {
-        var s = AppSettings()
-        let now = Date()
-        s.passUses = [PassUse(date: now, minutes: 20), PassUse(date: now.addingTimeInterval(-40 * 86_400), minutes: 20)]
-        XCTAssertEqual(s.passesLeft(now: now), 2)
-    }
 }
 
 final class TextCheckTests: XCTestCase {

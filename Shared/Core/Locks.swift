@@ -3,12 +3,19 @@ import Foundation
 
 enum LockLogic {
     enum State: Equatable {
-        /// Open.
+        /// Outside its days or hours, or turned off.
+        case inactive
+        /// Unlocked right now.
         case open
-        /// Locked, and reading or one question opens it.
-        case gate
-        /// Locked during strict hours. Only an emergency pass opens it.
+        case needsReading
+        case needsQuestion
+        case needsTap
+        /// Limited lock with no unlocks left today.
+        case usedUp
+        /// No unlocks allowed. Only an emergency pass opens it.
         case strict
+
+        var isLocked: Bool { self != .inactive && self != .open }
     }
 
     static func minutes(_ date: Date, _ calendar: Calendar) -> Int {
@@ -16,146 +23,103 @@ enum LockLogic {
         return (c.hour ?? 0) * 60 + (c.minute ?? 0)
     }
 
-    /// True inside a scheduled window on a chosen day. A window that crosses midnight belongs to the day it started.
-    static func inWindow(_ set: LockSet, now: Date, calendar: Calendar = .current) -> Bool {
-        let m = minutes(now, calendar)
-        let s = set.start.minutesFromMidnight, e = set.end.minutesFromMidnight
+    /// True inside the lock's days and hours. A window that crosses midnight belongs to the day it started.
+    static func isActive(_ lock: LockSet, now: Date, calendar: Calendar = .current) -> Bool {
+        guard lock.enabled, lock.appCount > 0 else { return false }
         let weekday = calendar.component(.weekday, from: now)
-        if s == e { return set.days.contains(weekday) }
-        if s < e { return m >= s && m < e && set.days.contains(weekday) }
-        if m >= s { return set.days.contains(weekday) }
+        if lock.allDay { return lock.days.contains(weekday) }
+        let m = minutes(now, calendar)
+        let s = lock.start.minutesFromMidnight, e = lock.end.minutesFromMidnight
+        if s == e { return lock.days.contains(weekday) }
+        if s < e { return m >= s && m < e && lock.days.contains(weekday) }
+        if m >= s { return lock.days.contains(weekday) }
         if m < e {
             let yesterday = calendar.date(byAdding: .day, value: -1, to: now) ?? now
-            return set.days.contains(calendar.component(.weekday, from: yesterday))
+            return lock.days.contains(calendar.component(.weekday, from: yesterday))
         }
         return false
     }
 
-    /// The end of the current strict window, for "locked until" text.
-    static func windowEnd(_ set: LockSet, now: Date, calendar: Calendar = .current) -> Date {
-        var end = set.end.date(on: now, calendar: calendar)
+    static func state(_ lock: LockSet, today: TodayState, now: Date, calendar: Calendar = .current) -> State {
+        guard isActive(lock, now: now, calendar: calendar) else { return .inactive }
+        let day = today.day(lock.id)
+        if let p = day.passUntil, p > now { return .open }
+        if lock.policy == .strict { return .strict }
+        if let u = day.until, u > now { return .open }
+        if !today.readingDone { return .needsReading }
+        switch lock.policy {
+        case .readOnce: return .needsTap
+        case .questionEach: return .needsQuestion
+        case .limited:
+            if day.count >= lock.limit { return .usedUp }
+            return lock.limitNeedsQuestion ? .needsQuestion : .needsTap
+        case .strict: return .strict
+        }
+    }
+
+    /// When the current active time ends: midnight for all day locks, the end time for scheduled ones.
+    static func activeEnd(_ lock: LockSet, now: Date, calendar: Calendar = .current) -> Date {
+        if lock.allDay || lock.start == lock.end {
+            let tomorrow = calendar.date(byAdding: .day, value: 1, to: now) ?? now
+            return calendar.startOfDay(for: tomorrow)
+        }
+        var end = lock.end.date(on: now, calendar: calendar)
         if end <= now { end = calendar.date(byAdding: .day, value: 1, to: end) ?? end }
         return end
     }
 
-    static func isLockDay(_ set: LockSet, dayKey: String, calendar: Calendar = .current) -> Bool {
-        guard let d = DayKey.localDate(from: dayKey, calendar: calendar) else { return true }
-        return set.days.contains(calendar.component(.weekday, from: d))
+    static func rewardEnd(_ lock: LockSet, now: Date, calendar: Calendar = .current) -> Date {
+        lock.rewardSeconds == LockSet.untilEnd
+            ? activeEnd(lock, now: now, calendar: calendar)
+            : now.addingTimeInterval(TimeInterval(max(30, lock.rewardSeconds)))
     }
 
-    static func state(_ set: LockSet, today: TodayState, now: Date, calendar: Calendar = .current) -> State {
-        guard set.enabled, set.appCount > 0 else { return .open }
-        let unlocked = today.isUnlocked(at: now)
-        switch set.mode {
-        case .scheduled:
-            guard inWindow(set, now: now, calendar: calendar) else { return .open }
-            if !set.allowEarning { return today.passOpen(at: now) ? .open : .strict }
-            return unlocked ? .open : .gate
-        case .untilRead:
-            guard isLockDay(set, dayKey: today.dayKey, calendar: calendar), !unlocked else { return .open }
-            return (!today.readingDone || today.middayPending) ? .gate : .open
-        case .allDay:
-            guard isLockDay(set, dayKey: today.dayKey, calendar: calendar) else { return .open }
-            return unlocked ? .open : .gate
-        }
-    }
-
-    static func reason(today: TodayState, settings: AppSettings, now: Date, calendar: Calendar = .current) -> LockReason {
-        let states = settings.lockSets.map { state($0, today: today, now: now, calendar: calendar) }
-        if states.contains(.gate) {
-            if !today.readingDone { return .reading }
-            if today.middayPending { return .midday }
-            return .recall
-        }
-        if states.contains(.strict) { return .evening }
+    /// One line that describes the most pressing lock, for the shield button and widgets.
+    static func reason(today: TodayState, locks: [LockSet], now: Date, calendar: Calendar = .current) -> LockReason {
+        let states = locks.map { state($0, today: today, now: now, calendar: calendar) }
+        if states.contains(.needsReading) { return .reading }
+        if states.contains(.needsQuestion) { return .recall }
+        if states.contains(.needsTap) { return .tap }
+        if states.contains(.usedUp) { return .usedUp }
+        if states.contains(.strict) { return .strict }
         return .none
     }
 
-    static func strictUntil(settings: AppSettings, today: TodayState, now: Date, calendar: Calendar = .current) -> Date? {
-        settings.lockSets
-            .filter { state($0, today: today, now: now, calendar: calendar) == .strict }
-            .map { windowEnd($0, now: now, calendar: calendar) }
-            .min()
+    /// The strictest reading check among locks waiting on today's reading, or among all locks if none are.
+    static func readingCheck(today: TodayState, locks: [LockSet], now: Date, calendar: Calendar = .current) -> ReadingCheck {
+        let waiting = locks.filter { state($0, today: today, now: now, calendar: calendar) == .needsReading }
+        let pool = waiting.isEmpty ? locks.filter(\.enabled) : waiting
+        return ReadingCheck.strictest(pool.map(\.reading))
     }
 }
 
-enum SaveOutcome: Equatable {
-    case applied
-    case pending(Date)
-    case blocked(String)
-    case needsPasscode
-    case needsCooldown(Int)
-}
-
-enum ConfigLogic {
-    static func looserRules(_ current: Rules, _ proposed: Rules) -> Bool {
-        RuleField.allCases.contains { f in
-            let c = f.get(current), p = f.get(proposed)
-            return c != p && !f.isStricter(p, than: c)
-        }
+enum ProtectionLogic {
+    enum Access: Equatable {
+        case open
+        case needsPasscode
+        case needsCountdown(Int)
+        /// Editing works, but saving schedules the change after this many hours.
+        case delayed(Int)
+        case blocked(String)
     }
 
-    static func coveredMinutes(_ set: LockSet) -> Set<Int> {
-        let s = set.start.minutesFromMidnight
-        return Set((0..<set.windowMinutes).map { (s + $0) % 1440 })
-    }
-
-    /// Rank of how much a mode locks, for spotting easier changes.
-    static func modeStrength(_ set: LockSet) -> Int {
-        switch set.mode {
-        case .allDay: return 3
-        case .untilRead: return 2
-        case .scheduled: return set.allowEarning ? 1 : 2
+    static func access(_ lock: LockSet, readingDone: Bool, now: Date) -> Access {
+        let p = lock.protection
+        switch p.kind {
+        case .none:
+            return .open
+        case .passcode:
+            return p.hasPasscode ? .needsPasscode : .open
+        case .countdown:
+            return .needsCountdown(max(1, p.countdownMinutes))
+        case .delay:
+            return .delayed(max(1, p.delayHours))
+        case .commitment:
+            guard let until = p.commitUntil, until > now else { return .open }
+            return .blocked("You committed to \(lock.name) until \(until.formatted(date: .abbreviated, time: .shortened)). Until then only emergency passes can open it, and you can still add apps.")
+        case .afterReading:
+            return readingDone ? .open : .blocked("\(lock.name) settings open after today's reading. Read first, then come back. You can still add apps.")
         }
-    }
-
-    /// True when the proposal makes Phos easier to get past in any way.
-    static func isEasier(current: LockConfig, proposed: LockConfig,
-                         appsRemoved: (LockSet, LockSet) -> Bool = { $1.appCount < $0.appCount }) -> Bool {
-        if looserRules(current.rules, proposed.rules) { return true }
-        if proposed.schedule.morning.minutesFromMidnight > current.schedule.morning.minutesFromMidnight { return true }
-
-        for c in current.lockSets where c.enabled {
-            guard let p = proposed.lockSets.first(where: { $0.id == c.id }), p.enabled else { return true }
-            if appsRemoved(c, p) { return true }
-            if !c.days.isSubset(of: p.days) { return true }
-            if c.mode != p.mode {
-                if p.mode == .scheduled || modeStrength(p) < modeStrength(c) { return true }
-            } else if c.mode == .scheduled {
-                if !coveredMinutes(c).isSubset(of: coveredMinutes(p)) { return true }
-                if !c.allowEarning && p.allowEarning { return true }
-            }
-        }
-
-        let c = current.protection, p = proposed.protection
-        if p.delayHours < c.delayHours || p.cooldownMinutes < c.cooldownMinutes { return true }
-        if c.hasPasscode && p.passcodeHash != c.passcodeHash { return true }
-        if c.onlyAfterReading && !p.onlyAfterReading { return true }
-        if c.preventAppRemoval && !p.preventAppRemoval { return true }
-        if let cu = c.commitUntil, (p.commitUntil ?? .distantPast) < cu { return true }
-        return false
-    }
-
-    /// Runs an easier change through every protection the person turned on, in order.
-    static func evaluate(settings: AppSettings, proposed: LockConfig, readingDone: Bool, now: Date,
-                         passcodeOK: Bool, cooldownDone: Bool,
-                         appsRemoved: (LockSet, LockSet) -> Bool = { $1.appCount < $0.appCount }) -> SaveOutcome {
-        guard isEasier(current: settings.config, proposed: proposed, appsRemoved: appsRemoved) else { return .applied }
-        let p = settings.protection
-        if let until = p.commitUntil, until > now {
-            let f = DateFormatter()
-            f.dateStyle = .medium
-            f.timeStyle = .short
-            return .blocked("You committed to these settings until \(f.string(from: until)). Until then only emergency passes can open apps.")
-        }
-        if p.onlyAfterReading && !readingDone {
-            return .blocked("Settings can only get easier after today's reading. Read first, then come back.")
-        }
-        if p.hasPasscode && !passcodeOK { return .needsPasscode }
-        let setupDay = (settings.setupWindowEnds ?? .distantPast) > now
-        if !setupDay && p.cooldownMinutes > 0 && !cooldownDone { return .needsCooldown(p.cooldownMinutes) }
-        if !setupDay && p.delayHours > 0 { return .pending(now.addingTimeInterval(TimeInterval(p.delayHours * 3600))) }
-        return .applied
     }
 }
 
@@ -169,7 +133,7 @@ enum Passcode {
         return (hash(code, salt: salt), salt)
     }
 
-    static func verify(_ code: String, _ p: Protection) -> Bool {
+    static func verify(_ code: String, _ p: LockProtection) -> Bool {
         guard let h = p.passcodeHash, let s = p.passcodeSalt else { return true }
         return hash(code, salt: s) == h
     }

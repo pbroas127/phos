@@ -1,171 +1,36 @@
 import FamilyControls
 import SwiftUI
 
-// MARK: - Protected saving
-
-/// Walks a settings change through passcode, countdown, and waiting rules.
-@Observable
-final class SaveFlow {
-    var proposal: LockConfig?
-    var passcodeOK = false
-    var cooldownDone = false
-    var askPasscode = false
-    var askCooldown = false
-    var cooldownMinutes = 0
-    var messageTitle = ""
-    var message: String?
-    private var onSaved: (() -> Void)?
-
-    func submit(_ config: LockConfig, model: AppModel, onSaved: (() -> Void)? = nil) {
-        proposal = config
-        passcodeOK = false
-        cooldownDone = false
-        self.onSaved = onSaved
-        step(model)
-    }
-
-    func step(_ model: AppModel) {
-        guard let p = proposal else { return }
-        switch model.save(p, passcodeOK: passcodeOK, cooldownDone: cooldownDone) {
-        case .applied:
-            proposal = nil
-            onSaved?()
-        case .pending(let date):
-            proposal = nil
-            messageTitle = "Saved for later"
-            message = "This makes Phos easier, so it starts \(date.formatted(date: .abbreviated, time: .shortened)). You can cancel it from Settings."
-            onSaved?()
-        case .blocked(let text):
-            proposal = nil
-            messageTitle = "Not right now"
-            message = text
-        case .needsPasscode:
-            askPasscode = true
-        case .needsCooldown(let minutes):
-            cooldownMinutes = minutes
-            askCooldown = true
-        }
-    }
-
-    func cancel() {
-        proposal = nil
-        askPasscode = false
-        askCooldown = false
-    }
-}
-
-struct SaveFlowModifier: ViewModifier {
-    @Environment(AppModel.self) private var model
-    @Bindable var flow: SaveFlow
-
-    func body(content: Content) -> some View {
-        content
-            .sheet(isPresented: $flow.askPasscode) {
-                PasscodeEntrySheet(onSuccess: {
-                    flow.passcodeOK = true
-                    flow.askPasscode = false
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { flow.step(model) }
-                }, onCancel: { flow.cancel() })
-                .environment(model)
-            }
-            .sheet(isPresented: $flow.askCooldown) {
-                CooldownSheet(minutes: flow.cooldownMinutes, onDone: {
-                    flow.cooldownDone = true
-                    flow.askCooldown = false
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { flow.step(model) }
-                }, onCancel: { flow.cancel() })
-                .interactiveDismissDisabled()
-            }
-            .alert(flow.messageTitle, isPresented: Binding(get: { flow.message != nil }, set: { if !$0 { flow.message = nil } })) {
-                Button("OK") { flow.message = nil }
-            } message: {
-                Text(flow.message ?? "")
-            }
-    }
-}
-
-extension View {
-    func saveFlow(_ flow: SaveFlow) -> some View { modifier(SaveFlowModifier(flow: flow)) }
-}
-
 // MARK: - Settings
 
 struct SettingsScreen: View {
     @Environment(AppModel.self) private var model
+    @State private var wizardShown = DemoScreen.requested == .lockEditor
     @State private var libraryShown = false
 
     var body: some View {
         @Bindable var model = model
         NavigationStack {
             Form {
-                if let pending = model.settings.pendingConfig {
-                    Section {
-                        VStack(alignment: .leading, spacing: 6) {
-                            Label("An easier change starts \(pending.effectiveAt.formatted(.dateTime.weekday(.wide).hour().minute()))", systemImage: "clock")
-                                .font(.headline).foregroundStyle(Theme.gold)
-                            Text("Saving another change replaces it.").font(.footnote).foregroundStyle(Theme.dim)
-                            Button("Cancel the waiting change") { model.cancelPending() }.font(.footnote.weight(.semibold))
-                        }
-                    }
-                }
-                if let ends = model.settings.setupWindowEnds, ends > Date() {
-                    Section {
-                        Label("Setup day: countdowns and waits are skipped until \(ends.formatted(.dateTime.weekday(.wide).hour().minute())).", systemImage: "sparkles")
-                            .font(.footnote).foregroundStyle(Theme.ink)
-                    }
-                }
-
                 Section {
-                    ForEach(model.settings.lockSets) { set in
-                        NavigationLink {
-                            LockSetEditor(existing: set)
-                        } label: {
-                            HStack(spacing: 12) {
-                                Image(systemName: set.mode.symbol).foregroundStyle(set.enabled ? Theme.gold : Theme.dim).frame(width: 26)
-                                VStack(alignment: .leading, spacing: 2) {
-                                    Text(set.name).foregroundStyle(Theme.ink)
-                                    Text(set.enabled ? set.summary : "Off").font(.caption).foregroundStyle(Theme.dim)
-                                }
-                            }
-                        }
+                    ForEach(model.locks) { lock in
+                        NavigationLink(value: lock.id) { LockRow(lock: lock) }
                     }
-                    NavigationLink {
-                        LockSetEditor(existing: nil)
-                    } label: {
-                        Label("Add a lock", systemImage: "plus.circle.fill").foregroundStyle(Theme.gold)
-                    }
-                    if !model.authorized {
-                        Button("Allow Screen Time access") { Task { await model.requestAuthorization() } }
+                    Button { wizardShown = true } label: {
+                        Label("New lock", systemImage: "plus.circle.fill").font(.body.weight(.semibold)).foregroundStyle(Theme.gold)
                     }
                 } header: {
                     Text("Locks")
                 } footer: {
-                    Text("Each lock has its own apps and schedule. Phone, Messages, and Maps can never be locked.")
+                    Text("Each lock has its own apps, schedule, unlocks, and protection. Phone, Messages, and Maps can never be locked.")
                 }
 
-                Section("Rules and times") {
-                    NavigationLink {
-                        RulesView()
-                    } label: {
-                        LabeledContent("Unlock rules", value: "\(model.settings.rules.questionsPerCheck) questions, \(Rules.unlockLabel(model.settings.rules.unlockMinutes))")
+                if !model.authorized {
+                    Section {
+                        Button("Allow Screen Time access") { Task { await model.requestAuthorization() } }
+                    } footer: {
+                        Text("Locks need Screen Time access to work.")
                     }
-                    NavigationLink {
-                        LockTimesView()
-                    } label: {
-                        LabeledContent("Morning and midday", value: model.settings.schedule.morning.label)
-                    }
-                }
-
-                Section {
-                    NavigationLink {
-                        ProtectionView()
-                    } label: {
-                        LabeledContent("Protect my settings", value: protectionSummary)
-                    }
-                } header: {
-                    Text("Protection")
-                } footer: {
-                    Text("Passcode, countdowns, waiting periods, and commitments keep a weak moment from undoing your plan.")
                 }
 
                 Section("Reading") {
@@ -190,14 +55,6 @@ struct SettingsScreen: View {
                         .listRowBackground(Color.clear)
                 }
 
-                Section("Emergency") {
-                    NavigationLink {
-                        EmergencyPassView()
-                    } label: {
-                        LabeledContent("Emergency passes", value: "\(model.passesLeft) left")
-                    }
-                }
-
                 Section("About") {
                     Link("Help and support", destination: URL(string: "https://phos-app-sigma.vercel.app/support")!)
                     Link("Privacy policy", destination: URL(string: "https://phos-app-sigma.vercel.app/privacy")!)
@@ -208,9 +65,13 @@ struct SettingsScreen: View {
             .scrollContentBackground(.hidden)
             .background(Theme.paper.ignoresSafeArea())
             .navigationTitle("Settings")
+            .navigationDestination(for: String.self) { id in LockDetailView(lockID: id) }
             .onChange(of: model.settings.shieldStyle) { _, _ in model.savePreferences() }
             .onChange(of: model.settings.preferredRead) { _, _ in model.savePreferences() }
             .onChange(of: model.settings.preferredReflect) { _, _ in model.savePreferences() }
+            .sheet(isPresented: $wizardShown) {
+                LockWizard { model.createLock($0) }.environment(model)
+            }
             .sheet(isPresented: $libraryShown) {
                 LibraryView { pick in
                     model.choose(planID: pick.planID, index: pick.index)
@@ -221,19 +82,77 @@ struct SettingsScreen: View {
             }
         }
     }
+}
 
-    private var protectionSummary: String {
-        let p = model.settings.protection
-        if p.committed(at: Date()) { return "Committed" }
-        var parts: [String] = []
-        if p.hasPasscode { parts.append("Passcode") }
-        if p.delayHours > 0 { parts.append("\(p.delayHours)h wait") }
-        if p.cooldownMinutes > 0 { parts.append("Countdown") }
-        return parts.isEmpty ? "Off" : parts.joined(separator: ", ")
+struct LockRow: View {
+    @Environment(AppModel.self) private var model
+    let lock: LockSet
+
+    var body: some View {
+        let state = model.state(lock)
+        HStack(spacing: 12) {
+            Image(systemName: state.isLocked ? "lock.fill" : (lock.enabled ? "lock.open" : "moon.zzz"))
+                .foregroundStyle(state.isLocked ? Theme.gold : Theme.dim)
+                .frame(width: 26)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(lock.name).font(.body.weight(.semibold)).foregroundStyle(Theme.ink)
+                Text(lock.enabled ? lock.summary : "Turned off").font(.caption).foregroundStyle(Theme.dim).lineLimit(1)
+            }
+            Spacer()
+            if lock.protection.kind != .none {
+                Image(systemName: lock.protection.kind.symbol).font(.caption).foregroundStyle(Theme.dim)
+            }
+        }
+        .padding(.vertical, 2)
     }
 }
 
-// MARK: - Locks
+// MARK: - Building blocks
+
+struct SettingsCard<Content: View>: View {
+    let title: String
+    var footer: String? = nil
+    @ViewBuilder var content: Content
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Eyebrow(text: title).padding(.horizontal, 4)
+            VStack(alignment: .leading, spacing: 14) { content }
+                .padding(16)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(Theme.card, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).stroke(Theme.line))
+            if let footer {
+                Text(footer).font(.caption).foregroundStyle(Theme.dim).padding(.horizontal, 4)
+            }
+        }
+    }
+}
+
+struct ChoiceRow: View {
+    let title: String
+    let detail: String
+    let symbol: String
+    let selected: Bool
+    var action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            HStack(alignment: .top, spacing: 12) {
+                Image(systemName: symbol).foregroundStyle(Theme.gold).frame(width: 24).padding(.top, 2)
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(title).font(.body.weight(.semibold)).foregroundStyle(Theme.ink)
+                    Text(detail).font(.footnote).foregroundStyle(Theme.dim).wrapLines()
+                }
+                Spacer(minLength: 8)
+                Image(systemName: selected ? "checkmark.circle.fill" : "circle")
+                    .font(.title3).foregroundStyle(selected ? Theme.gold : Theme.line)
+            }
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+    }
+}
 
 struct DayChips: View {
     @Binding var days: Set<Int>
@@ -255,397 +174,587 @@ struct DayChips: View {
                 .buttonStyle(.plain)
             }
         }
-        .padding(.vertical, 4)
     }
 }
 
-struct LockSetEditor: View {
-    @Environment(AppModel.self) private var model
-    @Environment(\.dismiss) private var dismiss
-    let existing: LockSet?
+private func timeBinding(_ lock: Binding<LockSet>, _ key: WritableKeyPath<LockSet, TimeOfDay>) -> Binding<Date> {
+    Binding(
+        get: { lock.wrappedValue[keyPath: key].date(on: Date()) },
+        set: { date in
+            let c = Calendar.current.dateComponents([.hour, .minute], from: date)
+            lock.wrappedValue[keyPath: key] = TimeOfDay(hour: c.hour ?? 0, minute: c.minute ?? 0)
+        }
+    )
+}
 
-    @State private var draft = LockSet()
-    @State private var selection = FamilyActivitySelection()
-    @State private var loaded = false
-    @State private var pickerShown = false
-    @State private var confirmDelete = false
-    @State private var flow = SaveFlow()
+struct WhenFields: View {
+    @Binding var lock: LockSet
 
     var body: some View {
-        Form {
-            Section("Name") {
-                TextField("Social media, games, bedtime…", text: $draft.name)
+        VStack(alignment: .leading, spacing: 14) {
+            Text("Active days").font(.subheadline.weight(.semibold)).foregroundStyle(Theme.ink)
+            DayChips(days: $lock.days)
+            Text(lock.daysLabel).font(.caption).foregroundStyle(Theme.dim)
+            Divider()
+            Picker("Hours", selection: $lock.allDay) {
+                Text("All day").tag(true)
+                Text("Set hours").tag(false)
             }
+            .pickerStyle(.segmented)
+            if !lock.allDay {
+                DatePicker("Starts", selection: timeBinding($lock, \.start), displayedComponents: .hourAndMinute)
+                DatePicker("Ends", selection: timeBinding($lock, \.end), displayedComponents: .hourAndMinute)
+                let m = lock.windowMinutes
+                Text("Active for \(m / 60) hr\(m % 60 == 0 ? "" : " \(m % 60) min") each day.").font(.caption).foregroundStyle(Theme.dim)
+            } else {
+                Text("Active from midnight to midnight.").font(.caption).foregroundStyle(Theme.dim)
+            }
+        }
+    }
+}
 
-            Section {
-                Button { pickerShown = true } label: {
-                    HStack {
-                        Label("Apps and categories", systemImage: "square.grid.2x2").foregroundStyle(Theme.ink)
-                        Spacer()
-                        Text(draft.appCount == 0 ? "Choose" : "\(draft.appCount) chosen").foregroundStyle(Theme.dim)
+struct UnlockFields: View {
+    @Binding var lock: LockSet
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            ForEach(UnlockPolicy.allCases) { p in
+                ChoiceRow(title: p.title, detail: p.detail, symbol: p.symbol, selected: lock.policy == p) { lock.policy = p }
+            }
+            if lock.policy == .limited {
+                Divider()
+                Stepper(value: $lock.limit, in: 1...20) {
+                    Text("\(lock.limit) unlocks a day").font(.body.weight(.semibold)).foregroundStyle(Theme.ink)
+                }
+                Toggle("Each unlock also needs a question", isOn: $lock.limitNeedsQuestion)
+            }
+            if lock.policy != .strict {
+                Divider()
+                Toggle("Focus sessions and verse recital also unlock", isOn: $lock.otherWays)
+            }
+        }
+    }
+}
+
+struct RewardFields: View {
+    @Binding var lock: LockSet
+
+    var body: some View {
+        FlowLayout(spacing: 8) {
+            ForEach(LockSet.rewardChoices, id: \.self) { s in
+                Button { lock.rewardSeconds = s } label: {
+                    Text(LockSet.rewardLabel(s))
+                        .font(.subheadline.weight(.semibold))
+                        .padding(.horizontal, 14).padding(.vertical, 9)
+                        .foregroundStyle(lock.rewardSeconds == s ? Color.white : Theme.ink)
+                        .background(lock.rewardSeconds == s ? Theme.gold : Theme.soft, in: Capsule())
+                }
+                .buttonStyle(.plain)
+            }
+        }
+    }
+}
+
+struct ReadingFields: View {
+    @Binding var lock: LockSet
+
+    var body: some View {
+        VStack(spacing: 10) {
+            stepper("Questions", "\(lock.reading.questions)", $lock.reading.questions, 1...10, 1)
+            stepper("Correct to pass", "\(min(lock.reading.pass, lock.reading.questions))", $lock.reading.pass, 1...max(1, lock.reading.questions), 1)
+            stepper("Words to type", "\(lock.reading.words)", $lock.reading.words, 20...300, 5)
+            stepper("Seconds of talking", "\(lock.reading.seconds)", $lock.reading.seconds, 15...300, 5)
+            stepper("Minimum reading time", lock.reading.minutes == 0 ? "Off" : "\(lock.reading.minutes) min", $lock.reading.minutes, 0...30, 1)
+        }
+        .onChange(of: lock.reading.questions) { _, q in lock.reading.pass = min(lock.reading.pass, q) }
+    }
+
+    private func stepper(_ title: String, _ value: String, _ binding: Binding<Int>, _ range: ClosedRange<Int>, _ step: Int) -> some View {
+        Stepper(value: binding, in: range, step: step) {
+            HStack {
+                Text(title).foregroundStyle(Theme.ink)
+                Spacer()
+                Text(value).foregroundStyle(Theme.dim).monospacedDigit()
+            }
+        }
+    }
+}
+
+struct ProtectionFields: View {
+    @Binding var lock: LockSet
+    @State private var passcodeShown = false
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            ForEach(ProtectionKind.allCases) { k in
+                ChoiceRow(title: k.title, detail: k.detail, symbol: k.symbol, selected: lock.protection.kind == k) {
+                    lock.protection.kind = k
+                    if k == .passcode && !lock.protection.hasPasscode { passcodeShown = true }
+                    if k == .commitment && lock.protection.commitUntil == nil {
+                        lock.protection.commitUntil = Calendar.current.date(byAdding: .day, value: 7, to: Date())
                     }
                 }
-            } footer: {
-                Text("Phone, Messages, and Maps can never be locked.")
             }
+            switch lock.protection.kind {
+            case .passcode:
+                Divider()
+                HStack {
+                    Label(lock.protection.hasPasscode ? "Passcode is set" : "No passcode yet", systemImage: "key.fill")
+                        .foregroundStyle(lock.protection.hasPasscode ? Theme.green : Theme.red)
+                    Spacer()
+                    Button(lock.protection.hasPasscode ? "Change" : "Set passcode") { passcodeShown = true }
+                        .font(.subheadline.weight(.semibold)).foregroundStyle(Theme.gold)
+                }
+            case .countdown:
+                Divider()
+                Picker("Wait", selection: $lock.protection.countdownMinutes) {
+                    ForEach([1, 5, 15, 30, 60], id: \.self) { Text("\($0) min").tag($0) }
+                }
+            case .delay:
+                Divider()
+                Picker("Changes start after", selection: $lock.protection.delayHours) {
+                    ForEach([1, 12, 24, 48, 72], id: \.self) { Text($0 == 1 ? "1 hour" : "\($0) hours").tag($0) }
+                }
+            case .commitment:
+                Divider()
+                DatePicker("Committed until", selection: Binding(
+                    get: { lock.protection.commitUntil ?? Date().addingTimeInterval(7 * 86_400) },
+                    set: { lock.protection.commitUntil = $0 }
+                ), in: Date().addingTimeInterval(3600)...Date().addingTimeInterval(90 * 86_400), displayedComponents: [.date, .hourAndMinute])
+            case .none, .afterReading:
+                EmptyView()
+            }
+            Divider()
+            Toggle("Block deleting apps while locked", isOn: $lock.protection.blockDeletion)
+            Text("While this lock is on, iOS will not let you delete any app, including Phos.").font(.caption).foregroundStyle(Theme.dim)
+        }
+        .sheet(isPresented: $passcodeShown) {
+            PasscodeSetupSheet { code in
+                let made = Passcode.make(code)
+                lock.protection.passcodeHash = made.hash
+                lock.protection.passcodeSalt = made.salt
+                lock.protection.passcodeResetAt = nil
+            }
+        }
+    }
+}
 
-            Section("How it locks") {
-                ForEach(LockMode.allCases) { mode in
-                    Button { draft.mode = mode } label: {
-                        HStack(alignment: .top, spacing: 12) {
-                            Image(systemName: mode.symbol).foregroundStyle(Theme.gold).frame(width: 26)
-                            VStack(alignment: .leading, spacing: 3) {
-                                Text(mode.title).font(.headline).foregroundStyle(Theme.ink)
-                                Text(mode.detail).font(.footnote).foregroundStyle(Theme.dim).wrapLines()
-                            }
-                            Spacer()
-                            Image(systemName: draft.mode == mode ? "checkmark.circle.fill" : "circle")
-                                .foregroundStyle(draft.mode == mode ? Theme.gold : Theme.line)
+// MARK: - New lock
+
+struct LockWizard: View {
+    @Environment(\.dismiss) private var dismiss
+    var onCreate: (LockSet) -> Void
+
+    @State private var draft: LockSet = {
+        var l = LockSet()
+        l.name = ""
+        return l
+    }()
+    @State private var page = 0
+    @State private var selection = FamilyActivitySelection()
+    @State private var pickerShown = false
+
+    private var pages: [Int] {
+        draft.policy == .strict ? [0, 1, 2, 5, 6] : [0, 1, 2, 3, 4, 5, 6]
+    }
+
+    var body: some View {
+        let order = pages
+        let current = order[min(page, order.count - 1)]
+        NavigationStack {
+            VStack(spacing: 0) {
+                HStack(spacing: 5) {
+                    ForEach(0..<order.count, id: \.self) { i in
+                        Capsule().fill(i <= page ? Theme.gold : Theme.line).frame(height: 4)
+                    }
+                }
+                .padding(.horizontal, 20).padding(.top, 8)
+
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 18) {
+                        Text(title(current)).font(Theme.serif(30)).foregroundStyle(Theme.ink)
+                        Text(subtitle(current)).foregroundStyle(Theme.dim).wrapLines()
+                        pageContent(current)
+                    }
+                    .padding(20)
+                }
+
+                VStack(spacing: 8) {
+                    if let problem = problem(current) {
+                        Text(problem).font(.footnote).foregroundStyle(Theme.dim)
+                    }
+                    Button(current == 6 ? "Create lock" : "Next") {
+                        if current == 6 {
+                            onCreate(draft)
+                            dismiss()
+                        } else {
+                            withAnimation { page += 1 }
+                        }
+                    }
+                    .buttonStyle(.phos)
+                    .disabled(problem(current) != nil)
+                    if page > 0 {
+                        Button("Back") { withAnimation { page -= 1 } }.buttonStyle(.phosQuiet)
+                    }
+                }
+                .padding(.horizontal, 20).padding(.bottom, 12)
+            }
+            .background(Theme.paper.ignoresSafeArea())
+            .navigationTitle("New lock")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar { ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } } }
+            .familyActivityPicker(isPresented: $pickerShown, selection: Binding(
+                get: { selection },
+                set: { sel in
+                    selection = sel
+                    draft.selection = Blocker.encode(sel)
+                    draft.appCount = Blocker.lockedCount(sel)
+                }
+            ))
+        }
+        .preferredColorScheme(.light)
+    }
+
+    private func title(_ p: Int) -> String {
+        ["Name and apps", "When it locks", "How it unlocks", "Unlock time", "Reading check", "Protect this lock", "Review"][p]
+    }
+
+    private func subtitle(_ p: Int) -> String {
+        [
+            "Group apps that pull you in the same way, like social media or games.",
+            "Pick the days and hours this lock is active.",
+            "What it takes to open these apps while the lock is active.",
+            "How long each unlock opens the apps before they lock again.",
+            "What today's reading must include to unlock. The recommended settings work well for most people.",
+            "Once you create this lock, changing it goes through this protection. Adding apps always works.",
+            "Check everything before you create it."
+        ][p]
+    }
+
+    @ViewBuilder
+    private func pageContent(_ p: Int) -> some View {
+        switch p {
+        case 0:
+            SettingsCard(title: "Name") {
+                TextField("Social media, games, bedtime…", text: $draft.name).font(.title3)
+            }
+            SettingsCard(title: "Apps", footer: "Phone, Messages, and Maps can never be locked.") {
+                HStack {
+                    Text(draft.appCount == 0 ? "Nothing chosen yet" : "\(draft.appCount) apps and categories").foregroundStyle(Theme.ink)
+                    Spacer()
+                    Button("Choose") { pickerShown = true }.font(.body.weight(.semibold)).foregroundStyle(Theme.gold)
+                }
+            }
+        case 1:
+            SettingsCard(title: "Schedule") { WhenFields(lock: $draft) }
+        case 2:
+            SettingsCard(title: "Unlocks") { UnlockFields(lock: $draft) }
+        case 3:
+            SettingsCard(title: "Each unlock gives") { RewardFields(lock: $draft) }
+        case 4:
+            SettingsCard(title: "Reading check") { ReadingFields(lock: $draft) }
+            Button("Use recommended") { draft.reading = ReadingCheck() }.font(.subheadline.weight(.semibold)).foregroundStyle(Theme.gold)
+        case 5:
+            SettingsCard(title: "Protection") { ProtectionFields(lock: $draft) }
+            SettingsCard(title: "Emergency passes", footer: "A pass opens this lock for 15 minutes after a 60 second wait.") {
+                Stepper(value: $draft.emergencyPasses, in: 0...10) {
+                    Text("\(draft.emergencyPasses) a month").foregroundStyle(Theme.ink)
+                }
+            }
+        default:
+            SettingsCard(title: draft.name.isEmpty ? "Lock" : draft.name) {
+                review("Apps", "\(draft.appCount) apps and categories")
+                review("Days", draft.daysLabel)
+                review("Hours", draft.hoursLabel)
+                review("Unlocks", draft.policyLabel)
+                if draft.policy != .strict {
+                    review("Each unlock", LockSet.rewardLabel(draft.rewardSeconds))
+                    review("Reading", "\(draft.reading.questions) questions, \(draft.reading.pass) to pass")
+                }
+                review("Protection", draft.protection.summary)
+                review("Emergency passes", "\(draft.emergencyPasses) a month")
+            }
+        }
+    }
+
+    private func review(_ label: String, _ value: String) -> some View {
+        HStack(alignment: .top) {
+            Text(label).foregroundStyle(Theme.dim)
+            Spacer()
+            Text(value).foregroundStyle(Theme.ink).multilineTextAlignment(.trailing)
+        }
+        .font(.subheadline)
+    }
+
+    private func problem(_ p: Int) -> String? {
+        switch p {
+        case 0:
+            if draft.name.trimmingCharacters(in: .whitespaces).isEmpty { return "Give this lock a name." }
+            if draft.appCount == 0 { return "Choose at least one app or category." }
+        case 1:
+            if draft.days.isEmpty { return "Pick at least one day." }
+            if draft.windowMinutes < 15 { return "Hours must last at least 15 minutes." }
+        case 5:
+            if draft.protection.kind == .passcode && !draft.protection.hasPasscode { return "Set a passcode first." }
+        default:
+            break
+        }
+        return nil
+    }
+}
+
+// MARK: - Lock detail
+
+struct LockDetailView: View {
+    @Environment(AppModel.self) private var model
+    @Environment(\.dismiss) private var dismiss
+    let lockID: String
+
+    @State private var draft = LockSet()
+    @State private var loaded = false
+    @State private var editing = false
+    @State private var delayedHours: Int?
+    @State private var passcodeShown = false
+    @State private var countdownMinutes: Int?
+    @State private var message: String?
+    @State private var confirmDelete = false
+    @State private var addPickerShown = false
+    @State private var addSelection = FamilyActivitySelection()
+    @State private var replacePickerShown = false
+    @State private var replaceSelection = FamilyActivitySelection()
+
+    var body: some View {
+        Group {
+            if let lock = model.lock(lockID) {
+                content(lock)
+            } else {
+                Text("This lock was deleted.").foregroundStyle(Theme.dim)
+            }
+        }
+        .background(Theme.paper.ignoresSafeArea())
+        .navigationBarTitleDisplayMode(.inline)
+    }
+
+    private func content(_ lock: LockSet) -> some View {
+        let unchanged = draft == lock
+        return ScrollView {
+            VStack(alignment: .leading, spacing: 18) {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(lock.name).font(Theme.serif(34)).foregroundStyle(Theme.ink)
+                    Label(statusText(lock), systemImage: model.state(lock).isLocked ? "lock.fill" : "lock.open")
+                        .font(.subheadline.weight(.semibold)).foregroundStyle(model.state(lock).isLocked ? Theme.gold : Theme.green)
+                    Text(lock.summary).font(.caption).foregroundStyle(Theme.dim)
+                }
+
+                if let pending = model.pendingByLock[lock.id] {
+                    CardBox(padding: 14, fill: Theme.soft) {
+                        VStack(alignment: .leading, spacing: 6) {
+                            Label(pending.deleted ? "This lock will be deleted \(pending.effectiveAt.formatted(date: .abbreviated, time: .shortened))" : "Your changes start \(pending.effectiveAt.formatted(date: .abbreviated, time: .shortened))", systemImage: "clock")
+                                .font(.subheadline.weight(.semibold)).foregroundStyle(Theme.ink)
+                            Button("Keep the current settings") { model.cancelPending(lock.id) }
+                                .font(.footnote.weight(.semibold)).foregroundStyle(Theme.gold)
                         }
                     }
                 }
-            }
 
-            if draft.mode == .scheduled {
-                Section {
-                    DatePicker("Starts", selection: time(\.start), displayedComponents: .hourAndMinute)
-                    DatePicker("Ends", selection: time(\.end), displayedComponents: .hourAndMinute)
-                    Toggle("Reading can earn open time", isOn: $draft.allowEarning)
-                } header: {
-                    Text("Hours")
-                } footer: {
-                    Text(hoursFooter)
+                SettingsCard(title: "Apps", footer: editing ? "You can remove apps while settings are open." : "Adding apps always works. Removing them needs Change settings.") {
+                    HStack {
+                        Text("\(lock.appCount) apps and categories").foregroundStyle(Theme.ink)
+                        Spacer()
+                        Button("Add apps") { addSelection = Blocker.selection(from: lock.selection); addPickerShown = true }
+                            .font(.body.weight(.semibold)).foregroundStyle(Theme.gold)
+                    }
+                    if editing {
+                        Button("Choose apps, including removing") { replaceSelection = Blocker.selection(from: draft.selection); replacePickerShown = true }
+                            .font(.subheadline).foregroundStyle(Theme.ink)
+                        if draft.appCount != lock.appCount {
+                            Text("\(draft.appCount) after saving").font(.caption).foregroundStyle(Theme.dim)
+                        }
+                    }
+                }
+
+                ZStack(alignment: .top) {
+                    VStack(alignment: .leading, spacing: 18) {
+                        SettingsCard(title: "Name") { TextField("Name", text: $draft.name) }
+                        SettingsCard(title: "Schedule") { WhenFields(lock: $draft) }
+                        SettingsCard(title: "Unlocks") { UnlockFields(lock: $draft) }
+                        if draft.policy != .strict {
+                            SettingsCard(title: "Each unlock gives") { RewardFields(lock: $draft) }
+                            SettingsCard(title: "Reading check") { ReadingFields(lock: $draft) }
+                        }
+                        SettingsCard(title: "Emergency passes") {
+                            Stepper(value: $draft.emergencyPasses, in: 0...10) {
+                                Text("\(draft.emergencyPasses) a month · \(model.passesLeft(lock)) left").foregroundStyle(Theme.ink)
+                            }
+                        }
+                        SettingsCard(title: "Protection") { ProtectionFields(lock: $draft) }
+                        SettingsCard(title: "Status") {
+                            Toggle("Lock is on", isOn: $draft.enabled)
+                            Button("Delete this lock", role: .destructive) { confirmDelete = true }
+                        }
+                    }
+                    .disabled(!editing)
+                    .opacity(editing ? 1 : 0.4)
+
+                    if !editing {
+                        VStack(spacing: 8) {
+                            Button { requestEdit(lock) } label: {
+                                Label("Change settings", systemImage: lock.protection.kind.symbol)
+                                    .font(.headline)
+                                    .padding(.horizontal, 22).padding(.vertical, 14)
+                                    .background(Theme.gold, in: Capsule())
+                                    .foregroundStyle(.white)
+                                    .shadow(color: Theme.ink.opacity(0.18), radius: 12, y: 6)
+                            }
+                            Text("Protected by \(lock.protection.summary.lowercased())")
+                                .font(.caption.weight(.semibold)).foregroundStyle(Theme.ink)
+                                .padding(.horizontal, 10).padding(.vertical, 4)
+                                .background(Theme.paper.opacity(0.9), in: Capsule())
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding(.top, 70)
+                    }
                 }
             }
-
-            Section {
-                DayChips(days: $draft.days)
-            } header: {
-                Text("Days")
-            } footer: {
-                Text(draft.days.count == 7 ? "Every day." : "Only on the highlighted days.")
-            }
-
-            Section {
-                Toggle("Lock is on", isOn: $draft.enabled)
-            }
-
-            Section {
-                Button(existing == nil ? "Add lock" : "Save lock") { save() }
-                    .disabled(problem != nil)
-            } footer: {
-                if let problem { Text(problem).foregroundStyle(Theme.red) }
-            }
-
-            if existing != nil {
-                Section {
-                    Button("Delete lock", role: .destructive) { confirmDelete = true }
+            .padding(20)
+            .padding(.bottom, 90)
+        }
+        .safeAreaInset(edge: .bottom) {
+            if editing && !unchanged {
+                VStack(spacing: 6) {
+                    if let problem = problem {
+                        Text(problem).font(.footnote).foregroundStyle(Theme.red)
+                    }
+                    Button(delayedHours.map { "Save, starts in \($0) hours" } ?? "Save changes") { save(lock) }
+                        .buttonStyle(.phos)
+                        .disabled(problem != nil)
+                    Button("Discard") { draft = lock }.buttonStyle(.phosQuiet)
                 }
+                .padding(.horizontal, 20).padding(.vertical, 10)
+                .background(Theme.paper.shadow(.drop(color: Theme.ink.opacity(0.08), radius: 8, y: -2)))
             }
         }
-        .scrollContentBackground(.hidden)
-        .background(Theme.paper.ignoresSafeArea())
-        .navigationTitle(existing == nil ? "New lock" : "Edit lock")
-        .familyActivityPicker(isPresented: $pickerShown, selection: Binding(
-            get: { selection },
+        .onAppear {
+            guard !loaded else { return }
+            draft = lock
+            editing = lock.protection.kind == .none
+            loaded = true
+        }
+        .familyActivityPicker(isPresented: $addPickerShown, selection: Binding(
+            get: { addSelection },
             set: { sel in
-                selection = sel
+                addSelection = sel
+                model.addApps(to: lock.id, picked: sel)
+                if let updated = model.lock(lock.id) {
+                    draft.selection = updated.selection
+                    draft.appCount = updated.appCount
+                }
+            }
+        ))
+        .familyActivityPicker(isPresented: $replacePickerShown, selection: Binding(
+            get: { replaceSelection },
+            set: { sel in
+                replaceSelection = sel
                 draft.selection = Blocker.encode(sel)
                 draft.appCount = Blocker.lockedCount(sel)
             }
         ))
-        .onAppear {
-            guard !loaded else { return }
-            draft = existing ?? LockSet()
-            if existing == nil { draft.name = "" }
-            selection = Blocker.selection(from: draft.selection)
-            loaded = true
+        .sheet(isPresented: $passcodeShown) {
+            PasscodeEntrySheet(lock: lock, onSuccess: { passcodeShown = false; editing = true }, onCancel: { passcodeShown = false })
+                .environment(model)
         }
-        .confirmationDialog("Delete \(draft.name)?", isPresented: $confirmDelete, titleVisibility: .visible) {
-            Button("Delete lock", role: .destructive) {
-                var c = model.settings.config
-                c.lockSets.removeAll { $0.id == draft.id }
-                flow.submit(c, model: model) { dismiss() }
-            }
+        .sheet(isPresented: Binding(get: { countdownMinutes != nil }, set: { if !$0 { countdownMinutes = nil } })) {
+            CooldownSheet(minutes: countdownMinutes ?? 5, onDone: { countdownMinutes = nil; editing = true }, onCancel: { countdownMinutes = nil })
+                .interactiveDismissDisabled()
+        }
+        .alert("Settings", isPresented: Binding(get: { message != nil }, set: { if !$0 { message = nil } })) {
+            Button("OK") { message = nil }
         } message: {
-            Text("Deleting a lock makes Phos easier, so your protections apply.")
+            Text(message ?? "")
         }
-        .saveFlow(flow)
-    }
-
-    private var hoursFooter: String {
-        let length = draft.windowMinutes
-        let hours = length / 60, minutes = length % 60
-        let span = minutes == 0 ? "\(hours) hours" : "\(hours) hr \(minutes) min"
-        return draft.allowEarning
-            ? "Locked for \(span). Inside these hours reading and questions still open apps for a while."
-            : "Strict for \(span). Inside these hours only an emergency pass opens these apps."
+        .confirmationDialog("Delete \(lock.name)?", isPresented: $confirmDelete, titleVisibility: .visible) {
+            Button("Delete lock", role: .destructive) {
+                if let h = delayedHours {
+                    let when = model.scheduleChange(lock, deleted: true, hours: h)
+                    message = "This lock will be deleted \(when.formatted(date: .abbreviated, time: .shortened))."
+                    editing = false
+                } else {
+                    model.deleteLock(lock.id)
+                    dismiss()
+                }
+            }
+        }
     }
 
     private var problem: String? {
         if draft.name.trimmingCharacters(in: .whitespaces).isEmpty { return "Give this lock a name." }
-        if draft.appCount == 0 { return "Choose at least one app or category." }
+        if draft.appCount == 0 { return "Keep at least one app, or delete the lock." }
         if draft.days.isEmpty { return "Pick at least one day." }
-        if draft.mode == .scheduled && draft.windowMinutes < 15 { return "Scheduled hours must last at least 15 minutes." }
+        if draft.windowMinutes < 15 { return "Hours must last at least 15 minutes." }
+        if draft.protection.kind == .passcode && !draft.protection.hasPasscode { return "Set a passcode." }
         return nil
     }
 
-    private func save() {
-        var c = model.settings.config
-        if let i = c.lockSets.firstIndex(where: { $0.id == draft.id }) {
-            c.lockSets[i] = draft
+    private func statusText(_ lock: LockSet) -> String {
+        switch model.state(lock) {
+        case .inactive: return lock.enabled ? "Not active right now" : "Turned off"
+        case .open: return "Open right now"
+        case .needsReading: return "Locked until today's reading"
+        case .needsQuestion: return "Locked, one question opens it"
+        case .needsTap: return "Locked, tap to unlock in Phos"
+        case .usedUp: return "No unlocks left today"
+        case .strict: return "Strict, passes only"
+        }
+    }
+
+    private func requestEdit(_ lock: LockSet) {
+        switch ProtectionLogic.access(lock, readingDone: model.today.readingDone, now: Date()) {
+        case .open:
+            editing = true
+        case .needsPasscode:
+            passcodeShown = true
+        case .needsCountdown(let m):
+            countdownMinutes = m
+        case .delayed(let h):
+            delayedHours = h
+            editing = true
+        case .blocked(let text):
+            message = text
+        }
+    }
+
+    private func save(_ lock: LockSet) {
+        var updated = draft
+        updated.reading = updated.reading.normalized()
+        if let h = delayedHours {
+            let when = model.scheduleChange(updated, deleted: false, hours: h)
+            message = "Saved. These changes start \(when.formatted(date: .abbreviated, time: .shortened))."
+            draft = lock
+            editing = false
+            delayedHours = nil
         } else {
-            c.lockSets.append(draft)
+            model.saveLock(updated)
+            editing = updated.protection.kind == .none
         }
-        flow.submit(c, model: model) { dismiss() }
-    }
-
-    private func time(_ key: WritableKeyPath<LockSet, TimeOfDay>) -> Binding<Date> {
-        Binding(
-            get: { draft[keyPath: key].date(on: Date()) },
-            set: { date in
-                let c = Calendar.current.dateComponents([.hour, .minute], from: date)
-                draft[keyPath: key] = TimeOfDay(hour: c.hour ?? 0, minute: c.minute ?? 0)
-            }
-        )
     }
 }
 
-struct LockTimesView: View {
-    @Environment(AppModel.self) private var model
-    @Environment(\.dismiss) private var dismiss
-    @State private var draft = Schedule()
-    @State private var loaded = false
-    @State private var flow = SaveFlow()
-
-    var body: some View {
-        Form {
-            Section {
-                DatePicker("Morning lock", selection: time(\.morning), displayedComponents: .hourAndMinute)
-            } footer: {
-                Text("Your reading day starts here. \"Until I read\" and \"All day\" locks begin at this time.")
-            }
-            Section {
-                DatePicker("First midday question", selection: time(\.midday), displayedComponents: .hourAndMinute)
-            } footer: {
-                let times = draft.middayTimes(count: model.settings.rules.middayQuestions).map(\.label)
-                Text(times.isEmpty ? "Midday questions are off in Unlock rules." : "Questions at \(times.joined(separator: ", ")). Each relocks apps until answered.")
-            }
-            Section {
-                Button("Save times") {
-                    var c = model.settings.config
-                    c.schedule = draft
-                    flow.submit(c, model: model) { dismiss() }
-                }
-                .disabled(draft == model.settings.schedule)
-            } footer: {
-                Text("A later morning lock is an easier change, so your protections apply.")
-            }
-        }
-        .scrollContentBackground(.hidden)
-        .background(Theme.paper.ignoresSafeArea())
-        .navigationTitle("Morning and midday")
-        .onAppear { if !loaded { draft = model.settings.schedule; loaded = true } }
-        .saveFlow(flow)
-    }
-
-    private func time(_ key: WritableKeyPath<Schedule, TimeOfDay>) -> Binding<Date> {
-        Binding(
-            get: { draft[keyPath: key].date(on: Date()) },
-            set: { date in
-                let c = Calendar.current.dateComponents([.hour, .minute], from: date)
-                draft[keyPath: key] = TimeOfDay(hour: c.hour ?? 0, minute: c.minute ?? 0)
-            }
-        )
-    }
-}
-
-struct RulesView: View {
-    @Environment(AppModel.self) private var model
-    @State private var draft = Rules()
-    @State private var loaded = false
-    @State private var flow = SaveFlow()
-
-    var body: some View {
-        Form {
-            ForEach(RuleField.allCases) { field in
-                Section {
-                    if field == .unlock {
-                        Picker(field.title, selection: Binding(get: { draft.unlockMinutes }, set: { draft.unlockMinutes = $0 })) {
-                            ForEach(Rules.unlockChoices, id: \.self) { Text(Rules.unlockLabel($0)).tag($0) }
-                        }
-                    } else {
-                        Stepper(value: binding(field), in: range(field), step: field.step) {
-                            LabeledContent(field.title, value: field.valueLabel(field.get(draft)))
-                        }
-                    }
-                } footer: {
-                    Text(field.detail)
-                }
-            }
-            Section {
-                Button("Save rules") {
-                    var c = model.settings.config
-                    c.rules = draft
-                    flow.submit(c, model: model) { draft = model.settings.rules }
-                }
-                .disabled(draft == model.settings.rules)
-            } footer: {
-                Text("Stricter rules apply right away. Easier ones go through the protections you set.")
-            }
-        }
-        .scrollContentBackground(.hidden)
-        .background(Theme.paper.ignoresSafeArea())
-        .navigationTitle("Unlock rules")
-        .onAppear { if !loaded { draft = model.settings.rules; loaded = true } }
-        .saveFlow(flow)
-    }
-
-    private func range(_ f: RuleField) -> ClosedRange<Int> {
-        f == .pass ? 1...draft.questionsPerCheck : f.range
-    }
-
-    private func binding(_ f: RuleField) -> Binding<Int> {
-        Binding(
-            get: { f.get(draft) },
-            set: { v in
-                f.set(&draft, v)
-                if f == .questions { draft.correctToPass = min(draft.correctToPass, v) }
-            }
-        )
-    }
-}
-
-// MARK: - Protection
-
-struct ProtectionView: View {
-    @Environment(AppModel.self) private var model
-    @State private var draft = Protection()
-    @State private var loaded = false
-    @State private var setupShown = false
-    @State private var flow = SaveFlow()
-
-    var body: some View {
-        Form {
-            Section {
-                Text("Pick any mix. These only apply when a change makes Phos easier. Making it stricter always works right away.")
-                    .font(.footnote).foregroundStyle(Theme.dim)
-            }
-
-            Section {
-                if draft.hasPasscode {
-                    Label("Passcode is on", systemImage: "lock.shield.fill").foregroundStyle(Theme.green)
-                    Button("Change passcode") { setupShown = true }
-                    Button("Remove passcode", role: .destructive) {
-                        draft.passcodeHash = nil
-                        draft.passcodeSalt = nil
-                    }
-                    if let reset = model.settings.protection.passcodeResetAt {
-                        Text("Your passcode clears \(reset.formatted(.dateTime.weekday(.wide).hour().minute())).").font(.footnote).foregroundStyle(Theme.dim)
-                    } else if model.settings.protection.hasPasscode {
-                        Button("I forgot my passcode") { model.forgotPasscode() }.font(.footnote)
-                    }
-                } else {
-                    Button("Set a passcode") { setupShown = true }
-                }
-            } header: {
-                Text("Passcode")
-            } footer: {
-                Text("Asked before any easier change. For real accountability, have a friend type it and keep it. A forgotten passcode clears after 24 hours.")
-            }
-
-            Section {
-                Picker("Wait before easier changes", selection: $draft.delayHours) {
-                    Text("Right away").tag(0)
-                    Text("1 hour").tag(1)
-                    Text("12 hours").tag(12)
-                    Text("24 hours").tag(24)
-                    Text("48 hours").tag(48)
-                    Text("72 hours").tag(72)
-                }
-            } footer: {
-                Text("Easier changes are saved but only start after this wait.")
-            }
-
-            Section {
-                Picker("Countdown before saving", selection: $draft.cooldownMinutes) {
-                    Text("Off").tag(0)
-                    Text("1 minute").tag(1)
-                    Text("5 minutes").tag(5)
-                    Text("15 minutes").tag(15)
-                    Text("30 minutes").tag(30)
-                }
-            } footer: {
-                Text("You stay on a countdown screen before an easier change saves. Leave the app and it starts over.")
-            }
-
-            Section {
-                Toggle("Only after today's reading", isOn: $draft.onlyAfterReading)
-            } footer: {
-                Text("Settings can only get easier once you have read today.")
-            }
-
-            Section {
-                Toggle("Commit until a date", isOn: Binding(
-                    get: { draft.commitUntil != nil },
-                    set: { draft.commitUntil = $0 ? Calendar.current.date(byAdding: .day, value: 7, to: Date()) : nil }
-                ))
-                if draft.commitUntil != nil {
-                    DatePicker("Until", selection: Binding(
-                        get: { draft.commitUntil ?? Date() },
-                        set: { draft.commitUntil = $0 }
-                    ), in: Date().addingTimeInterval(3600)...Date().addingTimeInterval(90 * 86_400), displayedComponents: [.date, .hourAndMinute])
-                }
-            } footer: {
-                Text("No easier changes at all until then, not even with your passcode. Emergency passes still work.")
-            }
-
-            Section {
-                Toggle("Block deleting apps while locked", isOn: $draft.preventAppRemoval)
-            } footer: {
-                Text("While any lock is on, iOS will not let you delete apps, including Phos.")
-            }
-
-            Section {
-                Button("Save protection") {
-                    var c = model.settings.config
-                    var p = draft
-                    p.passcodeResetAt = model.settings.protection.passcodeResetAt
-                    c.protection = p
-                    flow.submit(c, model: model) { draft = model.settings.protection }
-                }
-                .disabled(draft == model.settings.protection)
-            }
-        }
-        .scrollContentBackground(.hidden)
-        .background(Theme.paper.ignoresSafeArea())
-        .navigationTitle("Protection")
-        .onAppear { if !loaded { draft = model.settings.protection; loaded = true } }
-        .sheet(isPresented: $setupShown) {
-            PasscodeSetupSheet { code in
-                let made = Passcode.make(code)
-                draft.passcodeHash = made.hash
-                draft.passcodeSalt = made.salt
-            }
-        }
-        .saveFlow(flow)
-    }
-}
+// MARK: - Protection sheets
 
 struct PasscodeEntrySheet: View {
     @Environment(AppModel.self) private var model
+    let lock: LockSet
     var onSuccess: () -> Void
     var onCancel: () -> Void
     @State private var code = ""
     @State private var wrong = false
-    @State private var forgotNote = false
     @FocusState private var focused: Bool
 
     var body: some View {
         VStack(spacing: 20) {
-            Image(systemName: "lock.shield.fill").font(.system(size: 44)).foregroundStyle(Theme.gold).padding(.top, 30)
-            Text("Enter your Phos passcode").font(Theme.serif(26)).foregroundStyle(Theme.ink)
-            Text("This change makes Phos easier.").foregroundStyle(Theme.dim)
+            Image(systemName: "key.fill").font(.system(size: 40)).foregroundStyle(Theme.gold).padding(.top, 30)
+            Text("Enter the passcode").font(Theme.serif(28)).foregroundStyle(Theme.ink)
+            Text("To change \(lock.name).").foregroundStyle(Theme.dim)
             SecureField("Passcode", text: $code)
                 .keyboardType(.numberPad)
                 .font(.title2.monospacedDigit())
@@ -656,15 +765,15 @@ struct PasscodeEntrySheet: View {
                 .focused($focused)
             if wrong { Text("That passcode is not right.").font(.footnote).foregroundStyle(Theme.red) }
             Button("Continue") {
-                if model.checkPasscode(code) { onSuccess() } else { wrong = true; code = "" }
+                if model.checkPasscode(code, for: lock) { onSuccess() } else { wrong = true; code = "" }
             }
             .buttonStyle(.phos)
             .disabled(code.count < 4)
             Button("Cancel") { onCancel() }.buttonStyle(.phosQuiet)
-            if forgotNote || model.settings.protection.passcodeResetAt != nil {
-                Text("Your passcode clears 24 hours after you asked. Then you can set a new one.").font(.footnote).foregroundStyle(Theme.dim).multilineTextAlignment(.center)
+            if let reset = model.lock(lock.id)?.protection.passcodeResetAt {
+                Text("The passcode clears \(reset.formatted(date: .abbreviated, time: .shortened)).").font(.footnote).foregroundStyle(Theme.dim)
             } else {
-                Button("I forgot my passcode") { model.forgotPasscode(); forgotNote = true }.font(.footnote).foregroundStyle(Theme.dim)
+                Button("I forgot the passcode") { model.forgotPasscode(lock.id) }.font(.footnote).foregroundStyle(Theme.dim)
             }
             Spacer()
         }
@@ -686,9 +795,9 @@ struct PasscodeSetupSheet: View {
 
     var body: some View {
         VStack(spacing: 18) {
-            Image(systemName: "lock.shield").font(.system(size: 44)).foregroundStyle(Theme.gold).padding(.top, 30)
-            Text(confirming ? "Type it again" : "Choose a passcode").font(Theme.serif(26)).foregroundStyle(Theme.ink)
-            Text("4 to 8 digits. Pick one you will not guess in a weak moment, or let a friend choose it.")
+            Image(systemName: "key").font(.system(size: 40)).foregroundStyle(Theme.gold).padding(.top, 30)
+            Text(confirming ? "Type it again" : "Choose a passcode").font(Theme.serif(28)).foregroundStyle(Theme.ink)
+            Text("4 to 8 digits. For real accountability, let a friend type it and keep it. A forgotten passcode clears after 24 hours.")
                 .font(.subheadline).foregroundStyle(Theme.dim).multilineTextAlignment(.center)
             SecureField("Passcode", text: confirming ? $second : $first)
                 .keyboardType(.numberPad)
@@ -739,7 +848,7 @@ struct CooldownSheet: View {
             VStack(spacing: 22) {
                 Spacer()
                 Text("Take a breath").font(Theme.serif(32)).foregroundStyle(Theme.ink)
-                Text("This change makes Phos easier. Stay here until the countdown ends. Leaving starts it over.")
+                Text("Settings open when the countdown ends. Leaving the app starts it over.")
                     .foregroundStyle(Theme.dim).multilineTextAlignment(.center)
                 RingProgress(value: 1 - left / total, lineWidth: 10) {
                     Text(countdownText(left)).font(Theme.serif(48)).monospacedDigit().foregroundStyle(Theme.ink)
@@ -747,7 +856,7 @@ struct CooldownSheet: View {
                 .frame(width: 220, height: 220)
                 Text("“Be still, and know that I am God.” Psalm 46:10").font(Theme.serif(17, .regular)).italic().foregroundStyle(Theme.dim)
                 Spacer()
-                Button(left > 0 ? "Waiting" : "Save the change") { onDone() }
+                Button(left > 0 ? "Waiting" : "Open settings") { onDone() }
                     .buttonStyle(.phos).disabled(left > 0)
                 Button("Never mind") { onCancel() }.buttonStyle(.phosQuiet)
             }
@@ -759,7 +868,7 @@ struct CooldownSheet: View {
     }
 }
 
-/// A faithful preview of the lock screen people see on a locked app.
+/// A preview of the screen people see on a locked app.
 struct ShieldPreview: View {
     @Environment(AppModel.self) private var model
     let style: ShieldStyle
@@ -777,10 +886,10 @@ struct ShieldPreview: View {
             Text(subtitle(snap)).font(.system(size: large ? 19 : 14)).foregroundStyle(Theme.dim).multilineTextAlignment(.center).padding(.horizontal, 20)
             Spacer(minLength: large ? 80 : 10)
             VStack(spacing: 6) {
-                Text(button).font(.system(size: large ? 19 : 15, weight: .semibold)).foregroundStyle(.white)
+                Text("Read today's chapter").font(.system(size: large ? 19 : 15, weight: .semibold)).foregroundStyle(.white)
                     .frame(maxWidth: .infinity, minHeight: large ? 58 : 46)
                     .background(Theme.gold, in: RoundedRectangle(cornerRadius: large ? 16 : 12, style: .continuous))
-                Text("Close").font(.system(size: large ? 18 : 14, weight: .semibold)).foregroundStyle(Theme.gold).frame(minHeight: large ? 48 : 36)
+                Text("Not now").font(.system(size: large ? 18 : 14, weight: .semibold)).foregroundStyle(Theme.dim).frame(minHeight: large ? 48 : 36)
             }
             .padding(.horizontal, large ? 24 : 16)
         }
@@ -793,25 +902,17 @@ struct ShieldPreview: View {
 
     private func title(_ s: SharedSnapshot) -> String {
         switch style {
-        case .verse: return "\(app) is locked"
+        case .verse: return "\(app) can wait"
         case .streak: return s.streak > 0 ? "Day \(s.streak + 1) is waiting" : "Start your streak"
-        case .quiet: return "Locked until you read"
+        case .quiet: return "Read first"
         }
     }
 
     private func subtitle(_ s: SharedSnapshot) -> String {
         switch style {
         case .verse: return "“\(s.verseText)”\n\(s.verseRef)"
-        case .streak: return "Read \(s.chapterTitle) to keep your \(s.streak) day streak and open \(app)."
-        case .quiet: return "Phos opens your apps after today's chapter."
-        }
-    }
-
-    private var button: String {
-        switch style {
-        case .verse: return "Unlock with today's reading"
-        case .streak: return "Keep my streak"
-        case .quiet: return "Open Phos"
+        case .streak: return "Read \(s.chapterTitle) to open \(app)."
+        case .quiet: return "\(app) opens after today's chapter."
         }
     }
 }

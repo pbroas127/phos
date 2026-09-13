@@ -1,59 +1,54 @@
 import CoreMotion
 import SwiftUI
 
-/// Pass screen: choose how long apps stay open.
-struct PickTimeView: View {
+/// Result screen after a reading or another way of earning time: which locks opened and for how long.
+struct UnlockSummary: View {
     @Environment(AppModel.self) private var model
     let title: String
-    let subtitle: String
     var after: PathLogic.After? = nil
-    var onUnlocked: () -> Void
-    @State private var minutes: Int?
+    var onDone: () -> Void
 
     var body: some View {
-        let choices = model.unlockChoices
-        let alreadyOpen = model.lockReason == .none && model.today.unlockedUntil != nil
-        VStack(spacing: 22) {
+        VStack(spacing: 16) {
             ScrollView {
-            VStack(spacing: 22) {
-            Image(systemName: "checkmark")
-                .font(.system(size: 54, weight: .semibold))
-                .foregroundStyle(.white)
-                .frame(width: after == nil ? 120 : 92, height: after == nil ? 120 : 92)
-                .background(Theme.gold, in: Circle())
-                .padding(.top, 20)
-            VStack(spacing: 6) {
-                Text(title).font(Theme.serif(34)).foregroundStyle(Theme.ink)
-                Text(subtitle).font(.body).foregroundStyle(Theme.dim)
-            }
-            FlowLayout(spacing: 10) {
-                ForEach(choices, id: \.self) { m in
-                    Button { minutes = m } label: {
-                        Text(Rules.unlockLabel(m))
-                            .font(.headline)
-                            .padding(.horizontal, 18).padding(.vertical, 12)
-                            .foregroundStyle((minutes ?? choices.last) == m ? Color.white : Theme.ink)
-                            .background((minutes ?? choices.last) == m ? Theme.gold : Theme.card, in: Capsule())
-                            .overlay(Capsule().stroke(Theme.line))
+                VStack(spacing: 18) {
+                    Image(systemName: "checkmark")
+                        .font(.system(size: 44, weight: .semibold))
+                        .foregroundStyle(.white)
+                        .frame(width: 96, height: 96)
+                        .background(Theme.gold, in: Circle())
+                        .padding(.top, 20)
+                    Text(title).font(Theme.serif(32)).foregroundStyle(Theme.ink)
+                    if model.lastUnlocked.isEmpty {
+                        Text("Nothing was waiting to unlock.").foregroundStyle(Theme.dim)
+                    } else {
+                        VStack(spacing: 0) {
+                            ForEach(model.lastUnlocked) { lock in
+                                HStack {
+                                    Image(systemName: "lock.open.fill").foregroundStyle(Theme.gold)
+                                    Text(lock.name).font(.body.weight(.semibold)).foregroundStyle(Theme.ink)
+                                    Spacer()
+                                    Text(openText(lock)).font(.subheadline).foregroundStyle(Theme.dim)
+                                }
+                                .padding(.vertical, 12)
+                                if lock.id != model.lastUnlocked.last?.id { Divider() }
+                            }
+                        }
+                        .padding(.horizontal, 16)
+                        .background(Theme.card, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+                        .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).stroke(Theme.line))
                     }
-                    .buttonStyle(.plain)
+                    if let after { NextStepCard(after: after) }
                 }
+                .padding(.horizontal, 20)
             }
-            .padding(.horizontal, 30)
-            if let after {
-                NextStepCard(after: after)
-            }
-            }
-            }
-            Button(alreadyOpen ? "Add this time" : "Unlock my apps") {
-                model.unlock(minutes: minutes ?? choices.last ?? 30)
-                onUnlocked()
-            }
-            .buttonStyle(.phos)
-            Button(alreadyOpen ? "Done" : "Keep them locked") { onUnlocked() }.buttonStyle(.phosQuiet)
+            Button("Done", action: onDone).buttonStyle(.phos).padding(.horizontal, 20).padding(.bottom, 12)
         }
-        .padding(.horizontal, 20)
-        .padding(.bottom, 12)
+    }
+
+    private func openText(_ lock: LockSet) -> String {
+        guard let until = model.today.day(lock.id).until else { return "Open" }
+        return lock.rewardSeconds == LockSet.untilEnd ? "Open until \(until.shortTime)" : "Open \(LockSet.rewardLabel(lock.rewardSeconds)), until \(until.shortTime)"
     }
 }
 
@@ -80,7 +75,7 @@ struct MissedView: View {
                             .background(Theme.soft, in: Circle())
                             .padding(.top, 20)
                         Text("\(score) of \(total) correct").font(Theme.serif(32)).foregroundStyle(Theme.ink)
-                        Text("You need \(min(model.settings.rules.correctToPass, total)) to unlock").foregroundStyle(Theme.dim)
+                        Text("You need \(min(model.readingCheck.pass, total)) to unlock").foregroundStyle(Theme.dim)
                         ForEach(missed, id: \.id) { q in
                             CardBox {
                                 VStack(alignment: .leading, spacing: 8) {
@@ -108,72 +103,161 @@ struct MissedView: View {
     }
 }
 
-/// One question to reopen apps after the first unlock of the day.
-struct RecallFlow: View {
+/// Every lock with what it takes to open it right now.
+struct UnlockCenter: View {
     @Environment(AppModel.self) private var model
     @Environment(\.dismiss) private var dismiss
-    @State private var item: QuizItem?
-    @State private var answered: Bool?
-    @State private var passed = false
+    @State private var questionLock: LockSet?
+    @State private var passLock: LockSet?
 
     var body: some View {
-        VStack(spacing: 0) {
-            FlowHeader(title: model.lockReason == .midday ? "Midday question" : "One question", subtitle: model.todaysRecord?.title ?? model.todaysTitle) { dismiss() }
-                .padding(.horizontal, 20).padding(.top, 12).padding(.bottom, 8)
-            if !model.today.readingDone {
-                Spacer()
-                Text("Read today's chapter first.").font(Theme.serif(24)).foregroundStyle(Theme.ink)
-                Button("Start reading") { model.route = nil; DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { model.route = .reading } }
-                    .buttonStyle(.phos).padding(20)
-                Spacer()
-            } else if passed {
-                PickTimeView(title: "Right", subtitle: "Your apps open for") { dismiss() }
-            } else if let item {
-                ScrollView {
-                    VStack(alignment: .leading, spacing: 16) {
-                        if useYourWords, let record = model.todaysRecord, !record.reflection.isEmpty {
-                            CardBox(fill: Theme.soft) {
-                                VStack(alignment: .leading, spacing: 6) {
-                                    Text("“\(TextChecks.quote(record.reflection))”").font(Theme.serif(18, .regular)).italic().foregroundStyle(Theme.ink)
-                                    Text("You, this morning at \(record.completedAt.shortTime)").font(.caption).foregroundStyle(Theme.dim)
-                                }
-                            }
-                            Text("You wrote that about \(record.title). Now one question from it.").font(.subheadline).foregroundStyle(Theme.dim)
-                        }
-                        QuestionView(item: item, locked: answered != nil) { right in
-                            answered = right
-                            if !right { model.registerMiss() }
-                        }
-                        .id(item.id)
-                        if let answered {
-                            Feedback(item: item, right: answered)
-                            if answered {
-                                Button("Continue") { passed = true }.buttonStyle(.phos)
-                            } else {
-                                RetryButton { newQuestion() }
-                            }
-                        }
-                        if model.lockReason != .midday {
-                            OtherUnlocks()
-                        }
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 14) {
+                    if model.locks.isEmpty {
+                        CardBox { Text("You have no locks yet. Add one in Settings.").foregroundStyle(Theme.dim) }
                     }
-                    .padding(.horizontal, 20)
-                    .padding(.bottom, 20)
+                    ForEach(model.locks) { lock in
+                        LockStatusCard(lock: lock,
+                                       onRead: { dismiss(); DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { model.route = .reading } },
+                                       onQuestion: { questionLock = lock },
+                                       onPass: { passLock = lock })
+                    }
+                    if model.locks.contains(where: { $0.otherWays && [.needsQuestion, .needsTap].contains(model.state($0)) }) {
+                        OtherUnlocks().padding(.top, 8)
+                    }
+                }
+                .padding(20)
+            }
+            .background(Theme.paper.ignoresSafeArea())
+            .navigationTitle("Unlock")
+            .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
+            .navigationDestination(item: $questionLock) { lock in
+                QuestionUnlockView(lock: lock)
+            }
+            .sheet(item: $passLock) { lock in
+                EmergencyPassSheet(lock: lock).environment(model).presentationDetents([.medium])
+            }
+        }
+        .preferredColorScheme(.light)
+    }
+}
+
+struct LockStatusCard: View {
+    @Environment(AppModel.self) private var model
+    let lock: LockSet
+    var onRead: () -> Void
+    var onQuestion: () -> Void
+    var onPass: () -> Void
+
+    var body: some View {
+        let state = model.state(lock)
+        let day = model.today.day(lock.id)
+        CardBox(padding: 18) {
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(spacing: 10) {
+                    Image(systemName: state.isLocked ? "lock.fill" : "lock.open.fill")
+                        .foregroundStyle(state.isLocked ? Theme.gold : Theme.green)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(lock.name).font(.headline).foregroundStyle(Theme.ink)
+                        Text(status(state, day)).font(.subheadline).foregroundStyle(Theme.dim)
+                    }
+                    Spacer()
+                }
+                switch state {
+                case .needsReading:
+                    Button("Read today's chapter", action: onRead).buttonStyle(.phos)
+                case .needsQuestion:
+                    Button("Answer a question for \(LockSet.rewardLabel(lock.rewardSeconds).lowercased())", action: onQuestion).buttonStyle(.phos)
+                case .needsTap:
+                    Button("Unlock for \(LockSet.rewardLabel(lock.rewardSeconds).lowercased())") {
+                        model.unlock(lock, method: .tap)
+                    }
+                    .buttonStyle(.phos)
+                case .usedUp, .strict:
+                    Button("Use an emergency pass (\(model.passesLeft(lock)) left)", action: onPass)
+                        .buttonStyle(.phosSecondary)
+                        .disabled(model.passesLeft(lock) == 0)
+                case .open:
+                    Button("Lock now") { model.lockNow(lock) }.buttonStyle(.phosSecondary)
+                case .inactive:
+                    EmptyView()
                 }
             }
         }
+    }
+
+    private func status(_ state: LockLogic.State, _ day: LockDay) -> String {
+        switch state {
+        case .inactive: return lock.enabled ? "Not active right now · \(lock.hoursLabel)" : "Turned off"
+        case .open:
+            let until = [day.until, day.passUntil].compactMap { $0 }.max()
+            return until.map { "Open until \($0.shortTime)" } ?? "Open"
+        case .needsReading: return "Locked until today's reading"
+        case .needsQuestion: return "One question opens it"
+        case .needsTap:
+            if lock.policy == .limited { return "\(max(0, lock.limit - day.count)) of \(lock.limit) unlocks left today" }
+            return "You read today. Unlock any time."
+        case .usedUp: return "No unlocks left today"
+        case .strict: return "Strict until \(LockLogic.activeEnd(lock, now: Date()).shortTime)"
+        }
+    }
+}
+
+/// One question about today's reading that unlocks one lock.
+struct QuestionUnlockView: View {
+    @Environment(AppModel.self) private var model
+    @Environment(\.dismiss) private var dismiss
+    let lock: LockSet
+    @State private var item: QuizItem?
+    @State private var answered: Bool?
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 16) {
+                if model.today.recallCount % 2 == 0, let record = model.todaysRecord, !record.reflection.isEmpty {
+                    CardBox(fill: Theme.soft) {
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text("“\(TextChecks.quote(record.reflection))”").font(Theme.serif(18, .regular)).italic().foregroundStyle(Theme.ink)
+                            Text("You, earlier today at \(record.completedAt.shortTime)").font(.caption).foregroundStyle(Theme.dim)
+                        }
+                    }
+                    Text("You wrote that about \(record.title). Now one question from it.").font(.subheadline).foregroundStyle(Theme.dim)
+                }
+                if let item {
+                    QuestionView(item: item, locked: answered != nil) { right in
+                        answered = right
+                        if right { model.unlock(lock, method: .question) } else { model.registerMiss() }
+                    }
+                    .id(item.id)
+                    if let answered {
+                        Feedback(item: item, right: answered)
+                        if answered {
+                            Label("\(lock.name) is open for \(LockSet.rewardLabel(lock.rewardSeconds).lowercased())", systemImage: "lock.open.fill")
+                                .font(.headline).foregroundStyle(Theme.green)
+                            Button("Done") { dismiss() }.buttonStyle(.phos)
+                        } else {
+                            RetryButton { newQuestion() }
+                        }
+                    }
+                } else {
+                    Text("No questions are available for today's chapter.").foregroundStyle(Theme.dim)
+                }
+            }
+            .padding(20)
+        }
         .background(Theme.paper.ignoresSafeArea())
+        .navigationTitle("One question")
+        .navigationBarTitleDisplayMode(.inline)
         .onAppear { if item == nil { newQuestion() } }
     }
 
-    private var useYourWords: Bool { model.today.recallCount % 2 == 0 }
-
     private func newQuestion() {
-        let bank = QuestionBank.shared.questions(for: model.todaysRecord?.ref ?? model.todaysChapter)?.questions ?? []
+        let ref = model.todaysRecord?.ref ?? model.todaysChapter
+        let bank = QuestionBank.shared.questions(for: ref)?.questions ?? []
         item = QuizEngine.pick(from: bank, count: 1, avoiding: Set(model.today.askedQuestionIDs)).first
         if let item { model.markAsked([item]) }
         answered = nil
-        if item == nil { passed = true }
     }
 }
 
@@ -190,11 +274,48 @@ struct RetryButton: View {
     }
 }
 
+struct EmergencyPassSheet: View {
+    @Environment(AppModel.self) private var model
+    @Environment(\.dismiss) private var dismiss
+    let lock: LockSet
+    @State private var end: Date?
+
+    var body: some View {
+        VStack(spacing: 18) {
+            Eyebrow(text: lock.name)
+            Text("\(model.passesLeft(lock)) of \(lock.emergencyPasses) passes left").font(Theme.serif(28)).foregroundStyle(Theme.ink)
+            Text("A pass waits 60 seconds, then opens this lock for 15 minutes. Passes reset each month.")
+                .font(.subheadline).foregroundStyle(Theme.dim).multilineTextAlignment(.center)
+            if let end {
+                TimelineView(.periodic(from: .now, by: 1)) { context in
+                    let left = end.timeIntervalSince(context.date)
+                    VStack(spacing: 12) {
+                        Text(left > 0 ? countdownText(left) : "Ready").font(Theme.serif(44)).monospacedDigit().foregroundStyle(Theme.ink)
+                        Text("Take a breath. Is this worth it?").foregroundStyle(Theme.dim)
+                        Button("Open \(lock.name)") {
+                            model.useEmergencyPass(lock)
+                            dismiss()
+                        }
+                        .buttonStyle(.phos).disabled(left > 0)
+                    }
+                }
+            } else {
+                Button("Use a pass") { end = Date().addingTimeInterval(model.demo ? 3 : 60) }
+                    .buttonStyle(.phos)
+                    .disabled(model.passesLeft(lock) == 0)
+            }
+            Button("Never mind") { dismiss() }.buttonStyle(.phosQuiet)
+        }
+        .padding(24)
+        .background(Theme.paper.ignoresSafeArea())
+        .preferredColorScheme(.light)
+    }
+}
+
 /// Opens apps after the phone stays face down for a while.
 final class FaceDownMonitor: ObservableObject {
     @Published var faceDown = false
     @Published var elapsed: TimeInterval = 0
-    @Published var resets = 0
     private let motion = CMMotionManager()
     private var last: Date?
 
@@ -209,7 +330,6 @@ final class FaceDownMonitor: ObservableObject {
                 if let last { self.elapsed += now.timeIntervalSince(last) }
                 self.last = now
             } else {
-                if self.faceDown && self.elapsed > 2 { self.resets += 1 }
                 self.elapsed = 0
                 self.last = nil
             }
@@ -220,6 +340,13 @@ final class FaceDownMonitor: ObservableObject {
     func stop() {
         motion.stopDeviceMotionUpdates()
     }
+}
+
+/// Unlocks every lock that allows other ways and is waiting on a question or a tap.
+private func unlockOtherWays(_ model: AppModel) {
+    let targets = model.locks.filter { $0.otherWays && [.needsQuestion, .needsTap].contains(model.state($0)) }
+    for lock in targets { model.unlock(lock, method: .otherWay) }
+    model.lastUnlocked = targets
 }
 
 struct FocusSessionView: View {
@@ -236,7 +363,7 @@ struct FocusSessionView: View {
             FlowHeader(title: "Focus session", subtitle: "Other ways to open apps") { finish() }
                 .padding(.horizontal, 20).padding(.top, 12)
             if done {
-                PickTimeView(title: "Focus complete", subtitle: "Your apps open for") { finish() }
+                UnlockSummary(title: "Focus complete") { finish() }
             } else {
                 VStack(spacing: 24) {
                     Spacer()
@@ -279,7 +406,12 @@ struct FocusSessionView: View {
         }
         .background(Theme.paper.ignoresSafeArea())
         .onChange(of: monitor.elapsed) { _, e in
-            if running && e >= Double(minutes * 60) { monitor.stop(); running = false; done = true }
+            if running && e >= Double(minutes * 60) {
+                monitor.stop()
+                running = false
+                unlockOtherWays(model)
+                done = true
+            }
         }
         .onChange(of: phase) { _, p in
             if p != .active && running { monitor.elapsed = 0 }
@@ -322,7 +454,7 @@ struct ReciteView: View {
             FlowHeader(title: BookNames.verseTitle(ref, key), subtitle: "Recite from memory") { recorder.stop(); dismiss() }
                 .padding(.horizontal, 20).padding(.top, 12)
             if passed {
-                PickTimeView(title: "Well said", subtitle: "Your apps open for") { dismiss() }
+                UnlockSummary(title: "Well said") { dismiss() }
             } else {
                 VStack(spacing: 18) {
                     CardBox(padding: 22) {
@@ -344,7 +476,7 @@ struct ReciteView: View {
                             .foregroundStyle(recorder.isRecording ? Color.white : Theme.gold)
                     }
                     .accessibilityLabel(recorder.isRecording ? "Stop" : "Start reciting")
-                    Text("Hide the verse, then say it out loud. 85% of the words in order opens your apps.")
+                    Text("Hide the verse, then say it out loud. 85% of the words in order opens locks that allow other ways.")
                         .font(.caption).foregroundStyle(Theme.dim).multilineTextAlignment(.center)
                 }
                 .padding(20)
@@ -354,6 +486,7 @@ struct ReciteView: View {
         .onChange(of: recorder.transcript) { _, _ in
             if !showVerse && ratio >= 0.85 {
                 recorder.stop()
+                unlockOtherWays(model)
                 passed = true
             }
         }
@@ -379,82 +512,5 @@ struct ReciteView: View {
             let w = TextChecks.words(String(word)).first ?? ""
             return said.contains(w) ? String(word) : String(repeating: "•", count: max(2, min(8, word.count)))
         }.joined(separator: " ")
-    }
-}
-
-struct EmergencyPassView: View {
-    @Environment(AppModel.self) private var model
-    @Environment(\.dismiss) private var dismiss
-    var asSheet = false
-    @State private var countdownEnd: Date?
-
-    var body: some View {
-        VStack(spacing: 0) {
-            if asSheet {
-                FlowHeader(title: "Emergency passes", subtitle: model.lockReason == .evening ? "Evening lock is on" : nil) { dismiss() }
-                    .padding(.horizontal, 20).padding(.top, 12)
-            }
-            ScrollView {
-                VStack(spacing: 20) {
-                    let total = model.settings.rules.emergencyPasses
-                    RingProgress(value: total == 0 ? 0 : Double(model.passesLeft) / Double(total), lineWidth: 12) {
-                        VStack(spacing: 2) {
-                            Text("\(model.passesLeft)").font(Theme.serif(60)).foregroundStyle(Theme.ink)
-                            Text("of \(total) left").foregroundStyle(Theme.dim)
-                        }
-                    }
-                    .frame(width: 210, height: 210)
-                    .padding(.top, 20)
-                    Text("Resets \(nextMonth.formatted(.dateTime.month(.wide).day()))").font(.subheadline).foregroundStyle(Theme.dim)
-
-                    if let end = countdownEnd {
-                        TimelineView(.periodic(from: .now, by: 1)) { context in
-                            let left = end.timeIntervalSince(context.date)
-                            VStack(spacing: 12) {
-                                Text(left > 0 ? "Opening in \(countdownText(left))" : "Ready").font(Theme.serif(28)).foregroundStyle(Theme.ink)
-                                Text("Take a breath. Is this worth it?").foregroundStyle(Theme.dim)
-                                Button(left > 0 ? "Waiting" : "Open apps for \(Rules.unlockLabel(min(model.settings.rules.unlockMinutes, 30)))") {
-                                    model.useEmergencyPass()
-                                    countdownEnd = nil
-                                    if asSheet { dismiss() }
-                                }
-                                .buttonStyle(.phos).disabled(left > 0)
-                                Button("Never mind") { countdownEnd = nil }.buttonStyle(.phosQuiet)
-                            }
-                        }
-                    } else {
-                        Button("Use a pass") { countdownEnd = Date().addingTimeInterval(model.demo ? 3 : 60) }
-                            .buttonStyle(.phosSecondary)
-                            .disabled(model.passesLeft == 0)
-                        Text("A pass waits 60 seconds, then opens your apps for up to 30 minutes.").font(.caption).foregroundStyle(Theme.dim).multilineTextAlignment(.center)
-                    }
-
-                    let uses = model.settings.passUses.sorted { $0.date > $1.date }.prefix(10)
-                    if !uses.isEmpty {
-                        VStack(alignment: .leading, spacing: 0) {
-                            Eyebrow(text: "Recent passes").padding(.bottom, 8)
-                            ForEach(Array(uses)) { use in
-                                HStack {
-                                    Text(use.date.formatted(.dateTime.month(.abbreviated).day().hour().minute()))
-                                    Spacer()
-                                    Text(Rules.unlockLabel(use.minutes)).foregroundStyle(Theme.dim)
-                                }
-                                .padding(.vertical, 10)
-                                Divider()
-                            }
-                        }
-                    }
-                }
-                .padding(20)
-            }
-        }
-        .background(Theme.paper.ignoresSafeArea())
-        .navigationTitle(asSheet ? "" : "Emergency passes")
-    }
-
-    private var nextMonth: Date {
-        let cal = Calendar.current
-        let start = cal.date(from: cal.dateComponents([.year, .month], from: Date())) ?? Date()
-        return cal.date(byAdding: .month, value: 1, to: start) ?? Date()
     }
 }

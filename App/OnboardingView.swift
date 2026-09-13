@@ -4,12 +4,10 @@ import SwiftUI
 struct OnboardingView: View {
     @Environment(AppModel.self) private var model
     @State private var page = 0
-    @State private var pickerShown = false
     @State private var working = false
-    @State private var lock = LockSet()
-    @State private var selection = FamilyActivitySelection()
+    @State private var wizardShown = false
 
-    private let pages = 7
+    private let pages = 6
 
     var body: some View {
         VStack(spacing: 0) {
@@ -27,9 +25,8 @@ struct OnboardingView: View {
                     case 0: welcome
                     case 1: howItWorks
                     case 2: screenTime
-                    case 3: chooseApps
-                    case 4: chooseMode
-                    case 5: choosePlan
+                    case 3: firstLock
+                    case 4: choosePlan
                     default: finish
                     }
                 }
@@ -51,31 +48,16 @@ struct OnboardingView: View {
             .padding(.bottom, 12)
         }
         .background(Theme.paper.ignoresSafeArea())
-        .familyActivityPicker(isPresented: $pickerShown, selection: Binding(
-            get: { selection },
-            set: { sel in
-                selection = sel
-                lock.selection = Blocker.encode(sel)
-                lock.appCount = Blocker.lockedCount(sel)
-                model.setupLock(lock)
-            }
-        ))
-        .onAppear {
-            if let first = model.settings.lockSets.first {
-                lock = first
-                selection = Blocker.selection(from: first.selection)
-            } else {
-                lock.name = "Distractions"
-                lock.mode = .untilRead
-            }
+        .sheet(isPresented: $wizardShown) {
+            LockWizard { model.createLock($0) }.environment(model)
         }
     }
 
     private var primaryLabel: String {
         switch page {
         case 2: return model.authorized ? "Continue" : "Allow Screen Time access"
-        case 3: return lock.appCount == 0 ? "Choose apps to lock" : "Continue"
-        case 6: return "Start with \(model.todaysTitle)"
+        case 3: return model.locks.isEmpty ? "Create my first lock" : "Continue"
+        case 5: return "Start with \(model.todaysTitle)"
         default: return "Continue"
         }
     }
@@ -89,12 +71,9 @@ struct OnboardingView: View {
                 working = false
                 if model.authorized { withAnimation { page += 1 } }
             }
-        case 3 where lock.appCount == 0:
-            pickerShown = true
-        case 4:
-            model.setupLock(lock)
-            withAnimation { page += 1 }
-        case 6:
+        case 3 where model.locks.isEmpty:
+            wizardShown = true
+        case 5:
             working = true
             Task {
                 _ = await Notifier.requestPermission()
@@ -129,11 +108,11 @@ struct OnboardingView: View {
     private var howItWorks: some View {
         VStack(alignment: .leading, spacing: 20) {
             Text("How it works").font(Theme.serif(36)).foregroundStyle(Theme.ink)
-            step("lock.fill", "Apps lock", "The apps you choose lock on the schedule you pick.")
+            step("lock.fill", "Make locks", "Each lock has its own apps, days, hours, and rules.")
             step("book.closed", "Read the chapter", "Use your own Bible, read it in Phos, or listen.")
             step("mic", "Reflect", "Type or say what stood out. Paste is turned off.")
             step("checkmark.circle", "Answer questions", "A few questions written for that chapter. If you read it, you will know.")
-            step("sun.max", "Apps open", "For as long as you choose. Later, one quick question opens them again.")
+            step("sun.max", "Apps open", "For the time each lock gives. Later unlocks follow that lock's rules.")
         }
     }
 
@@ -158,54 +137,23 @@ struct OnboardingView: View {
         }
     }
 
-    private var chooseApps: some View {
+    private var firstLock: some View {
         VStack(alignment: .leading, spacing: 18) {
-            Text("What should wait?").font(Theme.serif(36)).foregroundStyle(Theme.ink)
-            Text("Pick the apps or categories that pull you in. Social media and entertainment are a good start. You can add more locks later.")
+            Text("Your first lock").font(Theme.serif(36)).foregroundStyle(Theme.ink)
+            Text("Pick the apps that pull you in, when they lock, how they unlock, and how your settings are protected. You can add more locks later.")
                 .foregroundStyle(Theme.ink).wrapLines()
-            CardBox {
-                HStack {
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(lock.appCount == 0 ? "Nothing chosen yet" : "\(lock.appCount) chosen").font(.headline).foregroundStyle(Theme.ink)
-                        Text("Phone, Messages, and Maps always stay open.").font(.footnote).foregroundStyle(Theme.dim)
-                    }
-                    Spacer()
-                    Button("Choose") { pickerShown = true }.font(.headline).foregroundStyle(Theme.gold)
-                }
-            }
-        }
-    }
-
-    private var chooseMode: some View {
-        VStack(alignment: .leading, spacing: 14) {
-            Text("How should it lock?").font(Theme.serif(36)).foregroundStyle(Theme.ink)
-            ForEach(LockMode.allCases) { mode in
-                Button { lock.mode = mode } label: {
-                    HStack(alignment: .top, spacing: 14) {
-                        Image(systemName: mode.symbol).font(.title3).foregroundStyle(Theme.gold).frame(width: 40, height: 40).background(Theme.soft, in: Circle())
-                        VStack(alignment: .leading, spacing: 3) {
-                            Text(mode.title).font(.headline).foregroundStyle(Theme.ink)
-                            Text(mode.detail).font(.subheadline).foregroundStyle(Theme.dim).wrapLines()
-                        }
-                        Spacer()
-                        Image(systemName: lock.mode == mode ? "checkmark.circle.fill" : "circle")
-                            .font(.title3).foregroundStyle(lock.mode == mode ? Theme.gold : Theme.line)
-                    }
-                    .padding(16)
-                    .background(Theme.card, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-                    .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).stroke(lock.mode == mode ? Theme.gold : Theme.line, lineWidth: lock.mode == mode ? 1.5 : 1))
-                }
-                .buttonStyle(.plain)
-            }
-            if lock.mode == .scheduled {
+            ForEach(model.locks) { lock in
                 CardBox {
-                    VStack(spacing: 10) {
-                        DatePicker("Starts", selection: time(\.start), displayedComponents: .hourAndMinute)
-                        DatePicker("Ends", selection: time(\.end), displayedComponents: .hourAndMinute)
+                    VStack(alignment: .leading, spacing: 4) {
+                        Label(lock.name, systemImage: "lock.fill").font(.headline).foregroundStyle(Theme.ink)
+                        Text(lock.summary).font(.subheadline).foregroundStyle(Theme.dim)
+                        Text(lock.protection.summary).font(.caption).foregroundStyle(Theme.dim)
                     }
                 }
             }
-            Text("You can add more locks with different apps and schedules in Settings.").font(.footnote).foregroundStyle(Theme.dim)
+            if !model.locks.isEmpty {
+                Button("Add another lock") { wizardShown = true }.buttonStyle(.phosSecondary)
+            }
         }
     }
 
@@ -221,28 +169,9 @@ struct OnboardingView: View {
     private var finish: some View {
         VStack(alignment: .leading, spacing: 18) {
             Text("One last thing").font(Theme.serif(36)).foregroundStyle(Theme.ink)
-            Text("When you open a locked app, tap the unlock button and Phos sends a notification. Tap it to jump straight to your reading. Allow notifications on the next screen so that works.")
+            Text("When you open a locked app, tap the button and Phos sends a notification. Tap it to jump straight to your reading. Allow notifications on the next screen so that works.")
                 .foregroundStyle(Theme.ink).wrapLines()
-            CardBox(fill: Theme.soft) {
-                VStack(alignment: .leading, spacing: 10) {
-                    Label("\(lock.mode.title) · \(lock.appCount) chosen", systemImage: lock.mode.symbol)
-                    Label("Apps open for \(Rules.unlockLabel(model.settings.rules.unlockMinutes))", systemImage: "lock.open")
-                    Label("\(model.settings.rules.questionsPerCheck) questions, \(model.settings.rules.correctToPass) to pass", systemImage: "checkmark.circle")
-                }
-                .foregroundStyle(Theme.ink)
-            }
-            Text("For your first 24 hours every setting change applies right away, so you can find what fits.").font(.footnote).foregroundStyle(Theme.dim)
         }
-    }
-
-    private func time(_ key: WritableKeyPath<LockSet, TimeOfDay>) -> Binding<Date> {
-        Binding(
-            get: { lock[keyPath: key].date(on: Date()) },
-            set: { date in
-                let c = Calendar.current.dateComponents([.hour, .minute], from: date)
-                lock[keyPath: key] = TimeOfDay(hour: c.hour ?? 0, minute: c.minute ?? 0)
-            }
-        )
     }
 }
 

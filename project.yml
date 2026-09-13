@@ -49,7 +49,7 @@ targets:
         NSMotionUsageDescription: Phos checks that your phone stays face down during a focus session.
         UILaunchScreen:
           UIColorName: LaunchBackground
-          UIImageName: LaunchLogo
+          UIImageName: LaunchMark
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
         UIUserInterfaceStyle: Light
     dependencies:
@@ -118,7 +118,6 @@ targets:
         CFBundleDisplayName: Phos Shield
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
-        UIUserInterfaceStyle: Light
         NSExtension:
           NSExtensionPointIdentifier: com.apple.ManagedSettingsUI.shield-configuration-service
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).ShieldConfigurationExtension

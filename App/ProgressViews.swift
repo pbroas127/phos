@@ -95,7 +95,9 @@ struct TimeWonBackView: View {
                     WeeklyUsageView(usage: DemoData.usage)
                 } else {
                     DeviceActivityReport(.weekly, filter: filter)
-                        .frame(minHeight: 640)
+                        .frame(height: 700)
+                        // The report is drawn by another process and swallows swipes. A clear layer on top lets the page scroll.
+                        .overlay(Color.white.opacity(0.001))
                 }
             }
             let readingMinutes = model.records.filter { record in

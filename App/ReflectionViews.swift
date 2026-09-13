@@ -127,11 +127,11 @@ struct TypeReflect: View {
     @State private var notice: String?
 
     var body: some View {
-        let rules = model.settings.rules
+        let rules = model.readingCheck
         let count = TextChecks.wordCount(text)
-        let distinctNeeded = TextChecks.requiredDistinct(typedWords: rules.wordsToType)
+        let distinctNeeded = TextChecks.requiredDistinct(typedWords: rules.words)
         let distinctOK = TextChecks.distinctCount(text) >= distinctNeeded
-        let enough = count >= rules.wordsToType
+        let enough = count >= rules.words
         VStack(alignment: .leading, spacing: 12) {
             Text("What stood out to you in \(BookNames.title(ref))?").font(Theme.serif(24)).foregroundStyle(Theme.ink)
             ZStack(alignment: .topLeading) {
@@ -148,9 +148,9 @@ struct TypeReflect: View {
             HStack {
                 Label("Paste is off", systemImage: "doc.on.clipboard").font(.caption).foregroundStyle(Theme.dim)
                 Spacer()
-                Text("\(count) / \(rules.wordsToType) words").font(.subheadline.weight(.semibold)).monospacedDigit().foregroundStyle(enough ? Theme.green : Theme.ink)
+                Text("\(count) / \(rules.words) words").font(.subheadline.weight(.semibold)).monospacedDigit().foregroundStyle(enough ? Theme.green : Theme.ink)
             }
-            ProgressBar(value: Double(count) / Double(max(1, rules.wordsToType)))
+            ProgressBar(value: Double(count) / Double(max(1, rules.words)))
             if let notice {
                 Text(notice).font(.footnote).foregroundStyle(Theme.red)
             } else if enough && !distinctOK {
@@ -179,16 +179,16 @@ struct SpeakReflect: View {
     @State private var permitted: Bool?
 
     var body: some View {
-        let rules = model.settings.rules
-        let seconds = model.demo && recorder.speechSeconds == 0 ? Double(rules.secondsOfTalking) * 0.7 : recorder.speechSeconds
+        let rules = model.readingCheck
+        let seconds = model.demo && recorder.speechSeconds == 0 ? Double(rules.seconds) * 0.7 : recorder.speechSeconds
         let spoken = model.demo && recorder.transcript.isEmpty ? DemoData.reflection : recorder.transcript
-        let distinctNeeded = TextChecks.requiredDistinct(spokenSeconds: rules.secondsOfTalking)
-        let enough = Int(seconds) >= rules.secondsOfTalking
+        let distinctNeeded = TextChecks.requiredDistinct(spokenSeconds: rules.seconds)
+        let enough = Int(seconds) >= rules.seconds
         let distinctOK = TextChecks.distinctCount(spoken) >= distinctNeeded
         VStack(spacing: 16) {
             Text("Tell me what stood out in \(BookNames.title(ref))").font(Theme.serif(24)).foregroundStyle(Theme.ink)
                 .frame(maxWidth: .infinity, alignment: .leading)
-            RingProgress(value: seconds / Double(max(1, rules.secondsOfTalking)), lineWidth: 10) {
+            RingProgress(value: seconds / Double(max(1, rules.seconds)), lineWidth: 10) {
                 Button {
                     if recorder.isRecording { recorder.stop() } else { startRecording() }
                 } label: {
@@ -203,7 +203,7 @@ struct SpeakReflect: View {
             }
             .frame(width: 180, height: 180)
             VStack(spacing: 2) {
-                Text("\(Int(seconds)) / \(rules.secondsOfTalking) sec").font(Theme.serif(28)).monospacedDigit().foregroundStyle(Theme.ink)
+                Text("\(Int(seconds)) / \(rules.seconds) sec").font(Theme.serif(28)).monospacedDigit().foregroundStyle(Theme.ink)
                 Text(recorder.isRecording ? "Only time you are talking counts" : "Tap the microphone and start talking").font(.subheadline).foregroundStyle(Theme.dim)
             }
             ScrollView {
@@ -257,7 +257,7 @@ struct PromptsReflect: View {
     private let prompts = ["What happened in this chapter?", "What surprised you or stood out?", "What will you do differently today?"]
 
     var body: some View {
-        let need = Int((Double(model.settings.rules.wordsToType) / 3).rounded(.up))
+        let need = Int((Double(model.readingCheck.words) / 3).rounded(.up))
         let counts = answers.map(TextChecks.wordCount)
         let done = counts.allSatisfy { $0 >= need }
         VStack(spacing: 12) {

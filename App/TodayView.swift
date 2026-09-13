@@ -67,57 +67,48 @@ struct TodayScreen: View {
     }
 }
 
-/// Status of the lock with the one action that matters right now.
+/// Status of the locks with the one action that matters right now.
 struct LockBanner: View {
     @Environment(AppModel.self) private var model
 
     var body: some View {
-        let reason = model.lockReason
-        if model.today.readingDone || reason == .evening {
-            CardBox(padding: 16, fill: Theme.soft) {
-                HStack(spacing: 14) {
-                    Image(systemName: reason == .none ? "lock.open.fill" : "lock.fill")
-                        .font(.title3).foregroundStyle(Theme.gold)
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text(title(reason)).font(.headline).foregroundStyle(Theme.ink)
-                        Text(detail(reason)).font(.subheadline).foregroundStyle(Theme.dim)
-                    }
-                    Spacer()
-                    if let action = action(reason) {
-                        Button(action.0) { action.1() }
+        let locked = model.lockedLocks
+        let open = model.locks.filter { model.state($0) == .open }
+        if model.today.readingDone && (!locked.isEmpty || !open.isEmpty) {
+            Button { model.route = .unlock } label: {
+                CardBox(padding: 16, fill: Theme.soft) {
+                    HStack(spacing: 14) {
+                        Image(systemName: locked.isEmpty ? "lock.open.fill" : "lock.fill")
+                            .font(.title3).foregroundStyle(Theme.gold)
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(locked.isEmpty ? "Apps are open" : "\(locked.map(\.name).joined(separator: ", ")) locked")
+                                .font(.headline).foregroundStyle(Theme.ink).lineLimit(1)
+                            Text(detail(locked: locked, open: open)).font(.subheadline).foregroundStyle(Theme.dim).lineLimit(1)
+                        }
+                        Spacer()
+                        Text(locked.isEmpty ? "Details" : "Unlock")
                             .font(.subheadline.weight(.semibold))
                             .padding(.horizontal, 14).padding(.vertical, 8)
                             .background(Theme.gold, in: Capsule()).foregroundStyle(.white)
                     }
                 }
             }
+            .buttonStyle(.plain)
         }
     }
 
-    private func title(_ r: LockReason) -> String {
-        switch r {
-        case .none: return "Apps are open"
-        case .midday: return "Midday question"
-        case .evening: return "Strict hours"
-        default: return "Apps are resting"
+    private func detail(locked: [LockSet], open: [LockSet]) -> String {
+        if let first = locked.first {
+            switch model.state(first) {
+            case .needsQuestion: return "One question opens it"
+            case .needsTap: return "Tap to unlock"
+            case .usedUp: return "No unlocks left today"
+            case .strict: return "Strict until \(LockLogic.activeEnd(first, now: Date()).shortTime)"
+            default: return "Tap to see how to unlock"
+            }
         }
-    }
-
-    private func detail(_ r: LockReason) -> String {
-        switch r {
-        case .none: return model.today.unlockedUntil.map { "Until \($0.shortTime)" } ?? "Nothing is locked right now"
-        case .evening: return model.strictUntil.map { "Locked until \($0.shortTime)" } ?? "Only emergency passes open apps"
-        default: return "One question opens them"
-        }
-    }
-
-    private func action(_ r: LockReason) -> (String, () -> Void)? {
-        switch r {
-        case .none: return model.today.unlockedUntil == nil ? nil : ("Lock now", { model.lockNow() })
-        case .recall, .midday: return ("Answer", { model.route = .recall })
-        case .evening: return ("Passes", { model.route = .emergency })
-        case .reading: return nil
-        }
+        let until = open.compactMap { model.today.day($0.id).until ?? model.today.day($0.id).passUntil }.min()
+        return until.map { "Next lock at \($0.shortTime)" } ?? "Open"
     }
 }
 

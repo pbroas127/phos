@@ -76,10 +76,9 @@ struct RootView: View {
             Group {
                 switch route {
                 case .reading: ReadingFlow(ref: model.todaysChapter)
-                case .recall: RecallFlow()
+                case .unlock: UnlockCenter()
                 case .focus: FocusSessionView()
                 case .recite: ReciteView()
-                case .emergency: EmergencyPassView(asSheet: true)
                 }
             }
             .environment(model)

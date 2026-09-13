@@ -229,8 +229,8 @@ private struct RaysShape: Shape {
             let a0 = Double(i) / Double(count) * 2 * .pi
             let a1 = a0 + .pi / Double(count) * 0.55
             p.move(to: c)
-            p.addLine(to: CGPoint(x: c.x + r * cos(a0), y: c.y + r * sin(a0)))
-            p.addLine(to: CGPoint(x: c.x + r * cos(a1), y: c.y + r * sin(a1)))
+            p.addLine(to: CGPoint(x: c.x + r * CGFloat(Foundation.cos(a0)), y: c.y + r * CGFloat(Foundation.sin(a0))))
+            p.addLine(to: CGPoint(x: c.x + r * CGFloat(Foundation.cos(a1)), y: c.y + r * CGFloat(Foundation.sin(a1))))
             p.closeSubpath()
         }
         return p

@@ -54,8 +54,8 @@ targets:
         CFBundleURLTypes:
           - CFBundleURLName: com.peterbroas.phos
             CFBundleURLSchemes: [phos]
-        NSMicrophoneUsageDescription: Phos listens while you speak your reflection or recite a verse, so it can count your speaking time.
-        NSSpeechRecognitionUsageDescription: Phos turns your spoken reflection into text on your iPhone so you can save it in your journal.
+        NSMicrophoneUsageDescription: Phos listens while you read a chapter out loud, speak a reflection, or recite a verse.
+        NSSpeechRecognitionUsageDescription: Phos turns your voice into text on your iPhone to follow along as you read out loud and to save spoken reflections.
         NSMotionUsageDescription: Phos checks that your phone stays face down during a focus session.
         UILaunchScreen:
           UIColorName: LaunchBackground

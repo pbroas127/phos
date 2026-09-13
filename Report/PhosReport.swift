@@ -15,21 +15,21 @@ struct WeeklyReportScene: DeviceActivityReportScene {
     let content: (WeeklyUsage) -> WeeklyUsageView
 
     func makeConfiguration(representing data: DeviceActivityResults<DeviceActivityData>) async -> WeeklyUsage {
-        var days: [Date: TimeInterval] = [:]
-        var apps: [String: TimeInterval] = [:]
+        var dayTotals: [Date: TimeInterval] = [:]
+        var appDays: [String: [Date: TimeInterval]] = [:]
         let calendar = Calendar.current
         for await item in data {
             for await segment in item.activitySegments {
                 let day = calendar.startOfDay(for: segment.dateInterval.start)
-                days[day, default: 0] += segment.totalActivityDuration
+                dayTotals[day, default: 0] += segment.totalActivityDuration
                 for await category in segment.categories {
                     for await app in category.applications {
                         let name = app.application.localizedDisplayName ?? "Other"
-                        apps[name, default: 0] += app.totalActivityDuration
+                        appDays[name, default: [:]][day, default: 0] += app.totalActivityDuration
                     }
                 }
             }
         }
-        return WeeklyUsage.build(days: days, apps: apps, now: Date(), calendar: calendar)
+        return WeeklyUsage.build(dayTotals: dayTotals, appDays: appDays, now: Date(), calendar: calendar)
     }
 }

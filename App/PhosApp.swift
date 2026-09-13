@@ -7,6 +7,10 @@ final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCent
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         UNUserNotificationCenter.current().delegate = self
+        // Phos is designed light only. System sheets and pickers follow the window style.
+        NotificationCenter.default.addObserver(forName: UIWindow.didBecomeVisibleNotification, object: nil, queue: .main) { note in
+            (note.object as? UIWindow)?.overrideUserInterfaceStyle = .light
+        }
         return true
     }
 
@@ -29,6 +33,8 @@ struct PhosApp: App {
         WindowGroup {
             RootView()
                 .environment(model)
+                .preferredColorScheme(.light)
+                .environment(\.colorScheme, .light)
                 .onAppear {
                     delegate.onNotificationTap = {
                         model.refresh()

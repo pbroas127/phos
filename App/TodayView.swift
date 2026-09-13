@@ -3,7 +3,8 @@ import SwiftUI
 struct TodayScreen: View {
     @Environment(AppModel.self) private var model
     @State private var view = DemoScreen.todayView
-    @State private var chapterPicker = false
+    @State private var libraryShown = DemoScreen.requested == .library
+    @State private var picked: ChapterPick?
 
     enum Mode: String, CaseIterable, Identifiable {
         case plan = "Plan", path = "Path", calendar = "Calendar"
@@ -14,9 +15,20 @@ struct TodayScreen: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
-                    VStack(alignment: .leading, spacing: 2) {
-                        Eyebrow(text: model.now.formatted(.dateTime.weekday(.wide).month(.wide).day()))
-                        Text(model.greeting).font(Theme.serif(34)).foregroundStyle(Theme.ink)
+                    HStack(alignment: .top) {
+                        VStack(alignment: .leading, spacing: 2) {
+                            Eyebrow(text: model.now.formatted(.dateTime.weekday(.wide).month(.wide).day()))
+                            Text(model.greeting).font(Theme.serif(34)).foregroundStyle(Theme.ink)
+                        }
+                        Spacer()
+                        Button { libraryShown = true } label: {
+                            Label("Books", systemImage: "books.vertical")
+                                .font(.subheadline.weight(.semibold))
+                                .padding(.horizontal, 12).padding(.vertical, 8)
+                                .background(Theme.soft, in: Capsule())
+                                .foregroundStyle(Theme.ink)
+                        }
+                        .padding(.top, 6)
                     }
                     Picker("View", selection: $view) {
                         ForEach(Mode.allCases) { Text($0.rawValue).tag($0) }
@@ -26,17 +38,32 @@ struct TodayScreen: View {
                     LockBanner()
 
                     switch view {
-                    case .plan: PlanCard(chapterPicker: $chapterPicker)
-                    case .path: PathView()
-                    case .calendar: CalendarView()
+                    case .plan: PlanCard(libraryShown: $libraryShown)
+                    case .path: PathView(picked: $picked, libraryShown: $libraryShown)
+                    case .calendar: CalendarView(picked: $picked)
                     }
                 }
                 .padding(20)
             }
             .background(Theme.paper.ignoresSafeArea())
-            .sheet(isPresented: $chapterPicker) { ChapterPicker().environment(model) }
             .toolbar(.hidden, for: .navigationBar)
+            .sheet(isPresented: $libraryShown) {
+                LibraryView { pick in startReading(pick, closing: { libraryShown = false }) }
+                    .environment(model)
+            }
+            .sheet(item: $picked) { pick in
+                ChapterActionSheet(pick: pick) { p in startReading(p, closing: { picked = nil }) }
+                    .environment(model)
+                    .presentationDetents([.medium])
+            }
         }
+    }
+
+    /// Chooses the chapter, closes whatever sheet is open, then opens the reading.
+    private func startReading(_ pick: ChapterPick, closing: () -> Void) {
+        model.choose(planID: pick.planID, index: pick.index)
+        closing()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { model.route = .reading }
     }
 }
 
@@ -71,23 +98,22 @@ struct LockBanner: View {
         switch r {
         case .none: return "Apps are open"
         case .midday: return "Midday question"
-        case .evening: return "Evening lock"
+        case .evening: return "Strict hours"
         default: return "Apps are resting"
         }
     }
 
     private func detail(_ r: LockReason) -> String {
         switch r {
-        case .none: return model.today.unlockedUntil.map { "Until \($0.shortTime)" } ?? ""
-        case .midday: return "One question opens them"
-        case .evening: return "Open again in the morning"
+        case .none: return model.today.unlockedUntil.map { "Until \($0.shortTime)" } ?? "Nothing is locked right now"
+        case .evening: return model.strictUntil.map { "Locked until \($0.shortTime)" } ?? "Only emergency passes open apps"
         default: return "One question opens them"
         }
     }
 
     private func action(_ r: LockReason) -> (String, () -> Void)? {
         switch r {
-        case .none: return ("Lock now", { model.lockNow() })
+        case .none: return model.today.unlockedUntil == nil ? nil : ("Lock now", { model.lockNow() })
         case .recall, .midday: return ("Answer", { model.route = .recall })
         case .evening: return ("Passes", { model.route = .emergency })
         case .reading: return nil
@@ -97,42 +123,73 @@ struct LockBanner: View {
 
 struct PlanCard: View {
     @Environment(AppModel.self) private var model
-    @Binding var chapterPicker: Bool
+    @Binding var libraryShown: Bool
 
     var body: some View {
         let ref = model.todaysChapter
         let chapter = Bible.shared.chapter(ref)
+        let doneNow = model.currentChapterDoneToday
+        let inPath = model.plan.chapters.contains(ref)
         VStack(alignment: .leading, spacing: 16) {
             CardBox(padding: 24) {
                 VStack(alignment: .leading, spacing: 10) {
-                    Eyebrow(text: model.planFinished && !model.today.readingDone ? "Plan complete" : "\(model.plan.name) · day \(model.planDay) of \(model.plan.chapters.count)")
+                    Eyebrow(text: eyebrow(inPath: inPath))
                     Text(model.todaysTitle).font(Theme.serif(52)).foregroundStyle(Theme.ink).minimumScaleFactor(0.6).lineLimit(1)
                     Text(subtitle(chapter)).font(.subheadline).foregroundStyle(Theme.dim).lineLimit(2)
-                    ProgressBar(value: Double(model.planPosition) / Double(max(1, model.plan.chapters.count)))
+                    ProgressBar(value: Double(model.readCount(model.plan)) / Double(max(1, model.plan.chapters.count)))
                         .padding(.top, 6)
-                    if let record = model.todaysRecord {
+                    HStack {
+                        Text("\(model.readCount(model.plan)) of \(model.plan.chapters.count) chapters read in \(model.plan.name)")
+                            .font(.caption).foregroundStyle(Theme.dim)
+                        Spacer()
+                    }
+                    if doneNow, let record = model.record(for: ref) {
                         Label("Read today · \(record.score) of \(record.total) correct", systemImage: "checkmark.circle.fill")
                             .font(.subheadline.weight(.semibold)).foregroundStyle(Theme.green).padding(.top, 4)
                     }
                 }
             }
 
-            if !model.today.readingDone {
-                if model.planFinished {
-                    Text("You finished \(model.plan.name). Pick a new plan in Settings, or read any chapter.")
-                        .font(.subheadline).foregroundStyle(Theme.dim)
+            if model.planFinished && !doneNow && inPath {
+                CardBox(fill: Theme.soft) {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Label("You finished \(model.plan.name)", systemImage: "checkmark.seal.fill").font(.headline).foregroundStyle(Theme.ink)
+                        HStack(spacing: 10) {
+                            Button("Pick next book") { libraryShown = true }.buttonStyle(.phos)
+                            Button("Restart") { model.restart(model.plan.id) }.buttonStyle(.phosSecondary)
+                        }
+                    }
                 }
+            } else if !doneNow {
                 Button("Start reading") { model.route = .reading }.buttonStyle(.phos)
-                Button("Read a different chapter") { chapterPicker = true }.buttonStyle(.phosSecondary)
-                HStack(spacing: 6) {
-                    Image(systemName: "lock.fill")
-                    Text(model.lockedCount == 0 ? "Choose apps to lock in Settings" : "\(model.lockedCount) locked until you finish")
+                Button("Choose a different chapter") { libraryShown = true }.buttonStyle(.phosSecondary)
+                if !model.today.readingDone {
+                    HStack(spacing: 6) {
+                        Image(systemName: "lock.fill")
+                        Text(model.lockedCount == 0 ? "Add a lock in Settings" : "\(model.lockedCount) locked until you finish")
+                    }
+                    .font(.footnote).foregroundStyle(Theme.dim).frame(maxWidth: .infinity)
                 }
-                .font(.footnote).foregroundStyle(Theme.dim).frame(maxWidth: .infinity)
             } else {
+                VStack(spacing: 10) {
+                    if !model.planFinished {
+                        Button("Read \(BookNames.title(model.plan.chapters[model.planPosition])) next") {
+                            model.choose(planID: model.plan.id, index: model.planPosition)
+                            model.route = .reading
+                        }
+                        .buttonStyle(.phosSecondary)
+                    }
+                    Button("Choose another chapter") { libraryShown = true }.buttonStyle(.phosQuiet)
+                }
                 OtherUnlocks()
             }
         }
+    }
+
+    private func eyebrow(inPath: Bool) -> String {
+        guard inPath else { return "Chosen chapter" }
+        if model.planFinished && !model.currentChapterDoneToday { return "\(model.plan.name) · finished" }
+        return "\(model.plan.name) · chapter \(model.planDay) of \(model.plan.chapters.count)"
     }
 
     private func subtitle(_ chapter: BibleChapter?) -> String {
@@ -173,46 +230,91 @@ struct OtherUnlocks: View {
     }
 }
 
+/// The active path as a trail. Tap any chapter to read it, reread it, or make it the next one.
 struct PathView: View {
     @Environment(AppModel.self) private var model
+    @Binding var picked: ChapterPick?
+    @Binding var libraryShown: Bool
+    @State private var showAll = false
+    @State private var confirmRestart = false
 
     var body: some View {
-        let chapters = model.plan.chapters
+        let plan = model.plan
+        let chapters = plan.chapters
         let pos = model.planPosition
-        let current = model.today.readingDone ? pos - 1 : pos
+        let read = model.readIDs
+        let start = showAll ? 0 : max(0, min(pos, chapters.count - 1) - 3)
+        let end = showAll ? chapters.count : min(chapters.count, start + 9)
         VStack(alignment: .leading, spacing: 0) {
             HStack {
-                Text(model.plan.name).font(Theme.serif(26)).foregroundStyle(Theme.ink)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(plan.name).font(Theme.serif(26)).foregroundStyle(Theme.ink)
+                    Text("\(model.readCount(plan)) of \(chapters.count) read").font(.subheadline).foregroundStyle(Theme.dim)
+                }
                 Spacer()
-                Text("\(min(pos, chapters.count)) of \(chapters.count)").font(.subheadline).foregroundStyle(Theme.dim)
-            }
-            .padding(.bottom, 12)
-            let start = max(0, current - 3)
-            let end = min(chapters.count, start + 9)
-            ForEach(start..<end, id: \.self) { i in
-                let state: NodeState = i == current ? .now : (i < pos ? .done : .next)
-                HStack(spacing: 16) {
-                    ZStack {
-                        if i < end - 1 {
-                            Rectangle().fill(Theme.line).frame(width: 3).offset(y: 30)
-                        }
-                        node(state)
-                    }
-                    .frame(width: 52, height: state == .now ? 64 : 48)
-                    VStack(alignment: .leading, spacing: 1) {
-                        Text(BookNames.title(chapters[i]))
-                            .font(state == .now ? Theme.serif(24) : .body)
-                            .foregroundStyle(state == .next ? Theme.dim : Theme.ink)
-                        if state == .now {
-                            Text(model.today.readingDone ? "Read today" : "Today").font(.caption.weight(.semibold)).foregroundStyle(Theme.gold)
-                        }
-                    }
-                    Spacer()
+                Menu {
+                    Button("Change book or plan", systemImage: "books.vertical") { libraryShown = true }
+                    Button("Restart \(plan.name)", systemImage: "arrow.counterclockwise") { confirmRestart = true }
+                    Button(showAll ? "Show fewer chapters" : "Show every chapter", systemImage: "list.bullet") { showAll.toggle() }
+                } label: {
+                    Image(systemName: "ellipsis.circle").font(.title2).foregroundStyle(Theme.gold)
                 }
             }
-            if !model.today.readingDone {
-                Button("Start \(model.todaysTitle)") { model.route = .reading }.buttonStyle(.phos).padding(.top, 16)
+            .padding(.bottom, 12)
+            ForEach(start..<end, id: \.self) { i in
+                let ref = chapters[i]
+                let isRead = read.contains(ref.id)
+                let state: NodeState = i == pos ? .now : (isRead ? .done : .next)
+                Button { picked = ChapterPick(planID: plan.id, index: i) } label: {
+                    HStack(spacing: 16) {
+                        ZStack {
+                            if i < end - 1 {
+                                Rectangle().fill(Theme.line).frame(width: 3).offset(y: 30)
+                            }
+                            node(state)
+                        }
+                        .frame(width: 52, height: state == .now ? 64 : 48)
+                        VStack(alignment: .leading, spacing: 1) {
+                            Text(BookNames.title(ref))
+                                .font(state == .now ? Theme.serif(24) : .body)
+                                .foregroundStyle(state == .next ? Theme.dim : Theme.ink)
+                            if state == .now {
+                                Text("Next up").font(.caption.weight(.semibold)).foregroundStyle(Theme.gold)
+                            } else if let d = model.lastRead(ref) {
+                                Text("Read \(d.formatted(.dateTime.month(.abbreviated).day()))").font(.caption).foregroundStyle(Theme.dim)
+                            }
+                        }
+                        Spacer()
+                        Image(systemName: "chevron.right").font(.caption).foregroundStyle(Theme.line)
+                    }
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
             }
+            if pos >= chapters.count {
+                CardBox(fill: Theme.soft) {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Label("You finished \(plan.name)", systemImage: "checkmark.seal.fill").font(.headline)
+                        HStack {
+                            Button("Pick next book") { libraryShown = true }.buttonStyle(.phos)
+                            Button("Restart") { confirmRestart = true }.buttonStyle(.phosSecondary)
+                        }
+                    }
+                }
+                .padding(.top, 12)
+            } else if !model.currentChapterDoneToday || model.todaysChapter != chapters[pos] {
+                Button("Read \(BookNames.title(chapters[pos]))") {
+                    model.choose(planID: plan.id, index: pos)
+                    model.route = .reading
+                }
+                .buttonStyle(.phos).padding(.top, 16)
+            }
+        }
+        .confirmationDialog("Restart \(plan.name)?", isPresented: $confirmRestart, titleVisibility: .visible) {
+            Button("Restart from the beginning") { model.restart(plan.id) }
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("Your place goes back to the first chapter. What you already read stays in your journal.")
         }
     }
 
@@ -236,14 +338,16 @@ struct PathView: View {
 
 struct CalendarView: View {
     @Environment(AppModel.self) private var model
+    @Binding var picked: ChapterPick?
     @State private var monthOffset = 0
+    @State private var selectedKey: String?
 
     var body: some View {
         let cal = Calendar.current
         let month = cal.date(byAdding: .month, value: monthOffset, to: cal.date(from: cal.dateComponents([.year, .month], from: model.now))!)!
         let days = cal.range(of: .day, in: .month, for: month)!.count
         let lead = (cal.component(.weekday, from: month) - cal.firstWeekday + 7) % 7
-        let done = Set(model.records.map(\.dayKey))
+        let done = model.doneKeys
         VStack(alignment: .leading, spacing: 16) {
             HStack {
                 Text(month.formatted(.dateTime.month(.wide).year())).font(Theme.serif(26)).foregroundStyle(Theme.ink)
@@ -261,60 +365,55 @@ struct CalendarView: View {
                     let date = cal.date(byAdding: .day, value: day - 1, to: month)!
                     let key = String(format: "%04d-%02d-%02d", cal.component(.year, from: date), cal.component(.month, from: date), day)
                     let isToday = key == model.today.dayKey
-                    Text("\(day)")
-                        .font(.subheadline.weight(done.contains(key) || isToday ? .semibold : .regular))
-                        .frame(width: 38, height: 38)
-                        .foregroundStyle(done.contains(key) ? Color.white : (isToday ? Theme.ink : Theme.dim))
-                        .background(done.contains(key) ? Theme.gold : Color.clear, in: Circle())
-                        .overlay(Circle().stroke(isToday && !done.contains(key) ? Theme.gold : .clear, lineWidth: 2))
-                }
-            }
-            CardBox {
-                HStack {
-                    VStack(alignment: .leading, spacing: 2) {
-                        Eyebrow(text: "Today")
-                        Text(model.todaysTitle).font(Theme.serif(24)).foregroundStyle(Theme.ink)
+                    Button { selectedKey = done.contains(key) ? key : nil } label: {
+                        Text("\(day)")
+                            .font(.subheadline.weight(done.contains(key) || isToday ? .semibold : .regular))
+                            .frame(width: 38, height: 38)
+                            .foregroundStyle(done.contains(key) ? Color.white : (isToday ? Theme.ink : Theme.dim))
+                            .background(done.contains(key) ? Theme.gold : Color.clear, in: Circle())
+                            .overlay(Circle().stroke(selectedKey == key ? Theme.ink : (isToday && !done.contains(key) ? Theme.gold : .clear), lineWidth: 2))
                     }
-                    Spacer()
-                    Label("\(model.streak)", systemImage: "flame.fill").font(.headline).foregroundStyle(Theme.gold)
+                    .buttonStyle(.plain)
                 }
             }
-            if !model.today.readingDone {
-                Button("Start reading") { model.route = .reading }.buttonStyle(.phos)
-            }
-        }
-    }
-}
-
-struct ChapterPicker: View {
-    @Environment(AppModel.self) private var model
-    @Environment(\.dismiss) private var dismiss
-
-    var body: some View {
-        NavigationStack {
-            List {
-                Section {
-                    Text("Any chapter unlocks your apps. Only chapters from your plan count toward your streak.")
-                        .font(.footnote).foregroundStyle(Theme.dim)
-                }
-                ForEach(QuestionBank.shared.coveredBooks, id: \.self) { book in
-                    NavigationLink(BookNames.name(book)) {
-                        List {
-                            ForEach(ReadingPlans.book(book).filter(QuestionBank.shared.has)) { ref in
-                                Button(BookNames.title(ref)) {
-                                    model.beginReading(ref)
-                                    dismiss()
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { model.route = .reading }
+            if let key = selectedKey {
+                let dayRecords = model.records.filter { $0.dayKey == key }.sorted { $0.completedAt < $1.completedAt }
+                CardBox {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Eyebrow(text: DayKey.localDate(from: key)?.formatted(.dateTime.weekday(.wide).month(.wide).day()) ?? key)
+                        ForEach(dayRecords) { r in
+                            HStack {
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(r.title).font(Theme.serif(20)).foregroundStyle(Theme.ink)
+                                    Text("\(r.score) of \(r.total) correct").font(.caption).foregroundStyle(Theme.dim)
                                 }
-                                .foregroundStyle(Theme.ink)
+                                Spacer()
+                                Button("Read again") {
+                                    if let bp = ReadingPlans.bookPlan(r.ref.book), let i = bp.chapters.firstIndex(of: r.ref) {
+                                        picked = ChapterPick(planID: bp.id, index: i)
+                                    }
+                                }
+                                .font(.subheadline.weight(.semibold)).foregroundStyle(Theme.gold)
                             }
                         }
-                        .navigationTitle(BookNames.name(book))
                     }
                 }
+            } else {
+                CardBox {
+                    HStack {
+                        VStack(alignment: .leading, spacing: 2) {
+                            Eyebrow(text: "Today")
+                            Text(model.todaysTitle).font(Theme.serif(24)).foregroundStyle(Theme.ink)
+                        }
+                        Spacer()
+                        Label("\(model.streak)", systemImage: "flame.fill").font(.headline).foregroundStyle(Theme.gold)
+                    }
+                }
+                Text("Tap a gold day to see what you read.").font(.caption).foregroundStyle(Theme.dim)
             }
-            .navigationTitle("Choose a chapter")
-            .toolbar { ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } } }
+            if !model.currentChapterDoneToday {
+                Button("Start reading") { model.route = .reading }.buttonStyle(.phos)
+            }
         }
     }
 }

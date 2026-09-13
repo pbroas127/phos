@@ -38,6 +38,13 @@ final class SharedStore {
         set { save(newValue, "snapshot") }
     }
 
+    /// Lock ids that have a ManagedSettings store, so deleted locks can be cleared.
+    var knownLockIDs: [String] {
+        get { defaults.stringArray(forKey: "knownLockIDs") ?? [] }
+        set { defaults.set(newValue, forKey: "knownLockIDs") }
+    }
+
+    /// Older builds kept a single app selection here.
     var selectionData: Data? {
         get { defaults.data(forKey: "selection") }
         set { defaults.set(newValue, forKey: "selection") }

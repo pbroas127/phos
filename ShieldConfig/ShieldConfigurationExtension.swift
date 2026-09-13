@@ -35,8 +35,14 @@ class ShieldConfigurationExtension: ShieldConfigurationDataSource {
 
         switch snap.reason {
         case .evening:
-            title = "Evening lock is on"
-            subtitle = "Your apps rest until morning. Emergency passes are in Phos." + hint
+            title = "Strict hours"
+            if let until = snap.strictUntil {
+                let f = DateFormatter()
+                f.timeStyle = .short
+                subtitle = "\(app) is locked until \(f.string(from: until)). Emergency passes are in Phos." + hint
+            } else {
+                subtitle = "\(app) is locked for now. Emergency passes are in Phos." + hint
+            }
             button = "Open Phos"
         case .midday:
             title = "Midday question"

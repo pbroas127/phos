@@ -24,7 +24,7 @@ class ShieldActionExtension: ShieldActionDelegate {
         let content = UNMutableNotificationContent()
         switch snap.reason {
         case .evening:
-            content.title = "Evening lock is on"
+            content.title = "Strict hours"
             content.body = "Tap to open Phos. Emergency passes are there if you really need one."
         case .midday:
             content.title = "Your midday question"

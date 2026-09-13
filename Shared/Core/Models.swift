@@ -63,7 +63,7 @@ enum DayKey {
         return String(format: "%04d-%02d-%02d", c.year!, c.month!, c.day!)
     }
 
-    /// Local calendar date for a key, used for display.
+    /// Local calendar date for a key, used for display and weekdays.
     static func localDate(from key: String, calendar: Calendar = .current) -> Date? {
         let p = key.split(separator: "-").compactMap { Int($0) }
         guard p.count == 3 else { return nil }
@@ -82,7 +82,6 @@ struct Rules: Codable, Equatable {
     var unlockMinutes: Int = 30
     var middayQuestions: Int = 1
     var emergencyPasses: Int = 3
-    var delayEasierChanges: Bool = true
 
     static let restOfDay = 1440
     static let unlockChoices = [5, 10, 15, 20, 30, 45, 60, 90, 120, 180, 240, restOfDay]
@@ -100,7 +99,6 @@ struct Rules: Codable, Equatable {
         unlockMinutes = (try? c.decode(Int.self, forKey: .unlockMinutes)) ?? d.unlockMinutes
         middayQuestions = (try? c.decode(Int.self, forKey: .middayQuestions)) ?? d.middayQuestions
         emergencyPasses = (try? c.decode(Int.self, forKey: .emergencyPasses)) ?? d.emergencyPasses
-        delayEasierChanges = (try? c.decode(Bool.self, forKey: .delayEasierChanges)) ?? d.delayEasierChanges
     }
 
     func normalized() -> Rules {
@@ -224,41 +222,12 @@ enum RuleField: String, CaseIterable, Identifiable {
     }
 }
 
-struct PendingRules: Codable, Equatable {
-    var rules: Rules
-    var effectiveAt: Date
-}
-
-enum RuleLogic {
-    /// Stricter changes apply right away. Easier changes wait a day when the delay is on.
-    static func propose(current: Rules, proposed raw: Rules, now: Date, delay: TimeInterval = 86_400, setupUntil: Date? = nil) -> (effective: Rules, pending: PendingRules?) {
-        let proposed = raw.normalized()
-        // During the first day after setup every change applies right away, so people can find settings that fit.
-        if let setupUntil, now < setupUntil { return (proposed, nil) }
-        guard current.delayEasierChanges else { return (proposed, nil) }
-        var effective = current
-        var easier = false
-        for f in RuleField.allCases {
-            let c = f.get(current), p = f.get(proposed)
-            if c == p { continue }
-            if f.isStricter(p, than: c) { f.set(&effective, p) } else { easier = true }
-        }
-        if !proposed.delayEasierChanges { easier = true }
-        effective = effective.normalized()
-        return (effective, easier ? PendingRules(rules: proposed, effectiveAt: now.addingTimeInterval(delay)) : nil)
-    }
-
-    static func resolve(current: Rules, pending: PendingRules?, now: Date) -> (rules: Rules, pending: PendingRules?) {
-        guard let p = pending else { return (current, nil) }
-        return now >= p.effectiveAt ? (p.rules.normalized(), nil) : (current, p)
-    }
-}
-
 // MARK: - Schedule
 
 struct Schedule: Codable, Equatable {
     var morning = TimeOfDay(hour: 5, minute: 0)
     var midday = TimeOfDay(hour: 12, minute: 0)
+    /// Older builds had a single evening lock. It becomes a scheduled lock on first launch.
     var eveningOn = false
     var evening = TimeOfDay(hour: 21, minute: 30)
 
@@ -282,6 +251,135 @@ struct Schedule: Codable, Equatable {
             return m <= 23 * 60 ? TimeOfDay(minutes: m) : nil
         }
     }
+}
+
+// MARK: - Locks and protection
+
+enum LockMode: String, Codable, CaseIterable, Identifiable {
+    case untilRead, allDay, scheduled
+    var id: String { rawValue }
+
+    var title: String {
+        switch self {
+        case .untilRead: return "Until I read"
+        case .allDay: return "All day, earn time"
+        case .scheduled: return "Scheduled hours"
+        }
+    }
+
+    var detail: String {
+        switch self {
+        case .untilRead: return "Locked each morning. Today's reading opens these apps for the rest of the day."
+        case .allDay: return "Locked all day. Reading earns open time, and one question earns more later."
+        case .scheduled: return "Locked only during the hours you pick, like school or bedtime."
+        }
+    }
+
+    var symbol: String {
+        switch self {
+        case .untilRead: return "book.closed"
+        case .allDay: return "sun.max"
+        case .scheduled: return "clock"
+        }
+    }
+}
+
+struct LockSet: Codable, Identifiable, Equatable {
+    var id = UUID().uuidString
+    var name = "Distractions"
+    var enabled = true
+    var mode: LockMode = .allDay
+    var start = TimeOfDay(hour: 21, minute: 0)
+    var end = TimeOfDay(hour: 7, minute: 0)
+    /// Calendar weekday numbers, 1 is Sunday.
+    var days: Set<Int> = Set(1...7)
+    /// Scheduled hours only. When false, nothing but an emergency pass opens these apps during the window.
+    var allowEarning = true
+    /// Encoded FamilyActivitySelection.
+    var selection: Data?
+    var appCount = 0
+
+    init() {}
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        let d = LockSet()
+        id = (try? c.decode(String.self, forKey: .id)) ?? d.id
+        name = (try? c.decode(String.self, forKey: .name)) ?? d.name
+        enabled = (try? c.decode(Bool.self, forKey: .enabled)) ?? d.enabled
+        mode = (try? c.decode(LockMode.self, forKey: .mode)) ?? d.mode
+        start = (try? c.decode(TimeOfDay.self, forKey: .start)) ?? d.start
+        end = (try? c.decode(TimeOfDay.self, forKey: .end)) ?? d.end
+        days = (try? c.decode(Set<Int>.self, forKey: .days)) ?? d.days
+        allowEarning = (try? c.decode(Bool.self, forKey: .allowEarning)) ?? d.allowEarning
+        selection = try? c.decode(Data.self, forKey: .selection)
+        appCount = (try? c.decode(Int.self, forKey: .appCount)) ?? d.appCount
+    }
+
+    var summary: String {
+        let apps = appCount == 1 ? "1 app" : "\(appCount) apps"
+        switch mode {
+        case .untilRead: return "Until you read · \(apps)"
+        case .allDay: return "All day · \(apps)"
+        case .scheduled: return "\(start.label) to \(end.label)\(allowEarning ? "" : " · strict") · \(apps)"
+        }
+    }
+
+    /// Length of the scheduled window in minutes. Equal start and end means all 24 hours.
+    var windowMinutes: Int {
+        let s = start.minutesFromMidnight, e = end.minutesFromMidnight
+        if s == e { return 1440 }
+        return e > s ? e - s : 1440 - s + e
+    }
+}
+
+struct Protection: Codable, Equatable {
+    /// Easier changes wait this many hours. Zero applies them right away.
+    var delayHours = 24
+    /// Minutes to wait on a countdown screen before an easier change saves.
+    var cooldownMinutes = 0
+    var passcodeHash: String?
+    var passcodeSalt: String?
+    /// When forgotten, the passcode clears at this time.
+    var passcodeResetAt: Date?
+    /// Settings can only get easier after today's reading is done.
+    var onlyAfterReading = false
+    /// No easier changes at all until this date.
+    var commitUntil: Date?
+    /// While a lock is on, iOS blocks deleting apps.
+    var preventAppRemoval = false
+
+    init() {}
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        let d = Protection()
+        delayHours = (try? c.decode(Int.self, forKey: .delayHours)) ?? d.delayHours
+        cooldownMinutes = (try? c.decode(Int.self, forKey: .cooldownMinutes)) ?? d.cooldownMinutes
+        passcodeHash = try? c.decode(String.self, forKey: .passcodeHash)
+        passcodeSalt = try? c.decode(String.self, forKey: .passcodeSalt)
+        passcodeResetAt = try? c.decode(Date.self, forKey: .passcodeResetAt)
+        onlyAfterReading = (try? c.decode(Bool.self, forKey: .onlyAfterReading)) ?? d.onlyAfterReading
+        commitUntil = try? c.decode(Date.self, forKey: .commitUntil)
+        preventAppRemoval = (try? c.decode(Bool.self, forKey: .preventAppRemoval)) ?? d.preventAppRemoval
+    }
+
+    var hasPasscode: Bool { passcodeHash != nil }
+
+    func committed(at now: Date) -> Bool { (commitUntil ?? .distantPast) > now }
+}
+
+/// Everything that decides how hard Phos is to get past.
+struct LockConfig: Codable, Equatable {
+    var rules: Rules
+    var schedule: Schedule
+    var lockSets: [LockSet]
+    var protection: Protection
+}
+
+struct PendingConfig: Codable, Equatable {
+    var config: LockConfig
+    var effectiveAt: Date
 }
 
 // MARK: - App state
@@ -347,7 +445,7 @@ struct ChapterRef: Codable, Hashable, Identifiable {
 }
 
 struct DayRecord: Codable, Identifiable, Hashable {
-    var id: String { dayKey }
+    var id: String { "\(dayKey).\(ref.id).\(Int(completedAt.timeIntervalSince1970))" }
     var dayKey: String
     var ref: ChapterRef
     var title: String
@@ -365,11 +463,16 @@ struct TodayState: Codable, Equatable {
     var dayKey: String
     var readingDone = false
     var chapter: ChapterRef?
+    /// The path and position the chosen chapter came from.
+    var contextPlanID: String?
+    var contextIndex: Int?
     var readingStartedAt: Date?
     var missesToday = 0
     var nextAttemptAt: Date?
     var askedQuestionIDs: [String] = []
     var unlockedUntil: Date?
+    /// Emergency passes open even strict scheduled locks.
+    var passUntil: Date?
     var middayPending = false
     var eveningLocked = false
     var recallCount = 0
@@ -383,11 +486,14 @@ struct TodayState: Codable, Equatable {
         dayKey = (try? c.decode(String.self, forKey: .dayKey)) ?? ""
         readingDone = (try? c.decode(Bool.self, forKey: .readingDone)) ?? false
         chapter = try? c.decode(ChapterRef.self, forKey: .chapter)
+        contextPlanID = try? c.decode(String.self, forKey: .contextPlanID)
+        contextIndex = try? c.decode(Int.self, forKey: .contextIndex)
         readingStartedAt = try? c.decode(Date.self, forKey: .readingStartedAt)
         missesToday = (try? c.decode(Int.self, forKey: .missesToday)) ?? 0
         nextAttemptAt = try? c.decode(Date.self, forKey: .nextAttemptAt)
         askedQuestionIDs = (try? c.decode([String].self, forKey: .askedQuestionIDs)) ?? []
         unlockedUntil = try? c.decode(Date.self, forKey: .unlockedUntil)
+        passUntil = try? c.decode(Date.self, forKey: .passUntil)
         middayPending = (try? c.decode(Bool.self, forKey: .middayPending)) ?? false
         eveningLocked = (try? c.decode(Bool.self, forKey: .eveningLocked)) ?? false
         recallCount = (try? c.decode(Int.self, forKey: .recallCount)) ?? 0
@@ -398,13 +504,9 @@ struct TodayState: Codable, Equatable {
         return u > now
     }
 
-    /// Why apps are locked right now, or none when they are open.
-    func lockReason(at now: Date) -> LockReason {
-        if isUnlocked(at: now) { return .none }
-        if !readingDone { return .reading }
-        if eveningLocked { return .evening }
-        if middayPending { return .midday }
-        return .recall
+    func passOpen(at now: Date) -> Bool {
+        guard let p = passUntil else { return false }
+        return p > now
     }
 }
 
@@ -418,10 +520,12 @@ struct AppSettings: Codable, Equatable {
     var onboarded = false
     var onboardedAt: Date?
     var rules = Rules()
-    var pendingRules: PendingRules?
     var schedule = Schedule()
+    var lockSets: [LockSet] = []
+    var protection = Protection()
+    var pendingConfig: PendingConfig?
     var shieldStyle: ShieldStyle = .verse
-    var planID = "john"
+    var planID = "book.JHN"
     var planPositions: [String: Int] = [:]
     var passUses: [PassUse] = []
     var preferredRead: ReadMode = .paper
@@ -435,8 +539,10 @@ struct AppSettings: Codable, Equatable {
         onboarded = (try? c.decode(Bool.self, forKey: .onboarded)) ?? d.onboarded
         onboardedAt = try? c.decode(Date.self, forKey: .onboardedAt)
         rules = (try? c.decode(Rules.self, forKey: .rules)) ?? d.rules
-        pendingRules = try? c.decode(PendingRules.self, forKey: .pendingRules)
         schedule = (try? c.decode(Schedule.self, forKey: .schedule)) ?? d.schedule
+        lockSets = (try? c.decode([LockSet].self, forKey: .lockSets)) ?? d.lockSets
+        protection = (try? c.decode(Protection.self, forKey: .protection)) ?? d.protection
+        pendingConfig = try? c.decode(PendingConfig.self, forKey: .pendingConfig)
         shieldStyle = (try? c.decode(ShieldStyle.self, forKey: .shieldStyle)) ?? d.shieldStyle
         planID = (try? c.decode(String.self, forKey: .planID)) ?? d.planID
         planPositions = (try? c.decode([String: Int].self, forKey: .planPositions)) ?? d.planPositions
@@ -445,7 +551,17 @@ struct AppSettings: Codable, Equatable {
         preferredReflect = (try? c.decode(ReflectMode.self, forKey: .preferredReflect)) ?? d.preferredReflect
     }
 
-    /// Rule changes apply instantly until this moment.
+    var config: LockConfig {
+        get { LockConfig(rules: rules, schedule: schedule, lockSets: lockSets, protection: protection) }
+        set {
+            rules = newValue.rules
+            schedule = newValue.schedule
+            lockSets = newValue.lockSets
+            protection = newValue.protection
+        }
+    }
+
+    /// Changes apply instantly until this moment, so people can find settings that fit.
     var setupWindowEnds: Date? { onboardedAt?.addingTimeInterval(86_400) }
 
     func passesLeft(now: Date, calendar: Calendar = .current) -> Int {
@@ -454,7 +570,7 @@ struct AppSettings: Codable, Equatable {
     }
 }
 
-/// What the lock screen, shield button, and widgets need, written by the app.
+/// What the lock screen, shield button, and widgets need, written by the app and monitor.
 struct SharedSnapshot: Codable, Equatable {
     var style: ShieldStyle = .verse
     var reason: LockReason = .reading
@@ -468,6 +584,7 @@ struct SharedSnapshot: Codable, Equatable {
     var planDay = 0
     var planLength = 0
     var unlockedUntil: Date?
+    var strictUntil: Date?
 
     init() {}
 
@@ -486,5 +603,6 @@ struct SharedSnapshot: Codable, Equatable {
         planDay = (try? c.decode(Int.self, forKey: .planDay)) ?? d.planDay
         planLength = (try? c.decode(Int.self, forKey: .planLength)) ?? d.planLength
         unlockedUntil = try? c.decode(Date.self, forKey: .unlockedUntil)
+        strictUntil = try? c.decode(Date.self, forKey: .strictUntil)
     }
 }

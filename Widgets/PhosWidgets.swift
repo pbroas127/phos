@@ -28,49 +28,62 @@ struct PhosProvider: TimelineProvider {
     }
 }
 
-private enum W {
-    static let paper = Color(red: 0xFB / 255, green: 0xF9 / 255, blue: 0xF4 / 255)
-    static let ink = Color(red: 0x22 / 255, green: 0x1D / 255, blue: 0x17 / 255)
-    static let dim = Color(red: 0x8A / 255, green: 0x7F / 255, blue: 0x71 / 255)
-    static let gold = Color(red: 0xA8 / 255, green: 0x7A / 255, blue: 0x22 / 255)
-    static let line = Color(red: 0xEC / 255, green: 0xE5 / 255, blue: 0xD8 / 255)
+/// Widget colors for the light and dark Home Screen.
+private struct W {
+    let paper: Color, ink: Color, dim: Color, gold: Color, line: Color
+
+    static func palette(_ scheme: ColorScheme) -> W {
+        scheme == .dark
+            ? W(paper: Color(red: 0x17 / 255, green: 0x14 / 255, blue: 0x10 / 255),
+                ink: Color(red: 0xF3 / 255, green: 0xED / 255, blue: 0xE2 / 255),
+                dim: Color(red: 0xA8 / 255, green: 0x9C / 255, blue: 0x8B / 255),
+                gold: Color(red: 0xE0 / 255, green: 0xAE / 255, blue: 0x4B / 255),
+                line: Color(red: 0x3A / 255, green: 0x32 / 255, blue: 0x29 / 255))
+            : W(paper: Color(red: 0xFB / 255, green: 0xF9 / 255, blue: 0xF4 / 255),
+                ink: Color(red: 0x22 / 255, green: 0x1D / 255, blue: 0x17 / 255),
+                dim: Color(red: 0x8A / 255, green: 0x7F / 255, blue: 0x71 / 255),
+                gold: Color(red: 0xA8 / 255, green: 0x7A / 255, blue: 0x22 / 255),
+                line: Color(red: 0xEC / 255, green: 0xE5 / 255, blue: 0xD8 / 255))
+    }
 }
 
 struct TodayWidgetView: View {
     @Environment(\.widgetFamily) var family
+    @Environment(\.colorScheme) var scheme
     let entry: PhosEntry
 
     var body: some View {
         let s = entry.snap
+        let c = W.palette(scheme)
         VStack(alignment: .leading, spacing: 4) {
             HStack {
-                Text(s.readingDone ? "READ TODAY" : "TODAY").font(.caption2.weight(.semibold)).tracking(0.8).foregroundStyle(W.dim)
+                Text(s.readingDone ? "READ TODAY" : "TODAY").font(.caption2.weight(.semibold)).tracking(0.8).foregroundStyle(c.dim)
                 Spacer()
                 if s.streak > 0 {
-                    Label("\(s.streak)", systemImage: "flame.fill").font(.caption.weight(.semibold)).foregroundStyle(W.gold).labelStyle(.titleAndIcon)
+                    Label("\(s.streak)", systemImage: "flame.fill").font(.caption.weight(.semibold)).foregroundStyle(c.gold).labelStyle(.titleAndIcon)
                 }
             }
             Spacer(minLength: 0)
-            Text(s.chapterTitle).font(.system(size: family == .systemSmall ? 26 : 32, weight: .medium, design: .serif)).foregroundStyle(W.ink).minimumScaleFactor(0.6).lineLimit(1)
+            Text(s.chapterTitle).font(.system(size: family == .systemSmall ? 26 : 32, weight: .medium, design: .serif)).foregroundStyle(c.ink).minimumScaleFactor(0.6).lineLimit(1)
             if family != .systemSmall, !s.planName.isEmpty {
-                Text("\(s.planName) · day \(s.planDay) of \(s.planLength)").font(.caption).foregroundStyle(W.dim)
+                Text("\(s.planName) · day \(s.planDay) of \(s.planLength)").font(.caption).foregroundStyle(c.dim)
             }
             HStack(spacing: 4) {
                 Image(systemName: s.readingDone ? "checkmark.circle.fill" : "lock.fill")
                 Text(s.readingDone ? "Apps earned" : "\(s.lockedCount) locked")
             }
-            .font(.caption).foregroundStyle(s.readingDone ? W.gold : W.dim)
+            .font(.caption).foregroundStyle(s.readingDone ? c.gold : c.dim)
             if s.planLength > 0 {
                 GeometryReader { g in
                     ZStack(alignment: .leading) {
-                        Capsule().fill(W.line)
-                        Capsule().fill(W.gold).frame(width: g.size.width * CGFloat(max(0, s.planDay - (s.readingDone ? 0 : 1))) / CGFloat(max(1, s.planLength)))
+                        Capsule().fill(c.line)
+                        Capsule().fill(c.gold).frame(width: g.size.width * CGFloat(max(0, s.planDay - (s.readingDone ? 0 : 1))) / CGFloat(max(1, s.planLength)))
                     }
                 }
                 .frame(height: 5)
             }
         }
-        .containerBackground(W.paper, for: .widget)
+        .containerBackground(c.paper, for: .widget)
         .widgetURL(URL(string: "phos://today"))
     }
 }

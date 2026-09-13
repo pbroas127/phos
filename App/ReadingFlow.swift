@@ -49,8 +49,8 @@ struct ReadingFlow: View {
                     }
                     .id(items.map(\.id).joined())
                 case .result:
-                    if score >= model.settings.rules.correctToPass {
-                        PickTimeView(title: "\(score) of \(items.count) correct", subtitle: "Your apps open for") {
+                    if score >= min(model.settings.rules.correctToPass, max(items.count, 1)) || items.isEmpty {
+                        PickTimeView(title: "\(score) of \(items.count) correct", subtitle: "Your apps open for", after: model.lastAfter) {
                             dismiss()
                         }
                     } else {
@@ -65,7 +65,8 @@ struct ReadingFlow: View {
         .onAppear {
             readMode = model.settings.preferredRead
             reflectMode = model.settings.preferredReflect
-            if reflection.isEmpty, let record = model.todaysRecord, record.ref == ref { reflection = record.reflection }
+            if reflection.isEmpty, let record = model.record(for: ref) { reflection = record.reflection }
+            model.lastAfter = nil
             model.beginReading(ref)
             if step == .quiz && items.isEmpty { startQuiz() }
         }

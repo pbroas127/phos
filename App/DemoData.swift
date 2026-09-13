@@ -21,8 +21,31 @@ enum DemoData {
     static func seed(_ store: SharedStore) {
         var settings = AppSettings()
         settings.onboarded = true
-        settings.planID = "john"
-        settings.planPositions = ["john": 2]
+        settings.onboardedAt = Date().addingTimeInterval(-30 * 86_400)
+        settings.planID = "book.JHN"
+        settings.planPositions = ["book.JHN": 2, "book.PRO": 31, "book.MRK": 5, "gospels": 12]
+        var social = LockSet()
+        social.name = "Social media"
+        social.mode = .untilRead
+        social.appCount = 4
+        var games = LockSet()
+        games.name = "Games and video"
+        games.mode = .allDay
+        games.appCount = 3
+        games.days = [2, 3, 4, 5, 6]
+        var night = LockSet()
+        night.name = "Bedtime"
+        night.mode = .scheduled
+        night.start = TimeOfDay(hour: 22, minute: 0)
+        night.end = TimeOfDay(hour: 6, minute: 0)
+        night.allowEarning = false
+        night.appCount = 7
+        settings.lockSets = [social, games, night]
+        settings.protection.delayHours = 24
+        settings.protection.cooldownMinutes = 5
+        let code = Passcode.make("2468")
+        settings.protection.passcodeHash = code.hash
+        settings.protection.passcodeSalt = code.salt
         settings.passUses = [PassUse(date: Date().addingTimeInterval(-8 * 86_400), minutes: 20)]
         settings.rules.middayQuestions = 1
         store.settings = settings
@@ -48,7 +71,7 @@ enum DemoData {
             store.records = records + [DayRecord(dayKey: todayKey, ref: ChapterRef(book: "JHN", chapter: 3), title: "John 3",
                                                  readMode: .paper, reflectMode: .spoken, reflection: reflection, score: 5, total: 5,
                                                  completedAt: Calendar.current.date(bySettingHour: 7, minute: 48, second: 0, of: Date()) ?? Date(), readingSeconds: 390, fromPlan: true)]
-            settings.planPositions = ["john": 3]
+            settings.planPositions = ["book.JHN": 3, "book.PRO": 31, "book.MRK": 5, "gospels": 12]
             store.settings = settings
             if DemoScreen.requested == .recall { today.middayPending = true }
             if DemoScreen.requested == .unlocked { today.unlockedUntil = Date().addingTimeInterval(22 * 60) }
@@ -67,17 +90,26 @@ enum DemoData {
     static var usage: WeeklyUsage {
         let cal = Calendar.current
         let today = cal.startOfDay(for: Date())
-        let minutes: [Double] = [96, 84, 71, 66, 52, 41, 34]
-        let days = (0..<7).map { i in
-            WeeklyUsage.Day(date: cal.date(byAdding: .day, value: i - 6, to: today) ?? today, seconds: minutes[i] * 60)
+        let thisWeek: [Double] = [96, 84, 71, 66, 52, 41, 34]
+        let lastWeek: [Double] = [118, 132, 104, 97, 121, 88, 92]
+        var totals: [Date: TimeInterval] = [:]
+        for i in 0..<7 {
+            let d = cal.date(byAdding: .day, value: i - 6, to: today) ?? today
+            let prior = cal.date(byAdding: .day, value: -7, to: d) ?? d
+            totals[d] = thisWeek[i] * 60
+            totals[prior] = lastWeek[i] * 60
         }
-        return WeeklyUsage(
-            thisWeek: days,
-            thisWeekTotal: minutes.reduce(0, +) * 60,
-            lastWeekTotal: 12.4 * 3600,
-            topApps: [.init(name: "Instagram", seconds: 2.2 * 3600), .init(name: "TikTok", seconds: 1.6 * 3600),
-                      .init(name: "YouTube", seconds: 58.0 * 60), .init(name: "X", seconds: 24.0 * 60)]
-        )
+        let split: [(String, Double, Double)] = [("Instagram", 0.34, 0.41), ("TikTok", 0.27, 0.30), ("YouTube", 0.21, 0.16), ("X", 0.10, 0.09), ("Snapchat", 0.08, 0.04)]
+        var appDays: [String: [Date: TimeInterval]] = [:]
+        for (name, share, lastShare) in split {
+            for i in 0..<7 {
+                let d = cal.date(byAdding: .day, value: i - 6, to: today) ?? today
+                let prior = cal.date(byAdding: .day, value: -7, to: d) ?? d
+                appDays[name, default: [:]][d] = thisWeek[i] * 60 * share
+                appDays[name, default: [:]][prior] = lastWeek[i] * 60 * lastShare
+            }
+        }
+        return WeeklyUsage.build(dayTotals: totals, appDays: appDays, now: Date(), calendar: cal)
     }
 }
 
@@ -85,6 +117,7 @@ enum DemoData {
 enum DemoScreen: String {
     case today, path, calendar, reading, reflect, speak, quizChoice, quizBlank, quizOrder, pass, missed, recall, unlocked
     case streak, time, journal, settings, shield, focus, recite
+    case library, book, locks, lockEditor, protection
 
     static var requested: DemoScreen? {
         let args = ProcessInfo.processInfo.arguments
@@ -124,8 +157,16 @@ struct DemoRouter: View {
 
     var body: some View {
         switch screen {
-        case .today, .path, .calendar, .streak, .time, .journal, .settings, .unlocked:
+        case .today, .path, .calendar, .streak, .time, .journal, .settings, .unlocked, .library:
             MainTabs()
+        case .book:
+            NavigationStack { PathDetailView(planID: "book.MRK") { _ in } }
+        case .locks:
+            NavigationStack { LockSetEditor(existing: model.settings.lockSets.last) }
+        case .lockEditor:
+            NavigationStack { LockSetEditor(existing: model.settings.lockSets.first) }
+        case .protection:
+            NavigationStack { ProtectionView() }
         case .reading:
             flow { InAppRead(ref: john3, remaining: 0) {} }
         case .reflect:

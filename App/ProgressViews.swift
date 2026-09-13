@@ -70,7 +70,7 @@ struct StreakView: View {
             }
             HStack(spacing: 12) {
                 stat("\(Streaks.longest(doneKeys: keys))", "longest streak")
-                stat("\(model.planPosition) of \(model.plan.chapters.count)", model.plan.name)
+                stat("\(model.readCount(model.plan)) of \(model.plan.chapters.count)", model.plan.name)
             }
         }
     }
@@ -95,7 +95,7 @@ struct TimeWonBackView: View {
                     WeeklyUsageView(usage: DemoData.usage)
                 } else {
                     DeviceActivityReport(.weekly, filter: filter)
-                        .frame(minHeight: 460)
+                        .frame(minHeight: 640)
                 }
             }
             let readingMinutes = model.records.filter { record in
@@ -123,9 +123,9 @@ struct TimeWonBackView: View {
             segment: .daily(during: DateInterval(start: start, end: Date())),
             users: .all,
             devices: .init([.iPhone]),
-            applications: model.selection.applicationTokens,
-            categories: model.selection.categoryTokens,
-            webDomains: model.selection.webDomainTokens
+            applications: model.reportSelection.applicationTokens,
+            categories: model.reportSelection.categoryTokens,
+            webDomains: model.reportSelection.webDomainTokens
         )
     }
 }
@@ -151,7 +151,17 @@ struct JournalView: View {
                         }
                         Text(entry.reflection.isEmpty ? "No reflection saved." : entry.reflection)
                             .font(Theme.serif(17, .regular)).foregroundStyle(Theme.ink).lineSpacing(3)
-                        Text("\(entry.score) of \(entry.total) correct").font(.caption).foregroundStyle(Theme.dim)
+                        HStack {
+                            Text("\(entry.score) of \(entry.total) correct").font(.caption).foregroundStyle(Theme.dim)
+                            Spacer()
+                            if let bp = ReadingPlans.bookPlan(entry.ref.book), let i = bp.chapters.firstIndex(of: entry.ref) {
+                                Button("Read again") {
+                                    model.choose(planID: bp.id, index: i)
+                                    model.route = .reading
+                                }
+                                .font(.caption.weight(.semibold)).foregroundStyle(Theme.gold)
+                            }
+                        }
                     }
                 }
             }

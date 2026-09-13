@@ -5,72 +5,97 @@ import DeviceActivity
 import UserNotifications
 
 extension ManagedSettingsStore.Name {
-    static let phos = Self("phos")
+    /// Store used by the first builds, cleared on sync.
+    static let legacy = Self("phos")
+    static let protection = Self("phos.protection")
+    static func lock(_ id: String) -> Self { Self("phos.lock.\(id)") }
 }
 
 extension DeviceActivityName {
     static let morning = Self("phos.morning")
-    static let evening = Self("phos.evening")
     static let unlock = Self("phos.unlock")
     static func midday(_ i: Int) -> Self { Self("phos.midday.\(i)") }
+    static func lock(_ id: String) -> Self { Self("phos.lock.\(id)") }
     var isMidday: Bool { rawValue.hasPrefix("phos.midday.") }
 }
 
-/// Applies and clears the shield on locked apps, and keeps the daily schedule registered.
+/// Shields locked apps and keeps the schedules registered.
 enum Blocker {
-    static var managed: ManagedSettingsStore { ManagedSettingsStore(named: .phos) }
-
-    static func selection(_ store: SharedStore = .shared) -> FamilyActivitySelection {
-        guard let data = store.selectionData,
-              let sel = try? JSONDecoder().decode(FamilyActivitySelection.self, from: data) else {
+    static func selection(from data: Data?) -> FamilyActivitySelection {
+        guard let data, let sel = try? JSONDecoder().decode(FamilyActivitySelection.self, from: data) else {
             return FamilyActivitySelection()
         }
         return sel
     }
 
-    static func save(selection: FamilyActivitySelection, store: SharedStore = .shared) {
-        store.selectionData = try? JSONEncoder().encode(selection)
+    static func encode(_ sel: FamilyActivitySelection) -> Data? {
+        try? JSONEncoder().encode(sel)
     }
 
     static func lockedCount(_ sel: FamilyActivitySelection) -> Int {
         sel.applicationTokens.count + sel.categoryTokens.count + sel.webDomainTokens.count
     }
 
-    static func shield(store: SharedStore = .shared) {
-        let sel = selection(store)
-        let m = managed
-        m.shield.applications = sel.applicationTokens.isEmpty ? nil : sel.applicationTokens
-        m.shield.applicationCategories = sel.categoryTokens.isEmpty ? nil : .specific(sel.categoryTokens)
-        m.shield.webDomains = sel.webDomainTokens.isEmpty ? nil : sel.webDomainTokens
-        m.shield.webDomainCategories = sel.categoryTokens.isEmpty ? nil : .specific(sel.categoryTokens)
+    /// Everything locked by any lock, for the usage report.
+    static func union(_ sets: [LockSet]) -> FamilyActivitySelection {
+        var out = FamilyActivitySelection()
+        for set in sets {
+            let sel = selection(from: set.selection)
+            out.applicationTokens.formUnion(sel.applicationTokens)
+            out.categoryTokens.formUnion(sel.categoryTokens)
+            out.webDomainTokens.formUnion(sel.webDomainTokens)
+        }
+        return out
     }
 
-    static func unshield() {
-        let m = managed
-        m.shield.applications = nil
-        m.shield.applicationCategories = nil
-        m.shield.webDomains = nil
-        m.shield.webDomainCategories = nil
+    /// True when the proposed lock no longer covers something the current one did.
+    static func appsRemoved(_ current: LockSet, _ proposed: LockSet) -> Bool {
+        let c = selection(from: current.selection), p = selection(from: proposed.selection)
+        return !c.applicationTokens.isSubset(of: p.applicationTokens)
+            || !c.categoryTokens.isSubset(of: p.categoryTokens)
+            || !c.webDomainTokens.isSubset(of: p.webDomainTokens)
     }
 
-    private static func schedule(from start: TimeOfDay, to end: TimeOfDay) -> DeviceActivitySchedule {
+    static func apply(_ set: LockSet, shield: Bool) {
+        let store = ManagedSettingsStore(named: .lock(set.id))
+        guard shield else {
+            store.shield.applications = nil
+            store.shield.applicationCategories = nil
+            store.shield.webDomains = nil
+            store.shield.webDomainCategories = nil
+            return
+        }
+        let sel = selection(from: set.selection)
+        store.shield.applications = sel.applicationTokens.isEmpty ? nil : sel.applicationTokens
+        store.shield.applicationCategories = sel.categoryTokens.isEmpty ? nil : .specific(sel.categoryTokens)
+        store.shield.webDomains = sel.webDomainTokens.isEmpty ? nil : sel.webDomainTokens
+        store.shield.webDomainCategories = sel.categoryTokens.isEmpty ? nil : .specific(sel.categoryTokens)
+    }
+
+    static func clear(id: String) {
+        ManagedSettingsStore(named: .lock(id)).clearAllSettings()
+    }
+
+    private static func daily(_ start: TimeOfDay, _ end: TimeOfDay) -> DeviceActivitySchedule {
         DeviceActivitySchedule(intervalStart: start.components, intervalEnd: end.components, repeats: true)
     }
 
-    /// Registers the morning lock, midday questions, and evening lock.
+    /// Registers the morning boundary, midday questions, and every scheduled lock window.
     static func registerDaily(settings: AppSettings) {
         let center = DeviceActivityCenter()
         center.stopMonitoring(center.activities.filter { $0 != .unlock })
         let morning = TimeOfDay(minutes: min(settings.schedule.morning.minutesFromMidnight, 23 * 60 + 30))
-        try? center.startMonitoring(.morning, during: schedule(from: morning, to: TimeOfDay(hour: 23, minute: 59)))
+        try? center.startMonitoring(.morning, during: daily(morning, TimeOfDay(hour: 23, minute: 59)))
         for (i, t) in settings.schedule.middayTimes(count: settings.rules.middayQuestions).enumerated() {
             let end = TimeOfDay(minutes: min(t.minutesFromMidnight + 15, 23 * 60 + 59))
             guard end.minutesFromMidnight - t.minutesFromMidnight >= 15 else { continue }
-            try? center.startMonitoring(.midday(i), during: schedule(from: t, to: end))
+            try? center.startMonitoring(.midday(i), during: daily(t, end))
         }
-        if settings.schedule.eveningOn {
-            let start = TimeOfDay(minutes: min(settings.schedule.evening.minutesFromMidnight, 23 * 60 + 30))
-            try? center.startMonitoring(.evening, during: schedule(from: start, to: TimeOfDay(hour: 23, minute: 59)))
+        for set in settings.lockSets where set.enabled && set.mode == .scheduled && set.windowMinutes >= 15 {
+            let schedule = set.windowMinutes >= 1440
+                ? daily(TimeOfDay(hour: 0, minute: 0), TimeOfDay(hour: 23, minute: 59))
+                : daily(set.start, set.end)
+            try? center.startMonitoring(.lock(set.id), during: schedule)
         }
     }
 
@@ -95,54 +120,59 @@ enum Blocker {
 /// Lock decisions shared by the app and the activity monitor extension.
 enum LockEngine {
     static func sync(store: SharedStore = .shared, now: Date = Date()) {
-        let today = store.today(now: now)
+        let settings = store.settings
+        let today = store.today(now: now, morning: settings.schedule.morning)
+        var anyLocked = false
+        for set in settings.lockSets {
+            let locked = LockLogic.state(set, today: today, now: now) != .open
+            Blocker.apply(set, shield: locked)
+            anyLocked = anyLocked || locked
+        }
+        let ids = Set(settings.lockSets.map(\.id))
+        for old in store.knownLockIDs where !ids.contains(old) { Blocker.clear(id: old) }
+        store.knownLockIDs = Array(ids)
+        ManagedSettingsStore(named: .legacy).clearAllSettings()
+        ManagedSettingsStore(named: .protection).application.denyAppRemoval =
+            settings.protection.preventAppRemoval && anyLocked ? true : nil
+
         var snap = store.snapshot
-        snap.reason = today.lockReason(at: now)
+        snap.reason = LockLogic.reason(today: today, settings: settings, now: now)
         snap.readingDone = today.readingDone
         snap.unlockedUntil = today.unlockedUntil
+        snap.strictUntil = LockLogic.strictUntil(settings: settings, today: today, now: now)
+        snap.lockedCount = settings.lockSets.filter(\.enabled).map(\.appCount).reduce(0, +)
         store.snapshot = snap
-        if snap.reason == .none { Blocker.unshield() } else { Blocker.shield(store: store) }
     }
 
     static func handleIntervalStart(_ activity: DeviceActivityName, store: SharedStore = .shared, now: Date = Date()) {
         var today = store.today(now: now)
         if activity == .morning {
-            today.eveningLocked = false
             if !today.readingDone { today.unlockedUntil = nil }
-        } else if activity == .evening {
-            today.eveningLocked = true
-            today.unlockedUntil = nil
+            store.storedToday = today
         } else if activity.isMidday {
-            if today.readingDone && !today.eveningLocked {
+            if today.readingDone {
                 today.middayPending = true
                 today.unlockedUntil = nil
+                store.storedToday = today
             }
-        } else {
-            return
         }
-        store.storedToday = today
         sync(store: store, now: now)
     }
 
     static func handleIntervalEnd(_ activity: DeviceActivityName, store: SharedStore = .shared, now: Date = Date()) {
-        guard activity == .unlock else { return }
-        var today = store.today(now: now)
-        if let until = today.unlockedUntil, until <= now.addingTimeInterval(60) {
-            today.unlockedUntil = nil
+        if activity == .unlock {
+            var today = store.today(now: now)
+            if let until = today.unlockedUntil, until <= now.addingTimeInterval(60) { today.unlockedUntil = nil }
+            if let pass = today.passUntil, pass <= now.addingTimeInterval(60) { today.passUntil = nil }
             store.storedToday = today
         }
         sync(store: store, now: now)
     }
 
-    /// End of an unlock that lasts the rest of the day: the next evening lock or the next morning.
+    /// End of an unlock that lasts the rest of the day: the next morning.
     static func restOfDayEnd(settings: AppSettings, now: Date, calendar: Calendar = .current) -> Date {
-        func next(_ t: TimeOfDay) -> Date {
-            let d = t.date(on: now, calendar: calendar)
-            return d > now ? d : calendar.date(byAdding: .day, value: 1, to: d) ?? d
-        }
-        var candidates = [next(settings.schedule.morning)]
-        if settings.schedule.eveningOn { candidates.append(next(settings.schedule.evening)) }
-        return candidates.min() ?? now.addingTimeInterval(3600)
+        let d = settings.schedule.morning.date(on: now, calendar: calendar)
+        return d > now ? d : calendar.date(byAdding: .day, value: 1, to: d) ?? now.addingTimeInterval(3600)
     }
 }
 

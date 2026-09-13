@@ -6,18 +6,22 @@ struct PickTimeView: View {
     @Environment(AppModel.self) private var model
     let title: String
     let subtitle: String
+    var after: PathLogic.After? = nil
     var onUnlocked: () -> Void
     @State private var minutes: Int?
 
     var body: some View {
         let choices = model.unlockChoices
+        let alreadyOpen = model.lockReason == .none && model.today.unlockedUntil != nil
         VStack(spacing: 22) {
-            Spacer()
+            ScrollView {
+            VStack(spacing: 22) {
             Image(systemName: "checkmark")
                 .font(.system(size: 54, weight: .semibold))
                 .foregroundStyle(.white)
-                .frame(width: 120, height: 120)
+                .frame(width: after == nil ? 120 : 92, height: after == nil ? 120 : 92)
                 .background(Theme.gold, in: Circle())
+                .padding(.top, 20)
             VStack(spacing: 6) {
                 Text(title).font(Theme.serif(34)).foregroundStyle(Theme.ink)
                 Text(subtitle).font(.body).foregroundStyle(Theme.dim)
@@ -36,13 +40,17 @@ struct PickTimeView: View {
                 }
             }
             .padding(.horizontal, 30)
-            Spacer()
-            Button("Unlock my apps") {
+            if let after {
+                NextStepCard(after: after)
+            }
+            }
+            }
+            Button(alreadyOpen ? "Add this time" : "Unlock my apps") {
                 model.unlock(minutes: minutes ?? choices.last ?? 30)
                 onUnlocked()
             }
             .buttonStyle(.phos)
-            Button("Keep them locked") { onUnlocked() }.buttonStyle(.phosQuiet)
+            Button(alreadyOpen ? "Done" : "Keep them locked") { onUnlocked() }.buttonStyle(.phosQuiet)
         }
         .padding(.horizontal, 20)
         .padding(.bottom, 12)
@@ -110,7 +118,7 @@ struct RecallFlow: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            FlowHeader(title: model.lockReason == .midday ? "Midday question" : "One question", subtitle: model.todaysTitle) { dismiss() }
+            FlowHeader(title: model.lockReason == .midday ? "Midday question" : "One question", subtitle: model.todaysRecord?.title ?? model.todaysTitle) { dismiss() }
                 .padding(.horizontal, 20).padding(.top, 12).padding(.bottom, 8)
             if !model.today.readingDone {
                 Spacer()
@@ -161,7 +169,7 @@ struct RecallFlow: View {
     private var useYourWords: Bool { model.today.recallCount % 2 == 0 }
 
     private func newQuestion() {
-        let bank = QuestionBank.shared.questions(for: model.todaysChapter)?.questions ?? []
+        let bank = QuestionBank.shared.questions(for: model.todaysRecord?.ref ?? model.todaysChapter)?.questions ?? []
         item = QuizEngine.pick(from: bank, count: 1, avoiding: Set(model.today.askedQuestionIDs)).first
         if let item { model.markAsked([item]) }
         answered = nil
@@ -304,7 +312,7 @@ struct ReciteView: View {
     @State private var notice: String?
 
     var body: some View {
-        let ref = model.todaysChapter
+        let ref = model.todaysRecord?.ref ?? model.todaysChapter
         let key = QuestionBank.shared.questions(for: ref)?.keyVerse ?? 1
         let target = Bible.shared.verse(ref, key)
         let spoken = model.demo && recorder.transcript.isEmpty ? String(target.split(separator: " ").prefix(9).joined(separator: " ")) : recorder.transcript

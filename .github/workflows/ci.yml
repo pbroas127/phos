@@ -1,7 +1,7 @@
 name: ci
 on:
   push:
-    branches: [main]
+    branches: [main, voices]
   workflow_dispatch:
 concurrency:
   group: ci-${{ github.ref }}

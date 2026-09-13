@@ -3,14 +3,8 @@ import ManagedSettings
 import ManagedSettingsUI
 import UIKit
 
-/// Draws the screen people see when they open a locked app, in light and dark.
+/// Draws the screen people see when they open a locked app.
 class ShieldConfigurationExtension: ShieldConfigurationDataSource {
-    private func rgb(_ hex: UInt32) -> UIColor {
-        UIColor(red: CGFloat((hex >> 16) & 0xFF) / 255, green: CGFloat((hex >> 8) & 0xFF) / 255, blue: CGFloat(hex & 0xFF) / 255, alpha: 1)
-    }
-
-    private var isDark: Bool { UITraitCollection.current.userInterfaceStyle == .dark }
-
     override func configuration(shielding application: Application) -> ShieldConfiguration {
         make(name: application.localizedDisplayName, lock: lock { sel in application.token.map { sel.applicationTokens.contains($0) } ?? false })
     }
@@ -45,64 +39,20 @@ class ShieldConfigurationExtension: ShieldConfigurationDataSource {
         let store = SharedStore.shared
         let snap = store.snapshot
         let today = store.today(morning: store.settings.schedule.morning)
-        let app = name ?? "This app"
         let state = lock.map { LockLogic.state($0, today: today, now: Date()) } ?? .needsReading
-        let reward = lock.map { LockSet.rewardLabel($0.rewardSeconds).lowercased() } ?? "a while"
-
-        let title: String
-        let subtitle: String
-        let button: String
-
-        switch state {
-        case .strict:
-            let end = lock.map { LockLogic.activeEnd($0, now: Date()) }
-            let f = DateFormatter()
-            f.timeStyle = .short
-            title = end.map { "Locked until \(f.string(from: $0))" } ?? "Locked for now"
-            subtitle = "\(lock?.name ?? "This lock") is strict. Only an emergency pass opens \(app)."
-            button = "Open Phos"
-        case .usedUp:
-            title = "No unlocks left today"
-            subtitle = "\(lock?.name ?? "This lock") allows \(lock?.limit ?? 0) a day. Emergency passes are in Phos."
-            button = "Open Phos"
-        case .needsQuestion:
-            title = "\(app) is resting"
-            subtitle = "One question about \(snap.chapterTitle) opens it for \(reward)."
-            button = "Answer a question"
-        case .needsTap:
-            title = "\(app) is resting"
-            subtitle = "You read today. Unlock it for \(reward) from Phos."
-            button = "Unlock"
-        case .needsReading, .open, .inactive:
-            switch snap.style {
-            case .verse:
-                title = "\(app) can wait"
-                subtitle = "“\(snap.verseText)”\n\(snap.verseRef)"
-            case .streak:
-                title = snap.streak > 0 ? "Day \(snap.streak + 1) is waiting" : "Start your streak"
-                subtitle = "Read \(snap.chapterTitle) to open \(app)."
-            case .quiet:
-                title = "Read first"
-                subtitle = "\(app) opens after today's chapter."
-            }
-            button = "Read today's chapter"
-        }
-
-        // Colors are picked for the current appearance directly. Dynamic colors and blur get washed out by the system.
-        let dark = isDark
-        let background = dark ? rgb(0x15120E) : rgb(0xFBF9F4)
-        let ink = dark ? rgb(0xF4EEE3) : rgb(0x221D17)
-        let dim = dark ? rgb(0xB9AD9B) : rgb(0x8A7F71)
-        let gold = dark ? rgb(0xE0AE4B) : rgb(0xA87A22)
-        let onGold = dark ? rgb(0x1B1307) : rgb(0xFFFFFF)
+        let copy = ShieldArt.copy(state: state, lock: lock, app: name ?? "This app", snap: snap)
+        // Bedtime style locks always stay dark. Appearance cannot be read reliably inside a shield.
+        let theme: ShieldTheme = state == .strict ? .dark : snap.theme
+        let p = ShieldArt.palette(theme)
+        // All text lives in one image so the system cannot restyle or tint it.
         return ShieldConfiguration(
-            backgroundBlurStyle: nil,
-            backgroundColor: background,
-            icon: UIImage(named: dark ? "ShieldIconDark" : "ShieldIcon"),
-            title: ShieldConfiguration.Label(text: title, color: ink),
-            subtitle: ShieldConfiguration.Label(text: subtitle, color: dim),
-            primaryButtonLabel: ShieldConfiguration.Label(text: button, color: onGold),
-            primaryButtonBackgroundColor: gold,
+            backgroundBlurStyle: theme == .dark ? .dark : .extraLight,
+            backgroundColor: p.background,
+            icon: ShieldArt.render(copy, theme: theme),
+            title: nil,
+            subtitle: nil,
+            primaryButtonLabel: ShieldConfiguration.Label(text: copy.button, color: p.buttonLabel),
+            primaryButtonBackgroundColor: p.buttonFill,
             secondaryButtonLabel: nil
         )
     }

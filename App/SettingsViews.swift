@@ -50,7 +50,11 @@ struct SettingsScreen: View {
                     Picker("Style", selection: $model.settings.shieldStyle) {
                         ForEach(ShieldStyle.allCases) { Text($0.title).tag($0) }
                     }
-                    ShieldPreview(style: model.settings.shieldStyle)
+                    Picker("Look", selection: $model.settings.shieldTheme) {
+                        ForEach(ShieldTheme.allCases) { Text($0.title).tag($0) }
+                    }
+                    .pickerStyle(.segmented)
+                    ShieldPreview(style: model.settings.shieldStyle, theme: model.settings.shieldTheme)
                         .listRowInsets(EdgeInsets())
                         .listRowBackground(Color.clear)
                 }
@@ -67,6 +71,7 @@ struct SettingsScreen: View {
             .navigationTitle("Settings")
             .navigationDestination(for: String.self) { id in LockDetailView(lockID: id) }
             .onChange(of: model.settings.shieldStyle) { _, _ in model.savePreferences() }
+            .onChange(of: model.settings.shieldTheme) { _, _ in model.savePreferences() }
             .onChange(of: model.settings.preferredRead) { _, _ in model.savePreferences() }
             .onChange(of: model.settings.preferredReflect) { _, _ in model.savePreferences() }
             .sheet(isPresented: $wizardShown) {
@@ -872,47 +877,34 @@ struct CooldownSheet: View {
 struct ShieldPreview: View {
     @Environment(AppModel.self) private var model
     let style: ShieldStyle
+    var theme: ShieldTheme = .dark
     var app = "Instagram"
     var large = false
 
     var body: some View {
-        let snap = model.store.snapshot
-        VStack(spacing: large ? 22 : 14) {
-            Spacer(minLength: large ? 60 : 10)
-            Image("LaunchLogo").resizable().scaledToFit()
-                .frame(width: large ? 110 : 64, height: large ? 110 : 64)
-                .clipShape(RoundedRectangle(cornerRadius: large ? 26 : 15, style: .continuous))
-            Text(title(snap)).font(.system(size: large ? 30 : 20, weight: .bold)).foregroundStyle(Theme.ink).multilineTextAlignment(.center)
-            Text(subtitle(snap)).font(.system(size: large ? 19 : 14)).foregroundStyle(Theme.dim).multilineTextAlignment(.center).padding(.horizontal, 20)
-            Spacer(minLength: large ? 80 : 10)
-            VStack(spacing: 6) {
-                Text("Read today's chapter").font(.system(size: large ? 19 : 15, weight: .semibold)).foregroundStyle(.white)
-                    .frame(maxWidth: .infinity, minHeight: large ? 58 : 46)
-                    .background(Theme.gold, in: RoundedRectangle(cornerRadius: large ? 16 : 12, style: .continuous))
-                Text("Not now").font(.system(size: large ? 18 : 14, weight: .semibold)).foregroundStyle(Theme.dim).frame(minHeight: large ? 48 : 36)
+        var snap = model.store.snapshot
+        snap.style = style
+        let copy = ShieldArt.copy(state: .needsReading, lock: nil, app: app, snap: snap)
+        let p = ShieldArt.palette(theme)
+        // Same image the real shield uses, laid out like the system screen: art high, buttons at the bottom.
+        return GeometryReader { geo in
+            let s = large ? 1 : geo.size.width / 402
+            VStack(spacing: 0) {
+                Spacer(minLength: 0)
+                Image(uiImage: ShieldArt.render(copy, theme: theme)).resizable().scaledToFit()
+                    .frame(width: ShieldArt.width * s)
+                Spacer(minLength: 0)
+                VStack(spacing: 10 * s) {
+                    Text(copy.button).font(.system(size: 17 * s, weight: .semibold)).foregroundStyle(Color(p.buttonLabel))
+                        .frame(maxWidth: .infinity, minHeight: 54 * s)
+                        .background(Color(p.buttonFill), in: Capsule())
+                }
+                .padding(.horizontal, 24 * s)
+                .padding(.bottom, 40 * s)
             }
-            .padding(.horizontal, large ? 24 : 16)
+            .frame(width: geo.size.width, height: geo.size.height)
         }
-        .padding(.vertical, large ? 30 : 16)
-        .frame(maxWidth: .infinity)
-        .frame(height: large ? nil : 360)
-        .background(Theme.paper, in: RoundedRectangle(cornerRadius: large ? 0 : 24, style: .continuous))
-        .overlay(RoundedRectangle(cornerRadius: large ? 0 : 24, style: .continuous).stroke(Theme.line, lineWidth: large ? 0 : 1))
-    }
-
-    private func title(_ s: SharedSnapshot) -> String {
-        switch style {
-        case .verse: return "\(app) can wait"
-        case .streak: return s.streak > 0 ? "Day \(s.streak + 1) is waiting" : "Start your streak"
-        case .quiet: return "Read first"
-        }
-    }
-
-    private func subtitle(_ s: SharedSnapshot) -> String {
-        switch style {
-        case .verse: return "“\(s.verseText)”\n\(s.verseRef)"
-        case .streak: return "Read \(s.chapterTitle) to open \(app)."
-        case .quiet: return "\(app) opens after today's chapter."
-        }
+        .frame(height: large ? nil : 560)
+        .background(Color(p.background), in: RoundedRectangle(cornerRadius: large ? 0 : 28, style: .continuous))
     }
 }

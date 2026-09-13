@@ -378,6 +378,12 @@ enum ShieldStyle: String, Codable, CaseIterable, Identifiable {
     }
 }
 
+enum ShieldTheme: String, Codable, CaseIterable, Identifiable {
+    case dark, light
+    var id: String { rawValue }
+    var title: String { self == .dark ? "Night" : "Ivory" }
+}
+
 enum ReadMode: String, Codable, CaseIterable, Identifiable {
     case paper, inApp, listen
     var id: String { rawValue }
@@ -558,6 +564,7 @@ struct AppSettings: Codable, Equatable {
     var lockSets: [LockSet] = []
     var pendingLocks: [PendingLock] = []
     var shieldStyle: ShieldStyle = .verse
+    var shieldTheme: ShieldTheme = .dark
     var planID = "book.JHN"
     var planPositions: [String: Int] = [:]
     var passUses: [PassUse] = []
@@ -576,6 +583,7 @@ struct AppSettings: Codable, Equatable {
         lockSets = (try? c.decode([LockSet].self, forKey: .lockSets)) ?? d.lockSets
         pendingLocks = (try? c.decode([PendingLock].self, forKey: .pendingLocks)) ?? d.pendingLocks
         shieldStyle = (try? c.decode(ShieldStyle.self, forKey: .shieldStyle)) ?? d.shieldStyle
+        shieldTheme = (try? c.decode(ShieldTheme.self, forKey: .shieldTheme)) ?? d.shieldTheme
         planID = (try? c.decode(String.self, forKey: .planID)) ?? d.planID
         planPositions = (try? c.decode([String: Int].self, forKey: .planPositions)) ?? d.planPositions
         passUses = (try? c.decode([PassUse].self, forKey: .passUses)) ?? d.passUses
@@ -634,6 +642,7 @@ extension ReadingCheck {
 /// What the lock screen, shield button, and widgets need, written by the app and monitor.
 struct SharedSnapshot: Codable, Equatable {
     var style: ShieldStyle = .verse
+    var theme: ShieldTheme = .dark
     var reason: LockReason = .reading
     var streak = 0
     var chapterTitle = "Today's chapter"
@@ -651,6 +660,7 @@ struct SharedSnapshot: Codable, Equatable {
         let c = try decoder.container(keyedBy: CodingKeys.self)
         let d = SharedSnapshot()
         style = (try? c.decode(ShieldStyle.self, forKey: .style)) ?? d.style
+        theme = (try? c.decode(ShieldTheme.self, forKey: .theme)) ?? d.theme
         reason = (try? c.decode(LockReason.self, forKey: .reason)) ?? d.reason
         streak = (try? c.decode(Int.self, forKey: .streak)) ?? d.streak
         chapterTitle = (try? c.decode(String.self, forKey: .chapterTitle)) ?? d.chapterTitle

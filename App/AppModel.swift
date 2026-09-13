@@ -348,6 +348,7 @@ final class AppModel {
     func writeSnapshot() {
         var snap = store.snapshot
         snap.style = settings.shieldStyle
+        snap.theme = settings.shieldTheme
         snap.reason = lockReason
         snap.streak = streak
         snap.chapterTitle = todaysTitle

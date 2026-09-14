@@ -108,6 +108,85 @@
      "q": "The LORD says his name is despised among the nations but honored by the priests.",
      "answer": false,
      "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom does the LORD address as despising his name?",
+     "options": [
+      "The priests",
+      "The kings",
+      "The prophets",
+      "The elders"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will Israel say when they see what the LORD does?",
+     "options": [
+      "The LORD is great beyond Israel's border",
+      "The LORD has forgiven Edom",
+      "Edom will rise again",
+      "The LORD has forsaken us"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do the priests say about the LORD's table?",
+     "options": [
+      "It is contemptible",
+      "It is holy",
+      "It is too small",
+      "It is empty"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who does the LORD say is cursed?",
+     "options": [
+      "The deceiver who sacrifices a defective animal",
+      "The priest who forgets the Sabbath",
+      "The man who withholds his tithe",
+      "The foreigner who enters the temple"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "If I am a father, then ____?",
+     "answer": "where is my honor",
+     "wrong": [
+      "why do you despise me",
+      "who will obey me",
+      "where are my children"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Now, please entreat the favor of God, that he may ____.",
+     "answer": "be gracious to us",
+     "wrong": [
+      "forgive our sins",
+      "hear our prayer",
+      "accept our gifts"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD says he will not accept an offering from the priests' hand.",
+     "answer": true,
+     "v": 10
     }
    ]
   },
@@ -218,6 +297,85 @@
      "q": "The people weary the LORD by asking, \"Where is the God of mercy?\"",
      "answer": false,
      "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Between whom has the LORD been witness?",
+     "options": [
+      "A man and the wife of his youth",
+      "Judah and Israel",
+      "The priest and the people",
+      "Jacob and Esau"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "The LORD's covenant of old was a covenant of what?",
+     "options": [
+      "Life and peace",
+      "Land and blessing",
+      "Bread and wine",
+      "Fire and judgment"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why has the LORD made the priests contemptible before the people?",
+     "options": [
+      "They showed partiality in the law",
+      "They stole from the treasury",
+      "They let the lamps go out",
+      "They refused to burn incense"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "With what have the people wearied the LORD?",
+     "options": [
+      "Their words",
+      "Their sacrifices",
+      "Their idols",
+      "Their fasting"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He walked with me in peace and uprightness, and ____.",
+     "answer": "turned many away from iniquity",
+     "wrong": [
+      "taught Israel my statutes",
+      "kept my covenant forever",
+      "stood before my altar"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Why one? He sought ____.",
+     "answer": "godly offspring",
+     "wrong": [
+      "a holy people",
+      "a faithful priesthood",
+      "a righteous nation"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says the priests have caused many to stumble in the law.",
+     "answer": true,
+     "v": 8
     }
    ]
   },
@@ -332,6 +490,85 @@
      "q": "The people complain that it is vain to serve God because the proud are punished.",
      "answer": false,
      "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What will all nations call them?",
+     "options": [
+      "Blessed",
+      "Holy",
+      "Mighty",
+      "Chosen"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who will be refined like gold and silver?",
+     "options": [
+      "The sons of Levi",
+      "The kings of Judah",
+      "The elders of Israel",
+      "The nations"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which of these will the LORD be a swift witness against?",
+     "options": [
+      "The sorcerers",
+      "The tax collectors",
+      "The shepherds",
+      "The merchants"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will they discern when they return?",
+     "options": [
+      "The righteous from the wicked",
+      "Truth from lies",
+      "The clean from the unclean",
+      "The wise from the foolish"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Then the offering of Judah and Jerusalem will be ____ as in the days of old.",
+     "answer": "pleasant to the LORD",
+     "wrong": [
+      "pleasing to the nations",
+      "a sweet savor",
+      "accepted at last"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Neither shall your vine ____ in the field.",
+     "answer": "cast its fruit before its time",
+     "wrong": [
+      "wither and die",
+      "be eaten by locusts",
+      "lose its leaves early"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD listened and heard when those who feared him spoke together.",
+     "answer": true,
+     "v": 16
     }
    ]
   },
@@ -399,6 +636,42 @@
      "q": "The LORD says the proud will be like chaff blown away by the wind.",
      "answer": false,
      "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the burning day leave the proud and wicked?",
+     "options": [
+      "Neither root nor branch",
+      "Only a small remnant",
+      "A home in exile",
+      "Neither house nor field"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did the LORD command the law to Moses?",
+     "options": [
+      "Horeb",
+      "Nebo",
+      "Zion",
+      "Carmel"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "You shall tread down the wicked; for ____ under the soles of your feet.",
+     "answer": "they will be ashes",
+     "wrong": [
+      "they will be dust",
+      "they will be straw",
+      "they will be crushed"
+     ],
+     "v": 3
     }
    ]
   }

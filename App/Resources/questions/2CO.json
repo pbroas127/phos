@@ -112,6 +112,80 @@
      "q": "Paul admits that his word toward the Corinthians was both Yes and No.",
      "answer": false,
      "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "As the sufferings of Christ abound to us, what does Paul say also abounds?",
+     "options": [
+      "Our comfort",
+      "Our strength",
+      "Our reward",
+      "Our faith"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say his boasting is?",
+     "options": [
+      "The testimony of his conscience",
+      "The number of his converts",
+      "The letters he has written",
+      "His training in the law"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "After passing through Macedonia and returning to Corinth, where did Paul plan to be sent on to?",
+     "options": [
+      "Judea",
+      "Rome",
+      "Spain",
+      "Syria"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "On whom we have set our hope that ____.",
+     "answer": "he will also still deliver us",
+     "wrong": [
+      "he will soon bring us home",
+      "we will see you again",
+      "he will raise us up"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "We are your boasting, even as you also are ours, in ____.",
+     "answer": "the day of our Lord Jesus",
+     "wrong": [
+      "the presence of all the saints",
+      "the sight of God himself",
+      "every assembly of Christ"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul writes this letter together with Titus.",
+     "answer": false,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says that those who share in the sufferings also share in the comfort.",
+     "answer": true,
+     "v": 7
     }
    ]
   },
@@ -226,6 +300,80 @@
      "q": "Paul says the punishment was inflicted on the man by only a few leaders.",
      "answer": false,
      "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Paul want the Corinthians to know through his earlier letter?",
+     "options": [
+      "The abundant love he has for them",
+      "The punishment coming to them",
+      "The day he would arrive",
+      "The names of the false teachers"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul fear might happen to the man if he is not forgiven?",
+     "options": [
+      "He could be swallowed up by excessive sorrow",
+      "He could turn back to his sin",
+      "He could stir up division in the assembly",
+      "He could join the idol worshipers"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What proof did Paul want to see when he wrote to them?",
+     "options": [
+      "Whether they are obedient in all things",
+      "Whether they still remember him",
+      "Whether they gave to the poor",
+      "Whether they kept the traditions"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Having confidence in you all that ____ would be shared by all of you.",
+     "answer": "my joy",
+     "wrong": [
+      "my grief",
+      "my burden",
+      "my hope"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "God reveals through us the sweet aroma of ____ in every place.",
+     "answer": "his knowledge",
+     "wrong": [
+      "his love",
+      "his glory",
+      "his mercy"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says he stayed on in Troas for a long time because a door was opened to him.",
+     "answer": false,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul asks, Who is sufficient for these things?",
+     "answer": true,
+     "v": 16
     }
    ]
   },
@@ -340,6 +488,80 @@
      "q": "Paul says the same veil remains at the reading of the old covenant, because in Christ it passes away.",
      "answer": true,
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Paul says the letter of Christ is written on what kind of tablets?",
+     "options": [
+      "Tablets that are hearts of flesh",
+      "Tablets of stone",
+      "Tablets of clay",
+      "Scrolls of parchment"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Having such a hope, what does Paul say they use?",
+     "options": [
+      "Great boldness of speech",
+      "Careful and hidden words",
+      "Signs and wonders",
+      "Many letters of praise"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why does Paul say Moses put a veil on his face?",
+     "options": [
+      "So Israel wouldn't look on the end of what was passing away",
+      "So Israel wouldn't be afraid of the Lord",
+      "So he could rest from speaking to them",
+      "So the priests could not see God's glory"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Now the Lord is the Spirit; and where the Spirit of the Lord is, ____.",
+     "answer": "there is liberty",
+     "wrong": [
+      "there is peace",
+      "there is power",
+      "there is life"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For if the service of condemnation has glory, ____ exceeds much more in glory.",
+     "answer": "the service of righteousness",
+     "wrong": [
+      "the covenant of grace",
+      "the ministry of mercy",
+      "the word of truth"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says his confidence toward God comes through Christ.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says the service of death was written on scrolls of parchment.",
+     "answer": false,
+     "v": 7
     }
    ]
   },
@@ -454,6 +676,80 @@
      "q": "Paul says that death works in us, but life in you.",
      "answer": true,
      "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul know about the one who raised the Lord Jesus?",
+     "options": [
+      "He will raise us also through Jesus",
+      "He will soon judge the whole world",
+      "He will free Paul from his chains",
+      "He will restore Israel's kingdom"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say they have renounced?",
+     "options": [
+      "The hidden things of shame",
+      "Their Jewish customs",
+      "All their earthly possessions",
+      "The wisdom of the Greeks"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In whom does Paul say the Good News is veiled?",
+     "options": [
+      "Those who are dying",
+      "The Jews of Jerusalem",
+      "Those young in the faith",
+      "The wise of this age"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Pursued, yet not forsaken; ____, yet not destroyed.",
+     "answer": "struck down",
+     "wrong": [
+      "cast out",
+      "beaten down",
+      "trampled on"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "That the grace, being multiplied through the many, may cause ____ to abound to the glory of God.",
+     "answer": "the thanksgiving",
+     "wrong": [
+      "the love",
+      "the joy",
+      "the praise"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says the life of Jesus may be revealed in our mortal flesh.",
+     "answer": true,
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says God has shone in our hearts to give the light of the knowledge of his law.",
+     "answer": false,
+     "v": 6
     }
    ]
   },
@@ -568,6 +864,80 @@
      "q": "Paul says God was in Christ reconciling the world, not reckoning their trespasses to them.",
      "answer": true,
      "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What ministry does Paul say God gave to us?",
+     "options": [
+      "The ministry of reconciliation",
+      "The ministry of healing",
+      "The ministry of the law",
+      "The ministry of prophecy"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say God gave us, having made us for this very thing?",
+     "options": [
+      "The down payment of the Spirit",
+      "A new body right away",
+      "A vision of heaven",
+      "The keys of the kingdom"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "If Paul and his coworkers are beside themselves, for whom does he say it is?",
+     "options": [
+      "For God",
+      "For the Corinthians",
+      "For themselves",
+      "For unbelievers"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Those who live should no longer live to themselves, but to ____ and rose again.",
+     "answer": "him who for their sakes died",
+     "wrong": [
+      "the Lord who bought them",
+      "those who taught them",
+      "the God who made them"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Not that we desire to be unclothed, but that we desire to be clothed, that what is mortal may be ____.",
+     "answer": "swallowed up by life",
+     "wrong": [
+      "raised in glory",
+      "changed in a moment",
+      "clothed with honor"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says they aim to be well pleasing to the Lord, whether at home or absent.",
+     "answer": true,
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says that knowing the fear of the Lord, they avoid trying to persuade men.",
+     "answer": false,
+     "v": 11
     }
    ]
   },
@@ -682,6 +1052,85 @@
      "q": "In his list of hardships, Paul describes himself as punished and killed.",
      "answer": false,
      "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which of these does Paul list among his hardships as a servant of God?",
+     "options": [
+      "Imprisonments",
+      "Shipwrecks",
+      "Exile",
+      "Stoning"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "By what does Paul say the Corinthians are restricted?",
+     "options": [
+      "Their own affections",
+      "Paul and his coworkers",
+      "The false apostles",
+      "The law of Moses"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which of these does Paul list among the ways they commend themselves?",
+     "options": [
+      "In sincere love",
+      "In great wealth",
+      "In fine speech",
+      "In noble birth"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "If they touch no unclean thing, what does the Lord say he will do?",
+     "options": [
+      "Receive them",
+      "Bless their land",
+      "Heal their bodies",
+      "Forgive their fathers"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "As deceivers and yet true, as unknown and yet ____.",
+     "answer": "well known",
+     "wrong": [
+      "greatly loved",
+      "truly honored",
+      "fully trusted"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "We give no occasion of stumbling in anything, that ____.",
+     "answer": "our service may not be blamed",
+     "wrong": [
+      "the Good News may spread",
+      "no one may lose faith",
+      "our boasting may stand"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says his mouth is closed to the Corinthians.",
+     "answer": false,
+     "v": 11
     }
    ]
   },
@@ -796,6 +1245,80 @@
      "q": "Paul says his boasting to Titus about the Corinthians turned out to be wrong.",
      "answer": false,
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say he overflows with in all their affliction?",
+     "options": [
+      "Joy",
+      "Sorrow",
+      "Patience",
+      "Hope"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does Paul describe the God who comforted him?",
+     "options": [
+      "He who comforts the lowly",
+      "He who lifts up the humble king",
+      "He who judges the nations",
+      "He who sees in secret"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Paul says they were grieved in a godly way, so that they might suffer loss by us in what?",
+     "options": [
+      "Nothing",
+      "Only small things",
+      "Their wealth",
+      "Their honor"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "While he told us of your longing, your mourning, and ____ for me.",
+     "answer": "your zeal",
+     "wrong": [
+      "your love",
+      "your prayers",
+      "your gifts"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "In everything you demonstrated yourselves to be ____.",
+     "answer": "pure in the matter",
+     "wrong": [
+      "blameless before God",
+      "faithful to the end",
+      "wise in the matter"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says the spirit of Titus was refreshed by all the Corinthians.",
+     "answer": true,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says the affection of Titus toward the Corinthians has grown cold.",
+     "answer": false,
+     "v": 15
     }
    ]
   },
@@ -910,6 +1433,80 @@
      "q": "Paul says the Macedonians gave beyond their power, of their own accord.",
      "answer": true,
      "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How does Paul describe Titus?",
+     "options": [
+      "My partner and fellow worker for you",
+      "My son in the faith",
+      "The beloved physician",
+      "My fellow prisoner"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which of these does Paul say the Corinthians already abound in?",
+     "options": [
+      "Knowledge",
+      "Generosity",
+      "Patience",
+      "Humility"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did Titus go out to the Corinthians?",
+     "options": [
+      "Of his own accord, being very earnest",
+      "By order of the assemblies",
+      "After seeing a vision",
+      "Only after much urging"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Begging us with much entreaty to receive this grace and ____ to the saints.",
+     "answer": "the fellowship in the service",
+     "wrong": [
+      "the joy of giving",
+      "their offering of love",
+      "a share in the gift"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Having regard for honorable things, not only in the sight of the Lord, but also ____.",
+     "answer": "in the sight of men",
+     "wrong": [
+      "in the hearts of the saints",
+      "before all the assemblies",
+      "in the eyes of Caesar"
+     ],
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says the goal of the collection is that others be eased and the Corinthians distressed.",
+     "answer": false,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says the brother sent with Titus was appointed by the assemblies to travel with them.",
+     "answer": true,
+     "v": 19
     }
    ]
   },

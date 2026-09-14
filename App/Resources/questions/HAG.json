@@ -112,6 +112,85 @@
      "q": "Only Zerubbabel and Joshua obeyed, while the rest of the people refused.",
      "answer": false,
      "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the LORD say happens when the people eat?",
+     "options": [
+      "They don't have enough",
+      "They become sick",
+      "They grow fat",
+      "They forget him"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD do when they brought their harvest home?",
+     "options": [
+      "Blew it away",
+      "Burned it with fire",
+      "Sent locusts on it",
+      "Let thieves steal it"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD stir up in the leaders and the people?",
+     "options": [
+      "Their spirit",
+      "Their memory",
+      "Their anger",
+      "Their fear"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the LORD say he will do once the house is built?",
+     "options": [
+      "Take pleasure in it and be glorified",
+      "Fill it with silver and gold",
+      "Shake the nations around it",
+      "Send rain on the land"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "You have sown much, and ____.",
+     "answer": "bring in little",
+     "wrong": [
+      "reaped nothing at all",
+      "gathered only thorns",
+      "lost the whole harvest"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Therefore for your sake the heavens withhold the dew, and ____.",
+     "answer": "the earth withholds its fruit",
+     "wrong": [
+      "the rivers run dry",
+      "the vines wither away",
+      "the fields lie empty"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Haggai's first message came during the reign of King Cyrus.",
+     "answer": false,
+     "v": 1
     }
    ]
   },
@@ -226,6 +305,85 @@
      "q": "The LORD says the horses and riders will fall by fire from heaven.",
      "answer": false,
      "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the rebuilt house look to those who saw its former glory?",
+     "options": [
+      "As nothing",
+      "Even more glorious",
+      "Just the same",
+      "Nearly finished"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the priests say about food touched by holy meat in a garment's fold?",
+     "options": [
+      "It does not become holy",
+      "It becomes holy",
+      "It becomes unclean",
+      "It must be burned"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the LORD say he will shake yet once more?",
+     "options": [
+      "The heavens, earth, sea, and dry land",
+      "The temple and its walls",
+      "The mountains and the hills",
+      "The thrones of Babylon"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What word does the LORD recall from when they came out of Egypt?",
+     "options": [
+      "Don't be afraid",
+      "Be holy",
+      "Remember the Sabbath",
+      "Keep my law"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "And in this place ____, says the LORD of Armies.",
+     "answer": "I will give peace",
+     "wrong": [
+      "I will dwell forever",
+      "I will show my glory",
+      "I will hear your prayers"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I will overthrow the throne of kingdoms. I will destroy ____ of the nations.",
+     "answer": "the strength of the kingdoms",
+     "wrong": [
+      "the proud cities",
+      "the walls and towers",
+      "the gods and temples"
+     ],
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says the fig and olive trees are already full of fruit.",
+     "answer": false,
+     "v": 19
     }
    ]
   }

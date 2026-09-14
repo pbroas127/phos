@@ -113,6 +113,85 @@
      "q": "The rafters of their house are made of cedar.",
      "answer": false,
      "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does she say his name is like?",
+     "options": [
+      "Oil poured out",
+      "Honey from the comb",
+      "Wine in a cup",
+      "Myrrh on the wind"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides a cluster of henna blossoms, what does she say her beloved is to her?",
+     "options": [
+      "A sachet of myrrh",
+      "A bundle of spices",
+      "A jar of perfume",
+      "A cluster of grapes"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What will they make for her, with studs of silver?",
+     "options": [
+      "Earrings of gold",
+      "A crown of gold",
+      "Chains of gold",
+      "Bracelets of gold"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does she say about their couch?",
+     "options": [
+      "It is verdant",
+      "It is made of ivory",
+      "It is spread with purple",
+      "It is perfumed with myrrh"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Take me away with you. ____. The king has brought me into his rooms.",
+     "answer": "Let's hurry",
+     "wrong": [
+      "Let's rejoice",
+      "Let's run away",
+      "Let's go now"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "If you don't know, most beautiful among women, ____.",
+     "answer": "follow the tracks of the sheep",
+     "wrong": [
+      "ask the shepherds by the tents",
+      "search the hills at noon",
+      "wait beside the flowing stream"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Her perfume spread its fragrance while the king walked in his garden.",
+     "answer": false,
+     "v": 12
     }
    ]
   },
@@ -239,6 +318,85 @@
      "q": "The voice of the nightingale is heard in our land.",
      "answer": false,
      "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What is his love like among the daughters?",
+     "options": [
+      "A lily among thorns",
+      "A rose among weeds",
+      "A dove among ravens",
+      "A palm in the desert"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does he ask to see and hear from his dove in the clefts of the rock?",
+     "options": [
+      "Her face and her voice",
+      "Her dancing and her song",
+      "Her eyes and her laughter",
+      "Her hands and her steps"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Until the day is cool, on which mountains does she picture her beloved?",
+     "options": [
+      "The mountains of Bether",
+      "The mountains of Gilead",
+      "The mountains of Lebanon",
+      "The mountains of spices"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "To what does she compare her beloved as he stands behind the wall?",
+     "options": [
+      "A roe or a young deer",
+      "A lion from the thicket",
+      "A swift eagle",
+      "A strong stallion"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The flowers appear on the earth. ____ has come.",
+     "answer": "The time of the singing",
+     "wrong": [
+      "The season of harvest",
+      "The day of gladness",
+      "The hour of rejoicing"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I sat down under his shadow with great delight, his fruit was ____.",
+     "answer": "sweet to my taste",
+     "wrong": [
+      "fresh from the tree",
+      "rich and full of juice",
+      "like honey in my mouth"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The beloved says the fig tree ripens her green figs and the vines are in blossom.",
+     "answer": true,
+     "v": 13
     }
    ]
   },
@@ -354,6 +512,85 @@
      "q": "The pillars of Solomon's carriage were made of gold.",
      "answer": false,
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did she go to seek him after getting up from her bed?",
+     "options": [
+      "About the city, in the streets and squares",
+      "Out to the fields and villages",
+      "Down to the garden",
+      "Up to the mountain of myrrh"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did she ask the watchmen?",
+     "options": [
+      "Have you seen him whom my soul loves?",
+      "Where is the king's house?",
+      "Why do you go about the city?",
+      "Is it safe to walk at night?"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many mighty men surround Solomon's carriage?",
+     "options": [
+      "Sixty",
+      "Twelve",
+      "Thirty",
+      "A hundred"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Besides myrrh and frankincense, what is the one from the wilderness perfumed with?",
+     "options": [
+      "All spices of the merchant",
+      "Oil of the olive",
+      "Aloes and cassia",
+      "Fresh henna blossoms"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "King Solomon made himself a carriage of ____.",
+     "answer": "the wood of Lebanon",
+     "wrong": [
+      "the finest cedar",
+      "gold and ivory",
+      "the trees of Gilead"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Its seat of purple, the middle of it being ____, from the daughters of Jerusalem.",
+     "answer": "paved with love",
+     "wrong": [
+      "covered with flowers",
+      "lined with silver",
+      "woven with gold"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "She charges the daughters of Jerusalem not to stir up or awaken love until it so desires.",
+     "answer": true,
+     "v": 5
     }
    ]
   },
@@ -469,6 +706,85 @@
      "q": "The smell of her garments is like the smell of Carmel.",
      "answer": false,
      "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does he say her hair is like?",
+     "options": [
+      "A flock of goats descending Mount Gilead",
+      "A cascade of purple wool",
+      "Clusters of dates on a palm",
+      "A field of ripe wheat"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To what does he compare her temples behind her veil?",
+     "options": [
+      "A piece of a pomegranate",
+      "A slice of ripe fig",
+      "A cluster of grapes",
+      "A bloom of henna"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where does he say he will go until the day is cool?",
+     "options": [
+      "The mountain of myrrh, the hill of frankincense",
+      "The fields of Sharon",
+      "The vineyards of En Gedi",
+      "The heights of Hermon"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Besides the lions' dens, where else does he call her to look from?",
+     "options": [
+      "The mountains of the leopards",
+      "The caves of the bears",
+      "The heights of the eagles",
+      "The dens of the jackals"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Your lips, my bride, drip like the honeycomb. ____ are under your tongue.",
+     "answer": "Honey and milk",
+     "wrong": [
+      "Wine and oil",
+      "Spices and myrrh",
+      "Sweetness and song"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Your shoots are ____, with precious fruits, henna with spikenard plants.",
+     "answer": "an orchard of pomegranates",
+     "wrong": [
+      "a grove of olive trees",
+      "a field of lilies",
+      "a vineyard of choice grapes"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "She invites her beloved to come into his garden and taste his precious fruits.",
+     "answer": true,
+     "v": 16
     }
    ]
   },
@@ -583,6 +899,85 @@
      "q": "She says his legs are like pillars of cedar.",
      "answer": false,
      "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "After coming into his garden, what does he invite his friends to do?",
+     "options": [
+      "Eat and drink abundantly",
+      "Sing and dance",
+      "Rest in the shade",
+      "Gather the myrrh"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does he say his head is wet when he knocks?",
+     "options": [
+      "It is filled with dew",
+      "He came through the rain",
+      "He washed at the brook",
+      "He crossed the river"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What do the daughters of Jerusalem ask her?",
+     "options": [
+      "How her beloved is better than another",
+      "Where her beloved has gone",
+      "Why she is out at night",
+      "Who hurt her in the city"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where are the doves to which his eyes are compared?",
+     "options": [
+      "Beside the water brooks",
+      "In the clefts of the rock",
+      "Among the lilies",
+      "On the palace roof"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "My beloved thrust his hand in through ____. My heart pounded for him.",
+     "answer": "the latch opening",
+     "wrong": [
+      "the open window",
+      "the garden gate",
+      "the wooden lattice"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "His lips are like lilies, ____.",
+     "answer": "dropping liquid myrrh",
+     "wrong": [
+      "sweet with honey",
+      "fresh with morning dew",
+      "fragrant with spices"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When she called her beloved, he answered her at once.",
+     "answer": false,
+     "v": 6
     }
    ]
   },
@@ -697,6 +1092,84 @@
      "d": 3,
      "q": "When the queens and concubines saw her, they scorned her.",
      "answer": false,
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The daughters refuse to help her look for her beloved.",
+     "answer": false,
+     "v": 1
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The daughters ask where her beloved has turned",
+      "He compares her teeth to a flock of ewes",
+      "He asks who looks out as the morning",
+      "He goes down to the nut tree grove"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Along with the queens and concubines, what does he say is without number?",
+     "options": [
+      "Virgins",
+      "Chariots",
+      "Flocks",
+      "Mighty men"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "To what do they compare gazing at her?",
+     "options": [
+      "The dance of Mahanaim",
+      "The feast of the harvest",
+      "The sunrise over Hermon",
+      "The king's wedding procession"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Without realizing it, what did his desire set him with?",
+     "options": [
+      "His royal people's chariots",
+      "The king's mighty men",
+      "The shepherds' tents",
+      "The daughters of Jerusalem"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Your hair is like a flock of goats, that lie along ____.",
+     "answer": "the side of Gilead",
+     "wrong": [
+      "the slopes of Carmel",
+      "the hills of Lebanon",
+      "the valley of Sharon"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The daughters saw her, and ____.",
+     "answer": "called her blessed",
+     "wrong": [
+      "sang her praises",
+      "bowed before her",
+      "envied her beauty"
+     ],
      "v": 9
     }
    ]
@@ -813,6 +1286,85 @@
      "q": "Her nose is compared to the tower of Lebanon which looks toward Samaria.",
      "answer": false,
      "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "When does she suggest they go up to the vineyards?",
+     "options": [
+      "Early",
+      "At noon",
+      "In the evening",
+      "By night"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which plants does she say produce fragrance?",
+     "options": [
+      "The mandrakes",
+      "The lilies",
+      "The henna blossoms",
+      "The cedars"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does he say the smell of her breath is like?",
+     "options": [
+      "Apples",
+      "Myrrh",
+      "Cinnamon",
+      "Wine"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "The jewels in verse 1 are described as the work of whose hands?",
+     "options": [
+      "A skillful workman",
+      "A king's goldsmith",
+      "Her mother",
+      "A merchant of Tyre"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Your mouth is like ____, that goes down smoothly for my beloved.",
+     "answer": "the best wine",
+     "wrong": [
+      "the sweetest honey",
+      "fresh warm milk",
+      "cool spring water"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The hair of your head like purple. ____ in its tresses.",
+     "answer": "The king is held captive",
+     "wrong": [
+      "The king takes his delight",
+      "The morning light is caught",
+      "My heart is gently bound"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Her waist is compared to a heap of wheat set about with lilies.",
+     "answer": true,
+     "v": 2
     }
    ]
   },
@@ -928,6 +1480,85 @@
      "q": "In this chapter the daughters of Jerusalem are urged to awaken love quickly.",
      "answer": false,
      "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where does she say she would lead her beloved?",
+     "options": [
+      "Into the house of her mother",
+      "Into the king's rooms",
+      "Out to the vineyard",
+      "Up to the mountains of spices"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Under which tree does she say she awakened him?",
+     "options": [
+      "The apple tree",
+      "The palm tree",
+      "The fig tree",
+      "The cedar tree"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "She says that in his eyes she was like one who found what?",
+     "options": [
+      "Peace",
+      "Favor",
+      "Treasure",
+      "Rest"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "The one who dwells in the gardens is asked to let the speaker hear what?",
+     "options": [
+      "Your voice",
+      "Your song",
+      "Your laughter",
+      "Your footsteps"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I would have you drink spiced wine, ____.",
+     "answer": "of the juice of my pomegranate",
+     "wrong": [
+      "from the vineyards of En Gedi",
+      "mixed with honey and milk",
+      "poured from a golden cup"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jealousy is ____. Its flashes are flashes of fire.",
+     "answer": "as cruel as Sheol",
+     "wrong": [
+      "as bitter as gall",
+      "as fierce as a lion",
+      "as hard as stone"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Solomon kept his vineyard himself instead of leasing it out.",
+     "answer": false,
+     "v": 11
     }
    ]
   }

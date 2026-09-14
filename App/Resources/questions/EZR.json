@@ -112,6 +112,80 @@
      "q": "Mithredath the treasurer brought out the vessels for Cyrus.",
      "answer": true,
      "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In what year of his reign did Cyrus make his proclamation?",
+     "options": [
+      "The first year",
+      "The second year",
+      "The seventh year",
+      "The twentieth year"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Along with the heads of households, who rose up to build the LORD's house?",
+     "options": [
+      "The priests and the Levites",
+      "The singers and the gatekeepers",
+      "The elders of Babylon",
+      "The captains of the king's army"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What blessing did Cyrus speak over any of the LORD's people who went up?",
+     "options": [
+      "May his God be with him",
+      "May he prosper in all his ways",
+      "May he return in peace",
+      "May his days be long"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Cyrus told them to build the house of the LORD, the God of Israel (____).",
+     "answer": "he is God",
+     "wrong": [
+      "he is holy",
+      "he is great",
+      "he is King"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Those around them strengthened their hands with precious things, in addition to ____.",
+     "answer": "all that was willingly offered",
+     "wrong": [
+      "the gifts of the king",
+      "the tithes of the land",
+      "the silver of the treasury"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Cyrus said the LORD had commanded him to build a house in Samaria.",
+     "answer": false,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Cyrus invited any of the LORD's people in his kingdom to go up to Jerusalem.",
+     "answer": true,
+     "v": 3
     }
    ]
   },
@@ -227,6 +301,80 @@
      "q": "The heads of households gave for the work far beyond their ability.",
      "answer": false,
      "v": 69
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who had carried these people away to Babylon?",
+     "options": [
+      "Nebuchadnezzar king of Babylon",
+      "Cyrus king of Persia",
+      "Sennacherib king of Assyria",
+      "Pharaoh king of Egypt"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which animals are counted among those the assembly brought?",
+     "options": [
+      "Horses, mules, camels, and donkeys",
+      "Oxen, sheep, goats, and donkeys",
+      "Horses, cattle, and sheep",
+      "Camels, goats, and oxen"
+     ],
+     "v": 67
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why was one priestly family called by the name of Barzillai?",
+     "options": [
+      "Their father married a daughter of Barzillai the Gileadite",
+      "Barzillai had led them out of Babylon",
+      "They came from Barzillai's city",
+      "Barzillai paid for their journey home"
+     ],
+     "v": 61
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The priests and the Levites lived in their cities, and ____.",
+     "answer": "all Israel in their cities",
+     "wrong": [
+      "the rest in Jerusalem",
+      "the servants in the fields",
+      "the strangers among them"
+     ],
+     "v": 70
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Besides their servants, they had two hundred ____.",
+     "answer": "singing men and singing women",
+     "wrong": [
+      "horsemen and chariot drivers",
+      "guards and watchmen",
+      "scribes and officers"
+     ],
+     "v": 65
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The list names priests and Levites, but no gatekeepers.",
+     "answer": false,
+     "v": 42
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The children of Solomon's servants are counted among those who returned.",
+     "answer": true,
+     "v": 55
     }
    ]
   },
@@ -341,6 +489,80 @@
      "q": "The Levites appointed to oversee the work were thirty years old and upward.",
      "answer": false,
      "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "When did they offer burnt offerings on the new altar each day?",
+     "options": [
+      "Morning and evening",
+      "Only at noon",
+      "Only at sunrise",
+      "Only on the Sabbath"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whose directions did the priests and Levites follow when they praised the LORD?",
+     "options": [
+      "David king of Israel",
+      "Solomon son of David",
+      "Moses the man of God",
+      "Cyrus king of Persia"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In what year after coming to Jerusalem did they begin the work on God's house?",
+     "options": [
+      "The second year",
+      "The first year",
+      "The third year",
+      "The seventh year"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They built the altar to offer burnt offerings on it, as it is written in ____.",
+     "answer": "the law of Moses",
+     "wrong": [
+      "the book of the kings",
+      "the words of Jeremiah",
+      "the decree of Cyrus"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They also gave money to ____.",
+     "answer": "the masons and to the carpenters",
+     "wrong": [
+      "the priests and to the Levites",
+      "the guards and to the watchmen",
+      "the governors beyond the River"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The noise of the people's shouting was heard far away.",
+     "answer": true,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The foundation of the temple was already laid when they began offering burnt offerings.",
+     "answer": false,
+     "v": 6
     }
    ]
   },
@@ -455,6 +677,85 @@
      "q": "Artaxerxes' search of the records showed Jerusalem had always been loyal to kings.",
      "answer": false,
      "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "By whose command did Zerubbabel say they would build the house?",
+     "options": [
+      "King Cyrus of Persia",
+      "King Darius of Persia",
+      "King Artaxerxes of Persia",
+      "Nebuchadnezzar of Babylon"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Until when did the work on God's house stay stopped?",
+     "options": [
+      "The second year of Darius king of Persia",
+      "The first year of Cyrus king of Persia",
+      "The death of King Artaxerxes",
+      "The seventh year of Ahasuerus"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Artaxerxes order about Jerusalem?",
+     "options": [
+      "It must not be built until he made a decree",
+      "It must be torn down to its foundations",
+      "It must pay double tribute",
+      "Its people must be sent back to Babylon"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In what language was the letter of Bishlam and his companions written?",
+     "options": [
+      "Syrian",
+      "Hebrew",
+      "Persian",
+      "Egyptian"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The letter warned the king, \"If this city is built, then you will have ____.\"",
+     "answer": "no possession beyond the River",
+     "wrong": [
+      "no peace in your kingdom",
+      "enemies on every side",
+      "no friends in Samaria"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Artaxerxes wrote that there had been ____ over Jerusalem who ruled all the country beyond the River.",
+     "answer": "mighty kings",
+     "wrong": [
+      "wise judges",
+      "proud princes",
+      "foreign governors"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "An accusation against Judah and Jerusalem was written at the beginning of Ahasuerus' reign.",
+     "answer": true,
+     "v": 6
     }
    ]
   },
@@ -569,6 +870,80 @@
      "q": "Tattenai's letter said the work was going slowly and failing.",
      "answer": false,
      "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who did the elders say destroyed the first house and carried the people to Babylon?",
+     "options": [
+      "Nebuchadnezzar king of Babylon",
+      "Sennacherib king of Assyria",
+      "Pharaoh king of Egypt",
+      "Artaxerxes king of Persia"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To whom did Cyrus deliver the vessels, making him governor?",
+     "options": [
+      "Sheshbazzar",
+      "Zerubbabel",
+      "Jeshua",
+      "Tattenai"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who did the elders say had built and finished the house many years before?",
+     "options": [
+      "A great king of Israel",
+      "Moses the man of God",
+      "The judges of Israel",
+      "The priests of Aaron"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The elders said the house had been built ever since, \"and yet ____.\"",
+     "answer": "it is not completed",
+     "wrong": [
+      "no one has helped us",
+      "the walls lie broken",
+      "the king has not paid"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Tattenai asked their names, so he could write the names of the men ____.",
+     "answer": "who were at their head",
+     "wrong": [
+      "who built the walls",
+      "who served as priests",
+      "who came up first"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Cyrus ordered the vessels to be kept in the temple of Babylon.",
+     "answer": false,
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Shetharbozenai joined Tattenai in sending the letter to Darius.",
+     "answer": true,
+     "v": 6
     }
    ]
   },
@@ -683,6 +1058,80 @@
      "q": "Darius decreed that anyone who altered his message would be sold as a slave.",
      "answer": false,
      "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In what year of Darius' reign was the house finished?",
+     "options": [
+      "The sixth year",
+      "The second year",
+      "The first year",
+      "The tenth year"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Darius decree would be made of the house of anyone who altered his message?",
+     "options": [
+      "A dunghill",
+      "A heap of ashes",
+      "A storehouse for the king",
+      "A home for the priests"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whose word decided the wheat, salt, wine, and oil given each day?",
+     "options": [
+      "The priests at Jerusalem",
+      "Tattenai the governor",
+      "The elders of the Jews",
+      "The king's treasurer"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The elders of the Jews built and prospered, through ____ and Zechariah.",
+     "answer": "the prophesying of Haggai the prophet",
+     "wrong": [
+      "the help of Tattenai the governor",
+      "the gifts of Darius the king",
+      "the leading of Zerubbabel"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They set the priests in their divisions and the Levites in their courses, as it is written in ____.",
+     "answer": "the book of Moses",
+     "wrong": [
+      "the decree of Cyrus",
+      "the book of the kings",
+      "the letter of Darius"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Darius commanded Tattenai to oversee the building of the house himself.",
+     "answer": false,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Those who separated themselves from the filthiness of the nations also ate the Passover.",
+     "answer": true,
+     "v": 21
     }
    ]
   },
@@ -797,6 +1246,85 @@
      "q": "Artaxerxes commanded every Israelite in his realm to go to Jerusalem whether they wished or not.",
      "answer": false,
      "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the king tell Ezra to buy with the money he carried?",
+     "options": [
+      "Bulls, rams, and lambs with their offerings",
+      "Stones and timber for the walls",
+      "Fields around Jerusalem",
+      "Weapons for the journey"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In what year of Artaxerxes did Ezra's company go up to Jerusalem?",
+     "options": [
+      "The seventh year",
+      "The first year",
+      "The second year",
+      "The twentieth year"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who joined the king in sending Ezra to inquire about Judah and Jerusalem?",
+     "options": [
+      "His seven counselors",
+      "His twelve princes",
+      "The governors beyond the River",
+      "The priests of Babylon"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which supply did the king allow without prescribing how much?",
+     "options": [
+      "Salt",
+      "Wheat",
+      "Wine",
+      "Silver"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The letter was addressed to Ezra the priest, the scribe of the law of ____.",
+     "answer": "the perfect God of heaven",
+     "wrong": [
+      "the holy God of Jerusalem",
+      "the great King of Israel",
+      "the fathers of Judah"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Judgment could be to death, or to banishment, or to ____, or to imprisonment.",
+     "answer": "confiscation of goods",
+     "wrong": [
+      "a heavy fine",
+      "hard labor",
+      "public shame"
+     ],
+     "v": 26
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Ezra went up alone, without gathering any chief men of Israel.",
+     "answer": false,
+     "v": 28
     }
    ]
   },
@@ -911,6 +1439,80 @@
      "q": "The treasure was weighed in the house of God on the same day they arrived in Jerusalem.",
      "answer": false,
      "v": 33
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the returned exiles offer to the God of Israel after arriving?",
+     "options": [
+      "Burnt offerings",
+      "Only incense",
+      "Firstfruits of grain",
+      "Gifts of silver"
+     ],
+     "v": 35
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How is Sherebiah, who was brought to Ezra, described?",
+     "options": [
+      "A man of discretion",
+      "A mighty warrior",
+      "A skilled scribe",
+      "A prophet of God"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did they deliver to the king's local governors?",
+     "options": [
+      "The king's commissions",
+      "The silver and the gold",
+      "A copy of the genealogy",
+      "Gifts from the temple"
+     ],
+     "v": 36
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Ezra told the priests to keep the treasure until they weighed it at Jerusalem, in ____.",
+     "answer": "the rooms of the LORD's house",
+     "wrong": [
+      "the king's treasure house",
+      "the gate of the city",
+      "the tents of the Levites"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The temple servants had been given by David and the princes for ____.",
+     "answer": "the service of the Levites",
+     "wrong": [
+      "the building of the walls",
+      "the guarding of the gates",
+      "the king's household"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "They departed from the river Ahava in the first month.",
+     "answer": true,
+     "v": 31
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Ezra gave the treasure to the singers and gatekeepers to carry to Jerusalem.",
+     "answer": false,
+     "v": 30
     }
    ]
   },
@@ -1025,6 +1627,85 @@
      "q": "The princes said the rulers were the least involved in this trespass.",
      "answer": false,
      "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the prophets describe the land Israel went in to possess?",
+     "options": [
+      "An unclean land",
+      "A land of giants",
+      "A land of rest",
+      "A land of plenty"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Ezra say God had given them in Judah and in Jerusalem?",
+     "options": [
+      "A wall",
+      "A king",
+      "A great army",
+      "Rest from war"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Into whose hand did Ezra say they, their kings, and their priests had been delivered?",
+     "options": [
+      "The kings of the lands",
+      "Their own princes",
+      "The prophets of Baal",
+      "The judges of Israel"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "God's command said never to seek what from the peoples of the land?",
+     "options": [
+      "Their peace or their prosperity",
+      "Their gods or their idols",
+      "Their land or their cities",
+      "Their counsel or their help"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Ezra prayed, \"LORD, the God of Israel, ____; for we are left a remnant that has escaped.\"",
+     "answer": "you are righteous",
+     "wrong": [
+      "you are merciful",
+      "you are patient",
+      "you are mighty"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Ezra asked if God would be angry until there would be ____.",
+     "answer": "no remnant, nor any to escape",
+     "wrong": [
+      "no house left for his name",
+      "no one left in Judah",
+      "no hope for our children"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Ezra said God had shown them loving kindness in the sight of the kings of Egypt.",
+     "answer": false,
+     "v": 9
     }
    ]
   },
@@ -1139,6 +1820,85 @@
      "q": "Everyone in the assembly agreed to the plan without anyone opposing it.",
      "answer": false,
      "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who gathered to Ezra while he prayed and wept before God's house?",
+     "options": [
+      "A very great assembly of men, women, and children",
+      "Only the priests and the Levites",
+      "The princes of Persia",
+      "The elders of Samaria"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who did the assembly say should come along with the guilty men at appointed times?",
+     "options": [
+      "The elders and judges of every city",
+      "The priests and the Levites",
+      "Their wives and children",
+      "The king's governors"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whose room did Ezra go into after rising up from before God's house?",
+     "options": [
+      "Jehohanan the son of Eliashib",
+      "Shecaniah the son of Jehiel",
+      "Jeshua the son of Jozadak",
+      "Meshullam the Levite"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "By when had they finished with all the men who had married foreign women?",
+     "options": [
+      "The first day of the first month",
+      "The twentieth day of the ninth month",
+      "The first day of the tenth month",
+      "The fourteenth day of the first month"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "All the assembly answered with a loud voice, \"We must ____ concerning us.\"",
+     "answer": "do as you have said",
+     "wrong": [
+      "wait for the princes",
+      "ask the king first",
+      "think about this"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Ezra said, \"Make confession to the LORD, the God of your fathers and ____.\"",
+     "answer": "do his pleasure",
+     "wrong": [
+      "seek his face",
+      "offer him sacrifices",
+      "wait for his answer"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "None of the men who had taken foreign wives had children by them.",
+     "answer": false,
+     "v": 44
     }
    ]
   }

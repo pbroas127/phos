@@ -112,6 +112,85 @@
      "q": "Habakkuk compares people caught by the invader to birds caught in a snare.",
      "answer": false,
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the chapter say the invaders gather prisoners like?",
+     "options": [
+      "Sand",
+      "Grain",
+      "Sheep",
+      "Stones"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How do the invaders take every stronghold?",
+     "options": [
+      "They build up an earthen ramp",
+      "They starve it by a long siege",
+      "They burn down its gates",
+      "They bribe its guards"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "The invaders fly like which creature that hurries to devour?",
+     "options": [
+      "An eagle",
+      "A hawk",
+      "A vulture",
+      "A raven"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How does the invader feel about the men he catches?",
+     "options": [
+      "He rejoices and is glad",
+      "He is troubled and afraid",
+      "He grieves over them",
+      "He is weary of them"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Aren't you from everlasting, LORD my God, my Holy One? ____.",
+     "answer": "We will not die",
+     "wrong": [
+      "We will not fear",
+      "We will not fall",
+      "We will not be moved"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Yes, they scoff at kings, and ____ to them.",
+     "answer": "princes are a derision",
+     "wrong": [
+      "rulers are a joke",
+      "nobles are as nothing",
+      "judges are a mockery"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The invaders are described as feared and dreaded.",
+     "answer": true,
+     "v": 7
     }
    ]
   },
@@ -226,6 +305,80 @@
      "q": "One woe is against a man who gives his neighbor drink so he can see him exposed.",
      "answer": true,
      "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What will the earth be filled with, as the waters cover the sea?",
+     "options": [
+      "The knowledge of the LORD's glory",
+      "The praise of his people",
+      "The fear of the nations",
+      "The peace of the LORD"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the chapter say is treacherous?",
+     "options": [
+      "Wine",
+      "Gold",
+      "Silver",
+      "Riches"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the idol maker say to the wood?",
+     "options": [
+      "Awake!",
+      "Speak!",
+      "Save me!",
+      "Bless me!"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Woe to him who gets an evil gain for his house, that he may ____!",
+     "answer": "set his nest on high",
+     "wrong": [
+      "build his walls higher",
+      "store up his treasures",
+      "rest in safety"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Woe to him who increases that which is not his, and who enriches himself ____!",
+     "answer": "by extortion",
+     "wrong": [
+      "by false weights",
+      "by the sword",
+      "by robbing the poor"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Because he plundered many nations, the remnant of the peoples will plunder him.",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The chapter says the violence done to Egypt will overwhelm the oppressor.",
+     "answer": false,
+     "v": 17
     }
    ]
   },
@@ -340,6 +493,85 @@
      "q": "Habakkuk says God pierced the heads of the enemy warriors with arrows from heaven.",
      "answer": false,
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How is chapter 3 introduced?",
+     "options": [
+      "As a prayer of Habakkuk",
+      "As a lament for Jerusalem",
+      "As a vision by a river",
+      "As a song of Moses"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happened to the ancient mountains when God stood?",
+     "options": [
+      "They were crumbled",
+      "They were covered in cloud",
+      "They sang for joy",
+      "They were set on fire"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whose tents did Habakkuk see in affliction?",
+     "options": [
+      "Cushan's",
+      "Edom's",
+      "Moab's",
+      "Kedar's"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Habakkuk picture the LORD riding on?",
+     "options": [
+      "His horses and chariots of salvation",
+      "The wings of the wind",
+      "A cloud of fire",
+      "A great white throne"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You went out for ____, for the salvation of your anointed.",
+     "answer": "the salvation of your people",
+     "wrong": [
+      "the judgment of the nations",
+      "the glory of your name",
+      "the defense of Zion"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You uncovered your bow. You called for ____.",
+     "answer": "your sworn arrows",
+     "wrong": [
+      "your mighty warriors",
+      "your flaming spears",
+      "the armies of heaven"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter says the mountains saw God and danced for joy.",
+     "answer": false,
+     "v": 10
     }
    ]
   }

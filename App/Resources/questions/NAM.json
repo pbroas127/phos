@@ -108,6 +108,85 @@
      "q": "God promises that many descendants will carry on Nineveh's name.",
      "answer": false,
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Nahum say the LORD is in the day of trouble?",
+     "options": [
+      "A stronghold",
+      "A shepherd",
+      "A lamp",
+      "A judge"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the LORD do to the sea when he rebukes it?",
+     "options": [
+      "Makes it dry",
+      "Makes it roar",
+      "Turns it to blood",
+      "Divides it in two"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Nahum say God's wrath is poured out like?",
+     "options": [
+      "Fire",
+      "Heavy rain",
+      "Hail",
+      "A whirlwind"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does God say he will cut off from the house of Nineveh's gods?",
+     "options": [
+      "The engraved and molten images",
+      "The priests and prophets",
+      "The altars and incense",
+      "The golden lampstands"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The mountains quake before him, and ____. The earth trembles at his presence.",
+     "answer": "the hills melt away",
+     "wrong": [
+      "the valleys are filled",
+      "the rivers run dry",
+      "the rocks cry out"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Though I have afflicted you, ____.",
+     "answer": "I will afflict you no more",
+     "wrong": [
+      "I will comfort you now",
+      "I will restore your land",
+      "I will not forsake you"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Nahum says the LORD has his way in the whirlwind and in the storm.",
+     "answer": true,
+     "v": 3
     }
    ]
   },
@@ -218,6 +297,85 @@
      "q": "God says the voice of Nineveh's messengers will still be heard among the nations.",
      "answer": false,
      "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the LORD of Armies say he will burn in the smoke?",
+     "options": [
+      "Her chariots",
+      "Her palaces",
+      "Her idols",
+      "Her fields"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happens to the picked troops as they are summoned?",
+     "options": [
+      "They stumble on their way",
+      "They desert the city",
+      "They refuse to fight",
+      "They wait by the river"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In Nahum's picture of the lions' den, what was true in the past?",
+     "options": [
+      "No one made them afraid",
+      "It was hidden in the mountains",
+      "It was always empty",
+      "Hunters watched it closely"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to verse 2, what did the destroyers ruin?",
+     "options": [
+      "Their vine branches",
+      "Their city walls",
+      "Their grain fields",
+      "Their holy altars"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The lion tore in pieces enough for his cubs, and strangled prey for ____.",
+     "answer": "his lionesses",
+     "wrong": [
+      "the hungry jackals",
+      "his own household",
+      "the birds of prey"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Keep the fortress! Watch the way! ____! Fortify your power mightily!",
+     "answer": "Strengthen your waist",
+     "wrong": [
+      "Sharpen your swords",
+      "Close the gates",
+      "Sound the alarm"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "As Nineveh is emptied, the hearts of its people melt and their knees knock together.",
+     "answer": true,
+     "v": 10
     }
    ]
   },
@@ -328,6 +486,85 @@
      "q": "Nahum mockingly tells Nineveh to draw water for the siege and strengthen its fortresses.",
      "answer": true,
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which sounds does Nahum describe as the attack on the city begins?",
+     "options": [
+      "The whip and rattling wheels",
+      "Trumpets and shouting",
+      "Drums and horns",
+      "Bells and harps"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Nahum say will devour Nineveh?",
+     "options": [
+      "The fire and the sword",
+      "Famine and plague",
+      "Flood and earthquake",
+      "Wild beasts"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Because of the enemy, what does Nahum say Nineveh will also seek?",
+     "options": [
+      "A stronghold",
+      "A peace treaty",
+      "A new king",
+      "Help from Egypt"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Through what does the city sell families, according to verse 4?",
+     "options": [
+      "Her witchcraft",
+      "Her heavy taxes",
+      "Her armies",
+      "Her trade routes"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Your people are scattered on the mountains, and there is ____.",
+     "answer": "no one to gather them",
+     "wrong": [
+      "no way to escape",
+      "no king to lead them",
+      "no bread to eat"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "All who hear the report of you ____ over you.",
+     "answer": "clap their hands",
+     "wrong": [
+      "shake their heads",
+      "weep and mourn",
+      "lift their voices"
+     ],
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God promises to hide Nineveh's shame from the nations.",
+     "answer": false,
+     "v": 5
     }
    ]
   }

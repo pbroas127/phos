@@ -112,6 +112,85 @@
      "q": "David promises that once he is restored, he will teach the priests God's ways.",
      "answer": false,
      "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does David ask the Lord to open so his mouth can declare praise?",
+     "options": [
+      "His lips",
+      "His eyes",
+      "His ears",
+      "The gates of Zion"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "David says his sin is hidden from his own sight.",
+     "answer": false,
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "From the guilt of what does David ask God to deliver him?",
+     "options": [
+      "Bloodshed",
+      "Idolatry",
+      "Pride",
+      "Broken vows"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Restore to me ____. Uphold me with a willing spirit.",
+     "answer": "the joy of your salvation",
+     "wrong": [
+      "the strength of my youth",
+      "the peace of your presence",
+      "the light of your face"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does David ask God to hide his face from?",
+     "options": [
+      "His sins",
+      "His enemies",
+      "His tears",
+      "His weakness"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Behold, you desire truth ____. You teach me wisdom in the inmost place.",
+     "answer": "in the inward parts",
+     "wrong": [
+      "in the hearts of men",
+      "on the lips of the faithful",
+      "in the house of God"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does David confess about the time of his birth?",
+     "options": [
+      "He was born in iniquity",
+      "He was chosen before birth",
+      "He was born in Bethlehem",
+      "He was born to a shepherd"
+     ],
+     "v": 5
     }
    ]
   },
@@ -203,6 +282,85 @@
      "q": "David says he will give thanks to God until his enemies are gone.",
      "answer": false,
      "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does David say endures continually?",
+     "options": [
+      "God's loving kindness",
+      "The pride of the wicked",
+      "The mighty man's riches",
+      "The strength of kings"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does David say the mighty man boasts of?",
+     "options": [
+      "Mischief",
+      "His riches",
+      "His strength",
+      "His victories"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What kind of words does the deceitful tongue love?",
+     "options": [
+      "All devouring words",
+      "Smooth flattering words",
+      "Proud boasting words",
+      "Empty idle words"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But as for me, I trust in God's loving kindness ____.",
+     "answer": "forever and ever",
+     "wrong": [
+      "all of my days",
+      "in every trouble",
+      "from morning to night"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "David says he will hope in God's name in secret, away from others.",
+     "answer": false,
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "This is the man who trusted in the abundance of his riches, and strengthened himself ____.",
+     "answer": "in his wickedness",
+     "wrong": [
+      "in his armies",
+      "behind his high walls",
+      "among his many friends"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What reason does David give for thanking God at the end of the psalm?",
+     "options": [
+      "Because God has done it",
+      "Because God gave him a crown",
+      "Because his enemies fled",
+      "Because God forgave his sin"
+     ],
+     "v": 9
     }
    ]
   },
@@ -262,6 +420,49 @@
      "d": 1,
      "q": "The psalm says there is no one who does good, no, not one.",
      "answer": true,
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Out of what place does David wish the salvation of Israel would come?",
+     "options": [
+      "Zion",
+      "Bethel",
+      "Sinai",
+      "Hebron"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The psalm says Israel will be glad when God sends them a king.",
+     "answer": false,
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "There they were in great fear, ____.",
+     "answer": "where no fear was",
+     "wrong": [
+      "when the night had fallen",
+      "before the battle began",
+      "and they all fled away"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalm say every one of them has done?",
+     "options": [
+      "Gone back",
+      "Gone into hiding",
+      "Gone to war",
+      "Gone into exile"
+     ],
      "v": 3
     }
    ]
@@ -354,6 +555,54 @@
      "q": "David says he will give thanks to the LORD's name, for it is good.",
      "answer": true,
      "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does David ask God to listen to?",
+     "options": [
+      "The words of his mouth",
+      "The cries of the poor",
+      "The songs of his people",
+      "The sound of his harp"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does David say the violent men have not done?",
+     "options": [
+      "Set God before them",
+      "Kept their oaths",
+      "Honored the king",
+      "Offered sacrifices"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The Lord is the one who ____.",
+     "answer": "sustains my soul",
+     "wrong": [
+      "hears my cry",
+      "lifts up my head",
+      "guards my path"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to the title, how was this psalm to be played?",
+     "options": [
+      "On stringed instruments",
+      "With flutes",
+      "With cymbals",
+      "With trumpets"
+     ],
+     "v": 1
     }
    ]
   },
@@ -468,6 +717,85 @@
      "q": "David says his betrayer's words were softer than honey.",
      "answer": false,
      "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "As for me, I will call on God. ____.",
+     "answer": "The LORD will save me",
+     "wrong": [
+      "The LORD is my shield",
+      "He will answer my cry",
+      "The LORD will fight for me"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "David says the terrors of death have fallen on him.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where does David say he would lodge if he could fly away?",
+     "options": [
+      "In the wilderness",
+      "In the mountains",
+      "In a cave",
+      "By the sea"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where does David pray his enemies will go down alive?",
+     "options": [
+      "Sheol",
+      "The depths of the sea",
+      "The valley of Hinnom",
+      "The land of Egypt"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does David say his betrayer has violated?",
+     "options": [
+      "His covenant",
+      "The law of Moses",
+      "The king's command",
+      "His father's house"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does David say his enemies do day and night on the city walls?",
+     "options": [
+      "Prowl around",
+      "Keep watch",
+      "Blow trumpets",
+      "Shout threats"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Bloodthirsty and deceitful men shall not live out ____.",
+     "answer": "half their days",
+     "wrong": [
+      "the length of their years",
+      "to see their children",
+      "their appointed time"
+     ],
+     "v": 23
     }
    ]
   },
@@ -559,6 +887,85 @@
      "q": "David asks, \"What can a king do to me?\"",
      "answer": false,
      "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does David say God counts?",
+     "options": [
+      "His wanderings",
+      "His days",
+      "The hairs of his head",
+      "His enemies"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "David says God has delivered his soul from sickness.",
+     "answer": false,
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "In God, I put my trust. I will not be afraid. What can ____?",
+     "answer": "flesh do to me",
+     "wrong": [
+      "an army do to me",
+      "the proud do to me",
+      "my enemy do to me"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does David promise to give God because God's vows are on him?",
+     "options": [
+      "Thank offerings",
+      "Burnt offerings",
+      "A tenth of his spoil",
+      "A new song"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do David's enemies watch as they conspire and lurk?",
+     "options": [
+      "His steps",
+      "His house",
+      "His mouth",
+      "His tent"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Man wants to swallow me up. All day long, he ____.",
+     "answer": "attacks and oppresses me",
+     "wrong": [
+      "mocks and curses me",
+      "hunts and pursues me",
+      "lies and slanders me"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does David ask God to cast down in anger?",
+     "options": [
+      "The peoples",
+      "The proud",
+      "The idols",
+      "The mighty men"
+     ],
+     "v": 7
     }
    ]
   },
@@ -650,6 +1057,85 @@
      "q": "David says he will give thanks to the Lord only among his own people.",
      "answer": false,
      "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Among what animals does David say his soul is?",
+     "options": [
+      "Lions",
+      "Wolves",
+      "Serpents",
+      "Bulls"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Be exalted, God, above the heavens! Let your glory ____!",
+     "answer": "be above all the earth",
+     "wrong": [
+      "fill the whole temple",
+      "shine upon the nations",
+      "cover the mountains"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What have David's enemies prepared for his steps?",
+     "options": [
+      "A net",
+      "A hidden snare",
+      "A stumbling block",
+      "A wall of stones"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does David describe God Most High in verse 2?",
+     "options": [
+      "God who accomplishes my requests",
+      "God who rides on the clouds",
+      "God who dwells in Zion",
+      "God who breaks the bow"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "David says he will take refuge in God until disaster has passed.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He will send from heaven, and save me, he rebukes ____.",
+     "answer": "the one who is pursuing me",
+     "wrong": [
+      "the armies that surround me",
+      "the proud who mock me",
+      "the king who hunts me"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What two things does David say God will send out?",
+     "options": [
+      "His loving kindness and his truth",
+      "His angels and his chariots",
+      "His light and his fire",
+      "His word and his spirit"
+     ],
+     "v": 3
     }
    ]
   },
@@ -741,6 +1227,80 @@
      "q": "The psalmist asks God to make the arrows of the wicked fly past their target.",
      "answer": false,
      "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What voice does the deaf cobra refuse to listen to?",
+     "options": [
+      "The voice of charmers",
+      "The voice of shepherds",
+      "The voice of its young",
+      "The voice of thunder"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The psalm says men will declare that there is a reward for the righteous.",
+     "answer": true,
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalm say the unjust measure out on the earth?",
+     "options": [
+      "The violence of their hands",
+      "False weights and scales",
+      "Bribes to the judges",
+      "Curses on the poor"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The righteous shall rejoice when he sees ____.",
+     "answer": "the vengeance",
+     "wrong": [
+      "the morning light",
+      "the wicked fall",
+      "his enemies flee"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The psalmist says the righteous will wash his hands in the blood of the wicked.",
+     "answer": false,
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What will God sweep away before the pots can feel the heat of the thorns?",
+     "options": [
+      "The green and the burning alike",
+      "The chaff and the straw",
+      "The proud and the scoffers",
+      "The ashes and the smoke"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Let them be like the stillborn child, who ____.",
+     "answer": "has not seen the sun",
+     "wrong": [
+      "has never drawn a breath",
+      "was never given a name",
+      "has not known its mother"
+     ],
+     "v": 8
     }
    ]
   },
@@ -855,6 +1415,85 @@
      "q": "David says his enemies ask, \"Who hears us?\"",
      "answer": true,
      "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "From what kind of men does David ask God to save him?",
+     "options": [
+      "The bloodthirsty men",
+      "The proud men",
+      "The Philistine men",
+      "The deceitful priests"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "David asks the LORD God of Armies to show mercy to the wicked traitors.",
+     "answer": false,
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does David say are in his enemies' lips?",
+     "options": [
+      "Swords",
+      "Arrows",
+      "Poison",
+      "Fire"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does David call the Lord when he asks him to scatter his enemies?",
+     "options": [
+      "Our shield",
+      "Our rock",
+      "Our king",
+      "Our fortress"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "My God will go before me with ____.",
+     "answer": "his loving kindness",
+     "wrong": [
+      "his mighty armies",
+      "a pillar of fire",
+      "his holy angels"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Let them know that God rules in Jacob, ____.",
+     "answer": "to the ends of the earth",
+     "wrong": [
+      "from the rising of the sun",
+      "over all the nations",
+      "forever and ever"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "For what does David ask that his enemies be caught in their pride?",
+     "options": [
+      "The sin of their mouth",
+      "The blood they have shed",
+      "Their worship of idols",
+      "Their broken treaties"
+     ],
+     "v": 12
     }
    ]
   },
@@ -945,6 +1584,85 @@
      "q": "According to the title, Joab killed twelve thousand of Moab in the Valley of Salt.",
      "answer": false,
      "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalm open by saying God has done to his people?",
+     "options": [
+      "Rejected them",
+      "Blessed them",
+      "Forgotten them",
+      "Sold them to their enemies"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The psalm complains that God does not go out with their armies.",
+     "answer": true,
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "From where has God spoken, according to the psalm?",
+     "options": [
+      "His sanctuary",
+      "Mount Sinai",
+      "The clouds",
+      "The burning bush"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "So that your beloved may be delivered, save with ____, and answer us.",
+     "answer": "your right hand",
+     "wrong": [
+      "your mighty arm",
+      "your holy angels",
+      "your great power"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where does the psalmist ask who will bring him?",
+     "options": [
+      "Into the strong city",
+      "Across the Jordan",
+      "To the mountain of God",
+      "Into the house of the LORD"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which valley does God say he will measure out?",
+     "options": [
+      "Succoth",
+      "Jezreel",
+      "Hinnom",
+      "Elah"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Ephraim also is ____.",
+     "answer": "the defense of my head",
+     "wrong": [
+      "the strength of my arm",
+      "the joy of my heart",
+      "the shield of my people"
+     ],
+     "v": 7
     }
    ]
   },
@@ -1036,6 +1754,54 @@
      "q": "David asks God to appoint an angel to preserve the king.",
      "answer": false,
      "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Hear my cry, God. ____.",
+     "answer": "Listen to my prayer",
+     "wrong": [
+      "Answer me in my trouble",
+      "Do not hide your face",
+      "Be merciful to me"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where does David say the king shall be enthroned forever?",
+     "options": [
+      "In God's presence",
+      "In Jerusalem",
+      "On Mount Zion",
+      "Over all the nations"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does David say God has heard?",
+     "options": [
+      "His vows",
+      "His songs",
+      "His weeping",
+      "His confession"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to the title, what was this psalm written for?",
+     "options": [
+      "A stringed instrument",
+      "The flute",
+      "The trumpet",
+      "The cymbals"
+     ],
+     "v": 1
     }
    ]
   },
@@ -1127,6 +1893,85 @@
      "q": "The psalm says that in the balances, men of high degree are heavier than a breath.",
      "answer": false,
      "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "At what times does David tell the people to trust in God?",
+     "options": [
+      "At all times",
+      "In times of trouble",
+      "Every morning",
+      "On the Sabbath"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "My soul rests in God alone. ____.",
+     "answer": "My salvation is from him",
+     "wrong": [
+      "My hope is in his word",
+      "My strength is in his name",
+      "My help comes from Zion"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to what does the Lord reward every man?",
+     "options": [
+      "His work",
+      "His faith",
+      "His wealth",
+      "His prayers"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "From where do the enemies fully intend to throw him down?",
+     "options": [
+      "His lofty place",
+      "The city wall",
+      "His throne",
+      "The mountain top"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "David says his salvation and his honor are with the king.",
+     "answer": false,
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Don't trust in oppression. Don't ____.",
+     "answer": "become vain in robbery",
+     "wrong": [
+      "take pride in plunder",
+      "grow rich by deceit",
+      "seek gain by violence"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does David say belongs to the Lord in the final verse?",
+     "options": [
+      "Loving kindness",
+      "Wisdom",
+      "Glory",
+      "The whole earth"
+     ],
+     "v": 12
     }
    ]
   },
@@ -1218,6 +2063,85 @@
      "q": "David says he has seen God's power and glory on the mountain.",
      "answer": false,
      "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In the shadow of what does David say he will rejoice?",
+     "options": [
+      "God's wings",
+      "God's hand",
+      "The temple walls",
+      "The mountains"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "God, you are my God. I will ____.",
+     "answer": "earnestly seek you",
+     "wrong": [
+      "sing praise to you",
+      "trust in you always",
+      "wait upon you"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When does David say he thinks about God?",
+     "options": [
+      "In the night watches",
+      "At the morning sacrifice",
+      "At noon",
+      "At sunset"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where does David say those who seek his soul will go?",
+     "options": [
+      "Into the lower parts of the earth",
+      "Into exile far away",
+      "Into the depths of the sea",
+      "Into the wilderness"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The psalm says the mouth of those who speak lies shall be silenced.",
+     "answer": true,
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They shall be given over to ____.",
+     "answer": "the power of the sword",
+     "wrong": [
+      "the hands of their enemies",
+      "the wild beasts",
+      "the burning fire"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who does the psalm say shall rejoice in God at the end?",
+     "options": [
+      "The king",
+      "The priests",
+      "The daughters of Zion",
+      "The poor"
+     ],
+     "v": 11
     }
    ]
   },
@@ -1309,6 +2233,85 @@
      "q": "David opens by asking God to preserve his life from sickness.",
      "answer": false,
      "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does David ask God to hide him from?",
+     "options": [
+      "The conspiracy of the wicked",
+      "The sword of Saul",
+      "The eyes of the proud",
+      "The traps of hunters"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The psalm says all mankind shall be afraid when God strikes the wicked.",
+     "answer": true,
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How do the wicked shoot at the innocent?",
+     "options": [
+      "Suddenly and fearlessly",
+      "Slowly and carefully",
+      "In the dark of night",
+      "From behind city walls"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What shall the righteous do in the LORD?",
+     "options": [
+      "Be glad and take refuge in him",
+      "Build him a house",
+      "Dance before him",
+      "Offer burnt offerings"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Hide me from the noisy crowd of ____.",
+     "answer": "the ones doing evil",
+     "wrong": [
+      "the proud and violent",
+      "those who hate me",
+      "the mockers at the gate"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They shall declare the work of God, and shall ____.",
+     "answer": "wisely ponder what he has done",
+     "wrong": [
+      "tell it to their children",
+      "sing of his mighty deeds",
+      "bow down before his throne"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In what do the wicked encourage themselves?",
+     "options": [
+      "Evil plans",
+      "Strong drink",
+      "Their great wealth",
+      "Their many allies"
+     ],
+     "v": 5
     }
    ]
   },
@@ -1399,6 +2402,85 @@
      "d": 2,
      "q": "The psalm says those far away on the sea are beyond the hope of God.",
      "answer": false,
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalm say God did for our transgressions?",
+     "options": [
+      "Atoned for them",
+      "Remembered them",
+      "Punished them",
+      "Wrote them down"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The psalm says those who dwell in faraway places laugh at God's wonders.",
+     "answer": false,
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalm say the one God chooses will be filled with?",
+     "options": [
+      "The goodness of God's house",
+      "Wisdom and understanding",
+      "The spirit of prophecy",
+      "Riches and honor"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What are the pastures covered with?",
+     "options": [
+      "Flocks",
+      "Wildflowers",
+      "Green grass",
+      "Morning dew"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You drench its furrows. You level its ridges. You ____.",
+     "answer": "soften it with showers",
+     "wrong": [
+      "fill it with sunshine",
+      "break it with plows",
+      "cover it with dew"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You call the morning's dawn and the evening ____.",
+     "answer": "with songs of joy",
+     "wrong": [
+      "with a quiet peace",
+      "with the light of stars",
+      "with a gentle wind"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How does God answer us, according to the psalm?",
+     "options": [
+      "By awesome deeds of righteousness",
+      "By dreams in the night",
+      "Through the prophets",
+      "With thunder from heaven"
+     ],
      "v": 5
     }
    ]
@@ -1514,6 +2596,85 @@
      "q": "The psalmist says he made his vows to God during a time of peace.",
      "answer": false,
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalm call people to sing to?",
+     "options": [
+      "The glory of his name",
+      "The work of his hands",
+      "The King of Israel",
+      "The God of Jacob"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "But most certainly, God has listened. He has heard ____.",
+     "answer": "the voice of my prayer",
+     "wrong": [
+      "the cry of my heart",
+      "the words of my song",
+      "my weeping in the night"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the people go through the river?",
+     "options": [
+      "On foot",
+      "On rafts",
+      "Over a bridge",
+      "On horseback"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does God not allow to be moved?",
+     "options": [
+      "Our feet",
+      "Our walls",
+      "The mountains",
+      "Our tents"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The psalm says only Israel will worship God and sing to his name.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the psalm say God allowed men to ride over?",
+     "options": [
+      "Our heads",
+      "Our fields",
+      "Our cities",
+      "Our walls"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Through the greatness of your power, your enemies ____.",
+     "answer": "submit themselves to you",
+     "wrong": [
+      "flee before your face",
+      "are scattered like dust",
+      "fall down in fear"
+     ],
+     "v": 3
     }
    ]
   },
@@ -1605,6 +2766,49 @@
      "q": "The psalm calls on the nations to bring offerings to Zion.",
      "answer": false,
      "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The psalm asks God to be merciful to us and bless us.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Among whom does the psalm hope God's salvation will be known?",
+     "options": [
+      "All nations",
+      "The tribes of Israel",
+      "The kings of the earth",
+      "The house of David"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to the title, what accompanied this psalm?",
+     "options": [
+      "Stringed instruments",
+      "Trumpets",
+      "Tambourines",
+      "Flutes"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How does the psalm describe the God who will bless us?",
+     "options": [
+      "Even our own God",
+      "The God of Jacob",
+      "The Holy One of Israel",
+      "The God of our fathers"
+     ],
+     "v": 6
     }
    ]
   },
@@ -1719,6 +2923,85 @@
      "q": "The psalm names the princes of Ephraim among those in God's procession.",
      "answer": false,
      "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Like what does the psalm ask God to drive the wicked away?",
+     "options": [
+      "Smoke",
+      "Chaff",
+      "Dust",
+      "Mist"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The psalm says escape from death belongs to the Lord.",
+     "answer": true,
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many does the psalm say the chariots of God are?",
+     "options": [
+      "Tens of thousands and thousands of thousands",
+      "Twelve thousand",
+      "Seven hundred",
+      "As many as the sand"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where do the rebellious dwell?",
+     "options": [
+      "In a sun-scorched land",
+      "In the depths of the sea",
+      "In the wilderness of Sinai",
+      "Among the tombs"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The God of Israel gives ____ to his people.",
+     "answer": "strength and power",
+     "wrong": [
+      "rest and peace",
+      "bread and water",
+      "wisdom and joy"
+     ],
+     "v": 35
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You have ascended on high. You have ____.",
+     "answer": "led away captives",
+     "wrong": [
+      "opened the gates",
+      "crushed your enemies",
+      "shaken the mountains"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Because of God's temple at Jerusalem, what will kings bring?",
+     "options": [
+      "Presents",
+      "Their armies",
+      "Their crowns",
+      "Cedar wood"
+     ],
+     "v": 29
     }
    ]
   },
@@ -1833,6 +3116,85 @@
      "q": "David says he looked for comforters but found none.",
      "answer": true,
      "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did David's enemies give him for his food?",
+     "options": [
+      "Poison",
+      "Bitter herbs",
+      "Stale bread",
+      "Nothing at all"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom does the psalm say the LORD hears?",
+     "options": [
+      "The needy",
+      "The mighty",
+      "The priests",
+      "The wise"
+     ],
+     "v": 33
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did David make his clothing, so that he became a byword?",
+     "options": [
+      "Sackcloth",
+      "Rags",
+      "A prophet's mantle",
+      "Goat skins"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did David do that turned into his reproach?",
+     "options": [
+      "He wept and fasted",
+      "He sang and danced",
+      "He gave alms",
+      "He prophesied"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Because for your sake, I have borne reproach. ____.",
+     "answer": "Shame has covered my face",
+     "wrong": [
+      "My friends have left me",
+      "My tears are my food",
+      "My strength has failed me"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Neither let the deep swallow me up. Don't let the pit ____.",
+     "answer": "shut its mouth on me",
+     "wrong": [
+      "close over my head",
+      "become my grave",
+      "swallow my soul"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "David says he has to restore what he didn't take away.",
+     "answer": true,
+     "v": 4
     }
    ]
   },
@@ -1893,6 +3255,49 @@
      "q": "David ends the psalm by asking the LORD not to delay.",
      "answer": true,
      "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What two things does David call God in the last verse?",
+     "options": [
+      "My help and my deliverer",
+      "My rock and my fortress",
+      "My shield and my song",
+      "My light and my salvation"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does David want to happen to those who desire his ruin?",
+     "options": [
+      "Be turned back in disgrace",
+      "Be cast into the sea",
+      "Be struck with blindness",
+      "Be taken captive"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Let all those who seek you ____ in you.",
+     "answer": "rejoice and be glad",
+     "wrong": [
+      "trust and hope",
+      "rest and find peace",
+      "sing and shout"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The title calls this psalm a song of ascents.",
+     "answer": false,
+     "v": 1
     }
    ]
   },
@@ -2007,6 +3412,85 @@
      "q": "The psalmist calls God the Holy One of Israel.",
      "answer": true,
      "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalmist call God in verse 3?",
+     "options": [
+      "My rock and my fortress",
+      "My shield and my sword",
+      "My shepherd and my king",
+      "My light and my song"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalmist say his lips shall do?",
+     "options": [
+      "Shout for joy",
+      "Tell of his troubles",
+      "Speak no deceit",
+      "Pray without ceasing"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "From whose hand does the psalmist ask to be rescued?",
+     "options": [
+      "The unrighteous and cruel man",
+      "The king of Babylon",
+      "His own brothers",
+      "The false prophets"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalmist ask God to increase?",
+     "options": [
+      "His honor",
+      "His years",
+      "His wealth",
+      "His strength"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "My mouth shall be filled with your praise, with ____.",
+     "answer": "your honor all day long",
+     "wrong": [
+      "songs of joy every morning",
+      "thanks for your mercy",
+      "your name among the nations"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Deliver me in your righteousness, and rescue me. ____, and save me.",
+     "answer": "Turn your ear to me",
+     "wrong": [
+      "Stretch out your hand",
+      "Look upon my distress",
+      "Hear the words of my mouth"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The psalmist says God has shown them many and bitter troubles.",
+     "answer": true,
+     "v": 20
     }
    ]
   },
@@ -2121,6 +3605,85 @@
      "q": "The psalm ends by saying this ends the prayers of Solomon.",
      "answer": false,
      "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What will the king do to the oppressor?",
+     "options": [
+      "Break him in pieces",
+      "Banish him",
+      "Make him a servant",
+      "Forgive him"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalm say all nations shall do?",
+     "options": [
+      "Serve the king",
+      "Go to war",
+      "Bring him horses",
+      "Seek his wisdom"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In the king's days, who shall flourish?",
+     "options": [
+      "The righteous",
+      "The priests",
+      "The merchants",
+      "The warriors"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Men will pray for him continually. They will ____.",
+     "answer": "bless him all day long",
+     "wrong": [
+      "sing of him at night",
+      "bow before him daily",
+      "honor him in the gates"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The psalm praises the LORD God as the one who alone does marvelous deeds.",
+     "answer": true,
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "The fruit of the land sways like what?",
+     "options": [
+      "Lebanon",
+      "The sea",
+      "The palm trees of Jericho",
+      "The cedars of Bashan"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They shall fear you while the sun endures; and ____.",
+     "answer": "as long as the moon",
+     "wrong": [
+      "while the stars shine",
+      "as long as the sea",
+      "while the rivers flow"
+     ],
+     "v": 5
     }
    ]
   },
@@ -2235,6 +3798,85 @@
      "q": "The wicked in this psalm say, \"God sees everything we do.\"",
      "answer": false,
      "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalmist say God has held?",
+     "options": [
+      "His right hand",
+      "His heart",
+      "His cup",
+      "His feet"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalmist say God will guide him with?",
+     "options": [
+      "His counsel",
+      "His staff",
+      "A pillar of fire",
+      "His angels"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What covers the wicked like a garment?",
+     "options": [
+      "Violence",
+      "Darkness",
+      "Shame",
+      "Greed"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do the wicked increase in while always at ease?",
+     "options": [
+      "Riches",
+      "Wisdom",
+      "Years",
+      "Children"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Whom do I have in heaven? There is no one on earth ____.",
+     "answer": "whom I desire besides you",
+     "wrong": [
+      "who can stand against you",
+      "who knows my sorrow",
+      "who is as faithful"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They have set their mouth in the heavens. Their tongue ____.",
+     "answer": "walks through the earth",
+     "wrong": [
+      "speaks against the Most High",
+      "deceives the nations",
+      "is sharper than swords"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The psalmist says he was plagued all day long and punished every evening.",
+     "answer": false,
+     "v": 14
     }
    ]
   },
@@ -2349,6 +3991,85 @@
      "q": "The psalmist asks God to forget the voice of his adversaries.",
      "answer": false,
      "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What mountain does the psalmist remind God he lived in?",
+     "options": [
+      "Mount Zion",
+      "Mount Sinai",
+      "Mount Carmel",
+      "Mount Hermon"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The psalmist calls God his King of old.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "With what do the enemies break down the carved work?",
+     "options": [
+      "Hatchet and hammers",
+      "Swords and spears",
+      "Fire and torches",
+      "Chains and ropes"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What have the adversaries set up as signs?",
+     "options": [
+      "Their standards",
+      "Their idols",
+      "Their altars",
+      "Their tents"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Don't let the oppressed return ashamed. Let ____ praise your name.",
+     "answer": "the poor and needy",
+     "wrong": [
+      "all the nations",
+      "the sons of Jacob",
+      "the upright in heart"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the psalmist ask why God draws back?",
+     "options": [
+      "His right hand",
+      "His face",
+      "His mercy",
+      "His armies"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You opened up spring and stream. You ____.",
+     "answer": "dried up mighty rivers",
+     "wrong": [
+      "made the deserts bloom",
+      "filled the valleys",
+      "stilled the raging sea"
+     ],
+     "v": 15
     }
    ]
   },
@@ -2440,6 +4161,61 @@
      "q": "The psalm says the horns of the righteous will be cut off.",
      "answer": false,
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does God tell the arrogant?",
+     "options": [
+      "Don't boast",
+      "Repent and turn",
+      "Be silent",
+      "Bow down"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does God say he will do when he chooses the appointed time?",
+     "options": [
+      "Judge blamelessly",
+      "Pour out his wrath",
+      "Gather his people",
+      "Rebuild the temple"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "We give thanks to you, God. We give thanks, for ____.",
+     "answer": "your Name is near",
+     "wrong": [
+      "your mercy endures",
+      "your hand is strong",
+      "your works are great"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The title says this psalm was written by David.",
+     "answer": false,
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For neither from the east, nor from the west, nor yet from the south, ____.",
+     "answer": "comes exaltation",
+     "wrong": [
+      "comes deliverance",
+      "comes the judge",
+      "comes salvation"
+     ],
+     "v": 6
     }
    ]
   },
@@ -2531,6 +4307,85 @@
      "q": "The psalm says God arose to judgment to save the mighty ones of the earth.",
      "answer": false,
      "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalm tell people to make to the LORD and fulfill?",
+     "options": [
+      "Vows",
+      "Sacrifices",
+      "Songs",
+      "Altars"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "You, even you, are to be feared. Who can stand in your sight ____?",
+     "answer": "when you are angry",
+     "wrong": [
+      "on the day of battle",
+      "when you come near",
+      "in your holy temple"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where does the psalm say God's tabernacle is?",
+     "options": [
+      "Salem",
+      "Shiloh",
+      "Bethel",
+      "Hebron"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whose spirit will God cut off?",
+     "options": [
+      "Princes",
+      "Priests",
+      "Prophets",
+      "Shepherds"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The psalm says God is feared by the kings of the earth.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Valiant men lie plundered, they have ____.",
+     "answer": "slept their last sleep",
+     "wrong": [
+      "fled from the battle",
+      "dropped their swords",
+      "lost all their strength"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who should bring presents to him who is to be feared?",
+     "options": [
+      "All of his neighbors",
+      "The kings of Sheba",
+      "The priests of Judah",
+      "The sons of Levi"
+     ],
+     "v": 11
     }
    ]
   },
@@ -2645,6 +4500,85 @@
      "q": "The psalm says the skies resounded with trumpets.",
      "answer": false,
      "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalmist call God in verse 14?",
+     "options": [
+      "The God who does wonders",
+      "The God who sees in secret",
+      "The God of armies",
+      "The God who dwells in Zion"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I remember God, and ____.",
+     "answer": "I groan",
+     "wrong": [
+      "I rejoice",
+      "I sing",
+      "I rest"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When was the psalmist's hand stretched out without getting tired?",
+     "options": [
+      "In the night",
+      "In the morning",
+      "At the altar",
+      "In battle"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What has the psalmist considered?",
+     "options": [
+      "The days of old",
+      "The stars of heaven",
+      "The law of Moses",
+      "The ways of the wicked"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where does the psalm say God's way is?",
+     "options": [
+      "In the sanctuary",
+      "In the whirlwind",
+      "On the mountains",
+      "In the hearts of men"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Has his loving kindness vanished forever? Does ____?",
+     "answer": "his promise fail for generations",
+     "wrong": [
+      "his anger burn for ages",
+      "his mercy come to an end",
+      "his hand turn against us"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The psalmist says he will meditate on all of God's work.",
+     "answer": true,
+     "v": 12
     }
    ]
   },
@@ -2758,6 +4692,85 @@
      "q": "The psalm says God abandoned the tent of Bethel.",
      "answer": false,
      "v": 60
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did God bring David to be for Jacob and Israel?",
+     "options": [
+      "Their shepherd",
+      "Their judge",
+      "Their priest",
+      "Their prophet"
+     ],
+     "v": 71
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The psalmist says we will hide the LORD's deeds from our children.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To what did God give the Egyptians' increase and labor?",
+     "options": [
+      "The caterpillar and the locust",
+      "The mildew and the blight",
+      "The worms and the moths",
+      "The birds of the air"
+     ],
+     "v": 46
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which tribe did God choose instead of Ephraim?",
+     "options": [
+      "Judah",
+      "Benjamin",
+      "Levi",
+      "Reuben"
+     ],
+     "v": 68
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He remembered that they were but flesh, ____.",
+     "answer": "a wind that passes away",
+     "wrong": [
+      "a flower that fades quickly",
+      "a shadow that soon departs",
+      "dust upon the ground"
+     ],
+     "v": 39
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In what field did God do marvelous things in Egypt?",
+     "options": [
+      "Zoan",
+      "Goshen",
+      "Rameses",
+      "Pithom"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Then the Lord awakened as one out of sleep, like ____ by reason of wine.",
+     "answer": "a mighty man who shouts",
+     "wrong": [
+      "a lion roaring for prey",
+      "a warrior rushing to battle",
+      "a king rising from his throne"
+     ],
+     "v": 65
     }
    ]
   },
@@ -2849,6 +4862,85 @@
      "q": "The psalm says the dead bodies of God's servants were thrown into the sea.",
      "answer": false,
      "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalm say the nations have defiled?",
+     "options": [
+      "God's holy temple",
+      "The altar at Bethel",
+      "The king's palace",
+      "The graves of the fathers"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "How long, LORD? Will you be angry forever? Will your jealousy ____?",
+     "answer": "burn like fire",
+     "wrong": [
+      "never cease",
+      "consume us all",
+      "rage like the sea"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What have the people become to their neighbors?",
+     "options": [
+      "A reproach",
+      "A terror",
+      "A blessing",
+      "A burden"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom have the nations devoured?",
+     "options": [
+      "Jacob",
+      "Egypt",
+      "The Philistines",
+      "The Levites"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Deliver us, and forgive our sins, ____.",
+     "answer": "for your name's sake",
+     "wrong": [
+      "according to your mercy",
+      "as in the days of old",
+      "before our enemies' eyes"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "On what kingdoms does the psalmist ask God to pour out his wrath?",
+     "options": [
+      "Those that don't call on his name",
+      "Those that worship idols",
+      "Those that live by the sea",
+      "Those that fought against Egypt"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The psalmist asks that vengeance for the servants' blood be made known among the nations.",
+     "answer": true,
+     "v": 10
     }
    ]
   },
@@ -2963,6 +5055,85 @@
      "q": "The psalm says Israel's enemies weep among themselves.",
      "answer": false,
      "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalm say has happened to the vine?",
+     "options": [
+      "It was burned with fire and cut down",
+      "It was carried off to Babylon",
+      "It withered in a drought",
+      "It was eaten by locusts"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The psalm says God drove out the nations to plant the vine.",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom does the psalm say God leads like a flock?",
+     "options": [
+      "Joseph",
+      "Judah",
+      "Levi",
+      "David"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happened after God cleared the ground for the vine?",
+     "options": [
+      "It took deep root and filled the land",
+      "It bore sweet grapes",
+      "It withered in the sun",
+      "It was trampled by horses"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Look down from heaven, and see, and ____.",
+     "answer": "visit this vine",
+     "wrong": [
+      "remember your people",
+      "hear our cry",
+      "bless the land"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Against what does the psalm ask how long God will be angry?",
+     "options": [
+      "The prayer of his people",
+      "The sins of the priests",
+      "The kings of Israel",
+      "The nations around them"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Visit this vine, the stock which ____, the branch that you made strong for yourself.",
+     "answer": "your right hand planted",
+     "wrong": [
+      "your servants tended",
+      "you brought from afar",
+      "our fathers watered"
+     ],
+     "v": 15
     }
    ]
   },
@@ -3077,6 +5248,85 @@
      "q": "God says he answered his people in the secret place of the whirlwind.",
      "answer": false,
      "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which instrument does the psalm call for along with the lyre and harp?",
+     "options": [
+      "The tambourine",
+      "The flute",
+      "The cymbals",
+      "The ram's horn"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What would God soon do to Israel's enemies if his people listened?",
+     "options": [
+      "Subdue them",
+      "Forgive them",
+      "Make peace with them",
+      "Send them into exile"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In whom did God appoint the feast for a covenant?",
+     "options": [
+      "Joseph",
+      "Judah",
+      "Moses",
+      "Aaron"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For it is a statute for Israel, an ordinance of ____.",
+     "answer": "the God of Jacob",
+     "wrong": [
+      "the house of David",
+      "the priests of Levi",
+      "the elders of Israel"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The psalmist says that in Egypt he heard a language he knew well.",
+     "answer": false,
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to the title, what kind of instrument was this psalm for?",
+     "options": [
+      "An instrument of Gath",
+      "A ten stringed lyre",
+      "A silver trumpet",
+      "A shepherd's flute"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The haters of the LORD would cringe before him, and their punishment would ____.",
+     "answer": "last forever",
+     "wrong": [
+      "come swiftly",
+      "be very severe",
+      "never be forgotten"
+     ],
+     "v": 15
     }
    ]
   },
@@ -3168,6 +5418,49 @@
      "q": "The psalm says the unjust judges understand the truth but refuse to act.",
      "answer": false,
      "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Out of whose hand does God say to deliver the weak and needy?",
+     "options": [
+      "The hand of the wicked",
+      "The hand of the king",
+      "The hand of the stranger",
+      "The hand of the rich"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The psalm says God judges among the gods.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalm say God inherits?",
+     "options": [
+      "All of the nations",
+      "The land of Israel",
+      "The throne of David",
+      "The heavens above"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Besides dying like men, how does God say the gods will fall?",
+     "options": [
+      "Like one of the rulers",
+      "Like the stars of heaven",
+      "Like leaves in autumn",
+      "Like the walls of Jericho"
+     ],
+     "v": 7
     }
    ]
   },
@@ -3282,6 +5575,85 @@
      "q": "The enemy princes said they would take possession of Zion's treasures.",
      "answer": false,
      "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Against whom do the enemies conspire with cunning?",
+     "options": [
+      "God's people",
+      "The king of Assyria",
+      "Edom and Moab",
+      "The priests of Zion"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "That they may know that you alone, whose name is the LORD, are ____ over all the earth.",
+     "answer": "the Most High",
+     "wrong": [
+      "the only King",
+      "the great Judge",
+      "the mighty Ruler"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "With what does the psalmist ask God to terrify the enemies?",
+     "options": [
+      "His storm",
+      "His lightning",
+      "His angels",
+      "A plague"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Let them be ____ forever. Yes, let them be confounded and perish.",
+     "answer": "disappointed and dismayed",
+     "wrong": [
+      "scattered and forgotten",
+      "humbled and ashamed",
+      "broken and afraid"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The psalm says the enemies have conspired together with one mind.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What have those who hate God lifted up?",
+     "options": [
+      "Their heads",
+      "Their swords",
+      "Their banners",
+      "Their idols"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where does the psalm say the forces of Sisera and Jabin perished?",
+     "options": [
+      "Endor",
+      "Gilgal",
+      "Megiddo",
+      "Jezreel"
+     ],
+     "v": 10
     }
    ]
   },
@@ -3373,6 +5745,85 @@
      "q": "According to the title, this psalm was written by David.",
      "answer": false,
      "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What are those who dwell in God's house always doing?",
+     "options": [
+      "Praising him",
+      "Offering sacrifices",
+      "Studying the law",
+      "Keeping watch"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The psalm says blessed is the man who trusts in the LORD of Armies.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "On what have the blessed set their hearts?",
+     "options": [
+      "A pilgrimage",
+      "The law of Moses",
+      "A new temple",
+      "The promised land"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What covers the valley with blessings?",
+     "options": [
+      "The autumn rain",
+      "The morning dew",
+      "Flowing rivers",
+      "Spring flowers"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "My soul longs, and even faints for ____.",
+     "answer": "the courts of the LORD",
+     "wrong": [
+      "the house of my fathers",
+      "the hills of Zion",
+      "the presence of the King"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He withholds no good thing from ____.",
+     "answer": "those who walk blamelessly",
+     "wrong": [
+      "those who seek his face",
+      "the children of Israel",
+      "those who call on him"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the psalmist call God when asking him to listen?",
+     "options": [
+      "God of Jacob",
+      "God of Abraham",
+      "Holy One of Israel",
+      "God of Zion"
+     ],
+     "v": 8
     }
    ]
   },
@@ -3464,6 +5915,90 @@
      "q": "The psalm says the land will lie barren until the LORD returns.",
      "answer": false,
      "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whose fortunes does the psalm say God has restored?",
+     "options": [
+      "Jacob's",
+      "Judah's",
+      "Ephraim's",
+      "David's"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalmist ask the LORD to show them?",
+     "options": [
+      "His loving kindness",
+      "His glory",
+      "His face",
+      "His power"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What has God taken away, according to the psalm?",
+     "options": [
+      "All his wrath",
+      "All their enemies",
+      "All their sickness",
+      "All their idols"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalmist warn God's saints not to turn again to?",
+     "options": [
+      "Folly",
+      "Idols",
+      "Egypt",
+      "Their enemies"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Will you be angry with us forever? Will you draw out your anger ____?",
+     "answer": "to all generations",
+     "wrong": [
+      "against your people",
+      "like a flood",
+      "day and night"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Turn us, God of our salvation, and cause ____ to cease.",
+     "answer": "your indignation toward us",
+     "wrong": [
+      "the wars around us",
+      "our many troubles",
+      "the mocking of our enemies"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to the title, who is this psalm by?",
+     "options": [
+      "The sons of Korah",
+      "David",
+      "Asaph",
+      "Solomon"
+     ],
+     "v": 1
     }
    ]
   },
@@ -3578,6 +6113,85 @@
      "q": "David says that in the day of his trouble he will wait in silence.",
      "answer": false,
      "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How often does David say he calls to the Lord?",
+     "options": [
+      "All day long",
+      "Three times a day",
+      "Every morning",
+      "Every night"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "With what does David say he will praise the Lord?",
+     "options": [
+      "His whole heart",
+      "The harp",
+      "A new song",
+      "Burnt offerings"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do the violent men who seek David's soul fail to do?",
+     "options": [
+      "Hold regard for God",
+      "Keep their vows",
+      "Honor their fathers",
+      "Pay their debts"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Bring joy to the soul of your servant, for to you, Lord, ____.",
+     "answer": "do I lift up my soul",
+     "wrong": [
+      "I have given my life",
+      "I sing all day long",
+      "I bring my offerings"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "David says God is great and does wondrous things.",
+     "answer": true,
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Hear, LORD, my prayer. Listen to ____.",
+     "answer": "the voice of my petitions",
+     "wrong": [
+      "the cry of my heart",
+      "the words of my mouth",
+      "my song in the night"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How does David describe himself when asking God to save him?",
+     "options": [
+      "Your servant who trusts in you",
+      "Your chosen king",
+      "The least of your people",
+      "A stranger in the land"
+     ],
+     "v": 2
     }
    ]
   },
@@ -3669,6 +6283,37 @@
      "q": "The psalm says the LORD will blot out the peoples when he writes them up.",
      "answer": false,
      "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides those who sing, who else speaks in the last verse?",
+     "options": [
+      "Those who dance",
+      "Those who pray",
+      "The priests",
+      "The watchmen"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to the title, who is this psalm by?",
+     "options": [
+      "The sons of Korah",
+      "Asaph",
+      "Moses",
+      "Heman"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "God says he will record Egypt and Assyria among those who acknowledge him.",
+     "answer": false,
+     "v": 4
     }
    ]
   },
@@ -3783,6 +6428,85 @@
      "q": "The psalm ends with the psalmist rejoicing that God has rescued him.",
      "answer": false,
      "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalmist say his soul is full of?",
+     "options": [
+      "Troubles",
+      "Joy",
+      "Anger",
+      "Hope"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Let my prayer enter into your presence. ____.",
+     "answer": "Turn your ear to my cry",
+     "wrong": [
+      "Do not hide from me",
+      "Answer me in my distress",
+      "Remember your servant"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where does the psalmist ask if God's loving kindness is declared?",
+     "options": [
+      "In the grave",
+      "In the temple",
+      "Among the nations",
+      "In the heavens"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Like what did God's terrors come around the psalmist all day long?",
+     "options": [
+      "Water",
+      "Fire",
+      "A swarm of bees",
+      "An army"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Like the slain who lie in the grave, whom ____. They are cut off from your hand.",
+     "answer": "you remember no more",
+     "wrong": [
+      "no one mourns for",
+      "the earth has covered",
+      "their families have forgotten"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Since when does the psalmist say he has been afflicted and ready to die?",
+     "options": [
+      "From his youth up",
+      "Since the war began",
+      "For seven long years",
+      "Since his friends left"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The psalmist says he is confined and cannot escape.",
+     "answer": true,
+     "v": 8
     }
    ]
   },
@@ -3897,6 +6621,85 @@
      "q": "God says that if David's children break his statutes, he will take his loving kindness from David completely.",
      "answer": false,
      "v": 33
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does God say he will appoint David as?",
+     "options": [
+      "My firstborn",
+      "My high priest",
+      "My prophet",
+      "My chosen judge"
+     ],
+     "v": 27
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God says he has sworn by his holiness that he will not lie to David.",
+     "answer": true,
+     "v": 35
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalm say God has broken in pieces?",
+     "options": [
+      "Rahab",
+      "Leviathan",
+      "Egypt's chariots",
+      "The gates of Babylon"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalmist say God has thrown down to the ground?",
+     "options": [
+      "His throne",
+      "His temple",
+      "His sword",
+      "His walls"
+     ],
+     "v": 44
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "What man is he who shall live and ____?",
+     "answer": "not see death",
+     "wrong": [
+      "never grow old",
+      "not fear the grave",
+      "escape all trouble"
+     ],
+     "v": 48
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "On what does God say he will set David's hand?",
+     "options": [
+      "The sea",
+      "The mountains",
+      "The nations",
+      "The city gates"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Blessed are the people who learn to acclaim you. They walk in ____, LORD.",
+     "answer": "the light of your presence",
+     "wrong": [
+      "the paths of your justice",
+      "the shadow of your wings",
+      "the courts of your house"
+     ],
+     "v": 15
     }
    ]
   },
@@ -4011,6 +6814,85 @@
      "q": "The psalm asks God to make us glad for twice as many days as we have been afflicted.",
      "answer": false,
      "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalmist ask the LORD to have on his servants?",
+     "options": [
+      "Compassion",
+      "Patience",
+      "Wisdom",
+      "Honor"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Even from everlasting to everlasting, ____.",
+     "answer": "you are God",
+     "wrong": [
+      "you reign on high",
+      "your name endures",
+      "you are our king"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does God say to the children of men as he turns man to destruction?",
+     "options": [
+      "Return",
+      "Remember",
+      "Rise up",
+      "Rest"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalm say the pride of our years is?",
+     "options": [
+      "Labor and sorrow",
+      "Wealth and honor",
+      "Wisdom and strength",
+      "Children and land"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Who knows ____, your wrath according to the fear that is due to you?",
+     "answer": "the power of your anger",
+     "wrong": [
+      "the number of your days",
+      "the depth of your thoughts",
+      "the height of the heavens"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the psalm ask to appear to the servants' children?",
+     "options": [
+      "God's glory",
+      "God's angels",
+      "A great king",
+      "A new land"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The psalm says God sweeps people away as they sleep.",
+     "answer": true,
+     "v": 5
     }
    ]
   },
@@ -4125,6 +7007,85 @@
      "q": "God says he will satisfy him with great riches and show him his salvation.",
      "answer": false,
      "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why does God say he will deliver the one who trusts him?",
+     "options": [
+      "He has set his love on God",
+      "He is strong in battle",
+      "He offered many sacrifices",
+      "He is from David's line"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They will bear you up in their hands, so that you won't ____.",
+     "answer": "dash your foot against a stone",
+     "wrong": [
+      "stumble in the darkness",
+      "fall into the pit",
+      "wander from the path"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalm say God's faithfulness is?",
+     "options": [
+      "Your shield and rampart",
+      "Your sword and spear",
+      "Your song and joy",
+      "Your bread and water"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalm say you have made the Most High?",
+     "options": [
+      "Your dwelling place",
+      "Your shield",
+      "Your song",
+      "Your judge"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "God says he will be with the one who calls on him in trouble.",
+     "answer": true,
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What will you see with your eyes, according to the psalm?",
+     "options": [
+      "The recompense of the wicked",
+      "The glory of the temple",
+      "The angels of God",
+      "The fall of Babylon"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I will set him on high, because ____.",
+     "answer": "he has known my name",
+     "wrong": [
+      "he has kept my law",
+      "he trusts in me",
+      "he calls to me daily"
+     ],
+     "v": 14
     }
    ]
   },
@@ -4216,6 +7177,85 @@
      "q": "The psalmist mentions praising God with the trumpet and cymbal.",
      "answer": false,
      "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where are the righteous planted?",
+     "options": [
+      "In the LORD's house",
+      "By streams of water",
+      "On Mount Zion",
+      "In fertile fields"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For you, LORD, have made me glad ____.",
+     "answer": "through your work",
+     "wrong": [
+      "with your salvation",
+      "in the morning light",
+      "by your mercy"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the righteous grow like in Lebanon?",
+     "options": [
+      "A cedar",
+      "A vine",
+      "An oak",
+      "A fig tree"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalmist say he is anointed with?",
+     "options": [
+      "Fresh oil",
+      "Holy water",
+      "Sweet myrrh",
+      "Precious ointment"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalmist call the LORD in the final verse?",
+     "options": [
+      "My rock",
+      "My shepherd",
+      "My shield",
+      "My king"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Your enemies shall perish. ____ will be scattered.",
+     "answer": "All the evildoers",
+     "wrong": [
+      "All the proud",
+      "The mighty nations",
+      "All your adversaries"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The psalm says even the wise cannot understand the works of the LORD.",
+     "answer": false,
+     "v": 6
     }
    ]
   },
@@ -4276,6 +7316,49 @@
      "q": "The psalm says the LORD on high is mighty above the voices of many waters.",
      "answer": true,
      "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The psalm opens by declaring, \"The LORD is coming!\"",
+     "answer": false,
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalm say the LORD is armed with?",
+     "options": [
+      "Strength",
+      "Light",
+      "A sword",
+      "Thunder"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalm say about the world?",
+     "options": [
+      "It is established and can't be moved",
+      "It will soon pass away",
+      "It trembles before him",
+      "It is covered by the floods"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the psalm say stands firm?",
+     "options": [
+      "Your statutes",
+      "Your mountains",
+      "Your temple walls",
+      "Your holy city"
+     ],
+     "v": 5
     }
    ]
   },
@@ -4390,6 +7473,85 @@
      "q": "The psalmist calls on the wise among the people to consider.",
      "answer": false,
      "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalmist ask the judge of the earth to do to the proud?",
+     "options": [
+      "Pay them back what they deserve",
+      "Show them mercy",
+      "Humble them in secret",
+      "Turn their hearts"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "The psalmist asks how long the wicked will do what?",
+     "options": [
+      "Triumph",
+      "Hide",
+      "Rule the land",
+      "Grow rich"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What delights the psalmist's soul in the multitude of his thoughts?",
+     "options": [
+      "God's comforts",
+      "His songs",
+      "His riches",
+      "His friends"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do the wicked do to God's people?",
+     "options": [
+      "Break them in pieces",
+      "Sell them as slaves",
+      "Drive them from the land",
+      "Mock their prayers"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For judgment will return to righteousness. ____ shall follow it.",
+     "answer": "All the upright in heart",
+     "wrong": [
+      "All the people of God",
+      "The children of Jacob",
+      "The humble of the earth"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "That you may give him rest from the days of adversity, until the pit ____.",
+     "answer": "is dug for the wicked",
+     "wrong": [
+      "swallows up the proud",
+      "is filled with his enemies",
+      "is closed forever"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The psalm asks, \"He who disciplines the nations, won't he forgive?\"",
+     "answer": false,
+     "v": 10
     }
    ]
   },
@@ -4481,6 +7643,73 @@
      "q": "The psalm calls the LORD a great King above all kings.",
      "answer": false,
      "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalm call the LORD when inviting people to kneel?",
+     "options": [
+      "Our Maker",
+      "Our Shepherd",
+      "Our Judge",
+      "Our Redeemer"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The psalm calls people to come before God's presence with weeping.",
+     "answer": false,
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the fathers do to God in the wilderness?",
+     "options": [
+      "Tempted and tested him",
+      "Built him an altar",
+      "Sang him a song",
+      "Obeyed his voice"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They are a people who err in their heart. They have ____.",
+     "answer": "not known my ways",
+     "wrong": [
+      "turned to other gods",
+      "forgotten my law",
+      "refused my bread"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the psalm say God's hands formed?",
+     "options": [
+      "The dry land",
+      "The high mountains",
+      "The stars",
+      "The first man"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Today, oh that you would ____!",
+     "answer": "hear his voice",
+     "wrong": [
+      "return to him",
+      "see his glory",
+      "keep his law"
+     ],
+     "v": 7
     }
    ]
   },
@@ -4572,6 +7801,85 @@
      "q": "The psalm says the sea should be still before the LORD.",
      "answer": false,
      "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalm tell people to bring when they come into his courts?",
+     "options": [
+      "An offering",
+      "A lamb",
+      "Their children",
+      "Palm branches"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "While the gods of the peoples are idols, what does the psalm say the LORD made?",
+     "options": [
+      "The heavens",
+      "The sea",
+      "Mankind",
+      "The mountains"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalm say to proclaim from day to day?",
+     "options": [
+      "His salvation",
+      "His law",
+      "His mercy",
+      "His judgments"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In what does the psalm say to worship the LORD?",
+     "options": [
+      "Holy array",
+      "Sackcloth and ashes",
+      "Silence",
+      "Songs of mourning"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Declare his glory among the nations, ____ among all the peoples.",
+     "answer": "his marvelous works",
+     "wrong": [
+      "his holy name",
+      "his great mercy",
+      "his mighty power"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For the LORD is great, and greatly to be praised! He is ____.",
+     "answer": "to be feared above all gods",
+     "wrong": [
+      "to be exalted over nations",
+      "the King of all the earth",
+      "to be worshiped in Zion"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The psalm tells all the earth to tremble before the LORD.",
+     "answer": true,
+     "v": 9
     }
    ]
   },
@@ -4663,6 +7971,85 @@
      "q": "The psalm says darkness is sown for the wicked, and sorrow for the proud.",
      "answer": false,
      "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who does the psalm say should be shamed?",
+     "options": [
+      "Those who serve engraved images",
+      "Those who doubt his word",
+      "The kings of the earth",
+      "Those who forget the poor"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Be glad in the LORD, you righteous people! ____.",
+     "answer": "Give thanks to his holy Name",
+     "wrong": [
+      "Sing to him a new song",
+      "Bow down before his throne",
+      "Proclaim his mighty deeds"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalm tell the multitude of islands to be?",
+     "options": [
+      "Glad",
+      "Silent",
+      "Afraid",
+      "Still"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What is the LORD exalted far above?",
+     "options": [
+      "All gods",
+      "All kings",
+      "The heavens",
+      "The seas"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Out of whose hand does the LORD deliver his saints?",
+     "options": [
+      "The wicked",
+      "The nations",
+      "The proud",
+      "The mighty"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "At the presence of the LORD, at the presence of ____.",
+     "answer": "the Lord of the whole earth",
+     "wrong": [
+      "the Holy One of Israel",
+      "the King of glory",
+      "the God of Jacob"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The psalm commands all the gods to worship the LORD.",
+     "answer": true,
+     "v": 7
     }
    ]
   },
@@ -4754,6 +8141,49 @@
      "q": "The psalm says the LORD has kept his righteousness hidden from the nations.",
      "answer": false,
      "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the psalm call on the mountains to do?",
+     "options": [
+      "Sing for joy together",
+      "Bow down low",
+      "Tremble and quake",
+      "Skip like rams"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Toward whom has God remembered his loving kindness and faithfulness?",
+     "options": [
+      "The house of Israel",
+      "The house of David",
+      "The nations",
+      "The poor"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Make a joyful noise to the LORD, all the earth! ____, yes, sing praises!",
+     "answer": "Burst out and sing for joy",
+     "wrong": [
+      "Lift up your hands",
+      "Dance before his throne",
+      "Bow down and worship"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The psalm says the sea should be silent before the LORD.",
+     "answer": false,
+     "v": 7
     }
    ]
   },
@@ -4845,6 +8275,61 @@
      "q": "The psalm says the LORD is great in Bethel.",
      "answer": false,
      "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where does the psalm say to worship at its end?",
+     "options": [
+      "At his holy hill",
+      "By the river Jordan",
+      "At the gates of Jerusalem",
+      "On Mount Sinai"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the King's strength love?",
+     "options": [
+      "Justice",
+      "Mercy",
+      "Peace",
+      "Riches"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happened when the priests and Samuel called on the LORD?",
+     "options": [
+      "He answered them",
+      "He was silent",
+      "He sent fire",
+      "He hid his face"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Let them praise ____. He is Holy!",
+     "answer": "your great and awesome name",
+     "wrong": [
+      "your mighty works",
+      "the King of glory",
+      "your holy temple"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The psalm says, \"Let the earth be moved.\"",
+     "answer": true,
+     "v": 1
     }
    ]
   },
@@ -4904,6 +8389,49 @@
      "d": 1,
      "q": "The psalm tells us to enter his gates with sacrifices.",
      "answer": false,
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who does the psalm call to shout for joy to the LORD?",
+     "options": [
+      "All you lands",
+      "All you priests",
+      "All you kings",
+      "All you children"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does the psalm say to come before his presence?",
+     "options": [
+      "With singing",
+      "With offerings",
+      "With trembling",
+      "In silence"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the psalm tell us to know?",
+     "options": [
+      "That the LORD, he is God",
+      "That the day is near",
+      "That the law is good",
+      "That Zion is holy"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The psalm tells us to give thanks to the LORD and bless his name.",
+     "answer": true,
      "v": 4
     }
    ]

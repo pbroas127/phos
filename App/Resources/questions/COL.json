@@ -112,6 +112,80 @@
      "q": "Paul says the mystery was openly known through all past ages and generations.",
      "answer": false,
      "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who is named alongside Paul at the opening of the letter?",
+     "options": [
+      "Timothy",
+      "Silvanus",
+      "Titus",
+      "Sosthenes"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the Colossians' faithful fellow servant declare to Paul about them?",
+     "options": [
+      "Their love in the Spirit",
+      "Their gift for his needs",
+      "Their trouble with false teachers",
+      "Their growth in number"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to Paul, the Father made us fit to share in what?",
+     "options": [
+      "The inheritance of the saints in light",
+      "The land promised to Abraham",
+      "The glory of the angels",
+      "The priesthood of Aaron"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "That you may walk worthily of the Lord, to please him in all respects, ____ in every good work.",
+     "answer": "bearing fruit",
+     "wrong": [
+      "standing firm",
+      "rejoicing always",
+      "abounding greatly"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "If it is so that you continue in the faith, ____, and not moved away from the hope of the Good News.",
+     "answer": "grounded and steadfast",
+     "wrong": [
+      "rooted and built up",
+      "watchful and sober",
+      "patient and faithful"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says the Good News is bearing fruit and growing in all the world.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says he labors and strives according to his own strength.",
+     "answer": false,
+     "v": 29
     }
    ]
   },
@@ -226,6 +300,80 @@
      "q": "Paul says harsh rules against the body are of great value against the indulgence of the flesh.",
      "answer": false,
      "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why does Paul say he tells them these things?",
+     "options": [
+      "So no one deludes them with persuasive speech",
+      "So they can answer the Jewish leaders",
+      "So they will send Epaphras back to him",
+      "So they will obey their elders"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to Paul, Christ is the head of what?",
+     "options": [
+      "All principality and power",
+      "The twelve tribes of Israel",
+      "The prophets and apostles",
+      "The elders of the assembly"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul say Christ did to the principalities and powers?",
+     "options": [
+      "Stripped them and made a show of them openly",
+      "Bound them in chains for the judgment",
+      "Gave them authority over the nations",
+      "Sent them away into the deep"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Rooted and built up in him and established in the faith, even as you were taught, ____.",
+     "answer": "abounding in it in thanksgiving",
+     "wrong": [
+      "growing in grace and knowledge",
+      "standing firm to the end",
+      "walking in love and truth"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You were dead through your trespasses. He made you alive together with him, ____.",
+     "answer": "having forgiven us all our trespasses",
+     "wrong": [
+      "having washed us from our sins",
+      "having called us his children",
+      "having given us his Spirit"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul warns against those who would rob them of their prize through worshiping angels.",
+     "answer": true,
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says the circumcision believers received in Christ was made with hands.",
+     "answer": false,
+     "v": 11
     }
    ]
   },
@@ -340,6 +488,80 @@
      "q": "Paul says to forgive each other, even as the apostles forgave you.",
      "answer": false,
      "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where does Paul say Christ is seated?",
+     "options": [
+      "On the right hand of God",
+      "On the throne of David",
+      "Among the angels",
+      "Above the assembly"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say covetousness is?",
+     "options": [
+      "Idolatry",
+      "Theft",
+      "Foolishness",
+      "Slavery"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In what is the new man being renewed?",
+     "options": [
+      "Knowledge, after the image of his Creator",
+      "Strength, by the power of the Spirit",
+      "Holiness, through the law of Moses",
+      "Glory, from one day to the next"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Teaching and admonishing one another with ____, singing with grace in your heart to the Lord.",
+     "answer": "psalms, hymns, and spiritual songs",
+     "wrong": [
+      "prayers, readings, and exhortations",
+      "words of wisdom and knowledge",
+      "thanksgiving and praise"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Servants, obey your masters, not just when they are looking, as men pleasers, but in ____, fearing God.",
+     "answer": "singleness of heart",
+     "wrong": [
+      "humility of mind",
+      "quietness of spirit",
+      "gladness of heart"
+     ],
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says that when Christ is revealed, believers will also be revealed with him in glory.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul tells servants they will receive the reward of the inheritance from their earthly masters.",
+     "answer": false,
+     "v": 24
     }
    ]
   },
@@ -454,6 +676,80 @@
      "q": "Paul describes Mark as the brother of Barnabas.",
      "answer": false,
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How does Paul tell them to walk toward those who are outside?",
+     "options": [
+      "In wisdom, redeeming the time",
+      "In boldness, warning of judgment",
+      "In silence, avoiding all debate",
+      "In separation, keeping apart"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does Paul describe Aristarchus?",
+     "options": [
+      "My fellow prisoner",
+      "My son in the faith",
+      "My fellow soldier",
+      "The faithful steward"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Epaphras strive for in his prayers for the Colossians?",
+     "options": [
+      "That they stand perfect and complete in God's will",
+      "That Paul may soon be released from prison",
+      "That the false teachers leave Colossae",
+      "That the letter safely reaches Laodicea"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I am sending him to you for this very purpose, that he may know your circumstances and ____.",
+     "answer": "comfort your hearts",
+     "wrong": [
+      "strengthen your faith",
+      "correct your errors",
+      "bring back your gifts"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "These are my only fellow workers for God's Kingdom who are ____, men who have been a comfort to me.",
+     "answer": "of the circumcision",
+     "wrong": [
+      "from among the Gentiles",
+      "in bonds with me",
+      "sent from Jerusalem"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says he is free to travel as he writes this letter.",
+     "answer": false,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says Epaphras has great zeal for those in Laodicea and Hierapolis.",
+     "answer": true,
+     "v": 13
     }
    ]
   }

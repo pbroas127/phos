@@ -113,6 +113,85 @@
       "a canopy of cloud"
      ],
      "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the angel say the horns Zechariah saw had done?",
+     "options": [
+      "Scattered Judah, Israel, and Jerusalem",
+      "Guarded the walls of Zion",
+      "Carried the ark away",
+      "Called the nations to war"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the man in the vision say the horses had been sent to do?",
+     "options": [
+      "Go back and forth through the earth",
+      "Carry messages to the kings",
+      "Destroy the nations at ease",
+      "Guard the gates of Jerusalem"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The LORD answered the angel who talked with me with ____.",
+     "answer": "kind and comforting words",
+     "wrong": [
+      "a stern warning",
+      "a vision of fire",
+      "a word of judgment"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter says the fathers never repented after the LORD's words overtook them.",
+     "answer": false,
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In the reign of which king did the LORD's word come to Zechariah?",
+     "options": [
+      "Darius",
+      "Cyrus",
+      "Artaxerxes",
+      "Nebuchadnezzar"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "My cities will again ____, and the LORD will again comfort Zion, and will again choose Jerusalem.",
+     "answer": "overflow with prosperity",
+     "wrong": [
+      "be filled with children",
+      "rise from their ruins",
+      "ring with singing"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "After asking \"Your fathers, where are they?\", what does the LORD ask about the prophets?",
+     "options": [
+      "Do they live forever?",
+      "Where are their scrolls?",
+      "Why did no one listen?",
+      "Who sent them to you?"
+     ],
+     "v": 5
     }
    ]
   },
@@ -228,6 +307,73 @@
       "They will turn and fight each other"
      ],
      "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the man in the vision say he was going out to measure?",
+     "options": [
+      "The width and length of Jerusalem",
+      "The height of the temple",
+      "The borders of Judah",
+      "The walls of Babylon"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Zion is told to escape from dwelling with whom?",
+     "options": [
+      "The daughter of Babylon",
+      "The daughter of Egypt",
+      "The people of Assyria",
+      "The kings of Persia"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For I have spread you abroad as ____, says the LORD.",
+     "answer": "the four winds of the sky",
+     "wrong": [
+      "the sand of the seashore",
+      "the stars of heaven",
+      "the leaves of a tree"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The other angel was told to run and speak to an old man about Jerusalem's future.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "For what does the speaker say he has been sent to the nations which plundered Zion?",
+     "options": [
+      "For honor",
+      "For vengeance",
+      "For trade",
+      "For peace"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who went out to meet the angel who talked with Zechariah?",
+     "options": [
+      "Another angel",
+      "Joshua the high priest",
+      "Zerubbabel the governor",
+      "A rider on a red horse"
+     ],
+     "v": 3
     }
    ]
   },
@@ -343,6 +489,49 @@
       "The ruins of the temple"
      ],
      "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD say to Satan?",
+     "options": [
+      "\"The LORD rebuke you, Satan!\"",
+      "\"Depart from this place!\"",
+      "\"You have no part here!\"",
+      "\"Be silent before me!\""
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does the LORD describe the fellows who sit before Joshua?",
+     "options": [
+      "Men who are a sign",
+      "Priests of the Branch",
+      "Watchmen for Jerusalem",
+      "Elders of Judah"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Behold, the stone that I have set before Joshua ... I will ____, says the LORD of Armies.",
+     "answer": "engrave its inscription",
+     "wrong": [
+      "set it in gold",
+      "place it in my house",
+      "make it a crown"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD's angel solemnly assured Zechariah, not Joshua, of the LORD's promise.",
+     "answer": false,
+     "v": 6
     }
    ]
   },
@@ -458,6 +647,49 @@
       "Two angels guarding the temple"
      ],
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "To whom was the LORD's word \"Not by might, nor by power\" given?",
+     "options": [
+      "Zerubbabel",
+      "Joshua the high priest",
+      "Zechariah",
+      "Darius"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the seven see in the hand of Zerubbabel?",
+     "options": [
+      "The plumb line",
+      "The capstone",
+      "A measuring line",
+      "A golden lamp"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "When Zechariah asked \"What are these, my lord?\", how did the angel first reply?",
+     "options": [
+      "\"Don't you know what these are?\"",
+      "\"Look again and you will see.\"",
+      "\"These are the seven spirits.\"",
+      "\"Write down what you see.\""
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Zechariah described two golden spouts that pour golden oil out of themselves.",
+     "answer": true,
+     "v": 12
     }
    ]
   },
@@ -573,6 +805,49 @@
       "across the great sea"
      ],
      "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why was the ephah basket with the woman being carried away?",
+     "options": [
+      "To build her a house",
+      "To throw her into the sea",
+      "To bury her in the desert",
+      "To burn her with fire"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How long was the flying scroll?",
+     "options": [
+      "Twenty cubits",
+      "Twelve cubits",
+      "Thirty cubits",
+      "Seven cubits"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Zechariah asked the angel where the women were carrying the ephah basket.",
+     "answer": true,
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The angel who talked with me came forward and said to me, \"Lift up now your eyes and ____ that is appearing.\"",
+     "answer": "see what this is",
+     "wrong": [
+      "look toward the north",
+      "count what you see",
+      "watch what will happen"
+     ],
+     "v": 5
     }
    ]
   },
@@ -688,6 +963,61 @@
       "scattered my enemies"
      ],
      "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What will the man who grows up out of his place build?",
+     "options": [
+      "The LORD's temple",
+      "The walls of Jerusalem",
+      "A palace for the king",
+      "An altar on the mountain"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What color were the horses of the fourth chariot?",
+     "options": [
+      "Dappled",
+      "Black",
+      "White",
+      "Gray"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where were the crowns to be kept as a memorial?",
+     "options": [
+      "In the LORD's temple",
+      "In the house of Josiah",
+      "On the bronze altar",
+      "In the governor's palace"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The strong horses were told, \"Go around and through the earth!\"",
+     "answer": true,
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He will bear the glory, and will ____ on his throne.",
+     "answer": "sit and rule",
+     "wrong": [
+      "stand and judge",
+      "reign in peace",
+      "be crowned king"
+     ],
+     "v": 13
     }
    ]
   },
@@ -803,6 +1133,61 @@
      "q": "The LORD said that even though they refused to listen, he would still listen when they called.",
      "answer": false,
      "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom were the people told not to oppress?",
+     "options": [
+      "The widow, the fatherless, the foreigner, and the poor",
+      "The priests and the Levites",
+      "The kings and the princes",
+      "The prophets and the elders"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD say about the people's eating and drinking?",
+     "options": [
+      "They ate and drank for themselves",
+      "They ate food that was unclean",
+      "They drank wine on fast days",
+      "They refused to share their bread"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Aren't these the words which the LORD proclaimed by the former prophets when Jerusalem was inhabited and ____?",
+     "answer": "in prosperity",
+     "wrong": [
+      "at peace",
+      "in safety",
+      "full of joy"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD's word in this chapter came to Zechariah in the fourth year of King Darius.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Through whom had the LORD of Armies sent the law and his words by his Spirit?",
+     "options": [
+      "The former prophets",
+      "Moses and Aaron",
+      "The priests of Bethel",
+      "The kings of Judah"
+     ],
+     "v": 12
     }
    ]
   },
@@ -918,6 +1303,85 @@
       "Unjust weights"
      ],
      "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What will the mountain of the LORD of Armies be called?",
+     "options": [
+      "The Holy Mountain",
+      "The Mountain of Peace",
+      "The Mountain of Zion",
+      "The High Mountain"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was lacking before the foundation of the LORD's house was laid?",
+     "options": [
+      "Wages for man and for animal",
+      "Rain for the fields",
+      "Priests for the temple",
+      "Stones for building"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "____, you who hear in these days these words from the mouth of the prophets.",
+     "answer": "Let your hands be strong",
+     "wrong": [
+      "Lift up your heads",
+      "Rejoice and be glad",
+      "Take courage and build"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says many peoples and strong nations will come to seek him in Babylon.",
+     "answer": false,
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many men out of all the languages of the nations will take hold of a Jew's skirt?",
+     "options": [
+      "Ten",
+      "Seven",
+      "Twelve",
+      "A hundred"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The inhabitants of one will go to another, saying, \"Let's go speedily ____ of the LORD, and to seek the LORD of Armies.\"",
+     "answer": "to entreat the favor",
+     "wrong": [
+      "to hear the word",
+      "to see the house",
+      "to keep the feasts"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the LORD ask about what seems marvelous to the remnant in those days?",
+     "options": [
+      "Should it also be marvelous in my eyes?",
+      "Why do you doubt my word?",
+      "Who has seen such a thing?",
+      "Is anything too hard for the LORD?"
+     ],
+     "v": 6
     }
    ]
   },

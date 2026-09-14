@@ -173,6 +173,11 @@ struct SpeakRead: View {
             footer(along)
         }
         .task {
+            // Screenshots run in demo mode, where a permission prompt would cover the page.
+            if ProcessInfo.processInfo.arguments.contains("-demoData") {
+                listener.restore(heard: Array(0..<60), cursor: 60)
+                return
+            }
             let ok = await SpeechRecorder.requestPermissions()
             permitted = ok
             if ok { listener.start() }

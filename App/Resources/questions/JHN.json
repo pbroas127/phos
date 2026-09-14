@@ -112,6 +112,85 @@
      "q": "John the Baptizer said he had known Jesus well before he saw the Spirit come down and remain on him.",
      "answer": false,
      "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "In the beginning was the Word, and the Word was with God, and ____.",
+     "answer": "the Word was God",
+     "wrong": [
+      "the Word was light",
+      "the Word was life",
+      "God spoke the Word"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Andrew first tell his brother Simon?",
+     "options": [
+      "We have found the Messiah!",
+      "Come and hear John preach",
+      "The Lamb of God is here",
+      "Leave your nets and follow"
+     ],
+     "v": 41
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When pressed to say who he was, how did John describe himself?",
+     "options": [
+      "The voice of one crying in the wilderness",
+      "The friend of the bridegroom",
+      "A servant sent from Elijah",
+      "The last of the prophets"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus say about Nathanael as he was coming to him?",
+     "options": [
+      "An Israelite indeed, in whom is no deceit",
+      "A man who is not far from the Kingdom",
+      "A true son of Abraham",
+      "A faithful teacher of the law"
+     ],
+     "v": 47
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The Word became flesh and ____. We saw his glory.",
+     "answer": "lived among us",
+     "wrong": [
+      "walked on the earth",
+      "came to his own",
+      "dwelt in the temple"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "John told the priests and Levites that he was the prophet, but not Elijah.",
+     "answer": false,
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "About what time was it when the two disciples went and stayed with Jesus?",
+     "options": [
+      "About the tenth hour",
+      "About the third hour",
+      "About the sixth hour",
+      "Late in the night"
+     ],
+     "v": 39
     }
    ]
   },
@@ -226,6 +305,85 @@
      "q": "Jesus entrusted himself to the many in Jerusalem who believed because of his signs.",
      "answer": false,
      "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jesus' mother say to him when the wine ran out?",
+     "options": [
+      "They have no wine",
+      "Please bless the water",
+      "Send the servants to buy more",
+      "Show them who you are"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did his disciples respond after the sign at Cana?",
+     "options": [
+      "They believed in him",
+      "They were afraid and left",
+      "They told no one",
+      "They asked for another sign"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who did Jesus find in the temple along with the money changers?",
+     "options": [
+      "Those who sold oxen, sheep, and doves",
+      "Priests counting the offerings",
+      "Beggars sitting by the gate",
+      "Scribes arguing about the law"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said to those who sold doves, \"Take these things out of here! Don't make my Father's house ____!\"",
+     "answer": "a marketplace",
+     "wrong": [
+      "a den of thieves",
+      "a house of trade",
+      "a place of shame"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "After Jesus drove out the sellers, what did the Jews ask him?",
+     "options": [
+      "What sign do you show us?",
+      "Who gave you this temple?",
+      "Are you the Christ?",
+      "Why do you hate the priests?"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The disciples understood Jesus' saying about raising up the temple as soon as he said it.",
+     "answer": false,
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said to his mother, \"Woman, what does that have to do with you and me? ____.\"",
+     "answer": "My hour has not yet come",
+     "wrong": [
+      "Let the servants decide",
+      "The feast is not mine",
+      "Wait until the third day"
+     ],
+     "v": 4
     }
    ]
   },
@@ -340,6 +498,85 @@
      "q": "Nicodemus was a Sadducee and a ruler of the Jews.",
      "answer": false,
      "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For God so loved the world, that he gave ____, that whoever believes in him should not perish, but have eternal life.",
+     "answer": "his only born Son",
+     "wrong": [
+      "his holy law",
+      "his chosen prophets",
+      "his Spirit freely"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did God send his Son into the world?",
+     "options": [
+      "That the world should be saved through him",
+      "To judge the world for its sin",
+      "To rebuild the temple in Jerusalem",
+      "To restore the kingdom to Israel"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus compare everyone who is born of the Spirit to?",
+     "options": [
+      "The wind that blows where it wants",
+      "A seed that grows in the ground",
+      "A light set on a hill",
+      "A child born to a king"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When Nicodemus did not understand, what did Jesus call him?",
+     "options": [
+      "The teacher of Israel",
+      "A blind guide",
+      "A son of Abraham",
+      "A ruler of the synagogue"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"Unless one is born of ____, he can't enter into God's Kingdom.\"",
+     "answer": "water and Spirit",
+     "wrong": [
+      "faith and fire",
+      "God and man",
+      "light and truth"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "At the time Jesus was baptizing in Judea, John had already been thrown into prison.",
+     "answer": false,
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did John's disciples tell him about the one he had testified about?",
+     "options": [
+      "He baptizes, and everyone is coming to him",
+      "He has gone back to Galilee",
+      "He eats with tax collectors",
+      "He has called himself the Christ"
+     ],
+     "v": 26
     }
    ]
   },
@@ -454,6 +691,85 @@
      "q": "Many Samaritans believed because of the woman's word, and many more because of Jesus' own word.",
      "answer": true,
      "v": 41
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the woman say to the people when she went into the city?",
+     "options": [
+      "Come, see a man who told me everything I did",
+      "Come and drink the living water",
+      "A prophet is sitting by our well",
+      "A Jew has come to worship with us"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"God is spirit, and those who worship him must worship ____.\"",
+     "answer": "in spirit and truth",
+     "wrong": [
+      "in the holy temple",
+      "on this mountain",
+      "with pure hearts"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Jesus answer when the woman said that Messiah is coming?",
+     "options": [
+      "I am he, the one who speaks to you",
+      "He will come after the harvest",
+      "You will see him in Jerusalem",
+      "Ask your fathers who worshiped here"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the woman point out when Jesus spoke of living water?",
+     "options": [
+      "He had nothing to draw with, and the well was deep",
+      "The water in Jacob's well had dried up",
+      "Jews were not allowed to drink from it",
+      "Only the priests could draw that water"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The Samaritans told the woman, \"We have heard for ourselves, and know that this is indeed the Christ, ____.\"",
+     "answer": "the Savior of the world",
+     "wrong": [
+      "the King of Israel",
+      "the Son of David",
+      "the Prophet of God"
+     ],
+     "v": 42
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The nobleman's servants said the fever left his son at the seventh hour the day before.",
+     "answer": true,
+     "v": 52
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to this chapter, who was actually baptizing the new disciples?",
+     "options": [
+      "Jesus' disciples, not Jesus himself",
+      "Jesus himself",
+      "John and his disciples",
+      "The priests in Jerusalem"
+     ],
+     "v": 2
     }
    ]
   },
@@ -568,6 +884,85 @@
      "q": "Jesus said the Father judges everyone himself and has given no judgment to the Son.",
      "answer": false,
      "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jesus say to the healed man when he found him in the temple?",
+     "options": [
+      "Sin no more, so that nothing worse happens to you",
+      "Go and show yourself to the priests",
+      "Tell no one who made you well",
+      "Come and follow me to Galilee"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The healed man knew right away that it was Jesus who had made him well.",
+     "answer": false,
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to this chapter, what happened after an angel stirred up the water?",
+     "options": [
+      "The first to step in was healed",
+      "Everyone in the porches was healed",
+      "The water turned red for a day",
+      "The priests blessed those who entered"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus say testifies about him even more than John did?",
+     "options": [
+      "The works the Father gave him to accomplish",
+      "The crowds who follow him",
+      "The priests in the temple",
+      "The angels of heaven"
+     ],
+     "v": 36
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus answered them, \"My Father is still working, so ____.\"",
+     "answer": "I am working, too",
+     "wrong": [
+      "I rest on the Sabbath",
+      "I must obey him",
+      "the Son waits for him"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said he who hears his word and believes him who sent him has eternal life and has passed ____.",
+     "answer": "out of death into life",
+     "wrong": [
+      "beyond the reach of judgment",
+      "from darkness to light",
+      "into the Kingdom of God"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Jesus said those who have done good will come out of the tombs to what?",
+     "options": [
+      "The resurrection of life",
+      "A kingdom on the earth",
+      "A seat beside the prophets",
+      "The rest of the Sabbath"
+     ],
+     "v": 29
     }
    ]
   },
@@ -682,6 +1077,85 @@
      "q": "Jesus said it was Moses who gave their fathers the true bread out of heaven.",
      "answer": false,
      "v": 32
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the people say when they saw the sign of the loaves?",
+     "options": [
+      "This is truly the prophet who comes into the world",
+      "This man must be John risen from the dead",
+      "Surely Elijah has returned to us",
+      "Let us follow him to Jerusalem"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"I am ____ which came down out of heaven.\"",
+     "answer": "the living bread",
+     "wrong": [
+      "the true vine",
+      "the light of life",
+      "the manna of God"
+     ],
+     "v": 51
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Jesus say the crowd at Capernaum was seeking him?",
+     "options": [
+      "They ate of the loaves and were filled",
+      "They wanted to hear his teaching",
+      "They wanted him to heal their sick",
+      "They had seen him walk on the sea"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the Jews say when Jesus said he had come down out of heaven?",
+     "options": [
+      "Isn't this Jesus, the son of Joseph?",
+      "Isn't this the prophet from Nazareth?",
+      "Moses gave us bread from heaven",
+      "Only Elijah went up into heaven"
+     ],
+     "v": 42
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Many of his disciples said, \"This is a hard saying! ____?\"",
+     "answer": "Who can listen to it",
+     "wrong": [
+      "Who can believe such things",
+      "Why does he speak so",
+      "How can this be true"
+     ],
+     "v": 60
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When they received Jesus into the boat, it was immediately at the land where they were going.",
+     "answer": true,
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Jesus say to the twelve about one of them?",
+     "options": [
+      "One of you is a devil",
+      "One of you will be greatest",
+      "One of you will deny me",
+      "One of you will write these things"
+     ],
+     "v": 70
     }
    ]
   },
@@ -796,6 +1270,85 @@
      "q": "Some in the crowd objected that the Christ must come from Bethlehem, not from Galilee.",
      "answer": true,
      "v": 42
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jesus cry out on the last and greatest day of the feast?",
+     "options": [
+      "If anyone is thirsty, let him come to me and drink!",
+      "Destroy this temple and I will raise it!",
+      "Before Abraham was, I am!",
+      "Repent, for the Kingdom is at hand!"
+     ],
+     "v": 37
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When Jesus asked why they sought to kill him, the multitude answered, \"You have a demon!\"",
+     "answer": true,
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus point out that the Jews do on the Sabbath?",
+     "options": [
+      "Circumcise a boy",
+      "Lead their sheep to water",
+      "Offer the evening sacrifice",
+      "Carry their mats to the temple"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did some people of Jerusalem say about where the Christ would come from?",
+     "options": [
+      "No one will know where he comes from",
+      "He will come down out of heaven",
+      "He will come from Nazareth",
+      "He will appear in the temple"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus answered them, \"My teaching is not mine, but ____.\"",
+     "answer": "his who sent me",
+     "wrong": [
+      "the teaching of Moses",
+      "from the fathers",
+      "the word of the prophets"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The Pharisees told Nicodemus, \"Search and see that no prophet has arisen ____.\"",
+     "answer": "out of Galilee",
+     "wrong": [
+      "out of Nazareth",
+      "from the north",
+      "among the Samaritans"
+     ],
+     "v": 52
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "When Jesus said, \"You will seek me and won't find me,\" where did the Jews wonder he would go?",
+     "options": [
+      "To the Dispersion among the Greeks",
+      "Back to his home in Galilee",
+      "Into the wilderness like John",
+      "Up to heaven like Elijah"
+     ],
+     "v": 35
     }
    ]
   },
@@ -910,6 +1463,85 @@
      "q": "The Jews accused Jesus of being a Galilean who had a demon.",
      "answer": false,
      "v": 48
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jesus do when the Jews took up stones to throw at him?",
+     "options": [
+      "Hid himself and went out of the temple",
+      "Stood still and spoke to the crowd",
+      "Called down fire from heaven",
+      "Asked his disciples to protect him"
+     ],
+     "v": 59
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Jews said to Jesus, \"You are not yet fifty years old! Have you seen Abraham?\"",
+     "answer": true,
+     "v": 57
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Jesus said everyone who commits sin is what?",
+     "options": [
+      "The bondservant of sin",
+      "A child of darkness",
+      "A stranger to God",
+      "Guilty of the whole law"
+     ],
+     "v": 34
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus say Abraham rejoiced to see?",
+     "options": [
+      "Jesus' day",
+      "The promised land",
+      "The building of the temple",
+      "His son Isaac grown"
+     ],
+     "v": 56
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"If therefore the Son makes you free, ____.\"",
+     "answer": "you will be free indeed",
+     "wrong": [
+      "you will never be bound",
+      "you will live forever",
+      "no one can enslave you"
+     ],
+     "v": 36
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said to them, \"You are from beneath. ____. You are of this world.\"",
+     "answer": "I am from above",
+     "wrong": [
+      "I am the truth",
+      "I came to judge",
+      "I am not alone"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Jesus say is written in their law about testimony?",
+     "options": [
+      "The testimony of two people is valid",
+      "No one may testify about himself",
+      "A witness must be a priest",
+      "Testimony must be given in the temple"
+     ],
+     "v": 17
     }
    ]
   },
@@ -1024,6 +1656,85 @@
      "q": "When Jesus asked if he believed in the Son of God, the man immediately said, \"Lord, I believe!\"",
      "answer": false,
      "v": 36
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the disciples ask Jesus about the man blind from birth?",
+     "options": [
+      "Who sinned, this man or his parents?",
+      "Can you heal someone born blind?",
+      "Why does he beg on the Sabbath?",
+      "Should we give him money?"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"While I am in the world, I am ____.\"",
+     "answer": "the light of the world",
+     "wrong": [
+      "the bread of life",
+      "the good shepherd",
+      "the way to God"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the neighbors ask when they saw the man could see?",
+     "options": [
+      "Isn't this he who sat and begged?",
+      "Who gave him new eyes?",
+      "Did he wash in the Jordan?",
+      "Is he the son of a priest?"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When the people asked the healed man where Jesus was, what did he say?",
+     "options": [
+      "I don't know",
+      "He went to the temple",
+      "He is at the pool",
+      "He returned to Galilee"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The man said, \"God doesn't listen to sinners, but if anyone is a worshiper of God and ____, he listens to him.\"",
+     "answer": "does his will",
+     "wrong": [
+      "keeps the Sabbath",
+      "gives to the poor",
+      "prays in the temple"
+     ],
+     "v": 31
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The healed man told the Pharisees that many prophets had opened the eyes of people born blind.",
+     "answer": false,
+     "v": 32
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Jesus say he came into this world?",
+     "options": [
+      "For judgment, that those who don't see may see",
+      "To keep the law of Moses perfectly",
+      "To bring peace to the Pharisees",
+      "To rebuild the house of David"
+     ],
+     "v": 39
     }
    ]
   },
@@ -1138,6 +1849,85 @@
      "q": "Jesus said that others would take his life from him against his will.",
      "answer": false,
      "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"I am the good shepherd. The good shepherd ____ for the sheep.\"",
+     "answer": "lays down his life",
+     "wrong": [
+      "searches the hills",
+      "keeps watch at night",
+      "builds a strong fold"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What do the sheep do when a stranger calls them?",
+     "options": [
+      "Flee from him",
+      "Follow him slowly",
+      "Stand still and wait",
+      "Run to the gatekeeper"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does the shepherd call his own sheep?",
+     "options": [
+      "By name",
+      "With a horn",
+      "With a whistle",
+      "By tapping his staff"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "After Jesus spoke of laying down his life, what did many of the Jews say?",
+     "options": [
+      "He has a demon and is insane!",
+      "He is the prophet Moses spoke of",
+      "He speaks as no man has spoken",
+      "He must be the Christ"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"I give eternal life to them. They will never perish, and no one will ____.\"",
+     "answer": "snatch them out of my hand",
+     "wrong": [
+      "lead them astray again",
+      "take them from the fold",
+      "scatter them in the wilderness"
+     ],
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "It was summer when Jesus was walking in the temple in Solomon's porch.",
+     "answer": false,
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What words did Jesus quote as written in their law?",
+     "options": [
+      "I said, you are gods",
+      "The Lord is my shepherd",
+      "You shall not take the name of God in vain",
+      "Hear, O Israel, the Lord is one"
+     ],
+     "v": 34
     }
    ]
   },
@@ -1252,6 +2042,85 @@
      "q": "Lazarus came out bound hand and foot with wrappings, with a cloth around his face.",
      "answer": true,
      "v": 44
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"Our friend Lazarus has ____, but I am going so that I may awake him.\"",
+     "answer": "fallen asleep",
+     "wrong": [
+      "become very ill",
+      "gone to rest",
+      "been taken away"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What message did Martha and Mary send to Jesus?",
+     "options": [
+      "He for whom you have great affection is sick",
+      "Come quickly, our brother has died",
+      "The Jews are looking for you",
+      "Please stay away from Judea"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus say when he heard that Lazarus was sick?",
+     "options": [
+      "This sickness is not to death, but for God's glory",
+      "We must go to him at once",
+      "He will be healed before we arrive",
+      "Tell no one that he is sick"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Martha say she had come to believe about Jesus?",
+     "options": [
+      "He is the Christ, God's Son, who comes into the world",
+      "He is a great prophet like Elijah",
+      "He is a good teacher from God",
+      "He is the son of David who will reign"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "When Jesus wept, the Jews said, \"See how much ____!\"",
+     "answer": "affection he had for him",
+     "wrong": [
+      "he grieves for his friend",
+      "sorrow is in his heart",
+      "love he shows the sisters"
+     ],
+     "v": 36
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When Mary rose quickly and went out, the Jews followed her, thinking she was going to the tomb to weep.",
+     "answer": true,
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did some of the Jews ask when they saw Jesus weeping?",
+     "options": [
+      "Couldn't the man who healed the blind have kept him alive?",
+      "Why did he not come sooner?",
+      "Is he afraid of the chief priests?",
+      "Does he mean to raise him from the dead?"
+     ],
+     "v": 37
     }
    ]
   },
@@ -1366,6 +2235,85 @@
      "q": "At first the disciples did not understand the meaning of Jesus riding a young donkey, but remembered after he was glorified.",
      "answer": true,
      "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jesus say they would always have with them?",
+     "options": [
+      "The poor",
+      "The law",
+      "Their enemies",
+      "The temple"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"Unless a grain of wheat falls into the earth and dies, it remains by itself alone. But if it dies, ____.\"",
+     "answer": "it bears much fruit",
+     "wrong": [
+      "it grows into a tree",
+      "it rises again",
+      "it feeds many people"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was Martha doing at the supper in Bethany?",
+     "options": [
+      "Serving",
+      "Anointing Jesus' feet",
+      "Sitting at the table with Lazarus",
+      "Weeping by the door"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "After the crowd met Jesus, what did the Pharisees say among themselves?",
+     "options": [
+      "The world has gone after him",
+      "We must arrest him tonight",
+      "Lazarus must be put to death",
+      "The Romans will take our nation"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"I have come as a light into the world, that whoever believes in me ____.\"",
+     "answer": "may not remain in the darkness",
+     "wrong": [
+      "may walk in the day",
+      "may see the Father",
+      "may never stumble again"
+     ],
+     "v": 46
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "After speaking about walking in the light, Jesus departed and hid himself from them.",
+     "answer": true,
+     "v": 36
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whose words were fulfilled when the people did not believe despite so many signs?",
+     "options": [
+      "Isaiah the prophet",
+      "Jeremiah the prophet",
+      "Moses in the law",
+      "David in the Psalms"
+     ],
+     "v": 38
     }
    ]
   },

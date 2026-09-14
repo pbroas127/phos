@@ -9,7 +9,14 @@
 {"t":"blank","d":3,"q":"Ruth said, \"May the LORD do so to me, and more also, if anything but ____.\"","answer":"death parts you and me","wrong":["famine drives me away","my own people call me","another husband takes me"],"v":17},
 {"t":"order","d":2,"items":["Elimelech dies in Moab","Mahlon and Chilion both die","Orpah returns to her people","Naomi and Ruth arrive in Bethlehem"],"v":3},
 {"t":"tf","d":1,"q":"Naomi and Ruth arrived in Bethlehem at the beginning of barley harvest.","answer":true,"v":22},
-{"t":"tf","d":3,"q":"Naomi's family lived in Moab about twenty years before her sons died.","answer":false,"v":4}
+{"t":"tf","d":3,"q":"Naomi's family lived in Moab about twenty years before her sons died.","answer":false,"v":4},
+{"t":"choice","d":1,"q":"Where did Naomi first tell her daughters-in-law to return?","options":["Each to her mother's house","Each to her father's fields","To the priests of Moab","To the graves of their husbands"],"v":8},
+{"t":"choice","d":2,"q":"How did the people of Bethlehem react when Naomi arrived?","options":["The whole city was excited and asked if it was her","The elders came out to the gate to greet her","No one in the city recognized her","Her relatives prepared a feast for her"],"v":19},
+{"t":"choice","d":3,"q":"Naomi said Ruth's sister-in-law had gone back to her people and to what?","options":["Her god","Her father's house","Her husband's grave","Her own land"],"v":15},
+{"t":"blank","d":2,"q":"Naomi said, \"May the LORD deal kindly with you, as you have dealt ____.\"","answer":"with the dead and with me","wrong":["with your own mothers","with my two sons","with all of my house"],"v":8},
+{"t":"blank","d":3,"q":"Naomi said, \"It grieves me seriously for your sakes, for ____ has gone out against me.\"","answer":"the LORD's hand","wrong":["the LORD's wrath","an evil wind","my own sin"],"v":13},
+{"t":"tf","d":1,"q":"At first both daughters-in-law said they would return with Naomi to her people.","answer":true,"v":10},
+{"t":"tf","d":2,"q":"Naomi's husband died after both of her sons had died.","answer":false,"v":3}
 ]},
 "2":{"keyVerse":12,"questions":[
 {"t":"choice","d":1,"q":"Whose field did Ruth happen to glean in?","options":["Boaz, of the family of Elimelech","The near kinsman's field","The elders of Bethlehem","A field belonging to Naomi"],"v":3},
@@ -21,7 +28,14 @@
 {"t":"blank","d":3,"q":"Naomi said the LORD \"has not abandoned his kindness to ____.\"","answer":"the living and to the dead","wrong":["the widow and the stranger","the poor of his people","the house of Elimelech"],"v":20},
 {"t":"order","d":2,"items":["Ruth asks Naomi to let her glean","Boaz greets his reapers","Ruth eats with the reapers","Ruth brings about an ephah of barley home"],"v":2},
 {"t":"tf","d":1,"q":"Boaz told Ruth to go glean in other fields as well as his.","answer":false,"v":8},
-{"t":"tf","d":3,"q":"Ruth kept gleaning in Boaz's fields until the end of both barley and wheat harvest.","answer":true,"v":23}
+{"t":"tf","d":3,"q":"Ruth kept gleaning in Boaz's fields until the end of both barley and wheat harvest.","answer":true,"v":23},
+{"t":"choice","d":1,"q":"Boaz told Ruth to stay close to whom while she gleaned?","options":["His maidens","The servant over the reapers","Naomi's relatives","The elders' wives"],"v":8},
+{"t":"choice","d":2,"q":"How did Boaz greet his reapers when he came from Bethlehem?","options":["\"May the LORD be with you\"","\"Peace be on this field\"","\"Work well until evening\"","\"Blessed are you of God\""],"v":4},
+{"t":"choice","d":3,"q":"What did Ruth do with the food left over after she was satisfied?","options":["Brought it home and gave it to Naomi","Gave it to Boaz's maidens","Left it in the field for the poor","Saved it for the next day's meal"],"v":18},
+{"t":"blank","d":2,"q":"Boaz said, \"Haven't I commanded the young men ____?\"","answer":"not to touch you","wrong":["to leave you extra grain","to let you drink first","to watch over you"],"v":9},
+{"t":"blank","d":2,"q":"Boaz said Ruth had left \"your father, your mother, and ____.\"","answer":"the land of your birth","wrong":["the gods of Moab","your husband's grave","your sister-in-law"],"v":11},
+{"t":"tf","d":1,"q":"Naomi told Ruth that Boaz was one of their near kinsmen.","answer":true,"v":20},
+{"t":"tf","d":3,"q":"The servant said Ruth had worked since morning without resting at all.","answer":false,"v":7}
 ]},
 "3":{"keyVerse":11,"questions":[
 {"t":"choice","d":1,"q":"Where did Naomi send Ruth to find Boaz at night?","options":["The threshing floor","The city gate","His house in Bethlehem","The edge of his field"],"v":3},
@@ -33,7 +47,14 @@
 {"t":"blank","d":3,"q":"Boaz said, \"You have shown more kindness in the latter end than at the beginning, because you didn't ____.\"","answer":"follow young men","wrong":["return to Moab","leave your mother-in-law","glean in another field"],"v":10},
 {"t":"order","d":2,"items":["Ruth washes and goes to the threshing floor","Boaz is startled at midnight","Boaz measures barley into her mantle","Naomi tells Ruth to wait"],"v":3},
 {"t":"tf","d":1,"q":"Ruth told Naomi, \"All that you say, I will do.\"","answer":true,"v":5},
-{"t":"tf","d":3,"q":"Ruth left the threshing floor at noon so that no one would see her.","answer":false,"v":14}
+{"t":"tf","d":3,"q":"Ruth left the threshing floor at noon so that no one would see her.","answer":false,"v":14},
+{"t":"choice","d":1,"q":"What did Naomi say she wanted to seek for Ruth?","options":["Rest, that it may be well with her","A field of her own to glean","A safe way back to Moab","Enough food for the winter"],"v":1},
+{"t":"choice","d":2,"q":"Where did Boaz lie down after he had eaten and drunk?","options":["At the end of the heap of grain","In his house in the city","At the city gate","Beside his reapers in the field"],"v":7},
+{"t":"choice","d":3,"q":"What oath did Boaz use when promising to do the kinsman's duty?","options":["As the LORD lives","By the elders of the city","By the house of his father","By the God of Rachel"],"v":13},
+{"t":"blank","d":2,"q":"Naomi said, \"The man will not rest until ____.\"","answer":"he has settled this today","wrong":["he has spoken to Naomi","he has seen the elders","he has redeemed the land"],"v":18},
+{"t":"blank","d":3,"q":"Naomi said, \"Wash yourself, anoint yourself, ____, and go down to the threshing floor.\"","answer":"get dressed","wrong":["cover your head","take your mantle","bring the barley"],"v":3},
+{"t":"tf","d":2,"q":"Boaz wanted the whole city to know that Ruth had come to the threshing floor.","answer":false,"v":14},
+{"t":"tf","d":1,"q":"When Boaz asked who she was, Ruth called herself his servant.","answer":true,"v":9}
 ]},
 "4":{"keyVerse":14,"questions":[
 {"t":"choice","d":1,"q":"Where did Boaz go to settle the matter with the near kinsman?","options":["The city gate","The threshing floor","The house of Naomi","The tabernacle"],"v":1},
@@ -45,6 +66,13 @@
 {"t":"blank","d":3,"q":"Boaz married Ruth \"to raise up ____ on his inheritance.\"","answer":"the name of the dead","wrong":["a son for Naomi","the house of Elimelech","an heir for the elders"],"v":10},
 {"t":"order","d":2,"items":["Boaz gathers ten elders","The near kinsman takes off his sandal","Boaz marries Ruth","Naomi becomes nurse to the child"],"v":2},
 {"t":"tf","d":1,"q":"The chapter says Obed became the father of Jesse, the father of David.","answer":true,"v":17},
-{"t":"tf","d":3,"q":"Naomi herself gave the baby his name.","answer":false,"v":17}
+{"t":"tf","d":3,"q":"Naomi herself gave the baby his name.","answer":false,"v":17},
+{"t":"choice","d":2,"q":"What did the near kinsman first say when Boaz told him about Elimelech's land?","options":["\"I will redeem it\"","\"I can't afford it\"","\"Let the elders decide\"","\"Buy it for yourself\""],"v":4},
+{"t":"choice","d":1,"q":"The women blessed the LORD for not leaving Naomi without what?","options":["A near kinsman","A field of her own","A husband in her old age","Friends in Bethlehem"],"v":14},
+{"t":"choice","d":3,"q":"The people wished for Boaz's house to be like the house of whom?","options":["Perez, whom Tamar bore to Judah","Isaac, whom Sarah bore to Abraham","Joseph, the son of Rachel","Levi, the son of Leah"],"v":12},
+{"t":"blank","d":2,"q":"The women said the child \"shall be to you a restorer of life and ____.\"","answer":"sustain you in your old age","wrong":["carry on your husband's name","comfort you in your sorrow","restore your husband's land"],"v":15},
+{"t":"blank","d":3,"q":"The people said, \"Treat you worthily in Ephrathah, and ____.\"","answer":"be famous in Bethlehem","wrong":["be blessed in Judah","be honored at the gate","be great in Israel"],"v":11},
+{"t":"tf","d":2,"q":"Naomi was selling the parcel of land that had belonged to Elimelech.","answer":true,"v":3},
+{"t":"tf","d":1,"q":"Boaz made his agreement in private, with no witnesses present.","answer":false,"v":9}
 ]}
 }}

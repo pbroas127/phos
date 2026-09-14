@@ -112,6 +112,80 @@
      "q": "Paul says Christ is far above every name, not only in this age but also in the one to come.",
      "answer": true,
      "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say God put in subjection under Christ's feet?",
+     "options": [
+      "All things",
+      "His enemies only",
+      "The nations of the earth",
+      "The fallen angels"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul say God purposed for the fullness of the times?",
+     "options": [
+      "To sum up all things in Christ",
+      "To judge the living and the dead",
+      "To restore the kingdom to Israel",
+      "To make a new law for the nations"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul pray the Father of glory may give them?",
+     "options": [
+      "A spirit of wisdom and revelation",
+      "A spirit of power and boldness",
+      "A heart of peace and patience",
+      "The gifts of healing and prophecy"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "To the praise of the glory of his grace, by which he freely gave us favor in ____.",
+     "answer": "the Beloved",
+     "wrong": [
+      "his Son",
+      "the Holy One",
+      "his Kingdom"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "And what is the exceeding greatness of ____ toward us who believe.",
+     "answer": "his power",
+     "wrong": [
+      "his love",
+      "his mercy",
+      "his patience"
+     ],
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul writes this letter together with Timothy.",
+     "answer": false,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says believers were assigned an inheritance in Christ.",
+     "answer": true,
+     "v": 11
     }
    ]
   },
@@ -226,6 +300,80 @@
      "q": "Paul says Christ created in himself one new man out of the two, making peace.",
      "answer": true,
      "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why does Paul say salvation is not of works?",
+     "options": [
+      "So that no one would boast",
+      "So that the law would be honored",
+      "So that Israel would be humbled",
+      "So that we would work harder"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say we all were by nature before God made us alive?",
+     "options": [
+      "Children of wrath",
+      "Children of light",
+      "Servants of the law",
+      "Friends of the world"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does Paul describe the Gentiles at that time, apart from Christ?",
+     "options": [
+      "Having no hope and without God in the world",
+      "Having the law written on their hearts",
+      "Having a covenant of their own with God",
+      "Having priests who spoke for God"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For through him we both have our access in ____ to the Father.",
+     "answer": "one Spirit",
+     "wrong": [
+      "one faith",
+      "one hope",
+      "one baptism"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "God raised us up with him, and made us to sit with him ____ in Christ Jesus.",
+     "answer": "in the heavenly places",
+     "wrong": [
+      "at his right hand",
+      "on his holy mountain",
+      "in the courts of God"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says Christ reconciled both Jews and Gentiles in one body to God through the cross.",
+     "answer": true,
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says God's household is built on the foundation of the priests and prophets.",
+     "answer": false,
+     "v": 20
     }
    ]
   },
@@ -340,6 +488,80 @@
      "q": "Paul says that in Christ we have boldness and access in confidence through our faith.",
      "answer": true,
      "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say God is able to do?",
+     "options": [
+      "Far more abundantly than all we ask or think",
+      "Only what we ask him in faith",
+      "Whatever the apostles command",
+      "All that the law requires"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To whom does Paul say the mystery has now been revealed in the Spirit?",
+     "options": [
+      "His holy apostles and prophets",
+      "The elders in Jerusalem",
+      "The angels of heaven",
+      "The kings of the earth"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul say his troubles on their behalf are?",
+     "options": [
+      "Your glory",
+      "Your shame",
+      "His reward",
+      "A warning to you"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "That you may be strengthened with power through his Spirit in ____.",
+     "answer": "the inner person",
+     "wrong": [
+      "your whole body",
+      "the day of trouble",
+      "every good work"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I was made a servant according to the gift of that grace of God which was given me according to ____.",
+     "answer": "the working of his power",
+     "wrong": [
+      "the choice of the apostles",
+      "the riches of his mercy",
+      "the promise to Abraham"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul gives glory to God in the assembly and in Christ Jesus to all generations.",
+     "answer": true,
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says the Ephesians would need to visit him to perceive his understanding of the mystery.",
+     "answer": false,
+     "v": 4
     }
    ]
   },
@@ -454,6 +676,80 @@
      "q": "Paul says the new man has been created in the likeness of Adam.",
      "answer": false,
      "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul tell them not to give place to?",
+     "options": [
+      "The devil",
+      "Idleness",
+      "Fear",
+      "Pride"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul urge them to be eager to keep in the bond of peace?",
+     "options": [
+      "The unity of the Spirit",
+      "The traditions of the elders",
+      "The purity of the law",
+      "The fellowship of the table"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Before he ascended, where does Paul say Christ first descended?",
+     "options": [
+      "Into the lower parts of the earth",
+      "Into the waters of the Jordan",
+      "Into the city of Jerusalem",
+      "Into the wilderness to be tested"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Be kind to one another, tender hearted, forgiving each other, just as ____ forgave you.",
+     "answer": "God also in Christ",
+     "wrong": [
+      "the Lord Jesus",
+      "your Father in heaven",
+      "Christ on the cross"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Let no corrupt speech proceed out of your mouth, but only what is good for building others up, that it may ____.",
+     "answer": "give grace to those who hear",
+     "wrong": [
+      "bring peace to all men",
+      "teach the young and simple",
+      "turn sinners from their ways"
+     ],
+     "v": 29
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul tells them to put away all bitterness, wrath, anger, outcry, and slander.",
+     "answer": true,
+     "v": 31
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul writes this chapter as a free man traveling among the assemblies.",
+     "answer": false,
+     "v": 1
     }
    ]
   },
@@ -568,6 +864,80 @@
      "q": "Paul says Christ cleansed the assembly by the washing of water with the law.",
      "answer": false,
      "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "According to the words Paul quotes about marriage, what will the two become?",
+     "options": [
+      "One flesh",
+      "One household",
+      "One heart",
+      "One people"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say should replace filthiness, foolish talking, and jesting?",
+     "options": [
+      "Giving of thanks",
+      "Silence",
+      "Reading the Scriptures",
+      "Words of wisdom"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How does Paul say Christ will present the assembly to himself?",
+     "options": [
+      "Without spot or wrinkle",
+      "Clothed in fine linen",
+      "Crowned with gold",
+      "Seated on a throne"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Walk in love, even as Christ also loved us and gave himself up for us, ____ to God.",
+     "answer": "an offering and a sacrifice",
+     "wrong": [
+      "a ransom and a gift",
+      "a servant and a priest",
+      "a lamb and a covering"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For the fruit of the Spirit is in all ____.",
+     "answer": "goodness and righteousness and truth",
+     "wrong": [
+      "love and joy and peace",
+      "patience and kindness and faith",
+      "wisdom and knowledge and power"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul tells them not to be foolish, but to understand what the will of the Lord is.",
+     "answer": true,
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says husbands ought to love their wives as they love their own parents.",
+     "answer": false,
+     "v": 28
     }
    ]
   },
@@ -682,6 +1052,80 @@
      "q": "Paul says servants should work hardest when their masters' eyes are on them.",
      "answer": false,
      "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say the sword of the Spirit is?",
+     "options": [
+      "The word of God",
+      "The name of Jesus",
+      "Prayer offered in faith",
+      "The law of Moses"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does Paul first tell them to put on the whole armor of God?",
+     "options": [
+      "To stand against the wiles of the devil",
+      "To conquer the Gentile nations",
+      "To defend the city of Ephesus",
+      "To prove they are true soldiers"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul say their feet should be fitted with?",
+     "options": [
+      "The preparation of the Good News of peace",
+      "The sandals of the holy prophets",
+      "The readiness to flee from temptation",
+      "The path of righteousness"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Finally, be strong in the Lord and in ____.",
+     "answer": "the strength of his might",
+     "wrong": [
+      "the power of his Spirit",
+      "the grace of his love",
+      "the hope of his calling"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Fathers, nurture your children in ____ of the Lord.",
+     "answer": "the discipline and instruction",
+     "wrong": [
+      "the fear and knowledge",
+      "the ways and teaching",
+      "the love and mercy"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says only those who are free will receive good again from the Lord.",
+     "answer": false,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul closes by wishing grace to all who love our Lord Jesus Christ with incorruptible love.",
+     "answer": true,
+     "v": 24
     }
    ]
   }

@@ -112,6 +112,85 @@
      "q": "Paul says the Good News is for the Greek first, and also for the Jew.",
      "answer": false,
      "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "According to the flesh, God's Son was born of whose offspring?",
+     "options": [
+      "David",
+      "Abraham",
+      "Aaron",
+      "Moses"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why does Paul long to see the believers in Rome?",
+     "options": [
+      "To impart some spiritual gift to them",
+      "To collect an offering for Jerusalem",
+      "To settle a dispute among them",
+      "To appoint elders over them"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What happened to the senseless heart of those who did not glorify God?",
+     "options": [
+      "It was darkened",
+      "It was hardened",
+      "It was broken",
+      "It was lifted up"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "That I with you may be encouraged in you, each of us by ____, both yours and mine.",
+     "answer": "the other's faith",
+     "wrong": [
+      "the other's love",
+      "the other's prayers",
+      "the other's hope"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Even as they refused to have God in their knowledge, God gave them up to ____.",
+     "answer": "a reprobate mind",
+     "wrong": [
+      "a darkened heart",
+      "their own ways",
+      "a spirit of stupor"
+     ],
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says Jesus was declared to be the Son of God with power by his baptism.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides doing such things, what else does Paul say these people do?",
+     "options": [
+      "Approve of others who practice them",
+      "Hide them from their neighbors",
+      "Blame their parents for them",
+      "Ask the priests to forgive them"
+     ],
+     "v": 32
     }
    ]
   },
@@ -226,6 +305,80 @@
      "q": "Paul says Gentiles without the law show the work of the law written on tablets of stone.",
      "answer": false,
      "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does God give to those who patiently keep doing good and seek glory?",
+     "options": [
+      "Eternal life",
+      "Earthly riches",
+      "A long life on earth",
+      "A seat among the elders"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say a hard and unrepentant heart is storing up?",
+     "options": [
+      "Wrath for the day of wrath",
+      "Treasure that will rust",
+      "Shame before other people",
+      "Sorrow for old age"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Paul asks those who abhor idols whether they do what?",
+     "options": [
+      "Rob temples",
+      "Bow to images",
+      "Eat meat offered to idols",
+      "Visit pagan shrines"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "In the day when God will judge ____, according to my Good News, by Jesus Christ.",
+     "answer": "the secrets of men",
+     "wrong": [
+      "the nations of the earth",
+      "the living and the dead",
+      "the hearts of kings"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "A corrector of the foolish, ____, having in the law the form of knowledge and of the truth.",
+     "answer": "a teacher of babies",
+     "wrong": [
+      "a shepherd of the lost",
+      "a helper of the weak",
+      "a judge of the wicked"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says glory, honor, and peace go to everyone who does good, the Jew first and also the Greek.",
+     "answer": true,
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says circumcision profits nothing, even for someone who does the law.",
+     "answer": false,
+     "v": 25
     }
    ]
   },
@@ -340,6 +493,85 @@
      "q": "Paul says the Jews are better than the Greeks because they are not under sin.",
      "answer": false,
      "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say the unbelief of some cannot nullify?",
+     "options": [
+      "The faithfulness of God",
+      "The promises to Abraham",
+      "The law of Moses",
+      "The hope of Israel"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to the Scripture Paul quotes, what is under their lips?",
+     "options": [
+      "The poison of vipers",
+      "Hidden deceit",
+      "Words of flattery",
+      "Snares for the righteous"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul call Christ Jesus, whom God sent through faith in his blood?",
+     "options": [
+      "An atoning sacrifice",
+      "A new lawgiver",
+      "A priest forever",
+      "A prophet like Moses"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "May it never be! Yes, let God be found true, but ____.",
+     "answer": "every man a liar",
+     "wrong": [
+      "every heart deceived",
+      "every tongue silent",
+      "every nation judged"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"Their feet are swift ____. Destruction and misery are in their ways.\"",
+     "answer": "to shed blood",
+     "wrong": [
+      "to run to evil",
+      "to flee from God",
+      "to seek their gain"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says the law speaks to those under the law so that every mouth may be closed.",
+     "answer": true,
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What testifies to the righteousness of God that is revealed apart from the law?",
+     "options": [
+      "The law and the prophets",
+      "The apostles and elders",
+      "Angels from heaven",
+      "Signs and wonders"
+     ],
+     "v": 21
     }
    ]
   },
@@ -454,6 +686,85 @@
      "q": "Paul says righteousness was credited to Abraham not for his sake alone, but for ours also.",
      "answer": true,
      "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "About how old was Abraham when Paul describes his body as worn out?",
+     "options": [
+      "About a hundred years old",
+      "About seventy five years old",
+      "About ninety years old",
+      "About one hundred twenty years old"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How does Paul describe the sign of circumcision that Abraham received?",
+     "options": [
+      "A seal of the righteousness of his faith",
+      "The source of his righteousness",
+      "A reward for his obedience",
+      "A mark that made him an heir"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was promised to Abraham and to his offspring?",
+     "options": [
+      "That he would be heir of the world",
+      "That he would rule over Egypt",
+      "That he would never see death",
+      "That he would build God's house"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Blessed is the man whom the Lord will ____.",
+     "answer": "by no means charge with sin",
+     "wrong": [
+      "never cast away from him",
+      "lead in paths of righteousness",
+      "surely reward in heaven"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Against hope, Abraham ____ believed, to the end that he might become a father of many nations.",
+     "answer": "in hope",
+     "wrong": [
+      "in faith",
+      "in fear",
+      "in silence"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says that if those who are of the law are heirs, faith is made stronger.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom does Paul say God justifies when a person believes in him?",
+     "options": [
+      "The ungodly",
+      "The circumcised",
+      "The obedient",
+      "The wise"
+     ],
+     "v": 5
     }
    ]
   },
@@ -568,6 +879,80 @@
      "q": "Paul says sin is charged in full even when there is no law.",
      "answer": false,
      "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Through what does Paul say sin entered into the world?",
+     "options": [
+      "One man",
+      "The serpent",
+      "The law",
+      "The nations"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Being justified by his blood, what will we be saved from?",
+     "options": [
+      "God's wrath",
+      "The power of the grave",
+      "The curse of the law",
+      "The hand of our enemies"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Paul says Adam is a foreshadowing of whom?",
+     "options": [
+      "Him who was to come",
+      "Moses the lawgiver",
+      "Noah the preacher",
+      "Abraham our father"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "We rejoice in ____ of God.",
+     "answer": "hope of the glory",
+     "wrong": [
+      "the love and mercy",
+      "the peace and power",
+      "the wisdom and grace"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "We also rejoice in God through our Lord Jesus Christ, through whom we have now received ____.",
+     "answer": "the reconciliation",
+     "wrong": [
+      "the promised Spirit",
+      "eternal redemption",
+      "the adoption"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says the free gift is just like the trespass.",
+     "answer": false,
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says grace reigns through righteousness to eternal life through Jesus Christ.",
+     "answer": true,
+     "v": 21
     }
    ]
   },
@@ -682,6 +1067,80 @@
      "q": "Paul says he speaks in human terms because of the weakness of their flesh.",
      "answer": true,
      "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Paul asks how those who died to sin could do what?",
+     "options": [
+      "Live in it any longer",
+      "Be judged by the law",
+      "Fear death again",
+      "Return to their old teachers"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Paul thanks God that the believers became obedient from the heart to what?",
+     "options": [
+      "The form of teaching delivered to them",
+      "The traditions of the elders",
+      "The commands of the rulers",
+      "The customs of their fathers"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why was our old man crucified with him?",
+     "options": [
+      "That the body of sin might be done away with",
+      "That we might keep the law perfectly",
+      "That we might never suffer again",
+      "That we might become teachers of others"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You are the servants of ____, whether of sin to death, or of obedience to righteousness.",
+     "answer": "whomever you obey",
+     "wrong": [
+      "whatever you desire",
+      "whoever you fear",
+      "whatever you love"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For the death that he died, he died to sin ____; but the life that he lives, he lives to God.",
+     "answer": "one time",
+     "wrong": [
+      "for all people",
+      "on the cross",
+      "without blame"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says that if we died with Christ, we believe we will also live with him.",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says that when they were servants of sin, they were free from death.",
+     "answer": false,
+     "v": 20
     }
    ]
   },
@@ -796,6 +1255,85 @@
      "q": "Paul says that apart from the law, sin is alive and strong.",
      "answer": false,
      "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why were believers made dead to the law through the body of Christ?",
+     "options": [
+      "To be joined to him who was raised",
+      "To be free to live as they please",
+      "To keep the law more perfectly",
+      "To become teachers of the law"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say sin did to him through the commandment?",
+     "options": [
+      "Deceived him and killed him",
+      "Made him proud of his works",
+      "Hid itself from his sight",
+      "Gave him peace for a time"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul see warring against the law of his mind?",
+     "options": [
+      "A different law in his members",
+      "The rulers of this age",
+      "The law of Moses",
+      "The traditions of his fathers"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say dwells in his flesh?",
+     "options": [
+      "No good thing",
+      "The Spirit of God",
+      "A love for the law",
+      "A desire to please God"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The commandment which was for life, this I found to be ____.",
+     "answer": "for death",
+     "wrong": [
+      "too heavy",
+      "for judgment",
+      "a burden"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I was alive apart from the law once, but when the commandment came, ____.",
+     "answer": "sin revived and I died",
+     "wrong": [
+      "I learned to obey",
+      "my heart was troubled",
+      "I knew my weakness"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says that with his mind he serves God's law, but with the flesh sin's law.",
+     "answer": true,
+     "v": 25
     }
    ]
   },
@@ -910,6 +1448,85 @@
      "q": "Paul says the mind of the flesh is life and peace.",
      "answer": false,
      "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "For whom does Paul say all things work together for good?",
+     "options": [
+      "Those who love God",
+      "Those who keep the law",
+      "All people everywhere",
+      "Those who give generously"
+     ],
+     "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who does Paul say are children of God?",
+     "options": [
+      "Those led by the Spirit of God",
+      "All descendants of Abraham",
+      "Those who keep the Sabbath",
+      "Those baptized by the apostles"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Those God foreknew were predestined to what?",
+     "options": [
+      "To be conformed to the image of his Son",
+      "To rule over the nations",
+      "To keep the law perfectly",
+      "To escape all suffering"
+     ],
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where is the risen Christ who makes intercession for us?",
+     "options": [
+      "At the right hand of God",
+      "Among the angels in heaven",
+      "In the temple in Jerusalem",
+      "Before the throne of David"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He who didn't spare ____, but delivered him up for us all, how would he not also with him freely give us all things?",
+     "answer": "his own Son",
+     "wrong": [
+      "his holy angels",
+      "his chosen people",
+      "his beloved servant"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For your sake we are killed all day long. We were accounted as ____.",
+     "answer": "sheep for the slaughter",
+     "wrong": [
+      "lambs among wolves",
+      "dust before the wind",
+      "strangers in the land"
+     ],
+     "v": 36
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says those who are in the flesh can please God.",
+     "answer": false,
+     "v": 8
     }
    ]
   },
@@ -1024,6 +1641,85 @@
      "q": "Paul quotes Isaiah as saying that all of Israel, numerous as the sand, will be saved.",
      "answer": false,
      "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What word of promise does Paul quote about Sarah?",
+     "options": [
+      "At the appointed time Sarah will have a son",
+      "Sarah will be a mother of kings",
+      "Sarah will laugh for joy in her old age",
+      "Sarah will see her children's children"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Isaiah says that without a seed left, we would have become like which cities?",
+     "options": [
+      "Sodom and Gomorrah",
+      "Tyre and Sidon",
+      "Babylon and Nineveh",
+      "Jericho and Ai"
+     ],
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to the Scripture Paul quotes, what does God lay in Zion?",
+     "options": [
+      "A stumbling stone and a rock of offense",
+      "A cornerstone for a new temple",
+      "A throne for the son of David",
+      "A foundation of precious gold"
+     ],
+     "v": 33
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who does Paul say are counted as heirs?",
+     "options": [
+      "The children of the promise",
+      "The children of the flesh",
+      "The firstborn sons",
+      "Those who keep the law"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "So then it is not of him who wills, nor of him who runs, but of ____.",
+     "answer": "God who has mercy",
+     "wrong": [
+      "him who waits patiently",
+      "him who believes",
+      "the Lord who judges"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "So then, he has mercy on whom he desires, and ____ whom he desires.",
+     "answer": "he hardens",
+     "wrong": [
+      "he judges",
+      "he rejects",
+      "he humbles"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says Rebekah conceived her children by Abraham.",
+     "answer": false,
+     "v": 10
     }
    ]
   },
@@ -1138,6 +1834,85 @@
      "q": "Paul quotes Moses as saying, \"Lord, who has believed our report?\"",
      "answer": false,
      "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "According to the Scripture Paul quotes, who will be saved?",
+     "options": [
+      "Whoever calls on the name of the Lord",
+      "Whoever is born of Abraham",
+      "Whoever keeps the whole law",
+      "Whoever gives to the poor"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say Israel was seeking to establish?",
+     "options": [
+      "Their own righteousness",
+      "A kingdom in Jerusalem",
+      "A new temple",
+      "Peace with the Gentiles"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How does God describe Israel, to whom he stretched out his hands all day long?",
+     "options": [
+      "A disobedient and contrary people",
+      "A proud and stubborn nation",
+      "A weary and scattered flock",
+      "A foolish and blind people"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But what does it say? \"The word is near you, in your mouth and ____;\" that is, the word of faith which we preach.",
+     "answer": "in your heart",
+     "wrong": [
+      "in your hands",
+      "in your house",
+      "in your mind"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Their sound went out into all the earth, their words ____.",
+     "answer": "to the ends of the world",
+     "wrong": [
+      "to every nation under heaven",
+      "to the islands of the sea",
+      "to the kings of the earth"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says Moses writes that the one who does the righteousness of the law will live by it.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the Scripture say about whoever believes in him?",
+     "options": [
+      "He will not be disappointed",
+      "He will never suffer",
+      "He will become rich",
+      "He will see visions"
+     ],
+     "v": 11
     }
    ]
   },
@@ -1252,6 +2027,85 @@
      "q": "Paul says that since God spared the natural branches, he will surely spare the grafted ones.",
      "answer": false,
      "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say about the gifts and the calling of God?",
+     "options": [
+      "They are irrevocable",
+      "They depend on our works",
+      "They were given only to Israel",
+      "They fade away with time"
+     ],
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Elijah complain that Israel had done?",
+     "options": [
+      "Killed the prophets and broken down the altars",
+      "Worshiped a golden calf in the desert",
+      "Refused to rebuild the temple",
+      "Married the daughters of the nations"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to what is written, what did God give to Israel?",
+     "options": [
+      "A spirit of stupor",
+      "A heart of stone",
+      "A cloud of darkness",
+      "A cup of wrath"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "According to the Scripture Paul quotes, who will come out of Zion?",
+     "options": [
+      "The Deliverer",
+      "The lawgiver",
+      "A new high priest",
+      "The prophet Elijah"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Oh the depth of the riches both of ____ of God!",
+     "answer": "the wisdom and the knowledge",
+     "wrong": [
+      "the mercy and the patience",
+      "the power and the glory",
+      "the love and the kindness"
+     ],
+     "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "And if by grace, then ____; otherwise grace is no longer grace.",
+     "answer": "it is no longer of works",
+     "wrong": [
+      "it is freely given to all",
+      "it cannot be taken away",
+      "it is given to the humble"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says God has bound all to disobedience, that he might condemn all.",
+     "answer": false,
+     "v": 32
     }
    ]
   },
@@ -1366,6 +2220,85 @@
      "q": "Paul tells believers to set their minds on high things rather than associate with the humble.",
      "answer": false,
      "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say love should be without?",
+     "options": [
+      "Hypocrisy",
+      "Fear",
+      "Limits",
+      "Anger"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul warn everyone not to do?",
+     "options": [
+      "Think of themselves more highly than they ought",
+      "Think of themselves as sinners",
+      "Compare themselves with the apostles",
+      "Doubt their calling from God"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "According to what should those with prophecy prophesy?",
+     "options": [
+      "The proportion of their faith",
+      "The words of the elders",
+      "The leading of the apostles",
+      "The visions they receive"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Rejoicing in hope, ____, continuing steadfastly in prayer.",
+     "answer": "enduring in troubles",
+     "wrong": [
+      "patient in affliction",
+      "trusting in God",
+      "faithful in service"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Not lagging in diligence, ____, serving the Lord.",
+     "answer": "fervent in spirit",
+     "wrong": [
+      "faithful in prayer",
+      "humble in heart",
+      "steadfast in hope"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul tells believers to prefer one another in honor.",
+     "answer": true,
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Along with contributing to the needs of the saints, what does Paul say to be given to?",
+     "options": [
+      "Hospitality",
+      "Fasting",
+      "Long prayers",
+      "Study of the law"
+     ],
+     "v": 13
     }
    ]
   },
@@ -1480,6 +2413,85 @@
      "q": "Paul says to be in subjection only because of the wrath, not for conscience' sake.",
      "answer": false,
      "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say to do if you want to have no fear of the authority?",
+     "options": [
+      "Do what is good",
+      "Pay extra taxes",
+      "Stay away from rulers",
+      "Keep silent before them"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to Paul, what does love not do?",
+     "options": [
+      "Harm a neighbor",
+      "Count the cost",
+      "Grow weary",
+      "Hide the truth"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Besides taxes and customs, what else does Paul say to give to those it is owed?",
+     "options": [
+      "Respect and honor",
+      "Tithes and offerings",
+      "Gifts and sacrifices",
+      "Prayers and thanks"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides a servant of God, what else does Paul call the ruler?",
+     "options": [
+      "An avenger for wrath to him who does evil",
+      "A shepherd of the people",
+      "A father to the whole city",
+      "A judge over the assembly"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For he is a servant of God to you ____. But if you do that which is evil, be afraid.",
+     "answer": "for good",
+     "wrong": [
+      "for peace",
+      "for order",
+      "for justice"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Let's walk properly, ____; not in reveling and drunkenness.",
+     "answer": "as in the day",
+     "wrong": [
+      "as children of light",
+      "as servants of God",
+      "as those who wait"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says those who resist the authority will escape judgment.",
+     "answer": false,
+     "v": 2
     }
    ]
   },
@@ -1594,6 +2606,85 @@
      "q": "Paul says the one who doesn't eat should judge the one who eats.",
      "answer": false,
      "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "According to what is written, what will every knee do?",
+     "options": [
+      "Bow to the Lord",
+      "Tremble in fear",
+      "Rise up in praise",
+      "Walk in his ways"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does both the one who eats and the one who doesn't eat do?",
+     "options": [
+      "Give God thanks",
+      "Fast on the Sabbath",
+      "Judge the other",
+      "Offer a sacrifice"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Christ die, rise, and live again?",
+     "options": [
+      "To be Lord of both the dead and the living",
+      "To bring an end to the Sabbath",
+      "To judge the nations of the earth",
+      "To make all foods clean"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul tell them not to overthrow for food's sake?",
+     "options": [
+      "God's work",
+      "The church's peace",
+      "Their brother's house",
+      "The apostles' teaching"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Judge this rather, that no man put ____ in his brother's way, or an occasion for falling.",
+     "answer": "a stumbling block",
+     "wrong": [
+      "a heavy burden",
+      "a hidden snare",
+      "a false teaching"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "So then, let's follow after things which make for peace, and things by which we may ____.",
+     "answer": "build one another up",
+     "wrong": [
+      "serve one another",
+      "grow in wisdom",
+      "please the Lord"
+     ],
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says that if your brother is grieved because of your food, you still walk in love.",
+     "answer": false,
+     "v": 15
     }
    ]
   },
@@ -1708,6 +2799,85 @@
      "q": "Paul says he writes boldly because the Romans lack knowledge and cannot admonish others.",
      "answer": false,
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How does Paul tell the believers to accept one another?",
+     "options": [
+      "Even as Christ also accepted them",
+      "As brothers of one family",
+      "As they would accept an apostle",
+      "Only after testing their faith"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to Isaiah, in whom will the Gentiles hope?",
+     "options": [
+      "The root of Jesse",
+      "The son of Abraham",
+      "The prophet like Moses",
+      "The servant of Cyrus"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whom does Paul ask to be delivered from?",
+     "options": [
+      "Those who are disobedient in Judea",
+      "The rulers of Rome",
+      "False brothers in Corinth",
+      "Robbers on the road to Spain"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does Paul describe his service of the Good News to the Gentiles?",
+     "options": [
+      "Serving as a priest",
+      "Serving as a shepherd",
+      "Serving as a steward",
+      "Serving as a watchman"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "As it is written, \"The reproaches of those who reproached you ____.\"",
+     "answer": "fell on me",
+     "wrong": [
+      "turned to praise",
+      "were heard by God",
+      "were put to shame"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "That with one accord you may ____ glorify the God and Father of our Lord Jesus Christ.",
+     "answer": "with one mouth",
+     "wrong": [
+      "with one heart",
+      "in one spirit",
+      "with one hope"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says that when he comes to Rome, he will come in the fullness of the blessing of the Good News.",
+     "answer": true,
+     "v": 29
     }
    ]
   },
@@ -1822,6 +2992,85 @@
      "q": "Paul calls Erastus his host and the host of the whole assembly.",
      "answer": false,
      "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul tell them to do about those causing divisions?",
+     "options": [
+      "Look out for them and turn away",
+      "Debate them before the assembly",
+      "Send them to the apostles",
+      "Win them over with gifts"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How do those who cause divisions deceive the hearts of the innocent?",
+     "options": [
+      "By smooth and flattering speech",
+      "By false signs and wonders",
+      "By forged letters from Paul",
+      "By threats and fear"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does Paul say he rejoices over the believers in Rome?",
+     "options": [
+      "Their obedience has become known to all",
+      "They sent Phoebe to help him",
+      "They paid for his travels",
+      "They defeated the false teachers"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul say about Mary in his greetings?",
+     "options": [
+      "She labored much for us",
+      "She was in prison with him",
+      "She hosted the whole assembly",
+      "She was the first believer in Asia"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "To whom not only I give thanks, but also ____.",
+     "answer": "all the assemblies of the Gentiles",
+     "wrong": [
+      "all the saints in Jerusalem",
+      "all the brothers in Achaia",
+      "all the elders of Asia"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "That you receive her in the Lord in a way ____, and that you assist her in whatever matter she may need.",
+     "answer": "worthy of the saints",
+     "wrong": [
+      "fitting for a guest",
+      "pleasing to the elders",
+      "honoring her labor"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul calls Prisca and Aquila his fellow workers in Christ Jesus.",
+     "answer": true,
+     "v": 3
     }
    ]
   }

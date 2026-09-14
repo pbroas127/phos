@@ -1,4 +1,5 @@
-{"book":"PHM","chapters":{"1":{"keyVerse":16,"questions":[
+{"book":"PHM","chapters":{
+"1":{"keyVerse":16,"questions":[
 {"t":"choice","d":1,"q":"Who is Paul appealing to Philemon about?","options":["Onesimus","Epaphras","Archippus","Demas"],"v":10},
 {"t":"choice","d":2,"q":"Why does Paul appeal to Philemon instead of commanding him?","options":["For love's sake","He has no authority to command","Philemon is his elder","The church asked him not to"],"v":9},
 {"t":"choice","d":2,"q":"What does Paul ask Philemon to prepare for him?","options":["A guest room","A letter of welcome","Supplies for his journey","A meeting of the church"],"v":22},
@@ -8,5 +9,13 @@
 {"t":"blank","d":3,"q":"I, Paul, write this ____: I will repay it.","answer":"with my own hand","wrong":["with God as my witness","from my chains in prison","in the presence of Timothy"],"v":19},
 {"t":"order","d":3,"items":["Thanks for Philemon's love and faith","Appeal for Onesimus, his child in chains","Offer to repay anything owed","Request to prepare a guest room"],"v":4},
 {"t":"tf","d":1,"q":"Paul says he is keeping Onesimus with him instead of sending him back.","answer":false,"v":12},
-{"t":"tf","d":2,"q":"The letter is addressed to Philemon alone, with no other recipients named.","answer":false,"v":2}
-]}}}
+{"t":"tf","d":2,"q":"The letter is addressed to Philemon alone, with no other recipients named.","answer":false,"v":2},
+{"t":"choice","d":1,"q":"Who is named with Paul at the start of the letter?","options":["Timothy","Silvanus","Titus","Luke"],"v":1},
+{"t":"choice","d":2,"q":"Who is called Paul's fellow prisoner in Christ Jesus?","options":["Epaphras","Aristarchus","Mark","Timothy"],"v":23},
+{"t":"choice","d":2,"q":"Why does Paul have much joy and comfort in Philemon's love?","options":["The hearts of the saints were refreshed through him","He sent money to Paul in prison","He freed all of his servants","He built a house for the assembly"],"v":7},
+{"t":"choice","d":3,"q":"Why would Paul do nothing without Philemon's consent?","options":["So his goodness would be of free will","Because the law required it","Because Philemon was his elder","To avoid angering the assembly"],"v":14},
+{"t":"blank","d":2,"q":"If then you count me a partner, ____ as you would receive me.","answer":"receive him","wrong":["forgive him","welcome him home","set him free"],"v":17},
+{"t":"blank","d":3,"q":"For perhaps he was therefore separated from you for a while that ____.","answer":"you would have him forever","wrong":["he might learn obedience","he might find the Lord","you would forgive him"],"v":15},
+{"t":"tf","d":1,"q":"Paul is confident Philemon will do even more than he asks.","answer":true,"v":21}
+]}
+}}

@@ -113,6 +113,85 @@
      "q": "The chapter says a cry will come from the sheep gate on that day.",
      "answer": false,
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do the complacent men say in their heart?",
+     "options": [
+      "The LORD will not do good or evil",
+      "The LORD has forgotten us",
+      "The LORD does not see us",
+      "The LORD is far away"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where do some people worship the army of the sky?",
+     "options": [
+      "On the housetops",
+      "In the valley",
+      "At the city gate",
+      "Under every green tree"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Those who fill their master's house with violence are said to leap over what?",
+     "options": [
+      "The threshold",
+      "The altar",
+      "The wall",
+      "The fence"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who cries bitterly on the great day of the LORD?",
+     "options": [
+      "The mighty man",
+      "The widow",
+      "The priest",
+      "The king's son"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Be silent at the presence of the Lord GOD, for the day of the LORD ____.",
+     "answer": "is at hand",
+     "wrong": [
+      "has been delayed",
+      "is far off",
+      "will not come"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will bring such distress on men that they will ____ because they have sinned against the LORD.",
+     "answer": "walk like blind men",
+     "wrong": [
+      "stumble like drunkards",
+      "wander like lost sheep",
+      "fall like dry leaves"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says he will stretch out his hand against Edom and Moab.",
+     "answer": false,
+     "v": 4
     }
    ]
   },
@@ -227,6 +306,85 @@
      "q": "Everyone who passes by the desolate joyous city will weep and mourn for her.",
      "answer": false,
      "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which city will the LORD make as dry as the wilderness?",
+     "options": [
+      "Nineveh",
+      "Babylon",
+      "Damascus",
+      "Tyre"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When will they drive out Ashdod?",
+     "options": [
+      "At noonday",
+      "At midnight",
+      "At dawn",
+      "In the evening"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the LORD do to all the gods of the land?",
+     "options": [
+      "Famish them",
+      "Burn them",
+      "Carry them into exile",
+      "Break them in pieces"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the chapter say the day passes like?",
+     "options": [
+      "The chaff",
+      "A shadow",
+      "The morning mist",
+      "A dream"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Gather yourselves together, yes, gather together, you nation ____.",
+     "answer": "that has no shame",
+     "wrong": [
+      "that has turned away",
+      "that has forgotten me",
+      "that walks in darkness"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "A possession of nettles and salt pits, and ____.",
+     "answer": "a perpetual desolation",
+     "wrong": [
+      "a home for jackals",
+      "a heap of ruins",
+      "a field of thorns"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter says the Cushites will be killed by the LORD's sword.",
+     "answer": true,
+     "v": 12
     }
    ]
   },
@@ -341,6 +499,85 @@
      "q": "The chapter says the city's priests have profaned the sanctuary.",
      "answer": true,
      "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What are the city's princes compared to?",
+     "options": [
+      "Roaring lions",
+      "Hungry bears",
+      "Crouching leopards",
+      "Circling vultures"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the chapter say the LORD has thrown out?",
+     "options": [
+      "Your enemy",
+      "Your idols",
+      "Your false prophets",
+      "Your foreign rulers"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "After the LORD said to receive correction, what did they do?",
+     "options": [
+      "Rose early and corrupted their doings",
+      "Put on sackcloth and repented",
+      "Rebuilt the broken altar",
+      "Fled down to Egypt"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How does the chapter describe the city's prophets?",
+     "options": [
+      "Arrogant and treacherous",
+      "Blind and silent",
+      "Greedy and lazy",
+      "Drunken and foolish"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They will feed and lie down, and ____.",
+     "answer": "no one will make them afraid",
+     "wrong": [
+      "the LORD will guard them",
+      "they will lack nothing",
+      "their enemies will flee"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "That they may all call on the LORD's name, to serve him ____.",
+     "answer": "shoulder to shoulder",
+     "wrong": [
+      "with one heart",
+      "day and night",
+      "in his holy mountain"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says he will take away the proudly exulting ones from among them.",
+     "answer": true,
+     "v": 11
     }
    ]
   }

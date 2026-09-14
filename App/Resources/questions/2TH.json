@@ -9,7 +9,14 @@
 {"t":"blank","d":3,"q":"That our God may count you worthy of your calling, and fulfill every desire of goodness and ____ with power.","answer":"work of faith","wrong":["labor of love","word of truth","hope of glory"],"v":11},
 {"t":"order","d":2,"items":["Thanks for their growing faith and love","Suffering shows God's righteous judgment","Relief for the afflicted when Jesus is revealed","Prayer that God counts them worthy"],"v":3},
 {"t":"tf","d":1,"q":"Paul says the Thessalonians' faith has weakened under persecution.","answer":false,"v":3},
-{"t":"tf","d":3,"q":"Paul says his testimony to the Thessalonians was believed.","answer":true,"v":10}
+{"t":"tf","d":3,"q":"Paul says his testimony to the Thessalonians was believed.","answer":true,"v":10},
+{"t":"choice","d":1,"q":"What does Paul say abounds in each of them toward one another?","options":["Love","Patience","Generosity","Forgiveness"],"v":3},
+{"t":"choice","d":2,"q":"Where does Paul boast about the Thessalonians?","options":["In the assemblies of God","Before the rulers in Rome","In the synagogues of Judea","In the market at Athens"],"v":4},
+{"t":"choice","d":2,"q":"When the Lord comes in that day, in whom will he be glorified?","options":["In his saints","In his angels","In the nations","In his temple"],"v":10},
+{"t":"choice","d":3,"q":"How often does Paul say he prays for them?","options":["Always","Every morning","On the first day of the week","When news of them arrives"],"v":11},
+{"t":"blank","d":2,"q":"That the name of our Lord Jesus may be glorified in you, and ____.","answer":"you in him","wrong":["you in his Kingdom","you before all men","your faith in all"],"v":12},
+{"t":"blank","d":3,"q":"We are bound to always give thanks to God for you, brothers, even as ____.","answer":"it is appropriate","wrong":["we have promised","you have asked","the Spirit leads us"],"v":3},
+{"t":"tf","d":1,"q":"Silvanus and Timothy are named with Paul at the start of this letter.","answer":true,"v":1}
 ]},
 "2":{"keyVerse":15,"questions":[
 {"t":"choice","d":1,"q":"What false claim was troubling the Thessalonians?","options":["The day of Christ had already come","Paul had died in prison","Jesus would never return","The dead would not rise"],"v":2},
@@ -21,7 +28,14 @@
 {"t":"blank","d":3,"q":"Because of this, God sends them ____, that they should believe a lie.","answer":"a powerful delusion","wrong":["a spirit of slumber","a great darkness","a lying prophet"],"v":11},
 {"t":"order","d":3,"items":["The mystery of lawlessness already works","The lawless one revealed and destroyed","God chose them for salvation","Prayer for comfort and every good work"],"v":7},
 {"t":"tf","d":1,"q":"Paul says he never spoke of these things while he was with them.","answer":false,"v":5},
-{"t":"tf","d":2,"q":"Paul says the lawless one comes by the working of Satan, with signs and lying wonders.","answer":true,"v":9}
+{"t":"tf","d":2,"q":"Paul says the lawless one comes by the working of Satan, with signs and lying wonders.","answer":true,"v":9},
+{"t":"choice","d":1,"q":"For what does Paul say God chose them from the beginning?","options":["Salvation","Leadership","Suffering","Riches"],"v":13},
+{"t":"choice","d":2,"q":"What other title does Paul give the lawless one?","options":["The son of destruction","The prince of the air","The father of lies","The beast from the sea"],"v":3},
+{"t":"choice","d":2,"q":"Through what did God call them?","options":["Paul's Good News","A vision in the night","The words of the prophets","A voice from heaven"],"v":14},
+{"t":"choice","d":3,"q":"Against what does the lawless one exalt himself?","options":["All that is called God or worshiped","The kings of the earth","The law of Moses","The apostles and prophets"],"v":4},
+{"t":"blank","d":2,"q":"Who loved us and gave us eternal comfort and ____ through grace.","answer":"good hope","wrong":["lasting peace","great joy","true rest"],"v":16},
+{"t":"blank","d":3,"q":"That they all might be judged who didn't believe the truth, but ____.","answer":"had pleasure in unrighteousness","wrong":["loved the praise of men","walked in darkness","served their own desires"],"v":12},
+{"t":"tf","d":1,"q":"Paul warns them not to be troubled by a letter claiming to be from him.","answer":true,"v":2}
 ]},
 "3":{"keyVerse":13,"questions":[
 {"t":"choice","d":1,"q":"What does Paul first ask them to pray for?","options":["That the word of the Lord spreads rapidly","That he be released from prison","That he may visit them soon","That the Jews would believe"],"v":1},
@@ -33,6 +47,13 @@
 {"t":"blank","d":3,"q":"May the Lord direct your hearts into God's love and into ____.","answer":"the perseverance of Christ","wrong":["the peace of God","the hope of glory","the joy of the Spirit"],"v":5},
 {"t":"order","d":3,"items":["Pray for deliverance from evil men","Withdraw from those walking in rebellion","Work with quietness and eat your own bread","Note the disobedient and keep no company"],"v":2},
 {"t":"tf","d":1,"q":"Paul says he ate bread from others without paying for it while he was with them.","answer":false,"v":8},
-{"t":"tf","d":2,"q":"Paul says that not all people have faith.","answer":true,"v":2}
+{"t":"tf","d":2,"q":"Paul says that not all people have faith.","answer":true,"v":2},
+{"t":"choice","d":1,"q":"What does Paul tell the brothers not to be weary in?","options":["Doing what is right","Praying for the lost","Giving to the poor","Meeting together"],"v":13},
+{"t":"choice","d":1,"q":"What does Paul ask the Lord of peace to give them?","options":["Peace at all times in all ways","Strength for every trial","Wisdom in every matter","Joy in every season"],"v":16},
+{"t":"choice","d":2,"q":"Why did Paul work for his food instead of using his right to support?","options":["To be an example for them to imitate","Because the assembly was poor","Because he refused all gifts","To save money for Jerusalem"],"v":9},
+{"t":"choice","d":3,"q":"Paul asks that the word of the Lord be glorified even as it was where?","options":["Among the Thessalonians","In Jerusalem","In Athens","In Rome"],"v":1},
+{"t":"blank","d":2,"q":"Withdraw yourselves from every brother who walks in rebellion and not after ____ from us.","answer":"the tradition which they received","wrong":["the teaching of the apostles","the example they were given","the commands they heard"],"v":6},
+{"t":"blank","d":3,"q":"Note that man and have no company with him, to the end that ____.","answer":"he may be ashamed","wrong":["he may repent quickly","others may fear","he may learn obedience"],"v":14},
+{"t":"tf","d":2,"q":"Paul admits that he behaved rebelliously while he was among them.","answer":false,"v":7}
 ]}
 }}

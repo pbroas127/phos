@@ -112,6 +112,85 @@
      "q": "The LORD said Israel's little ones would be captured and never enter the land.",
      "answer": false,
      "v": 39
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who does the LORD say will go into the land and cause Israel to inherit it?",
+     "options": [
+      "Joshua the son of Nun",
+      "Eleazar the priest",
+      "Phinehas son of Eleazar",
+      "Hur of Judah"
+     ],
+     "v": 38
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many men did Moses take to search out the land?",
+     "options": [
+      "Twelve, one for every tribe",
+      "Two, both from Judah",
+      "Seven, one for each nation",
+      "Seventy, from the elders"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Moses say Israel has become as many as?",
+     "options": [
+      "The stars of the sky",
+      "The sand of the sea",
+      "The dust of the earth",
+      "The locusts of the field"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "To which valley did the men who searched the land come?",
+     "options": [
+      "The valley of Eshcol",
+      "The valley of Elah",
+      "The valley of Hinnom",
+      "The valley of Jezreel"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The LORD went before you in fire by night, to show you by what way you should go, and ____.",
+     "answer": "in the cloud by day",
+     "wrong": [
+      "by his angel always",
+      "with a pillar of smoke",
+      "with trumpets at dawn"
+     ],
+     "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Don't go up and don't fight; for ____, lest you be struck before your enemies.",
+     "answer": "I am not among you",
+     "wrong": [
+      "the time has not come",
+      "the Amorites are too strong",
+      "you have not repented"
+     ],
+     "v": 42
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When the people returned and wept, the LORD listened and turned his ear to them.",
+     "answer": false,
+     "v": 45
     }
    ]
   },
@@ -226,6 +305,85 @@
      "q": "Israel took the cities of Ammon along the river Jabbok.",
      "answer": false,
      "v": 37
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why must Israel not contend with the children of Esau?",
+     "options": [
+      "The LORD had given Mount Seir to Esau",
+      "Esau's army was far greater",
+      "Esau had paid them tribute",
+      "Esau had given them bread"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Moses first send to Sihon king of Heshbon?",
+     "options": [
+      "Messengers with words of peace",
+      "A declaration of war",
+      "A demand for tribute",
+      "Gifts of gold and silver"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Israel take for plunder from Sihon's cities?",
+     "options": [
+      "Only the livestock and the goods",
+      "Their horses and chariots",
+      "Their idols of gold",
+      "The city walls and gates"
+     ],
+     "v": 35
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did the LORD say the children of Esau would feel as Israel passed?",
+     "options": [
+      "Afraid of them",
+      "Glad to see them",
+      "Angry with them",
+      "Jealous of them"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You have encircled this mountain long enough. ____.",
+     "answer": "Turn northward",
+     "wrong": [
+      "Go down toward Egypt",
+      "Turn toward the sea",
+      "Rest here a while"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "From Aroer even to Gilead, there was not ____. The LORD our God delivered up all before us.",
+     "answer": "a city too high for us",
+     "wrong": [
+      "a king who withstood us",
+      "a wall we could not climb",
+      "a man left to fight"
+     ],
+     "v": 36
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Israel took all of Sihon's cities at that time.",
+     "answer": true,
+     "v": 34
     }
    ]
   },
@@ -340,6 +498,85 @@
      "q": "Og's cities were fortified with high walls, gates, and bars.",
      "answer": true,
      "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Moses tell Joshua not to fear the kingdoms?",
+     "options": [
+      "The LORD himself fights for you",
+      "Israel's army is larger",
+      "The kingdoms are already weak",
+      "Caleb will go before you"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does Moses say the LORD was angry with him?",
+     "options": [
+      "Because of the people",
+      "Because he feared Og",
+      "Because he doubted the LORD",
+      "Because he broke the tablets"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Moses say Joshua's eyes had seen?",
+     "options": [
+      "What the LORD did to the two kings",
+      "The glory on the mountain",
+      "The fall of Jericho's walls",
+      "The parting of the Red Sea"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where does the chapter say Og's bedstead could be found?",
+     "options": [
+      "In Rabbah of the children of Ammon",
+      "In Heshbon of the Amorites",
+      "In Edrei of Bashan",
+      "In Dibon of Moab"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Don't fear him; for I have delivered him, with all his people and his land, ____.",
+     "answer": "into your hand",
+     "wrong": [
+      "to the sword",
+      "before your eyes",
+      "to your servants"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Lord GOD, you have begun to show your servant your greatness, and ____.",
+     "answer": "your strong hand",
+     "wrong": [
+      "your mighty works",
+      "your holy name",
+      "your great mercy"
+     ],
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After Moses begged, the LORD agreed to let him cross over the Jordan.",
+     "answer": false,
+     "v": 27
     }
    ]
   },
@@ -454,6 +691,85 @@
      "q": "Moses says the sun, moon, and stars were given by God to Israel alone.",
      "answer": false,
      "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD write on two stone tablets?",
+     "options": [
+      "The ten commandments",
+      "The names of the tribes",
+      "The song of Moses",
+      "The blessings and curses"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Moses say the LORD your God is?",
+     "options": [
+      "A devouring fire, a jealous God",
+      "A rock and a fortress",
+      "A shield and a sun",
+      "A shepherd and a king"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happened to the men who followed Baal Peor?",
+     "options": [
+      "The LORD destroyed them",
+      "They were sent back to Egypt",
+      "They were made servants",
+      "They were forgiven"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How does Moses describe the mountain at Horeb?",
+     "options": [
+      "Burning with fire to the heart of the sky",
+      "Shaking with a great earthquake",
+      "Covered with snow and ice",
+      "Hidden behind a bright rainbow"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For the LORD your God is ____. He will not fail you nor destroy you.",
+     "answer": "a merciful God",
+     "wrong": [
+      "a mighty warrior",
+      "a great King",
+      "a faithful rock"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For what great nation is there that has ____ as the LORD our God is whenever we call on him?",
+     "answer": "a god so near to them",
+     "wrong": [
+      "a king so mighty",
+      "a god so great",
+      "an army so strong"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Moses says the LORD chose Israel because they were greater than other nations.",
+     "answer": false,
+     "v": 37
     }
    ]
   },
@@ -568,6 +884,85 @@
      "q": "The Sabbath command in this chapter leaves out servants and livestock from the rest.",
      "answer": false,
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which commandment does Moses give first?",
+     "options": [
+      "You shall have no other gods before me",
+      "Honor your father and your mother",
+      "Observe the Sabbath day",
+      "You shall not murder"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How does Moses say the LORD spoke with them on the mountain?",
+     "options": [
+      "Face to face out of the fire",
+      "Through a dream in the night",
+      "In a still small voice",
+      "Through Aaron the priest"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the people say they had seen that day?",
+     "options": [
+      "That God speaks with man and he lives",
+      "That the mountain would fall on them",
+      "That the tablets were already broken",
+      "That the LORD had left the camp"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "On which generations of those who hate him does God visit the fathers' iniquity?",
+     "options": [
+      "The third and fourth",
+      "The first and second",
+      "The seventh",
+      "The tenth"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "And showing ____ of those who love me and keep my commandments.",
+     "answer": "loving kindness to thousands",
+     "wrong": [
+      "mercy to their children",
+      "favor to all generations",
+      "blessing to the tribes"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You shall not misuse the name of the LORD your God; for the LORD will not ____ who misuses his name.",
+     "answer": "hold him guiltless",
+     "wrong": [
+      "spare the man",
+      "forgive the one",
+      "listen to him"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Moses says the LORD added many more words after speaking the commandments from the fire.",
+     "answer": false,
+     "v": 22
     }
    ]
   },
@@ -682,6 +1077,85 @@
      "q": "The chapter says keeping all these commandments shall be righteousness to us.",
      "answer": true,
      "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "With what are they to love the LORD their God?",
+     "options": [
+      "All their heart, soul, and might",
+      "All their mind and strength",
+      "All their body and spirit",
+      "All their words and deeds"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does Moses describe the land they will possess?",
+     "options": [
+      "Flowing with milk and honey",
+      "Rich with iron and copper",
+      "Covered with cedar forests",
+      "Full of rivers and lakes"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why must they not go after the gods of the peoples around them?",
+     "options": [
+      "The LORD among them is a jealous God",
+      "Those gods demand their children",
+      "Their fathers had forbidden it",
+      "The nations would attack them"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why does the chapter say the LORD commanded these statutes?",
+     "options": [
+      "For our good always, to preserve us alive",
+      "To set Israel above the nations",
+      "To keep the priests supplied",
+      "To test the strength of Israel"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "These words, which I command you today, shall be ____.",
+     "answer": "on your heart",
+     "wrong": [
+      "in your mouth",
+      "before your eyes",
+      "on your lips"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You shall do that which is ____ in the LORD's sight, that it may be well with you.",
+     "answer": "right and good",
+     "wrong": [
+      "holy and pure",
+      "just and true",
+      "wise and pleasing"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Moses says only the priests should teach these words to the children.",
+     "answer": false,
+     "v": 7
     }
    ]
   },
@@ -797,6 +1271,85 @@
      "q": "Moses says there will be no barren male or female among them or their livestock.",
      "answer": true,
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What kind of people does Moses say Israel is to the LORD?",
+     "options": [
+      "A holy people",
+      "A mighty people",
+      "A wandering people",
+      "A royal people"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the LORD promise to take away from Israel?",
+     "options": [
+      "All sickness",
+      "All enemies",
+      "All hunger",
+      "All sorrow"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does Moses say the LORD brought them out with a mighty hand?",
+     "options": [
+      "He loves them and keeps his oath",
+      "They were more righteous than Egypt",
+      "They offered him many sacrifices",
+      "Moses pleaded with him day and night"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Besides delivering them up, what will the LORD do to the nations?",
+     "options": [
+      "Confuse them with a great confusion",
+      "Blind them with a great light",
+      "Drown them in a great flood",
+      "Scatter them with a great wind"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall make no covenant with them, ____.",
+     "answer": "nor show mercy to them",
+     "wrong": [
+      "nor eat bread with them",
+      "nor trade with them",
+      "nor dwell among them"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You shall not serve their gods; for that would be ____.",
+     "answer": "a snare to you",
+     "wrong": [
+      "a curse on you",
+      "an offense to me",
+      "a shame to you"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Moses says no one will be able to stand before Israel until the nations are destroyed.",
+     "answer": true,
+     "v": 24
     }
    ]
   },
@@ -907,6 +1460,85 @@
      "q": "Moses says the manna was a food their fathers had eaten before them.",
      "answer": false,
      "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who does Moses say gives them the power to get wealth?",
+     "options": [
+      "The LORD their God",
+      "Their own strong hands",
+      "The kings of the land",
+      "Their fathers' blessing"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which of these is listed among the crops of the good land?",
+     "options": [
+      "Pomegranates",
+      "Dates",
+      "Almonds",
+      "Lentils"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What dangers does Moses recall from the great and terrible wilderness?",
+     "options": [
+      "Venomous snakes and scorpions",
+      "Lions and bears",
+      "Giants and warriors",
+      "Floods and storms"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Moses warn might happen to their heart when they prosper?",
+     "options": [
+      "It might be lifted up",
+      "It might grow faint",
+      "It might be broken",
+      "It might long for Egypt"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "That he might humble you, to test you, to know ____, whether you would keep his commandments.",
+     "answer": "what was in your heart",
+     "wrong": [
+      "how strong you were",
+      "how far you would go",
+      "who would follow Moses"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Lest, when you have eaten and are full, and have ____ and lived in them.",
+     "answer": "built fine houses",
+     "wrong": [
+      "taken great cities",
+      "raised strong towers",
+      "planted many vineyards"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Moses says that in the land they will eat bread without scarcity.",
+     "answer": true,
+     "v": 9
     }
    ]
   },
@@ -1022,6 +1654,85 @@
      "q": "Moses says the people provoked the LORD at Horeb but obeyed at Kadesh Barnea.",
      "answer": false,
      "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How does Moses say the LORD goes over before Israel?",
+     "options": [
+      "As a devouring fire",
+      "As a pillar of cloud",
+      "As a mighty wind",
+      "As a roaring lion"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What had people said about the sons of Anak?",
+     "options": [
+      "Who can stand before them?",
+      "They are few and weak",
+      "They have already fled",
+      "They are friends of Israel"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD say he would make of Moses?",
+     "options": [
+      "A nation mightier and greater than Israel",
+      "A king over the land of Egypt",
+      "A priest forever on the mountain",
+      "A judge over all the tribes"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Moses fear Egypt would say if the LORD destroyed Israel?",
+     "options": [
+      "The LORD was not able to bring them in",
+      "Egypt's gods were stronger than the LORD",
+      "Moses had led them astray",
+      "Israel deserved to die as slaves"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Your people have quickly turned away from the way which I commanded them. They have made ____!",
+     "answer": "a molten image for themselves",
+     "wrong": [
+      "a king over themselves",
+      "a covenant with Pharaoh",
+      "an altar to Baal"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Lord GOD, don't destroy your people and ____ that you have redeemed through your greatness.",
+     "answer": "your inheritance",
+     "wrong": [
+      "your chosen servants",
+      "your holy flock",
+      "your firstborn son"
+     ],
+     "v": 26
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Moses came down from the burning mountain with the two tablets in his hands.",
+     "answer": true,
+     "v": 15
     }
    ]
   },
@@ -1136,6 +1847,85 @@
      "q": "Moses says the LORD refused to listen to him on the mountain this second time.",
      "answer": false,
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why does Moses tell Israel to love the foreigner?",
+     "options": [
+      "They were foreigners in Egypt",
+      "Foreigners bring them wealth",
+      "Foreigners fought beside them",
+      "The foreigner is their brother"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What kind of wood did Moses use to make the ark?",
+     "options": [
+      "Acacia wood",
+      "Cedar wood",
+      "Olive wood",
+      "Cypress wood"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Moses say belongs to the LORD your God?",
+     "options": [
+      "Heaven, the heaven of heavens, and the earth",
+      "Only the land promised to Abraham",
+      "The ark and the stone tablets",
+      "The mountain of Horeb"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How does the chapter describe Jotbathah?",
+     "options": [
+      "A land of brooks of water",
+      "A land of palm trees",
+      "A land of salt pits",
+      "A land of high hills"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall fear the LORD your God. You shall serve him. You shall ____, and you shall swear by his name.",
+     "answer": "cling to him",
+     "wrong": [
+      "bow before him",
+      "sing to him",
+      "walk with him"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He is your praise, and he is your God, who has done for you ____ which your eyes have seen.",
+     "answer": "these great and awesome things",
+     "wrong": [
+      "wonders in the sea",
+      "mighty works in Egypt",
+      "every good thing"
+     ],
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD told Moses to stay behind while the people went on to the land.",
+     "answer": false,
+     "v": 11
     }
    ]
   },
@@ -1250,6 +2040,85 @@
      "q": "Moses says he is speaking to children who had not seen the LORD's great works.",
      "answer": false,
      "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD make overflow the army of Egypt?",
+     "options": [
+      "The water of the Red Sea",
+      "The Nile River",
+      "The Jordan River",
+      "A great hailstorm"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the LORD do if their hearts turn to other gods?",
+     "options": [
+      "Shut up the sky so there is no rain",
+      "Send them back into Egypt",
+      "Give their land to Moab",
+      "Take away their king"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the LORD do if they diligently keep these commandments?",
+     "options": [
+      "Drive out nations greater than they",
+      "Give them a king like the nations",
+      "Let them return to Egypt in peace",
+      "Make them rich like Pharaoh"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Beside what are the two mountains of blessing and curse located?",
+     "options": [
+      "The oaks of Moreh",
+      "The well of Beersheba",
+      "The pool of Gibeon",
+      "The cave of Machpelah"
+     ],
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall lay up these words of mine in your heart and ____.",
+     "answer": "in your soul",
+     "wrong": [
+      "on your lips",
+      "before your eyes",
+      "in your house"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "That your days and your children's days may be multiplied in the land, as the days of ____.",
+     "answer": "the heavens above the earth",
+     "wrong": [
+      "the stars in the sky",
+      "the everlasting hills",
+      "your fathers before you"
+     ],
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Moses says the LORD will lay the fear and dread of Israel on all the land they tread on.",
+     "answer": true,
+     "v": 25
     }
    ]
   },
@@ -1360,6 +2229,85 @@
      "q": "Moses tells them to learn how the nations served their gods so they can serve the LORD the same way.",
      "answer": false,
      "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Moses say they shall do when they eat before the LORD?",
+     "options": [
+      "Rejoice with their households",
+      "Fast and mourn",
+      "Stand in silence",
+      "Wash their feet"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Moses say the nations even did to their own children for their gods?",
+     "options": [
+      "Burned them in the fire",
+      "Sold them as slaves",
+      "Sent them into the desert",
+      "Offered them to Pharaoh"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Meat eaten within their gates may be eaten like which animals?",
+     "options": [
+      "The gazelle and the deer",
+      "The lamb and the goat",
+      "The ox and the sheep",
+      "The quail and the dove"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Moses says they haven't yet come to what?",
+     "options": [
+      "The rest and the inheritance",
+      "The mountain of God",
+      "The city of the king",
+      "The house of their fathers"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Whatever thing I command you, that you shall observe to do. You shall not add to it, ____.",
+     "answer": "nor take away from it",
+     "wrong": [
+      "nor change its words",
+      "nor forget it ever",
+      "nor hide it away"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The blood of your sacrifices shall be poured out on the LORD your God's altar, and ____.",
+     "answer": "you shall eat the meat",
+     "wrong": [
+      "the priest shall burn it",
+      "you shall wash your hands",
+      "the fat shall be burned"
+     ],
+     "v": 27
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Moses tells them to burn the nations' Asherah poles with fire.",
+     "answer": true,
+     "v": 3
     }
    ]
   },
@@ -1463,6 +2411,85 @@
      "q": "The plunder of the condemned city may be kept by those who strike it.",
      "answer": false,
      "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How was the one who secretly enticed them to other gods to be put to death?",
+     "options": [
+      "Stoned with stones",
+      "By the sword",
+      "By fire",
+      "By hanging"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whose hand must be first on the one who enticed them?",
+     "options": [
+      "The one who was enticed",
+      "The priest's",
+      "The elders'",
+      "The judge's"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What must become of the city destroyed for serving other gods?",
+     "options": [
+      "It stays a heap and is never rebuilt",
+      "It is given to the Levites",
+      "It is rebuilt after seven years",
+      "It becomes a city of refuge"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who draws away the inhabitants of a city in this chapter?",
+     "options": [
+      "Certain wicked fellows",
+      "The priests of Baal",
+      "Foreign merchants",
+      "The city's own elders"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Of the gods of the peoples who are around you, near to you, or ____.",
+     "answer": "far off from you",
+     "wrong": [
+      "hidden from you",
+      "beyond the sea",
+      "in the desert"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You shall surely strike the inhabitants of that city with ____.",
+     "answer": "the edge of the sword",
+     "wrong": [
+      "stones from the field",
+      "fire from the altar",
+      "the spears of the Levites"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter says the LORD will show mercy and compassion when they obey.",
+     "answer": true,
+     "v": 17
     }
    ]
   },
@@ -1578,6 +2605,85 @@
      "q": "Every third year the tithe is stored in the towns for the Levite, foreigner, fatherless, and widow.",
      "answer": true,
      "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which of these animals does the chapter say they may eat?",
+     "options": [
+      "The goat",
+      "The hare",
+      "The rabbit",
+      "The pig"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the chapter say about winged creeping things?",
+     "options": [
+      "They are unclean and not to be eaten",
+      "They may be eaten if roasted",
+      "They may be offered as a tithe",
+      "They are clean if caught in a field"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What must they tithe year by year?",
+     "options": [
+      "All the increase of the seed from the field",
+      "Only the firstborn of the flock",
+      "A tenth of their silver",
+      "The bread from every meal"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "You are ____ of the LORD your God.",
+     "answer": "the children",
+     "wrong": [
+      "the servants",
+      "the chosen flock",
+      "the priests"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You shall not forsake the Levite who is within your gates, for he has ____.",
+     "answer": "no portion nor inheritance with you",
+     "wrong": [
+      "served you all his days",
+      "no house of his own",
+      "taught you the law"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "That the LORD your God may bless you in ____ which you do.",
+     "answer": "all the work of your hand",
+     "wrong": [
+      "every city of your land",
+      "each harvest of your field",
+      "all the ways of your house"
+     ],
+     "v": 29
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Moses says they may eat of all clean birds.",
+     "answer": true,
+     "v": 20
     }
    ]
   },
@@ -1693,6 +2799,85 @@
      "q": "A firstborn animal that is lame or blind must not be sacrificed to the LORD.",
      "answer": true,
      "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Moses say Israel will do with many nations?",
+     "options": [
+      "Lend to them but not borrow",
+      "Borrow from them in need",
+      "Pay tribute to them",
+      "Trade grain with them"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What reason does Moses give for freeing and supplying Hebrew servants?",
+     "options": [
+      "They were slaves in Egypt",
+      "The priests require it",
+      "Servants would rebel otherwise",
+      "It brings honor to the family"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What must they do with the blood of the firstborn animal they eat?",
+     "options": [
+      "Pour it on the ground like water",
+      "Sprinkle it on the altar",
+      "Give it to the priest",
+      "Bury it by the gate"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where are they to eat the firstborn of the herd and flock year by year?",
+     "options": [
+      "In the place the LORD chooses",
+      "In the house of the priest",
+      "In the field where it was born",
+      "In the city gate"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall surely open your hand to him, and shall surely lend him ____, which he lacks.",
+     "answer": "sufficient for his need",
+     "wrong": [
+      "twice what he asks",
+      "a portion of your grain",
+      "money for a season"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You shall surely give, and your heart ____ when you give to him.",
+     "answer": "shall not be grieved",
+     "wrong": [
+      "shall be lifted up",
+      "shall not be proud",
+      "shall seek a reward"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The law of letting a servant go free applies to a Hebrew woman as well as a Hebrew man.",
+     "answer": true,
+     "v": 12
     }
    ]
   },
@@ -1807,6 +2992,85 @@
      "q": "Only sons and male servants were to rejoice at the feast of weeks.",
      "answer": false,
      "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How many times a year must all the males appear before the LORD?",
+     "options": [
+      "Three times",
+      "Once",
+      "Twice",
+      "Seven times"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What were they to do in the morning after eating the Passover?",
+     "options": [
+      "Return to their tents",
+      "Offer another lamb",
+      "Burn their leftover bread",
+      "Wash their garments"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "For how long are they to keep the feast of booths?",
+     "options": [
+      "Seven days",
+      "Three days",
+      "One day",
+      "Forty days"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What must they not plant beside the LORD's altar?",
+     "options": [
+      "An Asherah of any kind of tree",
+      "A vineyard of choice vines",
+      "A garden of herbs",
+      "A grove of fig trees"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "All your males shall appear before the LORD in the place which he chooses. They shall not appear ____.",
+     "answer": "before the LORD empty",
+     "wrong": [
+      "without their sons",
+      "in unclean garments",
+      "after the sun sets"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Six days you shall eat unleavened bread. On the seventh day shall be ____ to the LORD your God.",
+     "answer": "a solemn assembly",
+     "wrong": [
+      "a great feast",
+      "a day of fasting",
+      "a burnt offering"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Meat from the Passover sacrifice could be kept until the next morning.",
+     "answer": false,
+     "v": 4
     }
    ]
   },
@@ -1917,6 +3181,85 @@
      "q": "The king was to read the law only on the day he took the throne.",
      "answer": false,
      "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who is to choose the king Israel sets over themselves?",
+     "options": [
+      "The LORD their God",
+      "The elders of the tribes",
+      "The high priest",
+      "The people by lot"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides other gods, what does the chapter say some might wrongly worship?",
+     "options": [
+      "The sun, the moon, or the stars",
+      "The rivers and the seas",
+      "The kings of the nations",
+      "The trees and the mountains"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where was a person proven guilty of serving other gods to be brought?",
+     "options": [
+      "To the city gates",
+      "To the tabernacle",
+      "To the king's house",
+      "To the wilderness"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why must the king not cause the people to return to Egypt?",
+     "options": [
+      "The LORD said not to go back that way",
+      "Pharaoh would enslave them again",
+      "Egypt was too far away",
+      "The priests forbade travel"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "When you possess the land and say, \"I will set a king over me, ____.\"",
+     "answer": "like all the nations",
+     "wrong": [
+      "as God has promised",
+      "from the tribe of Judah",
+      "to fight our battles"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He shall not multiply wives to himself. He shall not greatly multiply to himself ____.",
+     "answer": "silver and gold",
+     "wrong": [
+      "servants and maids",
+      "cattle and sheep",
+      "cities and towers"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The man who presumptuously refuses to listen to the priest or the judge shall die.",
+     "answer": true,
+     "v": 12
     }
    ]
   },
@@ -2020,6 +3363,85 @@
      "q": "A Levite who comes from any town to the chosen place may minister there like his brothers.",
      "answer": true,
      "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the people ask for at Horeb?",
+     "options": [
+      "Not to hear the LORD's voice or see the fire again",
+      "To see the LORD's face",
+      "To go back to Egypt",
+      "To have a king over them"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides the first fruits of grain, wine, and oil, what else is given to the priest?",
+     "options": [
+      "The first of the fleece of their sheep",
+      "A tenth of their silver",
+      "The firstborn of their camels",
+      "The best of their bread"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happens to a prophet who speaks in the name of other gods?",
+     "options": [
+      "He shall die",
+      "He is sent outside the camp",
+      "He must offer a sin offering",
+      "He is beaten with rods"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why does this chapter say the LORD drives out the nations?",
+     "options": [
+      "Because of their abominations",
+      "Because they were too many",
+      "Because they attacked Israel",
+      "Because of their great wealth"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "You shall be ____.",
+     "answer": "blameless with the LORD your God",
+     "wrong": [
+      "faithful to your brothers",
+      "holy before the nations",
+      "strong in the land"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Whoever will not listen to my words which he shall speak in my name, ____.",
+     "answer": "I will require it of him",
+     "wrong": [
+      "he shall be cut off",
+      "I will send a plague",
+      "he shall be a curse"
+     ],
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD said the people were wrong to ask not to hear his voice again.",
+     "answer": false,
+     "v": 17
     }
    ]
   },
@@ -2135,6 +3557,85 @@
      "q": "In a case of a false witness, both men were to stand before the king.",
      "answer": false,
      "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why were the three cities to be set apart?",
+     "options": [
+      "So a man slayer could flee there",
+      "To store the people's tithes",
+      "To house the Levites",
+      "To guard the borders"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What is the purpose of these cities, according to verse 10?",
+     "options": [
+      "So innocent blood will not be shed",
+      "So the land will be divided fairly",
+      "So the priests can judge cases",
+      "So enemies can be kept out"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will those who remain do when they hear how a false witness was punished?",
+     "options": [
+      "Fear and never commit such evil again",
+      "Mourn for him seven days",
+      "Appeal the case to the king",
+      "Leave the city in shame"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why might the avenger of blood overtake the man slayer?",
+     "options": [
+      "Because the way is long",
+      "Because the gates are shut",
+      "Because the elders delay",
+      "Because he is lame"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Your eye shall not pity him, but you shall purge ____ from Israel that it may go well with you.",
+     "answer": "the innocent blood",
+     "wrong": [
+      "the wicked man",
+      "the unclean thing",
+      "the evil deed"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "But if any man hates his neighbor, ____, rises up against him, strikes him mortally so that he dies.",
+     "answer": "lies in wait for him",
+     "wrong": [
+      "speaks against him",
+      "curses his name",
+      "steals from him"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Moses says their eyes shall not pity, but it shall be life for life.",
+     "answer": true,
+     "v": 21
     }
    ]
   },
@@ -2249,6 +3750,85 @@
      "q": "A distant city that accepts peace becomes forced laborers for Israel.",
      "answer": true,
      "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why must Israel not fear horses, chariots, and a larger army?",
+     "options": [
+      "The LORD their God is with them",
+      "Their soldiers are better trained",
+      "The enemy is already afraid",
+      "Their walls are too strong"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "A man could return home if he had not yet used the fruit of what?",
+     "options": [
+      "A vineyard he planted",
+      "A field he sowed",
+      "An olive grove he bought",
+      "A flock he raised"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When a far off city that made war is delivered to them, what may they do with its plunder?",
+     "options": [
+      "Take it for themselves",
+      "Burn all of it",
+      "Give all of it to the priests",
+      "Leave it inside the city"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "During a siege, what may they do with trees that are not for food?",
+     "options": [
+      "Cut them down to build bulwarks",
+      "Make them into spears",
+      "Burn them as offerings",
+      "Plant them in their own land"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For the LORD your God is he who goes with you, to fight for you against your enemies, ____.",
+     "answer": "to save you",
+     "wrong": [
+      "to scatter them",
+      "to give you glory",
+      "to destroy them"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "But of the cities of these peoples that the LORD your God gives you for an inheritance, you shall save alive ____.",
+     "answer": "nothing that breathes",
+     "wrong": [
+      "only the children",
+      "none of their kings",
+      "only the livestock"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "If a city will not make peace but makes war, Israel shall besiege it.",
+     "answer": true,
+     "v": 12
     }
    ]
   },
@@ -2352,6 +3932,85 @@
      "q": "The parents of a rebellious son bring him to the elders at the gate of his city.",
      "answer": true,
      "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What must a captive woman do when she is brought into the man's house?",
+     "options": [
+      "Shave her head and trim her nails",
+      "Wash in running water",
+      "Offer a sacrifice at the altar",
+      "Take a new name"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who carries out the sentence on the stubborn and rebellious son?",
+     "options": [
+      "All the men of his city",
+      "His father alone",
+      "The priests",
+      "His brothers"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How long does the captive woman mourn her father and mother?",
+     "options": [
+      "A full month",
+      "Seven days",
+      "A full year",
+      "Forty days"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who come out to measure the distance to the cities around a slain man?",
+     "options": [
+      "The elders and the judges",
+      "The king's officers",
+      "The men of war",
+      "The avenger and his family"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "His body shall not remain all night on the tree, but you shall surely ____.",
+     "answer": "bury him the same day",
+     "wrong": [
+      "burn it with fire",
+      "give it to his family",
+      "take it outside the camp"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Forgive, LORD, your people Israel, whom you have redeemed, and don't allow ____ among your people Israel.",
+     "answer": "innocent blood",
+     "wrong": [
+      "this evil",
+      "any stranger",
+      "the curse"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The priests, the sons of Levi, come near when the heifer is killed in the valley.",
+     "answer": true,
+     "v": 5
     }
    ]
   },
@@ -2467,6 +4126,80 @@
      "q": "Sowing a vineyard with two kinds of seed was allowed if the fruit went to the priests.",
      "answer": false,
      "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where do the parents bring their case when their daughter is falsely accused?",
+     "options": [
+      "To the elders of the city in the gate",
+      "To the priests at the altar",
+      "To the king in his palace",
+      "To the judges of another tribe"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who receives the silver when a husband falsely accuses his wife?",
+     "options": [
+      "Her father",
+      "The priests",
+      "The elders",
+      "The king"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why is a pledged young woman attacked in the field not held guilty?",
+     "options": [
+      "She cried out and no one could save her",
+      "Her father paid a fine for her",
+      "The elders pardoned her",
+      "She fled to a city of refuge"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "You shall surely let the hen go, that it may be well with you, and that you may ____.",
+     "answer": "prolong your days",
+     "wrong": [
+      "eat your fill",
+      "be blessed in the field",
+      "find favor with God"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "So you shall do with his donkey. So you shall do with ____.",
+     "answer": "his garment",
+     "wrong": [
+      "his silver",
+      "his tools",
+      "his tent"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The bird's nest law applies only to nests found in trees, not on the ground.",
+     "answer": false,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "A husband who falsely gave his wife a bad name could never put her away all his days.",
+     "answer": true,
+     "v": 19
     }
    ]
   },
@@ -2582,6 +4315,85 @@
      "q": "In a neighbor's grain field, you may pluck ears by hand but not use a sickle.",
      "answer": true,
      "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "When they vow a vow to the LORD, what must they not be slack to do?",
+     "options": [
+      "Pay it",
+      "Tell the priest",
+      "Write it down",
+      "Repeat it daily"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why must Israel not abhor an Egyptian?",
+     "options": [
+      "They lived as foreigners in his land",
+      "Egypt fed them in a famine",
+      "Egypt gave them gold when they left",
+      "Egypt let them go in peace"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When may a man who was unclean by night come back within the camp?",
+     "options": [
+      "After bathing, when the sun is down",
+      "After seven full days",
+      "After offering a lamb",
+      "When the priest inspects him"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which generation born to Edomites and Egyptians may enter the LORD's assembly?",
+     "options": [
+      "The third",
+      "The second",
+      "The seventh",
+      "The tenth"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall not seek their peace nor ____ all your days forever.",
+     "answer": "their prosperity",
+     "wrong": [
+      "their friendship",
+      "their daughters",
+      "their alliance"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You shall observe and do that which has gone out of ____.",
+     "answer": "your lips",
+     "wrong": [
+      "your heart",
+      "the priest's mouth",
+      "the law of Moses"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter allows a prostitute's wages to be brought into the LORD's house for a vow.",
+     "answer": false,
+     "v": 18
     }
    ]
   },
@@ -2692,6 +4504,85 @@
      "q": "They must not take a widow's clothing in pledge.",
      "answer": true,
      "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What must they not do when they beat their olive trees?",
+     "options": [
+      "Go over the boughs again",
+      "Sell the olives to foreigners",
+      "Beat them before the Sabbath",
+      "Leave any olives on the ground"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does a husband write when he sends his wife away?",
+     "options": [
+      "A certificate of divorce",
+      "A bill of sale",
+      "A letter to her father",
+      "A record for the elders"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Moses tell them to remember in connection with the plague of leprosy?",
+     "options": [
+      "What the LORD did to Miriam",
+      "What happened to Aaron",
+      "What the LORD did to Pharaoh",
+      "What happened to Korah"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whose teaching must they carefully follow in the plague of leprosy?",
+     "options": [
+      "The Levitical priests'",
+      "The elders of the city",
+      "The judges in the gate",
+      "The prophets'"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall not oppress a hired servant who is ____, whether he is one of your brothers or one of the foreigners.",
+     "answer": "poor and needy",
+     "wrong": [
+      "young and weak",
+      "old and gray",
+      "new in the land"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When you harvest your vineyard, you shall not ____. It shall be for the foreigner, for the fatherless, and for the widow.",
+     "answer": "glean it after yourselves",
+     "wrong": [
+      "sell the fruit to strangers",
+      "tread the grapes at night",
+      "gather it in one day"
+     ],
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Moses tells them to remember they were slaves in Egypt as a reason for these laws.",
+     "answer": true,
+     "v": 18
     }
    ]
   },
@@ -2795,6 +4686,85 @@
      "q": "The chapter says Amalek feared God but hated Israel.",
      "answer": false,
      "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What must the judges do in a controversy between men?",
+     "options": [
+      "Justify the righteous and condemn the wicked",
+      "Divide the matter evenly",
+      "Send the case to the king",
+      "Cast lots to decide"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where does the widow go if her husband's brother will not marry her?",
+     "options": [
+      "Up to the gate to the elders",
+      "To the priest at the altar",
+      "Back to her father's house",
+      "To the king's court"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the chapter call all who deal unrighteously with weights and measures?",
+     "options": [
+      "An abomination to the LORD",
+      "Enemies of the poor",
+      "Thieves in Israel",
+      "Unclean until evening"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How is a guilty man's beating to be carried out?",
+     "options": [
+      "Lying down before the judge, by number",
+      "In secret at night",
+      "By the victim's family",
+      "Outside the camp"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "When the LORD your God has given you ____ all around, in the land.",
+     "answer": "rest from all your enemies",
+     "wrong": [
+      "victory over the nations",
+      "peace in every city",
+      "a king to lead you"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He shall not give more, lest if he beat him more than that, your brother will be ____.",
+     "answer": "degraded in your sight",
+     "wrong": [
+      "cut off from Israel",
+      "unable to work",
+      "hated by his family"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Moses allows two different weights in a bag if one is used only for foreigners.",
+     "answer": false,
+     "v": 13
     }
    ]
   },
@@ -2909,6 +4879,85 @@
      "q": "The LORD declared that Israel is a people for his own possession.",
      "answer": true,
      "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "After setting down the first of the fruit before the LORD, what are they to do?",
+     "options": [
+      "Worship before the LORD",
+      "Return home at once",
+      "Wash in running water",
+      "Give a share to the king"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the worshiper profess to the priest?",
+     "options": [
+      "He has come to the land sworn to the fathers",
+      "He has kept every Sabbath",
+      "He is from the tribe of Levi",
+      "He has paid all his debts"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD see when they cried to him?",
+     "options": [
+      "Their affliction, toil, and oppression",
+      "Their idols and their sin",
+      "Their gold and their cattle",
+      "Their tents in the desert"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which of these is listed as a way the LORD brought them out of Egypt?",
+     "options": [
+      "With great terror",
+      "With a pillar of cloud",
+      "With a flood of water",
+      "With chariots of fire"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall therefore keep and do them with all your heart and ____.",
+     "answer": "with all your soul",
+     "wrong": [
+      "with all your strength",
+      "with all your mind",
+      "with all your house"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The Egyptians mistreated us, afflicted us, and ____.",
+     "answer": "imposed hard labor on us",
+     "wrong": [
+      "took away our children",
+      "burned our houses",
+      "stole our cattle"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Moses says the LORD will make Israel high above all the nations he has made.",
+     "answer": true,
+     "v": 19
     }
    ]
   },
@@ -3024,6 +5073,85 @@
      "q": "The last curse is on anyone who secretly worships the sun.",
      "answer": false,
      "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "On which mountain do six tribes stand to bless the people?",
+     "options": [
+      "Mount Gerizim",
+      "Mount Sinai",
+      "Mount Nebo",
+      "Mount Zion"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "The curse on withholding justice protects whom?",
+     "options": [
+      "The foreigner, fatherless, and widow",
+      "The priests and Levites",
+      "The elders and judges",
+      "The kings and princes"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to verse 24, who is cursed?",
+     "options": [
+      "He who secretly kills his neighbor",
+      "He who strikes his servant",
+      "He who curses the king",
+      "He who breaks the Sabbath"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where does the cursed man set up his engraved or molten image?",
+     "options": [
+      "In secret",
+      "On a high hill",
+      "In the city gate",
+      "Beside the altar"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall therefore obey the LORD your God's voice, and do ____, which I command you today.",
+     "answer": "his commandments and his statutes",
+     "wrong": [
+      "all that the elders say",
+      "the works of your fathers",
+      "what is right in your eyes"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Moses and ____ commanded the people, saying, \"Keep all the commandment which I command you today.\"",
+     "answer": "the elders of Israel",
+     "wrong": [
+      "the Levitical priests",
+      "Joshua and Caleb",
+      "the heads of thousands"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter pronounces a curse on anyone who removes his neighbor's landmark.",
+     "answer": true,
+     "v": 17
     }
    ]
   },
@@ -3138,6 +5266,85 @@
      "q": "Under the curses, the foreigner among them will come down lower and lower.",
      "answer": false,
      "v": 43
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where does the chapter say they will be blessed if they obey?",
+     "options": [
+      "In the city and in the field",
+      "Only in the house of the LORD",
+      "In Egypt and in Canaan",
+      "On the mountains and the sea"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which household items does the chapter say will be blessed?",
+     "options": [
+      "Their basket and kneading trough",
+      "Their lamps and oil jars",
+      "Their cups and plates",
+      "Their beds and tables"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why will they gather little after carrying much seed into the field?",
+     "options": [
+      "The locust will consume it",
+      "The rain will not fall",
+      "Enemies will burn it",
+      "The ground will turn to salt"
+     ],
+     "v": 38
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why won't they anoint themselves with oil from their olive trees?",
+     "options": [
+      "Their olives will drop off",
+      "Enemies will cut the trees down",
+      "The oil will turn bitter",
+      "Fire will burn the groves"
+     ],
+     "v": 40
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall be blessed when you come in, and you shall be blessed ____.",
+     "answer": "when you go out",
+     "wrong": [
+      "when you lie down",
+      "in all your ways",
+      "when you rise up"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He will put ____ on your neck until he has destroyed you.",
+     "answer": "an iron yoke",
+     "wrong": [
+      "a heavy chain",
+      "a bronze collar",
+      "a wooden beam"
+     ],
+     "v": 48
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Under the curses, they will grope at noonday as the blind gropes in darkness.",
+     "answer": true,
+     "v": 29
     }
    ]
   },
@@ -3252,6 +5459,85 @@
      "q": "Moses says the LORD had not given them a heart to know, eyes to see, and ears to hear.",
      "answer": true,
      "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why does Moses tell them to keep the words of this covenant?",
+     "options": [
+      "That they may prosper in all they do",
+      "That they may return to Egypt",
+      "That Moses may enter the land",
+      "That they may conquer Moab"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Moses say they had not eaten or drunk in the wilderness?",
+     "options": [
+      "Bread, wine, or strong drink",
+      "Meat, milk, or honey",
+      "Fish, fruit, or oil",
+      "Water from any well"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will men say is the reason the LORD ruined the land?",
+     "options": [
+      "They abandoned the LORD's covenant",
+      "They failed to bring their tithes",
+      "They asked for a king",
+      "They left the land for Egypt"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "To whom did Moses give the land taken from Sihon and Og?",
+     "options": [
+      "Reuben, Gad, and half of Manasseh",
+      "Judah, Simeon, and Benjamin",
+      "Ephraim, Dan, and Asher",
+      "The Levites and the priests"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The LORD will not pardon him, and the LORD will blot out ____.",
+     "answer": "his name from under the sky",
+     "wrong": [
+      "his house from Israel",
+      "his children from the land",
+      "his portion in the camp"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The LORD rooted them out of their land in anger, in wrath, and in great indignation, and thrust them ____.",
+     "answer": "into another land",
+     "wrong": [
+      "into the sea",
+      "back into Egypt",
+      "among the wild beasts"
+     ],
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Moses says the people had only heard reports of what the LORD did in Egypt.",
+     "answer": false,
+     "v": 2
     }
    ]
   },
@@ -3366,6 +5652,85 @@
      "q": "Moses says the LORD will again rejoice over them as he rejoiced over their fathers.",
      "answer": true,
      "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Moses declare will happen if their heart turns away to other gods?",
+     "options": [
+      "They will surely perish",
+      "They will be sent back to Egypt",
+      "They will lose their king",
+      "They will wander forty more years"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom does Moses call to witness against them today?",
+     "options": [
+      "Heaven and earth",
+      "The sun and the moon",
+      "The priests and Levites",
+      "The mountains of Moab"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Moses say the LORD will increase more than their fathers'?",
+     "options": [
+      "Their numbers",
+      "Their wisdom",
+      "Their silver",
+      "Their years"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where does Moses say the commandments and statutes are written?",
+     "options": [
+      "In this book of the law",
+      "On the doorposts of their houses",
+      "On the stones of the altar",
+      "On the priests' garments"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I command you today to love the LORD your God, to walk in his ways and to keep his commandments, that you may ____.",
+     "answer": "live and multiply",
+     "wrong": [
+      "rest and prosper",
+      "rule the nations",
+      "see his glory"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "But if your heart turns away, and you will not hear, but are ____ and worship other gods, and serve them.",
+     "answer": "drawn away",
+     "wrong": [
+      "led astray",
+      "carried off",
+      "made afraid"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Moses says the LORD swore to give the land to Abraham, Isaac, and Jacob.",
+     "answer": true,
+     "v": 20
     }
    ]
   },
@@ -3480,6 +5845,85 @@
      "q": "Moses wrote the song the same day and taught it to Israel.",
      "answer": true,
      "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Moses say to Joshua in the sight of all Israel?",
+     "options": [
+      "Be strong and courageous",
+      "Wait quietly for the LORD",
+      "Choose seventy elders",
+      "Build an altar first"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who was to be assembled to hear the law read?",
+     "options": [
+      "Men, women, little ones, and foreigners",
+      "Only the men of Israel",
+      "Only the priests and Levites",
+      "Only the elders and officers"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "The LORD will do to the nations as he did to which kings?",
+     "options": [
+      "Sihon and Og",
+      "Pharaoh and his captains",
+      "Balak of Moab",
+      "The kings of Edom"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whom did Moses ask to be assembled so he could speak these words in their ears?",
+     "options": [
+      "The elders of the tribes and the officers",
+      "The women and the children",
+      "The foreigners in the camp",
+      "The captains of the army"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The LORD himself is who goes before you. He will be with you. ____. Don't be discouraged.",
+     "answer": "Don't be afraid",
+     "wrong": [
+      "Don't turn back",
+      "Don't look behind",
+      "Don't grow weary"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "And that their children, who have not known, may hear and learn ____.",
+     "answer": "to fear the LORD your God",
+     "wrong": [
+      "to keep the feast of booths",
+      "the days of old",
+      "their fathers' ways"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD commissioned Caleb to bring the children of Israel into the land.",
+     "answer": false,
+     "v": 23
     }
    ]
   },
@@ -3594,6 +6038,85 @@
      "q": "The song says the enemies' vine is of the vine of Sodom and their grapes are poison.",
      "answer": true,
      "v": 32
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the song call God, whose work is perfect?",
+     "options": [
+      "The Rock",
+      "The Shepherd",
+      "The King",
+      "The Judge"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Moses say his doctrine will drop like?",
+     "options": [
+      "The rain",
+      "Manna",
+      "The snow",
+      "Sparks of fire"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To whom does the song say the people sacrificed?",
+     "options": [
+      "Demons, not God",
+      "Baal and Asherah",
+      "The sun and moon",
+      "The kings of Egypt"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did God cause Jacob to suck out of the rock?",
+     "options": [
+      "Honey",
+      "Water",
+      "Milk",
+      "Wine"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I kill and I make alive. I wound and ____. There is no one who can deliver out of my hand.",
+     "answer": "I heal",
+     "wrong": [
+      "I bind",
+      "I restore",
+      "I forgive"
+     ],
+     "v": 39
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For it is no vain thing for you, because ____, and through this thing you shall prolong your days.",
+     "answer": "it is your life",
+     "wrong": [
+      "it is written",
+      "the LORD has spoken",
+      "it is holy"
+     ],
+     "v": 47
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD tells Moses he will see the land only from a distance.",
+     "answer": true,
+     "v": 52
     }
    ]
   },
@@ -3709,6 +6232,85 @@
      "q": "Moses says Levi will teach Jacob God's ordinances and put incense before him.",
      "answer": true,
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Before what event did Moses bless the children of Israel?",
+     "options": [
+      "His death",
+      "Crossing the Jordan",
+      "The battle with Og",
+      "Building the tabernacle"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the chapter call the law Moses commanded?",
+     "options": [
+      "An inheritance for the assembly of Jacob",
+      "A burden for the people",
+      "A secret for the priests",
+      "A song for the nations"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Moses say are with Levi, the LORD's godly one?",
+     "options": [
+      "The Thummim and the Urim",
+      "The ark and the tablets",
+      "The rod and the staff",
+      "The lampstand and the table"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which tribe is told to rejoice in its going out?",
+     "options": [
+      "Zebulun",
+      "Gad",
+      "Naphtali",
+      "Simeon"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "There is no one like God, Jeshurun, who ____ for your help.",
+     "answer": "rides on the heavens",
+     "wrong": [
+      "stands in the gate",
+      "fights with the sword",
+      "watches from the mountain"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "About Gad he said, \"He who enlarges Gad is blessed. He dwells as ____.\"",
+     "answer": "a lioness",
+     "wrong": [
+      "a young lion",
+      "a mighty bear",
+      "a desert wolf"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Moses says Israel dwells in safety in a land of grain and new wine.",
+     "answer": true,
+     "v": 28
     }
    ]
   },
@@ -3807,6 +6409,73 @@
      "q": "The elders of Israel buried Moses on the top of Mount Nebo.",
      "answer": false,
      "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Moses went up Mount Nebo to the top of which peak?",
+     "options": [
+      "Pisgah",
+      "Mount Hor",
+      "Mount Ebal",
+      "Mount Gerizim"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why was Joshua full of the spirit of wisdom?",
+     "options": [
+      "Moses had laid his hands on him",
+      "He had fasted forty days",
+      "The priests had anointed him",
+      "He had seen the LORD's face"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where does the chapter say the LORD sent Moses to do signs and wonders?",
+     "options": [
+      "In the land of Egypt",
+      "In the land of Moab",
+      "At Mount Sinai",
+      "In the land of Canaan"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "So Moses ____ died there in the land of Moab, according to the LORD's word.",
+     "answer": "the servant of the LORD",
+     "wrong": [
+      "the prophet of Israel",
+      "the leader of the people",
+      "the son of Amram"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "And in all the mighty hand, and in all ____, which Moses did in the sight of all Israel.",
+     "answer": "the awesome deeds",
+     "wrong": [
+      "the great battles",
+      "the holy songs",
+      "the wise judgments"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "From the mountain, the LORD showed Moses the land of Gilead as far as Dan.",
+     "answer": true,
+     "v": 1
     }
    ]
   }

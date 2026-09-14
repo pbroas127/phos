@@ -113,6 +113,85 @@
      "q": "The chapter ends by saying saviors will go up on Mount Sinai to judge the mountains of Esau.",
      "answer": false,
      "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who does the LORD say he will destroy out of Edom in that day?",
+     "options": [
+      "The wise men",
+      "The priests",
+      "The kings",
+      "The merchants"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the prophecy say strangers cast lots for?",
+     "options": [
+      "Jerusalem",
+      "Samaria",
+      "The land of Edom",
+      "The temple treasures"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Because Edom has drunk on God's holy mountain, what will all the nations do continually?",
+     "options": [
+      "Drink",
+      "Mourn",
+      "Wander",
+      "Wage war"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What is Edom warned not to do at the crossroads?",
+     "options": [
+      "Cut off those who escape",
+      "Collect taxes from travelers",
+      "Set up idols to its gods",
+      "Block the armies of Judah"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "But in Mount Zion, there will be those who escape, and ____.",
+     "answer": "it will be holy",
+     "wrong": [
+      "it will be rebuilt",
+      "it will stand forever",
+      "it will be at peace"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Friends who eat your bread ____ under you.",
+     "answer": "lay a snare",
+     "wrong": [
+      "dig a pit",
+      "spread a net",
+      "set a fire"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God tells Edom that he has made it great among the nations.",
+     "answer": false,
+     "v": 2
     }
    ]
   }

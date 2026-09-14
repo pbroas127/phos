@@ -112,6 +112,80 @@
      "q": "Paul says he was once more zealous for the traditions of his fathers than many of his own age.",
      "answer": true,
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the assemblies of Judea hear about Paul?",
+     "options": [
+      "The one who persecuted them now preaches the faith",
+      "He had been thrown into prison",
+      "He had gone back to the Jews' religion",
+      "He was teaching the law to Gentiles"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does Paul say Christ gave himself for our sins?",
+     "options": [
+      "To deliver us out of this present evil age",
+      "To restore the kingdom to Israel",
+      "To fulfill the whole law for us",
+      "To make us rulers with him"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How well did the assemblies of Judea know Paul at that time?",
+     "options": [
+      "They still didn't know him by face",
+      "They knew him as a close friend",
+      "They had sent him out to preach",
+      "They had often heard him teach"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "There isn't another good news. Only there are some who trouble you and want to ____.",
+     "answer": "pervert the Good News of Christ",
+     "wrong": [
+      "silence the preaching of Paul",
+      "bring you back under the law",
+      "divide the assemblies of Galatia"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "God, who separated me from ____ and called me through his grace.",
+     "answer": "my mother's womb",
+     "wrong": [
+      "my father's house",
+      "the Jews' religion",
+      "my own people"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says he once persecuted the assembly of God beyond measure.",
+     "answer": true,
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says that after God revealed his Son in him, he immediately conferred with flesh and blood.",
+     "answer": false,
+     "v": 16
     }
    ]
   },
@@ -226,6 +300,85 @@
      "q": "Paul says Peter was entrusted with the Good News for the circumcised.",
      "answer": true,
      "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "By what does Paul say he now lives his life in the flesh?",
+     "options": [
+      "By faith in the Son of God",
+      "By keeping the law of Moses",
+      "By the strength of his own will",
+      "By the teaching of the apostles"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does Paul say he went up to Jerusalem this time?",
+     "options": [
+      "By revelation",
+      "At the assembly's request",
+      "To escape persecution",
+      "To be judged by the elders"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How long did Paul give way to the false brothers?",
+     "options": [
+      "Not even for an hour",
+      "For a few days",
+      "Until Peter arrived",
+      "Only during the feast"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Paul ask Peter in front of them all?",
+     "options": [
+      "Why do you compel Gentiles to live as Jews?",
+      "Why did you deny the Lord three times?",
+      "Why won't you preach to the Gentiles?",
+      "Why do you eat with tax collectors?"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For I through the law died to the law, that ____.",
+     "answer": "I might live to God",
+     "wrong": [
+      "I might be made free",
+      "grace might abound more",
+      "the promise might stand"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Whatever they were, it makes no difference to me; God doesn't show ____.",
+     "answer": "partiality to man",
+     "wrong": [
+      "favor to the proud",
+      "mercy to the wicked",
+      "his face to all"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says that if we seek to be justified in Christ and are found sinners, Christ is a servant of sin.",
+     "answer": false,
+     "v": 17
     }
    ]
   },
@@ -340,6 +493,80 @@
      "q": "Paul points out that the promise was spoken to Abraham's offspring as of many, not as of one.",
      "answer": false,
      "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How does Paul address the Galatians at the start of the chapter?",
+     "options": [
+      "Foolish Galatians",
+      "Beloved children",
+      "Faithful brothers",
+      "Stubborn people"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does Paul say the law was added?",
+     "options": [
+      "Because of transgressions",
+      "To replace the promise",
+      "To make people alive",
+      "To divide Jews from Gentiles"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Having begun in the Spirit, what does Paul ask if they are now doing?",
+     "options": [
+      "Being completed in the flesh",
+      "Turning back to idols",
+      "Growing weary of doing good",
+      "Boasting in their own works"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "No man is justified by the law before God, for, The righteous ____.",
+     "answer": "will live by faith",
+     "wrong": [
+      "will keep the law",
+      "will inherit the earth",
+      "will never be shaken"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For you are all ____, through faith in Christ Jesus.",
+     "answer": "children of God",
+     "wrong": [
+      "heirs of the kingdom",
+      "servants of the Lord",
+      "members of one body"
+     ],
+     "v": 26
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says the law is against the promises of God.",
+     "answer": false,
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says the blessing of Abraham comes on the Gentiles through Christ Jesus.",
+     "answer": true,
+     "v": 14
     }
    ]
   },
@@ -454,6 +681,80 @@
      "q": "Paul says the Galatians received him as an angel of God, even as Christ Jesus.",
      "answer": true,
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Since you are no longer a bondservant, what does Paul say you are?",
+     "options": [
+      "A son, and an heir of God",
+      "A servant of the Spirit",
+      "A friend of the apostles",
+      "A citizen of Israel"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "As Isaac was, what does Paul say believers are?",
+     "options": [
+      "Children of promise",
+      "Children of the law",
+      "Sons of Abraham by birth",
+      "Heirs according to the flesh"
+     ],
+     "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Until when is the young heir under guardians and stewards?",
+     "options": [
+      "The day appointed by the father",
+      "The day he learns the whole law",
+      "The day he turns thirty",
+      "The day his father dies"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "That he might redeem those who were under the law, that we might receive ____.",
+     "answer": "the adoption as children",
+     "wrong": [
+      "the promise of the Spirit",
+      "the inheritance of Abraham",
+      "the blessing of the nations"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I am afraid for you, that I might have ____ for you.",
+     "answer": "wasted my labor",
+     "wrong": [
+      "spoken too harshly",
+      "failed in my prayers",
+      "come too late"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul quotes Scripture saying the son of the servant will inherit with the son of the free woman.",
+     "answer": false,
+     "v": 30
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says the Galatians have come to know God, or rather to be known by God.",
+     "answer": true,
+     "v": 9
     }
    ]
   },
@@ -568,6 +869,80 @@
      "q": "Paul says those who belong to Christ have crucified the flesh with its passions and lusts.",
      "answer": true,
      "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say Christ will profit those who receive circumcision?",
+     "options": [
+      "Nothing",
+      "A little",
+      "Everything",
+      "Only in this life"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul warn about those who practice the deeds of the flesh?",
+     "options": [
+      "They will not inherit God's Kingdom",
+      "They must be baptized again",
+      "They will lose their earthly wealth",
+      "They must leave the assembly for a year"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul say would be removed if he still preached circumcision?",
+     "options": [
+      "The stumbling block of the cross",
+      "The curse of the law",
+      "The wall between Jew and Gentile",
+      "The need for faith"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Stand firm in the liberty by which Christ has made us free, and don't be entangled again with ____.",
+     "answer": "a yoke of bondage",
+     "wrong": [
+      "the chains of sin",
+      "the cares of this world",
+      "the rules of men"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Gentleness, and self control. Against such things ____.",
+     "answer": "there is no law",
+     "wrong": [
+      "God is well pleased",
+      "no one can stand",
+      "the flesh always wars"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says that if we live by the Spirit, we should also walk by the Spirit.",
+     "answer": true,
+     "v": 25
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says the flesh and the Spirit work together in agreement.",
+     "answer": false,
+     "v": 17
     }
    ]
   },
@@ -682,6 +1057,80 @@
      "q": "Paul says those who push circumcision keep the law carefully themselves.",
      "answer": false,
      "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul wish on all who walk by this rule?",
+     "options": [
+      "Peace and mercy",
+      "Grace and truth",
+      "Joy and strength",
+      "Honor and glory"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say a man does who thinks himself something when he is nothing?",
+     "options": [
+      "Deceives himself",
+      "Shames his brothers",
+      "Grieves the Spirit",
+      "Loses his reward"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why does Paul say some want the Galatians to be circumcised?",
+     "options": [
+      "So they may boast in your flesh",
+      "So they may be counted righteous",
+      "So they may enter the temple",
+      "So they may win favor in Jerusalem"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The grace of our Lord Jesus Christ be with ____, brothers. Amen.",
+     "answer": "your spirit",
+     "wrong": [
+      "you all",
+      "your hearts",
+      "your households"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You who are spiritual must restore such a one, looking to yourself so that you also ____.",
+     "answer": "aren't tempted",
+     "wrong": [
+      "don't fall away",
+      "aren't judged",
+      "don't stumble"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says each man should find reason to boast by comparing himself with someone else.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul tells them not to be weary in doing good.",
+     "answer": true,
+     "v": 9
     }
    ]
   }

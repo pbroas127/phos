@@ -9,7 +9,14 @@
 {"t":"blank","d":3,"q":"Not paying attention to ____ and commandments of men who turn away from the truth.","answer":"Jewish fables","wrong":["Greek philosophies","old wives' tales","vain traditions"],"v":14},
 {"t":"order","d":3,"items":["Greeting to Titus, his true child","The overseer must be blameless","Many unruly men and deceivers","To the pure, all things are pure"],"v":4},
 {"t":"tf","d":1,"q":"Paul tells Titus to reprove the deceivers sharply so they may be sound in the faith.","answer":true,"v":13},
-{"t":"tf","d":2,"q":"Paul says the saying about the Cretans is not true.","answer":false,"v":13}
+{"t":"tf","d":2,"q":"Paul says the saying about the Cretans is not true.","answer":false,"v":13},
+{"t":"choice","d":1,"q":"What does Paul say about God, who promised eternal life before time began?","options":["He can't lie","He never sleeps","He dwells in light","He never changes"],"v":2},
+{"t":"choice","d":2,"q":"As whose steward must the overseer be blameless?","options":["God's","The apostles'","The assembly's","Titus's"],"v":7},
+{"t":"choice","d":2,"q":"Why were the unruly men teaching things they ought not?","options":["For dishonest gain's sake","To win followers","To please the rulers","Out of ignorance"],"v":11},
+{"t":"choice","d":3,"q":"What is defiled in those who are defiled and unbelieving?","options":["Their mind and their conscience","Their hands and their lips","Their homes and their food","Their words and their deeds"],"v":15},
+{"t":"blank","d":2,"q":"That he may be able to exhort in the sound doctrine, and to convict ____.","answer":"those who contradict him","wrong":["all who walk in error","the proud and the scoffers","those outside the faith"],"v":9},
+{"t":"blank","d":3,"q":"But given to hospitality, ____, sober minded, fair, holy, self controlled.","answer":"a lover of good","wrong":["a teacher of truth","a friend of strangers","a man of peace"],"v":8},
+{"t":"tf","d":1,"q":"Paul calls himself a servant of God and an apostle of Jesus Christ.","answer":true,"v":1}
 ]},
 "2":{"keyVerse":11,"questions":[
 {"t":"choice","d":1,"q":"Whom are the older women to train?","options":["The young wives","The older men","The servants","The new believers"],"v":4},
@@ -21,7 +28,14 @@
 {"t":"blank","d":3,"q":"And purify for himself a people for his own possession, ____.","answer":"zealous for good works","wrong":["holy and without blame","rich in faith and love","a royal priesthood forever"],"v":14},
 {"t":"order","d":2,"items":["Instructions for older men","Instructions for older women","Instructions for younger men","Instructions for servants"],"v":2},
 {"t":"tf","d":1,"q":"Paul says the grace of God has appeared, bringing salvation only to the Jews.","answer":false,"v":11},
-{"t":"tf","d":3,"q":"Paul wants Titus's sound speech to leave opponents ashamed, with nothing evil to say.","answer":true,"v":8}
+{"t":"tf","d":3,"q":"Paul wants Titus's sound speech to leave opponents ashamed, with nothing evil to say.","answer":true,"v":8},
+{"t":"choice","d":1,"q":"In all things, Titus should show himself an example of what?","options":["Good works","Humility","Patience","Prayer"],"v":7},
+{"t":"choice","d":2,"q":"What should the older women be teachers of?","options":["That which is good","The law of Moses","The younger men","Songs and hymns"],"v":3},
+{"t":"choice","d":2,"q":"From what did Christ give himself to redeem us?","options":["All iniquity","The curse of the law","Death and the grave","The power of Rome"],"v":14},
+{"t":"choice","d":3,"q":"Why should the young wives live this way, according to Paul?","options":["That God's word may not be blasphemed","That their homes may prosper","That they may be honored","That they may win their neighbors"],"v":5},
+{"t":"blank","d":2,"q":"We would live soberly, righteously, and godly ____.","answer":"in this present age","wrong":["before all people","until his coming","all the days of life"],"v":12},
+{"t":"blank","d":3,"q":"That older men should be temperate, sensible, sober minded, sound in faith, in love, and ____.","answer":"in perseverance","wrong":["in hope","in wisdom","in doctrine"],"v":2},
+{"t":"tf","d":1,"q":"Paul says servants should contradict their masters when they disagree.","answer":false,"v":9}
 ]},
 "3":{"keyVerse":5,"questions":[
 {"t":"choice","d":1,"q":"How does Paul describe what we once were?","options":["Foolish, disobedient, and deceived","Weak, fearful, and alone","Proud, rich, and powerful","Lost, hungry, and poor"],"v":3},
@@ -33,6 +47,13 @@
 {"t":"blank","d":3,"q":"That being justified by his grace, we might be made heirs according to ____.","answer":"the hope of eternal life","wrong":["the promise to Abraham","the riches of his glory","the counsel of his will"],"v":7},
 {"t":"order","d":3,"items":["Be subject to rulers and authorities","God's kindness and love appeared","Insist so believers maintain good works","Greetings from all who are with Paul"],"v":1},
 {"t":"tf","d":1,"q":"Paul tells Titus to engage in disputes about the law to correct false teachers.","answer":false,"v":9},
-{"t":"tf","d":2,"q":"Paul says the Holy Spirit was poured out on us richly through Jesus Christ.","answer":true,"v":6}
+{"t":"tf","d":2,"q":"Paul says the Holy Spirit was poured out on us richly through Jesus Christ.","answer":true,"v":6},
+{"t":"choice","d":1,"q":"Of whom does Paul say believers should speak evil?","options":["No one","Only false teachers","Unbelieving rulers","Those who oppose them"],"v":2},
+{"t":"choice","d":2,"q":"Through what does Paul say God saved us?","options":["The washing of regeneration and renewing by the Spirit","Keeping the law faithfully","Offering sacrifices in the temple","Our own good deeds"],"v":5},
+{"t":"choice","d":2,"q":"Why should our people learn to maintain good works?","options":["To meet necessary needs and not be unfruitful","To earn their salvation","To impress the rulers","To support the apostles"],"v":14},
+{"t":"choice","d":3,"q":"Whom does Paul say he may send to Titus?","options":["Artemas or Tychicus","Zenas or Apollos","Luke or Mark","Timothy or Silas"],"v":12},
+{"t":"blank","d":2,"q":"All who are with me greet you. Greet those who love us ____.","answer":"in faith","wrong":["in truth","in the Lord","with all their hearts"],"v":15},
+{"t":"blank","d":3,"q":"Knowing that such a one is perverted and sinful, ____.","answer":"being self condemned","wrong":["being far from God","being given to lies","being hardened in heart"],"v":11},
+{"t":"tf","d":1,"q":"Paul says believers should show all humility toward all men.","answer":true,"v":2}
 ]}
 }}

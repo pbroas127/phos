@@ -112,6 +112,85 @@
       "Bilhah and Zilpah"
      ],
      "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the new king tell his people about the Israelites?",
+     "options": [
+      "They were more and mightier than the Egyptians",
+      "They were plotting to leave Egypt",
+      "They worshiped foreign gods",
+      "They owned too much of the land"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Joseph and all his brothers died before the new king arose.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many souls came out of Jacob's body into Egypt?",
+     "options": [
+      "Seventy",
+      "Twelve",
+      "Forty",
+      "Three hundred"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did God bless the midwives because they feared God?",
+     "options": [
+      "He gave them families",
+      "He made them rich",
+      "He gave them long life",
+      "He made them rulers"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The more they spread out, the more the Egyptians started to ____.",
+     "answer": "dread the children of Israel",
+     "wrong": [
+      "envy the children of Israel",
+      "mock the children of Israel",
+      "trust the children of Israel"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The children of Israel multiplied, and grew exceedingly mighty; and ____.",
+     "answer": "the land was filled with them",
+     "wrong": [
+      "the Egyptians honored them",
+      "their flocks increased greatly",
+      "the king made peace with them"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did the king say the midwives would see the Hebrew women?",
+     "options": [
+      "On the birth stool",
+      "At the riverbank",
+      "In the brick fields",
+      "In their tents"
+     ],
+     "v": 16
     }
    ]
   },
@@ -226,6 +305,85 @@
       "Some of the sheep were missing"
      ],
      "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Pharaoh's daughter come down to the river?",
+     "options": [
+      "To bathe",
+      "To draw water",
+      "To offer a sacrifice",
+      "To wash clothing"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The shepherds helped Moses water the daughters' flock.",
+     "answer": false,
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How long did Moses' mother hide him after he was born?",
+     "options": [
+      "Three months",
+      "Three weeks",
+      "Six months",
+      "One year"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who stood far off to see what would be done to the baby?",
+     "options": [
+      "His sister",
+      "His father",
+      "Pharaoh's servant",
+      "A Hebrew midwife"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "She had compassion on him, and said, \"This is ____.\"",
+     "answer": "one of the Hebrews' children",
+     "wrong": [
+      "a gift from the river",
+      "a child of the Levites",
+      "a son of the slaves"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "She took a papyrus basket for him, and coated it with ____.",
+     "answer": "tar and with pitch",
+     "wrong": [
+      "clay and with straw",
+      "wax and with oil",
+      "mud and with reeds"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Reuel tell his daughters to do about the Egyptian?",
+     "options": [
+      "Call him so he could eat bread",
+      "Send him on his way",
+      "Bring him to the well again",
+      "Ask him where he came from"
+     ],
+     "v": 20
     }
    ]
   },
@@ -340,6 +498,85 @@
       "Tents and cloth for the wilderness"
      ],
      "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did Moses hide his face at the bush?",
+     "options": [
+      "He was afraid to look at God",
+      "The fire was too bright",
+      "He was ashamed of his past",
+      "The smoke stung his eyes"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God said the Israelites would leave Egypt empty-handed.",
+     "answer": false,
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whose flock was Moses keeping when he came to Horeb?",
+     "options": [
+      "His father-in-law Jethro's",
+      "His own",
+      "His brother Aaron's",
+      "The elders of Midian's"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Moses respond when God said he would send him to Pharaoh?",
+     "options": [
+      "\"Who am I, that I should go?\"",
+      "\"Here I am, send me.\"",
+      "\"Pharaoh will kill me.\"",
+      "\"Send my brother instead.\""
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will strike Egypt with all my wonders which I will do among them, and after that ____.",
+     "answer": "he will let you go",
+     "wrong": [
+      "he will fear my name",
+      "they will bow before you",
+      "Egypt will serve you"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "This is my name forever, and this is my memorial ____.",
+     "answer": "to all generations",
+     "wrong": [
+      "to all the nations",
+      "in all the earth",
+      "among my chosen people"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What question did Moses expect the Israelites to ask him?",
+     "options": [
+      "\"What is his name?\"",
+      "\"Where is the promised land?\"",
+      "\"Why did he wait so long?\"",
+      "\"What sign has he given?\""
+     ],
+     "v": 13
     }
    ]
   },
@@ -454,6 +691,85 @@
       "a man of the covenant"
      ],
      "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Moses say was in his hand when the LORD asked?",
+     "options": [
+      "A rod",
+      "A stone",
+      "A scroll",
+      "A lamp"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When Moses took his hand out of his cloak the second time, it was still leprous.",
+     "answer": false,
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the LORD tell Moses to take hold of the snake?",
+     "options": [
+      "By the tail",
+      "By the head",
+      "By the neck",
+      "With his cloak"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD say about Aaron when his anger burned against Moses?",
+     "options": [
+      "He can speak well",
+      "He is a mighty warrior",
+      "He knows Pharaoh's court",
+      "He is wise in the law"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He will be to you a mouth, and you will be to him ____.",
+     "answer": "as God",
+     "wrong": [
+      "as a father",
+      "as a king",
+      "as a brother"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Now therefore go, and I will be with your mouth, and ____.",
+     "answer": "teach you what you shall speak",
+     "wrong": [
+      "make your tongue quick",
+      "give you words of wisdom",
+      "open Pharaoh's ears to you"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the LORD say he would do if Pharaoh refused to let Israel go?",
+     "options": [
+      "Kill Pharaoh's firstborn son",
+      "Turn the river to blood",
+      "Destroy Pharaoh's army",
+      "Take away Pharaoh's throne"
+     ],
+     "v": 23
     }
    ]
   },
@@ -568,6 +884,85 @@
       "\"The people have turned to other gods.\""
      ],
      "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the king of Egypt order Moses and Aaron to do?",
+     "options": [
+      "Get back to their burdens",
+      "Leave Egypt at once",
+      "Show him a sign",
+      "Wait three days for his answer"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The taskmasters told the people Pharaoh would still give them half the straw.",
+     "answer": false,
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Moses and Aaron say God might fall on them with?",
+     "options": [
+      "Pestilence or the sword",
+      "Famine or drought",
+      "Hail or fire",
+      "Locusts or darkness"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Pharaoh say the people kept asking to go and sacrifice?",
+     "options": [
+      "They were idle",
+      "They feared their God",
+      "They hated the taskmasters",
+      "They planned to escape"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Your servants are beaten; but the fault is ____.",
+     "answer": "in your own people",
+     "wrong": [
+      "with Moses and Aaron",
+      "in the Hebrew officers",
+      "with the lazy workers"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The taskmasters were urgent saying, \"Fulfill your work quota daily, ____!\"",
+     "answer": "as when there was straw",
+     "wrong": [
+      "or you will be beaten",
+      "before the sun goes down",
+      "as Pharaoh has commanded"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did the Israelite officers meet Moses and Aaron?",
+     "options": [
+      "Along the way, as they came from Pharaoh",
+      "At the brick kilns",
+      "In the land of Goshen",
+      "By the river's bank"
+     ],
+     "v": 20
     }
    ]
   },
@@ -683,6 +1078,73 @@
       "Simeon"
      ],
      "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did God promise to give Israel for a heritage?",
+     "options": [
+      "The land he swore to Abraham, Isaac, and Jacob",
+      "The riches of Egypt",
+      "A kingdom by the sea",
+      "The cities of the Philistines"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God said his covenant with the fathers was to give them the land of Canaan.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD tell Moses to say to Pharaoh?",
+     "options": [
+      "All that the LORD told him",
+      "Only the words Aaron spoke",
+      "That Egypt would be destroyed",
+      "That the people would return soon"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "God said, \"By my name ____ I was not known to them.\"",
+     "answer": "the LORD",
+     "wrong": [
+      "I AM",
+      "the Most High",
+      "the Holy One"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The LORD said, \"Bring out the children of Israel from the land of Egypt according to ____.\"",
+     "answer": "their armies",
+     "wrong": [
+      "their families",
+      "their tribes",
+      "their fathers' houses"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who were the parents of Aaron and Moses?",
+     "options": [
+      "Amram and Jochebed",
+      "Kohath and Elisheba",
+      "Izhar and Zipporah",
+      "Levi and Puah"
+     ],
+     "v": 20
     }
    ]
   },
@@ -797,6 +1259,85 @@
       "The elders of the Hebrews"
      ],
      "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What happened when the magicians' rods became serpents?",
+     "options": [
+      "Aaron's rod swallowed up their rods",
+      "Their serpents bit Aaron's serpent",
+      "Their rods burst into flames",
+      "Their serpents crawled away"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The river was struck while Pharaoh was away in his house.",
+     "answer": false,
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the LORD describe Pharaoh's heart before the river plague?",
+     "options": [
+      "Stubborn",
+      "Afraid",
+      "Divided",
+      "Softening"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When did the LORD say the Egyptians would know that he is the LORD?",
+     "options": [
+      "When he stretched out his hand on Egypt",
+      "When Aaron's rod became a serpent",
+      "When Pharaoh bowed before Moses",
+      "When the magicians failed"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will harden Pharaoh's heart, and ____ in the land of Egypt.",
+     "answer": "multiply my signs and my wonders",
+     "wrong": [
+      "pour out my great anger",
+      "send plagues on every house",
+      "make my name feared"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I will bring out my armies, my people the children of Israel, out of the land of Egypt by ____.",
+     "answer": "great judgments",
+     "wrong": [
+      "a strong hand",
+      "fire and hail",
+      "an outstretched arm"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How old was Moses when he and Aaron spoke to Pharaoh?",
+     "options": [
+      "Eighty",
+      "Forty",
+      "Sixty",
+      "One hundred twenty"
+     ],
+     "v": 7
     }
    ]
   },
@@ -911,6 +1452,85 @@
       "delay his word"
      ],
      "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which land did the LORD set apart so no swarms of flies would be there?",
+     "options": [
+      "Goshen",
+      "Midian",
+      "Canaan",
+      "Raamses"
+     ],
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Pharaoh let the people go after the swarms of flies were removed.",
+     "answer": false,
+     "v": 32
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides houses and beds, where did the LORD say the frogs would go?",
+     "options": [
+      "Into their ovens and kneading troughs",
+      "Into their wells and cisterns",
+      "Into their temples and shrines",
+      "Into their barns and wine presses"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the magicians do after Aaron brought up the frogs?",
+     "options": [
+      "Brought up frogs on the land too",
+      "Drove the frogs back into the river",
+      "Admitted they could do nothing",
+      "Hid in Pharaoh's house"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But when Pharaoh saw that there was ____, he hardened his heart.",
+     "answer": "a respite",
+     "wrong": [
+      "no more danger",
+      "a sign of weakness",
+      "a way of escape"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Moses said, \"Let it be according to your word, that you may know that there is no one ____.\"",
+     "answer": "like the LORD our God",
+     "wrong": [
+      "like the gods of Egypt",
+      "who can resist his hand",
+      "greater than your magicians"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How many swarms of flies remained after the LORD removed them?",
+     "options": [
+      "Not one",
+      "A few in Goshen",
+      "Only those in Pharaoh's house",
+      "About half of them"
+     ],
+     "v": 31
     }
    ]
   },
@@ -1025,6 +1645,85 @@
       "They were planning to attack Goshen"
      ],
      "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What came with the hail when Moses stretched out his rod?",
+     "options": [
+      "Thunder and lightning",
+      "A strong east wind",
+      "Thick darkness",
+      "Swarms of locusts"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When the hail stopped, Pharaoh kept his promise and let the people go.",
+     "answer": false,
+     "v": 34
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the hail do to the trees of the field?",
+     "options": [
+      "Broke every tree",
+      "Stripped only their leaves",
+      "Left them standing",
+      "Set them on fire"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Pharaoh promise when he asked Moses to pray about the hail?",
+     "options": [
+      "To let them go, to stay no longer",
+      "To give them his livestock",
+      "To let only the men go",
+      "To worship the LORD himself"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will send all my plagues against your heart, that you may know that there is no one like me ____.",
+     "answer": "in all the earth",
+     "wrong": [
+      "among the gods of Egypt",
+      "in the heavens above",
+      "among all your wise men"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I will cause it to rain a very grievous hail, such as has not been in Egypt ____.",
+     "answer": "since the day it was founded",
+     "wrong": [
+      "in all the days of Pharaoh",
+      "since the time of Joseph",
+      "in the memory of any man"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did Moses say he would spread out his hands to the LORD?",
+     "options": [
+      "Once he had gone out of the city",
+      "In Pharaoh's court",
+      "In the land of Goshen",
+      "On God's mountain"
+     ],
+     "v": 29
     }
    ]
   },
@@ -1139,6 +1838,85 @@
       "\"I will return tomorrow.\""
      ],
      "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was left growing in Egypt after the locusts?",
+     "options": [
+      "Nothing green, neither tree nor herb",
+      "Only the trees",
+      "Only the fields of Goshen",
+      "The wheat and the spelt"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "During the locust plague, Pharaoh called for Moses in haste and admitted he had sinned.",
+     "answer": true,
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom did Moses say would go to hold a feast to the LORD?",
+     "options": [
+      "Young and old, with flocks and herds",
+      "Only the men and elders",
+      "The men and their livestock",
+      "The priests and the Levites"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "After the darkness, what did Pharaoh say must stay behind?",
+     "options": [
+      "Their flocks and herds",
+      "Their little ones",
+      "Their wives",
+      "Their silver and gold"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "How long will you refuse to ____ before me?",
+     "answer": "humble yourself",
+     "wrong": [
+      "bow down yourself",
+      "fall down",
+      "bend your knee"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Stretch out your hand toward the sky, that there may be darkness over the land of Egypt, even ____.",
+     "answer": "darkness which may be felt",
+     "wrong": [
+      "darkness deeper than night",
+      "darkness like the grave",
+      "darkness for seven days"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the LORD say Moses would tell his son and his son's son?",
+     "options": [
+      "What things the LORD had done to Egypt",
+      "How to keep the Passover",
+      "The names of the twelve tribes",
+      "The laws given on the mountain"
+     ],
+     "v": 2
     }
    ]
   },
@@ -1242,6 +2020,73 @@
       "my judgments may be seen"
      ],
      "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD do to Pharaoh's heart after all these wonders?",
+     "options": [
+      "Hardened it",
+      "Softened it",
+      "Filled it with fear",
+      "Broke it"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Moses said Pharaoh's servants would bow down to him and tell him to get out.",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Moses say would be heard throughout all the land of Egypt?",
+     "options": [
+      "A great cry",
+      "The sound of trumpets",
+      "Thunder from heaven",
+      "The barking of dogs"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides people, what else did Moses say would lose its firstborn?",
+     "options": [
+      "The livestock",
+      "The fish of the river",
+      "The birds of the air",
+      "The crops of the field"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The LORD ____ in the sight of the Egyptians.",
+     "answer": "gave the people favor",
+     "wrong": [
+      "made the people fearsome",
+      "gave Moses great power",
+      "made the people honored"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "That you may know that the LORD makes ____ between the Egyptians and Israel.",
+     "answer": "a distinction",
+     "wrong": [
+      "a covenant",
+      "a great wall",
+      "peace"
+     ],
+     "v": 7
     }
    ]
   },
@@ -1356,6 +2201,85 @@
       "The bones belong to the priest"
      ],
      "v": 46
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD say this month would be to Israel?",
+     "options": [
+      "The first month of the year",
+      "A month of mourning",
+      "The last month of harvest",
+      "A month of rest"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Any Passover meat left until morning was to be burned with fire.",
+     "answer": true,
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What kind of lamb were they to take for the Passover?",
+     "options": [
+      "A male a year old, without defect",
+      "A female lamb born that spring",
+      "A young ram with spotted wool",
+      "The largest lamb in the flock"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What were they to dip in the blood to strike the door posts?",
+     "options": [
+      "A bunch of hyssop",
+      "A branch of cedar",
+      "A linen cloth",
+      "Their fingers"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Seven days you shall eat unleavened bread; even the first day you shall ____ out of your houses.",
+     "answer": "put away yeast",
+     "wrong": [
+      "sweep the dust",
+      "carry the ashes",
+      "bring the firstborn"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The Egyptians were urgent to send the people out in haste, for they said, \"____.\"",
+     "answer": "We are all dead men",
+     "wrong": [
+      "The LORD is against us",
+      "Our gods have failed us",
+      "Egypt is destroyed forever"
+     ],
+     "v": 33
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How long had the children of Israel lived in Egypt?",
+     "options": [
+      "Four hundred thirty years",
+      "Four hundred years",
+      "Two hundred ten years",
+      "Three hundred years"
+     ],
+     "v": 40
     }
    ]
   },
@@ -1470,6 +2394,85 @@
       "Rephidim, near Horeb"
      ],
      "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the LORD go before them by night in a pillar of fire?",
+     "options": [
+      "To give them light",
+      "To frighten the Egyptians",
+      "To warm the camp",
+      "To mark where to camp"
+     ],
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Leavened bread could be eaten after the first day of the feast.",
+     "answer": false,
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What were they to tell their son about the feast of unleavened bread?",
+     "options": [
+      "It is because of what the LORD did for me",
+      "It honors our father Abraham",
+      "It marks the end of harvest",
+      "It remembers the death of Joseph"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Israel sacrifice the firstborn males to the LORD?",
+     "options": [
+      "The LORD killed Egypt's firstborn when Pharaoh refused",
+      "Joseph commanded it before he died",
+      "It was the custom in Canaan",
+      "To pay for food in the wilderness"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "When your son asks, \"What is this?\" tell him, \"By ____ the LORD brought us out from Egypt.\"",
+     "answer": "strength of hand",
+     "wrong": [
+      "signs and wonders",
+      "a pillar of fire",
+      "his great mercy"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "God led the people around by the way of the wilderness by ____.",
+     "answer": "the Red Sea",
+     "wrong": [
+      "the Jordan River",
+      "the land of Goshen",
+      "the mountain of God"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In which month did the people go out of Egypt?",
+     "options": [
+      "Abib",
+      "Nisan",
+      "Tishri",
+      "Adar"
+     ],
+     "v": 4
     }
    ]
   },
@@ -1584,6 +2587,85 @@
       "Turned their horses back toward Egypt"
      ],
      "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the Israelites react when they saw the Egyptians marching after them?",
+     "options": [
+      "They were very afraid and cried to the LORD",
+      "They prepared to fight",
+      "They ran toward the sea",
+      "They turned back toward Egypt"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Israel saw the Egyptians dead on the seashore.",
+     "answer": true,
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many chosen chariots did Pharaoh take with him?",
+     "options": [
+      "Six hundred",
+      "Three hundred",
+      "One thousand",
+      "Seventy"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When Moses cried to the LORD, what did the LORD tell him to do?",
+     "options": [
+      "Tell the people to go forward",
+      "Tell the people to build an altar",
+      "Tell the people to hide in the camp",
+      "Tell the people to arm themselves"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The people feared the LORD; and they believed in the LORD and ____.",
+     "answer": "in his servant Moses",
+     "wrong": [
+      "in his holy name",
+      "in his mighty works",
+      "in the pillar of cloud"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Pharaoh will say of the children of Israel, \"They are entangled in the land. ____.\"",
+     "answer": "The wilderness has shut them in",
+     "wrong": [
+      "The sea has trapped them",
+      "Their God has left them",
+      "They cannot go back"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "When did the LORD look out on the Egyptian army and confuse it?",
+     "options": [
+      "In the morning watch",
+      "At midnight",
+      "At sunset",
+      "At noon"
+     ],
+     "v": 24
     }
    ]
   },
@@ -1698,6 +2780,85 @@
       "Midian and Amalek"
      ],
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How were the bitter waters of Marah made sweet?",
+     "options": [
+      "Moses threw in a tree the LORD showed him",
+      "Moses struck the water with his rod",
+      "Aaron poured salt into the water",
+      "The people prayed all night"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The LORD is my strength and song. He has become ____.",
+     "answer": "my salvation",
+     "wrong": [
+      "my shield",
+      "my shepherd",
+      "my refuge"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "At Marah the LORD made a statute and an ordinance for the people and tested them.",
+     "answer": true,
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to the song, how did the enemy go down into the depths?",
+     "options": [
+      "Like a stone",
+      "Like a feather",
+      "Like a falling star",
+      "Like chaff in the wind"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How is Miriam described in this chapter?",
+     "options": [
+      "The prophetess, the sister of Aaron",
+      "The wife of Moses",
+      "The daughter of Jethro",
+      "A judge over Israel"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The LORD is ____. The LORD is his name.",
+     "answer": "a man of war",
+     "wrong": [
+      "a mighty king",
+      "a consuming fire",
+      "a strong tower"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Into which wilderness did Israel go after leaving the Red Sea?",
+     "options": [
+      "The wilderness of Shur",
+      "The wilderness of Sin",
+      "The wilderness of Paran",
+      "The wilderness of Zin"
+     ],
+     "v": 22
     }
    ]
   },
@@ -1812,6 +2973,85 @@
       "To feed the priests on the Sabbath"
      ],
      "v": 32
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the people say they wished had happened?",
+     "options": [
+      "That they had died by the LORD's hand in Egypt",
+      "That they had never left Goshen",
+      "That Pharaoh had caught them",
+      "That Moses had stayed in Midian"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The manna kept overnight for the Sabbath bred worms by morning.",
+     "answer": false,
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happened to the manna some people left until morning?",
+     "options": [
+      "It bred worms and became foul",
+      "It turned hard as stone",
+      "It melted into water",
+      "It vanished completely"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the manna look like?",
+     "options": [
+      "Coriander seed, white",
+      "Small brown lentils",
+      "Crushed barley",
+      "Grains of red sand"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Because the LORD has given you the Sabbath, therefore he gives you on the sixth day ____.",
+     "answer": "the bread of two days",
+     "wrong": [
+      "a double portion of quail",
+      "rest from your labors",
+      "meat in the evening"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The children of Israel ate the manna ____, until they came to an inhabited land.",
+     "answer": "forty years",
+     "wrong": [
+      "all their days",
+      "seven years",
+      "forty days"
+     ],
+     "v": 35
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which wilderness, between Elim and Sinai, did the congregation come to?",
+     "options": [
+      "The wilderness of Sin",
+      "The wilderness of Shur",
+      "The wilderness of Paran",
+      "The wilderness of Zin"
+     ],
+     "v": 1
     }
    ]
   },
@@ -1926,6 +3166,85 @@
       "\"Why did God bring us here?\""
      ],
      "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Moses call the altar he built after the battle?",
+     "options": [
+      "The LORD our Banner",
+      "The LORD Will Provide",
+      "The LORD Is Peace",
+      "The LORD our Shield"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Moses sit on when his hands grew heavy?",
+     "options": [
+      "A stone they put under him",
+      "A chair from his tent",
+      "The corner of an altar",
+      "A bundle of garments"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD told Moses to write the memorial in a book and rehearse it in Aaron's ears.",
+     "answer": false,
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What names did Moses give the place where water came from the rock?",
+     "options": [
+      "Massah and Meribah",
+      "Marah and Elim",
+      "Horeb and Sinai",
+      "Kadesh and Zin"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The LORD has sworn: The LORD will have war with Amalek ____.",
+     "answer": "from generation to generation",
+     "wrong": [
+      "until the end of days",
+      "until they are no more",
+      "in every land"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Why have you brought us up out of Egypt, to kill us, ____ with thirst?",
+     "answer": "our children, and our livestock",
+     "wrong": [
+      "our wives, and our elders",
+      "our sons, and our daughters",
+      "our servants, and our strangers"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did Moses tell Joshua he would stand during the battle?",
+     "options": [
+      "On top of the hill with God's rod",
+      "Beside Joshua at the front",
+      "At the door of his tent",
+      "By the rock in Horeb"
+     ],
+     "v": 9
     }
    ]
   },
@@ -2040,6 +3359,85 @@
       "The strongest warriors of Israel"
      ],
      "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "After hearing Moses' report, what did Jethro say he now knew?",
+     "options": [
+      "The LORD is greater than all gods",
+      "Moses was a true prophet",
+      "Egypt would never recover",
+      "Israel would reach Canaan"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Moses told Jethro nothing about the hardships they had faced on the way.",
+     "answer": false,
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Moses greet his father-in-law when he arrived?",
+     "options": [
+      "He bowed and kissed him",
+      "He fell at his feet and wept",
+      "He gave him gifts of silver",
+      "He washed his feet"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jethro do at the end of the chapter?",
+     "options": [
+      "Went his way into his own land",
+      "Traveled on with Israel",
+      "Became a ruler of thousands",
+      "Went up the mountain of God"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jethro rejoiced for ____ which the LORD had done to Israel.",
+     "answer": "all the goodness",
+     "wrong": [
+      "all the plagues",
+      "all the battles",
+      "all the riches"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You will be able to endure, and all these people also will go to their place ____.",
+     "answer": "in peace",
+     "wrong": [
+      "with joy",
+      "in safety",
+      "with justice"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who came to eat bread with Jethro before God?",
+     "options": [
+      "Aaron and all the elders of Israel",
+      "Joshua and the young men",
+      "Miriam and the women",
+      "Hur and the priests"
+     ],
+     "v": 12
     }
    ]
   },
@@ -2154,6 +3552,85 @@
       "Fire fell on the camp"
      ],
      "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the LORD say he had brought Israel to himself?",
+     "options": [
+      "He bore them on eagles' wings",
+      "He carried them in a pillar of cloud",
+      "He led them like a shepherd",
+      "He held them in his hand"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Moses told the LORD's words only to Aaron, not to the elders.",
+     "answer": false,
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When did Israel come into the wilderness of Sinai?",
+     "options": [
+      "In the third month after leaving Egypt",
+      "Forty days after leaving Egypt",
+      "In the first month after leaving Egypt",
+      "A year after leaving Egypt"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the LORD send Moses down to warn the people?",
+     "options": [
+      "So they would not break through to gaze and perish",
+      "So they would bring offerings",
+      "So they would wash their garments again",
+      "So Aaron could lead them up"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall be my own possession from among all peoples; for ____.",
+     "answer": "all the earth is mine",
+     "wrong": [
+      "I have chosen you",
+      "you are my firstborn",
+      "I brought you out"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Let the priests also, who come near to the LORD, sanctify themselves, lest ____.",
+     "answer": "the LORD break out on them",
+     "wrong": [
+      "the people follow them up",
+      "the fire consume the camp",
+      "they die on the mountain"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "When were the people allowed to come up to the mountain?",
+     "options": [
+      "When the trumpet sounded long",
+      "When the cloud lifted",
+      "When Moses came down",
+      "At sunrise on the third day"
+     ],
+     "v": 13
     }
    ]
   },
@@ -2268,6 +3745,85 @@
       "Steps would need cut stones"
      ],
      "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What promise comes with honoring your father and mother?",
+     "options": [
+      "Your days may be long in the land",
+      "Your children will be blessed",
+      "Your crops will prosper",
+      "Your enemies will flee from you"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Remember the Sabbath day, ____.",
+     "answer": "to keep it holy",
+     "wrong": [
+      "to rest from labor",
+      "to offer a sacrifice",
+      "to honor your fathers"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The command against idols includes images of anything in the water under the earth.",
+     "answer": true,
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To whom does God show loving kindness to thousands?",
+     "options": [
+      "Those who love him and keep his commandments",
+      "Those who offer burnt offerings",
+      "All the children of Abraham",
+      "Those who rest on the Sabbath"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why must they not misuse the name of the LORD?",
+     "options": [
+      "The LORD will not hold that person guiltless",
+      "The name is too holy to speak",
+      "The priests would stone that person",
+      "It would bring a plague"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You yourselves have seen that I have talked with you ____.",
+     "answer": "from heaven",
+     "wrong": [
+      "face to face",
+      "through my servant",
+      "from the burning bush"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What gods did the LORD tell them not to make alongside him?",
+     "options": [
+      "Gods of silver or gods of gold",
+      "Gods of wood or stone",
+      "Images of the sun and moon",
+      "Idols shaped like calves"
+     ],
+     "v": 23
     }
    ]
   },
@@ -2383,6 +3939,85 @@
       "He was sent away from the camp"
      ],
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was the penalty for striking a man so that he died?",
+     "options": [
+      "He was surely put to death",
+      "He paid thirty shekels of silver",
+      "He was sold as a servant",
+      "He was sent out of the camp"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Kidnapping someone and selling him was punished only with a fine.",
+     "answer": false,
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "If a master gave a servant a wife, who kept her and the children when he went free?",
+     "options": [
+      "The master",
+      "The servant",
+      "Her father",
+      "The judges"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "If one man's bull killed another man's bull, what were they to do?",
+     "options": [
+      "Sell the live bull and divide its price",
+      "Stone the live bull as well",
+      "Have the owner pay double",
+      "Bring the matter before God"
+     ],
+     "v": 35
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "If he takes another wife to himself, he shall not diminish her food, ____, and her marital rights.",
+     "answer": "her clothing",
+     "wrong": [
+      "her lodging",
+      "her servants",
+      "her dowry"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "If a bull gores a man or a woman to death, the bull shall surely be stoned, and ____.",
+     "answer": "its meat shall not be eaten",
+     "wrong": [
+      "its hide shall be burned",
+      "its owner shall pay double",
+      "its horns shall be cut off"
+     ],
+     "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was given to a master if a bull gored his servant?",
+     "options": [
+      "Thirty shekels of silver",
+      "Fifty shekels of silver",
+      "A bull for a bull",
+      "Ten shekels of gold"
+     ],
+     "v": 32
     }
    ]
   },
@@ -2498,6 +4133,85 @@
       "The case went before the elders"
      ],
      "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was to happen to one who sacrificed to any god except the LORD?",
+     "options": [
+      "He was to be utterly destroyed",
+      "He was to pay double",
+      "He was sent out of the camp",
+      "He was sold as a servant"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God warned that those who mistreat widows would leave their own wives as widows.",
+     "answer": true,
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How much did a thief repay for an ox he stole and killed or sold?",
+     "options": [
+      "Five oxen",
+      "Two oxen",
+      "Four oxen",
+      "Seven oxen"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why was a neighbor's garment taken as collateral to be given back?",
+     "options": [
+      "It was his only covering to sleep in",
+      "It belonged to the priests",
+      "It was unclean to keep",
+      "It was worth too little"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall not blaspheme God, nor ____.",
+     "answer": "curse a ruler of your people",
+     "wrong": [
+      "despise the poor of the land",
+      "speak against your father",
+      "mock the priests of the LORD"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You shall not delay to offer from your harvest and from ____.",
+     "answer": "the outflow of your presses",
+     "wrong": [
+      "the best of your vineyards",
+      "the fruit of your trees",
+      "the increase of your fields"
+     ],
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "If a man's animal grazed in another man's field, how did he repay?",
+     "options": [
+      "From the best of his own field and vineyard",
+      "With double the grain eaten",
+      "By giving up the animal",
+      "With silver set by the judges"
+     ],
+     "v": 5
     }
    ]
   },
@@ -2612,6 +4326,85 @@
       "He will guide them only by night"
      ],
      "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why were they to rest on the seventh day?",
+     "options": [
+      "So animals, servants, and aliens could be refreshed",
+      "So they could offer sacrifices",
+      "So the land could lie fallow",
+      "So they could travel to the feast"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God told Israel they could make a covenant with the people of the land.",
+     "answer": false,
+     "v": 32
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which feast was to be kept at the end of the year?",
+     "options": [
+      "The feast of ingathering",
+      "The feast of unleavened bread",
+      "The feast of harvest",
+      "The feast of trumpets"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did God promise if they served the LORD their God?",
+     "options": [
+      "He would bless their bread and water and remove sickness",
+      "He would give them gold and silver",
+      "He would make them rulers of nations",
+      "He would send rain in every season"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall not oppress an alien, for you know ____.",
+     "answer": "the heart of an alien",
+     "wrong": [
+      "the way of the wilderness",
+      "the pain of slavery",
+      "the law of the LORD"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Don't join your hand with the wicked to be ____.",
+     "answer": "a malicious witness",
+     "wrong": [
+      "a false judge",
+      "a partner in theft",
+      "a lying prophet"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How far did God say Israel's border would reach?",
+     "options": [
+      "From the Red Sea to the sea of the Philistines",
+      "From the Jordan to the great desert",
+      "From Egypt to the land of Assyria",
+      "From Sinai to the northern mountains"
+     ],
+     "v": 31
     }
    ]
   },
@@ -2726,6 +4519,73 @@
       "One night, and he called at dawn"
      ],
      "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the people answer when Moses told them all the LORD's words?",
+     "options": [
+      "With one voice, promising to do them all",
+      "They asked for time to decide",
+      "They were silent and afraid",
+      "They asked Aaron to speak for them"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the LORD say he would give Moses on the mountain?",
+     "options": [
+      "Stone tablets with the law and commands",
+      "A rod of great power",
+      "Bread from heaven",
+      "A new name for Israel"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Aaron and his sons offered the burnt offerings and peace offerings at the altar.",
+     "answer": false,
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Moses do with the blood of the offerings before reading the book?",
+     "options": [
+      "Put half in basins and sprinkled half on the altar",
+      "Poured it all at the base of the altar",
+      "Sprinkled it all on the elders",
+      "Mixed it with water for washing"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The people said, \"We will do all that the LORD has said, and ____.\"",
+     "answer": "be obedient",
+     "wrong": [
+      "keep his statutes",
+      "serve him forever",
+      "fear his name"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Come up to the LORD, you, and Aaron, and seventy of the elders of Israel; and ____.",
+     "answer": "worship from a distance",
+     "wrong": [
+      "offer burnt offerings",
+      "bring the book with you",
+      "wait at the mountain's foot"
+     ],
+     "v": 1
     }
    ]
   },
@@ -2841,6 +4701,85 @@
       "Silver, iron, and copper"
      ],
      "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why were the people to make a sanctuary?",
+     "options": [
+      "That God might dwell among them",
+      "To store the people's offerings",
+      "To hold councils of the elders",
+      "To guard the tablets from enemies"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What were the poles in the rings of the ark for?",
+     "options": [
+      "Carrying the ark",
+      "Hanging the veil",
+      "Holding the lamps",
+      "Fastening the curtains"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which way were the faces of the cherubim to point?",
+     "options": [
+      "Toward one another and the mercy seat",
+      "Toward the east",
+      "Up toward heaven",
+      "Toward the door of the tent"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many lamps was the lampstand to have?",
+     "options": [
+      "Seven",
+      "Six",
+      "Twelve",
+      "Four"
+     ],
+     "v": 37
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall make a mercy seat of ____.",
+     "answer": "pure gold",
+     "wrong": [
+      "acacia wood",
+      "polished bronze",
+      "hammered silver"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Its base, its shaft, its cups, its buds, and its flowers shall be ____.",
+     "answer": "of one piece with it",
+     "wrong": [
+      "overlaid with fine gold",
+      "carved from acacia wood",
+      "joined with golden rings"
+     ],
+     "v": 31
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The dishes, spoons, ladles, and bowls for the table were to be made of bronze.",
+     "answer": false,
+     "v": 29
     }
    ]
   },
@@ -2956,6 +4895,85 @@
       "A linen curtain"
      ],
      "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How was Moses to set up the tabernacle?",
+     "options": [
+      "The way it was shown to him on the mountain",
+      "According to Aaron's own plan",
+      "Like the temples of Egypt",
+      "However the workmen thought best"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What were the boards of the tabernacle overlaid with?",
+     "options": [
+      "Gold",
+      "Bronze",
+      "Silver",
+      "Rams' skins"
+     ],
+     "v": 29
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The screen for the door of the Tent hung on five pillars set in sockets of bronze.",
+     "answer": true,
+     "v": 37
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was the veil hung on?",
+     "options": [
+      "Four pillars of acacia overlaid with gold",
+      "Two poles of bronze",
+      "Rings on the boards",
+      "Chains of silver"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall make the curtains with cherubim, with the work of ____.",
+     "answer": "a skillful workman",
+     "wrong": [
+      "a stone engraver",
+      "a master smith",
+      "the weavers of Egypt"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You shall double over the sixth curtain ____.",
+     "answer": "in the forefront of the tent",
+     "wrong": [
+      "on the north side",
+      "at the corners of the tent",
+      "above the most holy place"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What were the clasps for the goats' hair curtains made of?",
+     "options": [
+      "Bronze",
+      "Gold",
+      "Silver",
+      "Acacia wood"
+     ],
+     "v": 11
     }
    ]
   },
@@ -3071,6 +5089,73 @@
       "Acacia wood"
      ],
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What shape was the altar of acacia wood to be?",
+     "options": [
+      "Square",
+      "Round",
+      "Six-sided",
+      "Long and narrow"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "All the pins of the tabernacle and its court were to be made of gold.",
+     "answer": false,
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "During what hours were Aaron and his sons to keep the lamp in order?",
+     "options": [
+      "From evening to morning",
+      "From morning to evening",
+      "Only on the Sabbath",
+      "Only during the feasts"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Keeping the lamp in order shall be ____ throughout their generations.",
+     "answer": "a statute forever",
+     "wrong": [
+      "a holy convocation",
+      "a sign and a wonder",
+      "a memorial feast"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You shall make its pots ____; and its shovels, its basins, its meat hooks, and its fire pans.",
+     "answer": "to take away its ashes",
+     "wrong": [
+      "to boil the offerings",
+      "to hold the blood",
+      "to carry live coals"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where in the Tent of Meeting was the lamp to be kept burning?",
+     "options": [
+      "Outside the veil before the covenant",
+      "Inside the most holy place",
+      "At the gate of the court",
+      "Beside the bronze altar"
+     ],
+     "v": 21
     }
    ]
   },
@@ -3185,6 +5270,85 @@
       "To set the sons apart from Aaron"
      ],
      "v": 42
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why were holy garments to be made for Aaron?",
+     "options": [
+      "For glory and for beauty",
+      "For protection in battle",
+      "To show his wealth",
+      "To set him above Moses"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who were brought near to minister to the LORD in the priest's office?",
+     "options": [
+      "Aaron and his sons",
+      "Moses and Joshua",
+      "The seventy elders",
+      "The firstborn of every tribe"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Aaron's tunic and turban were to be made of goats' hair.",
+     "answer": false,
+     "v": 39
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where were the two onyx stones with the names to be placed?",
+     "options": [
+      "On the shoulder straps of the ephod",
+      "On the front of the turban",
+      "On the hem of the robe",
+      "On the corners of the breastplate"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The gold plate shall be always on his forehead, that ____ before the LORD.",
+     "answer": "they may be accepted",
+     "wrong": [
+      "he may be holy",
+      "their sins may be covered",
+      "the people may be seen"
+     ],
+     "v": 38
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who were to make Aaron's holy garments?",
+     "options": [
+      "All who were wise-hearted, filled with wisdom",
+      "The daughters of Levi",
+      "Aaron's own sons",
+      "Craftsmen hired from Egypt"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The robe shall have a binding of woven work around the hole for the head, that ____.",
+     "answer": "it not be torn",
+     "wrong": [
+      "it fit his neck",
+      "it shine with gold",
+      "it not touch the altar"
+     ],
+     "v": 32
     }
    ]
   },
@@ -3299,6 +5463,85 @@
       "One day"
      ],
      "v": 35
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did God promise at the end of the chapter?",
+     "options": [
+      "To dwell among Israel and be their God",
+      "To give them victory over Egypt",
+      "To make Aaron a king",
+      "To send rain on the land"
+     ],
+     "v": 45
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "All the blood of the bull was to be sprinkled on the people.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did God say he would meet with the people to speak with them?",
+     "options": [
+      "At the door of the Tent of Meeting",
+      "On top of Mount Sinai",
+      "Inside the ark of the covenant",
+      "By the bronze basin"
+     ],
+     "v": 42
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Aaron and his sons do before the bull was killed?",
+     "options": [
+      "Laid their hands on its head",
+      "Washed its feet",
+      "Poured oil on it",
+      "Walked around it seven times"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Unleavened bread, cakes mixed with oil, and wafers anointed with oil. You shall make them of ____.",
+     "answer": "fine wheat flour",
+     "wrong": [
+      "coarse barley meal",
+      "ground corn",
+      "the first fruits"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You shall set the turban on his head, and put ____ on the turban.",
+     "answer": "the holy crown",
+     "wrong": [
+      "the gold chain",
+      "the precious stones",
+      "the linen band"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did God say about whatever touches the altar?",
+     "options": [
+      "It shall be holy",
+      "It must be burned",
+      "It becomes unclean",
+      "It must be washed"
+     ],
+     "v": 37
     }
    ]
   },
@@ -3413,6 +5656,85 @@
       "The holy anointing oil"
      ],
      "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "When was Aaron to burn incense on the incense altar?",
+     "options": [
+      "Every morning and at evening, when tending the lamps",
+      "Only on the Sabbath",
+      "Once a year",
+      "At each of the feasts"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The people were allowed to make the holy incense for their own use.",
+     "answer": false,
+     "v": 37
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where was the incense altar to be placed?",
+     "options": [
+      "Before the veil by the ark of the covenant",
+      "Outside the gate of the court",
+      "Beside the bronze basin",
+      "In the middle of the court"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who was to give the offering when the people were counted?",
+     "options": [
+      "Everyone twenty years old and upward",
+      "Only the firstborn sons",
+      "Only the Levites",
+      "Every man over fifty"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall offer no ____ on it, nor burnt offering, nor meal offering.",
+     "answer": "strange incense",
+     "wrong": [
+      "unclean animal",
+      "foreign gold",
+      "leavened bread"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Put some of it before the covenant in the Tent of Meeting, where ____.",
+     "answer": "I will meet with you",
+     "wrong": [
+      "the priests shall eat",
+      "the lamps shall burn",
+      "the people shall gather"
+     ],
+     "v": 36
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was the atonement money from the census to be used for?",
+     "options": [
+      "The service of the Tent of Meeting",
+      "Building the ark",
+      "Feeding the poor",
+      "Paying the craftsmen"
+     ],
+     "v": 16
     }
    ]
   },
@@ -3528,6 +5850,85 @@
       "and in holiness"
      ],
      "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which metals was the chief craftsman skilled to work in?",
+     "options": [
+      "Gold, silver, and bronze",
+      "Iron, tin, and lead",
+      "Copper, iron, and gold",
+      "Silver, lead, and brass"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The craftsmen were to make the ark of the covenant and the mercy seat.",
+     "answer": true,
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides metalwork, what other skills did God give the chief craftsman?",
+     "options": [
+      "Cutting stones for setting and carving wood",
+      "Writing the law on scrolls",
+      "Building walls of brick",
+      "Healing the sick"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "The children of Israel were to keep the Sabbath as what?",
+     "options": [
+      "A perpetual covenant",
+      "A yearly feast",
+      "A memorial of the Red Sea",
+      "A sign to the Egyptians"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall keep the Sabbath therefore, for ____.",
+     "answer": "it is holy to you",
+     "wrong": [
+      "it is a day of feasting",
+      "your fathers kept it",
+      "it ends the week's work"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Whoever does any work on the Sabbath, that soul shall be ____.",
+     "answer": "cut off from among his people",
+     "wrong": [
+      "sent outside the camp",
+      "made to pay double",
+      "barred from the feasts"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In whose hearts did God put wisdom to make all he commanded?",
+     "options": [
+      "All who are wise-hearted",
+      "The elders of every tribe",
+      "The sons of Aaron",
+      "Every firstborn son"
+     ],
+     "v": 6
     }
    ]
   },
@@ -3642,6 +6043,85 @@
       "\"The LORD allowed it to happen.\""
      ],
      "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Joshua think the noise in the camp was?",
+     "options": [
+      "The noise of war",
+      "People weeping",
+      "A great storm",
+      "The elders praying"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the people ask Aaron to make them gods?",
+     "options": [
+      "Moses delayed coming down from the mountain",
+      "Aaron wanted to lead them",
+      "They had no food",
+      "Enemies were attacking the camp"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD say he would make of Moses?",
+     "options": [
+      "A great nation",
+      "A king over Israel",
+      "A mighty warrior",
+      "A priest forever"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was special about the tablets Moses carried down?",
+     "options": [
+      "They were written on both sides",
+      "They were made of gold",
+      "They were sealed with blood",
+      "They shone with fire"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Yet now, if you will, forgive their sin; and if not, please ____.",
+     "answer": "blot me out of your book",
+     "wrong": [
+      "take my life instead",
+      "let me die with them",
+      "punish me in their place"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The people sat down to eat and to drink, and ____.",
+     "answer": "rose up to play",
+     "wrong": [
+      "fell asleep in the camp",
+      "bowed before the altar",
+      "went out to the mountain"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The LORD said he would no longer send his angel before the people.",
+     "answer": false,
+     "v": 34
     }
    ]
   },
@@ -3756,6 +6236,85 @@
       "Blew trumpets through the camp"
      ],
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did God say Moses would see after he took away his hand?",
+     "options": [
+      "His back",
+      "His face",
+      "His hand only",
+      "A bright light"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom did the LORD say he would send before the people?",
+     "options": [
+      "An angel",
+      "Joshua",
+      "Aaron's sons",
+      "A pillar of fire"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Moses say should happen if God's presence did not go with them?",
+     "options": [
+      "Don't carry us up from here",
+      "Let us return to Egypt",
+      "Send Aaron to lead instead",
+      "Let me die in the wilderness"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You have found favor in my sight, and ____.",
+     "answer": "I know you by name",
+     "wrong": [
+      "I will make you great",
+      "you shall see my glory",
+      "I have chosen your people"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "God said, \"I will be gracious to whom I will be gracious.\"",
+     "answer": true,
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Behold, there is a place by me, and ____.",
+     "answer": "you shall stand on the rock",
+     "wrong": [
+      "you shall bow before me",
+      "you shall see my face",
+      "you shall build an altar"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "From which place onward did Israel strip off their jewelry?",
+     "options": [
+      "Mount Horeb",
+      "The Red Sea",
+      "Rephidim",
+      "Elim"
+     ],
+     "v": 6
     }
    ]
   },
@@ -3870,6 +6429,85 @@
       "On the Sabbath day"
      ],
      "v": 34
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "When was Moses to come up to Mount Sinai with the new tablets?",
+     "options": [
+      "In the morning",
+      "At evening",
+      "At midnight",
+      "On the Sabbath"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God told Israel to make a covenant with the inhabitants of the land.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does this chapter say is the LORD's name?",
+     "options": [
+      "Jealous",
+      "Mighty",
+      "Holy One",
+      "Provider"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In which busy seasons did God say they must still rest on the seventh day?",
+     "options": [
+      "Plowing time and harvest",
+      "Planting and shearing",
+      "Feasts and new moons",
+      "War and travel"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Keeping loving kindness for thousands, ____ and disobedience and sin.",
+     "answer": "forgiving iniquity",
+     "wrong": [
+      "remembering iniquity",
+      "punishing iniquity",
+      "hating iniquity"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Before all your people I will do marvels, such as have not been worked ____.",
+     "answer": "in all the earth",
+     "wrong": [
+      "since the days of Noah",
+      "in the land of Egypt",
+      "by any king"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did the LORD tell Moses to write these words?",
+     "options": [
+      "He had made a covenant with Moses and Israel by them",
+      "So Aaron could read them",
+      "So the nations would fear",
+      "So Moses would not forget them"
+     ],
+     "v": 27
     }
    ]
   },
@@ -3984,6 +6622,85 @@
       "Bezalel and Oholiab are named"
      ],
      "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was Bezalel filled with for the work?",
+     "options": [
+      "The Spirit of God",
+      "Great riches",
+      "The strength of Samson",
+      "The wisdom of Egypt"
+     ],
+     "v": 31
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Only gold was accepted, so no one brought linen or goats' hair.",
+     "answer": false,
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "From which tribe was Bezalel?",
+     "options": [
+      "Judah",
+      "Levi",
+      "Dan",
+      "Ephraim"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the women whose hearts stirred them up in wisdom spin?",
+     "options": [
+      "Goats' hair",
+      "Gold thread",
+      "Rams' wool",
+      "Flax for rope"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The children of Israel brought ____ to the LORD.",
+     "answer": "a free will offering",
+     "wrong": [
+      "a sin offering",
+      "a tenth of their flocks",
+      "their firstborn sons"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The lamp stand also for the light, with its vessels, its lamps, and ____.",
+     "answer": "the oil for the light",
+     "wrong": [
+      "the incense for burning",
+      "the chains of silver",
+      "the bread of the presence"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "For which kinds of work were Bezalel and Oholiab filled with wisdom?",
+     "options": [
+      "The engraver, the embroiderer, and the weaver",
+      "The potter, the mason, and the baker",
+      "The shepherd, the builder, and the scribe",
+      "The farmer, the fisher, and the tanner"
+     ],
+     "v": 35
     }
    ]
   },
@@ -4098,6 +6815,78 @@
       "The veil and the door screen are made"
      ],
      "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What were the boards for the tabernacle made of?",
+     "options": [
+      "Acacia wood",
+      "Cedar",
+      "Olive wood",
+      "Cypress"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What were the boards and bars overlaid with?",
+     "options": [
+      "Gold",
+      "Bronze",
+      "Silver",
+      "Rams' skins"
+     ],
+     "v": 34
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was placed under the boards to hold their tenons?",
+     "options": [
+      "Sockets of silver",
+      "Rings of gold",
+      "Bars of bronze",
+      "Onyx stones"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He made the middle bar to pass through ____ from the one end to the other.",
+     "answer": "in the middle of the boards",
+     "wrong": [
+      "along the top of the boards",
+      "beneath the silver sockets",
+      "around the corners of the tent"
+     ],
+     "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He made a screen for the door of the tent, of blue, purple, scarlet, and fine twined linen, ____.",
+     "answer": "the work of an embroiderer",
+     "wrong": [
+      "with cherubim of gold",
+      "woven with goats' hair",
+      "the work of an engraver"
+     ],
+     "v": 37
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What were the five sockets for the door screen's pillars made of?",
+     "options": [
+      "Bronze",
+      "Silver",
+      "Gold",
+      "Acacia wood"
+     ],
+     "v": 38
     }
    ]
   },
@@ -4212,6 +7001,85 @@
       "The hangings of the court"
      ],
      "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How was the ark overlaid?",
+     "options": [
+      "With pure gold inside and outside",
+      "With bronze on the outside",
+      "With gold on the top only",
+      "With silver inside"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Bezalel made the table of acacia wood.",
+     "answer": true,
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What were the golden rings on the altar of incense for?",
+     "options": [
+      "Places for the poles to carry it",
+      "Hanging the veil",
+      "Holding the incense bowls",
+      "Tying the sacrifices"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How were the cherubim joined to the mercy seat?",
+     "options": [
+      "Of one piece with it at its two ends",
+      "Fastened on top with gold nails",
+      "Standing beside it on the floor",
+      "Hung above it on chains"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He overlaid the table with pure gold, and made ____ around it.",
+     "answer": "a gold molding",
+     "wrong": [
+      "a silver border",
+      "a bronze rim",
+      "a linen cover"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He made a border of ____ around the table.",
+     "answer": "a hand's width",
+     "wrong": [
+      "a cubit's length",
+      "a finger's width",
+      "a span's length"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How much gold was used for the lampstand and all its vessels?",
+     "options": [
+      "A talent of pure gold",
+      "Ten shekels of gold",
+      "Seven talents of gold",
+      "Half a talent of gold"
+     ],
+     "v": 24
     }
    ]
   },
@@ -4326,6 +7194,85 @@
       "The amounts of materials used"
      ],
      "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who is named as making all that the LORD commanded Moses?",
+     "options": [
+      "Bezalel the son of Uri",
+      "Oholiab",
+      "Ithamar",
+      "Aaron"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was the altar of burnt offering made of?",
+     "options": [
+      "Acacia wood overlaid with bronze",
+      "Stone overlaid with gold",
+      "Cedar overlaid with silver",
+      "Solid bronze"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "All the pins of the tabernacle and around the court were made of bronze.",
+     "answer": true,
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How was the altar of burnt offering made on the inside?",
+     "options": [
+      "Hollow with planks",
+      "Filled with earth",
+      "Solid acacia wood",
+      "Filled with stones"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He made for the altar a grating of a network of bronze, under the ledge around it beneath, ____.",
+     "answer": "reaching halfway up",
+     "wrong": [
+      "reaching to the top",
+      "resting on the ground",
+      "hanging from the corners"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What kind of work was the screen for the gate of the court?",
+     "options": [
+      "The work of the embroiderer",
+      "The work of an engraver",
+      "Beaten work of gold",
+      "Woven goats' hair"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "These are the amounts of materials used for the tabernacle, even the Tabernacle of ____.",
+     "answer": "the Testimony",
+     "wrong": [
+      "the Congregation",
+      "the Covenant",
+      "the Law"
+     ],
+     "v": 21
     }
    ]
   },
@@ -4440,6 +7387,85 @@
       "Two"
      ],
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Moses do when he saw the work was done as the LORD commanded?",
+     "options": [
+      "He blessed them",
+      "He offered a sacrifice",
+      "He built an altar",
+      "He wept for joy"
+     ],
+     "v": 43
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The ephod was made only of fine linen, with no gold.",
+     "answer": false,
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What were the pomegranates on the skirts of the robe made of?",
+     "options": [
+      "Blue, purple, scarlet, and twined linen",
+      "Pure gold",
+      "Bronze and silver",
+      "Carved acacia wood"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What were the tunics for Aaron and his sons made of?",
+     "options": [
+      "Fine linen",
+      "Goats' hair",
+      "Blue wool",
+      "Rams' skins"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Thus all the work of the tabernacle of the Tent of Meeting ____.",
+     "answer": "was finished",
+     "wrong": [
+      "was begun",
+      "was measured",
+      "was blessed"
+     ],
+     "v": 32
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What shape was the breastplate?",
+     "options": [
+      "Square, and made double",
+      "Round",
+      "Shaped like a shield",
+      "Long and narrow"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The sash of fine twined linen, blue, purple, and scarlet, ____.",
+     "answer": "the work of the embroiderer",
+     "wrong": [
+      "the work of an engraver",
+      "with bells of gold",
+      "set with onyx stones"
+     ],
+     "v": 29
     }
    ]
   },
@@ -4554,6 +7580,85 @@
       "A drink offering of wine"
      ],
      "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who washed their hands and feet at the basin?",
+     "options": [
+      "Moses, Aaron, and his sons",
+      "Only the Levites",
+      "All the elders",
+      "Bezalel and Oholiab"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Moses set in order on the table before the LORD?",
+     "options": [
+      "The bread",
+      "The lamps",
+      "The incense",
+      "The anointing oil"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD told Moses to set the basin outside the gate of the court.",
+     "answer": false,
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD tell Moses to put on Aaron before anointing him?",
+     "options": [
+      "The holy garments",
+      "Moses' own robe",
+      "Sackcloth",
+      "A linen veil"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You shall anoint the altar of burnt offering, and sanctify the altar, and ____.",
+     "answer": "the altar will be most holy",
+     "wrong": [
+      "the fire shall never go out",
+      "it shall be clean forever",
+      "the people shall draw near"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did Moses put the golden altar?",
+     "options": [
+      "In the Tent of Meeting before the veil",
+      "At the gate of the court",
+      "Beside the basin",
+      "Inside the veil with the ark"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You shall put the ark of the covenant in it, and you shall ____.",
+     "answer": "screen the ark with the veil",
+     "wrong": [
+      "cover it with rams' skins",
+      "set it on the north side",
+      "place the tablets beside it"
+     ],
+     "v": 3
     }
    ]
   }

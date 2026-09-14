@@ -9,7 +9,14 @@
 {"t": "blank", "d": 3, "q": "Shave your heads, and cut off your hair for ____.", "answer": "the children of your delight", "wrong": ["the dead of your city", "the sins of your fathers", "the fall of your walls"], "v": 16},
 {"t": "order", "d": 2, "items": ["The LORD comes down and the mountains melt", "Samaria is made a rubble heap", "The prophet wails like the jackals", "Lachish is told to harness the chariot"], "v": 3},
 {"t": "tf", "d": 1, "q": "The LORD's word came to Micah in the days of Jotham, Ahaz, and Hezekiah, kings of Judah.", "answer": true, "v": 1},
-{"t": "tf", "d": 2, "q": "The prophet says Samaria's wound will stop before it reaches Judah.", "answer": false, "v": 9}
+{"t": "tf", "d": 2, "q": "The prophet says Samaria's wound will stop before it reaches Judah.", "answer": false, "v": 9},
+{"t": "choice", "d": 1, "q": "From where does the Lord GOD act as witness against the peoples?", "options": ["From his holy temple", "From Mount Sinai", "From the clouds of heaven", "From the gate of Jerusalem"], "v": 2},
+{"t": "choice", "d": 2, "q": "The people are told to enlarge their baldness like which bird?", "options": ["The vulture", "The eagle", "The raven", "The ostrich"], "v": 16},
+{"t": "choice", "d": 3, "q": "What will happen to all of Samaria's temple gifts?", "options": ["They will be burned with fire", "They will be carried to Assyria", "They will be melted into coins", "They will be returned to Judah"], "v": 7},
+{"t": "blank", "d": 2, "q": "I will howl like the jackals and ____.", "answer": "mourn like the ostriches", "wrong": ["roar like the lions", "cry like the doves", "moan like the owls"], "v": 8},
+{"t": "blank", "d": 3, "q": "I will pour down its stones into the valley, and I will uncover ____.", "answer": "its foundations", "wrong": ["its hidden treasures", "its buried dead", "its secret places"], "v": 6},
+{"t": "tf", "d": 1, "q": "Micah says the LORD will come out of his place and tread on the high places of the earth.", "answer": true, "v": 3},
+{"t": "tf", "d": 2, "q": "Micah tells the people to weep loudly in Gath.", "answer": false, "v": 10}
 ]},
 "2":{"keyVerse":1,"questions":[
 {"t": "choice", "d": 1, "q": "What do the people in the opening woe covet and seize?", "options": ["Fields and houses", "Cattle and sheep", "Gold and silver", "Servants and donkeys"], "v": 2},
@@ -21,7 +28,14 @@
 {"t": "blank", "d": 2, "q": "Arise, and depart! For this is not ____.", "answer": "your resting place", "wrong": ["your promised inheritance", "your father's house", "your land forever"], "v": 10},
 {"t": "order", "d": 2, "items": ["Woe to those who plot evil on their beds", "God plans a disaster against these people", "The people say, Don't prophesy", "God promises to gather the remnant of Israel"], "v": 1},
 {"t": "tf", "d": 3, "q": "At the end of the chapter, their king passes on before them with the LORD at their head.", "answer": true, "v": 13},
-{"t": "tf", "d": 1, "q": "The oppressors plan their evil in the morning and carry it out at night.", "answer": false, "v": 1}
+{"t": "tf", "d": 1, "q": "The oppressors plan their evil in the morning and carry it out at night.", "answer": false, "v": 1},
+{"t": "choice", "d": 1, "q": "What will people take up against the oppressors in that day?", "options": ["A parable and a doleful lamentation", "A song of victory", "A shout of joy", "A cry for war"], "v": 4},
+{"t": "choice", "d": 2, "q": "Whom does God say his people drive out from their pleasant houses?", "options": ["The women of my people", "The widows and orphans", "The priests and Levites", "The strangers in the land"], "v": 9},
+{"t": "choice", "d": 2, "q": "What do the gathered people break through as they go out?", "options": ["The gate", "The wall", "The sea", "The enemy camp"], "v": 13},
+{"t": "choice", "d": 3, "q": "What will the oppressors lack in the LORD's assembly?", "options": ["Anyone to divide the land by lot", "A priest to offer sacrifice", "A king to lead them", "A prophet to speak the truth"], "v": 5},
+{"t": "blank", "d": 2, "q": "Don't my words do good to him who ____?", "answer": "walks blamelessly", "wrong": ["keeps my law", "fears my name", "seeks my face"], "v": 7},
+{"t": "blank", "d": 3, "q": "I am planning against these people a disaster, from which you will not ____.", "answer": "remove your necks", "wrong": ["turn your faces", "lift your heads", "hide your children"], "v": 3},
+{"t": "tf", "d": 1, "q": "The people who silence the prophets say that disgrace will surely overtake them.", "answer": false, "v": 6}
 ]},
 "3":{"keyVerse":8,"questions":[
 {"t": "choice", "d": 1, "q": "Whom does Micah ask, \"Isn't it for you to know justice?\"", "options": ["The heads of Jacob and rulers of Israel", "The priests of the temple", "The kings of the nations", "The elders of Moab"], "v": 1},
@@ -33,7 +47,14 @@
 {"t": "blank", "d": 3, "q": "Who build up Zion with blood, and Jerusalem ____.", "answer": "with iniquity", "wrong": ["with violence", "with false weights", "with stolen silver"], "v": 10},
 {"t": "blank", "d": 2, "q": "They lean on the LORD, and say, \"Isn't the LORD among us? ____.\"", "answer": "No disaster will come on us", "wrong": ["He will fight our battles", "Our walls will never fall", "His temple stands forever"], "v": 11},
 {"t": "tf", "d": 1, "q": "Micah describes the rulers as chopping up God's people like meat for the pot.", "answer": true, "v": 3},
-{"t": "tf", "d": 3, "q": "Micah says the sun will go down on the priests, and the day will be black over them.", "answer": false, "v": 6}
+{"t": "tf", "d": 3, "q": "Micah says the sun will go down on the priests, and the day will be black over them.", "answer": false, "v": 6},
+{"t": "choice", "d": 1, "q": "What does Micah say the rulers hate and love?", "options": ["They hate the good and love the evil", "They hate the poor and love the rich", "They hate the law and love bribes", "They hate the prophets and love idols"], "v": 2},
+{"t": "choice", "d": 2, "q": "What will the seers and diviners cover because God gives no answer?", "options": ["Their lips", "Their faces", "Their heads", "Their eyes"], "v": 7},
+{"t": "choice", "d": 2, "q": "What do the false prophets do to anyone who doesn't feed them?", "options": ["Prepare war against him", "Curse him at the gate", "Refuse to pray for him", "Report him to the king"], "v": 5},
+{"t": "choice", "d": 3, "q": "What will the mountain of the temple become like?", "options": ["The high places of a forest", "A threshing floor", "A field of thorns", "A dry wilderness"], "v": 12},
+{"t": "blank", "d": 2, "q": "To declare to Jacob his disobedience, and ____.", "answer": "to Israel his sin", "wrong": ["to Judah her shame", "to Zion her guilt", "to the nations their pride"], "v": 8},
+{"t": "blank", "d": 3, "q": "You rulers of the house of Israel, who abhor justice, and ____.", "answer": "pervert all equity", "wrong": ["despise the poor", "reject the law", "shed innocent blood"], "v": 9},
+{"t": "tf", "d": 1, "q": "Micah says the seers and diviners will receive a clear answer from God.", "answer": false, "v": 7}
 ]},
 "4":{"keyVerse":4,"questions":[
 {"t": "choice", "d": 1, "q": "What will the nations beat their swords into?", "options": ["Plowshares", "Pruning hooks", "Sickles", "Crowns"], "v": 3},
@@ -45,7 +66,14 @@
 {"t": "blank", "d": 3, "q": "I will assemble that which is lame, and I will gather ____.", "answer": "that which is driven away", "wrong": ["that which is broken", "the sheep that are lost", "the poor of the land"], "v": 6},
 {"t": "order", "d": 2, "items": ["Nations stream to the LORD's mountain", "The lame are made a remnant", "Zion goes out to Babylon and is rescued", "Zion is told to arise and thresh"], "v": 1},
 {"t": "tf", "d": 1, "q": "Many nations will say, \"Let's go up to the mountain of the LORD.\"", "answer": true, "v": 2},
-{"t": "tf", "d": 2, "q": "The nations gathered against Zion understand the LORD's counsel.", "answer": false, "v": 12}
+{"t": "tf", "d": 2, "q": "The nations gathered against Zion understand the LORD's counsel.", "answer": false, "v": 12},
+{"t": "choice", "d": 1, "q": "Where will every man sit in the latter days?", "options": ["Under his vine and fig tree", "By the river of God", "In the gate of his city", "In the shade of the temple"], "v": 4},
+{"t": "choice", "d": 1, "q": "Where will the mountain of the LORD's temple be established?", "options": ["On the top of the mountains", "Beside the Jordan River", "In the valley of Jezreel", "Between the two seas"], "v": 1},
+{"t": "choice", "d": 2, "q": "What is the hill of the daughter of Zion called?", "options": ["Tower of the flock", "Tower of David", "House of bread", "City of peace"], "v": 8},
+{"t": "choice", "d": 3, "q": "What do the many nations assembled against Zion say?", "options": ["Let her be defiled", "Let us burn her gates", "Let us take her captives", "Let her king be slain"], "v": 11},
+{"t": "blank", "d": 2, "q": "The LORD will reign over them on ____ from then on, even forever.", "answer": "Mount Zion", "wrong": ["Mount Moriah", "the holy hill", "Mount Sinai"], "v": 7},
+{"t": "blank", "d": 3, "q": "For now you will go out of the city, and will ____.", "answer": "dwell in the field", "wrong": ["hide in the caves", "wander in the desert", "live among strangers"], "v": 10},
+{"t": "tf", "d": 2, "q": "Micah says we will walk in the name of the LORD only until our enemies are gone.", "answer": false, "v": 5}
 ]},
 "5":{"keyVerse":2,"questions":[
 {"t": "choice", "d": 1, "q": "Which town is called small among the clans of Judah?", "options": ["Bethlehem Ephrathah", "Hebron", "Moresheth Gath", "Bethel"], "v": 2},
@@ -57,7 +85,14 @@
 {"t": "blank", "d": 2, "q": "Whose goings out are from of old, from ____.", "answer": "ancient times", "wrong": ["the house of David", "the ends of the earth", "the days of Moses"], "v": 2},
 {"t": "blank", "d": 2, "q": "He will be ____ when Assyria invades our land.", "answer": "our peace", "wrong": ["our shield", "our strong tower", "our mighty king"], "v": 5},
 {"t": "tf", "d": 1, "q": "God says he will uproot Asherah poles and cut off engraved images.", "answer": true, "v": 14},
-{"t": "tf", "d": 3, "q": "The remnant of Jacob is compared to dew that waits for the sons of men.", "answer": false, "v": 7}
+{"t": "tf", "d": 3, "q": "The remnant of Jacob is compared to dew that waits for the sons of men.", "answer": false, "v": 7},
+{"t": "choice", "d": 1, "q": "In whose strength will the ruler from Bethlehem shepherd?", "options": ["The strength of the LORD", "The strength of his armies", "The strength of David", "The strength of the people"], "v": 4},
+{"t": "choice", "d": 2, "q": "What does God say he will destroy from their hand?", "options": ["Witchcraft", "Stolen goods", "False weights", "Weapons of war"], "v": 12},
+{"t": "choice", "d": 3, "q": "Besides Assyria, which land will be ruled with the sword?", "options": ["The land of Nimrod", "The land of Edom", "The land of Moab", "The land of Egypt"], "v": 6},
+{"t": "choice", "d": 3, "q": "What does God say he will tear down in that day?", "options": ["All your strongholds", "The temple of the LORD", "The walls of Babylon", "The houses of the rich"], "v": 11},
+{"t": "blank", "d": 2, "q": "The remnant of Jacob will be among many peoples like dew from the LORD, like ____.", "answer": "showers on the grass", "wrong": ["rain on the fields", "streams in the desert", "mist on the mountains"], "v": 7},
+{"t": "blank", "d": 2, "q": "You shall no more worship ____.", "answer": "the work of your hands", "wrong": ["the gods of the nations", "the host of heaven", "the images of Baal"], "v": 13},
+{"t": "tf", "d": 1, "q": "Micah says the coming ruler will be great to the ends of the earth.", "answer": true, "v": 4}
 ]},
 "6":{"keyVerse":8,"questions":[
 {"t": "blank", "d": 1, "q": "What does the LORD require of you, but to act justly, ____, and to walk humbly with your God?", "answer": "to love mercy", "wrong": ["to keep his law", "to offer sacrifice", "to seek peace"], "v": 8},
@@ -69,7 +104,14 @@
 {"t": "blank", "d": 3, "q": "Shall I tolerate dishonest scales, and ____?", "answer": "a bag of deceitful weights", "wrong": ["a false measuring rod", "a cup of stolen wine", "a purse of unjust silver"], "v": 11},
 {"t": "blank", "d": 2, "q": "My people, what have I done to you? ____? Answer me!", "answer": "How have I burdened you", "wrong": ["Why have you forsaken me", "Where did I fail you", "Why do you forget me"], "v": 3},
 {"t": "tf", "d": 1, "q": "The speaker asks whether he should give his firstborn for his disobedience.", "answer": true, "v": 7},
-{"t": "tf", "d": 3, "q": "God says the people will sow and reap, but will not eat the bread.", "answer": false, "v": 15}
+{"t": "tf", "d": 3, "q": "God says the people will sow and reap, but will not eat the bread.", "answer": false, "v": 15},
+{"t": "choice", "d": 1, "q": "With what does the speaker wonder whether he should come before the LORD?", "options": ["Burnt offerings and year old calves", "Gold and silver from the treasury", "Songs and harps", "Bread and wine"], "v": 6},
+{"t": "choice", "d": 2, "q": "What are the rich men of the city full of?", "options": ["Violence", "Pride", "Gold", "Wine"], "v": 12},
+{"t": "choice", "d": 2, "q": "What does the LORD's voice tell the city to listen to?", "options": ["The rod, and he who appointed it", "The trumpet of the watchman", "The words of the elders", "The cry of the poor"], "v": 9},
+{"t": "choice", "d": 3, "q": "What kind of ephah is called accursed?", "options": ["A short ephah", "A heavy ephah", "A broken ephah", "A borrowed ephah"], "v": 10},
+{"t": "blank", "d": 2, "q": "You shall eat, but ____.", "answer": "not be satisfied", "wrong": ["not grow strong", "not give thanks", "not share your bread"], "v": 14},
+{"t": "blank", "d": 3, "q": "That I may make you a ruin, and your inhabitants ____.", "answer": "a hissing", "wrong": ["a byword", "a proverb", "a scattered people"], "v": 16},
+{"t": "tf", "d": 1, "q": "The LORD says he has a case against Egypt and will contend with it.", "answer": false, "v": 2}
 ]},
 "7":{"keyVerse":7,"questions":[
 {"t": "choice", "d": 1, "q": "Where will God cast all their sins?", "options": ["Into the depths of the sea", "Into the wilderness", "Behind his back", "Into the fire"], "v": 19},
@@ -81,6 +123,13 @@
 {"t": "blank", "d": 3, "q": "Shepherd your people with your staff, ____.", "answer": "the flock of your heritage", "wrong": ["the sheep of your pasture", "the lambs of your fold", "the children of your house"], "v": 14},
 {"t": "order", "d": 2, "items": ["The godly man has perished from the earth", "Don't trust a neighbor or a friend", "A day to build your walls is announced", "Who is a God like you?"], "v": 2},
 {"t": "tf", "d": 1, "q": "The enemy who said, \"Where is the LORD your God?\" will be trodden down like mire.", "answer": true, "v": 10},
-{"t": "tf", "d": 1, "q": "The prophet says the ruler and the judge refuse to take bribes.", "answer": false, "v": 3}
+{"t": "tf", "d": 1, "q": "The prophet says the ruler and the judge refuse to take bribes.", "answer": false, "v": 3},
+{"t": "choice", "d": 1, "q": "What does the prophet say he will do while everyone around him is corrupt?", "options": ["Look to the LORD and wait for God", "Flee to the mountains", "Join the rulers in their plans", "Tear his clothes and fast"], "v": 7},
+{"t": "choice", "d": 2, "q": "With what does every man hunt his brother?", "options": ["A net", "A bow", "A sword", "A spear"], "v": 2},
+{"t": "choice", "d": 2, "q": "What will the ashamed nations lick like a serpent?", "options": ["The dust", "Their wounds", "The stones", "Their chains"], "v": 17},
+{"t": "choice", "d": 3, "q": "What does the prophet's soul desire to eat?", "options": ["The early fig", "The first grapes", "The new olives", "The ripe pomegranate"], "v": 1},
+{"t": "blank", "d": 2, "q": "You will give truth to Jacob, and ____.", "answer": "mercy to Abraham", "wrong": ["peace to Israel", "grace to Isaac", "strength to Judah"], "v": 20},
+{"t": "blank", "d": 3, "q": "A day to build your walls! In that day, he will ____.", "answer": "extend your boundary", "wrong": ["restore your gates", "gather your children", "break your enemies"], "v": 11},
+{"t": "tf", "d": 1, "q": "The nations will see God's marvelous things and boast of all their might.", "answer": false, "v": 16}
 ]}
 }}

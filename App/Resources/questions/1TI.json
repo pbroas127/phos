@@ -9,7 +9,14 @@
 {"t":"blank","d":3,"q":"Now to the King eternal, ____, to God who alone is wise, be honor and glory.","answer":"immortal, invisible","wrong":["holy, almighty","glorious, righteous","faithful, true"],"v":17},
 {"t":"order","d":3,"items":["Warning against teaching a different doctrine","The law is good if used lawfully","Paul thanks Christ for appointing him","Instruction to wage the good warfare"],"v":3},
 {"t":"tf","d":1,"q":"Paul says some who thrust away faith and a good conscience made a shipwreck of the faith.","answer":true,"v":19},
-{"t":"tf","d":2,"q":"Paul says the law is made for the righteous person.","answer":false,"v":9}
+{"t":"tf","d":2,"q":"Paul says the law is made for the righteous person.","answer":false,"v":9},
+{"t":"choice","d":1,"q":"How does Paul describe Timothy in the greeting?","options":["My true child in faith","My fellow soldier","My beloved brother","My faithful servant"],"v":2},
+{"t":"choice","d":2,"q":"Why does Paul say he obtained mercy for his past actions?","options":["He acted ignorantly in unbelief","He repented with many tears","The apostles forgave him","He had kept the law blamelessly"],"v":13},
+{"t":"choice","d":2,"q":"What have some turned away to after missing the mark?","options":["Vain talking","Idol worship","Worldly riches","Strong drink"],"v":6},
+{"t":"choice","d":3,"q":"Why does Paul say Jesus showed mercy to him first?","options":["To display his patience as an example","To prove the law was useless","So Paul could boast in his calling","To shame the other apostles"],"v":16},
+{"t":"blank","d":2,"q":"The grace of our Lord abounded exceedingly with ____ which is in Christ Jesus.","answer":"faith and love","wrong":["mercy and peace","hope and joy","truth and grace"],"v":14},
+{"t":"blank","d":3,"q":"Desiring to be ____, though they understand neither what they say nor about what they strongly affirm.","answer":"teachers of the law","wrong":["leaders of the assembly","wise among men","masters of wisdom"],"v":7},
+{"t":"tf","d":1,"q":"Paul calls himself an apostle according to the commandment of God our Savior.","answer":true,"v":1}
 ]},
 "2":{"keyVerse":5,"questions":[
 {"t":"choice","d":1,"q":"Paul says he was appointed a teacher of whom?","options":["The Gentiles","The Jews","The elders","The Greeks in Athens"],"v":7},
@@ -21,7 +28,14 @@
 {"t":"blank","d":3,"q":"That we may lead ____ in all godliness and reverence.","answer":"a tranquil and quiet life","wrong":["a holy and blameless life","a simple and humble life","a peaceful and fruitful life"],"v":2},
 {"t":"order","d":2,"items":["Prayers for all men and for kings","One mediator between God and men","Men praying with holy hands","Women learning in quietness"],"v":1},
 {"t":"tf","d":1,"q":"Paul says Adam was deceived, and then the woman.","answer":false,"v":14},
-{"t":"tf","d":3,"q":"Paul insists he is telling the truth in Christ and not lying about his appointment.","answer":true,"v":7}
+{"t":"tf","d":3,"q":"Paul insists he is telling the truth in Christ and not lying about his appointment.","answer":true,"v":7},
+{"t":"choice","d":1,"q":"Who does Paul say is the one mediator between God and men?","options":["The man Christ Jesus","Moses the lawgiver","The high priest","The apostle Paul"],"v":5},
+{"t":"choice","d":2,"q":"What does Paul call praying for all men, in the sight of God our Savior?","options":["Good and acceptable","Our first duty","A holy sacrifice","A sweet aroma"],"v":3},
+{"t":"choice","d":2,"q":"In what must they continue with sobriety, according to the last verse?","options":["Faith, love, and holiness","Prayer, fasting, and service","Hope, patience, and peace","Truth, grace, and humility"],"v":15},
+{"t":"choice","d":3,"q":"Paul wants men to pray without what?","options":["Anger and doubting","Pride and boasting","Fear and shame","Noise and display"],"v":8},
+{"t":"blank","d":2,"q":"That women also adorn themselves in decent clothing, ____.","answer":"with modesty and propriety","wrong":["with humility and grace","with quietness and faith","with purity and honor"],"v":9},
+{"t":"blank","d":3,"q":"I exhort therefore, first of all, that ____, intercessions, and givings of thanks be made for all men.","answer":"petitions, prayers","wrong":["songs, hymns","vows, offerings","confessions, praises"],"v":1},
+{"t":"tf","d":1,"q":"Paul says he desires men to pray only in the temple.","answer":false,"v":8}
 ]},
 "3":{"keyVerse":1,"questions":[
 {"t":"choice","d":1,"q":"What must an overseer rule well?","options":["His own house","His own business","The city council","The temple treasury"],"v":4},
@@ -33,7 +47,14 @@
 {"t":"blank","d":3,"q":"God was revealed in the flesh, justified in the spirit, ____, preached among the nations.","answer":"seen by angels","wrong":["raised in power","exalted in heaven","crowned with glory"],"v":16},
 {"t":"order","d":3,"items":["Qualifications for overseers","Qualifications for servants","How to behave in God's house","The great mystery of godliness"],"v":1},
 {"t":"tf","d":1,"q":"Paul writes that he does not expect to come to Timothy anytime soon.","answer":false,"v":14},
-{"t":"tf","d":2,"q":"Paul says an overseer must have a good testimony from those outside the church.","answer":true,"v":7}
+{"t":"tf","d":2,"q":"Paul says an overseer must have a good testimony from those outside the church.","answer":true,"v":7},
+{"t":"choice","d":1,"q":"An overseer must be the husband of how many wives?","options":["One wife","No wife at all","Two wives at most","Whatever his house can support"],"v":2},
+{"t":"choice","d":2,"q":"Which of these is required of servants in the assembly?","options":["Not double tongued","Skilled in public speaking","Older than fifty years","Owning their own land"],"v":8},
+{"t":"choice","d":2,"q":"What must the wives of servants not be?","options":["Slanderers","Wealthy","Widows","Teachers"],"v":11},
+{"t":"choice","d":3,"q":"In what must servants hold the mystery of the faith?","options":["A pure conscience","A humble heart","Sound doctrine","Great boldness"],"v":9},
+{"t":"blank","d":2,"q":"Not a drinker, not violent, not greedy for money, but gentle, ____, not covetous.","answer":"not quarrelsome","wrong":["not proud","not hasty","not boastful"],"v":3},
+{"t":"blank","d":3,"q":"Preached among the nations, believed on in the world, and ____.","answer":"received up in glory","wrong":["seated at God's right hand","crowned with honor","raised from the dead"],"v":16},
+{"t":"tf","d":1,"q":"Paul says an overseer must be good at teaching.","answer":true,"v":2}
 ]},
 "4":{"keyVerse":12,"questions":[
 {"t":"choice","d":1,"q":"What does Paul tell Timothy not to let anyone despise?","options":["His youth","His teaching","His weakness","His gift"],"v":12},
@@ -45,7 +66,14 @@
 {"t":"blank","d":3,"q":"Until I come, pay attention to reading, ____, and to teaching.","answer":"to exhortation","wrong":["to prayer","to fasting","to singing"],"v":13},
 {"t":"order","d":3,"items":["Some will fall away in later times","Every creature of God is good","Be an example to those who believe","Give yourself wholly to these things"],"v":1},
 {"t":"tf","d":1,"q":"Paul says some foods God created should be rejected, even if received with thanksgiving.","answer":false,"v":4},
-{"t":"tf","d":2,"q":"Paul says food is sanctified through the word of God and prayer.","answer":true,"v":5}
+{"t":"tf","d":2,"q":"Paul says food is sanctified through the word of God and prayer.","answer":true,"v":5},
+{"t":"choice","d":1,"q":"Who says expressly that some will fall away from the faith in later times?","options":["The Spirit","The prophets","The elders at Ephesus","The angels"],"v":1},
+{"t":"choice","d":2,"q":"How does Paul describe the conscience of the men who speak lies?","options":["Branded as with a hot iron","Washed clean by grace","Weak and easily troubled","Hardened like stone"],"v":2},
+{"t":"choice","d":2,"q":"If Timothy instructs the brothers of these things, what will he be?","options":["A good servant of Christ Jesus","A faithful elder of Ephesus","A true apostle","A wise overseer"],"v":6},
+{"t":"choice","d":3,"q":"God is the Savior of all men, especially of whom?","options":["Those who believe","The poor and humble","The people of Israel","Those who labor"],"v":10},
+{"t":"blank","d":2,"q":"Be an example to those who believe, in word, in your way of life, ____, in spirit, in faith, and in purity.","answer":"in love","wrong":["in patience","in doctrine","in prayer"],"v":12},
+{"t":"blank","d":3,"q":"Give yourself wholly to them, that ____ may be revealed to all.","answer":"your progress","wrong":["your faith","your gift","your labor"],"v":15},
+{"t":"tf","d":1,"q":"Paul warns that some will pay attention to doctrines of demons.","answer":true,"v":1}
 ]},
 "5":{"keyVerse":8,"questions":[
 {"t":"choice","d":1,"q":"How should Timothy treat an older man?","options":["Exhort him as a father","Rebuke him before all","Leave him to the elders","Correct him in private only"],"v":1},
@@ -57,7 +85,14 @@
 {"t":"blank","d":3,"q":"But she who gives herself to pleasure is ____.","answer":"dead while she lives","wrong":["far from the faith","a shame to her house","lost in her desires"],"v":6},
 {"t":"order","d":3,"items":["Treat younger women as sisters in purity","Honor widows who are widows indeed","Accusations against elders need witnesses","Some men's sins are evident"],"v":2},
 {"t":"tf","d":1,"q":"Paul says believers with widows in their family should help them so the church is not burdened.","answer":true,"v":16},
-{"t":"tf","d":2,"q":"Paul tells Timothy to lay hands quickly on those who wish to serve.","answer":false,"v":22}
+{"t":"tf","d":2,"q":"Paul tells Timothy to lay hands quickly on those who wish to serve.","answer":false,"v":22},
+{"t":"choice","d":1,"q":"What does Paul say about someone who doesn't provide for his own household?","options":["He has denied the faith","He must pay a fine","He cannot be baptized","He must leave the assembly"],"v":8},
+{"t":"choice","d":2,"q":"How should Timothy treat the elder women?","options":["As mothers","As sisters","As widows","As daughters"],"v":2},
+{"t":"choice","d":2,"q":"What does Paul say idle younger widows can also become?","options":["Gossips and busybodies","Teachers of error","Proud and boastful","Lovers of money"],"v":13},
+{"t":"choice","d":3,"q":"Before whom does Paul command Timothy to observe these things?","options":["God, the Lord Jesus, and the chosen angels","The elders and the whole assembly","Peter, James, and John","All the widows and servants"],"v":21},
+{"t":"blank","d":2,"q":"She who is a widow indeed and desolate, has ____ and continues in petitions and prayers.","answer":"her hope set on God","wrong":["no one to help her","children to care for her","a good report from all"],"v":5},
+{"t":"blank","d":3,"q":"If she has been hospitable to strangers, if she has ____, if she has relieved the afflicted.","answer":"washed the saints' feet","wrong":["fed the hungry poor","taught the younger women","cared for the sick"],"v":10},
+{"t":"tf","d":1,"q":"Paul says those who sin should be reproved privately, away from everyone.","answer":false,"v":20}
 ]},
 "6":{"keyVerse":6,"questions":[
 {"t":"choice","d":1,"q":"What does Paul call a root of all kinds of evil?","options":["The love of money","Pride of heart","Money itself","Envy and strife"],"v":10},
@@ -69,6 +104,13 @@
 {"t":"blank","d":3,"q":"He alone has immortality, dwelling in ____.","answer":"unapproachable light","wrong":["the highest heavens","glory everlasting","the holy of holies"],"v":16},
 {"t":"order","d":2,"items":["Servants honoring their masters","Warning about those teaching a different doctrine","Flee these things, man of God","A charge to the rich"],"v":1},
 {"t":"tf","d":1,"q":"Paul says those determined to be rich fall into a temptation and a snare.","answer":true,"v":9},
-{"t":"tf","d":3,"q":"Paul says servants with believing masters may serve them less, since they are brothers.","answer":false,"v":2}
+{"t":"tf","d":3,"q":"Paul says servants with believing masters may serve them less, since they are brothers.","answer":false,"v":2},
+{"t":"choice","d":1,"q":"What does Paul say is great gain?","options":["Godliness with contentment","Wisdom with riches","Faith with works","Knowledge with humility"],"v":6},
+{"t":"choice","d":2,"q":"Having what two things does Paul say we will be content?","options":["Food and clothing","Health and friends","A home and family","Money and land"],"v":8},
+{"t":"choice","d":2,"q":"What titles does Paul give the blessed and only Ruler?","options":["King of kings and Lord of lords","Prince of peace and mighty God","Ancient of days and holy one","Shepherd and overseer of souls"],"v":15},
+{"t":"choice","d":3,"q":"What is someone who teaches a different doctrine obsessed with?","options":["Arguments, disputes, and word battles","Money, power, and fame","Food, drink, and feasts","Visions, dreams, and signs"],"v":4},
+{"t":"blank","d":2,"q":"That they do good, that they be ____, that they be ready to distribute, willing to share.","answer":"rich in good works","wrong":["humble in heart","faithful in prayer","generous to strangers"],"v":18},
+{"t":"blank","d":3,"q":"Some have been led astray from the faith in their greed, and have pierced themselves through with ____.","answer":"many sorrows","wrong":["many regrets","bitter pain","great shame"],"v":10},
+{"t":"tf","d":1,"q":"Paul says Timothy made the good confession privately, with no witnesses.","answer":false,"v":12}
 ]}
 }}

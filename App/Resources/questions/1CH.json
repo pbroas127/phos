@@ -107,6 +107,85 @@
      "q": "Hadad the son of Bedad is said to have struck Midian in the field of Moab.",
      "answer": true,
      "v": 46
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which three sons of Noah are listed?",
+     "options": [
+      "Shem, Ham, and Japheth",
+      "Shem, Seth, and Enosh",
+      "Ham, Cush, and Canaan",
+      "Japheth, Gomer, and Javan"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How is Keturah described in the chapter?",
+     "options": [
+      "Abraham's concubine",
+      "Ishmael's mother",
+      "Isaac's wife",
+      "Esau's wife"
+     ],
+     "v": 32
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which of these is listed among the sons of Shem?",
+     "options": [
+      "Aram",
+      "Canaan",
+      "Cush",
+      "Javan"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who is named as Canaan's firstborn?",
+     "options": [
+      "Sidon",
+      "Heth",
+      "Nimrod",
+      "Asshur"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Amalek is listed among the sons of whom?",
+     "options": [
+      "Eliphaz",
+      "Ishmael",
+      "Midian",
+      "Joktan"
+     ],
+     "v": 36
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Pathrusim, Casluhim (____), and Caphtorim.",
+     "answer": "where the Philistines came from",
+     "wrong": [
+      "where the Hittites came from",
+      "where the Amorites came from",
+      "where the Edomites came from"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Enoch and Methuselah appear in the list of names between Adam and Noah.",
+     "answer": true,
+     "v": 3
     }
    ]
   },
@@ -216,6 +295,85 @@
      "q": "The chapter notes that both Seled and Jether died without children.",
      "answer": true,
      "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What happened to Er, Judah's firstborn?",
+     "options": [
+      "He was wicked, and the LORD killed him",
+      "He died in battle with the Canaanites",
+      "He was sold as a slave into Egypt",
+      "He died young of a sickness"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who is named as the grandson of Hur?",
+     "options": [
+      "Bezalel",
+      "Boaz",
+      "Nahshon",
+      "Achar"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who is called the father of Bethlehem?",
+     "options": [
+      "Salma",
+      "Boaz",
+      "Jesse",
+      "Hur"
+     ],
+     "v": 51
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who took the towns of Jair?",
+     "options": [
+      "Geshur and Aram",
+      "Moab and Ammon",
+      "Edom and Midian",
+      "Tyre and Sidon"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The sons of Zeruiah: ____, three.",
+     "answer": "Abishai, Joab, and Asahel",
+     "wrong": [
+      "Joab, Amasa, and Abner",
+      "Abishai, Uriah, and Joab",
+      "Asahel, Eliab, and Joab"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "____ who lived at Jabez: the Tirathites, the Shimeathites, and the Sucathites.",
+     "answer": "The families of scribes",
+     "wrong": [
+      "The families of priests",
+      "The families of singers",
+      "The families of shepherds"
+     ],
+     "v": 55
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Abinadab is listed as Jesse's firstborn son.",
+     "answer": false,
+     "v": 13
     }
    ]
   },
@@ -325,6 +483,80 @@
      "q": "Zerubbabel is listed among the descendants of Jeconiah.",
      "answer": true,
      "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "The list of kings after David begins with the son of whom?",
+     "options": [
+      "Solomon",
+      "Absalom",
+      "Nathan",
+      "Amnon"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who is listed as Hezekiah's son?",
+     "options": [
+      "Manasseh",
+      "Josiah",
+      "Amon",
+      "Ahaz"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which of these is listed as a son of Josiah?",
+     "options": [
+      "Zedekiah",
+      "Rehoboam",
+      "Hezekiah",
+      "Amon"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Six were born to him in Hebron. He reigned ____ in Jerusalem.",
+     "answer": "thirty-three years",
+     "wrong": [
+      "forty years",
+      "twenty years",
+      "thirty-six years"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The third, Absalom the son of Maacah the daughter of Talmai king of Geshur; the fourth, Adonijah ____.",
+     "answer": "the son of Haggith",
+     "wrong": [
+      "the son of Abital",
+      "the son of Eglah",
+      "the son of Ahinoam"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Amnon was born to David in Jerusalem.",
+     "answer": false,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jeconiah is listed as a son of Jehoiakim.",
+     "answer": true,
+     "v": 16
     }
    ]
   },
@@ -434,6 +666,85 @@
      "q": "Mered took Bithiah, the daughter of Pharaoh, as a wife.",
      "answer": true,
      "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How is Jabez described in comparison with his brothers?",
+     "options": [
+      "More honorable than his brothers",
+      "Stronger than his brothers",
+      "Wiser than his brothers",
+      "Richer than his brothers"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How is the land the Simeonites found near Gedor described?",
+     "options": [
+      "Wide, quiet, and peaceful",
+      "Rocky and dry",
+      "Crowded with walled cities",
+      "Full of vineyards and olive trees"
+     ],
+     "v": 40
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "From whom were those who lived near Gedor before the Simeonites descended?",
+     "options": [
+      "Ham",
+      "Esau",
+      "Ishmael",
+      "Lot"
+     ],
+     "v": 40
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What work is named for the families of the house of Ashbea?",
+     "options": [
+      "Working fine linen",
+      "Making pottery",
+      "Working in bronze",
+      "Carving wood"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "These were their cities until ____.",
+     "answer": "David's reign",
+     "wrong": [
+      "Saul's reign",
+      "the captivity",
+      "Solomon's reign"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "These were their settlements, and ____.",
+     "answer": "they kept their genealogy",
+     "wrong": [
+      "they built their altars",
+      "they paid their tribute",
+      "they guarded their borders"
+     ],
+     "v": 33
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Beersheba is listed among the places where the sons of Simeon lived.",
+     "answer": true,
+     "v": 28
     }
    ]
   },
@@ -548,6 +859,85 @@
      "q": "The Reubenites, Gadites, and half tribe of Manasseh were carried away by the king of Babylon.",
      "answer": false,
      "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the eastern tribes take away from the Hagrites?",
+     "options": [
+      "Their livestock",
+      "Their idols",
+      "Their chariots",
+      "Their walled cities"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What skills did the valiant men of Reuben, Gad, and half of Manasseh have?",
+     "options": [
+      "Bearing buckler and sword and shooting with bow",
+      "Building walls and towers",
+      "Driving chariots and riding horses",
+      "Slinging stones at a hair"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Bela live eastward to the entrance of the wilderness?",
+     "options": [
+      "Their livestock multiplied in Gilead",
+      "They fled from the Philistines",
+      "The king commanded them to go",
+      "A famine struck their land"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In whose days were these families listed by genealogies?",
+     "options": [
+      "Jotham of Judah and Jeroboam of Israel",
+      "David of Judah and Saul of Israel",
+      "Hezekiah of Judah and Hoshea of Israel",
+      "Josiah of Judah and Jehu of Israel"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For many fell slain, because the war was of God. They lived in their place until ____.",
+     "answer": "the captivity",
+     "wrong": [
+      "the days of David",
+      "Solomon's reign",
+      "the great famine"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They increased from Bashan to Baal Hermon, Senir, and ____.",
+     "answer": "Mount Hermon",
+     "wrong": [
+      "Mount Gilead",
+      "Mount Seir",
+      "Mount Nebo"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Reuben is called the firstborn of Israel.",
+     "answer": true,
+     "v": 3
     }
    ]
   },
@@ -657,6 +1047,85 @@
      "q": "Heman the singer was a descendant of Samuel.",
      "answer": true,
      "v": 33
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who were the children of Amram?",
+     "options": [
+      "Aaron, Moses, and Miriam",
+      "Nadab, Abihu, and Eleazar",
+      "Libni, Shimei, and Mahli",
+      "Korah, Dathan, and Abiram"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who were the sons of Levi?",
+     "options": [
+      "Gershon, Kohath, and Merari",
+      "Amram, Izhar, and Hebron",
+      "Eleazar, Phinehas, and Zadok",
+      "Nadab, Abihu, and Ithamar"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Azariah the son of Johanan serve as priest?",
+     "options": [
+      "In the house Solomon built in Jerusalem",
+      "In the tabernacle at Shiloh",
+      "At the high place in Gibeon",
+      "In the city of Hebron"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who stood on the left hand of Heman the singer?",
+     "options": [
+      "The sons of Merari",
+      "The sons of Gershom",
+      "The sons of Aaron",
+      "The sons of Korah"
+     ],
+     "v": 44
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Their brothers the Levites were appointed for ____ of God's house.",
+     "answer": "all the service of the tabernacle",
+     "wrong": [
+      "all the singing in the temple",
+      "the guarding of the gates",
+      "the offering of incense"
+     ],
+     "v": 48
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "To the sons of Aaron they gave ____, Hebron, Libnah also with its pasture lands.",
+     "answer": "the cities of refuge",
+     "wrong": [
+      "the priestly cities",
+      "the cities of Judah",
+      "the first fruits"
+     ],
+     "v": 57
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The sons of Aaron, of the families of the Kohathites, received the first lot.",
+     "answer": true,
+     "v": 54
     }
    ]
   },
@@ -766,6 +1235,85 @@
      "q": "The chapter says the children of Joseph lived in Hebron and its towns.",
      "answer": false,
      "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which of these places was among the possessions of the children of Joseph?",
+     "options": [
+      "Bethel and its towns",
+      "Jericho and its towns",
+      "Ziklag and its towns",
+      "Beersheba and its towns"
+     ],
+     "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why were the bands of Issachar's army so large?",
+     "options": [
+      "They had many wives and sons",
+      "They hired soldiers from Aram",
+      "They took in warriors from Judah",
+      "They were joined by the Gadites"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who bore Machir the father of Gilead?",
+     "options": [
+      "Manasseh's concubine the Aramitess",
+      "Maacah the wife of Machir",
+      "Sheerah the daughter of Ephraim",
+      "Serah the sister of Beriah"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whose sons are listed in a single verse that ends with the sons of Bilhah?",
+     "options": [
+      "Naphtali",
+      "Asher",
+      "Issachar",
+      "Benjamin"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "All these were sons of Jediael, mighty men of valor, who were able to go out ____ for war.",
+     "answer": "in the army",
+     "wrong": [
+      "to the battle",
+      "with the king",
+      "against their enemies"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The sons of Izrahiah: Michael, Obadiah, Joel, and Isshiah, five; ____.",
+     "answer": "all of them chief men",
+     "wrong": [
+      "all of them mighty warriors",
+      "all of them wise counselors",
+      "all of them valiant archers"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Bela, Becher, and Jediael are listed as the sons of Benjamin.",
+     "answer": true,
+     "v": 6
     }
    ]
   },
@@ -880,6 +1428,73 @@
      "q": "The chapter names Ner as Saul's father.",
      "answer": false,
      "v": 33
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which of these is listed as a son of Saul?",
+     "options": [
+      "Jonathan",
+      "Merib-baal",
+      "Kish",
+      "Abner"
+     ],
+     "v": 33
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who is named as the son of Jonathan?",
+     "options": [
+      "Merib-baal",
+      "Micah",
+      "Eshbaal",
+      "Ahaz"
+     ],
+     "v": 34
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which of these is listed among the sons of the father of Gibeon?",
+     "options": [
+      "Kish",
+      "Jonathan",
+      "Elpaal",
+      "Ulam"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was the name of the wife of the father of Gibeon?",
+     "options": [
+      "Maacah",
+      "Hushim",
+      "Baara",
+      "Hodesh"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "These were heads of fathers' households throughout their generations, ____. These lived in Jerusalem.",
+     "answer": "chief men",
+     "wrong": [
+      "mighty men",
+      "men of renown",
+      "valiant warriors"
+     ],
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Ishmael is listed among the six sons of Azel.",
+     "answer": true,
+     "v": 38
     }
    ]
   },
@@ -994,6 +1609,85 @@
      "q": "The gatekeepers' brothers in the villages came in every seven days to be with them.",
      "answer": true,
      "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "In which book does the chapter say all Israel's genealogies were written?",
+     "options": [
+      "The book of the kings of Israel",
+      "The book of Jashar",
+      "The law of Moses",
+      "The book of Nathan the prophet"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who were the first inhabitants to live again in their possessions in their cities?",
+     "options": [
+      "Israel, the priests, the Levites, and the temple servants",
+      "The priests and the Levites only",
+      "The princes of Judah and Benjamin",
+      "The singers and the gatekeepers"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What were the four chief gatekeepers over in God's house?",
+     "options": [
+      "The rooms and the treasuries",
+      "The altar and the basin",
+      "The singers and musicians",
+      "The show bread and the incense"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who was the chief of the gatekeepers?",
+     "options": [
+      "Shallum",
+      "Akkub",
+      "Talmon",
+      "Zechariah"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "In Jerusalem, there lived of the children of Judah, of the children of Benjamin, and of the children of ____.",
+     "answer": "Ephraim and Manasseh",
+     "wrong": [
+      "Reuben and Gad",
+      "Levi and Simeon",
+      "Dan and Naphtali"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Zechariah the son of Meshelemiah was gatekeeper of the door of ____.",
+     "answer": "the Tent of Meeting",
+     "wrong": [
+      "the king's house",
+      "the inner court",
+      "the treasury"
+     ],
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The heads of the Levite households lived in Gibeon.",
+     "answer": false,
+     "v": 34
     }
    ]
   },
@@ -1108,6 +1802,85 @@
      "q": "The men of Jabesh fasted seven days after the burial.",
      "answer": true,
      "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which of Saul's sons did the Philistines kill?",
+     "options": [
+      "Jonathan, Abinadab, and Malchishua",
+      "Jonathan, Eshbaal, and Abner",
+      "Abinadab, Merib-baal, and Micah",
+      "Malchishua, Ishvi, and Kish"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What overtook Saul as the battle went hard against him?",
+     "options": [
+      "The archers",
+      "The chariots",
+      "The horsemen",
+      "The spearmen"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the men of Israel in the valley do when they saw that Saul and his sons were dead?",
+     "options": [
+      "Abandoned their cities and fled",
+      "Chose a new king at once",
+      "Fought on to the last man",
+      "Sent gifts to the Philistines"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did the Philistines put Saul's armor?",
+     "options": [
+      "In the house of their gods",
+      "In the palace of their king",
+      "At the gate of Gaza",
+      "On the wall of Beth Shan"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "So Saul died with his three sons; and ____.",
+     "answer": "all his house died together",
+     "wrong": [
+      "all Israel mourned for him",
+      "his kingdom was taken away",
+      "the Philistines rejoiced greatly"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They sent into the land of the Philistines all around to carry the news to ____.",
+     "answer": "their idols and to the people",
+     "wrong": [
+      "their kings and their captains",
+      "their priests and their cities",
+      "the lords of the Philistines"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter says Saul died partly because he did not inquire of the LORD.",
+     "answer": true,
+     "v": 14
     }
    ]
   },
@@ -1222,6 +1995,85 @@
      "q": "Uriah the Hittite is named among David's mighty men.",
      "answer": true,
      "v": 41
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the inhabitants of Jebus say to David?",
+     "options": [
+      "You will not come in here!",
+      "We will serve you as king",
+      "Go back to Hebron in peace",
+      "We will pay you tribute"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who repaired the rest of the city after David built around it?",
+     "options": [
+      "Joab",
+      "Abishai",
+      "Benaiah",
+      "Eleazar"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who was the brother of Joab and chief of the three?",
+     "options": [
+      "Abishai",
+      "Asahel",
+      "Benaiah",
+      "Jashobeam"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did David set Benaiah over?",
+     "options": [
+      "His guard",
+      "The whole army",
+      "The thirty",
+      "The priests"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Three of the thirty chief men went down to the rock to David, into ____.",
+     "answer": "the cave of Adullam",
+     "wrong": [
+      "the stronghold of Zion",
+      "the valley of Rephaim",
+      "the wilderness of Judah"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "In the Egyptian's hand was a spear like ____.",
+     "answer": "a weaver's beam",
+     "wrong": [
+      "a cedar pole",
+      "a ship's mast",
+      "a great tree"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter says Jerusalem was also called Jebus.",
+     "answer": true,
+     "v": 4
     }
    ]
   },
@@ -1336,6 +2188,85 @@
      "q": "David told the men of Benjamin and Judah that his heart would be united with them if they came peaceably.",
      "answer": true,
      "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was David's army compared to as men came to help him day by day?",
+     "options": [
+      "God's army",
+      "The sand of the sea",
+      "The stars of heaven",
+      "A mighty flood"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When did the Gadites go over the Jordan?",
+     "options": [
+      "In the first month, when it overflowed its banks",
+      "In the dry season of summer",
+      "At the time of the wheat harvest",
+      "At night on the Sabbath"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How is the strength of the Gadite captains described?",
+     "options": [
+      "The least equal to one hundred, the greatest to one thousand",
+      "Each could chase a thousand alone",
+      "Each had killed a lion with his hands",
+      "The least equal to ten, the greatest to one hundred"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did only a small number of Benjamites come to make David king?",
+     "options": [
+      "Most had kept their allegiance to Saul's house",
+      "Most had been killed at Gilboa",
+      "They were guarding their own cities",
+      "David had refused their help"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "All the rest also of Israel were ____ to make David king.",
+     "answer": "of one heart",
+     "wrong": [
+      "gathered together",
+      "eager and willing",
+      "ready in arms"
+     ],
+     "v": 38
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Of Zebulun: fifty thousand who could command and were not ____.",
+     "answer": "of double heart",
+     "wrong": [
+      "of fearful heart",
+      "slow to battle",
+      "afraid of war"
+     ],
+     "v": 33
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Neighbors as far as Issachar, Zebulun, and Naphtali brought food on donkeys, camels, mules, and oxen.",
+     "answer": true,
+     "v": 40
     }
    ]
   },
@@ -1450,6 +2381,85 @@
      "q": "Uzza and Obed-Edom drove the cart that carried the ark.",
      "answer": false,
      "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the LORD strike Uzza?",
+     "options": [
+      "He put his hand on the ark",
+      "He drove the cart too fast",
+      "He looked inside the ark",
+      "He was not a Levite"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "From which town did David go to bring up God's ark?",
+     "options": [
+      "Kiriath Jearim",
+      "Beth Shemesh",
+      "Shiloh",
+      "Gibeon"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How is Obed-Edom described in this chapter?",
+     "options": [
+      "The Gittite",
+      "The Levite",
+      "The Hittite",
+      "The Ephraimite"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "At whose threshing floor did the oxen stumble?",
+     "options": [
+      "Chidon's",
+      "Ornan's",
+      "Atad's",
+      "Boaz's"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "All the assembly said that they would do so, for the thing was ____ of all the people.",
+     "answer": "right in the eyes",
+     "wrong": [
+      "pleasing in the sight",
+      "good in the hearts",
+      "welcome in the ears"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "To bring up from there God the LORD's ark that sits above ____, that is called by the Name.",
+     "answer": "the cherubim",
+     "wrong": [
+      "the mercy seat",
+      "the altar",
+      "the tablets of stone"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After Uzza died, David brought the ark into David's city.",
+     "answer": false,
+     "v": 13
     }
    ]
   },
@@ -1564,6 +2574,73 @@
      "q": "David struck the army of the Philistines from Gibeon even to Gezer.",
      "answer": true,
      "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did all the Philistines go up to seek David?",
+     "options": [
+      "They heard he was anointed king over all Israel",
+      "He had burned the gods of Gath",
+      "He had taken the stronghold of Zion",
+      "Hiram had made a treaty with him"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did David do before going up against the Philistines the first time?",
+     "options": [
+      "Inquired of God",
+      "Offered burnt offerings",
+      "Gathered the priests with trumpets",
+      "Sent spies into the valley"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did David do in Jerusalem after the LORD established his kingdom?",
+     "options": [
+      "Took more wives",
+      "Began to build the temple",
+      "Brought the ark into the city",
+      "Made a covenant with Tyre"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Hiram send cedar trees, masons, and carpenters to David?",
+     "options": [
+      "To build him a house",
+      "To repair the walls of Jerusalem",
+      "To build an altar to the LORD",
+      "To make ships for trade"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "All the Philistines went up to seek David; and David heard of it, and ____.",
+     "answer": "went out against them",
+     "wrong": [
+      "fled to the stronghold",
+      "hid in the cave",
+      "sent to Hiram for help"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Solomon is named among the children David had in Jerusalem.",
+     "answer": true,
+     "v": 4
     }
    ]
   },
@@ -1678,6 +2755,85 @@
      "q": "David brought the ark up out of Abinadab's house with joy.",
      "answer": false,
      "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which two priests did David call for along with the Levites?",
+     "options": [
+      "Zadok and Abiathar",
+      "Zadok and Ahimelech",
+      "Abiathar and Eli",
+      "Phinehas and Eleazar"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the priests do before God's ark?",
+     "options": [
+      "Blew the trumpets",
+      "Burned incense",
+      "Carried the poles",
+      "Played the harps"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What role did Berechiah and Elkanah have?",
+     "options": [
+      "Doorkeepers for the ark",
+      "Trumpeters before the ark",
+      "Masters of the choir",
+      "Priests over the offerings"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Besides David, who was clothed with a robe of fine linen?",
+     "options": [
+      "The Levites who bore the ark",
+      "Only Zadok the high priest",
+      "The elders of Israel",
+      "The captains over thousands"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "David assembled all Israel at Jerusalem, to bring up the LORD's ark to ____, which he had prepared for it.",
+     "answer": "its place",
+     "wrong": [
+      "David's city",
+      "Mount Zion",
+      "the tabernacle"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "David spoke to the chief of the Levites to appoint singers, sounding aloud and lifting up their voices ____.",
+     "answer": "with joy",
+     "wrong": [
+      "with weeping",
+      "in prayer",
+      "before the king"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "All Israel brought the ark up with shouting, cornets, trumpets, and cymbals.",
+     "answer": true,
+     "v": 28
     }
    ]
   },
@@ -1792,6 +2948,85 @@
      "q": "The song says the LORD commanded his word to a hundred generations.",
      "answer": false,
      "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did David do after he finished offering the burnt offerings and peace offerings?",
+     "options": [
+      "Blessed the people in the LORD's name",
+      "Danced before the ark",
+      "Built an altar in Gibeon",
+      "Sent the Levites home"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which land does the song say God promised as the lot of their inheritance?",
+     "options": [
+      "The land of Canaan",
+      "The land of Goshen",
+      "The land of Gilead",
+      "The land of Egypt"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "With whom does the song say God made the covenant?",
+     "options": [
+      "Abraham",
+      "Moses",
+      "Noah",
+      "David"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When did Zadok and the priests offer burnt offerings at Gibeon?",
+     "options": [
+      "Continually morning and evening",
+      "Only on the Sabbath days",
+      "At each new moon",
+      "Once every year"
+     ],
+     "v": 40
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Seek the LORD and his strength. ____.",
+     "answer": "Seek his face forever more",
+     "wrong": [
+      "Call on his name always",
+      "Trust in his holy word",
+      "Walk in his ways daily"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Tremble before him, all the earth. The world also is established that ____.",
+     "answer": "it can't be moved",
+     "wrong": [
+      "it will last forever",
+      "it shall not pass away",
+      "it stands in peace"
+     ],
+     "v": 30
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The song says Israel was very few in number and foreigners in the land.",
+     "answer": true,
+     "v": 19
     }
    ]
   },
@@ -1906,6 +3141,85 @@
      "q": "David asked, Who am I, LORD God, and what is my house, that you have brought me this far?",
      "answer": true,
      "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did God tell Nathan that David would not do?",
+     "options": [
+      "Build God a house to dwell in",
+      "Defeat all his enemies",
+      "Bring the ark into Jerusalem",
+      "Reign over all Israel"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What kind of name did God promise to make for David?",
+     "options": [
+      "A name like the great ones on the earth",
+      "A name above every king of Israel",
+      "A name written in the book of the law",
+      "A name like the name of Abraham"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did God promise to do for his people Israel?",
+     "options": [
+      "Appoint a place and plant them there",
+      "Give them rest from all labor",
+      "Make them rich with the wealth of Egypt",
+      "Make them a kingdom of priests"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did David describe what God had done in his prayer?",
+     "options": [
+      "A small thing in God's eyes",
+      "A burden too heavy to carry",
+      "A secret hidden for ages",
+      "A song for all the nations"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "LORD, there is no one like you, neither is there ____.",
+     "answer": "any God besides you",
+     "wrong": [
+      "any king like you",
+      "any rock like you",
+      "any refuge but you"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "But I will settle him in ____ forever. His throne will be established forever.",
+     "answer": "my house and in my kingdom",
+     "wrong": [
+      "the land of his fathers",
+      "the city of David",
+      "the throne of Israel"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God said David's offspring would build him a house, and his throne would be established forever.",
+     "answer": true,
+     "v": 12
     }
    ]
   },
@@ -2020,6 +3334,85 @@
      "q": "Joab the son of Zeruiah served as David's scribe.",
      "answer": false,
      "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which city did David take with its towns out of the hand of the Philistines?",
+     "options": [
+      "Gath",
+      "Gaza",
+      "Ashdod",
+      "Ekron"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did David take from the servants of Hadadezer and bring to Jerusalem?",
+     "options": [
+      "Shields of gold",
+      "Swords of iron",
+      "Chariots of bronze",
+      "Crowns of silver"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who came to help Hadadezer king of Zobah?",
+     "options": [
+      "The Syrians of Damascus",
+      "The Moabites",
+      "The Edomites",
+      "The Philistines of Gath"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who was over the Cherethites and the Pelethites?",
+     "options": [
+      "Benaiah the son of Jehoiada",
+      "Abishai the son of Zeruiah",
+      "Jehoshaphat the son of Ahilud",
+      "Zadok the son of Ahitub"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "He put garrisons in Edom; and all the Edomites ____.",
+     "answer": "became servants to David",
+     "wrong": [
+      "fled from the land",
+      "paid a heavy fine",
+      "made a covenant with Israel"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The sons of David were ____ serving the king.",
+     "answer": "chief officials",
+     "wrong": [
+      "mighty captains",
+      "trusted counselors",
+      "priests and scribes"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "David defeated Hadadezer as he went to establish his dominion by the river Jordan.",
+     "answer": false,
+     "v": 3
     }
    ]
   },
@@ -2134,6 +3527,85 @@
      "q": "After fleeing from Joab, the Syrians gave up and did not fight Israel again in this chapter.",
      "answer": false,
      "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom did David send when he heard that Ammon was gathering for battle?",
+     "options": [
+      "Joab with all the army of the mighty men",
+      "Abishai with the archers",
+      "Benaiah with the king's guard",
+      "No one, for he went out himself"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the children of Ammon hire chariots and horsemen?",
+     "options": [
+      "They had made themselves odious to David",
+      "David had declared war on them",
+      "Their own army had been destroyed",
+      "The Syrians demanded payment"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did the children of Ammon put the battle in array?",
+     "options": [
+      "At the gate of the city",
+      "By the Jordan River",
+      "In the Valley of Salt",
+      "On the hills of Gilead"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did the hired kings and their people encamp?",
+     "options": [
+      "Near Medeba",
+      "Near Rabbah",
+      "Near Jericho",
+      "Near Aroer"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "David said, I will show kindness to Hanun the son of Nahash, because ____.",
+     "answer": "his father showed kindness to me",
+     "wrong": [
+      "he is a mighty king",
+      "his people are at peace with us",
+      "he has sent me gifts"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When Joab saw that the battle was set against him ____, he chose some of the choice men of Israel.",
+     "answer": "before and behind",
+     "wrong": [
+      "on every side",
+      "from the north",
+      "in the open field"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The princes of Ammon told Hanun that David truly honored his father.",
+     "answer": false,
+     "v": 3
     }
    ]
   },
@@ -2236,6 +3708,61 @@
      "q": "Jonathan the son of Shimea, David's brother, killed the giant who defied Israel at Gath.",
      "answer": true,
      "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did David and all the people return after dealing with the cities of Ammon?",
+     "options": [
+      "Jerusalem",
+      "Hebron",
+      "Bethlehem",
+      "Gibeon"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who killed Sippai, of the sons of the giant, at Gezer?",
+     "options": [
+      "Sibbecai the Hushathite",
+      "Benaiah the son of Jehoiada",
+      "Joab the son of Zeruiah",
+      "Asahel the brother of Joab"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Lahmi the brother of Goliath the Gittite, the staff of whose spear was ____.",
+     "answer": "like a weaver's beam",
+     "wrong": [
+      "like a cedar pole",
+      "thick as a man's arm",
+      "heavy as a millstone"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "It was set on David's head, and he brought ____ out of the city.",
+     "answer": "very much plunder",
+     "wrong": [
+      "many captives",
+      "gold and silver",
+      "the idols of Ammon"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "After the war at Gezer, the Philistines were subdued.",
+     "answer": true,
+     "v": 4
     }
    ]
   },
@@ -2350,6 +3877,85 @@
      "q": "The LORD answered David from the sky by fire on the altar of burnt offering.",
      "answer": true,
      "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did David see in the hand of the LORD's angel over Jerusalem?",
+     "options": [
+      "A drawn sword",
+      "A burning torch",
+      "A measuring line",
+      "A trumpet"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did David give Ornan for the place?",
+     "options": [
+      "Six hundred shekels of gold",
+      "Fifty shekels of silver",
+      "A field in Bethlehem",
+      "A thousand sheep"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Joab say he wished the LORD would do for his people?",
+     "options": [
+      "Make them a hundred times as many",
+      "Give them rest from their enemies",
+      "Keep them from all guilt",
+      "Bless them with a good harvest"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why could David not go before the tabernacle at Gibeon to inquire of God?",
+     "options": [
+      "He was afraid of the angel's sword",
+      "The priests would not let him in",
+      "The plague was still in Gibeon",
+      "He was unclean after the census"
+     ],
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Go, count Israel from ____; and bring me word, that I may know how many there are.",
+     "answer": "Beersheba even to Dan",
+     "wrong": [
+      "Jerusalem even to Hebron",
+      "Gilead even to Gaza",
+      "the Jordan even to the sea"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Then the LORD commanded the angel, and he put ____.",
+     "answer": "his sword back into its sheath",
+     "wrong": [
+      "his hand down at his side",
+      "away his bow and arrows",
+      "his trumpet to his lips"
+     ],
+     "v": 27
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "David and the elders, clothed in sackcloth, fell on their faces.",
+     "answer": true,
+     "v": 16
     }
    ]
   },
@@ -2464,6 +4070,85 @@
      "q": "David told the princes that the land still needed to be subdued before they could build.",
      "answer": false,
      "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did David declare the place of the altar of burnt offering to be?",
+     "options": [
+      "The house of the LORD God",
+      "The city of David",
+      "The tomb of his fathers",
+      "The tent of the ark"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did God promise to give Israel in the days of David's son?",
+     "options": [
+      "Peace and quietness",
+      "Great riches and honor",
+      "Victory over Egypt",
+      "A larger kingdom"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did David ask the LORD to give Solomon?",
+     "options": [
+      "Discretion and understanding",
+      "Riches and honor",
+      "Long life and victory",
+      "Many sons and daughters"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did David prepare iron in abundance for?",
+     "options": [
+      "Nails for the doors of the gates and couplings",
+      "Weapons for the temple guards",
+      "Chains for the bronze pillars",
+      "Tools for the stone cutters"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Arise and be doing, and ____.",
+     "answer": "may the LORD be with you",
+     "wrong": [
+      "may your enemies flee",
+      "may your name be great",
+      "may the work be finished"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I have also prepared timber and stone; and ____.",
+     "answer": "you may add to them",
+     "wrong": [
+      "you shall want nothing",
+      "you need not buy more",
+      "the workmen are ready"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "David told Solomon that God said of him, He will be my son, and I will be his father.",
+     "answer": true,
+     "v": 10
     }
    ]
   },
@@ -2578,6 +4263,85 @@
      "q": "The Levites were to offer burnt offerings only at the Passover.",
      "answer": false,
      "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom did David gather together along with all the princes of Israel?",
+     "options": [
+      "The priests and the Levites",
+      "The mighty men of valor",
+      "The elders of Judah",
+      "The prophets and seers"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who were the sons of Moses?",
+     "options": [
+      "Gershom and Eliezer",
+      "Nadab and Abihu",
+      "Eleazar and Ithamar",
+      "Mahli and Mushi"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom were the Levites to wait on for the service of the LORD's house?",
+     "options": [
+      "The sons of Aaron",
+      "The king's household",
+      "The elders of Israel",
+      "The sons of Asaph"
+     ],
+     "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What is said about the sons of Rehabiah?",
+     "options": [
+      "They were very many",
+      "They had no children",
+      "They were all singers",
+      "They died in the wilderness"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "That they should keep the duty of ____, the duty of the holy place.",
+     "answer": "the Tent of Meeting",
+     "wrong": [
+      "the altar of incense",
+      "the king's house",
+      "the city gates"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For the show bread also, and for ____ for a meal offering.",
+     "answer": "the fine flour",
+     "wrong": [
+      "the pure oil",
+      "the sweet incense",
+      "the new wine"
+     ],
+     "v": 29
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Some of the Levites were appointed as officers and judges.",
+     "answer": true,
+     "v": 4
     }
    ]
   },
@@ -2681,6 +4445,49 @@
      "q": "Zadok was of the sons of Ithamar.",
      "answer": false,
      "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which two men helped David divide the priests according to their service?",
+     "options": [
+      "Zadok and Ahimelech",
+      "Nathan and Gad",
+      "Abiathar and Joab",
+      "Asaph and Heman"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What two kinds of princes were found among both the sons of Eleazar and of Ithamar?",
+     "options": [
+      "Princes of the sanctuary and princes of God",
+      "Princes of the army and princes of the tribes",
+      "Princes of the gates and princes of the treasury",
+      "Princes of Judah and princes of Levi"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "One fathers' house being taken for Eleazar, and ____.",
+     "answer": "one taken for Ithamar",
+     "wrong": [
+      "two taken for Ithamar",
+      "one taken for Levi",
+      "none taken for Ithamar"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Eleazar, of the sons of Mahli, had no sons.",
+     "answer": true,
+     "v": 28
     }
    ]
   },
@@ -2784,6 +4591,49 @@
      "q": "The musicians' offices were assigned by rank, the great before the small.",
      "answer": false,
      "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "For whose family did the first lot come out?",
+     "options": [
+      "Asaph",
+      "Heman",
+      "Jeduthun",
+      "Korah"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "All these were under the hands of their father for ____, with cymbals, stringed instruments, and harps.",
+     "answer": "song in the LORD's house",
+     "wrong": [
+      "service at the altar",
+      "guarding the king's gates",
+      "teaching the law to Israel"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The number of those who did the work ____ was as follows.",
+     "answer": "according to their service",
+     "wrong": [
+      "in the house of God",
+      "by their families",
+      "under the king's hand"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The sons of Jeduthun served under the hands of their father.",
+     "answer": true,
+     "v": 3
     }
    ]
   },
@@ -2898,6 +4748,85 @@
      "q": "Shebuel, a descendant of Aaron, was ruler over the treasuries.",
      "answer": false,
      "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "From which family were the first divisions of doorkeepers listed?",
+     "options": [
+      "The Korahites",
+      "The Gershonites",
+      "The sons of Aaron",
+      "The Hebronites"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was Ahijah the Levite over?",
+     "options": [
+      "The treasures of God's house and the dedicated things",
+      "The singers and their instruments",
+      "The gate of Shallecheth",
+      "The judges beyond the Jordan"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which direction did the lot give to Shuppim and Hosah?",
+     "options": [
+      "Westward",
+      "Eastward",
+      "Northward",
+      "Southward"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where were mighty men of valor found among the Hebronites in David's fortieth year?",
+     "options": [
+      "At Jazer of Gilead",
+      "At Hebron in Judah",
+      "At Ramoth in Gilead",
+      "At Bethel"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Sons were also born to Shemaiah his son, who ruled over the house of their father; for they were ____.",
+     "answer": "mighty men of valor",
+     "wrong": [
+      "skilled in singing",
+      "wise counselors",
+      "faithful to the king"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "David made them overseers over the Reubenites, the Gadites, and half of Manasseh, for every matter pertaining to God and for ____.",
+     "answer": "the affairs of the king",
+     "wrong": [
+      "the service of the priests",
+      "the defense of the land",
+      "the building of the temple"
+     ],
+     "v": 32
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The sons of Obed-Edom are described as able men in strength for the service.",
+     "answer": true,
+     "v": 8
     }
    ]
   },
@@ -3012,6 +4941,85 @@
      "q": "The number from Joab's census was put into the chronicles of King David.",
      "answer": false,
      "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who was the captain of the king's army?",
+     "options": [
+      "Joab",
+      "Abner",
+      "Benaiah",
+      "Amasa"
+     ],
+     "v": 34
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who was the ruler over the descendants of Aaron?",
+     "options": [
+      "Zadok",
+      "Abiathar",
+      "Hashabiah",
+      "Jehoiada"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was Obil the Ishmaelite in charge of?",
+     "options": [
+      "The camels",
+      "The donkeys",
+      "The flocks",
+      "The vineyards"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who was the captain for the fourth month?",
+     "options": [
+      "Asahel the brother of Joab",
+      "Abishai the brother of Joab",
+      "Eleazar the son of Dodo",
+      "Uriah the Hittite"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "This is that Benaiah who was ____ and over the thirty.",
+     "answer": "the mighty man of the thirty",
+     "wrong": [
+      "the captain of the guard",
+      "the chief of the priests",
+      "the leader of the archers"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Over the olive trees and the sycamore trees that were in ____ was Baal Hanan the Gederite.",
+     "answer": "the lowland",
+     "wrong": [
+      "the valley of Sharon",
+      "the hill country",
+      "the plain of Jordan"
+     ],
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Jashobeam led the army division for the last month of the year.",
+     "answer": false,
+     "v": 2
     }
    ]
   },
@@ -3126,6 +5134,85 @@
      "q": "David told Solomon that only the priests would be at his command for the work.",
      "answer": false,
      "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "On what condition did God say he would establish Solomon's kingdom forever?",
+     "options": [
+      "If he continues to do God's commandments",
+      "If he builds the house in seven years",
+      "If he defeats all of Israel's enemies",
+      "If he marries only in Israel"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did David tell the assembly to seek out all the LORD's commandments?",
+     "options": [
+      "To possess the good land and leave it to their children",
+      "To be counted among the mighty men",
+      "To win favor with the nations",
+      "To finish the house before David died"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In the plans, what was to spread out and cover the ark of the LORD's covenant?",
+     "options": [
+      "The cherubim",
+      "A veil of blue",
+      "A lid of bronze",
+      "Curtains of goat hair"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What were the forks, the basins, and the cups to be made of?",
+     "options": [
+      "Pure gold",
+      "Polished bronze",
+      "Refined silver",
+      "Cedar overlaid with gold"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Take heed now, for the LORD has chosen you to build a house for the sanctuary. ____.",
+     "answer": "Be strong, and do it",
+     "wrong": [
+      "Wait for his word",
+      "Gather all the people",
+      "Do not delay"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Then David the king ____ and said, Hear me, my brothers and my people!",
+     "answer": "stood up on his feet",
+     "wrong": [
+      "sat upon his throne",
+      "bowed before the LORD",
+      "lifted up his hands"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "David said that the LORD had given him many sons.",
+     "answer": true,
+     "v": 5
     }
    ]
   },
@@ -3240,6 +5327,85 @@
      "q": "David died at a good old age, but poor after giving his treasure away.",
      "answer": false,
      "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did David describe Solomon to the assembly?",
+     "options": [
+      "Young and tender",
+      "Wise beyond his years",
+      "Strong and mighty in battle",
+      "Chosen by the people"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How long did David reign over Israel?",
+     "options": [
+      "Forty years",
+      "Thirty-three years",
+      "Fifty years",
+      "Twenty years"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "From where did the gold David gave from his own treasure come?",
+     "options": [
+      "Ophir",
+      "Sheba",
+      "Tarshish",
+      "Egypt"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Under whose hand were the precious stones given to the treasure of the LORD's house?",
+     "options": [
+      "Jehiel the Gershonite",
+      "Zadok the priest",
+      "Shemaiah the scribe",
+      "Asaph the singer"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Both riches and honor come from you, and ____! In your hand is power and might!",
+     "answer": "you rule over all",
+     "wrong": [
+      "your name is great",
+      "your mercy endures",
+      "you give to all"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I know also, my God, that you try the heart and ____.",
+     "answer": "have pleasure in uprightness",
+     "wrong": [
+      "reward the faithful",
+      "see every secret thing",
+      "hate a proud look"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Some of King David's sons refused to submit themselves to Solomon.",
+     "answer": false,
+     "v": 24
     }
    ]
   }

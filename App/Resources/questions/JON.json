@@ -112,6 +112,85 @@
      "q": "The ship master was the first to suggest throwing Jonah into the sea.",
      "answer": false,
      "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the LORD tell Jonah to preach against Nineveh?",
+     "options": [
+      "Their wickedness had come up before him",
+      "They had attacked Israel",
+      "They worshiped the sun and moon",
+      "Their king had mocked God"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the mariners throw into the sea to lighten the ship?",
+     "options": [
+      "The cargo",
+      "Their weapons",
+      "The ship's mast",
+      "Their food and water"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the sailors know Jonah was fleeing from the presence of the LORD?",
+     "options": [
+      "He had told them",
+      "The lot revealed it",
+      "The ship master dreamed it",
+      "They heard him praying"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whose son was Jonah?",
+     "options": [
+      "Amittai",
+      "Hilkiah",
+      "Beeri",
+      "Buzi"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "We beg you, LORD, don't let us die for this man's life, and don't lay on us ____.",
+     "answer": "innocent blood",
+     "wrong": [
+      "the guilt of murder",
+      "your fierce anger",
+      "the curse of the sea"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "There was a mighty storm on the sea, so that the ship was likely to ____.",
+     "answer": "break up",
+     "wrong": [
+      "sink below",
+      "run aground",
+      "turn over"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Jonah boarded the ship to Tarshish without paying its fare.",
+     "answer": false,
+     "v": 3
     }
    ]
   },
@@ -222,6 +301,85 @@
      "q": "In his prayer, Jonah says the sailors threw him into the depths.",
      "answer": false,
      "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "According to Jonah's prayer, what belongs to the LORD?",
+     "options": [
+      "Salvation",
+      "The sea",
+      "Vengeance",
+      "All the nations"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why does Jonah say he called to the LORD?",
+     "options": [
+      "Because of his affliction",
+      "Because the sailors begged him",
+      "Because he feared Nineveh",
+      "Because he had made a vow"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When does Jonah say he remembered the LORD?",
+     "options": [
+      "When his soul fainted within him",
+      "When the lot fell on him",
+      "When the sailors cried to their gods",
+      "When he first saw the fish"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Jonah says he was cast into the depths, in the heart of what?",
+     "options": [
+      "The seas",
+      "The earth",
+      "The mountains",
+      "The night"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Out of ____ I cried. You heard my voice.",
+     "answer": "the belly of Sheol",
+     "wrong": [
+      "the depths of the sea",
+      "the heart of the earth",
+      "the gates of death"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The earth barred me in forever; yet you have brought my life up ____, LORD my God.",
+     "answer": "from the pit",
+     "wrong": [
+      "from the grave",
+      "out of the deep",
+      "from the dust"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Jonah says the waters surrounded him, even to the soul.",
+     "answer": true,
+     "v": 5
     }
    ]
   },
@@ -334,6 +492,85 @@
      "t": "tf",
      "d": 2,
      "q": "The people of Nineveh put on sackcloth only after the king ordered it.",
+     "answer": false,
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the people of Nineveh first respond to Jonah's message?",
+     "options": [
+      "They believed God and proclaimed a fast",
+      "They mocked Jonah and drove him out",
+      "They prepared their walls for war",
+      "They sent messengers to Israel"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How large was Nineveh, according to the chapter?",
+     "options": [
+      "Three days' journey across",
+      "One day's journey across",
+      "Seven days' journey across",
+      "Forty days' journey across"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "The second time, what did God tell Jonah to preach to Nineveh?",
+     "options": [
+      "The message God would give him",
+      "Whatever the people needed to hear",
+      "The words of earlier prophets",
+      "A song of mourning"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How far had Jonah gone into the city when he cried out his message?",
+     "options": [
+      "A day's journey",
+      "Just inside the gate",
+      "To the king's palace",
+      "Three days' journey"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The king's decree said, Let them be covered with sackcloth, and let them ____.",
+     "answer": "cry mightily to God",
+     "wrong": [
+      "fast until evening",
+      "bow down in the dust",
+      "offer sacrifices to God"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "So Jonah arose, and went to Nineveh, ____.",
+     "answer": "according to the LORD's word",
+     "wrong": [
+      "as fast as he could",
+      "with a heavy heart",
+      "just as he had vowed"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Only the leaders of Nineveh fasted, while the common people did not.",
      "answer": false,
      "v": 5
     }
@@ -450,6 +687,85 @@
      "q": "When God asked whether he was right to be angry about the vine, Jonah admitted he was wrong.",
      "answer": false,
      "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the LORD God make the vine grow up over Jonah?",
+     "options": [
+      "To shade him from his discomfort",
+      "To give him fruit to eat",
+      "To hide him from Nineveh",
+      "To show a sign of judgment"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jonah ask for when the sun beat on his head and he grew faint?",
+     "options": [
+      "That he might die",
+      "That God would send rain",
+      "That the vine would return",
+      "That Nineveh would be destroyed"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does the LORD describe how long the vine lasted?",
+     "options": [
+      "It came up and perished in a night",
+      "It grew and withered in a week",
+      "It lasted forty days",
+      "It lasted three days"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the LORD say the people of Nineveh cannot discern?",
+     "options": [
+      "Their right hand from their left",
+      "Good from evil",
+      "Truth from lies",
+      "Day from night"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I knew that you are a gracious God and merciful, slow to anger, and ____.",
+     "answer": "abundant in loving kindness",
+     "wrong": [
+      "quick to forgive sin",
+      "faithful to all generations",
+      "patient with the wicked"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You have been concerned for the vine, for which you have not labored, ____.",
+     "answer": "neither made it grow",
+     "wrong": [
+      "nor watered its roots",
+      "nor planted its seed",
+      "nor paid its price"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Jonah said he had expected God's mercy even while he was still in his own country.",
+     "answer": true,
+     "v": 2
     }
    ]
   }

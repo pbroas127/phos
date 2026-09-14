@@ -9,7 +9,14 @@
 {"t":"blank","d":2,"q":"I was in the Spirit on the Lord's day, and I heard behind me a loud voice, ____.","answer":"like a trumpet","wrong":["like a roaring lion","like a rushing wind","like a great earthquake"],"v":10},
 {"t":"order","d":3,"items":["Ephesus","Smyrna","Pergamum","Thyatira"],"v":11},
 {"t":"tf","d":1,"q":"When John saw the one like a son of man, he fell at his feet like a dead man.","answer":true,"v":17},
-{"t":"tf","d":3,"q":"John saw seven stars in the left hand of the one like a son of man.","answer":false,"v":16}
+{"t":"tf","d":3,"q":"John saw seven stars in the left hand of the one like a son of man.","answer":false,"v":16},
+{"t":"choice","d":1,"q":"What came out of the mouth of the one like a son of man?","options":["A sharp two edged sword","A flame of fire","A blast like a trumpet","A river of living water"],"v":16},
+{"t":"choice","d":1,"q":"What was John told to do with what he saw?","options":["Write it in a book and send it to the assemblies","Seal it up until the time of the end","Tell it only to the elders in Jerusalem","Keep it hidden in his heart"],"v":11},
+{"t":"choice","d":3,"q":"Jesus Christ is called the faithful witness, the firstborn of the dead, and what else?","options":["The ruler of the kings of the earth","The high priest forever","The lion of the tribe of Judah","The bright morning star"],"v":5},
+{"t":"choice","d":2,"q":"The one like a son of man says he was dead, but now what?","options":["He is alive forever and ever","He reigns over the nations","He sits at the right hand of God","He waits for the day of judgment"],"v":18},
+{"t":"blank","d":2,"q":"Behold, he is coming ____, and every eye will see him, including those who pierced him.","answer":"with the clouds","wrong":["in great glory","with his holy angels","on a white horse"],"v":7},
+{"t":"blank","d":2,"q":"His head and his hair were white as white wool, like snow. His eyes were ____.","answer":"like a flame of fire","wrong":["like the morning star","like burning coals","like shining jewels"],"v":14},
+{"t":"tf","d":3,"q":"The one like a son of man wore a golden sash around his waist.","answer":false,"v":13}
 ]},
 "2":{"keyVerse":4,"questions":[
 {"t":"choice","d":1,"q":"What does the Lord hold against the assembly in Ephesus?","options":["They left their first love","They tolerate the woman Jezebel","They hold the teaching of Balaam","They are neither cold nor hot"],"v":4},
@@ -21,7 +28,14 @@
 {"t":"blank","d":3,"q":"I know your works, oppression, and your poverty, ____, and the blasphemy of those who say they are Jews.","answer":"but you are rich","wrong":["but you are faithful","but you have endured","but you are blessed"],"v":9},
 {"t":"order","d":2,"items":["Tested those who call themselves apostles","A synagogue of Satan","Some who hold the teaching of Balaam","Jezebel, who calls herself a prophetess"],"v":2},
 {"t":"tf","d":1,"q":"The assembly in Ephesus is praised for hating the works of the Nicolaitans.","answer":true,"v":6},
-{"t":"tf","d":3,"q":"The Lord tells the assembly in Thyatira that its last works are fewer than its first.","answer":false,"v":19}
+{"t":"tf","d":3,"q":"The Lord tells the assembly in Thyatira that its last works are fewer than its first.","answer":false,"v":19},
+{"t":"choice","d":1,"q":"What does the Lord warn he will do to Ephesus unless they repent?","options":["Move their lamp stand out of its place","Blot their names from the book of life","Throw them into prison","Take away their crown"],"v":5},
+{"t":"choice","d":2,"q":"What does the Lord say is located where the assembly in Pergamum dwells?","options":["Satan's throne","The synagogue of Satan","The temple of the idols","The deep things of Satan"],"v":13},
+{"t":"choice","d":3,"q":"Balaam taught whom to throw a stumbling block before the children of Israel?","options":["Balak","Jezebel","Ahab","Pharaoh"],"v":14},
+{"t":"choice","d":2,"q":"Besides authority over the nations, what will the overcomer in Thyatira be given?","options":["The morning star","A new name","A white robe","The key of David"],"v":28},
+{"t":"blank","d":2,"q":"He who overcomes won't be harmed by ____.","answer":"the second death","wrong":["the great tribulation","the lake of fire","the hour of testing"],"v":11},
+{"t":"blank","d":3,"q":"All the assemblies will know that I am he who ____. I will give to each one of you according to your deeds.","answer":"searches the minds and hearts","wrong":["holds the seven stars","judges the living and dead","sees every hidden thing"],"v":23},
+{"t":"tf","d":1,"q":"The Lord says Jezebel repented of her sexual immorality when he gave her time.","answer":false,"v":21}
 ]},
 "3":{"keyVerse":20,"questions":[
 {"t":"choice","d":1,"q":"Which assembly is told it is lukewarm and will be vomited out?","options":["Laodicea","Sardis","Philadelphia","Thyatira"],"v":16},
@@ -33,7 +47,14 @@
 {"t":"blank","d":3,"q":"Because you say, \"I am rich, and have gotten riches, and ____.\"","answer":"have need of nothing","wrong":["fear no one at all","lack no good thing","have all I want"],"v":17},
 {"t":"order","d":2,"items":["They will walk with me in white","I will make them worship before your feet","Hold firmly so no one takes your crown","As many as I love, I reprove and chasten"],"v":4},
 {"t":"tf","d":1,"q":"The Lord warns Sardis that if they won't watch, he will come as a thief.","answer":true,"v":3},
-{"t":"tf","d":3,"q":"The Lord says he will blot the overcomer's name out of the book of life if he fails to watch.","answer":false,"v":5}
+{"t":"tf","d":3,"q":"The Lord says he will blot the overcomer's name out of the book of life if he fails to watch.","answer":false,"v":5},
+{"t":"choice","d":2,"q":"What has the Lord set before the assembly in Philadelphia?","options":["An open door which no one can shut","A table spread with bread","A crown of pure gold","A lamp that never goes out"],"v":8},
+{"t":"choice","d":2,"q":"What does the Lord promise the overcomer in Laodicea?","options":["To sit down with him on his throne","To eat from the tree of life","To receive a white stone","To rule with a rod of iron"],"v":21},
+{"t":"choice","d":3,"q":"How does the speaker describe himself in the message to Laodicea?","options":["The Amen, the Faithful and True Witness","The first and the last, who was dead","He who has the seven Spirits of God","The Son of God with eyes of fire"],"v":14},
+{"t":"choice","d":1,"q":"If anyone lets him in, what does the Lord say he will do?","options":["Dine with him","Write his name in the book","Give him a crown","Wash his feet"],"v":20},
+{"t":"blank","d":2,"q":"Wake up and strengthen ____, which you were about to throw away.","answer":"the things that remain","wrong":["the works you began","the faith you received","the love you once had"],"v":2},
+{"t":"blank","d":3,"q":"Because you kept my command to endure, I also will keep you from ____ which is to come on the whole world.","answer":"the hour of testing","wrong":["the day of wrath","the great earthquake","the time of sorrow"],"v":10},
+{"t":"tf","d":1,"q":"The Lord says there are a few names in Sardis that did not defile their garments.","answer":true,"v":4}
 ]},
 "4":{"keyVerse":8,"questions":[
 {"t":"choice","d":1,"q":"After these things, what did John see opened in heaven?","options":["A door","A book","A window","A gate"],"v":1},
@@ -45,7 +66,14 @@
 {"t":"blank","d":3,"q":"Worthy are you, our Lord and God, the Holy One, to receive the glory, the honor, and the power, for you ____!","answer":"created all things","wrong":["redeemed the nations","conquered the darkness","rule over all"],"v":11},
 {"t":"order","d":2,"items":["A voice like a trumpet says, Come up here","A throne set in heaven","Twenty four elders sitting on thrones","Four living creatures full of eyes"],"v":1},
 {"t":"tf","d":1,"q":"The four living creatures rest at night from their praise.","answer":false,"v":8},
-{"t":"tf","d":3,"q":"Seven lamps of fire burned before the throne, which are the seven Spirits of God.","answer":true,"v":5}
+{"t":"tf","d":3,"q":"Seven lamps of fire burned before the throne, which are the seven Spirits of God.","answer":true,"v":5},
+{"t":"choice","d":1,"q":"What color were the garments of the twenty four elders?","options":["White","Purple","Scarlet","Blue"],"v":4},
+{"t":"choice","d":2,"q":"How many wings did each of the four living creatures have?","options":["Six","Four","Two","Eight"],"v":8},
+{"t":"choice","d":3,"q":"The one sitting on the throne looked like what?","options":["A jasper stone and a sardius","An emerald and a sapphire","Burnished brass in a furnace","The sun shining at its brightest"],"v":3},
+{"t":"choice","d":2,"q":"Where were the four living creatures?","options":["In the middle of and around the throne","Beneath the sea of glass","Behind the twenty four elders","At the four corners of heaven"],"v":6},
+{"t":"blank","d":2,"q":"Out of the throne proceed ____. There were seven lamps of fire burning before his throne.","answer":"lightnings, sounds, and thunders","wrong":["fire, smoke, and hail","rivers of living water","songs of praise and glory"],"v":5},
+{"t":"blank","d":3,"q":"Come up here, and I will show you the things which ____.","answer":"must happen after this","wrong":["were hidden from ages past","are written in heaven","God has prepared for you"],"v":1},
+{"t":"tf","d":1,"q":"The living creatures give glory, honor, and thanks to him who sits on the throne.","answer":true,"v":9}
 ]},
 "5":{"keyVerse":12,"questions":[
 {"t":"choice","d":1,"q":"What did John see sealed shut with seven seals?","options":["A book in the right hand of the one on the throne","A door in heaven","A scroll held by a mighty angel","A golden altar"],"v":1},
@@ -57,7 +85,14 @@
 {"t":"blank","d":3,"q":"You were killed, and bought us for God with your blood out of ____.","answer":"every tribe, language, people, and nation","wrong":["all the lands of the earth","every city and village","the whole house of Israel"],"v":9},
 {"t":"order","d":2,"items":["A mighty angel asks who is worthy","The Lion of Judah is announced as overcomer","The Lamb takes the book","Countless angels praise the Lamb"],"v":2},
 {"t":"tf","d":1,"q":"An angel told John to stop weeping because someone had overcome.","answer":false,"v":5},
-{"t":"tf","d":3,"q":"John says the angels around the throne numbered ten thousands of ten thousands.","answer":true,"v":11}
+{"t":"tf","d":3,"q":"John says the angels around the throne numbered ten thousands of ten thousands.","answer":true,"v":11},
+{"t":"choice","d":1,"q":"How did the Lamb appear as he stood in the middle of the throne?","options":["As though it had been slain","Shining like the sun","Crowned with many crowns","Riding on a white horse"],"v":6},
+{"t":"choice","d":2,"q":"What did the four living creatures say after every created thing gave praise?","options":["Amen!","Hallelujah!","Holy, holy, holy!","Worthy is the Lamb!"],"v":14},
+{"t":"choice","d":3,"q":"Who did John hear giving blessing and honor to the one on the throne and to the Lamb?","options":["Every created thing in heaven, earth, and sea","Only the twenty four elders","The souls under the altar","The kings of the earth"],"v":13},
+{"t":"blank","d":2,"q":"They sang ____, saying, You are worthy to take the book and to open its seals.","answer":"a new song","wrong":["the song of Moses","a song of victory","a hymn of praise"],"v":9},
+{"t":"blank","d":3,"q":"You made us ____ to our God; and we will reign on the earth.","answer":"kings and priests","wrong":["sons and daughters","servants and witnesses","a holy nation"],"v":10},
+{"t":"tf","d":1,"q":"The Lamb took the book out of the hand of one of the elders.","answer":false,"v":7},
+{"t":"tf","d":2,"q":"Each of the living creatures and elders who fell down before the Lamb had a harp.","answer":true,"v":8}
 ]},
 "6":{"keyVerse":17,"questions":[
 {"t":"choice","d":1,"q":"What color was the horse whose rider was named Death?","options":["Pale","Black","Red","White"],"v":8},
@@ -69,7 +104,14 @@
 {"t":"blank","d":3,"q":"The sky was removed like ____ when it is rolled up.","answer":"a scroll","wrong":["a garment","a curtain","a tent"],"v":14},
 {"t":"order","d":2,"items":["White horse","Red horse","Black horse","Pale horse"],"v":2},
 {"t":"tf","d":1,"q":"When the sixth seal was opened, there was a great earthquake.","answer":true,"v":12},
-{"t":"tf","d":3,"q":"The rider of the red horse was given a crown and came out conquering.","answer":false,"v":4}
+{"t":"tf","d":3,"q":"The rider of the red horse was given a crown and came out conquering.","answer":false,"v":4},
+{"t":"choice","d":1,"q":"What did the rider of the white horse have?","options":["A bow","A great sword","A balance","A sickle"],"v":2},
+{"t":"choice","d":2,"q":"What power was given to the rider of the red horse?","options":["To take peace from the earth","To bring famine on the land","To shut the sky from raining","To darken the sun and moon"],"v":4},
+{"t":"choice","d":2,"q":"Who followed with the rider named Death?","options":["Hades","Famine","The beast","The false prophet"],"v":8},
+{"t":"choice","d":3,"q":"What was given to each of the souls under the altar?","options":["A long white robe","A crown of life","A palm branch","A golden harp"],"v":11},
+{"t":"blank","d":2,"q":"For the great day of his wrath has come, and ____?","answer":"who is able to stand","wrong":["who can escape from it","where can anyone hide","who will be saved"],"v":17},
+{"t":"blank","d":3,"q":"The stars of the sky fell to the earth, like a fig tree dropping its unripe figs when it is ____.","answer":"shaken by a great wind","wrong":["struck by heavy hail","scorched by the sun","cut down with an axe"],"v":13},
+{"t":"tf","d":1,"q":"The kings, the rich, and the strong hid themselves in the caves and in the rocks of the mountains.","answer":true,"v":15}
 ]},
 "7":{"keyVerse":17,"questions":[
 {"t":"choice","d":1,"q":"How many were sealed out of the tribes of the children of Israel?","options":["144,000","12,000","7,000","100,000"],"v":4},
@@ -81,7 +123,14 @@
 {"t":"blank","d":3,"q":"These are those who came out of ____. They washed their robes and made them white in the Lamb's blood.","answer":"the great suffering","wrong":["every nation and tribe","the city of Babylon","the time of darkness"],"v":14},
 {"t":"order","d":2,"items":["An angel ascends from the sunrise","The tribes of Israel are sealed","A multitude no one could count stands before the throne","One of the elders asks who they are"],"v":2},
 {"t":"tf","d":1,"q":"The great multitude in white robes came only from the tribes of Israel.","answer":false,"v":9},
-{"t":"tf","d":3,"q":"The elder says the sun will not beat on them, nor any heat.","answer":true,"v":16}
+{"t":"tf","d":3,"q":"The elder says the sun will not beat on them, nor any heat.","answer":true,"v":16},
+{"t":"choice","d":1,"q":"What did the great multitude cry out with a loud voice?","options":["Salvation be to our God and to the Lamb!","How long, Master, holy and true?","Holy, holy, holy is the Lord!","Fall on us and hide us!"],"v":10},
+{"t":"choice","d":2,"q":"What did the angel who ascended from the sunrise have?","options":["The seal of the living God","A golden censer","A little open book","The key to the abyss"],"v":2},
+{"t":"choice","d":2,"q":"According to the elder, where do those in white robes serve God day and night?","options":["In his temple","At the gates of the city","On Mount Zion","Beside the river of life"],"v":15},
+{"t":"choice","d":3,"q":"What will he who sits on the throne spread over them?","options":["His tabernacle","His wings","His robe","His cloud"],"v":15},
+{"t":"blank","d":2,"q":"For the Lamb who is in the middle of the throne ____ and leads them to springs of life giving waters.","answer":"shepherds them","wrong":["watches over them","comforts them","gathers them"],"v":17},
+{"t":"blank","d":3,"q":"They will never be ____ any more.","answer":"hungry or thirsty","wrong":["weary or afraid","sick or sorrowful","poor or lonely"],"v":16},
+{"t":"tf","d":1,"q":"All the angels standing around the throne fell on their faces and worshiped God.","answer":true,"v":11}
 ]},
 "8":{"keyVerse":1,"questions":[
 {"t":"choice","d":1,"q":"What happened in heaven when the seventh seal was opened?","options":["Silence for about half an hour","A great earthquake","Thunder and lightning","A loud song of praise"],"v":1},
@@ -93,7 +142,14 @@
 {"t":"blank","d":3,"q":"The first sounded, and there followed ____, and they were thrown to the earth.","answer":"hail and fire, mixed with blood","wrong":["smoke and fire from the altar","stars falling from the sky","thunder and a great earthquake"],"v":7},
 {"t":"order","d":2,"items":["An angel with a golden censer stands over the altar","The censer is thrown on the earth","One third of the ships are destroyed","One third of the sun is struck"],"v":3},
 {"t":"tf","d":1,"q":"When the third angel sounded, many people died because the waters were made bitter.","answer":true,"v":11},
-{"t":"tf","d":3,"q":"The eagle warned of woes because of the trumpets of four angels yet to sound.","answer":false,"v":13}
+{"t":"tf","d":3,"q":"The eagle warned of woes because of the trumpets of four angels yet to sound.","answer":false,"v":13},
+{"t":"choice","d":1,"q":"When the second angel sounded, what did one third of the sea become?","options":["Blood","Bitter","Dry land","Black as sackcloth"],"v":8},
+{"t":"choice","d":2,"q":"What followed when the angel threw the censer on the earth?","options":["Thunders, sounds, lightnings, and an earthquake","Silence in heaven for half an hour","A great star falling from the sky","Hail and fire mixed with blood"],"v":5},
+{"t":"choice","d":2,"q":"What happened to the living creatures in the sea when the second angel sounded?","options":["One third of them died","All of them died","Half of them died","They were thrown onto the land"],"v":9},
+{"t":"choice","d":3,"q":"Where was the golden altar on which the incense was offered?","options":["Before the throne","Beneath the throne","In the outer court","Beside the sea of glass"],"v":3},
+{"t":"blank","d":2,"q":"The fourth angel sounded, and one third of the sun was struck, and one third of the moon, and ____.","answer":"one third of the stars","wrong":["all the lights of heaven","half of the stars","the whole sky"],"v":12},
+{"t":"blank","d":3,"q":"The seven angels who had the seven trumpets ____ to sound.","answer":"prepared themselves","wrong":["stood ready","were commanded","lifted their trumpets"],"v":6},
+{"t":"tf","d":1,"q":"When the first angel sounded, one third of the earth was burned up.","answer":true,"v":7}
 ]},
 "9":{"keyVerse":6,"questions":[
 {"t":"choice","d":1,"q":"What came out of the smoke from the pit of the abyss?","options":["Locusts","Scorpions","Horsemen","Frogs"],"v":3},
@@ -105,7 +161,14 @@
 {"t":"blank","d":3,"q":"They had ____, and their teeth were like those of lions.","answer":"hair like women's hair","wrong":["manes like horses' manes","wings like eagles' wings","eyes like burning fire"],"v":8},
 {"t":"order","d":2,"items":["The key to the pit of the abyss is given","The first woe is past","A voice from the horns of the golden altar","Horses with heads like lions' heads"],"v":1},
 {"t":"tf","d":1,"q":"John heard that the armies of the horsemen numbered two hundred million.","answer":true,"v":16},
-{"t":"tf","d":3,"q":"The king over the locusts is called Abaddon in Greek and Apollyon in Hebrew.","answer":false,"v":11}
+{"t":"tf","d":3,"q":"The king over the locusts is called Abaddon in Greek and Apollyon in Hebrew.","answer":false,"v":11},
+{"t":"choice","d":1,"q":"What happened to the sun and the air when the pit of the abyss was opened?","options":["They were darkened by the smoke","They turned red as blood","They burned with fire","They shook with thunder"],"v":2},
+{"t":"choice","d":1,"q":"In those days, what does John say people will seek but not find?","options":["Death","Rest","Water","Shelter"],"v":6},
+{"t":"choice","d":2,"q":"What were the tails of the locusts like?","options":["Scorpions' tails, with stingers","Serpents with heads","Lions' tails","Flaming whips"],"v":10},
+{"t":"choice","d":3,"q":"What was on the heads of the locusts?","options":["Something like golden crowns","Horns like a ram's","Helmets of iron","Tongues of fire"],"v":7},
+{"t":"blank","d":2,"q":"The horses' heads resembled lions' heads. Out of their mouths proceed ____.","answer":"fire, smoke, and sulfur","wrong":["fire, hail, and blood","smoke, darkness, and ash","lightning, thunder, and hail"],"v":17},
+{"t":"blank","d":3,"q":"For the power of the horses is in their mouths and in their tails. For their tails ____, and have heads.","answer":"are like serpents","wrong":["are like lions' tails","are like iron chains","strike like lightning"],"v":19},
+{"t":"tf","d":2,"q":"The locusts were given power to kill the people who did not have God's seal.","answer":false,"v":5}
 ]},
 "10":{"keyVerse":10,"questions":[
 {"t":"choice","d":1,"q":"What was John told to do with the little book?","options":["Eat it","Seal it up","Read it aloud","Give it to the elders"],"v":9},
@@ -117,7 +180,14 @@
 {"t":"blank","d":3,"q":"The angel swore by him who lives forever and ever that ____.","answer":"there will no longer be delay","wrong":["the end of all things is near","the seventh seal will be opened","the kingdom has come at last"],"v":6},
 {"t":"order","d":2,"items":["A mighty angel comes down clothed with a cloud","The seven thunders utter their voices","The angel lifts his right hand to the sky","John is told to prophesy again"],"v":1},
 {"t":"tf","d":1,"q":"The mighty angel cried with a loud voice, as a lion roars.","answer":true,"v":3},
-{"t":"tf","d":3,"q":"The angel said the mystery of God would be finished when the seven thunders sounded.","answer":false,"v":7}
+{"t":"tf","d":3,"q":"The angel said the mystery of God would be finished when the seven thunders sounded.","answer":false,"v":7},
+{"t":"choice","d":1,"q":"Whom did John ask to give him the little book?","options":["The angel standing on the sea and land","One of the twenty four elders","The Lamb on the throne","One of the living creatures"],"v":9},
+{"t":"choice","d":2,"q":"What was John about to do when the seven thunders sounded?","options":["Write down what they said","Fall on his face","Cover his ears","Ask the angel what they meant"],"v":4},
+{"t":"choice","d":3,"q":"The angel swore by him who created what?","options":["Heaven, earth, and sea, and all in them","The sun, the moon, and the stars","The living creatures and the elders","The nations and their kings"],"v":6},
+{"t":"blank","d":2,"q":"They told me, You must prophesy again over many peoples, ____.","answer":"nations, languages, and kings","wrong":["tribes, cities, and rulers","assemblies, elders, and saints","lands, islands, and seas"],"v":11},
+{"t":"blank","d":3,"q":"Then the mystery of God is finished, as he declared to ____.","answer":"his servants the prophets","wrong":["the twenty four elders","his holy apostles","the seven assemblies"],"v":7},
+{"t":"tf","d":1,"q":"John refused to eat the little book once he learned it would be bitter.","answer":false,"v":10},
+{"t":"tf","d":2,"q":"When the mighty angel cried out, the seven thunders uttered their voices.","answer":true,"v":3}
 ]},
 "11":{"keyVerse":15,"questions":[
 {"t":"choice","d":1,"q":"How many witnesses does God give power to prophesy, clothed in sackcloth?","options":["Two","Seven","Twelve","Four"],"v":3},
@@ -129,7 +199,14 @@
 {"t":"blank","d":3,"q":"In that day there was a great earthquake, and ____ fell.","answer":"a tenth of the city","wrong":["a third of the city","half of the mountains","the walls of Jerusalem"],"v":13},
 {"t":"order","d":2,"items":["John is given a reed to measure the temple","The beast from the abyss kills the witnesses","The breath of life from God enters them","The seventh angel sounds"],"v":1},
 {"t":"tf","d":1,"q":"People looked at the dead bodies of the witnesses for three and a half days.","answer":true,"v":9},
-{"t":"tf","d":3,"q":"Those who dwell on the earth mourned when the two witnesses were killed.","answer":false,"v":10}
+{"t":"tf","d":3,"q":"Those who dwell on the earth mourned when the two witnesses were killed.","answer":false,"v":10},
+{"t":"choice","d":1,"q":"What did the two witnesses do when a loud voice said, Come up here?","options":["Went up into heaven in a cloud","Entered the temple of God","Called down fire on the city","Prophesied to the nations again"],"v":12},
+{"t":"choice","d":2,"q":"What power do the two witnesses have over the sky?","options":["To shut it so it may not rain","To darken the sun and moon","To make stars fall to earth","To call down hail and fire"],"v":6},
+{"t":"choice","d":3,"q":"What did the rest of the people do after the great earthquake?","options":["Were terrified and gave glory to God","Cursed God and refused to repent","Fled to the mountains and caves","Gave gifts to one another"],"v":13},
+{"t":"blank","d":2,"q":"We give you thanks, Lord God, the Almighty, because you have taken ____ and reigned.","answer":"your great power","wrong":["your rightful throne","the kingdom of the world","your crown of glory"],"v":17},
+{"t":"blank","d":3,"q":"The nations were angry, and ____ came, as did the time for the dead to be judged.","answer":"your wrath","wrong":["your judgment","the great day","your kingdom"],"v":18},
+{"t":"tf","d":1,"q":"Great fear fell on those who saw the witnesses stand on their feet again.","answer":true,"v":11},
+{"t":"tf","d":2,"q":"John was told to measure the court outside the temple along with the altar.","answer":false,"v":2}
 ]},
 "12":{"keyVerse":11,"questions":[
 {"t":"choice","d":1,"q":"What was the first great sign John saw in heaven in this chapter?","options":["A woman clothed with the sun","A great red dragon","A Lamb standing as though slain","A rider on a white horse"],"v":1},
@@ -141,7 +218,14 @@
 {"t":"blank","d":3,"q":"His tail drew ____ of the sky, and threw them to the earth.","answer":"one third of the stars","wrong":["half of the angels","all the lights","seven thousand stars"],"v":4},
 {"t":"order","d":2,"items":["A great red dragon with seven heads","The child is caught up to God","War in the sky","The dragon persecutes the woman"],"v":3},
 {"t":"tf","d":1,"q":"The dragon devoured the woman's child as soon as he was born.","answer":false,"v":5},
-{"t":"tf","d":3,"q":"The devil went down to the earth with great wrath, knowing he has but a short time.","answer":true,"v":12}
+{"t":"tf","d":3,"q":"The devil went down to the earth with great wrath, knowing he has but a short time.","answer":true,"v":12},
+{"t":"choice","d":1,"q":"What was under the feet of the woman clothed with the sun?","options":["The moon","The earth","The sea","A serpent"],"v":1},
+{"t":"choice","d":2,"q":"What is the male child to do?","options":["Rule all the nations with a rod of iron","Rebuild the temple in Jerusalem","Open the book with seven seals","Judge the angels who fell"],"v":5},
+{"t":"choice","d":2,"q":"When the dragon grew angry, whom did he go away to make war with?","options":["The rest of the woman's offspring","Michael and his angels","The kings of the earth","The twenty four elders"],"v":17},
+{"t":"choice","d":3,"q":"What was on the heads of the great red dragon?","options":["Seven crowns","Ten crowns","Names of blasphemy","Horns of gold"],"v":3},
+{"t":"blank","d":2,"q":"They overcame him because of the Lamb's blood. They didn't love their life, ____.","answer":"even to death","wrong":["more than God","in this world","above their faith"],"v":11},
+{"t":"blank","d":3,"q":"The accuser of our brothers has been thrown down, who accuses them before our God ____.","answer":"day and night","wrong":["without ceasing","at every hour","in the heavenly court"],"v":10},
+{"t":"tf","d":1,"q":"The dragon and his angels prevailed and kept their place in heaven.","answer":false,"v":8}
 ]},
 "13":{"keyVerse":18,"questions":[
 {"t":"choice","d":1,"q":"Where did the beast with ten horns and seven heads come up from?","options":["The sea","The earth","The abyss","The wilderness"],"v":1},
@@ -153,7 +237,14 @@
 {"t":"blank","d":3,"q":"No one would be able to ____ unless he has that mark.","answer":"buy or to sell","wrong":["enter the city","eat or to drink","speak or to pray"],"v":17},
 {"t":"order","d":2,"items":["A beast with ten horns and seven heads","The dragon gives him his power and throne","Fire comes down out of the sky","The image of the beast is given breath"],"v":1},
 {"t":"tf","d":1,"q":"Everyone on earth whose name is not written in the Lamb's book of life will worship the beast.","answer":true,"v":8},
-{"t":"tf","d":3,"q":"John says the number of the beast is the number of an angel.","answer":false,"v":18}
+{"t":"tf","d":3,"q":"John says the number of the beast is the number of an angel.","answer":false,"v":18},
+{"t":"choice","d":1,"q":"What is the number of the beast?","options":["Six hundred sixty six","One hundred forty four","Seven hundred seventy seven","One thousand two hundred sixty"],"v":18},
+{"t":"choice","d":2,"q":"What did the people say as they worshiped the beast?","options":["Who is like the beast? Who can make war with him?","Great is the beast who was wounded!","The beast has overcome the dragon!","The kingdom belongs to the beast!"],"v":4},
+{"t":"choice","d":2,"q":"For how long was the first beast given authority to make war?","options":["Forty two months","Five months","Ten days","Seven years"],"v":5},
+{"t":"choice","d":3,"q":"What was written on the heads of the beast from the sea?","options":["Blasphemous names","The number of his name","The name of the dragon","Nothing at all"],"v":1},
+{"t":"blank","d":2,"q":"If anyone is to be killed with the sword, he must be killed. Here is the endurance and ____ of the saints.","answer":"the faith","wrong":["the hope","the patience","the reward"],"v":10},
+{"t":"blank","d":3,"q":"It was given to him to make war with the saints and ____.","answer":"to overcome them","wrong":["to scatter them","to deceive them","to test them"],"v":7},
+{"t":"tf","d":1,"q":"The second beast makes the earth and those who dwell in it worship the first beast.","answer":true,"v":12}
 ]},
 "14":{"keyVerse":13,"questions":[
 {"t":"choice","d":1,"q":"Where did John see the Lamb standing with the 144,000?","options":["Mount Zion","Mount Sinai","The Mount of Olives","The sea of glass"],"v":1},
@@ -165,7 +256,14 @@
 {"t":"blank","d":3,"q":"In their mouth was found no lie, for ____.","answer":"they are blameless","wrong":["they are holy","they fear God","they love the truth"],"v":5},
 {"t":"order","d":2,"items":["An angel flies with an eternal Good News","A warning against receiving the mark of the beast","One on a white cloud reaps the earth","Grapes thrown into the great wine press"],"v":6},
 {"t":"tf","d":1,"q":"The 144,000 had the Lamb's name and his Father's name written on their foreheads.","answer":true,"v":1},
-{"t":"tf","d":3,"q":"The angel who called for the grapes to be gathered came from the altar and had power over water.","answer":false,"v":18}
+{"t":"tf","d":3,"q":"The angel who called for the grapes to be gathered came from the altar and had power over water.","answer":false,"v":18},
+{"t":"choice","d":1,"q":"Who alone could learn the new song sung before the throne?","options":["The 144,000 redeemed out of the earth","The twenty four elders","The angels around the throne","Every nation, tribe, and language"],"v":3},
+{"t":"choice","d":2,"q":"What did the one sitting on the white cloud have on his head?","options":["A golden crown","A rainbow","A crown of thorns","Seven stars"],"v":14},
+{"t":"choice","d":2,"q":"What was the sound John heard from heaven like?","options":["Many waters and a great thunder","A trumpet and a rushing wind","A roaring lion and an earthquake","Voices of a great crowd"],"v":2},
+{"t":"choice","d":3,"q":"The first angel tells people to worship him who made what?","options":["Heaven, earth, sea, and the springs of waters","The sun, the moon, and all the stars","Adam and Eve in the garden","The throne and the living creatures"],"v":7},
+{"t":"blank","d":2,"q":"Send your sickle and reap, for the hour to reap has come; for ____ is ripe!","answer":"the harvest of the earth","wrong":["the fruit of the vine","the grain of the field","the wheat of the land"],"v":15},
+{"t":"blank","d":3,"q":"Here is the perseverance of the saints, those who keep ____ and the faith of Jesus.","answer":"the commandments of God","wrong":["the word of prophecy","the law of Moses","the testimony of the prophets"],"v":12},
+{"t":"tf","d":1,"q":"Anyone who worships the beast and receives his mark will be tormented with fire and sulfur.","answer":true,"v":10}
 ]},
 "15":{"keyVerse":4,"questions":[
 {"t":"choice","d":1,"q":"What did the seven angels in this great and marvelous sign have?","options":["The seven last plagues","Seven trumpets","Seven sealed books","Seven lamps of fire"],"v":1},
@@ -177,7 +275,14 @@
 {"t":"blank","d":2,"q":"I saw something like ____ mixed with fire, and those who overcame the beast standing on it.","answer":"a sea of glass","wrong":["a river of water","a pavement of gold","a cloud of light"],"v":2},
 {"t":"blank","d":3,"q":"The temple was filled with smoke from ____ and from his power.","answer":"the glory of God","wrong":["the altar of incense","the fire of judgment","the prayers of saints"],"v":8},
 {"t":"tf","d":1,"q":"No one could enter the temple until the seven plagues of the seven angels were finished.","answer":true,"v":8},
-{"t":"tf","d":3,"q":"The song says that only some of the nations will come and worship before the Lord.","answer":false,"v":4}
+{"t":"tf","d":3,"q":"The song says that only some of the nations will come and worship before the Lord.","answer":false,"v":4},
+{"t":"choice","d":1,"q":"Why are the plagues of the seven angels called the last plagues?","options":["In them God's wrath is finished","They fall on the last day of the year","They are poured out on Babylon alone","No one on earth survives them"],"v":1},
+{"t":"choice","d":2,"q":"In their song, what title do they give the Lord?","options":["King of the nations","Prince of peace","Lord of the harvest","Shepherd of Israel"],"v":3},
+{"t":"choice","d":3,"q":"After these things, what did John see opened in heaven?","options":["The temple of the tabernacle of the testimony","The book of life","The pit of the abyss","The gates of the holy city"],"v":5},
+{"t":"blank","d":2,"q":"Great and marvelous are ____, Lord God, the Almighty!","answer":"your works","wrong":["your judgments","your wonders","your holy name"],"v":3},
+{"t":"blank","d":3,"q":"Who wouldn't fear you, Lord, and ____? For you only are holy.","answer":"glorify your name","wrong":["bow before your throne","sing of your mercy","walk in your ways"],"v":4},
+{"t":"tf","d":1,"q":"The song declares that the Lord only is holy.","answer":true,"v":4},
+{"t":"tf","d":2,"q":"The seven golden bowls given to the angels were full of the prayers of the saints.","answer":false,"v":7}
 ]},
 "16":{"keyVerse":15,"questions":[
 {"t":"choice","d":1,"q":"What were the seven angels told to pour out on the earth?","options":["The seven bowls of the wrath of God","Seven trumpets of judgment","Seven jars of oil","Seven censers of fire"],"v":1},
@@ -189,7 +294,14 @@
 {"t":"blank","d":3,"q":"The fifth poured out his bowl on ____, and his kingdom was darkened.","answer":"the throne of the beast","wrong":["the sun and the moon","the great city Babylon","the rivers and springs"],"v":10},
 {"t":"order","d":2,"items":["Painful sores on those with the mark","The sea becomes blood as of a dead man","Rivers and springs become blood","People scorched with fire by the sun"],"v":2},
 {"t":"tf","d":1,"q":"After being scorched with great heat, the people repented and gave God glory.","answer":false,"v":9},
-{"t":"tf","d":3,"q":"Great hailstones fell from the sky, and people blasphemed God because of the plague.","answer":true,"v":21}
+{"t":"tf","d":3,"q":"Great hailstones fell from the sky, and people blasphemed God because of the plague.","answer":true,"v":21},
+{"t":"choice","d":1,"q":"After the second bowl was poured into the sea, what happened to the living things in it?","options":["Every one of them died","One third of them died","They fled to the shore","They were not harmed"],"v":3},
+{"t":"choice","d":2,"q":"The sixth bowl prepared the way for whom?","options":["The kings that come from the sunrise","The armies of heaven","The two hundred million horsemen","The people of God to escape"],"v":12},
+{"t":"choice","d":2,"q":"When the fifth bowl darkened the beast's kingdom, what did people do because of the pain?","options":["They gnawed their tongues","They tore their clothes","They hid in the caves","They cried out for mercy"],"v":10},
+{"t":"choice","d":3,"q":"What did John hear the altar say?","options":["True and righteous are your judgments","How long, Master, holy and true?","Salvation belongs to our God","Babylon the great has fallen"],"v":7},
+{"t":"blank","d":2,"q":"For they poured out the blood of saints and prophets, and you have given them ____. They deserve this.","answer":"blood to drink","wrong":["wormwood to drink","bitter water","the cup of wrath"],"v":6},
+{"t":"blank","d":3,"q":"Every island fled away, and ____.","answer":"the mountains were not found","wrong":["the seas were dried up","the rivers turned to blood","the stars fell from heaven"],"v":20},
+{"t":"tf","d":1,"q":"Babylon the great was forgotten in the sight of God.","answer":false,"v":19}
 ]},
 "17":{"keyVerse":14,"questions":[
 {"t":"choice","d":1,"q":"What was the woman sitting on in the wilderness?","options":["A scarlet colored beast","A white horse","A great red dragon","A golden throne"],"v":3},
@@ -201,7 +313,14 @@
 {"t":"blank","d":3,"q":"The ten horns are ten kings who receive authority as kings with the beast for ____.","answer":"one hour","wrong":["three days","a thousand years","forty two months"],"v":12},
 {"t":"order","d":2,"items":["An angel offers to show John the prostitute's judgment","John is carried away into a wilderness","The beast was, and is not","The woman is the great city"],"v":1},
 {"t":"tf","d":1,"q":"The woman was dressed in purple and scarlet and held a golden cup.","answer":true,"v":4},
-{"t":"tf","d":3,"q":"The angel says the ten horns and the beast will protect the prostitute.","answer":false,"v":16}
+{"t":"tf","d":3,"q":"The angel says the ten horns and the beast will protect the prostitute.","answer":false,"v":16},
+{"t":"choice","d":1,"q":"How did John react when he saw the woman?","options":["He wondered with great amazement","He wept bitterly","He fell at her feet","He covered his face"],"v":6},
+{"t":"choice","d":2,"q":"Who came to show John the judgment of the great prostitute?","options":["One of the seven angels with the bowls","One of the twenty four elders","One of the four living creatures","The angel standing in the sun"],"v":1},
+{"t":"choice","d":2,"q":"What do the ten kings give to the beast?","options":["Their power and authority","Their crowns and thrones","Their gold and armies","Their cities and lands"],"v":13},
+{"t":"choice","d":3,"q":"The seven heads are also seven kings. How many of them have fallen?","options":["Five","Three","Six","Two"],"v":10},
+{"t":"blank","d":2,"q":"The Lamb will overcome them, and those who are with him are ____.","answer":"called, chosen, and faithful","wrong":["holy, blameless, and true","sealed, redeemed, and clothed","few, humble, and strong"],"v":14},
+{"t":"blank","d":3,"q":"The beast that you saw was, and is not; and is about to come up out of ____ and to go into destruction.","answer":"the abyss","wrong":["the sea","the earth","the wilderness"],"v":8},
+{"t":"tf","d":1,"q":"The kings of the earth committed sexual immorality with the great prostitute.","answer":true,"v":2}
 ]},
 "18":{"keyVerse":4,"questions":[
 {"t":"choice","d":1,"q":"What does the angel with great authority cry out?","options":["Fallen, fallen is Babylon the great","Woe, woe to the kings of the earth","Rise and measure the great city","Babylon will reign forever"],"v":2},
@@ -213,7 +332,14 @@
 {"t":"blank","d":3,"q":"Rejoice over her, O heaven, you saints, apostles, and prophets, for God has judged ____ on her.","answer":"your judgment","wrong":["her sins","the nations","your enemies"],"v":20},
 {"t":"order","d":2,"items":["The kings of the earth weep over her","The merchants weep and mourn","Ship masters and mariners stand far away","Heaven is told to rejoice over her"],"v":9},
 {"t":"tf","d":1,"q":"The sound of harpists and the light of a lamp will be found in Babylon no more.","answer":true,"v":22},
-{"t":"tf","d":3,"q":"The voice from heaven says to repay Babylon half of what she did.","answer":false,"v":6}
+{"t":"tf","d":3,"q":"The voice from heaven says to repay Babylon half of what she did.","answer":false,"v":6},
+{"t":"choice","d":1,"q":"When the angel with great authority came down, what was the earth illuminated with?","options":["His glory","Fire from heaven","Flashes of lightning","A falling star"],"v":1},
+{"t":"choice","d":2,"q":"What plagues will come on Babylon in one day?","options":["Death, mourning, and famine","War, sword, and captivity","Hail, fire, and blood","Darkness, sores, and drought"],"v":8},
+{"t":"choice","d":2,"q":"What did the sailors cry out as they looked at the smoke of her burning?","options":["What is like the great city?","Who can save the great city?","Why has God forgotten us?","Where will we sail now?"],"v":18},
+{"t":"choice","d":3,"q":"What did the ship masters and sailors cast on their heads?","options":["Dust","Ashes","Sackcloth","Sea water"],"v":19},
+{"t":"blank","d":2,"q":"For her sins have reached to the sky, and God has ____.","answer":"remembered her iniquities","wrong":["turned his face away","poured out his wrath","written down her deeds"],"v":5},
+{"t":"blank","d":3,"q":"For your merchants were the princes of the earth; for with your sorcery ____.","answer":"all the nations were deceived","wrong":["the kings grew rich","the saints were slain","the whole world was darkened"],"v":23},
+{"t":"tf","d":1,"q":"The voice says the merchants of the earth grew poor because of Babylon's luxury.","answer":false,"v":3}
 ]},
 "19":{"keyVerse":16,"questions":[
 {"t":"choice","d":1,"q":"What is the rider on the white horse called?","options":["Faithful and True","Holy and Mighty","Alpha and Omega","Righteous and Just"],"v":11},
@@ -225,7 +351,14 @@
 {"t":"blank","d":3,"q":"Worship God, for the testimony of Jesus is ____.","answer":"the Spirit of Prophecy","wrong":["the word of truth","the light of the world","the power of salvation"],"v":10},
 {"t":"order","d":2,"items":["A great multitude shouts Hallelujah","The wedding of the Lamb has come","Heaven opened and a white horse appears","The beast and the false prophet are taken"],"v":1},
 {"t":"tf","d":1,"q":"The armies of heaven, clothed in fine linen, followed the rider on white horses.","answer":true,"v":14},
-{"t":"tf","d":3,"q":"The rider on the white horse strikes the nations with a sword held in his right hand.","answer":false,"v":15}
+{"t":"tf","d":3,"q":"The rider on the white horse strikes the nations with a sword held in his right hand.","answer":false,"v":15},
+{"t":"choice","d":1,"q":"What name is written on the rider's garment and on his thigh?","options":["King of kings and Lord of lords","The Lion of the tribe of Judah","The First and the Last","Holy, holy, holy"],"v":16},
+{"t":"choice","d":2,"q":"Where was the angel standing who called all the birds together?","options":["In the sun","On the sea","On a white cloud","Beside the altar"],"v":17},
+{"t":"choice","d":2,"q":"What did the second voice say goes up forever and ever?","options":["Her smoke","Her cry","The praise of the saints","The incense of the altar"],"v":3},
+{"t":"choice","d":3,"q":"What did the elders and living creatures say as they worshiped God on the throne?","options":["Amen! Hallelujah!","Holy, holy, holy!","Worthy is the Lamb!","Salvation to our God!"],"v":4},
+{"t":"blank","d":2,"q":"His eyes are a flame of fire, and on his head are ____.","answer":"many crowns","wrong":["seven stars","a golden crown","a rainbow of light"],"v":12},
+{"t":"blank","d":3,"q":"For the wedding of the Lamb has come, and ____.","answer":"his wife has made herself ready","wrong":["the guests are gathered in","the feast has been prepared","the bride is clothed in white"],"v":7},
+{"t":"tf","d":1,"q":"The beast and the kings of the earth gathered to make peace with the rider on the horse.","answer":false,"v":19}
 ]},
 "20":{"keyVerse":15,"questions":[
 {"t":"choice","d":1,"q":"For how long was Satan bound?","options":["A thousand years","Forty two months","Seven years","Three and a half days"],"v":2},
@@ -237,7 +370,14 @@
 {"t":"blank","d":3,"q":"Blessed and holy is he who has part in ____.","answer":"the first resurrection","wrong":["the kingdom of Christ","the book of life","the wedding supper"],"v":6},
 {"t":"order","d":2,"items":["An angel seizes the dragon","Souls reign with Christ","Satan is released from his prison","The dead stand before the throne"],"v":2},
 {"t":"tf","d":1,"q":"The dead were judged according to their works, from what was written in the books.","answer":true,"v":12},
-{"t":"tf","d":3,"q":"The sea refused to give up the dead who were in it.","answer":false,"v":13}
+{"t":"tf","d":3,"q":"The sea refused to give up the dead who were in it.","answer":false,"v":13},
+{"t":"choice","d":1,"q":"After the angel bound the dragon, where did he cast him?","options":["Into the abyss, shut and sealed over him","Into the lake of fire","Into the depths of the sea","Into the wilderness"],"v":3},
+{"t":"choice","d":2,"q":"What happened to anyone not found written in the book of life?","options":["He was cast into the lake of fire","He was sent into the outer darkness","He was given a second chance","He was left in the grave"],"v":15},
+{"t":"choice","d":2,"q":"The number of the nations Satan gathers for war is like what?","options":["The sand of the sea","The stars of the sky","A swarm of locusts","The leaves of the forest"],"v":8},
+{"t":"choice","d":3,"q":"What was given to those who sat on the thrones John saw?","options":["Judgment","Crowns of gold","White robes","Palm branches"],"v":4},
+{"t":"blank","d":2,"q":"I saw the dead, ____, standing before the throne, and they opened books.","answer":"the great and the small","wrong":["the rich and the poor","the young and the old","the free and the slave"],"v":12},
+{"t":"blank","d":3,"q":"The devil who deceived them was thrown into the lake of fire and sulfur. They will be tormented ____.","answer":"day and night forever and ever","wrong":["in the outer darkness","until the end of days","before the holy angels"],"v":10},
+{"t":"tf","d":1,"q":"The souls who reigned with Christ had not worshiped the beast or received his mark.","answer":true,"v":4}
 ]},
 "21":{"keyVerse":4,"questions":[
 {"t":"choice","d":1,"q":"What did John see coming down out of heaven, prepared like a bride?","options":["The holy city, New Jerusalem","The Lamb on a white cloud","A great white throne","The ark of the covenant"],"v":2},
@@ -249,7 +389,14 @@
 {"t":"blank","d":3,"q":"The city has no need for the sun or moon to shine, for the very glory of God illuminated it, and ____.","answer":"its lamp is the Lamb","wrong":["its light is his Spirit","the saints shine like stars","its gates are always open"],"v":23},
 {"t":"order","d":2,"items":["The first heaven and earth have passed away","God's dwelling is with people","An angel offers to show John the bride","John is carried to a great and high mountain"],"v":1},
 {"t":"tf","d":1,"q":"In the new heaven and new earth John saw, the sea is no more.","answer":true,"v":1},
-{"t":"tf","d":3,"q":"The gates of the holy city will be shut each night.","answer":false,"v":25}
+{"t":"tf","d":3,"q":"The gates of the holy city will be shut each night.","answer":false,"v":25},
+{"t":"choice","d":1,"q":"What will God wipe away from their eyes?","options":["Every tear","All darkness","The veil","Every stain"],"v":4},
+{"t":"choice","d":2,"q":"What was the street of the city made of?","options":["Pure gold, like transparent glass","White pearl","Polished jasper","Clear crystal stone"],"v":21},
+{"t":"choice","d":2,"q":"What was the shape of the city?","options":["Square, with equal length, width, and height","Round, like a crown","Long and narrow, like a river","Shaped like a mountain peak"],"v":16},
+{"t":"choice","d":3,"q":"What was the light of the holy city like?","options":["A jasper stone, clear as crystal","The sun shining at its brightest","A flame of fire","A rainbow like an emerald"],"v":11},
+{"t":"blank","d":2,"q":"He who overcomes, I will give him these things. I will be his God, and ____.","answer":"he will be my son","wrong":["he will reign with me","he will see my face","he will dwell with me"],"v":7},
+{"t":"blank","d":3,"q":"There will in no way enter into it anything profane, but only those who are written in ____.","answer":"the Lamb's book of life","wrong":["the book of the prophets","the scroll of the kingdom","the records of heaven"],"v":27},
+{"t":"tf","d":1,"q":"The holy city had no wall around it.","answer":false,"v":12}
 ]},
 "22":{"keyVerse":13,"questions":[
 {"t":"choice","d":1,"q":"What proceeded out of the throne of God and of the Lamb?","options":["A river of water of life","A stream of fire","Streams of milk and honey","A sea of glass"],"v":1},
@@ -261,6 +408,13 @@
 {"t":"blank","d":3,"q":"Don't seal up the words of the prophecy of this book, for ____.","answer":"the time is at hand","wrong":["the Lord is coming soon","the end is near","the harvest is ripe"],"v":10},
 {"t":"order","d":2,"items":["There will be no curse any more","John falls down to worship before the angel","Outside are the dogs and the sorcerers","The Spirit and the bride say, Come"],"v":3},
 {"t":"tf","d":1,"q":"The angel accepted John's worship when he fell down at his feet.","answer":false,"v":9},
-{"t":"tf","d":3,"q":"The tree of life bears twelve kinds of fruits, yielding its fruit every month.","answer":true,"v":2}
+{"t":"tf","d":3,"q":"The tree of life bears twelve kinds of fruits, yielding its fruit every month.","answer":true,"v":2},
+{"t":"choice","d":1,"q":"Why will there be no need for lamp light or sun light?","options":["The Lord God will illuminate them","The tree of life gives light","The river shines like crystal","The angels carry torches"],"v":5},
+{"t":"choice","d":2,"q":"What happens to anyone who takes away from the words of this prophecy?","options":["God takes away his part from the tree of life","He is thrown into the abyss","He loses his crown","He must read the book again"],"v":19},
+{"t":"choice","d":2,"q":"Who are blessed with the right to the tree of life?","options":["Those who do his commandments","Those who give to the poor","Those who fast and pray","Those born in the city"],"v":14},
+{"t":"choice","d":3,"q":"What does the Lord say is with him when he comes?","options":["His reward","His angels","His sword","His book"],"v":12},
+{"t":"blank","d":2,"q":"I am the Alpha and the Omega, the First and the Last, ____.","answer":"the Beginning and the End","wrong":["the Living One forever","the Holy and the True","the King of the ages"],"v":13},
+{"t":"blank","d":3,"q":"He who is thirsty, let him come. He who desires, let him take ____.","answer":"the water of life freely","wrong":["the bread of heaven freely","the cup of salvation","the fruit of the tree"],"v":17},
+{"t":"tf","d":1,"q":"The throne of God and of the Lamb will be in the city, and his servants will serve him.","answer":true,"v":3}
 ]}
 }}

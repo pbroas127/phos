@@ -112,6 +112,85 @@
      "q": "Peter said Judas's fall fulfilled a Scripture spoken through the mouth of Moses.",
      "answer": false,
      "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Over how many days did Jesus appear to the apostles after he suffered?",
+     "options": [
+      "Forty",
+      "Seven",
+      "Twelve",
+      "Fifty"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "John baptized in water, but how did Jesus say the apostles would be baptized?",
+     "options": [
+      "In the Holy Spirit",
+      "With fire from heaven",
+      "In the Jordan River",
+      "In the name of Moses"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who continued in prayer along with the apostles?",
+     "options": [
+      "The women, Mary the mother of Jesus, and his brothers",
+      "Nicodemus and Joseph of Arimathea",
+      "Lazarus, Martha, and Mary",
+      "The priests who believed"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "About how many names were gathered when Peter stood up among the disciples?",
+     "options": [
+      "About one hundred twenty",
+      "About five hundred",
+      "About seventy",
+      "About three thousand"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "It isn't for you to know ____ which the Father has set within his own authority.",
+     "answer": "times or seasons",
+     "wrong": [
+      "the day or hour",
+      "the plans or purposes",
+      "the signs or wonders"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"Let his habitation be made desolate. Let no one dwell in it;\" and, \"Let another take ____.\"",
+     "answer": "his office",
+     "wrong": [
+      "his portion",
+      "his crown",
+      "his inheritance"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After returning to Jerusalem, the apostles went up into the upper room where they were staying.",
+     "answer": true,
+     "v": 13
     }
    ]
   },
@@ -226,6 +305,85 @@
      "q": "Peter said the promise was for his hearers and their children, but not for those far off.",
      "answer": false,
      "v": 39
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What appeared and sat on each of them on the day of Pentecost?",
+     "options": [
+      "Tongues like fire",
+      "Doves from heaven",
+      "Rays of light",
+      "Crowns of gold"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What amazed the crowd about the people who were speaking?",
+     "options": [
+      "They were all Galileans",
+      "They were all priests",
+      "They were all very young",
+      "They were all from Rome"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In what did the new believers continue steadfastly?",
+     "options": [
+      "Teaching, fellowship, breaking bread, and prayer",
+      "Fasting, almsgiving, and temple sacrifices",
+      "Reading the law and keeping the feasts",
+      "Traveling to preach in other cities"
+     ],
+     "v": 42
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Peter urge his hearers to save themselves from?",
+     "options": [
+      "This crooked generation",
+      "The wrath of the rulers",
+      "The coming fall of the temple",
+      "The false teachers among them"
+     ],
+     "v": 40
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Your young men will see visions. Your old men will ____.",
+     "answer": "dream dreams",
+     "wrong": [
+      "speak wisdom",
+      "prophesy boldly",
+      "see wonders"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "All who believed were together, and had ____.",
+     "answer": "all things in common",
+     "wrong": [
+      "one heart and mind",
+      "great joy and peace",
+      "favor with the people"
+     ],
+     "v": 44
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Peter said it was not possible that Jesus should be held by death.",
+     "answer": true,
+     "v": 24
     }
    ]
   },
@@ -340,6 +498,85 @@
      "q": "Peter told the crowd that they and their rulers had acted fully knowing what they were doing.",
      "answer": false,
      "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Peter do right after telling the man to get up and walk?",
+     "options": [
+      "Took him by the right hand and raised him up",
+      "Laid his hands on the man's head",
+      "Poured oil on the man's feet",
+      "Prayed over him in silence"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "At what hour did Peter and John go up to the temple?",
+     "options": [
+      "The ninth hour",
+      "The third hour",
+      "The sixth hour",
+      "The first hour"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Peter say the people seemed to think had made the man walk?",
+     "options": [
+      "Peter and John's own power or godliness",
+      "A secret medicine they carried",
+      "The prayers of the priests",
+      "An angel stirring the water"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What promise to Abraham did Peter quote?",
+     "options": [
+      "All families of the earth will be blessed through your offspring",
+      "Your offspring will be as the stars of the sky",
+      "Kings will come out of you",
+      "Your descendants will inherit this land forever"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "And killed ____, whom God raised from the dead, to which we are witnesses.",
+     "answer": "the Prince of life",
+     "wrong": [
+      "the Son of David",
+      "the Lord of glory",
+      "the chosen Servant"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "He entered with them into the temple, walking, leaping, and ____.",
+     "answer": "praising God",
+     "wrong": [
+      "shouting for joy",
+      "weeping aloud",
+      "calling to the people"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Peter said Pilate had determined to release Jesus.",
+     "answer": true,
+     "v": 13
     }
    ]
   },
@@ -454,6 +691,85 @@
      "q": "Barnabas, who sold a field and gave the money, was a Levite from Crete.",
      "answer": false,
      "v": 36
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "About how many men believed after hearing the word?",
+     "options": [
+      "About five thousand",
+      "About three thousand",
+      "About one hundred twenty",
+      "About ten thousand"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the rulers ask Peter and John when they stood before them?",
+     "options": [
+      "By what power or in what name they did this",
+      "Who had sent them to Jerusalem",
+      "Why they taught in the temple on the Sabbath",
+      "Whether they were followers of John"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How old was the man on whom the miracle of healing was done?",
+     "options": [
+      "More than forty years old",
+      "About thirty years old",
+      "Over sixty years old",
+      "Just twenty years old"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In their prayer, which rulers did the believers say gathered against Jesus?",
+     "options": [
+      "Herod and Pontius Pilate",
+      "Felix and Festus",
+      "Agrippa and Bernice",
+      "Caesar and his governors"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They laid hands on them, and put them in custody until the next day, for ____.",
+     "answer": "it was now evening",
+     "wrong": [
+      "the council was away",
+      "it was a feast day",
+      "the Sabbath had begun"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The multitude of those who believed were of ____.",
+     "answer": "one heart and soul",
+     "wrong": [
+      "one mind and purpose",
+      "one faith and hope",
+      "one voice and spirit"
+     ],
+     "v": 32
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Peter and John agreed to stop teaching in the name of Jesus.",
+     "answer": false,
+     "v": 19
     }
    ]
   },
@@ -568,6 +884,85 @@
      "q": "Sapphira came in about three hours after her husband died, already knowing what had happened.",
      "answer": false,
      "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "According to Peter, who had filled Ananias's heart to lie to the Holy Spirit?",
+     "options": [
+      "Satan",
+      "His wife Sapphira",
+      "The high priest",
+      "A false prophet"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What moved the high priest and the Sadducees to arrest the apostles?",
+     "options": [
+      "They were filled with jealousy",
+      "The apostles broke the Sabbath",
+      "Caesar ordered it",
+      "The apostles spoke against Moses"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How is Gamaliel described when he stands up in the council?",
+     "options": [
+      "A Pharisee and teacher of the law, honored by all",
+      "A Sadducee related to the high priest",
+      "A scribe from a synagogue of Cyrene",
+      "The captain of the temple guard"
+     ],
+     "v": 34
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Peter said God exalted Jesus with his right hand to be what?",
+     "options": [
+      "A Prince and a Savior",
+      "A King and a Judge",
+      "A Priest and a Prophet",
+      "A Shepherd and a Guardian"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Go stand and speak in the temple to the people all ____.",
+     "answer": "the words of this life",
+     "wrong": [
+      "the works of the Lord",
+      "the things you have seen",
+      "the promises of God"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Every day, in the temple and at home, they never stopped ____ Jesus, the Christ.",
+     "answer": "teaching and preaching",
+     "wrong": [
+      "praying and praising",
+      "testifying about",
+      "speaking boldly of"
+     ],
+     "v": 42
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The officers found the prison shut and locked with guards at the doors, but no one inside.",
+     "answer": true,
+     "v": 23
     }
    ]
   },
@@ -682,6 +1077,85 @@
      "q": "A great company of the Pharisees became obedient to the faith.",
      "answer": false,
      "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why could Stephen's opponents not win their dispute with him?",
+     "options": [
+      "They couldn't withstand his wisdom and the Spirit",
+      "The apostles stood up to defend him",
+      "The crowd shouted them down",
+      "He showed them a sign from heaven"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was the synagogue called whose members disputed with Stephen?",
+     "options": [
+      "The Libertines",
+      "The Nazarenes",
+      "The Zealots",
+      "The Herodians"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Stephen, full of faith and power, do among the people?",
+     "options": [
+      "Performed great wonders and signs",
+      "Served tables for the widows",
+      "Taught daily in Solomon's porch",
+      "Baptized many in the Jordan"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom did Stephen's opponents stir up against him?",
+     "options": [
+      "The people, the elders, and the scribes",
+      "The Roman soldiers in the city",
+      "The priests who had believed",
+      "The Hellenist widows"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Then they secretly induced men to say, \"We have heard him speak blasphemous words ____.\"",
+     "answer": "against Moses and God",
+     "wrong": [
+      "against the chief priests",
+      "against Caesar and Rome",
+      "against the elders of Israel"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The word of God increased and the number of the disciples ____ in Jerusalem.",
+     "answer": "greatly multiplied",
+     "wrong": [
+      "slowly grew",
+      "was tested",
+      "was divided"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Stephen was seized and brought before Pilate.",
+     "answer": false,
+     "v": 12
     }
    ]
   },
@@ -796,6 +1270,85 @@
      "q": "In his speech, Stephen said that David built a house for God.",
      "answer": false,
      "v": 47
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "According to Stephen, who took up the abandoned baby Moses and raised him as her own son?",
+     "options": [
+      "Pharaoh's daughter",
+      "Moses' sister Miriam",
+      "A Hebrew midwife",
+      "The wife of a priest"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the Lord tell Moses to take off his sandals?",
+     "options": [
+      "The place where he stood was holy ground",
+      "He was about to cross the Red Sea",
+      "He had come near the altar",
+      "He was entering the tent of meeting"
+     ],
+     "v": 33
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How old was Moses when it came into his heart to visit his brothers?",
+     "options": [
+      "Forty years old",
+      "Twenty years old",
+      "Thirty years old",
+      "Eighty years old"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "To whom did the fathers say, \"Make us gods that will go before us\"?",
+     "options": [
+      "Aaron",
+      "Joshua",
+      "Miriam",
+      "Caleb"
+     ],
+     "v": 40
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Moses was instructed in all ____. He was mighty in his words and works.",
+     "answer": "the wisdom of the Egyptians",
+     "wrong": [
+      "the ways of Pharaoh's court",
+      "the laws of his fathers",
+      "the knowledge of the priests"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Heaven is my throne, and the earth ____. What kind of house will you build me?",
+     "answer": "a footstool for my feet",
+     "wrong": [
+      "the work of my hands",
+      "a dwelling for my people",
+      "a garden for my glory"
+     ],
+     "v": 49
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When Stephen said he saw the heavens opened, the council stopped their ears and rushed at him.",
+     "answer": true,
+     "v": 57
     }
    ]
   },
@@ -910,6 +1463,85 @@
      "q": "When the great persecution arose, the apostles were scattered along with everyone else.",
      "answer": false,
      "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was the result in the city of Samaria after Philip's preaching and signs?",
+     "options": [
+      "There was great joy in that city",
+      "The city drove Philip away",
+      "The rulers put Philip in prison",
+      "The people asked him to leave"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom did the Ethiopian eunuch serve as treasurer?",
+     "options": [
+      "Candace, queen of the Ethiopians",
+      "Herod the king",
+      "The queen of Sheba",
+      "Pharaoh of Egypt"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What had the people of Samaria said about Simon before Philip came?",
+     "options": [
+      "This man is that great power of God",
+      "This man is the prophet Elijah",
+      "This man is a son of Abraham",
+      "This man is a friend of Caesar"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the eunuch ask Philip about the prophet's words?",
+     "options": [
+      "Whether he spoke of himself or someone else",
+      "When the passage had been written",
+      "Why the lamb stayed silent",
+      "Where the prophet was buried"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He said, \"How can I, unless ____?\" He begged Philip to come up and sit with him.",
+     "answer": "someone explains it to me",
+     "wrong": [
+      "the prophet himself comes",
+      "God opens my eyes",
+      "I study it for years"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Behold, here is water. What is keeping me from ____?",
+     "answer": "being baptized",
+     "wrong": [
+      "following you",
+      "drinking from it",
+      "washing myself"
+     ],
+     "v": 36
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "After Philip was caught away, the eunuch went on his way weeping.",
+     "answer": false,
+     "v": 39
     }
    ]
   },
@@ -1024,6 +1656,85 @@
      "q": "The men traveling with Saul saw the Lord but heard no sound.",
      "answer": false,
      "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How long was Saul without sight after the light shone around him?",
+     "options": [
+      "Three days",
+      "Seven days",
+      "One day",
+      "Forty days"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Saul ask the high priest for?",
+     "options": [
+      "Letters to the synagogues to bring believers bound",
+      "Soldiers to guard the roads",
+      "A seat on the council",
+      "Money for a long journey"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the Lord call Saul when he told Ananias to go?",
+     "options": [
+      "My chosen vessel",
+      "My faithful servant",
+      "My beloved son",
+      "My new shepherd"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How long had Aeneas been bedridden?",
+     "options": [
+      "Eight years",
+      "Twelve years",
+      "Thirty eight years",
+      "Four years"
+     ],
+     "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Peter said to him, \"Aeneas, Jesus Christ heals you. ____!\" Immediately he arose.",
+     "answer": "Get up and make your bed",
+     "wrong": [
+      "Rise and walk in peace",
+      "Stand and give thanks",
+      "Take up your mat"
+     ],
+     "v": 34
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He tried to join himself to the disciples; but they were all afraid of him, not believing ____.",
+     "answer": "that he was a disciple",
+     "wrong": [
+      "that he had changed",
+      "that he meant them well",
+      "that he had seen Jesus"
+     ],
+     "v": 26
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When the Hellenists sought to kill Saul, the brothers sent him off to Antioch.",
+     "answer": false,
+     "v": 30
     }
    ]
   },
@@ -1138,6 +1849,85 @@
      "q": "Cornelius sent two soldiers and one household servant to Joppa.",
      "answer": false,
      "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How many times was the vision of the sheet repeated?",
+     "options": [
+      "Three times",
+      "Two times",
+      "Seven times",
+      "Only once"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides fearing God and praying, what did Cornelius do generously?",
+     "options": [
+      "Gave gifts to the needy",
+      "Built a synagogue",
+      "Fed the soldiers",
+      "Hosted travelers"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Peter said Jesus is appointed by God as what?",
+     "options": [
+      "The Judge of the living and the dead",
+      "The King of Israel",
+      "The High Priest forever",
+      "The Prophet like Moses"
+     ],
+     "v": 42
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where was the house of Simon the tanner?",
+     "options": [
+      "By the seaside",
+      "Near the city gate",
+      "Beside the synagogue",
+      "On the hill above the town"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Your prayers and your gifts to the needy have gone up ____.",
+     "answer": "for a memorial before God",
+     "wrong": [
+      "as sweet incense to heaven",
+      "like smoke from the altar",
+      "into the presence of angels"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But Peter said, \"Not so, Lord; for I have never eaten anything that is ____.\"",
+     "answer": "common or unclean",
+     "wrong": [
+      "offered to idols",
+      "forbidden by Moses",
+      "strangled or bloody"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The Gentiles who received the Holy Spirit were heard speaking in other languages and magnifying God.",
+     "answer": true,
+     "v": 46
     }
    ]
   },
@@ -1252,6 +2042,80 @@
      "q": "Those scattered after Stephen's death at first spoke the word to Gentiles only.",
      "answer": false,
      "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many brothers went with Peter into Cornelius's house?",
+     "options": [
+      "Six",
+      "Three",
+      "Twelve",
+      "Two"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which word of the Lord did Peter remember when the Holy Spirit fell on the Gentiles?",
+     "options": [
+      "John baptized in water, but you in the Holy Spirit",
+      "Go and make disciples of all nations",
+      "Love your neighbor as yourself",
+      "Whoever believes will be saved"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "From which city had the three men been sent to Peter?",
+     "options": [
+      "Caesarea",
+      "Antioch",
+      "Damascus",
+      "Lydda"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But I said, \"Not so, Lord, for nothing unholy or unclean has ever ____.\"",
+     "answer": "entered into my mouth",
+     "wrong": [
+      "touched my lips",
+      "been on my table",
+      "come into my house"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The hand of the Lord was with them, and a great number ____.",
+     "answer": "believed and turned to the Lord",
+     "wrong": [
+      "gathered to hear the word",
+      "were baptized that day",
+      "were healed of diseases"
+     ],
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The apostles and brothers in Judea heard that the Gentiles had also received the word of God.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Peter told the believers he saw the vision of the sheet while praying in Caesarea.",
+     "answer": false,
+     "v": 5
     }
    ]
   },
@@ -1366,6 +2230,80 @@
      "q": "After the iron gate opened by itself, the angel stayed with Peter until he reached Mary's house.",
      "answer": false,
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How was Peter guarded after Herod arrested him?",
+     "options": [
+      "By four squads of four soldiers each",
+      "By two squads of ten soldiers",
+      "By a single guard at the door",
+      "By twelve soldiers in shifts"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Herod do to the guards when he could not find Peter?",
+     "options": [
+      "Commanded that they be put to death",
+      "Set them free without punishment",
+      "Sent them away to Rome",
+      "Had them beaten and released"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did the people of Tyre and Sidon ask Herod for peace?",
+     "options": [
+      "Their country depended on the king's country for food",
+      "Herod threatened to send an army",
+      "Caesar ordered them to make peace",
+      "They feared the Jews in Judea"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "When he saw that ____, he proceeded to seize Peter also.",
+     "answer": "it pleased the Jews",
+     "wrong": [
+      "no one opposed him",
+      "the people feared him",
+      "the council agreed"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But the word of God ____.",
+     "answer": "grew and multiplied",
+     "wrong": [
+      "spread to the Gentiles",
+      "was spoken boldly",
+      "increased in Judea"
+     ],
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When they finally opened the gate and saw Peter, the believers were amazed.",
+     "answer": true,
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Barnabas and Saul returned to Jerusalem, taking Timothy with them.",
+     "answer": false,
+     "v": 25
     }
    ]
   },
@@ -1480,6 +2418,85 @@
      "q": "Paul told the synagogue that David never saw decay after he died.",
      "answer": false,
      "v": 36
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What moved the proconsul to believe?",
+     "options": [
+      "He saw what was done and was astonished at the teaching",
+      "He saw a vision of an angel at night",
+      "Barnabas healed his servant",
+      "His household urged him to believe"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who gathered together on the next Sabbath to hear the word of God?",
+     "options": [
+      "Almost the whole city",
+      "Only the synagogue rulers",
+      "A few devout women",
+      "The elders of the Jews"
+     ],
+     "v": 44
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "According to the Lord's command that Paul quoted, what had he set them as?",
+     "options": [
+      "A light for the Gentiles",
+      "Fishers of men",
+      "Shepherds of the flock",
+      "Watchmen for Israel"
+     ],
+     "v": 47
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did Barnabas and Saul sail from Seleucia?",
+     "options": [
+      "Cyprus",
+      "Crete",
+      "Rhodes",
+      "Macedonia"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You son of the devil, full of all deceit and all cunning, ____, will you not cease to pervert the right ways of the Lord?",
+     "answer": "you enemy of all righteousness",
+     "wrong": [
+      "you servant of darkness",
+      "you teacher of lies",
+      "you child of wrath"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The disciples were filled with ____.",
+     "answer": "joy and with the Holy Spirit",
+     "wrong": [
+      "fear and with great sorrow",
+      "wonder and with great boldness",
+      "peace and with much courage"
+     ],
+     "v": 52
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul said the rulers found no cause for death in Jesus, yet asked Pilate to have him killed.",
+     "answer": true,
+     "v": 28
     }
    ]
   },
@@ -1594,6 +2611,85 @@
      "q": "At the end of the journey, Paul and Barnabas sailed to Jerusalem to report what God had done.",
      "answer": false,
      "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Barnabas and Paul do when they heard of the planned sacrifice?",
+     "options": [
+      "Tore their clothes and sprang into the crowd",
+      "Hid inside a house until evening",
+      "Left the city by night",
+      "Called for the city magistrates"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the people of Iconium respond to the apostles?",
+     "options": [
+      "The city was divided between the Jews and the apostles",
+      "The whole city believed",
+      "The rulers welcomed them warmly",
+      "Everyone ignored their message"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "After speaking the word in Perga, where did they go down to?",
+     "options": [
+      "Attalia",
+      "Tarsus",
+      "Troas",
+      "Salamis"
+     ],
+     "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Back in Antioch, what did they report God had opened to the nations?",
+     "options": [
+      "A door of faith",
+      "The gates of heaven",
+      "A path of peace",
+      "The eyes of the blind"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Who in the generations gone by allowed all the nations ____.",
+     "answer": "to walk in their own ways",
+     "wrong": [
+      "to serve their own gods",
+      "to live without the law",
+      "to worship the works of their hands"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Even saying these things, they ____ the multitudes from making a sacrifice to them.",
+     "answer": "hardly stopped",
+     "wrong": [
+      "quickly turned",
+      "gently kept",
+      "finally persuaded"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "At Iconium, a great multitude of both Jews and Greeks believed.",
+     "answer": true,
+     "v": 1
     }
    ]
   },
@@ -1708,6 +2804,85 @@
      "q": "The letter told Gentile believers to abstain from blood, things strangled, and eating pork.",
      "answer": false,
      "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "After the sharp contention, where did Barnabas sail?",
+     "options": [
+      "Cyprus",
+      "Crete",
+      "Egypt",
+      "Tarsus"
+     ],
+     "v": 39
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the believers in Antioch respond when they read the letter?",
+     "options": [
+      "They rejoiced over the encouragement",
+      "They argued over its meaning",
+      "They sent it back to Jerusalem",
+      "They asked for more rules"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In the words of the prophets James quoted, what would God build again?",
+     "options": [
+      "The tabernacle of David",
+      "The walls of Jerusalem",
+      "The temple of Solomon",
+      "The altar of Abraham"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the Jerusalem letter describe Barnabas and Paul?",
+     "options": [
+      "Men who risked their lives for the Lord's name",
+      "Men chosen by lot from the elders",
+      "Prophets and teachers of Antioch",
+      "Apostles sent out by Peter"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For it seemed good to ____, to lay no greater burden on you than these necessary things.",
+     "answer": "the Holy Spirit, and to us",
+     "wrong": [
+      "the apostles and elders",
+      "the whole assembly",
+      "James and Peter"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He went through Syria and Cilicia, ____.",
+     "answer": "strengthening the assemblies",
+     "wrong": [
+      "preaching in the synagogues",
+      "appointing elders everywhere",
+      "baptizing many believers"
+     ],
+     "v": 41
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Peter said God gave the Gentiles the Holy Spirit just as he did to the apostles.",
+     "answer": true,
+     "v": 8
     }
    ]
   },
@@ -1822,6 +2997,80 @@
      "q": "Paul and his companions first met Lydia in the synagogue at Philippi.",
      "answer": false,
      "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Paul circumcise Timothy?",
+     "options": [
+      "Because of the Jews in those parts",
+      "Because the apostles required it",
+      "Because Timothy asked for it",
+      "Because his mother insisted"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the girl with the spirit of divination keep crying out about Paul and his companions?",
+     "options": [
+      "They are servants of the Most High God",
+      "They are enemies of Caesar",
+      "They are gods in human form",
+      "They are false prophets from Judea"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did the Spirit not allow Paul and his companions to go?",
+     "options": [
+      "Bithynia",
+      "Galatia",
+      "Phrygia",
+      "Cilicia"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Having received such a command, he threw them into the inner prison and ____.",
+     "answer": "secured their feet in the stocks",
+     "wrong": [
+      "bound them with two chains",
+      "set guards at the door",
+      "left them without food"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Believe in the Lord Jesus Christ, and you will be saved, ____.",
+     "answer": "you and your household",
+     "wrong": [
+      "you and all Philippi",
+      "today and forever",
+      "you and your servants"
+     ],
+     "v": 31
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The jailer washed their stripes and was baptized the same hour of the night.",
+     "answer": true,
+     "v": 33
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The magistrates were pleased when they heard that Paul and Silas were Romans.",
+     "answer": false,
+     "v": 38
     }
    ]
   },

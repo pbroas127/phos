@@ -9,7 +9,14 @@
 {"t":"blank","d":3,"q":"Christ Jesus, who abolished death, and brought ____ to light through the Good News.","answer":"life and immortality","wrong":["grace and truth","hope and glory","mercy and peace"],"v":10},
 {"t":"order","d":3,"items":["Reminder of Timothy's sincere faith","Don't be ashamed of the testimony","Hold the pattern of sound words","Mercy for the house of Onesiphorus"],"v":5},
 {"t":"tf","d":1,"q":"Paul says he is ashamed of his sufferings for the Good News.","answer":false,"v":12},
-{"t":"tf","d":2,"q":"Paul remembers Timothy's tears and longs to see him.","answer":true,"v":4}
+{"t":"tf","d":2,"q":"Paul remembers Timothy's tears and longs to see him.","answer":true,"v":4},
+{"t":"choice","d":1,"q":"For the Good News, Paul says he was appointed as what?","options":["A preacher, an apostle, and a teacher","A prophet, a priest, and a king","An elder, an overseer, and a servant","A shepherd, a scribe, and a judge"],"v":11},
+{"t":"choice","d":2,"q":"What does Paul call himself when urging Timothy not to be ashamed?","options":["The Lord's prisoner","The Lord's ambassador","The least of the apostles","A servant of all"],"v":8},
+{"t":"choice","d":2,"q":"According to what did God save us and call us with a holy calling?","options":["His own purpose and grace","Our good works","The law of Moses","Our faithful obedience"],"v":9},
+{"t":"choice","d":3,"q":"Where does Paul say Onesiphorus served in many things?","options":["Ephesus","Rome","Corinth","Antioch"],"v":18},
+{"t":"blank","d":2,"q":"That good thing which was committed to you, guard through ____ who dwells in us.","answer":"the Holy Spirit","wrong":["the grace of God","the word of Christ","the power of God"],"v":14},
+{"t":"blank","d":3,"q":"I thank God, whom I serve as my forefathers did, ____.","answer":"with a pure conscience","wrong":["with all my heart","in spirit and truth","with fear and trembling"],"v":3},
+{"t":"tf","d":1,"q":"Paul says Onesiphorus often refreshed him.","answer":true,"v":16}
 ]},
 "2":{"keyVerse":15,"questions":[
 {"t":"choice","d":1,"q":"Which three examples does Paul use to encourage Timothy?","options":["A soldier, an athlete, and a farmer","A shepherd, a builder, and a fisherman","A king, a priest, and a prophet","A servant, a steward, and a judge"],"v":3},
@@ -21,7 +28,14 @@
 {"t":"blank","d":3,"q":"Pursue righteousness, faith, love, and peace with those who call on the Lord ____.","answer":"out of a pure heart","wrong":["in spirit and in truth","with thanksgiving and praise","day and night in prayer"],"v":22},
 {"t":"order","d":3,"items":["Remember Jesus Christ, risen from the dead","Shun empty chatter","God's firm foundation stands with a seal","Refuse foolish and ignorant questionings"],"v":8},
 {"t":"tf","d":1,"q":"Paul says that if we are faithless, Christ will also be faithless.","answer":false,"v":13},
-{"t":"tf","d":2,"q":"Paul says the Lord's servant should gently correct those who oppose him.","answer":true,"v":25}
+{"t":"tf","d":2,"q":"Paul says the Lord's servant should gently correct those who oppose him.","answer":true,"v":25},
+{"t":"choice","d":1,"q":"What kind of workman should Timothy present himself as?","options":["One who doesn't need to be ashamed","One who works night and day","One who builds on the rock","One who is worthy of wages"],"v":15},
+{"t":"choice","d":2,"q":"Paul says empty chatter will consume like what?","options":["Gangrene","Fire","Moths","Rust"],"v":17},
+{"t":"choice","d":2,"q":"Of whose offspring is Jesus Christ, according to Paul's Good News?","options":["David","Abraham","Moses","Aaron"],"v":8},
+{"t":"choice","d":3,"q":"What saying is part of the seal on God's firm foundation?","options":["The Lord knows those who are his","The righteous will live by faith","Holy to the Lord","The Lord is my shepherd"],"v":19},
+{"t":"blank","d":2,"q":"No soldier on duty entangles himself in ____, that he may please him who enrolled him.","answer":"the affairs of life","wrong":["the quarrels of men","the pleasures of the world","the business of trade"],"v":4},
+{"t":"blank","d":3,"q":"They may recover themselves out of ____, having been taken captive by him to do his will.","answer":"the devil's snare","wrong":["the power of darkness","the bondage of sin","the deceit of the world"],"v":26},
+{"t":"tf","d":1,"q":"Paul says foolish and ignorant questionings help settle disputes.","answer":false,"v":23}
 ]},
 "3":{"keyVerse":16,"questions":[
 {"t":"choice","d":1,"q":"How does Paul describe people in the last days?","options":["Lovers of self and lovers of money","Lovers of peace and of order","Seekers of signs and wonders","Fearful of wars and famines"],"v":2},
@@ -33,7 +47,14 @@
 {"t":"blank","d":3,"q":"Holding a form of godliness but ____. Turn away from these, also.","answer":"having denied its power","wrong":["lacking its good fruit","hating its sound truth","forgetting its true source"],"v":5},
 {"t":"order","d":3,"items":["Grievous times will come","Creeping into houses to capture gullible women","Timothy followed Paul's teaching and conduct","Remain in the things you have learned"],"v":1},
 {"t":"tf","d":1,"q":"Paul says evil men and impostors will grow worse and worse.","answer":true,"v":13},
-{"t":"tf","d":2,"q":"Paul says the Lord delivered him from some of his persecutions, but not all.","answer":false,"v":11}
+{"t":"tf","d":2,"q":"Paul says the Lord delivered him from some of his persecutions, but not all.","answer":false,"v":11},
+{"t":"choice","d":1,"q":"In the last days, what will people love rather than God?","options":["Pleasure","Their families","Their nations","Knowledge"],"v":4},
+{"t":"choice","d":2,"q":"What does Paul say the Scriptures are able to make Timothy?","options":["Wise for salvation","Strong in battle","Rich in this world","Free from the law"],"v":15},
+{"t":"choice","d":2,"q":"Why is Scripture profitable, so that each person who belongs to God may be what?","options":["Complete, equipped for every good work","Rich in knowledge and wisdom","Free from all suffering","Honored among men"],"v":17},
+{"t":"choice","d":3,"q":"How does Paul describe the gullible women these people take captive?","options":["Always learning, never reaching knowledge of truth","Always praying, never receiving answers","Always giving, never finding peace","Always seeking signs and wonders"],"v":7},
+{"t":"blank","d":2,"q":"But they will proceed no further. For their folly will be ____.","answer":"evident to all men","wrong":["judged by the Lord","exposed in time","forgotten by all"],"v":9},
+{"t":"blank","d":3,"q":"You remain in the things which you have learned and have been assured of, knowing ____.","answer":"from whom you have learned them","wrong":["that the time is short","that God is faithful","the truth that sets free"],"v":14},
+{"t":"tf","d":1,"q":"Paul says people in the last days will be forgiving and full of natural affection.","answer":false,"v":3}
 ]},
 "4":{"keyVerse":7,"questions":[
 {"t":"choice","d":1,"q":"Why did Demas leave Paul?","options":["He loved this present world","He was sent to Galatia","He fell sick at Miletus","He quarreled with Mark"],"v":10},
@@ -45,6 +66,13 @@
 {"t":"blank","d":3,"q":"The Lord stood by me and strengthened me. So I was delivered out of ____.","answer":"the mouth of the lion","wrong":["the hand of Caesar","the snare of the enemy","the depths of prison"],"v":17},
 {"t":"order","d":3,"items":["Preach the word in season and out","The time of Paul's departure has come","No one helped at his first defense","Greet Prisca and Aquila"],"v":2},
 {"t":"tf","d":1,"q":"Paul says the crown of righteousness is for all who have loved the Lord's appearing, not him only.","answer":true,"v":8},
-{"t":"tf","d":2,"q":"Paul asks that those who deserted him at his first defense be held accountable.","answer":false,"v":16}
+{"t":"tf","d":2,"q":"Paul asks that those who deserted him at his first defense be held accountable.","answer":false,"v":16},
+{"t":"choice","d":1,"q":"What work does Paul tell Timothy to do?","options":["The work of an evangelist","The work of an overseer","The work of a prophet","The work of a scribe"],"v":5},
+{"t":"choice","d":2,"q":"Where did Paul send Tychicus?","options":["Ephesus","Troas","Corinth","Crete"],"v":12},
+{"t":"choice","d":2,"q":"Whom did Paul ask Timothy to bring, because he was useful for service?","options":["Mark","Luke","Titus","Erastus"],"v":11},
+{"t":"choice","d":3,"q":"Where did Paul leave Trophimus sick?","options":["Miletus","Corinth","Troas","Ephesus"],"v":20},
+{"t":"blank","d":2,"q":"Christ Jesus, who will judge ____ at his appearing and his Kingdom.","answer":"the living and the dead","wrong":["every nation and tongue","the righteous and the wicked","all the earth"],"v":1},
+{"t":"blank","d":3,"q":"They will turn away their ears from the truth, and ____.","answer":"turn away to fables","wrong":["follow after myths","chase empty dreams","run after idols"],"v":4},
+{"t":"tf","d":1,"q":"Paul asks Timothy to come to him before winter.","answer":true,"v":21}
 ]}
 }}

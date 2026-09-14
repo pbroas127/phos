@@ -111,9 +111,17 @@ struct RingProgress<Inner: View>: View {
 struct FlowHeader: View {
     let title: String
     var subtitle: String? = nil
+    var onBack: (() -> Void)? = nil
     var onClose: () -> Void
     var body: some View {
-        HStack(alignment: .top) {
+        HStack(alignment: .top, spacing: 12) {
+            if let onBack {
+                Button(action: onBack) {
+                    Image(systemName: "chevron.left").font(.body.weight(.semibold)).foregroundStyle(Theme.dim)
+                        .frame(width: 36, height: 36).background(Theme.soft, in: Circle())
+                }
+                .accessibilityLabel("Back")
+            }
             VStack(alignment: .leading, spacing: 2) {
                 if let subtitle { Eyebrow(text: subtitle) }
                 Text(title).font(Theme.serif(26)).foregroundStyle(Theme.ink)

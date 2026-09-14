@@ -314,7 +314,8 @@ struct PromptsReflect: View {
     var onDone: () -> Void
     @State private var notice: String?
 
-    private let prompts = ["What happened in this chapter?", "What surprised you or stood out?", "What will you do differently today?"]
+    static let prompts = ["What happened in this chapter?", "What surprised you or stood out?", "What will you do differently today?"]
+    private var prompts: [String] { Self.prompts }
 
     var body: some View {
         let need = Int((Double(model.readingCheck.words) / 3).rounded(.up))

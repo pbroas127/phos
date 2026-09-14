@@ -113,6 +113,85 @@
      "q": "Joel says the herds groan because enemy soldiers carried them off as plunder.",
      "answer": false,
      "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who does Joel first call to hear this word?",
+     "options": [
+      "The elders",
+      "The kings",
+      "The prophets",
+      "The young men"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What day does Joel say is at hand?",
+     "options": [
+      "The day of the LORD",
+      "The day of harvest",
+      "The year of jubilee",
+      "The Day of Atonement"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What has the invading nation done to the fig tree?",
+     "options": [
+      "Stripped its bark and thrown it away",
+      "Burned it to the ground",
+      "Pulled it up by the roots",
+      "Eaten all its fruit"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Joel say is happening to the seeds?",
+     "options": [
+      "They rot under their clods",
+      "The birds carry them off",
+      "The rain washes them away",
+      "They were never sown"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "All of the trees of the field are withered; for joy has withered away ____.",
+     "answer": "from the sons of men",
+     "wrong": [
+      "from the house of God",
+      "from the land of Judah",
+      "from the hearts of the elders"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The animals of the field pant to you, for ____ have dried up.",
+     "answer": "the water brooks",
+     "wrong": [
+      "the wells and cisterns",
+      "the springs of the hills",
+      "the pools of the valley"
+     ],
+     "v": 20
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Joel says the wheat harvest was destroyed but the barley harvest survived.",
+     "answer": false,
+     "v": 11
     }
    ]
   },
@@ -223,6 +302,85 @@
      "q": "God says he will bring the northern army into Jerusalem to punish his people.",
      "answer": false,
      "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How does Joel describe the day of the LORD?",
+     "options": [
+      "A day of darkness and gloominess",
+      "A day of bright fire and light",
+      "A day of feasting and joy",
+      "A day of great rain"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the great army's appearance look like?",
+     "options": [
+      "Horses",
+      "Lions",
+      "Eagles",
+      "Giants"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does God give the children of Zion in just measure?",
+     "options": [
+      "The early rain",
+      "Manna from heaven",
+      "Silver and gold",
+      "Rest from enemies"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How does the army march?",
+     "options": [
+      "Each in his line, without swerving",
+      "Scattered in every direction",
+      "Only in the dark of night",
+      "Behind a banner of fire"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Your sons and your daughters will prophesy. Your old men will dream dreams. ____.",
+     "answer": "Your young men will see visions",
+     "wrong": [
+      "Your children will sing praises",
+      "Your elders will speak wisdom",
+      "Your servants will see wonders"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The sun will be turned into darkness, and ____, before the great and terrible day of the LORD comes.",
+     "answer": "the moon into blood",
+     "wrong": [
+      "the stars into ashes",
+      "the sea into fire",
+      "the moon into sackcloth"
+     ],
+     "v": 31
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Joel says even the bridegroom and the bride should come out to join the gathering.",
+     "answer": true,
+     "v": 16
     }
    ]
   },
@@ -333,6 +491,85 @@
      "q": "The chapter says strangers will still pass through Jerusalem after God dwells in Zion.",
      "answer": false,
      "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "From where will the LORD roar?",
+     "options": [
+      "Zion",
+      "Sinai",
+      "Bethel",
+      "Carmel"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "The nations sold a girl in exchange for what?",
+     "options": [
+      "Wine",
+      "Silver",
+      "Bread",
+      "A field"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did the nations carry God's finest treasures?",
+     "options": [
+      "Into their temples",
+      "Into their palaces",
+      "Down to Egypt",
+      "Across the sea"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What happens to the stars as the day of the LORD nears?",
+     "options": [
+      "They withdraw their shining",
+      "They fall from heaven",
+      "They shine brighter",
+      "They turn to blood"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Let the weak say, ____.",
+     "answer": "I am strong",
+     "wrong": [
+      "I am ready",
+      "I will fight",
+      "I am mighty"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The mountains will drop down sweet wine, ____, all the brooks of Judah will flow with waters.",
+     "answer": "the hills will flow with milk",
+     "wrong": [
+      "the valleys will fill with grain",
+      "the fields will yield honey",
+      "the hills will flow with oil"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The chapter says Judah will be inhabited forever.",
+     "answer": true,
+     "v": 20
     }
    ]
   }

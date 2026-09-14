@@ -23,7 +23,7 @@ struct ReadingFlow: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            FlowHeader(title: BookNames.title(ref), subtitle: stepLabel) { dismiss() }
+            FlowHeader(title: BookNames.title(ref), subtitle: stepLabel, onBack: backAction) { dismiss() }
                 .padding(.horizontal, 20)
                 .padding(.top, 12)
                 .padding(.bottom, 8)
@@ -73,6 +73,16 @@ struct ReadingFlow: View {
         .onChange(of: draft.readMode) { _, _ in save() }
         .onChange(of: draft.aloudCursor) { _, _ in save() }
         .onChange(of: draft.aloudHeard.count) { _, _ in save() }
+    }
+
+    /// Reading and reflecting can always step back to change how you read. Read aloud keeps its place.
+    /// The questions have no back button, so the chapter stays hidden while answering.
+    private var backAction: (() -> Void)? {
+        switch draft.step {
+        case .read: return { go(.mode) }
+        case .reflect: return { go(.read) }
+        default: return nil
+        }
     }
 
     private var stepLabel: String {

@@ -226,6 +226,24 @@ struct JournalEntryRow: View {
     let entry: DayRecord
     @State private var open = false
 
+    /// Prompt answers are saved as "Question? Answer" lines. The question shows in bold.
+    private var reflectionText: Text {
+        guard !entry.reflection.isEmpty else { return Text("No reflection saved.") }
+        guard entry.reflectMode == .prompts else { return Text(entry.reflection) }
+        let lines = entry.reflection.components(separatedBy: "\n")
+        var out = Text("")
+        for (i, line) in lines.enumerated() {
+            if i > 0 { out = out + Text("\n\n") }
+            if let q = PromptsReflect.prompts.first(where: { line.hasPrefix($0) }) {
+                let answer = line.dropFirst(q.count).trimmingCharacters(in: .whitespaces)
+                out = out + Text(q).bold() + Text("\n" + answer)
+            } else {
+                out = out + Text(line)
+            }
+        }
+        return out
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             Button {
@@ -247,7 +265,7 @@ struct JournalEntryRow: View {
             .accessibilityHint(open ? "Hides the entry" : "Shows the whole entry")
 
             if open {
-                Text(entry.reflection.isEmpty ? "No reflection saved." : entry.reflection)
+                reflectionText
                     .font(Theme.serif(17, .regular)).foregroundStyle(Theme.ink).lineSpacing(3)
                     .fixedSize(horizontal: false, vertical: true)
                 HStack(spacing: 10) {

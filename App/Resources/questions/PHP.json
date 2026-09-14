@@ -112,6 +112,80 @@
      "q": "Paul says his chains have made most of the brothers more afraid to speak the word.",
      "answer": false,
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who is named with Paul as a servant of Jesus Christ at the start of the letter?",
+     "options": [
+      "Timothy",
+      "Silas",
+      "Titus",
+      "Luke"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In what does Paul pray their love may abound more and more?",
+     "options": [
+      "Knowledge and all discernment",
+      "Good works and generosity",
+      "Patience and endurance",
+      "Joy and thanksgiving"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What do those who preach Christ out of love know about Paul?",
+     "options": [
+      "He is appointed for the defense of the Good News",
+      "He will soon be set free from prison",
+      "He was chosen before the other apostles",
+      "He has suffered more than anyone else"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For God is my witness, how I long after all of you in ____.",
+     "answer": "the tender mercies of Christ Jesus",
+     "wrong": [
+      "the love of God our Father",
+      "the fellowship of the Spirit",
+      "the hope of the Good News"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "That you stand firm ____, with one soul striving for the faith of the Good News.",
+     "answer": "in one spirit",
+     "wrong": [
+      "in the Lord",
+      "in all boldness",
+      "with one heart"
+     ],
+     "v": 27
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says he thanks his God whenever he remembers the Philippians.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says Christ will be magnified in his body only if he goes on living.",
+     "answer": false,
+     "v": 20
     }
    ]
   },
@@ -226,6 +300,80 @@
      "q": "Paul says he has many others like Timothy who truly care about the Philippians.",
      "answer": false,
      "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul tell them to do all things without?",
+     "options": [
+      "Complaining and arguing",
+      "Fear and doubt",
+      "Pride and boasting",
+      "Delay and excuses"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did God give Jesus when he highly exalted him?",
+     "options": [
+      "The name which is above every name",
+      "A throne above the angels",
+      "A crown of pure gold",
+      "Authority over every nation"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul hope to boast about in the day of Christ?",
+     "options": [
+      "That he didn't run or labor in vain",
+      "That he founded many assemblies",
+      "That he suffered more than others",
+      "That he kept the law blamelessly"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Doing nothing through rivalry or through conceit, but in humility, ____.",
+     "answer": "each counting others better than himself",
+     "wrong": [
+      "each serving the other in love",
+      "each bearing the other's burdens",
+      "each seeking the good of all"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For it is God who works in you both to will and to work ____.",
+     "answer": "for his good pleasure",
+     "wrong": [
+      "for the good of all",
+      "according to his power",
+      "for the glory of his name"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says Christ considered equality with God a thing to be grasped.",
+     "answer": false,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says he trusts in the Lord that he himself will also come to them shortly.",
+     "answer": true,
+     "v": 24
     }
    ]
   },
@@ -340,6 +488,85 @@
      "q": "Paul says that concerning the law, he was a Pharisee.",
      "answer": true,
      "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What one thing does Paul say he does?",
+     "options": [
+      "Forgets what is behind and stretches forward",
+      "Keeps the whole law without fault",
+      "Remembers every past victory",
+      "Waits quietly for the Lord"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say Christ will change our lowly body to be like?",
+     "options": [
+      "The body of his glory",
+      "The angels in heaven",
+      "Adam before he sinned",
+      "The spirits of the righteous"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Concerning zeal, what does Paul say he once did?",
+     "options": [
+      "Persecuted the assembly",
+      "Kept every feast in Jerusalem",
+      "Studied the law day and night",
+      "Fasted twice every week"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How does Paul say he now tells them about the enemies of the cross?",
+     "options": [
+      "Even weeping",
+      "With great anger",
+      "In a whisper",
+      "With joy"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "If in anything you think otherwise, ____ that to you.",
+     "answer": "God will also reveal",
+     "wrong": [
+      "the Spirit will explain",
+      "I will write again",
+      "your leaders will show"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "If by any means I may attain to ____.",
+     "answer": "the resurrection from the dead",
+     "wrong": [
+      "the crown of righteousness",
+      "the fullness of Christ",
+      "the promise of eternal life"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says the true circumcision worship God in the Spirit and have no confidence in the flesh.",
+     "answer": true,
+     "v": 3
     }
    ]
   },
@@ -454,6 +681,80 @@
      "q": "Paul says he is seeking the gift itself from the Philippians.",
      "answer": false,
      "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does Paul say he can do through Christ who strengthens him?",
+     "options": [
+      "All things",
+      "Endure any prison",
+      "Preach without fear",
+      "Face death calmly"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul tell them to let be known to all men?",
+     "options": [
+      "Your gentleness",
+      "Your good works",
+      "Your generosity",
+      "Your joy"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whom does Paul name as laboring in the Good News along with these women?",
+     "options": [
+      "Clement",
+      "Epaphras",
+      "Tychicus",
+      "Demas"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Do the things which you learned, received, heard, and saw in me, and ____ will be with you.",
+     "answer": "the God of peace",
+     "wrong": [
+      "the grace of Christ",
+      "the joy of the Lord",
+      "the Spirit of truth"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I have learned the secret both to be filled and ____, both to abound and to be in need.",
+     "answer": "to be hungry",
+     "wrong": [
+      "to be thirsty",
+      "to be weary",
+      "to be alone"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says the Philippians had never taken any thought for him until now.",
+     "answer": false,
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul calls the gifts from the Philippians a sacrifice well pleasing to God.",
+     "answer": true,
+     "v": 18
     }
    ]
   }

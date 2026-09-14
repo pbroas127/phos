@@ -112,6 +112,80 @@
      "q": "The LORD says the children of Israel will be as many as the stars of the sky.",
      "answer": false,
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the LORD tell Hosea to take a wife of prostitution?",
+     "options": [
+      "Because the land commits great adultery",
+      "Because Hosea had sinned against him",
+      "Because Judah had turned to Egypt",
+      "Because the priests were corrupt"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "On which house will the LORD avenge the blood of Jezreel?",
+     "options": [
+      "The house of Jehu",
+      "The house of Ahab",
+      "The house of Omri",
+      "The house of Saul"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "On which house did the LORD say he would still have mercy?",
+     "options": [
+      "The house of Judah",
+      "The house of Israel",
+      "The house of Jehu",
+      "The house of Levi"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Go, take for yourself a wife of prostitution and ____.",
+     "answer": "children of unfaithfulness",
+     "wrong": [
+      "a household of idols",
+      "sons of the covenant",
+      "children of the nations"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Yet a little while, and I will cause the kingdom of ____ to cease.",
+     "answer": "the house of Israel",
+     "wrong": [
+      "the house of Judah",
+      "the sons of Jeroboam",
+      "the house of Ahab"
+     ],
+     "v": 4
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD says he will break the bow of Israel in the valley of Achor.",
+     "answer": false,
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Hosea's father was named Beeri.",
+     "answer": true,
+     "v": 1
     }
    ]
   },
@@ -226,6 +300,85 @@
      "q": "The LORD says he will cause her feasts, new moons, and Sabbaths to cease.",
      "answer": true,
      "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What are the people told to say to their sisters?",
+     "options": [
+      "My loved one!",
+      "My people!",
+      "My daughter!",
+      "My chosen one!"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does she call her vines and fig trees?",
+     "options": [
+      "Wages her lovers gave her",
+      "Gifts from the LORD",
+      "Her inheritance from her fathers",
+      "Offerings for Baal"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the LORD break out of the land?",
+     "options": [
+      "The bow, the sword, and the battle",
+      "The idols and the altars",
+      "The chariots and the horses",
+      "The thorns and the thistles"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did she deck herself with when she burned incense to the Baals?",
+     "options": [
+      "Her earrings and her jewels",
+      "Fine linen and silk",
+      "A crown of gold",
+      "Anklets and bracelets"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will tell those who were not my people, 'You are my people;' and they will say, '____!'",
+     "answer": "You are My God",
+     "wrong": [
+      "Blessed be the LORD",
+      "We will return",
+      "You are our King"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For I will take away ____ out of her mouth, and they will no longer be mentioned by name.",
+     "answer": "the names of the Baals",
+     "wrong": [
+      "the lies of her lovers",
+      "the praise of the idols",
+      "the words of Egypt"
+     ],
+     "v": 17
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says he will betroth her to himself in faithfulness, and she shall know the LORD.",
+     "answer": true,
+     "v": 20
     }
    ]
   },
@@ -292,6 +445,37 @@
      "d": 2,
      "q": "Hosea tells the woman she may leave him and be with another man.",
      "answer": false,
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How long did Hosea tell the woman she would stay with him?",
+     "options": [
+      "Many days",
+      "Seven years",
+      "Until the harvest",
+      "Forty days"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They shall come ____ to the LORD and to his blessings in the last days.",
+     "answer": "with trembling",
+     "wrong": [
+      "with singing",
+      "with offerings",
+      "with rejoicing"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Hosea promised that he would also be faithful toward the woman.",
+     "answer": true,
      "v": 3
     }
    ]
@@ -403,6 +587,85 @@
      "q": "The LORD says he will punish the daughters and brides, but not the men.",
      "answer": false,
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which sins does the LORD list in the land?",
+     "options": [
+      "Cursing, lying, murder, and stealing",
+      "Gluttony and laziness",
+      "Sorcery and witchcraft",
+      "Greed and gossip"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where do the people sacrifice and burn incense?",
+     "options": [
+      "On mountaintops and hills, under trees",
+      "In the courts of the temple",
+      "In their own houses",
+      "Beside the rivers"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What will the LORD change their glory into?",
+     "options": [
+      "Shame",
+      "Dust",
+      "Mourning",
+      "Ashes"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the LORD say the priests feed on?",
+     "options": [
+      "The sin of my people",
+      "The fat of the offerings",
+      "The bread of the temple",
+      "The tithes of the land"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Because you have forgotten your God's law, I will also ____.",
+     "answer": "forget your children",
+     "wrong": [
+      "hide my face",
+      "tear down your altars",
+      "send you into exile"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They will eat, and ____.",
+     "answer": "not have enough",
+     "wrong": [
+      "be filled with sorrow",
+      "grow fat and proud",
+      "forget their God"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD says the prophet will also stumble with the people in the night.",
+     "answer": true,
+     "v": 5
     }
    ]
   },
@@ -506,6 +769,80 @@
      "q": "Judah will not stumble along with Israel and Ephraim.",
      "answer": false,
      "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where is the cornet to be blown?",
+     "options": [
+      "In Gibeah",
+      "In Bethel",
+      "In Jerusalem",
+      "In Samaria"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How will the LORD pour out his wrath on the princes of Judah?",
+     "options": [
+      "Like water",
+      "Like fire",
+      "Like hail",
+      "Like a storm"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the LORD say will devour them with their fields?",
+     "options": [
+      "The new moon",
+      "The east wind",
+      "The locust",
+      "The sword"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Ephraim will become ____ in the day of rebuke.",
+     "answer": "a desolation",
+     "wrong": [
+      "a laughingstock",
+      "a wilderness",
+      "a heap of ruins"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Ephraim is oppressed, he is crushed in judgment, because he is intent in ____.",
+     "answer": "his pursuit of idols",
+     "wrong": [
+      "his love of wine",
+      "his trust in Egypt",
+      "his search for riches"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD calls the priests, the house of Israel, and the house of the king to listen.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says Israel is hidden from him.",
+     "answer": false,
+     "v": 3
     }
    ]
   },
@@ -609,6 +946,80 @@
      "q": "The LORD says his judgments are like a gentle rain.",
      "answer": false,
      "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the LORD ask Ephraim and Judah?",
+     "options": [
+      "What shall I do to you?",
+      "Where have you gone?",
+      "Why have you forsaken me?",
+      "Who is your king?"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "With what does the LORD say he killed them?",
+     "options": [
+      "The words of his mouth",
+      "A great plague",
+      "The sword of Assyria",
+      "Fire from heaven"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the LORD say is appointed for Judah?",
+     "options": [
+      "A harvest",
+      "A famine",
+      "A new king",
+      "A sword"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Let's press on to know the LORD. As surely as ____, the LORD will appear.",
+     "answer": "the sun rises",
+     "wrong": [
+      "the rain falls",
+      "the grass grows",
+      "the morning comes"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Therefore I have cut them to pieces ____.",
+     "answer": "with the prophets",
+     "wrong": [
+      "with the sword",
+      "by the nations",
+      "in my anger"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The people say that once the LORD raises them up, they will live before him.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD says he has seen a horrible thing in the house of Judah.",
+     "answer": false,
+     "v": 10
     }
    ]
   },
@@ -712,6 +1123,80 @@
      "q": "The people consider in their hearts that the LORD remembers all their wickedness.",
      "answer": false,
      "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How do the people make the king glad?",
+     "options": [
+      "With their wickedness",
+      "With gifts of gold",
+      "With songs and dancing",
+      "With victories in battle"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What have strangers devoured from Ephraim?",
+     "options": [
+      "His strength",
+      "His harvest",
+      "His cattle",
+      "His cities"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why will their princes fall by the sword?",
+     "options": [
+      "For the rage of their tongue",
+      "For their love of Egypt",
+      "For breaking the covenant",
+      "For killing the priests"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "When they go, I will spread my net on them. I will bring them down like ____.",
+     "answer": "the birds of the sky",
+     "wrong": [
+      "the stars of heaven",
+      "the leaves in autumn",
+      "the rain from the clouds"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "All their kings have fallen. There is no one among them ____.",
+     "answer": "who calls to me",
+     "wrong": [
+      "who fears the LORD",
+      "who does good",
+      "who seeks justice"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Their anger smolders all night, and in the morning it burns as a flaming fire.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD says he has no desire to redeem them.",
+     "answer": false,
+     "v": 13
     }
    ]
   },
@@ -815,6 +1300,85 @@
      "q": "Ephraim multiplied altars for sinning.",
      "answer": true,
      "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What is the prophet told to put to his lips?",
+     "options": [
+      "The trumpet",
+      "A cup of wine",
+      "A live coal",
+      "A reed pipe"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What do the people cry to the LORD?",
+     "options": [
+      "My God, we, Israel, acknowledge you!",
+      "Save us from Assyria!",
+      "Why have you forsaken us?",
+      "Return to your house, LORD!"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did they use to make themselves idols?",
+     "options": [
+      "Their silver and their gold",
+      "Bronze and iron",
+      "Wood and stone",
+      "Their earrings and jewels"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What happens if the stalk does yield a head of grain?",
+     "options": [
+      "Strangers will swallow it up",
+      "Locusts will eat it",
+      "It will rot in the field",
+      "The priests will take it"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The workman made it, and ____.",
+     "answer": "it is no God",
+     "wrong": [
+      "it is very costly",
+      "they bowed down to it",
+      "it stands in Samaria"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Israel is swallowed up. Now they are among the nations like ____.",
+     "answer": "a worthless thing",
+     "wrong": [
+      "a lost sheep",
+      "a broken vessel",
+      "a wandering stranger"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Israel has cast off that which is good, and the enemy will pursue him.",
+     "answer": true,
+     "v": 3
     }
    ]
   },
@@ -918,6 +1482,80 @@
      "q": "They have deeply corrupted themselves, as in the days of Gibeah.",
      "answer": true,
      "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which city will bury them when they flee destruction?",
+     "options": [
+      "Memphis",
+      "Nineveh",
+      "Damascus",
+      "Babylon"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Ephraim is compared to which city, planted in a pleasant place?",
+     "options": [
+      "Tyre",
+      "Sidon",
+      "Jericho",
+      "Nineveh"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What will their sacrifices be like to them?",
+     "options": [
+      "The bread of mourners",
+      "Ashes in the mouth",
+      "Sour wine",
+      "Dry chaff"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Ephraim is struck. Their root has dried up. ____.",
+     "answer": "They will bear no fruit",
+     "wrong": [
+      "They will wither away",
+      "Their branches will fall",
+      "They will be uprooted"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The days of visitation have come. ____ have come.",
+     "answer": "The days of reckoning",
+     "wrong": [
+      "The days of mourning",
+      "The days of darkness",
+      "The days of harvest"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The threshing floor and the wine press will feed them.",
+     "answer": false,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The LORD says woe to them when he departs from them.",
+     "answer": true,
+     "v": 12
     }
    ]
   },
@@ -1021,6 +1659,85 @@
      "q": "As Israel's land prospered, they tore down their sacred stones.",
      "answer": false,
      "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What will the people say they have no longer?",
+     "options": [
+      "A king",
+      "A temple",
+      "A prophet",
+      "Rain"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Judgment springs up like what in the furrows of the field?",
+     "options": [
+      "Poisonous weeds",
+      "Stinging nettles",
+      "Wild grapes",
+      "Dry stubble"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When will the king of Israel be destroyed?",
+     "options": [
+      "At daybreak",
+      "At midnight",
+      "At the new moon",
+      "At harvest time"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What are the inhabitants of Samaria in terror for?",
+     "options": [
+      "The calves of Beth Aven",
+      "The walls of their city",
+      "The king of Judah",
+      "The harvest of their fields"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Sow to yourselves in righteousness, ____.",
+     "answer": "reap according to kindness",
+     "wrong": [
+      "gather in peace",
+      "plant your vineyards",
+      "reap a great harvest"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You have eaten the fruit of lies, for you trusted in your way, in ____.",
+     "answer": "the multitude of your mighty men",
+     "wrong": [
+      "the strength of your chariots",
+      "the wealth of your cities",
+      "the gods of the nations"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Judah will plow, and Ephraim will break his clods.",
+     "answer": false,
+     "v": 11
     }
    ]
   },
@@ -1124,6 +1841,80 @@
      "q": "When the LORD roars like a lion, the children will come trembling from the east.",
      "answer": false,
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "To whom did they sacrifice?",
+     "options": [
+      "The Baals",
+      "Molech",
+      "The sun and moon",
+      "The calf of Dan"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the LORD do when he bent down to him?",
+     "options": [
+      "He fed him",
+      "He lifted him up",
+      "He carried him",
+      "He kissed him"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What will the sword destroy?",
+     "options": [
+      "The bars of their gates",
+      "Their vineyards",
+      "Their temples",
+      "Their flocks"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will settle them ____, says the LORD.",
+     "answer": "in their houses",
+     "wrong": [
+      "in the land of Canaan",
+      "beside the waters",
+      "in Jerusalem forever"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Ephraim surrounds me with falsehood, and the house of Israel ____.",
+     "answer": "with deceit",
+     "wrong": [
+      "with idols",
+      "with violence",
+      "with empty words"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Because they call to the Most High, he will exalt them.",
+     "answer": false,
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD says he will not come in wrath.",
+     "answer": true,
+     "v": 9
     }
    ]
   },
@@ -1227,6 +2018,80 @@
      "q": "Jacob struggled with the angel and lost.",
      "answer": false,
      "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "With whom do they make a covenant?",
+     "options": [
+      "Assyria",
+      "Babylon",
+      "Moab",
+      "Edom"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where do they sacrifice bulls?",
+     "options": [
+      "In Gilgal",
+      "In Mizpah",
+      "In Dan",
+      "In Shiloh"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How will the LORD again make them dwell?",
+     "options": [
+      "In tents",
+      "In caves",
+      "In fortified cities",
+      "In the houses of strangers"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Even the LORD, the God of Armies. The LORD is ____!",
+     "answer": "his name of renown",
+     "wrong": [
+      "our strength and song",
+      "the God of our fathers",
+      "the King of glory"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I have also spoken to the prophets, and ____.",
+     "answer": "I have multiplied visions",
+     "wrong": [
+      "I have sent many dreams",
+      "I have written my law",
+      "they have not listened"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD also has a controversy with Judah.",
+     "answer": true,
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The LORD says Ephraim's contempt will go unpunished.",
+     "answer": false,
+     "v": 14
     }
    ]
   },
@@ -1330,6 +2195,80 @@
      "q": "A west wind from the sea will dry up Ephraim's spring and fountain.",
      "answer": false,
      "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Through whom did Ephraim become guilty?",
+     "options": [
+      "Baal",
+      "Molech",
+      "Chemosh",
+      "Dagon"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the LORD tear when he meets them?",
+     "options": [
+      "The covering of their heart",
+      "Their garments",
+      "Their city walls",
+      "Their altars"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why is Ephraim called an unwise son?",
+     "options": [
+      "He doesn't come to the opening of the womb",
+      "He wastes his inheritance",
+      "He despises his father",
+      "He listens to foolish friends"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "You are destroyed, Israel, because you are against me, ____.",
+     "answer": "against your helper",
+     "wrong": [
+      "against your brothers",
+      "against your own soul",
+      "against my prophets"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Where is your king now, that he may ____ in all your cities?",
+     "answer": "save you",
+     "wrong": [
+      "fight for you",
+      "rule over you",
+      "defend you"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The guilt of Ephraim has been washed away.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The LORD says compassion will be hidden from his eyes.",
+     "answer": true,
+     "v": 14
     }
    ]
   },
@@ -1433,6 +2372,80 @@
      "q": "Israel promises to keep riding on horses and to call the work of their hands 'Our gods.'",
      "answer": false,
      "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why is Israel told to return to the LORD?",
+     "options": [
+      "They have fallen because of their sin",
+      "Their enemies are at the gates",
+      "The harvest has failed",
+      "The prophets have been killed"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Those who dwell in his shade will blossom like what?",
+     "options": [
+      "The vine",
+      "The rose",
+      "The almond tree",
+      "The palm"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Those who dwell in his shade will have a fragrance like what?",
+     "options": [
+      "The wine of Lebanon",
+      "Myrrh from Sheba",
+      "Incense in the temple",
+      "Oil on the altar"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I will heal ____.",
+     "answer": "their waywardness",
+     "wrong": [
+      "their broken land",
+      "their wounded hearts",
+      "all their diseases"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For in you ____ finds mercy.",
+     "answer": "the fatherless",
+     "wrong": [
+      "the humble soul",
+      "the poor widow",
+      "the weary stranger"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The LORD asks Ephraim, 'What have I to do any more with idols?'",
+     "answer": true,
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The chapter asks, 'Who is strong, that he may understand these things?'",
+     "answer": false,
+     "v": 9
     }
    ]
   }

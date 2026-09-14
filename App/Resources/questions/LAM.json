@@ -9,7 +9,14 @@
 {"t":"blank","d":2,"q":"\"The Lord has trodden the virgin daughter of Judah as ____.\"","answer":"in a wine press","wrong":["grain on a threshing floor","dust in the streets","straw under the feet"],"v":15},
 {"t":"blank","d":3,"q":"\"The LORD is righteous, for I have ____.\"","answer":"rebelled against his commandment","wrong":["forgotten his holy covenant","turned to other lovers","despised his holy name"],"v":18},
 {"t":"tf","d":1,"q":"The chapter says Jerusalem has grievously sinned and so has become unclean.","answer":true,"v":8},
-{"t":"tf","d":3,"q":"When the city called for her lovers, they came and helped her.","answer":false,"v":19}
+{"t":"tf","d":3,"q":"When the city called for her lovers, they came and helped her.","answer":false,"v":19},
+{"t":"choice","d":1,"q":"What does the city do bitterly in the night?","options":["She weeps","She keeps watch on the walls","She sings of her former glory","She lights fires on the hills"],"v":2},
+{"t":"choice","d":1,"q":"Where does the chapter say Judah has gone?","options":["Into captivity","Down to Egypt","Up into the mountains","Out into the wilderness"],"v":3},
+{"t":"choice","d":2,"q":"What has the LORD sent from on high into the speaker's bones?","options":["Fire","Sickness","A sword","Frost"],"v":13},
+{"t":"choice","d":2,"q":"What does the city say all her friends have become?","options":["Her enemies","Her masters","Strangers to her","Captives with her"],"v":2},
+{"t":"blank","d":3,"q":"\"The yoke of my transgressions is bound by his hand... They have come up on ____.\"","answer":"my neck","wrong":["my head","my shoulders","my back"],"v":14},
+{"t":"blank","d":2,"q":"\"My eye, my eye ____, because the comforter who should refresh my soul is far from me.\"","answer":"runs down with water","wrong":["is dim with weeping","fails from sorrow","cannot rest at night"],"v":16},
+{"t":"tf","d":3,"q":"The speaker says that abroad the sword bereaves, but at home there is peace.","answer":false,"v":20}
 ]},
 "2":{"keyVerse":17,"questions":[
 {"t":"choice","d":1,"q":"In chapter 2, who is described as acting like an enemy against Israel?","options":["The Lord","The king of Babylon","The false prophets","Edom"],"v":5},
@@ -21,7 +28,14 @@
 {"t":"blank","d":3,"q":"\"Arise, cry out in the night... Pour out your heart ____ before the face of the Lord.\"","answer":"like water","wrong":["like wine","like smoke","like oil"],"v":19},
 {"t":"choice","d":3,"q":"Passersby mock Jerusalem as the city once called what?","options":["The perfection of beauty, the joy of the whole earth","The city of the great King","The crown of the nations","The holy mountain of peace"],"v":15},
 {"t":"tf","d":1,"q":"Chapter 2 says the Lord took pity on Jacob's dwellings as he destroyed them.","answer":false,"v":2},
-{"t":"tf","d":3,"q":"The chapter says the LORD caused solemn assembly and Sabbath to be forgotten in Zion.","answer":true,"v":6}
+{"t":"tf","d":3,"q":"The chapter says the LORD caused solemn assembly and Sabbath to be forgotten in Zion.","answer":true,"v":6},
+{"t":"choice","d":1,"q":"What has the Lord covered the daughter of Zion with in his anger?","options":["A cloud","Darkness","Ashes","Sackcloth"],"v":1},
+{"t":"choice","d":2,"q":"What has the Lord done to his altar?","options":["He has cast it off","He has cleansed it","He has moved it to the hills","He has given it to the priests"],"v":7},
+{"t":"choice","d":3,"q":"Where does the speaker ask if the priest and prophet should be killed?","options":["In the sanctuary of the Lord","At the city gate","In the streets of the city","On the walls of Zion"],"v":20},
+{"t":"blank","d":2,"q":"\"O wall of the daughter of Zion, let tears run down ____ day and night.\"","answer":"like a river","wrong":["like the rain","like a flood","like a spring"],"v":18},
+{"t":"blank","d":3,"q":"\"Her king and her princes are among the nations ____.\"","answer":"where the law is not","wrong":["where no one knows them","as slaves and servants","far from their own land"],"v":9},
+{"t":"tf","d":2,"q":"The writer says the young children and infants swoon in the fields outside the city.","answer":false,"v":11},
+{"t":"tf","d":1,"q":"The chapter says no one escaped or remained in the day of the LORD's anger.","answer":true,"v":22}
 ]},
 "3":{"keyVerse":23,"questions":[
 {"t":"choice","d":1,"q":"How does chapter 3 begin describing the speaker?","options":["A man who has seen affliction by the rod of his wrath","A prophet sent to warn the city","A king who has lost his throne","A priest weeping in the temple"],"v":1},
@@ -33,7 +47,14 @@
 {"t":"blank","d":3,"q":"\"Let us search and try our ways, and ____.\"","answer":"turn again to the LORD","wrong":["cry out to the Most High","put away our idols","remember his holy covenant"],"v":40},
 {"t":"order","d":3,"items":["He describes his affliction from God","He recalls the LORD's mercies and has hope","He calls the people to search their ways","He asks the LORD to repay his enemies"],"v":1},
 {"t":"tf","d":1,"q":"The speaker says, \"The LORD is my portion,\" and so he will hope in him.","answer":true,"v":24},
-{"t":"tf","d":2,"q":"Chapter 3 says the Lord afflicts the children of men willingly.","answer":false,"v":33}
+{"t":"tf","d":2,"q":"Chapter 3 says the Lord afflicts the children of men willingly.","answer":false,"v":33},
+{"t":"choice","d":1,"q":"Why does the speaker say we are not consumed?","options":["Because of the LORD's loving kindnesses","Because we have kept his law","Because our enemies grew weak","Because the prophets prayed for us"],"v":22},
+{"t":"choice","d":2,"q":"What does the speaker say God does when he cries and calls for help?","options":["He shuts out his prayer","He answers him at once","He sends a prophet to him","He tells him to be silent"],"v":8},
+{"t":"choice","d":3,"q":"What does the speaker say God has stuffed him with?","options":["Wormwood","Salt","Dust","Sour grapes"],"v":15},
+{"t":"choice","d":2,"q":"The speaker says his enemies chased him relentlessly like what?","options":["A bird","A deer","A lamb","A fox"],"v":52},
+{"t":"blank","d":1,"q":"\"For the Lord will not ____.\"","answer":"cast off forever","wrong":["forget his people","hide his face","remember our sins"],"v":31},
+{"t":"blank","d":2,"q":"\"You came near in the day that I called on you. You said, ____\"","answer":"\"Don't be afraid.\"","wrong":["\"I have heard you.\"","\"I am with you.\"","\"Your sins are forgiven.\""],"v":57},
+{"t":"tf","d":3,"q":"The speaker says he has become a derision to all his people, and their song all day long.","answer":true,"v":14}
 ]},
 "4":{"keyVerse":22,"questions":[
 {"t":"choice","d":1,"q":"How does chapter 4 open its lament?","options":["The gold has become dim","The city sits solitary","The Lord has covered Zion with a cloud","Remember, LORD, what has come on us"],"v":1},
@@ -45,7 +66,14 @@
 {"t":"blank","d":3,"q":"\"Our pursuers were swifter than ____.\"","answer":"the eagles of the sky","wrong":["the horses of Egypt","the deer on the mountains","the wind in the wilderness"],"v":19},
 {"t":"choice","d":3,"q":"Which nation is told to rejoice now, though the cup will pass to it also?","options":["Edom","Moab","Egypt","Assyria"],"v":21},
 {"t":"tf","d":1,"q":"The chapter says the kings of the earth expected the enemy to enter Jerusalem's gates.","answer":false,"v":12},
-{"t":"tf","d":3,"q":"The people watched in vain for a nation that could not save them.","answer":true,"v":17}
+{"t":"tf","d":3,"q":"The people watched in vain for a nation that could not save them.","answer":true,"v":17},
+{"t":"choice","d":1,"q":"Why does the tongue of the nursing child cling to the roof of his mouth?","options":["Thirst","Fear","Sickness","Weeping"],"v":4},
+{"t":"choice","d":2,"q":"What do those who were brought up in purple now do?","options":["Embrace dunghills","Beg at the city gates","Serve as slaves in Babylon","Wander in the desert"],"v":5},
+{"t":"choice","d":2,"q":"The daughter of the people has become cruel like what?","options":["The ostriches in the wilderness","The wolves of the evening","The vultures of the sky","The lions in the thicket"],"v":3},
+{"t":"choice","d":3,"q":"Zion's nobles were once said to be purer than what?","options":["Snow","Gold","Silver","Fine linen"],"v":7},
+{"t":"blank","d":1,"q":"\"The punishment of your iniquity is accomplished, daughter of Zion. He will no more ____.\"","answer":"carry you away into captivity","wrong":["hide his face from you","remember your many sins","leave you without comfort"],"v":22},
+{"t":"blank","d":3,"q":"\"Their appearance is blacker than a coal... Their skin ____.\"","answer":"clings to their bones","wrong":["is burned by the sun","hangs loose on them","is covered with sores"],"v":8},
+{"t":"tf","d":2,"q":"The people say their end is still far off.","answer":false,"v":18}
 ]},
 "5":{"keyVerse":21,"questions":[
 {"t":"choice","d":1,"q":"What does chapter 5 ask the LORD to do first?","options":["Remember what has come on us","Destroy our enemies","Rebuild the temple","Bring back our king"],"v":1},
@@ -57,6 +85,13 @@
 {"t":"blank","d":3,"q":"\"The crown has fallen from our head. ____, for we have sinned!\"","answer":"Woe to us","wrong":["Have mercy","Forgive us","Remember us"],"v":16},
 {"t":"choice","d":3,"q":"Which nations did the people give their hands to for bread?","options":["The Egyptians and the Assyrians","The Babylonians and the Edomites","The Moabites and the Ammonites","The Philistines and the Egyptians"],"v":6},
 {"t":"tf","d":1,"q":"Chapter 5 says the LORD remains forever and his throne is from generation to generation.","answer":true,"v":19},
-{"t":"tf","d":2,"q":"The chapter says the young men still play their music at the gate.","answer":false,"v":14}
+{"t":"tf","d":2,"q":"The chapter says the young men still play their music at the gate.","answer":false,"v":14},
+{"t":"choice","d":1,"q":"To whom has the people's inheritance been turned over?","options":["Strangers","The priests","The king of Babylon","Their neighbors in Edom"],"v":2},
+{"t":"choice","d":2,"q":"What do the young men now carry?","options":["Millstones","Swords and spears","Water jars","Stones for building"],"v":13},
+{"t":"choice","d":2,"q":"What has happened to the people's dance?","options":["It is turned into mourning","It is forbidden by their rulers","It is forgotten in captivity","It is only done in secret"],"v":15},
+{"t":"choice","d":3,"q":"Why do the people get their bread at the peril of their lives?","options":["Because of the sword in the wilderness","Because of wild beasts in the fields","Because their masters beat them","Because the fields are guarded"],"v":9},
+{"t":"blank","d":1,"q":"\"We are orphans and fatherless. Our mothers are ____.\"","answer":"as widows","wrong":["in captivity","without bread","far from home"],"v":3},
+{"t":"blank","d":3,"q":"\"Our skin is black like an oven, because of ____.\"","answer":"the burning heat of famine","wrong":["the sun in the wilderness","the fires of the enemy","the smoke of the city"],"v":10},
+{"t":"tf","d":2,"q":"The chapter says princes were hanged up by their hands.","answer":true,"v":12}
 ]}
 }}

@@ -1,6 +1,6 @@
 # Fills the Phos App Store listing through the App Store Connect API.
 # The app record itself must exist first (Apple only allows creating it on the website).
-# Usage: python asc_fill.py [--screenshots-only]
+# Usage: python asc_fill.py [--screenshots-only | --text-only]
 import hashlib, json, pathlib, sys, urllib.request
 
 HERE = pathlib.Path(__file__).parent
@@ -150,4 +150,5 @@ if __name__ == "__main__":
         fill_info(aid)
         fill_version(aid)
         fill_pricing(aid)
-    upload_screenshots(aid)
+    if "--text-only" not in sys.argv:
+        upload_screenshots(aid)

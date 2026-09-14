@@ -8,6 +8,16 @@ struct SettingsScreen: View {
     @State private var wizardShown = DemoScreen.requested == .lockEditor
     @State private var libraryShown = false
 
+    /// The reminder time as a Date for the picker, stored as minutes after midnight.
+    private var reminderTime: Binding<Date> {
+        Binding {
+            Calendar.current.date(bySettingHour: model.settings.reminderMinutes / 60, minute: model.settings.reminderMinutes % 60, second: 0, of: Date()) ?? Date()
+        } set: { date in
+            let c = Calendar.current.dateComponents([.hour, .minute], from: date)
+            model.settings.reminderMinutes = (c.hour ?? 20) * 60 + (c.minute ?? 0)
+        }
+    }
+
     var body: some View {
         @Bindable var model = model
         NavigationStack {
@@ -66,10 +76,27 @@ struct SettingsScreen: View {
                         .listRowBackground(Color.clear)
                 }
 
+                Section {
+                    Toggle("Daily reminder", isOn: $model.settings.reminderOn)
+                    if model.settings.reminderOn {
+                        DatePicker("Time", selection: reminderTime, displayedComponents: .hourAndMinute)
+                        Button("Send a sample now") { ReminderScheduler.sendSample(model) }
+                    }
+                } header: {
+                    Text("Reminders")
+                } footer: {
+                    Text("One friendly nudge a day, only on days you have not read yet. It changes with your streak and your next chapter.")
+                }
+
+                Section("Backup") {
+                    BackupRow()
+                }
+
                 Section("About") {
                     Link("Help and support", destination: URL(string: "https://phos-app-sigma.vercel.app/support")!)
                     Link("Privacy policy", destination: URL(string: "https://phos-app-sigma.vercel.app/privacy")!)
                     LabeledContent("Bible text", value: "World English Bible")
+                    NavigationLink("Acknowledgments") { AcknowledgmentsView() }
                     LabeledContent("Version", value: Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0")
                 }
             }
@@ -82,6 +109,14 @@ struct SettingsScreen: View {
             .onChange(of: model.settings.preferredRead) { _, _ in model.savePreferences() }
             .onChange(of: model.settings.preferredReflect) { _, _ in model.savePreferences() }
             .onChange(of: model.settings.allowAlreadyRead) { _, _ in model.savePreferences() }
+            .onChange(of: model.settings.reminderOn) { _, on in
+                model.savePreferences()
+                if on { Task { _ = await Notifier.requestPermission(); ReminderScheduler.reschedule(model) } } else { ReminderScheduler.reschedule(model) }
+            }
+            .onChange(of: model.settings.reminderMinutes) { _, _ in
+                model.savePreferences()
+                ReminderScheduler.reschedule(model)
+            }
             .sheet(isPresented: $wizardShown) {
                 LockWizard { model.createLock($0) }.environment(model)
             }
@@ -335,7 +370,7 @@ struct ProtectionFields: View {
             }
             Divider()
             Toggle("Block deleting apps while locked", isOn: $lock.protection.blockDeletion)
-            Text("While this lock is on, iOS will not let you delete any app, including Phos.").font(.caption).foregroundStyle(Theme.dim)
+            Text("While this lock is on, iOS will not let you delete any app, including Wick.").font(.caption).foregroundStyle(Theme.dim)
         }
         .sheet(isPresented: $passcodeShown) {
             PasscodeSetupSheet { code in
@@ -710,7 +745,7 @@ struct LockDetailView: View {
         case .open: return "Open right now"
         case .needsReading: return "Locked until today's reading"
         case .needsQuestion: return "Locked, one question opens it"
-        case .needsTap: return "Locked, tap to unlock in Phos"
+        case .needsTap: return "Locked, tap to unlock in Wick"
         case .usedUp: return "No unlocks left today"
         case .strict: return "Strict, passes only"
         }
@@ -915,3 +950,38 @@ struct ShieldPreview: View {
         .background(Color(p.background), in: RoundedRectangle(cornerRadius: large ? 0 : 28, style: .continuous))
     }
 }
+
+/// Credits and licenses for the open source pieces inside Wick.
+struct AcknowledgmentsView: View {
+    private let items: [(String, String, String)] = [
+        ("World English Bible", "Public domain", "The Bible text used for reading, questions, and verses."),
+        ("Kokoro 82M voice model", "Apache License 2.0", "Natural voices by hexgrad, downloaded only when you choose a natural voice."),
+        ("KokoroSwift", "MIT License", "Swift port of Kokoro by mlalma. Copyright (c) the KokoroSwift authors."),
+        ("MisakiSwift", "Apache License 2.0", "Pronunciation engine by mlalma, based on Misaki by hexgrad."),
+        ("MLX Swift", "MIT License", "Machine learning framework by Apple, used to run the natural voices on device."),
+        ("MLXUtilsLibrary", "MIT License", "Helpers for loading voice files, by mlalma."),
+        ("ZIPFoundation", "MIT License", "Reads the bundled voice archive. Copyright (c) Thomas Zoechling."),
+        ("Swift Numerics", "Apache License 2.0", "Math support used by MLX Swift. Copyright (c) Apple Inc.")
+    ]
+
+    var body: some View {
+        List {
+            Section {
+                ForEach(items, id: \.0) { item in
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(item.0).font(.headline).foregroundStyle(Theme.ink)
+                        Text(item.1).font(.subheadline.weight(.semibold)).foregroundStyle(Theme.gold)
+                        Text(item.2).font(.footnote).foregroundStyle(Theme.dim)
+                    }
+                    .padding(.vertical, 2)
+                }
+            } footer: {
+                Text("MIT License: Permission is hereby granted, free of charge, to any person obtaining a copy of this software, to deal in the software without restriction, subject to including the copyright notice and this permission notice in all copies. The software is provided as is, without warranty of any kind.\n\nApache License 2.0: Licensed under the Apache License, Version 2.0. You may obtain a copy at apache.org/licenses. Distributed on an as is basis, without warranties or conditions of any kind.")
+            }
+        }
+        .scrollContentBackground(.hidden)
+        .background(Theme.paper.ignoresSafeArea())
+        .navigationTitle("Acknowledgments")
+    }
+}
+

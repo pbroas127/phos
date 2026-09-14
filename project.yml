@@ -34,6 +34,7 @@ targets:
         com.apple.security.application-groups:
           - group.com.peterbroas.phos
         com.apple.developer.family-controls: true
+        com.apple.developer.ubiquity-kvstore-identifier: GN2K85HBR8.com.peterbroas.phos
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.peterbroas.phos
@@ -46,15 +47,15 @@ targets:
     info:
       path: App/Info.plist
       properties:
-        CFBundleDisplayName: Phos
+        CFBundleDisplayName: Wick
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         ITSAppUsesNonExemptEncryption: false
         CFBundleURLTypes:
           - CFBundleURLName: com.peterbroas.phos
             CFBundleURLSchemes: [phos]
-        NSMicrophoneUsageDescription: Phos listens while you read a chapter out loud or speak a reflection.
-        NSSpeechRecognitionUsageDescription: Phos turns your voice into text on your iPhone to follow along as you read out loud and to save spoken reflections.
+        NSMicrophoneUsageDescription: Wick listens while you read a chapter out loud or speak a reflection.
+        NSSpeechRecognitionUsageDescription: Wick turns your voice into text on your iPhone to follow along as you read out loud and to save spoken reflections.
         UILaunchScreen:
           UIColorName: LaunchBackground
           UIImageName: LaunchMark
@@ -100,7 +101,7 @@ targets:
     info:
       path: Widgets/Info.plist
       properties:
-        CFBundleDisplayName: Phos Widgets
+        CFBundleDisplayName: Wick Widgets
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         NSExtension:
@@ -130,7 +131,7 @@ targets:
     info:
       path: ShieldConfig/Info.plist
       properties:
-        CFBundleDisplayName: Phos Shield
+        CFBundleDisplayName: Wick Shield
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         NSExtension:
@@ -160,7 +161,7 @@ targets:
     info:
       path: ShieldAction/Info.plist
       properties:
-        CFBundleDisplayName: Phos Shield Action
+        CFBundleDisplayName: Wick Shield Action
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         NSExtension:
@@ -191,7 +192,7 @@ targets:
     info:
       path: Monitor/Info.plist
       properties:
-        CFBundleDisplayName: Phos Monitor
+        CFBundleDisplayName: Wick Monitor
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         NSExtension:
@@ -222,7 +223,7 @@ targets:
     info:
       path: Report/Info.plist
       properties:
-        CFBundleDisplayName: Phos Report
+        CFBundleDisplayName: Wick Report
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         UIUserInterfaceStyle: Light

@@ -356,6 +356,8 @@ final class AppModel {
         writeSnapshot()
         if settings.onboarded && !demo { LockEngine.sync(store: store, now: now) }
         checkAchievements()
+        ReminderScheduler.reschedule(self)
+        if settings.onboarded { CloudBackup.save(self) }
         WidgetCenter.shared.reloadAllTimelines()
     }
 
@@ -542,6 +544,8 @@ final class AppModel {
         clearDraft()
         for lock in waiting { unlock(lock, method: .reading) }
         checkAchievements()
+        ReminderScheduler.reschedule(self)
+        CloudBackup.save(self)
         lastUnlocked = waiting
         lastAfter = after
         return after

@@ -148,7 +148,7 @@ struct WeeklyUsageView: View {
                 }
             }
 
-            Text("Counts only the apps you lock in Phos. Data comes from Screen Time and never leaves your iPhone.")
+            Text("Counts only the apps you lock in Wick. Data comes from Screen Time and never leaves your iPhone.")
                 .font(.caption).foregroundStyle(dim)
         }
         .padding(20)

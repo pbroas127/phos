@@ -289,7 +289,7 @@ enum Achievements {
         journey("passion", "Passion Week", "Read the last days of Jesus in all four Gospels within one week: Matthew 26 to 28, Mark 14 to 16, Luke 22 to 24, and John 18 to 21.", "crown_thorns",
                 refs("MAT", 26...28) + refs("MRK", 14...16) + refs("LUK", 22...24) + refs("JHN", 18...21), days: 7),
         journey("shepherd", "The Good Shepherd", "Read Psalm 23, Ezekiel 34, Luke 15, and John 10 within one week.", "shepherd_staff", ["PSA.23", "EZK.34", "LUK.15", "JHN.10"], days: 7),
-        journey("phos", "Phos", "Follow the light: Genesis 1, Psalm 27, Isaiah 60, John 1, John 8, and 1 John 1 within two weeks.", "phos_emblem", ["GEN.1", "PSA.27", "ISA.60", "JHN.1", "JHN.8", "1JN.1"], days: 14),
+        journey("phos", "Let There Be Light", "Follow the light: Genesis 1, Psalm 27, Isaiah 60, John 1, John 8, and 1 John 1 within two weeks.", "phos_emblem", ["GEN.1", "PSA.27", "ISA.60", "JHN.1", "JHN.8", "1JN.1"], days: 14),
         journey("exodus", "The Exodus Road", "Read Exodus 12, 14, 16, and 20 within one week.", "manna_basket", refs("EXO", [12, 14, 16, 20]), days: 7),
         journey("giant", "Giant Slayer", "Read 1 Samuel 16 and 17 and Psalm 23 within one week.", "sling_stone", ["1SA.16", "1SA.17", "PSA.23"], days: 7),
         journey("babylon", "Faithful in Babylon", "Read Daniel 1 to 6 within one week.", "fiery_furnace", refs("DAN", 1...6), days: 7),
@@ -366,7 +366,7 @@ enum Achievements {
     ]
 
     static let ways: [Achievement] = [
-        Achievement(id: "ways.all", group: .ways, name: "Every Way", detail: "Read with a paper Bible, in Phos, out loud, and by listening.", art: "compass", goal: ReadMode.allCases.count) { $0.readModes.count },
+        Achievement(id: "ways.all", group: .ways, name: "Every Way", detail: "Read with a paper Bible, in Wick, out loud, and by listening.", art: "compass", goal: ReadMode.allCases.count) { $0.readModes.count },
         Achievement(id: "ways.aloud10", group: .ways, name: "Read Aloud", detail: "Read 10 chapters out loud.", art: "speaking_scroll", goal: 10) { $0.readModes[.speak] ?? 0 },
         Achievement(id: "ways.lector", group: .ways, name: "The Lector", detail: "Read 100 chapters out loud.", art: "lectern", goal: 100) { $0.readModes[.speak] ?? 0 },
         Achievement(id: "ways.listen", group: .ways, name: "Ears to Hear", detail: "Listen to 25 chapters.", art: "ear_waves", goal: 25) { $0.readModes[.listen] ?? 0 },

@@ -25,6 +25,8 @@ platform :ios do
       api_key: api_key,
       app_identifier: IDS,
       readonly: false,
+      # Set MATCH_FORCE=1 once after adding a capability, so profiles pick up the new entitlement.
+      force: ENV["MATCH_FORCE"] == "1",
       force_for_new_devices: false
     )
 

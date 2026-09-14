@@ -1,8 +1,8 @@
 {
   "bundleId": "com.peterbroas.phos",
   "sku": "phos-001",
-  "name": "Phos",
-  "fallbackName": "Phos: Bible Before Apps",
+  "name": "Wick: Bible Before Apps",
+  "fallbackName": "Wick Bible Before Apps",
   "subtitle": "Read first. Scroll later.",
   "privacyPolicyUrl": "https://phos-app-sigma.vercel.app/privacy",
   "supportUrl": "https://phos-app-sigma.vercel.app/support",
@@ -10,10 +10,10 @@
   "primaryCategory": "PRODUCTIVITY",
   "secondaryCategory": "REFERENCE",
   "copyright": "2026 Peter Broas",
-  "keywords": "bible,screen time,blocker,devotional,scripture,christian,app limit,reading plan,quiet time,faith",
-  "promotionalText": "Start the day in the Word. Phos keeps social media locked until you read today's chapter, reflect on it, and answer a few questions about it.",
-  "description": "Phos is Greek for light. It keeps your most distracting apps locked each morning until you have spent time in the Bible.\n\nHOW IT WORKS\n• Choose the apps that pull you in, like social media and video.\n• Each morning they lock at the time you pick.\n• Read today's chapter in your own Bible, read it in Phos, or listen to it.\n• Reflect by typing or speaking about what stood out. Paste is turned off.\n• Answer a few questions written for that exact chapter.\n• Your apps open for as long as you choose.\n\nQUESTIONS THAT PROVE YOU READ IT\nOver 4,600 questions cover the whole New Testament, Genesis, Psalms, and Proverbs. Multiple choice, fill in the blank phrases, put events in order, and true or false. They range from fair to genuinely challenging, and if you truly read the chapter, you will know the answers. Miss too many and Phos shows you the verses you missed, then lets you try new questions after a short wait.\n\nREFLECTION, NOT BUSYWORK\nType your thoughts, say them out loud, or answer three short prompts. Phos only counts the seconds you are actually talking, and checks that your reflection is really about the chapter. Everything you write is saved to your private journal.\n\nLATER IN THE DAY\nWhen your open time ends, one quick question brings your apps back. Midday questions can quote what you wrote that morning.\n\nYOUR RULES\nEvery rule is yours to set: words to type, seconds of talking, reading time, number of questions, how many you need right, and how long apps stay open, from five minutes to the rest of the day. Stricter changes apply right away. Easier changes wait a day, so a tired moment cannot undo your plan.\n\nALSO INCLUDED\n• Reading plans: John, Mark, Matthew, Luke, Acts, Paul's letters, the New Testament, Genesis, Psalms, and Proverbs\n• Plan card, reading path, and calendar views\n• Streaks, weekly Screen Time trends, and a reflection journal\n• The full World English Bible with the words of Jesus in red\n• Read aloud\n• Home Screen and Lock Screen widgets\n• Three emergency passes a month, and Phone, Messages, and Maps are never locked\n• Morning, midday, and evening schedules\n\nPRIVATE BY DESIGN\nNo account, no ads, no tracking, no servers. Apple's Screen Time keeps your app choices private, even from Phos, and your reflections never leave your iPhone.\n\n“Your word is a lamp to my feet, and a light for my path.” Psalm 119:105",
-  "reviewNotes": "No account or sign in is required.\n\nPhos uses the Family Controls framework with individual authorization so a person can lock their own distracting apps until they finish a daily Bible reading.\n\nTo test the full flow:\n1. Open Phos and go through setup. Tap Allow Screen Time access and approve with Face ID or passcode.\n2. Tap Choose apps to lock and pick any app, for example Safari or a game.\n3. Pick the Gospel of John plan and finish setup. The chosen app is now locked. Opening it shows the Phos lock screen.\n4. On that lock screen tap the unlock button. Apple does not allow a shield to open another app, so Phos posts a local notification. Tap it to open Phos.\n5. Tap Start reading, choose Read in Phos to read John 1 inside the app. During the first 24 hours after setup every rule change applies instantly, so you can set Minimum reading time to Off and Words to type to 20 under Settings, Unlock rules, to move faster.\n6. Type a short reflection about John 1 (mention John the Baptist, the Word, or the light), then answer the questions. Three correct answers unlock the apps for the chosen time.\n\nOther features: speaking a reflection uses the microphone and on device speech recognition. The weekly chart uses a DeviceActivityReport extension. Nothing leaves the device.\n\nBible text is the World English Bible, which is in the public domain.",
+  "keywords": "bible,screen time,app blocker,devotional,scripture,christian,reading plan,quiet time,streak,faith",
+  "promotionalText": "Keep your light burning. Wick keeps distracting apps locked until you read today's chapter, reflect on it, and answer a few questions about it.",
+  "description": "Wick keeps your most distracting apps locked until you have spent time in the Bible. Read a chapter, reflect on it, answer a few questions, and your apps open. Keep your light burning, one day at a time.\n\nHOW IT WORKS\n• Make a lock and pick the apps that pull you in, like social media, games, or video.\n• Choose when it locks: all day or certain hours, on the days you pick.\n• Read today's chapter in your own Bible, in Wick, out loud, or by listening.\n• Reflect by typing, speaking, or answering short prompts. Paste is turned off.\n• Answer questions written for that exact chapter.\n• Your apps open for as long as your lock allows.\n\nQUESTIONS FOR EVERY CHAPTER\nEvery one of the Bible's 1,189 chapters has its own questions, from Genesis to Revelation. Multiple choice, fill in the blank phrases, put events in order, and true or false. They range from fair to genuinely challenging, and if you truly read the chapter, you will know the answers. Miss too many and Wick shows the verses you missed, then gives you new questions after a short wait.\n\nREAD IT YOUR WAY\n• Paper Bible with a reading timer that keeps you honest\n• Read in Wick with the words of Jesus in red\n• Read it aloud: the words light up as you say them\n• Listen with iPhone voices or optional natural voices\n• A title for every chapter so you know what is coming\n\nLOCKS THAT FIT YOUR LIFE\nMake as many locks as you want, each with its own apps, days, hours, and rules. Unlock once for the day, answer a question every time, or allow only a few unlocks a day, shown as dots right on the lock screen. Choose how long each unlock lasts, from 30 seconds to the rest of the day. Protect your settings with a passcode, a waiting timer, a delay, or a commitment date, and even block deleting apps.\n\nTROPHIES AND STREAKS\nEarn more than 120 trophies for finishing books, themed journeys, streaks, perfect quizzes, holy days, and spending less time on your locked apps. Your closest trophies show up on the Today screen, and a friendly daily reminder helps you keep your streak.\n\nPLANS FOR EVERY SEASON\nRead any of the 66 books, the whole Bible, or short plans for hard seasons, big questions, and the great stories: anxiety, grief, doubt, temptation, who Jesus is, how to pray, the life of David, the story of Joseph, and many more.\n\nALSO INCLUDED\n• A private journal you can browse by date or by book\n• Weekly Screen Time trends for the apps you lock\n• Automatic backup to your own iCloud\n• Emergency passes for real emergencies\n• Home Screen and Lock Screen widgets\n• Phone, Messages, and Maps are never locked\n\nPRIVATE BY DESIGN\nNo account, no ads, no tracking. Apple's Screen Time keeps your app choices private, even from Wick, and your reflections stay on your iPhone and in your own iCloud.\n\n“Your word is a lamp to my feet, and a light for my path.” Psalm 119:105",
+  "reviewNotes": "No account or sign in is required.\n\nWick uses the Family Controls framework with individual authorization so a person can lock their own distracting apps until they finish a daily Bible reading.\n\nTo test the full flow:\n1. Open Wick and go through setup. Tap Allow Screen Time access and approve with Face ID or passcode.\n2. On Your first lock, tap Continue to open the lock editor. Enter a name, tap Choose, and pick any app, for example Safari. Tap Next through When it locks and How it unlocks, keeping the defaults.\n3. On Reading check, set Minimum reading time to Off and Words to type to 20 to move faster. On Protect this lock, choose None. Tap Create lock.\n4. Pick the Gospel of John and finish setup. Open the app you chose. The Wick lock screen appears.\n5. Tap the button on the lock screen. Apple does not allow a shield to open another app, so Wick posts a local notification. Tap it to open Wick.\n6. Tap Start reading, choose Read in Wick, and tap Finished the chapter. Type a short reflection about John 1 (mention John the Baptist, the Word, or the light), then answer the questions. Passing unlocks the app.\n\nShortcut: Settings, Reading, turn on Allow \"I already read it\" to skip straight to the reflection and questions.\n\nOther features: speaking a reflection and Read it aloud use the microphone with on device speech recognition. Natural voices are optional; the open source Kokoro voice model (Apache 2.0) downloads only if the person picks one. The daily reminder is a local notification. Backup uses the person's own iCloud key value storage. The weekly chart uses a DeviceActivityReport extension and usage thresholds come from a DeviceActivityMonitor extension. No data is sent to us.\n\nBible text is the World English Bible, which is in the public domain.",
   "reviewContact": {
     "firstName": "Peter",
     "lastName": "Broas",
@@ -31,43 +31,43 @@
       "file": "02-today.png",
       "shot": "today",
       "line1": "One chapter",
-      "line2": "every morning"
+      "line2": "every day"
     },
     {
-      "file": "03-reading.png",
-      "shot": "reading",
-      "line1": "Paper, in app,",
-      "line2": "or read aloud"
+      "file": "03-aloud.png",
+      "shot": "readAloud",
+      "line1": "Read it aloud,",
+      "line2": "words light up"
     },
     {
-      "file": "04-speak.png",
-      "shot": "speak",
+      "file": "04-reflect.png",
+      "shot": "reflect",
       "line1": "Say what",
       "line2": "stood out"
     },
     {
       "file": "05-quiz.png",
-      "shot": "quizBlank",
+      "shot": "quizChoice",
       "line1": "Questions that prove",
       "line2": "you read it"
     },
     {
-      "file": "06-pass.png",
-      "shot": "pass",
-      "line1": "Earn your",
-      "line2": "screen time"
+      "file": "06-trophies.png",
+      "shot": "trophies",
+      "line1": "Earn trophies",
+      "line2": "as you grow"
     },
     {
-      "file": "07-recall.png",
-      "shot": "recall",
-      "line1": "Later, one question",
-      "line2": "brings them back"
+      "file": "07-plans.png",
+      "shot": "library",
+      "line1": "A plan for every",
+      "line2": "season of life"
     },
     {
-      "file": "08-streak.png",
-      "shot": "streak",
-      "line1": "Build a streak",
-      "line2": "that matters"
+      "file": "08-journal.png",
+      "shot": "journal",
+      "line1": "Your journal,",
+      "line2": "by date or book"
     },
     {
       "file": "09-time.png",
@@ -76,8 +76,8 @@
       "line2": "shrink"
     },
     {
-      "file": "10-settings.png",
-      "shot": "settings",
+      "file": "10-locks.png",
+      "shot": "locks",
       "line1": "Your rules,",
       "line2": "your pace"
     }

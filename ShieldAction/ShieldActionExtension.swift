@@ -25,13 +25,13 @@ class ShieldActionExtension: ShieldActionDelegate {
         switch snap.reason {
         case .strict, .usedUp:
             content.title = "Emergency passes"
-            content.body = "Tap to open Phos if you really need in."
+            content.body = "Tap to open Wick if you really need in."
         case .recall:
             content.title = "One question"
             content.body = "Tap to answer a question about \(snap.chapterTitle)."
         case .tap:
             content.title = "Ready to unlock"
-            content.body = "Tap to open Phos and unlock."
+            content.body = "Tap to open Wick and unlock."
         case .reading, .none:
             content.title = "Today: \(snap.chapterTitle)"
             content.body = "Tap to read, reflect, and unlock your apps."

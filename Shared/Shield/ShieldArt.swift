@@ -68,10 +68,10 @@ enum ShieldArt {
             f.timeStyle = .short
             let time = lock.map { f.string(from: LockLogic.activeEnd($0, now: now)) } ?? "later"
             return ShieldCopy(eyebrow: lock?.name ?? "Strict hours", title: "Rest now.",
-                              body: "\(app) opens again at \(time).", isVerse: false, reference: nil, button: "Open Phos")
+                              body: "\(app) opens again at \(time).", isVerse: false, reference: nil, button: "Open Wick")
         case .usedUp:
             return ShieldCopy(eyebrow: "Daily limit reached", title: "Enough for today.",
-                              body: "Unlocks reset at midnight. Rest in what you read.", isVerse: false, reference: nil, button: "Open Phos")
+                              body: "Unlocks reset at midnight. Rest in what you read.", isVerse: false, reference: nil, button: "Open Wick")
         case .needsQuestion:
             return ShieldCopy(eyebrow: "Almost there", title: "One question left.",
                               body: "Answer one question about \(chapter) to open \(app).", isVerse: false, reference: nil,

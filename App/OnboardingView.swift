@@ -92,10 +92,11 @@ struct OnboardingView: View {
             Image("LaunchLogo").resizable().scaledToFit().frame(width: 88, height: 88)
                 .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
                 .padding(.top, 30)
-            Text("Phos").font(Theme.serif(56)).foregroundStyle(Theme.ink)
-            Text("Greek for light.").font(.title3).foregroundStyle(Theme.dim)
+            Text("Wick").font(Theme.serif(56)).foregroundStyle(Theme.ink)
+            Text("Keep your light burning.").font(.title3).foregroundStyle(Theme.dim)
             Text("Your most distracting apps stay locked until you read a chapter of the Bible, reflect on it, and answer a few questions.")
                 .font(.title3).foregroundStyle(Theme.ink).wrapLines()
+            RestoreOffer()
             CardBox(fill: Theme.soft) {
                 VStack(alignment: .leading, spacing: 6) {
                     Text("“Your word is a lamp to my feet, and a light for my path.”").font(Theme.serif(19, .regular)).foregroundStyle(Theme.ink)
@@ -109,7 +110,7 @@ struct OnboardingView: View {
         VStack(alignment: .leading, spacing: 20) {
             Text("How it works").font(Theme.serif(36)).foregroundStyle(Theme.ink)
             step("lock.fill", "Make locks", "Each lock has its own apps, days, hours, and rules.")
-            step("book.closed", "Read the chapter", "Use your own Bible, read it in Phos, or listen.")
+            step("book.closed", "Read the chapter", "Use your own Bible, read it in Wick, or listen.")
             step("mic", "Reflect", "Type or say what stood out. Paste is turned off.")
             step("checkmark.circle", "Answer questions", "A few questions written for that chapter. If you read it, you will know.")
             step("sun.max", "Apps open", "For the time each lock gives. Later unlocks follow that lock's rules.")
@@ -129,7 +130,7 @@ struct OnboardingView: View {
     private var screenTime: some View {
         VStack(alignment: .leading, spacing: 18) {
             Text("Screen Time access").font(Theme.serif(36)).foregroundStyle(Theme.ink)
-            Text("Phos uses Apple's Screen Time to lock the apps you pick. Apple keeps your app list private. Phos never sees which apps you use, and nothing leaves your iPhone.")
+            Text("Wick uses Apple's Screen Time to lock the apps you pick. Apple keeps your app list private. Wick never sees which apps you use, and nothing leaves your iPhone.")
                 .font(.body).foregroundStyle(Theme.ink).wrapLines()
             if model.authorized {
                 Label("Access allowed", systemImage: "checkmark.circle.fill").font(.headline).foregroundStyle(Theme.green)
@@ -160,7 +161,7 @@ struct OnboardingView: View {
     private var choosePlan: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Where do you want to start?").font(Theme.serif(36)).foregroundStyle(Theme.ink)
-            Text("Phos keeps your place in every book, so you can switch any time and pick up where you left off.")
+            Text("Wick keeps your place in every book, so you can switch any time and pick up where you left off.")
                 .foregroundStyle(Theme.ink).wrapLines()
             PlanList()
         }
@@ -169,7 +170,7 @@ struct OnboardingView: View {
     private var finish: some View {
         VStack(alignment: .leading, spacing: 18) {
             Text("One last thing").font(Theme.serif(36)).foregroundStyle(Theme.ink)
-            Text("When you open a locked app, tap the button and Phos sends a notification. Tap it to jump straight to your reading. Allow notifications on the next screen so that works.")
+            Text("When you open a locked app, tap the button and Wick sends a notification. Tap it to jump straight to your reading. Allow notifications on the next screen so that works.")
                 .foregroundStyle(Theme.ink).wrapLines()
         }
     }

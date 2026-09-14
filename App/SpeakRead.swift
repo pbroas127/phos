@@ -200,7 +200,7 @@ struct SpeakRead: View {
             if let problem = listener.problem {
                 Text(problem).font(.footnote).foregroundStyle(Theme.red).frame(maxWidth: .infinity, alignment: .leading)
             } else if permitted == false {
-                Text("Phos needs the microphone and speech recognition to follow along. Turn them on in Settings.")
+                Text("Wick needs the microphone and speech recognition to follow along. Turn them on in Settings.")
                     .font(.footnote).foregroundStyle(Theme.red).frame(maxWidth: .infinity, alignment: .leading)
             } else {
                 Text("Read at your own pace. Tap any verse to start from there.")

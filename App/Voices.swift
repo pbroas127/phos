@@ -130,7 +130,7 @@ final class KokoroModel: NSObject, ObservableObject, URLSessionDownloadDelegate 
         var dest = Self.fileURL
         let size = (try? fm.attributesOfItem(atPath: location.path)[.size] as? Int64) ?? nil
         guard size == Self.expectedBytes else {
-            DispatchQueue.main.async { self.problem = "The download was incomplete. Try again on Wi-Fi." }
+            DispatchQueue.main.async { self.problem = "The download was incomplete. Try again on WiFi." }
             return
         }
         do {
@@ -142,7 +142,7 @@ final class KokoroModel: NSObject, ObservableObject, URLSessionDownloadDelegate 
             try? dest.setResourceValues(values)
             DispatchQueue.main.async { self.ready = true }
         } catch {
-            DispatchQueue.main.async { self.problem = "Phos could not save the voices. Check that your iPhone has free space." }
+            DispatchQueue.main.async { self.problem = "Wick could not save the voices. Check that your iPhone has free space." }
         }
     }
 

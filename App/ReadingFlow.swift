@@ -193,7 +193,7 @@ struct ModeChoice: View {
                         }
                         .buttonStyle(.plain)
                     }
-                    Text("The reading timer only counts while Phos stays open. Leaving the app or locking your phone starts it over, so the screen stays awake while you read.")
+                    Text("The reading timer only counts while Wick stays open. Leaving the app or locking your phone starts it over, so the screen stays awake while you read.")
                         .font(.footnote).foregroundStyle(Theme.dim).padding(.top, 4)
                 }
                 .padding(20)
@@ -240,7 +240,7 @@ struct ReadStep: View {
             let remaining = (model.demo || finished || mode == .speak) ? 0 : max(0, minimum - context.date.timeIntervalSince(start))
             VStack(spacing: 0) {
                 if restarted && remaining > 0 {
-                    Label("You left Phos, so the timer started over.", systemImage: "arrow.counterclockwise")
+                    Label("You left Wick, so the timer started over.", systemImage: "arrow.counterclockwise")
                         .font(.footnote.weight(.semibold)).foregroundStyle(Theme.red)
                         .padding(.vertical, 8)
                 }
@@ -620,7 +620,7 @@ struct NaturalVoiceSheet: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Natural voices").font(Theme.serif(28)).foregroundStyle(Theme.ink)
-            Text("\(voiceName) and 12 more lifelike voices read to you right on your iPhone, even with no connection. They need one download of \(KokoroModel.megabytes) MB, so Wi-Fi is best.")
+            Text("\(voiceName) and 12 more lifelike voices read to you right on your iPhone, even with no connection. They need one download of \(KokoroModel.megabytes) MB, so WiFi is best.")
                 .foregroundStyle(Theme.dim).fixedSize(horizontal: false, vertical: true)
             if let progress = kokoro.progress {
                 ProgressBar(value: progress)

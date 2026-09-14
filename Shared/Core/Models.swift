@@ -388,7 +388,7 @@ enum ReadMode: String, Codable, CaseIterable, Identifiable {
     var title: String {
         switch self {
         case .paper: return "Paper Bible"
-        case .inApp: return "Read in Phos"
+        case .inApp: return "Read in Wick"
         case .speak: return "Read it aloud"
         case .listen: return "Listen"
         }
@@ -585,6 +585,10 @@ struct AppSettings: Codable, Equatable {
     var pinnedTrophies: [String] = []
     /// Lets someone who read on their own skip straight to reflecting and the questions.
     var allowAlreadyRead = false
+    /// One friendly reminder a day, only on days without a reading.
+    var reminderOn = true
+    /// Minutes after midnight for the reminder. 8:00 PM by default.
+    var reminderMinutes = 20 * 60
     var schemaVersion = 3
 
     init() {}
@@ -607,6 +611,8 @@ struct AppSettings: Codable, Equatable {
         voiceID = (try? c.decode(String.self, forKey: .voiceID)) ?? d.voiceID
         pinnedTrophies = (try? c.decode([String].self, forKey: .pinnedTrophies)) ?? d.pinnedTrophies
         allowAlreadyRead = (try? c.decode(Bool.self, forKey: .allowAlreadyRead)) ?? d.allowAlreadyRead
+        reminderOn = (try? c.decode(Bool.self, forKey: .reminderOn)) ?? d.reminderOn
+        reminderMinutes = (try? c.decode(Int.self, forKey: .reminderMinutes)) ?? d.reminderMinutes
         let version = (try? c.decode(Int.self, forKey: .schemaVersion)) ?? 1
         schemaVersion = 3
 

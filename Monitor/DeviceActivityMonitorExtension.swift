@@ -1,7 +1,7 @@
 import DeviceActivity
 import Foundation
 
-/// Runs in the background at the morning lock, midday questions, evening lock, and when an unlock ends.
+/// Runs in the background when a day starts, when lock windows open and close, when an unlock ends, and when usage passes a threshold.
 class DeviceActivityMonitorExtension: DeviceActivityMonitor {
     override func intervalDidStart(for activity: DeviceActivityName) {
         super.intervalDidStart(for: activity)

@@ -109,7 +109,7 @@ struct LockWidgetView: View {
                 .containerBackground(.clear, for: .widget)
         default:
             VStack(alignment: .leading, spacing: 1) {
-                Label("Phos", systemImage: "sun.max").font(.caption2)
+                Label("Wick", systemImage: "sun.max").font(.caption2)
                 Text(s.chapterTitle).font(.headline)
                 Text(s.readingDone ? "Read today" : "Not read yet").font(.caption)
             }
@@ -131,7 +131,7 @@ struct TodayWidget: Widget {
 struct LockWidget: Widget {
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: "PhosLock", provider: PhosProvider()) { LockWidgetView(entry: $0) }
-            .configurationDisplayName("Phos on the Lock Screen")
+            .configurationDisplayName("Wick on the Lock Screen")
             .description("See today's chapter and your streak under the clock.")
             .supportedFamilies([.accessoryRectangular, .accessoryCircular, .accessoryInline])
     }

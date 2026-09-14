@@ -570,3 +570,55 @@ final class AchievementTests: XCTestCase {
     }
 }
 
+final class ReminderTests: XCTestCase {
+    func input(readToday: Bool, streak: Int, last: String?) -> Reminders.Input {
+        Reminders.Input(todayKey: "2026-09-14", readToday: readToday, streak: streak, lastReadKey: last, totalChapters: 40,
+                        chapter: "John 4", title: "Living Water at the Well", plan: "John", planLeft: 17, lockedApps: 3,
+                        nextTrophy: (name: "Month of Light", left: 2), weekday: 2)
+    }
+
+    func testReadTodaySkipsTonightAndKeepsTomorrowsStreak() {
+        let plan = Reminders.plan(input(readToday: true, streak: 12, last: "2026-09-14"))
+        XCTAssertNil(plan.first { $0.offset == 0 })
+        let tomorrow = plan.first { $0.offset == 1 }!.context
+        XCTAssertEqual(tomorrow.streak, 12)
+        XCTAssertEqual(tomorrow.next, 13)
+        let dayAfter = plan.first { $0.offset == 2 }!.context
+        XCTAssertEqual(dayAfter.kind, .freshStart)
+        XCTAssertEqual(plan.last!.context.kind, .lastNudge)
+    }
+
+    func testNotReadTodayKeepsStreakTonight() {
+        let plan = Reminders.plan(input(readToday: false, streak: 6, last: "2026-09-13"))
+        let tonight = plan.first { $0.offset == 0 }!.context
+        XCTAssertEqual(tonight.kind, .milestone) // day 7 is a milestone
+        XCTAssertEqual(tonight.next, 7)
+        XCTAssertEqual(plan.first { $0.offset == 3 }!.context.kind, .comeBack)
+        XCTAssertEqual(plan.first { $0.offset == 3 }!.context.days, 4)
+    }
+
+    func testNeverStarted() {
+        let plan = Reminders.plan(input(readToday: false, streak: 0, last: nil))
+        XCTAssertTrue(plan.allSatisfy { $0.context.kind == .neverStarted })
+    }
+
+    func testEveryTemplateFillsAndHasNoDashes() {
+        var c = Reminders.Context(kind: .keepStreak)
+        c.streak = 1; c.next = 2; c.days = 3; c.chapter = "John 4"; c.title = "Living Water"; c.plan = "John"
+        c.left = 1; c.apps = 1; c.trophy = "Month of Light"; c.total = 1
+        for kind in Reminders.Kind.allCases {
+            let list = Reminders.templates[kind] ?? []
+            XCTAssertFalse(list.isEmpty, kind.rawValue)
+            for i in list.indices {
+                c.kind = kind
+                let m = Reminders.message(c, seed: i)
+                for text in [m.title, m.body] {
+                    XCTAssertFalse(text.contains("{"), text)
+                    XCTAssertFalse(text.contains("-") || text.contains("\u{2014}") || text.contains("\u{2013}"), text)
+                    XCTAssertFalse(text.contains("1 days") || text.contains("1 chapters") || text.contains("1 apps"), text)
+                }
+            }
+        }
+    }
+}
+

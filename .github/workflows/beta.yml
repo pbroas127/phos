@@ -2,6 +2,11 @@ name: beta
 # Manual only. Signing the app needs Apple's Family Controls distribution entitlement on every bundle ID.
 on:
   workflow_dispatch:
+    inputs:
+      regenerate_profiles:
+        description: Rebuild signing profiles after a capability change
+        type: boolean
+        default: false
 concurrency:
   group: beta
   cancel-in-progress: false
@@ -30,6 +35,7 @@ jobs:
           ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
           ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+          MATCH_FORCE: ${{ inputs.regenerate_profiles && '1' || '0' }}
       - name: List frameworks inside the app
         if: always()
         run: |

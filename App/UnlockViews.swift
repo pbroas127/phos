@@ -6,6 +6,31 @@ struct UnlockSummary: View {
     let title: String
     var after: PathLogic.After? = nil
     var onDone: () -> Void
+    @State private var saved = false
+
+    /// Open the apps now, or keep them locked and come back later without reading again.
+    private var choice: some View {
+        let asksQuestion = model.readyToUnlock.contains { $0.policy == .questionEach || ($0.policy == .limited && $0.limitNeedsQuestion) }
+        return VStack(alignment: .leading, spacing: 12) {
+            Text("Open your apps now?").font(.headline).foregroundStyle(Theme.ink)
+            Text(model.readyToUnlock.map(\.name).joined(separator: ", ")).font(.subheadline).foregroundStyle(Theme.dim)
+            Button("Unlock now") { withAnimation { model.unlockReady() } }.buttonStyle(.phos)
+            Button("Save for later") {
+                withAnimation {
+                    model.readyToUnlock = []
+                    saved = true
+                }
+            }
+            .buttonStyle(.phosSecondary)
+            Text(asksQuestion
+                 ? "Saving keeps them locked. Your reading still counts today, and locks that ask a question each time will ask one when you open them."
+                 : "Saving keeps them locked. Your reading still counts today, so you can open them later without reading again.")
+                .font(.caption).foregroundStyle(Theme.dim)
+        }
+        .padding(16)
+        .background(Theme.card, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).stroke(Theme.line))
+    }
 
     var body: some View {
         VStack(spacing: 16) {
@@ -18,7 +43,12 @@ struct UnlockSummary: View {
                         .background(Theme.gold, in: Circle())
                         .padding(.top, 20)
                     Text(title).font(Theme.serif(32)).foregroundStyle(Theme.ink)
-                    if model.lastUnlocked.isEmpty {
+                    if !model.readyToUnlock.isEmpty {
+                        choice
+                    } else if saved {
+                        Text("Saved for later. Today's reading counts for all your locks, so open them any time from the lock screen or the Unlock screen.")
+                            .font(.subheadline).foregroundStyle(Theme.dim).multilineTextAlignment(.center)
+                    } else if model.lastUnlocked.isEmpty {
                         Text("Nothing was waiting to unlock.").foregroundStyle(Theme.dim)
                     } else {
                         VStack(spacing: 0) {
@@ -41,7 +71,13 @@ struct UnlockSummary: View {
                 }
                 .padding(.horizontal, 20)
             }
-            Button("Done", action: onDone).buttonStyle(.phos).padding(.horizontal, 20).padding(.bottom, 12)
+            Button("Done") {
+                // Leaving without choosing keeps the apps locked, same as saving for later.
+                model.readyToUnlock = []
+                onDone()
+            }
+            .buttonStyle(PrimaryButtonStyle(kind: model.readyToUnlock.isEmpty ? .primary : .quiet))
+            .padding(.horizontal, 20).padding(.bottom, 12)
         }
     }
 

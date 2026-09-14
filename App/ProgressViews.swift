@@ -121,13 +121,11 @@ struct TimeWonBackView: View {
     private var filter: DeviceActivityFilter {
         let cal = Calendar.current
         let start = cal.date(byAdding: .day, value: -13, to: cal.startOfDay(for: Date())) ?? Date()
+        // All usage comes back so the report can show whole phone screen time next to the locked apps.
         return DeviceActivityFilter(
             segment: .daily(during: DateInterval(start: start, end: Date())),
             users: .all,
-            devices: .init([.iPhone]),
-            applications: model.reportSelection.applicationTokens,
-            categories: model.reportSelection.categoryTokens,
-            webDomains: model.reportSelection.webDomainTokens
+            devices: .init([.iPhone])
         )
     }
 }

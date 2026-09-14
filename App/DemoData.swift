@@ -114,11 +114,14 @@ enum DemoData {
         let thisWeek: [Double] = [96, 84, 71, 66, 52, 41, 34]
         let lastWeek: [Double] = [118, 132, 104, 97, 121, 88, 92]
         var totals: [Date: TimeInterval] = [:]
+        var all: [Date: TimeInterval] = [:]
         for i in 0..<7 {
             let d = cal.date(byAdding: .day, value: i - 6, to: today) ?? today
             let prior = cal.date(byAdding: .day, value: -7, to: d) ?? d
             totals[d] = thisWeek[i] * 60
             totals[prior] = lastWeek[i] * 60
+            all[d] = (thisWeek[i] + 150 + Double(i * 9)) * 60
+            all[prior] = (lastWeek[i] + 170) * 60
         }
         let split: [(String, Double, Double)] = [("Instagram", 0.34, 0.41), ("TikTok", 0.27, 0.30), ("YouTube", 0.21, 0.16), ("X", 0.10, 0.09), ("Snapchat", 0.08, 0.04)]
         var appDays: [String: [Date: TimeInterval]] = [:]
@@ -130,7 +133,7 @@ enum DemoData {
                 appDays[name, default: [:]][prior] = lastWeek[i] * 60 * lastShare
             }
         }
-        return WeeklyUsage.build(dayTotals: totals, appDays: appDays, now: Date(), calendar: cal)
+        return WeeklyUsage.build(dayTotals: totals, allDayTotals: all, appDays: appDays, now: Date(), calendar: cal)
     }
 }
 

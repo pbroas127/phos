@@ -30,6 +30,8 @@ final class AppModel {
     var lastAfter: PathLogic.After?
     /// Locks the last reading or other unlock opened, for the result screen.
     var lastUnlocked: [LockSet] = []
+    /// Locks a finished reading can open. The result screen asks whether to open them now or save them for later.
+    var readyToUnlock: [LockSet] = []
     var tab = DemoScreen.startTab
     /// Trophy history, recomputed after readings and on refresh.
     private(set) var stats: AchievementStats
@@ -496,6 +498,14 @@ final class AppModel {
 
     /// Saves the reading, moves the path, unlocks waiting locks, and returns where the path picks up.
     @discardableResult
+    /// Opens every lock the reading made ready.
+    func unlockReady() {
+        let targets = readyToUnlock.compactMap { ready in settings.lockSets.first { $0.id == ready.id } }
+        for lock in targets { unlock(lock, method: .reading) }
+        lastUnlocked = targets
+        readyToUnlock = []
+    }
+
     func completeReading(ref: ChapterRef, readMode: ReadMode, reflectMode: ReflectMode, reflection: String, score: Int, total: Int) -> PathLogic.After? {
         rollover()
         var contextPlan: ReadingPlan?
@@ -542,11 +552,12 @@ final class AppModel {
         store.settings = settings
         saveToday()
         clearDraft()
-        for lock in waiting { unlock(lock, method: .reading) }
         checkAchievements()
         ReminderScheduler.reschedule(self)
         CloudBackup.save(self)
-        lastUnlocked = waiting
+        // Reading counts for every lock today. Opening them is the reader's choice on the result screen.
+        readyToUnlock = waiting
+        lastUnlocked = []
         lastAfter = after
         return after
     }

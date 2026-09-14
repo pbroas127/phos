@@ -8,8 +8,10 @@ extension DeviceActivityReport.Context {
 struct WeeklyUsage {
     struct Day: Identifiable {
         let date: Date
+        /// Time in locked apps.
         let seconds: TimeInterval
-        let lastWeekSeconds: TimeInterval
+        /// All screen time on the iPhone that day.
+        let allSeconds: TimeInterval
         var id: Date { date }
     }
 
@@ -23,33 +25,33 @@ struct WeeklyUsage {
     var days: [Day]
     var thisWeekTotal: TimeInterval
     var lastWeekTotal: TimeInterval
+    var allThisWeek: TimeInterval
+    var allLastWeek: TimeInterval
     var apps: [App]
 
-    /// Builds this week (the last 7 days, today included) and the 7 days before it.
-    static func build(dayTotals: [Date: TimeInterval], appDays: [String: [Date: TimeInterval]], now: Date, calendar: Calendar = .current) -> WeeklyUsage {
+    /// This week is the last 7 days, today included. Last week is the 7 days before it.
+    /// dayTotals and appDays hold locked apps only. allDayTotals holds all screen time.
+    static func build(dayTotals: [Date: TimeInterval], allDayTotals: [Date: TimeInterval], appDays: [String: [Date: TimeInterval]],
+                      now: Date, calendar: Calendar = .current) -> WeeklyUsage {
         let today = calendar.startOfDay(for: now)
         let thisStart = calendar.date(byAdding: .day, value: -6, to: today) ?? today
         let lastStart = calendar.date(byAdding: .day, value: -13, to: today) ?? today
         func isThis(_ d: Date) -> Bool { d >= thisStart }
         func isLast(_ d: Date) -> Bool { d >= lastStart && d < thisStart }
+        func sum(_ totals: [Date: TimeInterval], _ test: (Date) -> Bool) -> TimeInterval { totals.filter { test($0.key) }.values.reduce(0, +) }
 
         let days = (0..<7).map { offset -> Day in
             let d = calendar.date(byAdding: .day, value: offset, to: thisStart) ?? thisStart
-            let prior = calendar.date(byAdding: .day, value: -7, to: d) ?? d
-            return Day(date: d, seconds: dayTotals[d] ?? 0, lastWeekSeconds: dayTotals[prior] ?? 0)
+            return Day(date: d, seconds: dayTotals[d] ?? 0, allSeconds: max(allDayTotals[d] ?? 0, dayTotals[d] ?? 0))
         }
         let apps = appDays.map { name, byDay in
-            App(name: name,
-                thisWeek: byDay.filter { isThis($0.key) }.values.reduce(0, +),
-                lastWeek: byDay.filter { isLast($0.key) }.values.reduce(0, +))
+            App(name: name, thisWeek: byDay.filter { isThis($0.key) }.values.reduce(0, +), lastWeek: byDay.filter { isLast($0.key) }.values.reduce(0, +))
         }
-        .filter { $0.thisWeek + $0.lastWeek >= 60 }
-        .sorted { max($0.thisWeek, $0.lastWeek) > max($1.thisWeek, $1.lastWeek) }
+        .filter { $0.thisWeek >= 60 }
+        .sorted { $0.thisWeek > $1.thisWeek }
 
-        return WeeklyUsage(days: days,
-                           thisWeekTotal: dayTotals.filter { isThis($0.key) }.values.reduce(0, +),
-                           lastWeekTotal: dayTotals.filter { isLast($0.key) }.values.reduce(0, +),
-                           apps: Array(apps.prefix(8)))
+        return WeeklyUsage(days: days, thisWeekTotal: sum(dayTotals, isThis), lastWeekTotal: sum(dayTotals, isLast),
+                           allThisWeek: sum(allDayTotals, isThis), allLastWeek: sum(allDayTotals, isLast), apps: Array(apps.prefix(6)))
     }
 
     static func duration(_ s: TimeInterval) -> String {
@@ -69,92 +71,92 @@ struct WeeklyUsageView: View {
     let usage: WeeklyUsage
 
     private let gold = Color(red: 0xA8 / 255, green: 0x7A / 255, blue: 0x22 / 255)
-    private let ghost = Color(red: 0xE4 / 255, green: 0xD6 / 255, blue: 0xBC / 255)
+    private let ghost = Color(red: 0xEC / 255, green: 0xE2 / 255, blue: 0xCF / 255)
     private let ink = Color(red: 0x22 / 255, green: 0x1D / 255, blue: 0x17 / 255)
     private let dim = Color(red: 0x8A / 255, green: 0x7F / 255, blue: 0x71 / 255)
     private let line = Color(red: 0xEC / 255, green: 0xE5 / 255, blue: 0xD8 / 255)
-    private let paper = Color.white
+    private let soft = Color(red: 0xF7 / 255, green: 0xF2 / 255, blue: 0xE8 / 255)
     private let green = Color(red: 0x2F / 255, green: 0x8A / 255, blue: 0x57 / 255)
     private let red = Color(red: 0xB2 / 255, green: 0x3A / 255, blue: 0x2B / 255)
 
     var body: some View {
-        let maxSeconds = max(usage.days.flatMap { [$0.seconds, $0.lastWeekSeconds] }.max() ?? 1, 60)
-        let change = WeeklyUsage.change(this: usage.thisWeekTotal, last: usage.lastWeekTotal)
+        let maxSeconds = max(usage.days.map(\.allSeconds).max() ?? 1, 60)
         VStack(alignment: .leading, spacing: 20) {
-            VStack(alignment: .leading, spacing: 6) {
-                Text("TIME IN YOUR LOCKED APPS").font(.caption.weight(.semibold)).tracking(1).foregroundStyle(dim)
-                Text("\(WeeklyUsage.duration(usage.thisWeekTotal)) this week").font(.system(size: 30, weight: .medium, design: .serif)).foregroundStyle(ink)
-                if let change {
-                    Text(change <= 0
-                         ? "\(abs(change))% less than last week (\(WeeklyUsage.duration(usage.lastWeekTotal)))"
-                         : "\(change)% more than last week (\(WeeklyUsage.duration(usage.lastWeekTotal)))")
-                        .font(.subheadline.weight(.semibold))
-                        .foregroundStyle(change <= 0 ? green : red)
-                } else {
-                    Text("Last week will show here once there is a week of history.").font(.subheadline).foregroundStyle(dim)
-                }
-                Text("About \(WeeklyUsage.duration(usage.thisWeekTotal / 7)) a day").font(.footnote).foregroundStyle(dim)
+            Text("THIS WEEK").font(.caption.weight(.semibold)).tracking(1).foregroundStyle(dim)
+
+            HStack(spacing: 12) {
+                stat("All screen time", usage.allThisWeek, last: usage.allLastWeek, color: dim)
+                stat("Locked apps", usage.thisWeekTotal, last: usage.thisWeekTotal == 0 ? 0 : usage.lastWeekTotal, color: gold)
             }
 
             VStack(alignment: .leading, spacing: 10) {
-                HStack(spacing: 14) {
-                    legend(gold, "This week")
-                    legend(ghost, "Same day last week")
-                }
-                HStack(alignment: .bottom, spacing: 8) {
+                HStack(alignment: .bottom, spacing: 10) {
                     ForEach(usage.days) { day in
                         VStack(spacing: 6) {
-                            if Calendar.current.isDateInToday(day.date) {
-                                Text(WeeklyUsage.duration(day.seconds)).font(.caption2.weight(.semibold)).foregroundStyle(ink).fixedSize()
+                            ZStack(alignment: .bottom) {
+                                RoundedRectangle(cornerRadius: 4).fill(ghost)
+                                    .frame(height: max(4, 130 * day.allSeconds / maxSeconds))
+                                RoundedRectangle(cornerRadius: 4).fill(gold)
+                                    .frame(height: max(day.seconds > 0 ? 4 : 0, 130 * day.seconds / maxSeconds))
                             }
-                            HStack(alignment: .bottom, spacing: 3) {
-                                RoundedRectangle(cornerRadius: 3).fill(ghost)
-                                    .frame(height: max(4, 120 * day.lastWeekSeconds / maxSeconds))
-                                RoundedRectangle(cornerRadius: 3).fill(gold)
-                                    .frame(height: max(4, 120 * day.seconds / maxSeconds))
-                            }
-                            .frame(height: 124, alignment: .bottom)
+                            .frame(height: 134, alignment: .bottom)
                             Text(day.date.formatted(.dateTime.weekday(.narrow))).font(.caption2).foregroundStyle(dim)
                         }
                         .frame(maxWidth: .infinity)
                     }
                 }
-                Text("Each pair of bars is one day. Shorter gold bars mean less time in the apps you lock.")
-                    .font(.caption).foregroundStyle(dim)
+                HStack(spacing: 14) {
+                    legend(ghost, "All screen time")
+                    legend(gold, "Locked apps")
+                }
             }
 
             if !usage.apps.isEmpty {
                 VStack(spacing: 0) {
-                    HStack {
-                        Text("BY APP").frame(maxWidth: .infinity, alignment: .leading)
-                        Text("LAST WEEK").frame(width: 72, alignment: .trailing)
-                        Text("THIS WEEK").frame(width: 72, alignment: .trailing)
-                        Text("").frame(width: 58)
-                    }
-                    .font(.caption2.weight(.semibold)).tracking(0.6).foregroundStyle(dim)
-                    .padding(.bottom, 8)
+                    Text("LOCKED APPS").font(.caption2.weight(.semibold)).tracking(0.6).foregroundStyle(dim)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.bottom, 6)
                     ForEach(usage.apps) { app in
                         HStack {
                             Text(app.name).font(.subheadline.weight(.medium)).foregroundStyle(ink).lineLimit(1)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                            Text(WeeklyUsage.duration(app.lastWeek)).foregroundStyle(dim).frame(width: 72, alignment: .trailing)
-                            Text(WeeklyUsage.duration(app.thisWeek)).foregroundStyle(ink).frame(width: 72, alignment: .trailing)
-                            pill(WeeklyUsage.change(this: app.thisWeek, last: app.lastWeek)).frame(width: 58, alignment: .trailing)
+                            Spacer()
+                            Text(WeeklyUsage.duration(app.thisWeek)).font(.subheadline).monospacedDigit().foregroundStyle(ink)
+                            pill(WeeklyUsage.change(this: app.thisWeek, last: app.lastWeek)).frame(width: 52, alignment: .trailing)
                         }
-                        .font(.subheadline).monospacedDigit()
-                        .padding(.vertical, 11)
+                        .padding(.vertical, 10)
                         if app.id != usage.apps.last?.id { Rectangle().fill(line).frame(height: 1) }
                     }
                 }
             }
 
-            Text("Counts only the apps you lock in Wick. Data comes from Screen Time and never leaves your iPhone.")
+            Text("From Screen Time on this iPhone. It never leaves your phone.")
                 .font(.caption).foregroundStyle(dim)
         }
         .padding(20)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(paper)
+        .background(Color.white)
         .environment(\.colorScheme, .light)
+    }
+
+    private func stat(_ title: String, _ seconds: TimeInterval, last: TimeInterval, color: Color) -> some View {
+        let change = WeeklyUsage.change(this: seconds, last: last)
+        return VStack(alignment: .leading, spacing: 4) {
+            HStack(spacing: 6) {
+                Circle().fill(color).frame(width: 8, height: 8)
+                Text(title).font(.caption.weight(.semibold)).foregroundStyle(dim)
+            }
+            Text(WeeklyUsage.duration(seconds)).font(.system(size: 26, weight: .medium, design: .serif)).foregroundStyle(ink)
+                .minimumScaleFactor(0.7).lineLimit(1)
+            if let change {
+                Text(change <= 0 ? "\(abs(change))% less than last week" : "\(change)% more than last week")
+                    .font(.caption.weight(.semibold)).foregroundStyle(change <= 0 ? green : red)
+            } else {
+                Text("About \(WeeklyUsage.duration(seconds / 7)) a day").font(.caption).foregroundStyle(dim)
+            }
+        }
+        .padding(14)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(soft, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
     }
 
     private func legend(_ color: Color, _ text: String) -> some View {

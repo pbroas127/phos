@@ -697,7 +697,7 @@ struct GlanceView: View {
                 Text(d.streakLine).font(.caption).lineLimit(1)
                 HStack(spacing: 5) {
                     ForEach(0..<7, id: \.self) { i in
-                        Circle().fill(d.week[i] ? .primary : .primary.opacity(0.25)).frame(width: 7, height: 7)
+                        Circle().fill(Color.primary.opacity(d.week[i] ? 1 : 0.25)).frame(width: 7, height: 7)
                     }
                 }
                 .padding(.top, 2)

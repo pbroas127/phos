@@ -60,10 +60,10 @@ struct WeeklyUsage {
         return m % 60 == 0 ? "\(m / 60)h" : "\(m / 60)h \(m % 60)m"
     }
 
-    /// Percent change from last week, or nil when there is nothing to compare.
-    static func change(this: TimeInterval, last: TimeInterval) -> Int? {
+    /// Time saved or added since last week, or nil when there is nothing to compare.
+    static func change(this: TimeInterval, last: TimeInterval) -> TimeInterval? {
         guard last >= 60 else { return nil }
-        return Int(((this - last) / last * 100).rounded())
+        return this - last
     }
 }
 
@@ -121,7 +121,7 @@ struct WeeklyUsageView: View {
                             Text(app.name).font(.subheadline.weight(.medium)).foregroundStyle(ink).lineLimit(1)
                             Spacer()
                             Text(WeeklyUsage.duration(app.thisWeek)).font(.subheadline).monospacedDigit().foregroundStyle(ink)
-                            pill(WeeklyUsage.change(this: app.thisWeek, last: app.lastWeek)).frame(width: 52, alignment: .trailing)
+                            pill(WeeklyUsage.change(this: app.thisWeek, last: app.lastWeek)).frame(width: 64, alignment: .trailing)
                         }
                         .padding(.vertical, 10)
                         if app.id != usage.apps.last?.id { Rectangle().fill(line).frame(height: 1) }
@@ -147,9 +147,11 @@ struct WeeklyUsageView: View {
             }
             Text(WeeklyUsage.duration(seconds)).font(.system(size: 26, weight: .medium, design: .serif)).foregroundStyle(ink)
                 .minimumScaleFactor(0.7).lineLimit(1)
-            if let change {
-                Text(change <= 0 ? "\(abs(change))% less than last week" : "\(change)% more than last week")
-                    .font(.caption.weight(.semibold)).foregroundStyle(change <= 0 ? green : red)
+            if let change, abs(change) >= 60 {
+                Text(change < 0 ? "\(WeeklyUsage.duration(abs(change))) less than last week" : "\(WeeklyUsage.duration(change)) more than last week")
+                    .font(.caption.weight(.semibold)).foregroundStyle(change < 0 ? green : red)
+            } else if change != nil {
+                Text("About the same as last week").font(.caption.weight(.semibold)).foregroundStyle(dim)
             } else {
                 Text("About \(WeeklyUsage.duration(seconds / 7)) a day").font(.caption).foregroundStyle(dim)
             }
@@ -167,11 +169,13 @@ struct WeeklyUsageView: View {
     }
 
     @ViewBuilder
-    private func pill(_ change: Int?) -> some View {
-        if let change {
-            Text(change <= 0 ? "↓\(abs(change))%" : "↑\(change)%")
+    private func pill(_ change: TimeInterval?) -> some View {
+        if let change, abs(change) >= 60 {
+            Text(change < 0 ? "↓\(WeeklyUsage.duration(abs(change)))" : "↑\(WeeklyUsage.duration(change))")
                 .font(.caption.weight(.semibold))
-                .foregroundStyle(change <= 0 ? green : red)
+                .foregroundStyle(change < 0 ? green : red)
+        } else if change != nil {
+            Text("same").font(.caption).foregroundStyle(dim)
         } else {
             Text("new").font(.caption).foregroundStyle(dim)
         }

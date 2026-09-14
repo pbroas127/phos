@@ -3505,7 +3505,7 @@
     {
      "t": "choice",
      "d": 2,
-     "q": "How did Lot's sons-in-law respond to his warning?",
+     "q": "How did Lot's sons in law respond to his warning?",
      "options": [
       "They thought he was joking",
       "They fled to the mountains",
@@ -4301,7 +4301,7 @@
     {
      "t": "blank",
      "d": 1,
-     "q": "\"I am ____ living with you. Give me a possession of a burying-place with you.\"",
+     "q": "\"I am ____ living with you. Give me a possession of a burying place with you.\"",
      "answer": "a stranger and a foreigner",
      "wrong": [
       "a friend and a neighbor",

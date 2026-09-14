@@ -1497,6 +1497,80 @@
       "Lamps on a stand"
      ],
      "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The daughter of Zion is told to rejoice greatly and shout because her King is coming.",
+     "answer": true,
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "\"His dominion will be from sea to sea, and from the River ____.\"",
+     "answer": "to the ends of the earth",
+     "wrong": [
+      "to the gates of Zion",
+      "to the great desert",
+      "to the mountains of Lebanon"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does the LORD say he will encamp around his house?",
+     "options": [
+      "Against the army, so no one passes through",
+      "To receive the offerings of the nations",
+      "To rebuild its fallen walls",
+      "To judge the priests who serve there"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What reason is given for the word against Tyre and Sidon?",
+     "options": [
+      "They are very wise",
+      "They sold Judah's children",
+      "They worshiped Baal",
+      "They mocked Jerusalem"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Young men will flourish with new wine, and the virgins with grain.",
+     "answer": false,
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Against whose sons will God stir up the sons of Zion?",
+     "options": [
+      "Greece",
+      "Egypt",
+      "Assyria",
+      "Babylon"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"The LORD will be seen over them. His arrow will flash ____.\"",
+     "answer": "like lightning",
+     "wrong": [
+      "like the sun",
+      "like a flame",
+      "like the stars"
+     ],
+     "v": 14
     }
    ]
   },
@@ -1611,6 +1685,80 @@
       "They will overflow",
       "They will become bitter"
      ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Against whom is the LORD's anger kindled?",
+     "options": [
+      "The shepherds",
+      "The merchants",
+      "The foreign nations",
+      "The priests"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The men of Judah will fight because the LORD is with them.",
+     "answer": true,
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will happen to the riders on horses?",
+     "options": [
+      "They will be confounded",
+      "They will win the battle",
+      "They will flee to Egypt",
+      "They will be taken captive"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"They will be as though ____, for I am the LORD their God.\"",
+     "answer": "I had not cast them off",
+     "wrong": [
+      "they had never sinned",
+      "they had never left",
+      "I had always been near"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whose heart will rejoice as through wine?",
+     "options": [
+      "Ephraim",
+      "Judah",
+      "Benjamin",
+      "Manasseh"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"I will strengthen them in the LORD. They will walk up and down ____.\"",
+     "answer": "in his name",
+     "wrong": [
+      "in his ways",
+      "in the land",
+      "in his light"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The pride of Egypt will be brought down, and the scepter of Assyria will depart.",
+     "answer": false,
      "v": 11
     }
    ]
@@ -1727,6 +1875,80 @@
       "Drive them into the sea"
      ],
      "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How many shepherds did he cut off in one month?",
+     "options": [
+      "Three",
+      "Two",
+      "Seven",
+      "Five"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The shepherd said he would keep feeding the flock and let none of them die.",
+     "answer": false,
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who knew that it was the LORD's word when the staff was broken?",
+     "options": [
+      "The poor of the flock who listened",
+      "The rich merchants of the city",
+      "The three shepherds",
+      "The priests in the LORD's house"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"Wail, you oaks of Bashan, for ____ has come down.\"",
+     "answer": "the strong forest",
+     "wrong": [
+      "the tall cedar",
+      "the high mountain",
+      "the city wall"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The shepherd told them to give him his wages only if they thought it best.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Into whose hands did the LORD say he would deliver every man?",
+     "options": [
+      "His neighbor's and his king's",
+      "The Assyrians'",
+      "The priests' and prophets'",
+      "The wild beasts'"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"The sword will strike his arm and his right eye. His arm will be ____.\"",
+     "answer": "completely withered",
+     "wrong": [
+      "broken in pieces",
+      "cut off",
+      "bound with chains"
+     ],
+     "v": 17
     }
    ]
   },
@@ -1842,6 +2064,80 @@
       "In the streets with trumpets"
      ],
      "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who will be gathered together against Jerusalem?",
+     "options": [
+      "All the nations of the earth",
+      "Only Egypt and Assyria",
+      "The tribes of Israel",
+      "The Philistines"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "God will seek to destroy all the nations that come against Jerusalem.",
+     "answer": true,
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will the LORD strike every horse and rider with in that day?",
+     "options": [
+      "Terror for the horse, madness for the rider",
+      "Lameness for the horse, fear for the rider",
+      "Plague for the horse, death for the rider",
+      "Fire for the horse, blindness for the rider"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How does the LORD describe himself at the start of this revelation?",
+     "options": [
+      "He who stretches out the heavens",
+      "He who divided the Red Sea",
+      "He who dwells between the cherubim",
+      "He who brought them out of Egypt"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"The inhabitants of Jerusalem are ____ in the LORD of Armies their God.\"",
+     "answer": "my strength",
+     "wrong": [
+      "my shield",
+      "my joy",
+      "my refuge"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "\"David's house will be like God, like ____ before them.\"",
+     "answer": "the LORD's angel",
+     "wrong": [
+      "a pillar of fire",
+      "a mighty warrior",
+      "a shining light"
+     ],
+     "v": 8
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jerusalem will be forced to leave its own place and dwell elsewhere.",
+     "answer": false,
+     "v": 6
     }
    ]
   },
@@ -1945,6 +2241,73 @@
       "You are our King"
      ],
      "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What does the LORD call to awake against his shepherd?",
+     "options": [
+      "A sword",
+      "A fire",
+      "A lion",
+      "A storm"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "In that day the prophets will boast about their visions when they prophesy.",
+     "answer": false,
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides the names of the idols, what else will God cause to pass out of the land?",
+     "options": [
+      "The prophets and the spirit of impurity",
+      "The foreign armies and their chariots",
+      "The priests and their sacrifices",
+      "The wild beasts and the plagues"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "The chapter says God will test his people the way what is tested?",
+     "options": [
+      "Gold",
+      "Bronze",
+      "Iron",
+      "Wheat"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"They will call on my name, and ____.\"",
+     "answer": "I will hear them",
+     "wrong": [
+      "I will save them",
+      "I will bless them",
+      "I will answer them"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "He will say he is no prophet, \"for I have been made ____.\"",
+     "answer": "a bondservant from my youth",
+     "wrong": [
+      "a shepherd from my birth",
+      "a laborer in the fields",
+      "a servant of the king"
+     ],
+     "v": 5
     }
    ]
   },
@@ -2060,6 +2423,80 @@
       "A false prophet"
      ],
      "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What will happen to half of the city when the nations take Jerusalem?",
+     "options": [
+      "It will go out into captivity",
+      "It will be burned with fire",
+      "It will flee to Egypt",
+      "It will be spared entirely"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After the city is taken, the LORD will go out and fight against those nations.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where will the living waters from Jerusalem flow?",
+     "options": [
+      "Half toward the eastern sea, half toward the western",
+      "All of them into the Jordan",
+      "Down into the valley of Hinnom",
+      "North toward Damascus"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What will happen to the flesh of the peoples who fought against Jerusalem?",
+     "options": [
+      "It will consume away while they stand",
+      "It will be covered with boils",
+      "It will be eaten by birds",
+      "It will burn like stubble"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "\"Men will dwell therein, and there will be ____; but Jerusalem will dwell safely.\"",
+     "answer": "no more curse",
+     "wrong": [
+      "no more war",
+      "no more sorrow",
+      "no more hunger"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The wealth of the surrounding nations will be gathered: gold, silver, and ____.",
+     "answer": "clothing, in great abundance",
+     "wrong": [
+      "bronze, in great abundance",
+      "cattle, in great number",
+      "spices, in great supply"
+     ],
+     "v": 14
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Assyria is named as a family that will get no rain if it does not go up.",
+     "answer": false,
+     "v": 18
     }
    ]
   }

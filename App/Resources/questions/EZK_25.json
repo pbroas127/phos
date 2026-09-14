@@ -3167,6 +3167,85 @@
       "The outer wall"
      ],
      "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How many doors did the temple and the sanctuary have?",
+     "options": [
+      "Two",
+      "One",
+      "Three",
+      "Four"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I saw also that the house had ____ all around.",
+     "answer": "a raised base",
+     "wrong": [
+      "a low wall",
+      "a wide porch",
+      "an open court"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How far up the wall were the cherubim and palm trees made?",
+     "options": [
+      "From the ground to above the door",
+      "Only above the windows",
+      "Only along the lowest part",
+      "Only around the doorposts"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why were the side rooms wider on the higher levels?",
+     "options": [
+      "The walls were narrower higher up",
+      "The roof extended outward",
+      "The galleries were removed",
+      "The foundations were wider"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The door posts of the nave were rounded.",
+     "answer": false,
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did the side rooms rest against the wall of the house as they did?",
+     "options": [
+      "To be supported without piercing the house wall",
+      "So they could be removed easily",
+      "So light could enter the rooms",
+      "So priests could walk between them"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "There was a threshold of wood on ____ outside.",
+     "answer": "the face of the porch",
+     "wrong": [
+      "the side of the gate",
+      "the steps of the altar",
+      "the edge of the court"
+     ],
+     "v": 25
     }
    ]
   },
@@ -3270,6 +3349,85 @@
       "The drink and wave offerings"
      ],
      "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did the man bring Ezekiel at the start of the chapter?",
+     "options": [
+      "Into the outer court, toward the north",
+      "Into the inner court, toward the south",
+      "To the gate of the city",
+      "To the altar of burnt offering"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After finishing the inner house, the man measured the area outside all around.",
+     "answer": true,
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Then he brought me into the room that was opposite ____, and which was opposite the building toward the north.",
+     "answer": "the separate place",
+     "wrong": [
+      "the altar of burnt offering",
+      "the gate of the inner court",
+      "the house of the prince"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many reeds did the man measure on the east side?",
+     "options": [
+      "Five hundred",
+      "One hundred",
+      "One thousand",
+      "Two hundred fifty"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Therefore the uppermost was set back more than ____ from the ground.",
+     "answer": "the lowest and the middle",
+     "wrong": [
+      "the walls of the court",
+      "the pillars of the gate",
+      "the rooms toward the south"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did the other rooms compare with the rooms toward the north?",
+     "options": [
+      "Their length and width were the same",
+      "They were twice as large",
+      "They had no doors",
+      "They were built of cedar"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "From under these rooms was the entry on the east side, as one goes into them from ____.",
+     "answer": "the outer court",
+     "wrong": [
+      "the inner court",
+      "the holy place",
+      "the north gate"
+     ],
+     "v": 9
     }
    ]
   },
@@ -3385,6 +3543,85 @@
       "the altars of their gods"
      ],
      "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did the Spirit bring Ezekiel?",
+     "options": [
+      "Into the inner court",
+      "To the river Chebar",
+      "Onto the top of the mountain",
+      "Into the most holy place"
+     ],
+     "v": 5
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Ezekiel said this vision was like the one he saw by the river Chebar.",
+     "answer": true,
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What had Israel's kings set up beside God's threshold?",
+     "options": [
+      "Their own threshold and door posts",
+      "Altars to foreign gods",
+      "Statues of their fathers",
+      "Tombs of the prophets"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was offered for a sin offering on the second day?",
+     "options": [
+      "A male goat without defect",
+      "A young bull",
+      "A ram from the flock",
+      "A lamb a year old"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The priests shall make your burnt offerings on the altar and your peace offerings. Then ____,' says the Lord GOD.",
+     "answer": "I will accept you",
+     "wrong": [
+      "I will bless you",
+      "I will dwell with you",
+      "I will forgive you"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The bull of the sin offering shall be burned in the appointed place of the house, ____.",
+     "answer": "outside of the sanctuary",
+     "wrong": [
+      "before the east gate",
+      "on the altar hearth",
+      "within the inner court"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which direction did the steps of the altar face?",
+     "options": [
+      "East",
+      "West",
+      "North",
+      "South"
+     ],
+     "v": 17
     }
    ]
   },
@@ -3500,6 +3737,85 @@
       "Keep it covered with a turban only"
      ],
      "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Ezekiel see when he was brought by the north gate before the house?",
+     "options": [
+      "The LORD's glory filling the house",
+      "Elders worshiping the sun",
+      "Water flowing from the threshold",
+      "Priests offering strange fire"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They shall teach my people the difference between ____, and cause them to discern between the unclean and the clean.",
+     "answer": "the holy and the common",
+     "wrong": [
+      "the righteous and the wicked",
+      "the lawful and the unlawful",
+      "the true and the false"
+     ],
+     "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What work were the Levites still given in the sanctuary?",
+     "options": [
+      "Oversight at the gates of the house",
+      "Burning incense before the LORD",
+      "Teaching the law to the prince",
+      "Carrying the ark of the covenant"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom were the priests allowed to marry?",
+     "options": [
+      "A virgin of Israel or a priest's widow",
+      "Any widow in Israel",
+      "A woman who had been put away",
+      "Only a daughter of Zadok"
+     ],
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The priests were not to eat any bird or animal that died of itself or was torn.",
+     "answer": true,
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "For whose death could a priest make himself unclean?",
+     "options": [
+      "A close relative such as a parent or child",
+      "Any elder of Israel",
+      "The prince of the land",
+      "A fellow priest"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They shall not clothe themselves with anything that ____.",
+     "answer": "makes them sweat",
+     "wrong": [
+      "is woven of wool",
+      "is dyed with purple",
+      "belongs to the people"
+     ],
+     "v": 18
     }
    ]
   },
@@ -3615,6 +3931,85 @@
       "The feast of tents"
      ],
      "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How many days did the feast in the first month last?",
+     "options": [
+      "Seven",
+      "Eight",
+      "Three",
+      "Fourteen"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who received a portion as their possession beside the priests' portion?",
+     "options": [
+      "The Levites",
+      "The prince",
+      "The tribe of Judah",
+      "The singers"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The priest shall take of the blood of the sin offering and put it on ____ of the house.",
+     "answer": "the door posts",
+     "wrong": [
+      "the thresholds",
+      "the windows",
+      "the walls"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where was the prince's land to be?",
+     "options": [
+      "On both sides of the holy allotment and city",
+      "Inside the walls of the city",
+      "North of all the tribes",
+      "Beside the river of the temple"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "On the day of the Passover, the prince prepared a bull for a sin offering for himself and the people.",
+     "answer": true,
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "When was the prince to make the same provision again for seven days?",
+     "options": [
+      "The seventh month, fifteenth day",
+      "The second month, first day",
+      "The tenth month, tenth day",
+      "The twelfth month, fourteenth day"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "There shall be a five hundred by five hundred square for the holy place, and fifty cubits for its ____ all around.",
+     "answer": "pasture lands",
+     "wrong": [
+      "outer walls",
+      "open courts",
+      "gardens and fields"
+     ],
+     "v": 2
     }
    ]
   },
@@ -3730,6 +4125,85 @@
       "The sons of Zadok"
      ],
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "At the feasts, how did someone who entered by the north gate leave?",
+     "options": [
+      "By the south gate",
+      "By the east gate",
+      "By the west gate",
+      "By the prince's gate"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did the people of the land worship on the Sabbaths and new moons?",
+     "options": [
+      "At the door of the east gate",
+      "In the inner court",
+      "Beside the altar",
+      "Inside the holy rooms"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What burnt offering did the prince bring on the Sabbath day?",
+     "options": [
+      "Six lambs and a ram",
+      "Seven bulls and seven rams",
+      "One lamb and a goat",
+      "Two rams and a bull"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He shall give inheritance to his sons out of ____.",
+     "answer": "his own possession",
+     "wrong": [
+      "the people's land",
+      "the holy portion",
+      "the royal treasury"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The four enclosed courts in the corners were each a different size.",
+     "answer": false,
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How much oil was given with each ephah of the meal offering?",
+     "options": [
+      "A hin",
+      "A bath",
+      "A homer",
+      "A cor"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "A meal offering to the LORD continually by ____.",
+     "answer": "a perpetual ordinance",
+     "wrong": [
+      "a lasting covenant",
+      "the law of Moses",
+      "a holy statute"
+     ],
+     "v": 14
     }
    ]
   },
@@ -3844,6 +4318,85 @@
       "I have sworn peace"
      ],
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who would stand by the healed waters to spread their nets?",
+     "options": [
+      "Fishermen",
+      "Shepherds",
+      "Priests",
+      "Merchants"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What formed the east side of the land's border?",
+     "options": [
+      "The Jordan",
+      "The great sea",
+      "The brook of Egypt",
+      "The Euphrates"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "On which side of the altar did the waters come down?",
+     "options": [
+      "The south",
+      "The north",
+      "The east",
+      "The west"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which region would the waters flow down into on their way to the sea?",
+     "options": [
+      "The Arabah",
+      "The valley of Hinnom",
+      "The plain of Sharon",
+      "The land of Gilead"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "By the river banks, on both sides, will grow every tree for food, whose leaf won't wither, neither ____.",
+     "answer": "will its fruit fail",
+     "wrong": [
+      "will its branches break",
+      "will its roots dry up",
+      "will its shade depart"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When the man went out eastward with ____ in his hand, he measured one thousand cubits.",
+     "answer": "the line",
+     "wrong": [
+      "a measuring reed",
+      "a golden rod",
+      "his staff"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Ezekiel was led out by the way of the south gate to the outer gate.",
+     "answer": false,
+     "v": 2
     }
    ]
   },
@@ -3959,6 +4512,85 @@
       "The tribe of Judah"
      ],
      "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How many gates were on the north side of the city?",
+     "options": [
+      "Three",
+      "One",
+      "Four",
+      "Twelve"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "This is the land which you shall divide ____ to the tribes of Israel for inheritance.",
+     "answer": "by lot",
+     "wrong": [
+      "by measure",
+      "by families",
+      "by the prince"
+     ],
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Between which two tribes' borders did the holy offering and city lie?",
+     "options": [
+      "Judah and Benjamin",
+      "Reuben and Judah",
+      "Ephraim and Manasseh",
+      "Benjamin and Simeon"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "On which side of the city were the gates of Joseph, Benjamin, and Dan?",
+     "options": [
+      "The east side",
+      "The north side",
+      "The south side",
+      "The west side"
+     ],
+     "v": 32
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Levi had no city gate named after him because the tribe had no land portion.",
+     "answer": false,
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which tribe received the northernmost portion of land?",
+     "options": [
+      "Dan",
+      "Judah",
+      "Reuben",
+      "Asher"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "It shall be to them an offering from the offering of the land, ____, by the border of the Levites.",
+     "answer": "a most holy thing",
+     "wrong": [
+      "a lasting possession",
+      "a gift for the prince",
+      "a portion forever"
+     ],
+     "v": 12
     }
    ]
   }

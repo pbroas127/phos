@@ -35,7 +35,7 @@
      "options": [
       "In a tent David pitched in Jerusalem",
       "In the Tent of Meeting at Gibeon",
-      "In the house of Obed-Edom",
+      "In the house of Obed Edom",
       "At Kiriath Jearim"
      ],
      "v": 4
@@ -347,7 +347,7 @@
      "d": 2,
      "q": "What was the name of the skillful man sent to Solomon?",
      "options": [
-      "Huram-abi",
+      "Huram abi",
       "Bezalel",
       "Oholiab",
       "Adoniram"
@@ -739,7 +739,7 @@
     {
      "t": "blank",
      "d": 2,
-     "q": "Huram-abi also made the pots, the shovels, the forks, and all its vessels for the LORD's house, of ____.",
+     "q": "Huram abi also made the pots, the shovels, the forks, and all its vessels for the LORD's house, of ____.",
      "answer": "bright bronze",
      "wrong": [
       "pure gold",
@@ -1287,7 +1287,7 @@
      "options": [
       "King David",
       "Solomon",
-      "Huram-abi",
+      "Huram abi",
       "Asaph"
      ],
      "v": 6
@@ -4929,7 +4929,7 @@
       "Sixteen",
       "Seven",
       "Twelve",
-      "Twenty-five"
+      "Twenty five"
      ],
      "v": 1
     },
@@ -5092,9 +5092,9 @@
      "q": "How long did Jotham reign in Jerusalem?",
      "options": [
       "Sixteen years",
-      "Twenty-five years",
+      "Twenty five years",
       "Forty years",
-      "Fifty-two years"
+      "Fifty two years"
      ],
      "v": 1
     },
@@ -5221,7 +5221,7 @@
     {
      "t": "blank",
      "d": 3,
-     "q": "Tilgath-pilneser king of Assyria came to him and gave him trouble, but ____.",
+     "q": "Tilgath pilneser king of Assyria came to him and gave him trouble, but ____.",
      "answer": "didn't strengthen him",
      "wrong": [
       "took all his gold",
@@ -5595,7 +5595,7 @@
     {
      "t": "blank",
      "d": 2,
-     "q": "Don't be stiff-necked, as your fathers were, but ____.",
+     "q": "Don't be stiff necked, as your fathers were, but ____.",
      "answer": "yield yourselves to the LORD",
      "wrong": [
       "offer sacrifices at Jerusalem",
@@ -5924,7 +5924,7 @@
      "q": "Which king of Assyria came against Judah?",
      "options": [
       "Sennacherib",
-      "Tilgath-pilneser",
+      "Tilgath pilneser",
       "Shalmaneser",
       "Esarhaddon"
      ],
@@ -6696,7 +6696,7 @@
      "q": "Which king of Babylon came against Jehoiakim?",
      "options": [
       "Nebuchadnezzar",
-      "Evil-merodach",
+      "Evil merodach",
       "Cyrus",
       "Neco"
      ],

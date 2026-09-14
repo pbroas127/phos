@@ -524,11 +524,11 @@
      "t": "blank",
      "d": 2,
      "q": "Six were born to him in Hebron. He reigned ____ in Jerusalem.",
-     "answer": "thirty-three years",
+     "answer": "thirty three years",
      "wrong": [
       "forty years",
       "twenty years",
-      "thirty-six years"
+      "thirty six years"
      ],
      "v": 4
     },
@@ -1435,7 +1435,7 @@
      "q": "Which of these is listed as a son of Saul?",
      "options": [
       "Jonathan",
-      "Merib-baal",
+      "Merib baal",
       "Kish",
       "Abner"
      ],
@@ -1446,7 +1446,7 @@
      "d": 2,
      "q": "Who is named as the son of Jonathan?",
      "options": [
-      "Merib-baal",
+      "Merib baal",
       "Micah",
       "Eshbaal",
       "Ahaz"
@@ -1810,7 +1810,7 @@
      "options": [
       "Jonathan, Abinadab, and Malchishua",
       "Jonathan, Eshbaal, and Abner",
-      "Abinadab, Merib-baal, and Micah",
+      "Abinadab, Merib baal, and Micah",
       "Malchishua, Ishvi, and Kish"
      ],
      "v": 2
@@ -2348,8 +2348,8 @@
     {
      "t": "blank",
      "d": 1,
-     "q": "God's ark remained with the family of Obed-Edom three months; and the LORD ____.",
-     "answer": "blessed Obed-Edom's house",
+     "q": "God's ark remained with the family of Obed Edom three months; and the LORD ____.",
+     "answer": "blessed Obed Edom's house",
      "wrong": [
       "was angry with David",
       "gave rest to Israel",
@@ -2364,7 +2364,7 @@
       "David consults the leaders",
       "The ark is placed on a new cart",
       "Uzza dies at the threshing floor",
-      "The ark goes to Obed-Edom's house"
+      "The ark goes to Obed Edom's house"
      ],
      "v": 1
     },
@@ -2378,7 +2378,7 @@
     {
      "t": "tf",
      "d": 3,
-     "q": "Uzza and Obed-Edom drove the cart that carried the ark.",
+     "q": "Uzza and Obed Edom drove the cart that carried the ark.",
      "answer": false,
      "v": 7
     },
@@ -2409,7 +2409,7 @@
     {
      "t": "choice",
      "d": 3,
-     "q": "How is Obed-Edom described in this chapter?",
+     "q": "How is Obed Edom described in this chapter?",
      "options": [
       "The Gittite",
       "The Levite",
@@ -2860,7 +2860,7 @@
       "Asaph and his brothers",
       "Heman and Jeduthun",
       "Zadok and the priests",
-      "Obed-Edom and Hosah"
+      "Obed Edom and Hosah"
      ],
      "v": 7
     },
@@ -3040,7 +3040,7 @@
      "options": [
       "He lived in cedar while the ark was in a tent",
       "His house was smaller than Hiram's",
-      "The ark was still at Obed-Edom's house",
+      "The ark was still at Obed Edom's house",
       "The priests had no house"
      ],
      "v": 1
@@ -4502,7 +4502,7 @@
       "Asaph, Heman, and Jeduthun",
       "Zadok, Abiathar, and Nathan",
       "Asaph, Korah, and Ethan",
-      "Heman, Gad, and Obed-Edom"
+      "Heman, Gad, and Obed Edom"
      ],
      "v": 1
     },
@@ -4655,7 +4655,7 @@
     {
      "t": "choice",
      "d": 1,
-     "q": "Why did Obed-Edom have so many sons?",
+     "q": "Why did Obed Edom have so many sons?",
      "options": [
       "God blessed him",
       "He had many wives",
@@ -4715,7 +4715,7 @@
     {
      "t": "blank",
      "d": 2,
-     "q": "To Obed-Edom southward; and to his sons ____.",
+     "q": "To Obed Edom southward; and to his sons ____.",
      "answer": "the storehouse",
      "wrong": [
       "the treasures",
@@ -4824,7 +4824,7 @@
     {
      "t": "tf",
      "d": 1,
-     "q": "The sons of Obed-Edom are described as able men in strength for the service.",
+     "q": "The sons of Obed Edom are described as able men in strength for the service.",
      "answer": true,
      "v": 8
     }
@@ -5346,7 +5346,7 @@
      "q": "How long did David reign over Israel?",
      "options": [
       "Forty years",
-      "Thirty-three years",
+      "Thirty three years",
       "Fifty years",
       "Twenty years"
      ],

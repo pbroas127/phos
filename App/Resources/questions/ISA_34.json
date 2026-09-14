@@ -393,7 +393,7 @@
      "q": "Which king of Assyria attacked and captured the fortified cities of Judah?",
      "options": [
       "Sennacherib",
-      "Tiglath-pileser",
+      "Tiglath pileser",
       "Shalmaneser",
       "Nebuchadnezzar"
      ],
@@ -407,7 +407,7 @@
       "Rabshakeh",
       "Tartan",
       "Esar Haddon",
-      "Merodach-baladan"
+      "Merodach baladan"
      ],
      "v": 2
     },
@@ -630,7 +630,7 @@
      "options": [
       "Tirhakah king of Ethiopia",
       "Pharaoh king of Egypt",
-      "Merodach-baladan of Babylon",
+      "Merodach baladan of Babylon",
       "The king of Hamath"
      ],
      "v": 9
@@ -663,7 +663,7 @@
      "d": 3,
      "q": "What sign did Isaiah give Hezekiah about food over the coming years?",
      "options": [
-      "Self-grown crops for two years, then sowing",
+      "Self grown crops for two years, then sowing",
       "Manna from heaven for three years",
       "Stored grain lasting until the siege ended",
       "Seven years of abundant harvests"
@@ -2352,7 +2352,7 @@
     {
      "t": "choice",
      "d": 3,
-     "q": "Whom does the LORD address as stubborn-hearted?",
+     "q": "Whom does the LORD address as stubborn hearted?",
      "options": [
       "Those far from righteousness",
       "The kings of Babylon",
@@ -3120,7 +3120,7 @@
      "d": 3,
      "q": "What does the speaker say will happen to those who condemn him?",
      "options": [
-      "They will grow old like a moth-eaten garment",
+      "They will grow old like a moth eaten garment",
       "They will wither like grass in the sun",
       "They will be scattered like chaff",
       "They will melt like wax before fire"
@@ -4469,7 +4469,7 @@
      "t": "blank",
      "d": 3,
      "q": "Build up, build up, prepare the way! ____ out of the way of my people.",
-     "answer": "Remove the stumbling-block",
+     "answer": "Remove the stumbling block",
      "wrong": [
       "Clear the fallen stones",
       "Cast the idols",

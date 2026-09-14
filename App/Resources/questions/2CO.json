@@ -1621,6 +1621,61 @@
      "q": "Paul says this service of giving only meets the lack of the saints and does nothing more.",
      "answer": false,
      "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What effect did the Corinthians' zeal have on others?",
+     "options": [
+      "It stirred up very many of them",
+      "It made the Macedonians jealous",
+      "It shamed the assembly in Jerusalem",
+      "It caused Titus to visit them"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In the Scripture Paul quotes, what remains forever?",
+     "options": [
+      "His righteousness",
+      "His riches",
+      "His name",
+      "His house"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I have sent the brothers so that our boasting on your behalf may not be ____.",
+     "answer": "in vain in this respect",
+     "wrong": [
+      "a cause of shame",
+      "proven false",
+      "forgotten by them"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Now may he who supplies seed to the sower and ____, supply and multiply your seed for sowing.",
+     "answer": "bread for food",
+     "wrong": [
+      "water for the field",
+      "rain for the land",
+      "strength for the harvest"
+     ],
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul says the saints who receive the gift will pray for the Corinthians and long for them.",
+     "answer": true,
+     "v": 14
     }
    ]
   },
@@ -1735,6 +1790,85 @@
      "q": "Paul says it is not the one who commends himself who is approved, but the one the Lord commends.",
      "answer": true,
      "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Though Paul walks in the flesh, what does he say he does not do according to the flesh?",
+     "options": [
+      "Wage war",
+      "Pray",
+      "Preach",
+      "Travel"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say about how he acts when present compared with his letters?",
+     "options": [
+      "What he is in his letters he also is in deed when present",
+      "He is gentle in person but harsh in letters",
+      "He writes only what he cannot say in person",
+      "He is weak in letters but strong in person"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How far does Paul say he came with the Good News of Christ?",
+     "options": [
+      "Even as far as to the Corinthians",
+      "Only as far as Macedonia",
+      "To the ends of the earth",
+      "As far as Rome"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What is Paul ready to do once their obedience is made full?",
+     "options": [
+      "Avenge all disobedience",
+      "Leave them to govern themselves",
+      "Send Timothy to them",
+      "Write them a final letter"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Having hope that as ____, we will be abundantly enlarged by you in our sphere of influence.",
+     "answer": "your faith grows",
+     "wrong": [
+      "your love abounds",
+      "the gift is ready",
+      "your number increases"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For we are not bold to number or compare ourselves with some of those who ____.",
+     "answer": "commend themselves",
+     "wrong": [
+      "call themselves apostles",
+      "boast in the flesh",
+      "trouble your minds"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul says he wants to boast in what someone else has already done.",
+     "answer": false,
+     "v": 16
     }
    ]
   },
@@ -1849,6 +1983,85 @@
      "q": "Paul says he was stoned three times.",
      "answer": false,
      "v": 25
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "To whom does Paul say he promised the Corinthians as a pure virgin?",
+     "options": [
+      "Christ",
+      "Himself",
+      "The apostles",
+      "The Father"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say he did to other assemblies so he could serve the Corinthians?",
+     "options": [
+      "He robbed them by taking wages from them",
+      "He asked them to pray for Corinth",
+      "He sent them away to Macedonia",
+      "He refused their letters"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul admit he is unskilled in?",
+     "options": [
+      "Speech",
+      "Knowledge",
+      "The law",
+      "Tentmaking"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Under which king did the governor of Damascus serve?",
+     "options": [
+      "King Aretas",
+      "King Herod",
+      "King Agrippa",
+      "King Antiochus"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "If I must boast, I will boast of the things that concern ____.",
+     "answer": "my weakness",
+     "wrong": [
+      "my labors",
+      "the Lord Jesus",
+      "my sufferings"
+     ],
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "It is no great thing if his servants also masquerade as servants of righteousness, whose end will be ____.",
+     "answer": "according to their works",
+     "wrong": [
+      "destruction and shame",
+      "in the fire",
+      "like their master's"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says he is not at all behind the very best apostles.",
+     "answer": true,
+     "v": 5
     }
    ]
   },
@@ -1963,6 +2176,85 @@
      "q": "Paul admits that Titus took advantage of the Corinthians.",
      "answer": false,
      "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How does Paul describe the thorn in the flesh?",
+     "options": [
+      "A messenger of Satan to torment him",
+      "A sickness of the eyes",
+      "A punishment from the elders",
+      "A weakness in his speech"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why does Paul say he will gladly glory in his weaknesses?",
+     "options": [
+      "That the power of Christ may rest on him",
+      "That the Corinthians will pity him",
+      "That the false apostles will be silenced",
+      "That his thorn will be removed"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Paul say he will most gladly do for their souls?",
+     "options": [
+      "Spend and be spent",
+      "Fast and pray daily",
+      "Write to them often",
+      "Send his best workers"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul fear God would do to him when he comes again?",
+     "options": [
+      "Humble him before them",
+      "Keep him from speaking",
+      "Send him away quickly",
+      "Take away his authority"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "For when I am weak, ____.",
+     "answer": "then am I strong",
+     "wrong": [
+      "then God is near",
+      "then grace abounds",
+      "then I rejoice most"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "What is there in which you were made inferior to the rest of the assemblies, unless it is that I myself was not a burden to you? ____!",
+     "answer": "Forgive me this wrong",
+     "wrong": [
+      "Judge this for yourselves",
+      "Remember my labors",
+      "Pray for me also"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul says he knows whether the man was caught up in the body or out of the body.",
+     "answer": false,
+     "v": 2
     }
    ]
   },
@@ -2077,6 +2369,73 @@
      "q": "Paul says the Lord gave him authority for tearing down rather than building up.",
      "answer": false,
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How does Paul tell them to greet one another?",
+     "options": [
+      "With a holy kiss",
+      "With a song",
+      "With a blessing of peace",
+      "With the breaking of bread"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In Paul's closing blessing, what of the Holy Spirit does he wish to be with them?",
+     "options": [
+      "The fellowship",
+      "The power",
+      "The wisdom",
+      "The joy"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does Paul say the Corinthians are seeking?",
+     "options": [
+      "A proof of Christ who speaks in him",
+      "A letter of commendation",
+      "A sign from heaven",
+      "A new apostle to lead them"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Finally, brothers, rejoice! Be perfected. Be comforted. ____. Live in peace.",
+     "answer": "Be of the same mind",
+     "wrong": [
+      "Be strong in faith",
+      "Be watchful in prayer",
+      "Be kind to all"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "But I hope that you will know that ____.",
+     "answer": "we aren't disqualified",
+     "wrong": [
+      "we are your servants",
+      "we love you still",
+      "we speak the truth"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul sends greetings from the assemblies of Asia.",
+     "answer": false,
+     "v": 13
     }
    ]
   }

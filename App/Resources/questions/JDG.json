@@ -19,7 +19,7 @@
     {
      "t": "choice",
      "d": 2,
-     "q": "What did Israel do to Adoni-Bezek after catching him?",
+     "q": "What did Israel do to Adoni Bezek after catching him?",
      "options": [
       "Cut off his thumbs and big toes",
       "Put out his eyes",
@@ -55,7 +55,7 @@
     {
      "t": "blank",
      "d": 1,
-     "q": "Adoni-Bezek said, \"As I have done, ____.\"",
+     "q": "Adoni Bezek said, \"As I have done, ____.\"",
      "answer": "so God has done to me",
      "wrong": [
       "so my people have done",
@@ -93,7 +93,7 @@
      "d": 2,
      "items": [
       "Judah and Simeon fight at Bezek",
-      "Adoni-Bezek dies in Jerusalem",
+      "Adoni Bezek dies in Jerusalem",
       "Othniel takes Kiriath Sepher",
       "The house of Joseph takes Bethel"
      ],
@@ -128,7 +128,7 @@
     {
      "t": "choice",
      "d": 2,
-     "q": "How many kings did Adoni-Bezek say had scavenged under his table?",
+     "q": "How many kings did Adoni Bezek say had scavenged under his table?",
      "options": [
       "Seventy",
       "Twelve",
@@ -154,7 +154,7 @@
      "d": 3,
      "q": "Who went up with Judah out of the city of palm trees?",
      "options": [
-      "The children of the Kenite, Moses' brother-in-law",
+      "The children of the Kenite, Moses' brother in law",
       "The family of Rahab",
       "The Gibeonites",
       "The Levites of Hebron"
@@ -338,7 +338,7 @@
       "One hundred ten years",
       "One hundred twenty years",
       "Ninety years",
-      "Eighty-five years"
+      "Eighty five years"
      ],
      "v": 8
     },
@@ -395,7 +395,7 @@
      "d": 1,
      "q": "What was unusual about Ehud?",
      "options": [
-      "He was left-handed",
+      "He was left handed",
       "He was a Levite",
       "He was very tall",
       "He was blind in one eye"
@@ -1010,7 +1010,7 @@
      "d": 3,
      "q": "What name did Joash give Gideon after he tore down the altar?",
      "options": [
-      "Jerub-Baal",
+      "Jerub Baal",
       "Abiezer",
       "Jether",
       "Purah"
@@ -1250,7 +1250,7 @@
      "t": "order",
      "d": 2,
      "items": [
-      "Twenty-two thousand men return home",
+      "Twenty two thousand men return home",
       "The men are tested at the water",
       "Gideon overhears talk in Midian's camp",
       "Oreb and Zeeb are captured and killed"
@@ -1868,7 +1868,7 @@
      "q": "For how many years did the oppressors trouble the Israelites beyond the Jordan in Gilead?",
      "options": [
       "Eighteen years",
-      "Twenty-three years",
+      "Twenty three years",
       "Forty years",
       "Seven years"
      ],
@@ -2253,7 +2253,7 @@
      "d": 2,
      "q": "How many men of Ephraim fell at that time?",
      "options": [
-      "Forty-two thousand",
+      "Forty two thousand",
       "Twelve thousand",
       "Four thousand two hundred",
       "Seventy thousand"
@@ -2721,7 +2721,7 @@
     {
      "t": "choice",
      "d": 2,
-     "q": "Why wouldn't Samson's father-in-law let him in to see his wife?",
+     "q": "Why wouldn't Samson's father in law let him in to see his wife?",
      "options": [
       "He had given her to Samson's companion",
       "She had gone back to Timnah's elders",
@@ -2818,7 +2818,7 @@
     {
      "t": "choice",
      "d": 1,
-     "q": "What did Samson's father-in-law offer him instead of his wife?",
+     "q": "What did Samson's father in law offer him instead of his wife?",
      "options": [
       "Her younger sister",
       "A field and a vineyard",
@@ -3584,7 +3584,7 @@
     {
      "t": "choice",
      "d": 2,
-     "q": "How many days did the Levite first stay with his father-in-law?",
+     "q": "How many days did the Levite first stay with his father in law?",
      "options": [
       "Three days",
       "Seven days",
@@ -3644,7 +3644,7 @@
     {
      "t": "tf",
      "d": 2,
-     "q": "On the fifth day, the Levite agreed to stay one more night with his father-in-law.",
+     "q": "On the fifth day, the Levite agreed to stay one more night with his father in law.",
      "answer": false,
      "v": 10
     }
@@ -3670,7 +3670,7 @@
      "d": 2,
      "q": "What was special about seven hundred of Benjamin's chosen men?",
      "options": [
-      "They were left-handed slingers who never missed",
+      "They were left handed slingers who never missed",
       "They were sons of Anak",
       "They fought from chariots",
       "They were the king's guards"
@@ -3782,7 +3782,7 @@
       "Four hundred thousand",
       "Forty thousand",
       "Six hundred thousand",
-      "Twenty-six thousand"
+      "Twenty six thousand"
      ],
      "v": 2
     },

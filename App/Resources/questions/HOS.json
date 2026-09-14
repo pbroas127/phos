@@ -22,7 +22,7 @@
      "q": "What was Hosea's first son named?",
      "options": [
       "Jezreel",
-      "Lo-Ammi",
+      "Lo Ammi",
       "Shearjashub",
       "Beeri"
      ],
@@ -31,7 +31,7 @@
     {
      "t": "choice",
      "d": 2,
-     "q": "What was the meaning behind naming the daughter Lo-Ruhamah?",
+     "q": "What was the meaning behind naming the daughter Lo Ruhamah?",
      "options": [
       "The LORD will no longer have mercy on Israel",
       "Judah will be carried into exile",
@@ -55,7 +55,7 @@
     {
      "t": "blank",
      "d": 1,
-     "q": "Call his name Lo-Ammi, for ____, and I will not be yours.",
+     "q": "Call his name Lo Ammi, for ____, and I will not be yours.",
      "answer": "you are not my people",
      "wrong": [
       "you have forsaken me",

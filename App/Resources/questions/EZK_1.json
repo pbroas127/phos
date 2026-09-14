@@ -250,7 +250,7 @@
      "d": 3,
      "q": "How did God describe the children of Israel in verse 4?",
      "options": [
-      "Impudent and stiff-hearted",
+      "Impudent and stiff hearted",
       "Foolish and blind",
       "Proud and greedy",
       "Weak and fearful"
@@ -2791,6 +2791,42 @@
      "q": "The chapter says men often take wood from the vine to make useful things.",
      "answer": false,
      "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What will the people know when God sets His face against them?",
+     "options": [
+      "That He is the LORD",
+      "That their idols are powerless",
+      "That the city will be rebuilt",
+      "That the prophet spoke the truth"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Son of man, what is the vine tree more than ____, the vine branch which is among the trees of the forest?",
+     "answer": "any tree",
+     "wrong": [
+      "the cedar tree",
+      "the olive tree",
+      "the fig tree"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What question does God ask after the fire has burned the vine wood?",
+     "options": [
+      "Is it profitable for any work?",
+      "Can it bear fruit again?",
+      "Who will gather its ashes?",
+      "Will it grow back from the root?"
+     ],
+     "v": 4
     }
    ]
   },

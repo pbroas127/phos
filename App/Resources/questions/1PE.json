@@ -9,7 +9,14 @@
 {"t":"blank","d":3,"q":"Having been born again, not of corruptible seed, but of incorruptible, through ____.","answer":"the word of God","wrong":["the blood of Christ","the power of the Spirit","the grace of faith"],"v":23},
 {"t":"order","d":2,"items":["Born again to a living hope","Faith tested by fire like gold","The prophets searched about this salvation","Redeemed with the blood of a spotless lamb"],"v":3},
 {"t":"tf","d":1,"q":"Peter tells his readers that they love and rejoice in Jesus even though they do not see him now.","answer":true,"v":8},
-{"t":"tf","d":3,"q":"Peter says it was revealed to the prophets that they were serving themselves in what they foretold.","answer":false,"v":12}
+{"t":"tf","d":3,"q":"Peter says it was revealed to the prophets that they were serving themselves in what they foretold.","answer":false,"v":12},
+{"t":"choice","d":1,"q":"Which command does Peter quote as written?","options":["You shall be holy, for I am holy","You shall love the Lord your God","Be strong and courageous","Walk humbly with your God"],"v":16},
+{"t":"choice","d":3,"q":"What did the Spirit of Christ in the prophets predict?","options":["The sufferings of Christ and the glories to follow","The fall of Jerusalem and its temple","The return of Israel from exile","The coming of Elijah before the end"],"v":11},
+{"t":"choice","d":2,"q":"How does Peter describe the inheritance reserved in Heaven?","options":["Incorruptible, undefiled, and unfading","Golden, shining, and eternal","Great, wide, and fruitful","Hidden, secret, and sealed"],"v":4},
+{"t":"blank","d":2,"q":"Be sober, and set your hope fully on ____ that will be brought to you at the revelation of Jesus Christ.","answer":"the grace","wrong":["the glory","the reward","the kingdom"],"v":13},
+{"t":"blank","d":3,"q":"If you call on him as Father, pass the time of your living as foreigners here ____.","answer":"in reverent fear","wrong":["in quiet patience","with joyful hope","in holy peace"],"v":17},
+{"t":"tf","d":2,"q":"Peter says Christ was foreknown before the foundation of the world.","answer":true,"v":20},
+{"t":"tf","d":1,"q":"Peter says believers are guarded by their own strength for the salvation to be revealed.","answer":false,"v":5}
 ]},
 "2":{"keyVerse":17,"questions":[
 {"t":"choice","d":1,"q":"Like newborn babies, what does Peter tell believers to long for?","options":["The pure spiritual milk","The bread of heaven","The wisdom of the elders","The living water"],"v":2},
@@ -21,7 +28,14 @@
 {"t":"blank","d":3,"q":"Honor all men. Love the brotherhood. ____. Honor the king.","answer":"Fear God","wrong":["Obey the elders","Pray without ceasing","Serve one another"],"v":17},
 {"t":"order","d":2,"items":["Put away all wickedness and deceit","Come to him, a living stone","Subject yourselves to every ordinance of man","Servants, be in subjection to your masters"],"v":1},
 {"t":"tf","d":1,"q":"Peter tells servants to be subject only to masters who are good and gentle.","answer":false,"v":18},
-{"t":"tf","d":3,"q":"Peter says governors are sent for vengeance on evildoers and for praise to those who do well.","answer":true,"v":14}
+{"t":"tf","d":3,"q":"Peter says governors are sent for vengeance on evildoers and for praise to those who do well.","answer":true,"v":14},
+{"t":"choice","d":1,"q":"By what does Peter say you were healed?","options":["His wounds","His word","His touch","His prayers"],"v":24},
+{"t":"choice","d":2,"q":"What are believers built up as, to be a holy priesthood?","options":["A spiritual house","A strong city","A holy mountain","A great wall"],"v":5},
+{"t":"choice","d":1,"q":"What does Peter say fleshly lusts do?","options":["War against the soul","Blind the eyes","Harden the heart","Steal our joy"],"v":11},
+{"t":"choice","d":3,"q":"When Christ suffered, to whom did he commit himself?","options":["Him who judges righteously","The crowds who watched","His faithful disciples","The rulers of the people"],"v":23},
+{"t":"blank","d":2,"q":"That you may proclaim the excellence of him who called you out of darkness into ____.","answer":"his marvelous light","wrong":["his holy kingdom","his eternal rest","the day of salvation"],"v":9},
+{"t":"blank","d":3,"q":"For this is the will of God, that by well doing you should put to silence ____.","answer":"the ignorance of foolish men","wrong":["the lies of your enemies","the mouths of the proud","the anger of the rulers"],"v":15},
+{"t":"tf","d":2,"q":"Peter says it is commendable to patiently endure a beating when you have sinned.","answer":false,"v":20}
 ]},
 "3":{"keyVerse":14,"questions":[
 {"t":"choice","d":1,"q":"Where does Peter say a wife's beauty should come from?","options":["The hidden person of the heart","Gold ornaments and fine clothing","Her good works in the church","Her wisdom and knowledge"],"v":4},
@@ -33,7 +47,14 @@
 {"t":"blank","d":3,"q":"The incorruptible adornment of ____, which is very precious in God's sight.","answer":"a gentle and quiet spirit","wrong":["a humble and faithful heart","a pure and patient mind","a kind and loving soul"],"v":4},
 {"t":"order","d":2,"items":["Wives, be in subjection to your own husbands","Husbands, live with your wives according to knowledge","All of you be like minded and compassionate","Christ preached to the spirits in prison"],"v":1},
 {"t":"tf","d":1,"q":"Peter says that if you suffer for righteousness' sake, you are blessed.","answer":true,"v":14},
-{"t":"tf","d":3,"q":"Peter says baptism saves by putting away the filth of the flesh.","answer":false,"v":21}
+{"t":"tf","d":3,"q":"Peter says baptism saves by putting away the filth of the flesh.","answer":false,"v":21},
+{"t":"choice","d":1,"q":"In the quote Peter gives, where are the eyes of the Lord?","options":["On the righteous","On the nations","On the proud","On the heavens"],"v":12},
+{"t":"choice","d":2,"q":"Instead of rendering evil for evil or insult for insult, what should believers give?","options":["Blessing","Silence","Judgment","Warning"],"v":9},
+{"t":"choice","d":3,"q":"Who have been made subject to Christ at the right hand of God?","options":["Angels, authorities, and powers","Kings, priests, and prophets","The nations and their rulers","The spirits of the dead"],"v":22},
+{"t":"blank","d":2,"q":"Christ also suffered for sins once, ____, that he might bring you to God.","answer":"the righteous for the unrighteous","wrong":["the holy one for sinners","the shepherd for the sheep","the Son for the world"],"v":18},
+{"t":"blank","d":3,"q":"He who would love life and see good days, let him keep ____ and his lips from speaking deceit.","answer":"his tongue from evil","wrong":["his heart with care","his feet from wandering","his eyes from vanity"],"v":10},
+{"t":"tf","d":2,"q":"Peter says it is better to suffer for doing evil than for doing what is right.","answer":false,"v":17},
+{"t":"tf","d":1,"q":"Peter says husbands who don't obey the Word may be won by the behavior of their wives.","answer":true,"v":1}
 ]},
 "4":{"keyVerse":8,"questions":[
 {"t":"choice","d":1,"q":"What does Peter say love covers?","options":["A multitude of sins","Every kind of fear","All our weaknesses","The shame of the past"],"v":8},
@@ -45,7 +66,14 @@
 {"t":"blank","d":3,"q":"For the time has come for judgment to begin with ____.","answer":"the household of God","wrong":["the rulers of this world","the enemies of the Good News","the elders of the church"],"v":17},
 {"t":"order","d":2,"items":["Arm yourselves with the same mind as Christ","A past life of lewdness and drunken binges","Employ each gift in serving one another","Entrust your souls to a faithful Creator"],"v":1},
 {"t":"tf","d":1,"q":"Peter says a believer who suffers for being a Christian should not be ashamed.","answer":true,"v":16},
-{"t":"tf","d":3,"q":"Peter says the Gentiles speak well of believers who no longer run with them into excess.","answer":false,"v":4}
+{"t":"tf","d":3,"q":"Peter says the Gentiles speak well of believers who no longer run with them into excess.","answer":false,"v":4},
+{"t":"choice","d":1,"q":"If you are insulted for the name of Christ, what does Peter say you are?","options":["Blessed","Ashamed","Forsaken","Punished"],"v":14},
+{"t":"choice","d":2,"q":"To whom will those who speak evil of believers give account?","options":["Him who is ready to judge the living and the dead","The rulers of their city","The elders of the assembly","Their own consciences"],"v":5},
+{"t":"choice","d":3,"q":"Why was the Good News preached even to the dead?","options":["That they might live as to God in the spirit","That the living would fear God","That the prophets would be fulfilled","That the angels might see it"],"v":6},
+{"t":"blank","d":2,"q":"If anyone serves, let it be as of ____, that in all things God may be glorified.","answer":"the strength which God supplies","wrong":["the love which Christ showed","the gift which the Spirit gives","the wisdom of the elders"],"v":11},
+{"t":"blank","d":3,"q":"Rejoice, that at the revelation of his glory ____ with exceeding joy.","answer":"you also may rejoice","wrong":["you may be rewarded","you may see his face","you may reign with him"],"v":13},
+{"t":"tf","d":2,"q":"Peter says he who has suffered in the flesh has ceased from sin.","answer":true,"v":1},
+{"t":"tf","d":1,"q":"Peter says believers should live the rest of their time in the flesh for the lusts of men.","answer":false,"v":2}
 ]},
 "5":{"keyVerse":7,"questions":[
 {"t":"choice","d":1,"q":"What does Peter compare the devil to?","options":["A roaring lion","A hungry wolf","A crafty serpent","A thief in the night"],"v":8},
@@ -57,6 +85,13 @@
 {"t":"blank","d":3,"q":"Greet one another with ____. Peace be to all of you who are in Christ Jesus.","answer":"a kiss of love","wrong":["a holy embrace","a word of peace","a warm welcome"],"v":14},
 {"t":"order","d":2,"items":["Exhort the elders to shepherd the flock","Younger ones, be subject to the elder","Withstand him steadfast in your faith","She who is in Babylon greets you"],"v":1},
 {"t":"tf","d":1,"q":"Peter tells elders to lead by lording it over those entrusted to them.","answer":false,"v":3},
-{"t":"tf","d":3,"q":"Peter says believers' brothers in the world are undergoing the same sufferings.","answer":true,"v":9}
+{"t":"tf","d":3,"q":"Peter says believers' brothers in the world are undergoing the same sufferings.","answer":true,"v":9},
+{"t":"choice","d":1,"q":"Under what does Peter tell believers to humble themselves?","options":["The mighty hand of God","The authority of the elders","The law of Moses","The rule of the king"],"v":6},
+{"t":"choice","d":2,"q":"Besides she who is in Babylon, who sends greetings?","options":["Mark, my son","Timothy, my brother","Luke, the physician","John, the elder"],"v":13},
+{"t":"choice","d":1,"q":"How should elders exercise oversight, according to Peter?","options":["Voluntarily, not under compulsion","Strictly, with firm commands","Only when the flock asks","By taking turns each year"],"v":2},
+{"t":"choice","d":3,"q":"After you have suffered a little while, what will the God of all grace do?","options":["Perfect, establish, strengthen, and settle you","Reward, crown, and exalt you","Comfort, heal, and restore you","Gather, keep, and protect you"],"v":10},
+{"t":"blank","d":2,"q":"Yes, all of you ____ and subject yourselves to one another.","answer":"clothe yourselves with humility","wrong":["put on gentleness","be kind and patient","walk in love"],"v":5},
+{"t":"blank","d":3,"q":"I have written to you briefly, testifying that this is ____ in which you stand.","answer":"the true grace of God","wrong":["the living hope of glory","the faith once delivered","the word of eternal life"],"v":12},
+{"t":"tf","d":2,"q":"Peter says God will exalt the humble immediately rather than in due time.","answer":false,"v":6}
 ]}
 }}

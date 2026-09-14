@@ -514,7 +514,7 @@
     {
      "t": "tf",
      "d": 1,
-     "q": "God said the Israelites would leave Egypt empty-handed.",
+     "q": "God said the Israelites would leave Egypt empty handed.",
      "answer": false,
      "v": 21
     },
@@ -523,7 +523,7 @@
      "d": 2,
      "q": "Whose flock was Moses keeping when he came to Horeb?",
      "options": [
-      "His father-in-law Jethro's",
+      "His father in law Jethro's",
       "His own",
       "His brother Aaron's",
       "The elders of Midian's"
@@ -3266,14 +3266,14 @@
     {
      "t": "tf",
      "d": 1,
-     "q": "Moses listened to his father-in-law and did all that he said.",
+     "q": "Moses listened to his father in law and did all that he said.",
      "answer": true,
      "v": 24
     },
     {
      "t": "blank",
      "d": 1,
-     "q": "Moses' father-in-law said to him, \"The thing that you do ____.\"",
+     "q": "Moses' father in law said to him, \"The thing that you do ____.\"",
      "answer": "is not good",
      "wrong": [
       "is a great work",
@@ -3382,7 +3382,7 @@
     {
      "t": "choice",
      "d": 2,
-     "q": "How did Moses greet his father-in-law when he arrived?",
+     "q": "How did Moses greet his father in law when he arrived?",
      "options": [
       "He bowed and kissed him",
       "He fell at his feet and wept",
@@ -5097,7 +5097,7 @@
      "options": [
       "Square",
       "Round",
-      "Six-sided",
+      "Six sided",
       "Long and narrow"
      ],
      "v": 1
@@ -5331,7 +5331,7 @@
      "d": 3,
      "q": "Who were to make Aaron's holy garments?",
      "options": [
-      "All who were wise-hearted, filled with wisdom",
+      "All who were wise hearted, filled with wisdom",
       "The daughters of Levi",
       "Aaron's own sons",
       "Craftsmen hired from Egypt"
@@ -5923,7 +5923,7 @@
      "d": 3,
      "q": "In whose hearts did God put wisdom to make all he commanded?",
      "options": [
-      "All who are wise-hearted",
+      "All who are wise hearted",
       "The elders of every tribe",
       "The sons of Aaron",
       "Every firstborn son"
@@ -5958,7 +5958,7 @@
      "t": "blank",
      "d": 1,
      "q": "The LORD said, \"I have seen these people, and behold, they are ____.\"",
-     "answer": "a stiff-necked people",
+     "answer": "a stiff necked people",
      "wrong": [
       "a rebellious house",
       "a foolish nation",
@@ -6164,7 +6164,7 @@
      "d": 2,
      "q": "Why did God say he would not go up among the people?",
      "options": [
-      "They were stiff-necked, and he might consume them",
+      "They were stiff necked, and he might consume them",
       "The tent was unclean",
       "Moses had broken the tablets",
       "They had left Horeb too soon"
@@ -6517,7 +6517,7 @@
     {
      "t": "choice",
      "d": 1,
-     "q": "What did the wise-hearted women do for the work?",
+     "q": "What did the wise hearted women do for the work?",
      "options": [
       "Spun blue, purple, scarlet, and fine linen",
       "Baked the bread of the presence",
@@ -6603,7 +6603,7 @@
     {
      "t": "blank",
      "d": 3,
-     "q": "Let every wise-hearted man among you come, and make ____.",
+     "q": "Let every wise hearted man among you come, and make ____.",
      "answer": "all that the LORD has commanded",
      "wrong": [
       "the tent for the LORD's glory",
@@ -6730,7 +6730,7 @@
      "t": "blank",
      "d": 1,
      "q": "Bezalel and Oholiab shall work with ____, in whom the LORD has put wisdom.",
-     "answer": "every wise-hearted man",
+     "answer": "every wise hearted man",
      "wrong": [
       "the sons of Aaron",
       "the elders of Israel",

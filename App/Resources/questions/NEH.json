@@ -1,249 +1,2520 @@
-{"book":"NEH","chapters":{
-"1":{"keyVerse":4,"questions":[
-{"t": "choice", "d": 1, "q": "Where was Nehemiah when news about Jerusalem reached him?", "options": ["Susa the palace", "Babylon", "Jerusalem", "Damascus"], "v": 1},
-{"t": "choice", "d": 1, "q": "What news did Nehemiah hear about Jerusalem?", "options": ["Its wall was broken and gates burned", "Its temple was taken by enemies", "Its people were carried off again", "Its governor was killed in battle"], "v": 3},
-{"t": "choice", "d": 3, "q": "Which of Nehemiah's brothers came with men from Judah?", "options": ["Hanani", "Hananiah", "Ezra", "Shemaiah"], "v": 2},
-{"t": "choice", "d": 2, "q": "What was Nehemiah's position, mentioned at the end of the chapter?", "options": ["Cup bearer to the king", "Scribe of the king's court", "Governor of the province", "Keeper of the king's forest"], "v": 11},
-{"t": "blank", "d": 2, "q": "I sat down and wept, and mourned several days; and I ____ before the God of heaven.", "answer": "fasted and prayed", "wrong": ["offered burnt offerings", "tore my clothes", "bowed down low"], "v": 4},
-{"t": "blank", "d": 3, "q": "The great and awesome God who keeps ____ with those who love him and keep his commandments.", "answer": "covenant and loving kindness", "wrong": ["his promise and truth", "mercy and judgment", "faith and righteousness"], "v": 5},
-{"t": "blank", "d": 3, "q": "Though your outcasts were in ____, yet I will gather them from there.", "answer": "the uttermost part of the heavens", "wrong": ["the farthest islands of the sea", "the land of their captivity", "the ends of the earth"], "v": 9},
-{"t": "order", "d": 2, "items": ["Hanani arrives with men from Judah", "Nehemiah hears the wall is broken down", "Nehemiah weeps, fasts, and prays", "Nehemiah asks for mercy before the king"], "v": 2},
-{"t": "tf", "d": 1, "q": "Nehemiah confesses that he and his father's house have sinned.", "answer": true, "v": 6},
-{"t": "tf", "d": 2, "q": "In his prayer, Nehemiah reminds God of a word he commanded to Abraham.", "answer": false, "v": 8},
-{"t": "choice", "d": 1, "q": "What did God warn through Moses that he would do if Israel trespassed?", "options": ["Scatter them among the peoples", "Burn their cities with fire", "Withhold the rain", "Send them back to Egypt"], "v": 8},
-{"t": "choice", "d": 2, "q": "How did the men from Judah describe the remnant in the province?", "options": ["In great affliction and reproach", "Rich and at peace", "Hiding in the hills", "Sick with a plague"], "v": 3},
-{"t": "choice", "d": 2, "q": "When did Nehemiah say he prayed for the children of Israel?", "options": ["Day and night", "Only at dawn", "At the evening sacrifice", "On each Sabbath"], "v": 6},
-{"t": "choice", "d": 3, "q": "In what month did Nehemiah hear the news from Judah?", "options": ["Chislev", "Nisan", "Adar", "Elul"], "v": 1},
-{"t": "blank", "d": 2, "q": "Your people, whom you have redeemed by your great power and by ____.", "answer": "your strong hand", "wrong": ["your holy name", "your mighty word", "your faithful love"], "v": 10},
-{"t": "blank", "d": 3, "q": "The prayer of your servants who ____.", "answer": "delight to fear your name", "wrong": ["call upon your name", "walk in your ways", "wait for your mercy"], "v": 11},
-{"t": "tf", "d": 1, "q": "Nehemiah says Israel had kept the commandments God gave through Moses.", "answer": false, "v": 7}
-]},
-"2":{"keyVerse":20,"questions":[
-{"t": "choice", "d": 1, "q": "Which king did Nehemiah serve wine to?", "options": ["Artaxerxes", "Cyrus", "Darius", "Nebuchadnezzar"], "v": 1},
-{"t": "choice", "d": 1, "q": "What did the king notice about Nehemiah?", "options": ["His face was sad", "He had torn his clothes", "He refused to eat", "He was trembling"], "v": 2},
-{"t": "choice", "d": 2, "q": "What did Nehemiah do right after the king asked, \"What is your request?\"", "options": ["He prayed to the God of heaven", "He bowed to the ground", "He asked the queen to speak", "He asked for three days to think"], "v": 4},
-{"t": "choice", "d": 3, "q": "What did Nehemiah ask Asaph, keeper of the king's forest, to give him?", "options": ["Timber to make beams", "Soldiers for protection", "Silver for the workers", "Stone for the wall"], "v": 8},
-{"t": "blank", "d": 2, "q": "The king granted my requests, because of ____ on me.", "answer": "the good hand of my God", "wrong": ["the favor of the queen", "the kindness of the king", "the prayers of my brothers"], "v": 8},
-{"t": "blank", "d": 2, "q": "Come, let's build up the wall of Jerusalem, that ____.", "answer": "we won't be disgraced", "wrong": ["our enemies will fear", "our children will be safe", "the nations will see"], "v": 17},
-{"t": "blank", "d": 3, "q": "The God of heaven will prosper us. Therefore we, his servants, ____.", "answer": "will arise and build", "wrong": ["will not be afraid", "will stand and fight", "will wait on him"], "v": 20},
-{"t": "order", "d": 2, "items": ["The king asks why Nehemiah's face is sad", "Nehemiah gives the king's letters to the governors", "Nehemiah inspects the walls by night", "The people say, Let's rise up and build"], "v": 2},
-{"t": "tf", "d": 1, "q": "Sanballat, Tobiah, and Geshem asked the builders if they were rebelling against the king.", "answer": true, "v": 19},
-{"t": "tf", "d": 3, "q": "Nehemiah told the priests and nobles his plan before he inspected the walls.", "answer": false, "v": 16},
-{"t": "choice", "d": 1, "q": "What did Nehemiah ask the king to give him for the governors beyond the River?", "options": ["Letters to let him pass through", "Gold to pay them tribute", "Soldiers to replace them", "Gifts to win their favor"], "v": 7},
-{"t": "choice", "d": 2, "q": "Who was sitting by the king when he agreed to send Nehemiah?", "options": ["The queen", "The chief scribe", "Asaph the keeper", "The king's son"], "v": 6},
-{"t": "choice", "d": 2, "q": "Whom had the king sent along with Nehemiah?", "options": ["Captains of the army and horsemen", "Priests and Levites", "Scribes and judges", "Singers and gatekeepers"], "v": 9},
-{"t": "choice", "d": 3, "q": "Why couldn't Nehemiah ride on past the spring gate and the king's pool?", "options": ["There was no place for his animal to pass", "Guards were posted there", "The gate was locked", "Enemies were waiting there"], "v": 14},
-{"t": "blank", "d": 2, "q": "It grieved them exceedingly, because a man had come to seek the welfare of ____.", "answer": "the children of Israel", "wrong": ["the priests and Levites", "the city of David", "the house of God"], "v": 10},
-{"t": "blank", "d": 3, "q": "There wasn't any animal with me except ____.", "answer": "the animal that I rode on", "wrong": ["the donkey of my servant", "a horse from the king", "the mule of the governor"], "v": 12},
-{"t": "tf", "d": 1, "q": "Nehemiah told the king that the city of his fathers' tombs lay waste.", "answer": true, "v": 3}
-]},
-"3":{"keyVerse":28,"questions":[
-{"t": "choice", "d": 1, "q": "What is this chapter mainly a record of?", "options": ["Who repaired each section of the wall", "The families who returned from exile", "The priests who served in the temple", "The enemies who opposed the work"], "v": 1},
-{"t": "choice", "d": 2, "q": "Who built the sheep gate together with his brothers the priests?", "options": ["Eliashib the high priest", "Ezra the scribe", "Nehemiah the governor", "Hanani the brother of Nehemiah"], "v": 1},
-{"t": "choice", "d": 2, "q": "What did the nobles of the Tekoites fail to do?", "options": ["Put their necks to the Lord's work", "Pay for the timber and beams", "Guard the gates at night", "Send their servants to help"], "v": 5},
-{"t": "choice", "d": 3, "q": "Who made repairs alongside Shallum, ruler of half the district of Jerusalem?", "options": ["His daughters", "His servants", "His sons in law", "The temple singers"], "v": 12},
-{"t": "choice", "d": 3, "q": "The goldsmiths and merchants repaired the stretch between the ascent of the corner and which gate?", "options": ["The sheep gate", "The fish gate", "The dung gate", "The water gate"], "v": 32},
-{"t": "blank", "d": 2, "q": "Above the horse gate, the priests made repairs, everyone ____.", "answer": "across from his own house", "wrong": ["beside the temple courts", "next to his brothers", "at the corner tower"], "v": 28},
-{"t": "blank", "d": 3, "q": "Next to him, Hananiah, one of ____, made repairs.", "answer": "the perfumers", "wrong": ["the singers", "the gatekeepers", "the scribes"], "v": 8},
-{"t": "blank", "d": 1, "q": "They laid its beams, and set up its doors, ____.", "answer": "its bolts, and its bars", "wrong": ["its hinges and its locks", "its posts and its lintels", "its towers and its walls"], "v": 3},
-{"t": "tf", "d": 1, "q": "Some of the builders made repairs across from or beside their own houses.", "answer": true, "v": 10},
-{"t": "tf", "d": 2, "q": "Hanun and the inhabitants of Zanoah repaired the fish gate.", "answer": false, "v": 13},
-{"t": "choice", "d": 1, "q": "What did Eliashib and the priests do to the sheep gate after building it?", "options": ["They sanctified it", "They covered it with gold", "They named it for the king", "They posted soldiers there"], "v": 1},
-{"t": "choice", "d": 1, "q": "The men of which town built next to Eliashib and the priests?", "options": ["Jericho", "Bethlehem", "Hebron", "Anathoth"], "v": 2},
-{"t": "choice", "d": 2, "q": "Which gate did Joiada and Meshullam repair?", "options": ["The old gate", "The water gate", "The horse gate", "The east gate"], "v": 6},
-{"t": "choice", "d": 3, "q": "How is the work of Baruch the son of Zabbai described?", "options": ["He repaired earnestly", "He repaired alone", "He repaired with his sons", "He repaired it twice"], "v": 20},
-{"t": "blank", "d": 2, "q": "Nehemiah the son of Azbuk made repairs to the place opposite ____.", "answer": "the tombs of David", "wrong": ["the king's garden", "the house of God", "the tower of Hananel"], "v": 16},
-{"t": "blank", "d": 3, "q": "Malchijah and Hasshub repaired another portion and ____.", "answer": "the tower of the furnaces", "wrong": ["the tower of the singers", "the wall of the pool", "the gate of the priests"], "v": 11},
-{"t": "tf", "d": 2, "q": "The Tekoites also repaired a second portion, opposite the great tower that stands out.", "answer": true, "v": 27}
-]},
-"4":{"keyVerse":6,"questions":[
-{"t": "choice", "d": 1, "q": "How did those carrying burdens work on the wall?", "options": ["One hand worked, the other held a weapon", "They worked only in daylight", "They took turns sleeping on the wall", "They were guarded by the king's soldiers"], "v": 17},
-{"t": "choice", "d": 1, "q": "What animal did Tobiah say would break down the wall by climbing on it?", "options": ["A fox", "A goat", "A jackal", "A donkey"], "v": 3},
-{"t": "choice", "d": 2, "q": "What were the people told to rally to wherever they heard it?", "options": ["The sound of the trumpet", "A fire on the tower", "A banner on the gate", "The shout of the watchmen"], "v": 20},
-{"t": "choice", "d": 3, "q": "Who said the strength of the burden bearers was fading and there was much rubble?", "options": ["Judah", "The Levites", "The nobles", "The men of Jericho"], "v": 10},
-{"t": "blank", "d": 2, "q": "All the wall was joined together to half its height, for the people had ____.", "answer": "a mind to work", "wrong": ["a great fear", "help from the king", "food in plenty"], "v": 6},
-{"t": "blank", "d": 2, "q": "Don't be afraid of them! Remember the Lord, who is ____, and fight for your brothers.", "answer": "great and awesome", "wrong": ["mighty and holy", "faithful and true", "strong and merciful"], "v": 14},
-{"t": "blank", "d": 3, "q": "None of us took off our clothes. Everyone took ____.", "answer": "his weapon to the water", "wrong": ["his turn at the gate", "his sword to bed", "his shield to the wall"], "v": 23},
-{"t": "order", "d": 2, "items": ["Sanballat mocks the feeble Jews", "The wall is joined to half its height", "The enemies conspire to fight against Jerusalem", "Half the servants work while half hold spears"], "v": 1},
-{"t": "tf", "d": 1, "q": "When the enemies plotted, the Jews prayed and set a watch day and night.", "answer": true, "v": 9},
-{"t": "tf", "d": 3, "q": "Nehemiah had everyone and his servant lodge outside Jerusalem at night.", "answer": false, "v": 22},
-{"t": "choice", "d": 1, "q": "What did every builder wear at his side while he built?", "options": ["His sword", "A trumpet", "A shield", "A bag of tools"], "v": 18},
-{"t": "choice", "d": 2, "q": "How did Nehemiah arrange the people behind the wall?", "options": ["By family groups with their weapons", "By tribes with their trumpets", "By priests with their torches", "Among the king's soldiers"], "v": 13},
-{"t": "choice", "d": 2, "q": "How long each day did half the people hold the spears?", "options": ["From morning until the stars appeared", "From noon until evening", "All through the night", "Only while the enemy was near"], "v": 21},
-{"t": "choice", "d": 3, "q": "Which of these groups joined Sanballat and Tobiah in their anger?", "options": ["The Ashdodites", "The Moabites", "The Egyptians", "The Edomites"], "v": 7},
-{"t": "blank", "d": 2, "q": "Hear, our God, for we are despised. Turn back their reproach on ____.", "answer": "their own head", "wrong": ["their own children", "their own land", "their proud cities"], "v": 4},
-{"t": "blank", "d": 3, "q": "Will they revive the stones out of ____, since they are burned?", "answer": "the heaps of rubbish", "wrong": ["the ruins of the temple", "the valley below", "the ashes of the gates"], "v": 2},
-{"t": "tf", "d": 1, "q": "When the enemies learned their plot was known, everyone returned to the wall to work.", "answer": true, "v": 15}
-]},
-"5":{"keyVerse":19,"questions":[
-{"t": "choice", "d": 1, "q": "Why did many people cry out against their fellow Jews?", "options": ["Debts were forcing their children into bondage", "Their houses were burned by enemies", "The priests had stopped the sacrifices", "Nehemiah had raised their taxes"], "v": 5},
-{"t": "choice", "d": 1, "q": "What practice did Nehemiah tell the nobles and rulers to stop?", "options": ["Charging usury", "Marrying foreign wives", "Working on the Sabbath", "Selling grain to foreigners"], "v": 10},
-{"t": "choice", "d": 2, "q": "How did the nobles respond when Nehemiah confronted them?", "options": ["They held their peace and had no answer", "They mocked him before the people", "They appealed to the king", "They left Jerusalem in anger"], "v": 8},
-{"t": "choice", "d": 3, "q": "What did Nehemiah shake out as a sign against anyone who broke the promise?", "options": ["His lap", "The dust from his feet", "His robe", "His purse"], "v": 13},
-{"t": "blank", "d": 2, "q": "From the twentieth year to the thirty-second year, I and my brothers have not eaten ____.", "answer": "the bread of the governor", "wrong": ["the fat of the offerings", "the food of the king", "the grain of the poor"], "v": 14},
-{"t": "blank", "d": 3, "q": "Shouldn't you walk in the fear of our God because of ____, our enemies?", "answer": "the reproach of the nations", "wrong": ["the anger of the king", "the judgment of Moses", "the eyes of the Samaritans"], "v": 9},
-{"t": "blank", "d": 1, "q": "Remember me, my God, for ____ that I have done for this people.", "answer": "all the good", "wrong": ["all the work", "every kindness", "all the labor"], "v": 19},
-{"t": "order", "d": 2, "items": ["The people cry out over debts and bondage", "Nehemiah becomes very angry", "Nehemiah holds a great assembly against the nobles", "The nobles promise to restore everything"], "v": 1},
-{"t": "tf", "d": 3, "q": "Nehemiah had the nobles take an oath before the priests to keep their promise.", "answer": true, "v": 12},
-{"t": "tf", "d": 2, "q": "Nehemiah says the former governors did not burden the people.", "answer": false, "v": 15},
-{"t": "choice", "d": 1, "q": "Why did some people say they were mortgaging their fields, vineyards, and houses?", "options": ["To get grain because of the famine", "To pay the wall builders", "To buy back their children", "To give offerings at the temple"], "v": 3},
-{"t": "choice", "d": 2, "q": "What did some people borrow money to pay?", "options": ["The king's tribute", "The temple tax", "The builders' wages", "A ransom to the nations"], "v": 4},
-{"t": "choice", "d": 2, "q": "What does Nehemiah say he and his servants did not buy while working on the wall?", "options": ["Any land", "Any slaves", "Any horses", "Any wine"], "v": 16},
-{"t": "choice", "d": 3, "q": "What did Nehemiah do before he contended with the nobles and rulers?", "options": ["He consulted with himself", "He fasted for three days", "He wrote to the king", "He called for the priests"], "v": 7},
-{"t": "blank", "d": 2, "q": "We, our sons and our daughters, are many. Let us get grain, that ____.", "answer": "we may eat and live", "wrong": ["our children may not starve", "we may pay our debts", "we may sow our fields"], "v": 2},
-{"t": "blank", "d": 3, "q": "Even their servants ruled over the people, but I didn't do so, because of ____.", "answer": "the fear of God", "wrong": ["the love of my people", "the command of the king", "the poverty of the land"], "v": 15},
-{"t": "tf", "d": 1, "q": "Nehemiah said that he and his servants had never lent the people money or grain.", "answer": false, "v": 10}
-]},
-"6":{"keyVerse":3,"questions":[
-{"t": "choice", "d": 1, "q": "How long did it take to finish the wall?", "options": ["Fifty-two days", "Forty days", "Seventy days", "One hundred twenty days"], "v": 15},
-{"t": "choice", "d": 1, "q": "Where did Sanballat and Geshem ask Nehemiah to meet them?", "options": ["In the plain of Ono", "In the valley of Hinnom", "In the hills of Samaria", "At the gate of Ephraim"], "v": 2},
-{"t": "choice", "d": 2, "q": "What did Sanballat's servant bring the fifth time?", "options": ["An open letter", "A gift of gold", "A sealed scroll", "A royal decree"], "v": 5},
-{"t": "choice", "d": 2, "q": "What did Shemaiah urge Nehemiah to do?", "options": ["Hide in the temple and shut the doors", "Flee back to Susa at night", "Stop work on the gates", "Meet his enemies in the villages"], "v": 10},
-{"t": "choice", "d": 3, "q": "Who had hired Shemaiah to speak against Nehemiah?", "options": ["Tobiah and Sanballat", "Geshem and Gashmu", "The nobles of Judah", "The prophetess Noadiah"], "v": 12},
-{"t": "blank", "d": 1, "q": "I am doing a great work, so that ____.", "answer": "I can't come down", "wrong": ["I cannot rest now", "I must stay here", "I have no time"], "v": 3},
-{"t": "blank", "d": 2, "q": "Who is there that, being such as I, would go into the temple ____?", "answer": "to save his life", "wrong": ["to hide from enemies", "to pray for help", "to escape the night"], "v": 11},
-{"t": "blank", "d": 3, "q": "All the nations around us were afraid, for they perceived that this work was done ____.", "answer": "by our God", "wrong": ["by the king's order", "by strong men", "by many hands"], "v": 16},
-{"t": "tf", "d": 2, "q": "The open letter claimed Nehemiah planned to make himself king.", "answer": true, "v": 6},
-{"t": "tf", "d": 3, "q": "The nobles of Judah refused all contact with Tobiah.", "answer": false, "v": 17},
-{"t": "choice", "d": 1, "q": "What did Sanballat and Geshem really intend by asking Nehemiah to meet them?", "options": ["To harm him", "To make peace with him", "To help build the gates", "To bring him tribute"], "v": 2},
-{"t": "choice", "d": 2, "q": "How did Nehemiah answer the charges in the open letter?", "options": ["You imagine them out of your own heart", "The king already knows the truth", "I will come and explain myself", "My God will judge between us"], "v": 8},
-{"t": "choice", "d": 3, "q": "Which prophetess does Nehemiah ask God to remember for trying to frighten him?", "options": ["Noadiah", "Huldah", "Deborah", "Miriam"], "v": 14},
-{"t": "choice", "d": 3, "q": "Why were many in Judah sworn to Tobiah?", "options": ["He was the son in law of Shecaniah", "He was a prince of Ammon", "He had paid them silver", "He was the son of a priest"], "v": 18},
-{"t": "blank", "d": 2, "q": "They said, \"Their hands will be weakened from the work.\" But now, ____.", "answer": "strengthen my hands", "wrong": ["fight for your people", "hear my prayer", "remember your servant"], "v": 9},
-{"t": "blank", "d": 2, "q": "He was hired so that they might have material for ____, that they might reproach me.", "answer": "an evil report", "wrong": ["a charge before the king", "a letter to Susa", "a lawsuit against me"], "v": 13},
-{"t": "tf", "d": 1, "q": "Tobiah sent letters to Nehemiah to encourage him in the work.", "answer": false, "v": 19}
-]},
-"7":{"keyVerse":4,"questions":[
-{"t": "choice", "d": 1, "q": "Whom did Nehemiah put in charge of Jerusalem?", "options": ["Hanani and Hananiah", "Ezra and Zerubbabel", "Eliashib and Shemaiah", "Meshullam and Zadok"], "v": 2},
-{"t": "choice", "d": 1, "q": "What problem did Nehemiah see in the city after the wall was built?", "options": ["Few people and houses not built", "No water in the pools", "Enemies camped outside the gates", "The temple still lay in ruins"], "v": 4},
-{"t": "choice", "d": 2, "q": "When were the gates of Jerusalem allowed to be opened?", "options": ["Not until the sun is hot", "At the first light of dawn", "Only after the morning sacrifice", "Only when the governor was present"], "v": 3},
-{"t": "choice", "d": 2, "q": "What did Nehemiah find that he used to list the people?", "options": ["A genealogy of those who came up first", "A letter from King Cyrus", "The census taken by Moses", "The records of the temple treasury"], "v": 5},
-{"t": "choice", "d": 2, "q": "What happened to priests who could not find their genealogical records?", "options": ["They were removed from the priesthood", "They were sent back to Babylon", "They were made gatekeepers", "They were given land outside the city"], "v": 64},
-{"t": "blank", "d": 3, "q": "They were not to eat of the most holy things until a priest stood up to minister with ____.", "answer": "Urim and Thummim", "wrong": ["the ark of the covenant", "the golden censer", "oil and incense"], "v": 65},
-{"t": "blank", "d": 2, "q": "Nehemiah said Hananiah was a faithful man and ____.", "answer": "feared God above many", "wrong": ["loved the law of Moses", "served the king well", "was wise in counsel"], "v": 2},
-{"t": "blank", "d": 3, "q": "These are the children of the province whom ____ had carried away.", "answer": "Nebuchadnezzar the king of Babylon", "wrong": ["Shalmaneser the king of Assyria", "Sennacherib the king of Assyria", "Pharaoh the king of Egypt"], "v": 6},
-{"t": "tf", "d": 1, "q": "After the wall was built, gatekeepers, singers, and Levites were appointed.", "answer": true, "v": 1},
-{"t": "tf", "d": 3, "q": "The governor gave nothing to the treasury, leaving the gifts to the heads of households.", "answer": false, "v": 70},
-{"t": "choice", "d": 1, "q": "Who put it into Nehemiah's heart to gather the people and list them by genealogy?", "options": ["His God", "The king", "Ezra the scribe", "The nobles"], "v": 5},
-{"t": "choice", "d": 2, "q": "Where were the inhabitants of Jerusalem to stand their watch?", "options": ["Each one near his own house", "Only on the towers", "At the temple gates", "Outside the city walls"], "v": 3},
-{"t": "choice", "d": 2, "q": "When the seventh month came, where were the children of Israel?", "options": ["In their cities", "At the water gate", "Still in Babylon", "In the wilderness"], "v": 73},
-{"t": "choice", "d": 3, "q": "Which family is listed as the singers among those who returned?", "options": ["The children of Asaph", "The children of Korah", "The children of Heman", "The children of Gershon"], "v": 44},
-{"t": "blank", "d": 1, "q": "Now when the wall was built and I had ____, the gatekeepers and singers were appointed.", "answer": "set up the doors", "wrong": ["dedicated the gates", "counted the people", "hung the bars"], "v": 1},
-{"t": "blank", "d": 3, "q": "They could not show their fathers' houses, nor their offspring, ____.", "answer": "whether they were of Israel", "wrong": ["whether they were priests", "where they were born", "who their mothers were"], "v": 61},
-{"t": "tf", "d": 2, "q": "Singing men and singing women were counted along with the returning assembly.", "answer": true, "v": 67}
-]},
-"8":{"keyVerse":10,"questions":[
-{"t": "choice", "d": 1, "q": "Who brought and read the book of the law before the assembly?", "options": ["Ezra", "Nehemiah", "Eliashib", "Zerubbabel"], "v": 2},
-{"t": "choice", "d": 1, "q": "How did the people first react when they heard the words of the law?", "options": ["They wept", "They danced", "They left in anger", "They sat in silence"], "v": 9},
-{"t": "choice", "d": 3, "q": "What did Ezra stand on while reading to the people?", "options": ["A pulpit of wood", "The top of the wall", "The steps of the temple", "A stone platform"], "v": 4},
-{"t": "choice", "d": 2, "q": "On the second day, what did the leaders find written in the law?", "options": ["To live in booths during the seventh month feast", "To gather at the water gate each Sabbath", "To fast on the tenth day of the month", "To read the law every seventh year"], "v": 14},
-{"t": "blank", "d": 1, "q": "Don't be grieved, for ____ is your strength.", "answer": "the joy of the LORD", "wrong": ["the word of the LORD", "the hand of the LORD", "the name of the LORD"], "v": 10},
-{"t": "blank", "d": 2, "q": "Eat the fat, drink the sweet, and send portions to ____.", "answer": "him for whom nothing is prepared", "wrong": ["the priests and the Levites", "the widows and the orphans", "your brothers in the villages"], "v": 10},
-{"t": "blank", "d": 3, "q": "Since the days of ____ to that day the children of Israel had not done so.", "answer": "Joshua the son of Nun", "wrong": ["David the son of Jesse", "Solomon the son of David", "Samuel the prophet"], "v": 17},
-{"t": "order", "d": 2, "items": ["The people gather before the water gate", "Ezra reads from early morning until midday", "The people are told not to mourn or weep", "The people make temporary shelters"], "v": 1},
-{"t": "tf", "d": 2, "q": "The people answered, \"Amen, Amen,\" lifting up their hands.", "answer": true, "v": 6},
-{"t": "tf", "d": 3, "q": "The feast was kept seven days, and on the eighth day everyone returned home.", "answer": false, "v": 18},
-{"t": "choice", "d": 1, "q": "What did all the people do when Ezra opened the book?", "options": ["They stood up", "They knelt down", "They shouted for joy", "They covered their faces"], "v": 5},
-{"t": "choice", "d": 2, "q": "On what day did Ezra bring the law before the assembly?", "options": ["The first day of the seventh month", "The tenth day of the first month", "The fifteenth day of the seventh month", "The Sabbath after Passover"], "v": 2},
-{"t": "choice", "d": 2, "q": "How did the readers help the people understand the law?", "options": ["They read distinctly and gave the sense", "They translated it into Persian", "They sang it with harps", "They wrote it on the wall"], "v": 8},
-{"t": "choice", "d": 3, "q": "Where did people build their temporary shelters?", "options": ["On their roofs and in their courts", "Outside the city walls", "On the Mount of Olives", "In the valley of Hinnom"], "v": 16},
-{"t": "blank", "d": 2, "q": "The Levites calmed all the people, saying, \"Hold your peace, for ____.\"", "answer": "the day is holy", "wrong": ["the LORD is near", "the law is good", "your sins are forgiven"], "v": 11},
-{"t": "blank", "d": 3, "q": "Day by day, from the first day to the last day, he read in the book of ____.", "answer": "the law of God", "wrong": ["the kings of Judah", "the covenant of Abraham", "the prophets of old"], "v": 18},
-{"t": "tf", "d": 1, "q": "Ezra read the law only to the men of the assembly.", "answer": false, "v": 3}
-]},
-"9":{"keyVerse":31,"questions":[
-{"t": "choice", "d": 1, "q": "How did the children of Israel come to the assembly?", "options": ["Fasting, in sackcloth, with dirt on them", "In white linen for a feast", "Armed and ready for battle", "In robes carrying palm branches"], "v": 1},
-{"t": "choice", "d": 1, "q": "What is the Levites' long prayer in this chapter mostly about?", "options": ["God's faithfulness through Israel's rebellions", "The building of the wall", "The families who returned from exile", "The duties of priests and Levites"], "v": 6},
-{"t": "choice", "d": 2, "q": "From where does the prayer say God brought Abram out?", "options": ["Ur of the Chaldees", "Haran", "Egypt", "Damascus"], "v": 7},
-{"t": "choice", "d": 3, "q": "In their rebellion, why did the fathers appoint a captain?", "options": ["To return to their bondage", "To attack the Amalekites", "To replace Moses as judge", "To lead them into Canaan"], "v": 17},
-{"t": "blank", "d": 2, "q": "You are a God ready to pardon, gracious and merciful, ____, and abundant in loving kindness.", "answer": "slow to anger", "wrong": ["quick to forgive", "rich in mercy", "mighty to save"], "v": 17},
-{"t": "blank", "d": 3, "q": "They cast your law behind their back, and killed ____ that testified against them.", "answer": "your prophets", "wrong": ["your priests", "your servants", "your judges"], "v": 26},
-{"t": "blank", "d": 2, "q": "You gave also ____ to instruct them, and didn't withhold your manna from their mouth.", "answer": "your good Spirit", "wrong": ["your holy law", "your faithful prophets", "your wise judges"], "v": 20},
-{"t": "order", "d": 2, "items": ["God chooses Abram", "God divides the sea", "God speaks from heaven on Mount Sinai", "The people make a molded calf"], "v": 7},
-{"t": "tf", "d": 1, "q": "The chapter ends with the people making a sure covenant sealed by princes, Levites, and priests.", "answer": true, "v": 38},
-{"t": "tf", "d": 3, "q": "The people read the law for half the day and confessed for the other half.", "answer": false, "v": 3},
-{"t": "choice", "d": 1, "q": "How did God lead the people in the wilderness by day and by night?", "options": ["A pillar of cloud and a pillar of fire", "An angel and a star", "A trumpet and a torch", "The ark and the lampstand"], "v": 12},
-{"t": "choice", "d": 1, "q": "From whom did the offspring of Israel separate themselves?", "options": ["All foreigners", "The priests", "Their kings", "Their own families"], "v": 2},
-{"t": "choice", "d": 2, "q": "What does the prayer say did not grow old during the forty years in the wilderness?", "options": ["Their clothes", "Their tents", "Their tools", "Their elders"], "v": 21},
-{"t": "choice", "d": 3, "q": "Whose lands does the prayer say Israel possessed?", "options": ["Sihon and Og", "Balak and Balaam", "Eglon and Jabin", "Agag and Amalek"], "v": 22},
-{"t": "blank", "d": 2, "q": "You gave them bread from the sky for their hunger, and brought water out of ____ for their thirst.", "answer": "the rock", "wrong": ["the ground", "the well", "the river"], "v": 15},
-{"t": "blank", "d": 3, "q": "You cast their pursuers into the depths, as ____.", "answer": "a stone into the mighty waters", "wrong": ["lead into the deep sea", "chaff before the wind", "a stone into a pit"], "v": 11},
-{"t": "tf", "d": 2, "q": "The people say they are free men in the land God gave their fathers.", "answer": false, "v": 36}
-]},
-"10":{"keyVerse":30,"questions":[
-{"t": "choice", "d": 1, "q": "Whose name is first among those who sealed the covenant?", "options": ["Nehemiah the governor", "Ezra the scribe", "Eliashib the high priest", "Zerubbabel"], "v": 1},
-{"t": "choice", "d": 2, "q": "Besides the leaders, who joined in the curse and oath to walk in God's law?", "options": ["All with knowledge and understanding, with their families", "Only the priests and Levites", "Only the men of Judah", "Only the heads of households"], "v": 28},
-{"t": "choice", "d": 2, "q": "What did they promise if merchants brought grain to sell on the Sabbath?", "options": ["Not to buy from them on the Sabbath", "To buy only what the priests needed", "To drive them out of the city", "To charge them a tax"], "v": 31},
-{"t": "choice", "d": 3, "q": "What did they charge themselves each year for the service of God's house?", "options": ["A third of a shekel", "Half a shekel", "One shekel", "A tenth of their silver"], "v": 32},
-{"t": "blank", "d": 3, "q": "We would forego the seventh year crops and ____.", "answer": "the exaction of every debt", "wrong": ["the sale of our fields", "the payment of the tribute", "the gathering of the tithe"], "v": 31},
-{"t": "blank", "d": 1, "q": "We will not forsake ____.", "answer": "the house of our God", "wrong": ["the law of Moses", "the city of our fathers", "the covenant with Abraham"], "v": 39},
-{"t": "blank", "d": 2, "q": "The Levites shall bring up ____ to the house of our God, into the treasure house.", "answer": "the tithe of the tithes", "wrong": ["the first of the fruits", "the best of the flock", "the gold of the offering"], "v": 38},
-{"t": "order", "d": 2, "items": ["Leaders set their seals on the covenant", "The people swear to walk in God's law", "They promise not to intermarry with the peoples", "They pledge support for God's house"], "v": 1},
-{"t": "tf", "d": 1, "q": "The people promised to bring the firstborn of their sons and livestock to God's house.", "answer": true, "v": 36},
-{"t": "tf", "d": 3, "q": "The tithes of the ground were to be given to the gatekeepers in the farming villages.", "answer": false, "v": 37},
-{"t": "choice", "d": 1, "q": "Through whom did the people say God's law had been given?", "options": ["Moses the servant of God", "Ezra the scribe", "David the man of God", "Joshua the son of Nun"], "v": 29},
-{"t": "choice", "d": 1, "q": "What did they promise to bring to the LORD's house year by year?", "options": ["The first fruits of their ground and trees", "A lamb from each household", "Silver for the city wall", "Gold for the lampstand"], "v": 35},
-{"t": "choice", "d": 2, "q": "How did they decide who would bring the wood offering?", "options": ["They cast lots", "The governor assigned it", "The oldest families went first", "The high priest chose"], "v": 34},
-{"t": "choice", "d": 3, "q": "Who was to be with the Levites when they took the tithes?", "options": ["A priest descended from Aaron", "The governor", "A scribe of the king", "The chief gatekeeper"], "v": 38},
-{"t": "blank", "d": 2, "q": "The yearly charge was for the show bread, for the continual meal offering, for ____.", "answer": "the continual burnt offering", "wrong": ["the evening incense", "the Passover lamb", "the daily drink offering"], "v": 33},
-{"t": "blank", "d": 3, "q": "We should bring the first fruits of ____, our wave offerings, and the new wine and the oil.", "answer": "our dough", "wrong": ["our flocks", "our vineyards", "our olive trees"], "v": 37},
-{"t": "tf", "d": 2, "q": "They promised not to buy from merchants on the Sabbath, but said holy days were allowed.", "answer": false, "v": 31}
-]},
-"11":{"keyVerse":2,"questions":[
-{"t": "choice", "d": 2, "q": "Which two tribes had children living in Jerusalem?", "options": ["Judah and Benjamin", "Judah and Levi", "Benjamin and Ephraim", "Judah and Simeon"], "v": 4},
-{"t": "choice", "d": 2, "q": "Who lived in Jerusalem without the casting of lots?", "options": ["The princes of the people", "The temple servants", "The singers", "The gatekeepers"], "v": 1},
-{"t": "choice", "d": 1, "q": "How did the people treat the men who willingly offered to live in Jerusalem?", "options": ["They blessed them", "They paid them silver", "They gave them fields", "They made them rulers"], "v": 2},
-{"t": "choice", "d": 2, "q": "Where did the temple servants live?", "options": ["Ophel", "Bethel", "Anathoth", "The valley of Hinnom"], "v": 21},
-{"t": "choice", "d": 3, "q": "Mattaniah was the chief who began what?", "options": ["The thanksgiving in prayer", "The watch at the gates", "The counting of the treasury", "The reading of the law"], "v": 17},
-{"t": "blank", "d": 1, "q": "The rest of the people cast lots to bring one of ten to dwell in Jerusalem, ____.", "answer": "the holy city", "wrong": ["the royal city", "the city of David", "the rebuilt city"], "v": 1},
-{"t": "blank", "d": 3, "q": "There was a commandment from the king, and a settled provision for ____, as every day required.", "answer": "the singers", "wrong": ["the gatekeepers", "the priests", "the temple servants"], "v": 23},
-{"t": "blank", "d": 3, "q": "So they encamped from Beersheba to ____.", "answer": "the valley of Hinnom", "wrong": ["the brook of Egypt", "the river Jordan", "the gates of Jerusalem"], "v": 30},
-{"t": "tf", "d": 1, "q": "Nine out of ten parts of the people lived in cities outside Jerusalem.", "answer": true, "v": 1},
-{"t": "tf", "d": 2, "q": "All the priests and Levites of Israel lived inside Jerusalem.", "answer": false, "v": 20},
-{"t": "choice", "d": 1, "q": "What was the task of Akkub, Talmon, and their brothers?", "options": ["They kept watch at the gates", "They led the singing", "They guarded the treasury", "They cared for the altar fire"], "v": 19},
-{"t": "choice", "d": 2, "q": "How are the sons of Perez who lived in Jerusalem described?", "options": ["Valiant men", "Skilled builders", "Wise elders", "Rich merchants"], "v": 6},
-{"t": "choice", "d": 2, "q": "Where was Pethahiah in all matters concerning the people?", "options": ["At the king's hand", "At the city gate", "In the house of God", "In Susa the palace"], "v": 24},
-{"t": "choice", "d": 3, "q": "What did Shabbethai and Jozabad have oversight of?", "options": ["The outward business of God's house", "The singers and their songs", "The gates of the city", "The tithes of the villages"], "v": 16},
-{"t": "blank", "d": 2, "q": "And their brothers, ____, one hundred twenty-eight.", "answer": "mighty men of valor", "wrong": ["keepers of the treasure", "skilled in music", "servants of the temple"], "v": 14},
-{"t": "blank", "d": 3, "q": "The children of Benjamin also lived at Lod, and Ono, ____.", "answer": "the valley of craftsmen", "wrong": ["the valley of salt", "the plain of Sharon", "the hill of Moreh"], "v": 35},
-{"t": "tf", "d": 1, "q": "None of the children of Benjamin lived outside Jerusalem.", "answer": false, "v": 31}
-]},
-"12":{"keyVerse":43,"questions":[
-{"t": "choice", "d": 1, "q": "Where did the two thanksgiving companies march at the dedication?", "options": ["On top of the wall", "Around the temple courts", "Through the city streets", "Outside the city gates"], "v": 31},
-{"t": "choice", "d": 2, "q": "What did the priests and Levites purify after purifying themselves?", "options": ["The people, the gates, and the wall", "The altar, the vessels, and the courts", "The water gate and the pools", "The singers and their instruments"], "v": 30},
-{"t": "choice", "d": 2, "q": "With whom did the priests and Levites listed at the start of the chapter go up?", "options": ["Zerubbabel and Jeshua", "Ezra and Nehemiah", "Cyrus and Sheshbazzar", "Haggai and Zechariah"], "v": 1},
-{"t": "choice", "d": 3, "q": "By whose commandment did the Levites praise and give thanks, section next to section?", "options": ["David the man of God", "Moses the servant of God", "Solomon the king", "Asaph the singer"], "v": 24},
-{"t": "choice", "d": 2, "q": "Where had the singers built villages for themselves?", "options": ["Around Jerusalem", "Near Susa the palace", "In the hills of Ephraim", "Along the Jordan"], "v": 29},
-{"t": "blank", "d": 2, "q": "Men were appointed over the rooms for the treasures, for the wave offerings, for the first fruits, and ____.", "answer": "for the tithes", "wrong": ["for the vessels", "for the garments", "for the incense"], "v": 44},
-{"t": "blank", "d": 3, "q": "To keep the dedication with gladness, with giving thanks and singing, with ____.", "answer": "cymbals, stringed instruments, and harps", "wrong": ["trumpets, flutes, and drums", "horns, lyres, and tambourines", "pipes, shofars, and bells"], "v": 27},
-{"t": "blank", "d": 1, "q": "The women and the children also rejoiced, so that ____ was heard even far away.", "answer": "the joy of Jerusalem", "wrong": ["the sound of trumpets", "the song of the Levites", "the shout of the people"], "v": 43},
-{"t": "tf", "d": 1, "q": "Great sacrifices were offered on the day of the dedication.", "answer": true, "v": 43},
-{"t": "tf", "d": 3, "q": "Nehemiah went with the company that headed toward the dung gate.", "answer": false, "v": 38},
-{"t": "choice", "d": 1, "q": "Whom did they seek out of all their places to come to the dedication?", "options": ["The Levites", "The princes", "The prophets", "The mighty men"], "v": 27},
-{"t": "choice", "d": 2, "q": "Who went before the first thanksgiving company?", "options": ["Ezra the scribe", "Nehemiah the governor", "Eliashib the priest", "Zerubbabel"], "v": 36},
-{"t": "choice", "d": 2, "q": "What was Mattaniah the Levite over, with his brothers?", "options": ["The thanksgiving songs", "The treasury", "The gatekeepers", "The wood offering"], "v": 8},
-{"t": "choice", "d": 3, "q": "By the spring gate, what did the first company go up?", "options": ["The stairs of David's city", "The tower of Hananel", "The ascent of the corner", "The steps of the temple"], "v": 37},
-{"t": "blank", "d": 2, "q": "Judah rejoiced for the priests and for ____ who served.", "answer": "the Levites", "wrong": ["the singers", "the gatekeepers", "the princes"], "v": 44},
-{"t": "blank", "d": 3, "q": "In the days of David and Asaph of old there was a chief of the singers, and ____ to God.", "answer": "songs of praise and thanksgiving", "wrong": ["harps and cymbals in the temple", "a feast at the new moon", "prayers at the evening offering"], "v": 46},
-{"t": "tf", "d": 1, "q": "In the days of Nehemiah, the people stopped giving portions to the singers and gatekeepers.", "answer": false, "v": 47}
-]},
-"13":{"keyVerse":31,"questions":[
-{"t": "choice", "d": 1, "q": "For whom had Eliashib the priest prepared a great room in God's house?", "options": ["Tobiah", "Sanballat", "Geshem", "Shemaiah"], "v": 5},
-{"t": "choice", "d": 1, "q": "What did Nehemiah do with Tobiah's household stuff?", "options": ["Threw it out of the room", "Burned it at the gate", "Sold it for the treasury", "Sent it back to Ammon"], "v": 8},
-{"t": "choice", "d": 2, "q": "Why had the Levites and singers fled to their fields?", "options": ["Their portions had not been given", "Enemies attacked the temple", "Tobiah drove them out", "A famine struck Jerusalem"], "v": 10},
-{"t": "choice", "d": 2, "q": "Which king did Nehemiah say was caused to sin by foreign women?", "options": ["Solomon", "David", "Ahab", "Jeroboam"], "v": 26},
-{"t": "choice", "d": 3, "q": "A grandson of Eliashib the high priest was son in law to whom?", "options": ["Sanballat the Horonite", "Tobiah the Ammonite", "Geshem the Arabian", "Shecaniah the son of Arah"], "v": 28},
-{"t": "blank", "d": 3, "q": "They hired Balaam against them to curse them; however, our God ____.", "answer": "turned the curse into a blessing", "wrong": ["stopped the mouth of Balaam", "fought for his people", "shut the eyes of Moab"], "v": 2},
-{"t": "blank", "d": 2, "q": "I contended with the rulers, and said, \"Why is ____ forsaken?\"", "answer": "God's house", "wrong": ["the law of Moses", "the holy city", "the Sabbath day"], "v": 11},
-{"t": "blank", "d": 3, "q": "Their children spoke half in the speech of Ashdod, and could not speak ____.", "answer": "in the Jews' language", "wrong": ["the words of the law", "to their own fathers", "in the holy tongue"], "v": 24},
-{"t": "tf", "d": 1, "q": "Men of Tyre sold fish and wares to the people of Judah on the Sabbath.", "answer": true, "v": 16},
-{"t": "tf", "d": 2, "q": "Nehemiah was in Jerusalem when Eliashib prepared the room for Tobiah.", "answer": false, "v": 6},
-{"t": "choice", "d": 1, "q": "What was found written about Ammonites and Moabites in the book of Moses?", "options": ["They should never enter God's assembly", "They must pay a yearly tax", "They could serve as gatekeepers", "They must leave the land at once"], "v": 1},
-{"t": "choice", "d": 1, "q": "What did Nehemiah command when the gates grew dark before the Sabbath?", "options": ["Shut the doors until after the Sabbath", "Light torches on the wall", "Sound the trumpet for the feast", "Let only the priests enter"], "v": 19},
-{"t": "choice", "d": 2, "q": "What did Nehemiah warn the merchants camped around the wall?", "options": ["He would lay hands on them", "He would burn their wares", "He would report them to the king", "He would tax their goods"], "v": 21},
-{"t": "choice", "d": 3, "q": "Why were Shelemiah, Zadok, and Pedaiah made treasurers?", "options": ["They were counted faithful", "They could read and write", "They were related to Nehemiah", "They were chosen by lot"], "v": 13},
-{"t": "blank", "d": 2, "q": "In those days I saw some men treading wine presses ____.", "answer": "on the Sabbath in Judah", "wrong": ["at night in secret", "in the courts of God's house", "outside the city gates"], "v": 15},
-{"t": "blank", "d": 3, "q": "I brought into them the vessels of God's house, with ____ again.", "answer": "the meal offerings and the frankincense", "wrong": ["the gold and the silver", "the tithes of the Levites", "the bread of the presence"], "v": 9},
-{"t": "tf", "d": 2, "q": "Nehemiah made the men swear not to give their daughters to foreign sons.", "answer": true, "v": 25}
-]}
-}}
+{
+ "book": "NEH",
+ "chapters": {
+  "1": {
+   "keyVerse": 4,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where was Nehemiah when news about Jerusalem reached him?",
+     "options": [
+      "Susa the palace",
+      "Babylon",
+      "Jerusalem",
+      "Damascus"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What news did Nehemiah hear about Jerusalem?",
+     "options": [
+      "Its wall was broken and gates burned",
+      "Its temple was taken by enemies",
+      "Its people were carried off again",
+      "Its governor was killed in battle"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which of Nehemiah's brothers came with men from Judah?",
+     "options": [
+      "Hanani",
+      "Hananiah",
+      "Ezra",
+      "Shemaiah"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was Nehemiah's position, mentioned at the end of the chapter?",
+     "options": [
+      "Cup bearer to the king",
+      "Scribe of the king's court",
+      "Governor of the province",
+      "Keeper of the king's forest"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I sat down and wept, and mourned several days; and I ____ before the God of heaven.",
+     "answer": "fasted and prayed",
+     "wrong": [
+      "offered burnt offerings",
+      "tore my clothes",
+      "bowed down low"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The great and awesome God who keeps ____ with those who love him and keep his commandments.",
+     "answer": "covenant and loving kindness",
+     "wrong": [
+      "his promise and truth",
+      "mercy and judgment",
+      "faith and righteousness"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Though your outcasts were in ____, yet I will gather them from there.",
+     "answer": "the uttermost part of the heavens",
+     "wrong": [
+      "the farthest islands of the sea",
+      "the land of their captivity",
+      "the ends of the earth"
+     ],
+     "v": 9
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Hanani arrives with men from Judah",
+      "Nehemiah hears the wall is broken down",
+      "Nehemiah weeps, fasts, and prays",
+      "Nehemiah asks for mercy before the king"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Nehemiah confesses that he and his father's house have sinned.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "In his prayer, Nehemiah reminds God of a word he commanded to Abraham.",
+     "answer": false,
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did God warn through Moses that he would do if Israel trespassed?",
+     "options": [
+      "Scatter them among the peoples",
+      "Burn their cities with fire",
+      "Withhold the rain",
+      "Send them back to Egypt"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the men from Judah describe the remnant in the province?",
+     "options": [
+      "In great affliction and reproach",
+      "Rich and at peace",
+      "Hiding in the hills",
+      "Sick with a plague"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When did Nehemiah say he prayed for the children of Israel?",
+     "options": [
+      "Day and night",
+      "Only at dawn",
+      "At the evening sacrifice",
+      "On each Sabbath"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In what month did Nehemiah hear the news from Judah?",
+     "options": [
+      "Chislev",
+      "Nisan",
+      "Adar",
+      "Elul"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Your people, whom you have redeemed by your great power and by ____.",
+     "answer": "your strong hand",
+     "wrong": [
+      "your holy name",
+      "your mighty word",
+      "your faithful love"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The prayer of your servants who ____.",
+     "answer": "delight to fear your name",
+     "wrong": [
+      "call upon your name",
+      "walk in your ways",
+      "wait for your mercy"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Nehemiah says Israel had kept the commandments God gave through Moses.",
+     "answer": false,
+     "v": 7
+    }
+   ]
+  },
+  "2": {
+   "keyVerse": 20,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which king did Nehemiah serve wine to?",
+     "options": [
+      "Artaxerxes",
+      "Cyrus",
+      "Darius",
+      "Nebuchadnezzar"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the king notice about Nehemiah?",
+     "options": [
+      "His face was sad",
+      "He had torn his clothes",
+      "He refused to eat",
+      "He was trembling"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Nehemiah do right after the king asked, \"What is your request?\"",
+     "options": [
+      "He prayed to the God of heaven",
+      "He bowed to the ground",
+      "He asked the queen to speak",
+      "He asked for three days to think"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Nehemiah ask Asaph, keeper of the king's forest, to give him?",
+     "options": [
+      "Timber to make beams",
+      "Soldiers for protection",
+      "Silver for the workers",
+      "Stone for the wall"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The king granted my requests, because of ____ on me.",
+     "answer": "the good hand of my God",
+     "wrong": [
+      "the favor of the queen",
+      "the kindness of the king",
+      "the prayers of my brothers"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Come, let's build up the wall of Jerusalem, that ____.",
+     "answer": "we won't be disgraced",
+     "wrong": [
+      "our enemies will fear",
+      "our children will be safe",
+      "the nations will see"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The God of heaven will prosper us. Therefore we, his servants, ____.",
+     "answer": "will arise and build",
+     "wrong": [
+      "will not be afraid",
+      "will stand and fight",
+      "will wait on him"
+     ],
+     "v": 20
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The king asks why Nehemiah's face is sad",
+      "Nehemiah gives the king's letters to the governors",
+      "Nehemiah inspects the walls by night",
+      "The people say, Let's rise up and build"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Sanballat, Tobiah, and Geshem asked the builders if they were rebelling against the king.",
+     "answer": true,
+     "v": 19
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Nehemiah told the priests and nobles his plan before he inspected the walls.",
+     "answer": false,
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Nehemiah ask the king to give him for the governors beyond the River?",
+     "options": [
+      "Letters to let him pass through",
+      "Gold to pay them tribute",
+      "Soldiers to replace them",
+      "Gifts to win their favor"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who was sitting by the king when he agreed to send Nehemiah?",
+     "options": [
+      "The queen",
+      "The chief scribe",
+      "Asaph the keeper",
+      "The king's son"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Whom had the king sent along with Nehemiah?",
+     "options": [
+      "Captains of the army and horsemen",
+      "Priests and Levites",
+      "Scribes and judges",
+      "Singers and gatekeepers"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why couldn't Nehemiah ride on past the spring gate and the king's pool?",
+     "options": [
+      "There was no place for his animal to pass",
+      "Guards were posted there",
+      "The gate was locked",
+      "Enemies were waiting there"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "It grieved them exceedingly, because a man had come to seek the welfare of ____.",
+     "answer": "the children of Israel",
+     "wrong": [
+      "the priests and Levites",
+      "the city of David",
+      "the house of God"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "There wasn't any animal with me except ____.",
+     "answer": "the animal that I rode on",
+     "wrong": [
+      "the donkey of my servant",
+      "a horse from the king",
+      "the mule of the governor"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Nehemiah told the king that the city of his fathers' tombs lay waste.",
+     "answer": true,
+     "v": 3
+    }
+   ]
+  },
+  "3": {
+   "keyVerse": 28,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What is this chapter mainly a record of?",
+     "options": [
+      "Who repaired each section of the wall",
+      "The families who returned from exile",
+      "The priests who served in the temple",
+      "The enemies who opposed the work"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who built the sheep gate together with his brothers the priests?",
+     "options": [
+      "Eliashib the high priest",
+      "Ezra the scribe",
+      "Nehemiah the governor",
+      "Hanani the brother of Nehemiah"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the nobles of the Tekoites fail to do?",
+     "options": [
+      "Put their necks to the Lord's work",
+      "Pay for the timber and beams",
+      "Guard the gates at night",
+      "Send their servants to help"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who made repairs alongside Shallum, ruler of half the district of Jerusalem?",
+     "options": [
+      "His daughters",
+      "His servants",
+      "His sons in law",
+      "The temple singers"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "The goldsmiths and merchants repaired the stretch between the ascent of the corner and which gate?",
+     "options": [
+      "The sheep gate",
+      "The fish gate",
+      "The dung gate",
+      "The water gate"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Above the horse gate, the priests made repairs, everyone ____.",
+     "answer": "across from his own house",
+     "wrong": [
+      "beside the temple courts",
+      "next to his brothers",
+      "at the corner tower"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Next to him, Hananiah, one of ____, made repairs.",
+     "answer": "the perfumers",
+     "wrong": [
+      "the singers",
+      "the gatekeepers",
+      "the scribes"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "They laid its beams, and set up its doors, ____.",
+     "answer": "its bolts, and its bars",
+     "wrong": [
+      "its hinges and its locks",
+      "its posts and its lintels",
+      "its towers and its walls"
+     ],
+     "v": 3
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Some of the builders made repairs across from or beside their own houses.",
+     "answer": true,
+     "v": 10
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Hanun and the inhabitants of Zanoah repaired the fish gate.",
+     "answer": false,
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Eliashib and the priests do to the sheep gate after building it?",
+     "options": [
+      "They sanctified it",
+      "They covered it with gold",
+      "They named it for the king",
+      "They posted soldiers there"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "The men of which town built next to Eliashib and the priests?",
+     "options": [
+      "Jericho",
+      "Bethlehem",
+      "Hebron",
+      "Anathoth"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which gate did Joiada and Meshullam repair?",
+     "options": [
+      "The old gate",
+      "The water gate",
+      "The horse gate",
+      "The east gate"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How is the work of Baruch the son of Zabbai described?",
+     "options": [
+      "He repaired earnestly",
+      "He repaired alone",
+      "He repaired with his sons",
+      "He repaired it twice"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Nehemiah the son of Azbuk made repairs to the place opposite ____.",
+     "answer": "the tombs of David",
+     "wrong": [
+      "the king's garden",
+      "the house of God",
+      "the tower of Hananel"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Malchijah and Hasshub repaired another portion and ____.",
+     "answer": "the tower of the furnaces",
+     "wrong": [
+      "the tower of the singers",
+      "the wall of the pool",
+      "the gate of the priests"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The Tekoites also repaired a second portion, opposite the great tower that stands out.",
+     "answer": true,
+     "v": 27
+    }
+   ]
+  },
+  "4": {
+   "keyVerse": 6,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did those carrying burdens work on the wall?",
+     "options": [
+      "One hand worked, the other held a weapon",
+      "They worked only in daylight",
+      "They took turns sleeping on the wall",
+      "They were guarded by the king's soldiers"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What animal did Tobiah say would break down the wall by climbing on it?",
+     "options": [
+      "A fox",
+      "A goat",
+      "A jackal",
+      "A donkey"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What were the people told to rally to wherever they heard it?",
+     "options": [
+      "The sound of the trumpet",
+      "A fire on the tower",
+      "A banner on the gate",
+      "The shout of the watchmen"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who said the strength of the burden bearers was fading and there was much rubble?",
+     "options": [
+      "Judah",
+      "The Levites",
+      "The nobles",
+      "The men of Jericho"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "All the wall was joined together to half its height, for the people had ____.",
+     "answer": "a mind to work",
+     "wrong": [
+      "a great fear",
+      "help from the king",
+      "food in plenty"
+     ],
+     "v": 6
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Don't be afraid of them! Remember the Lord, who is ____, and fight for your brothers.",
+     "answer": "great and awesome",
+     "wrong": [
+      "mighty and holy",
+      "faithful and true",
+      "strong and merciful"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "None of us took off our clothes. Everyone took ____.",
+     "answer": "his weapon to the water",
+     "wrong": [
+      "his turn at the gate",
+      "his sword to bed",
+      "his shield to the wall"
+     ],
+     "v": 23
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Sanballat mocks the feeble Jews",
+      "The wall is joined to half its height",
+      "The enemies conspire to fight against Jerusalem",
+      "Half the servants work while half hold spears"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When the enemies plotted, the Jews prayed and set a watch day and night.",
+     "answer": true,
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Nehemiah had everyone and his servant lodge outside Jerusalem at night.",
+     "answer": false,
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did every builder wear at his side while he built?",
+     "options": [
+      "His sword",
+      "A trumpet",
+      "A shield",
+      "A bag of tools"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Nehemiah arrange the people behind the wall?",
+     "options": [
+      "By family groups with their weapons",
+      "By tribes with their trumpets",
+      "By priests with their torches",
+      "Among the king's soldiers"
+     ],
+     "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How long each day did half the people hold the spears?",
+     "options": [
+      "From morning until the stars appeared",
+      "From noon until evening",
+      "All through the night",
+      "Only while the enemy was near"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which of these groups joined Sanballat and Tobiah in their anger?",
+     "options": [
+      "The Ashdodites",
+      "The Moabites",
+      "The Egyptians",
+      "The Edomites"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Hear, our God, for we are despised. Turn back their reproach on ____.",
+     "answer": "their own head",
+     "wrong": [
+      "their own children",
+      "their own land",
+      "their proud cities"
+     ],
+     "v": 4
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Will they revive the stones out of ____, since they are burned?",
+     "answer": "the heaps of rubbish",
+     "wrong": [
+      "the ruins of the temple",
+      "the valley below",
+      "the ashes of the gates"
+     ],
+     "v": 2
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When the enemies learned their plot was known, everyone returned to the wall to work.",
+     "answer": true,
+     "v": 15
+    }
+   ]
+  },
+  "5": {
+   "keyVerse": 19,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did many people cry out against their fellow Jews?",
+     "options": [
+      "Debts were forcing their children into bondage",
+      "Their houses were burned by enemies",
+      "The priests had stopped the sacrifices",
+      "Nehemiah had raised their taxes"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What practice did Nehemiah tell the nobles and rulers to stop?",
+     "options": [
+      "Charging usury",
+      "Marrying foreign wives",
+      "Working on the Sabbath",
+      "Selling grain to foreigners"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the nobles respond when Nehemiah confronted them?",
+     "options": [
+      "They held their peace and had no answer",
+      "They mocked him before the people",
+      "They appealed to the king",
+      "They left Jerusalem in anger"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Nehemiah shake out as a sign against anyone who broke the promise?",
+     "options": [
+      "His lap",
+      "The dust from his feet",
+      "His robe",
+      "His purse"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "From the twentieth year to the thirty second year, I and my brothers have not eaten ____.",
+     "answer": "the bread of the governor",
+     "wrong": [
+      "the fat of the offerings",
+      "the food of the king",
+      "the grain of the poor"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Shouldn't you walk in the fear of our God because of ____, our enemies?",
+     "answer": "the reproach of the nations",
+     "wrong": [
+      "the anger of the king",
+      "the judgment of Moses",
+      "the eyes of the Samaritans"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Remember me, my God, for ____ that I have done for this people.",
+     "answer": "all the good",
+     "wrong": [
+      "all the work",
+      "every kindness",
+      "all the labor"
+     ],
+     "v": 19
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The people cry out over debts and bondage",
+      "Nehemiah becomes very angry",
+      "Nehemiah holds a great assembly against the nobles",
+      "The nobles promise to restore everything"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Nehemiah had the nobles take an oath before the priests to keep their promise.",
+     "answer": true,
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Nehemiah says the former governors did not burden the people.",
+     "answer": false,
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did some people say they were mortgaging their fields, vineyards, and houses?",
+     "options": [
+      "To get grain because of the famine",
+      "To pay the wall builders",
+      "To buy back their children",
+      "To give offerings at the temple"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did some people borrow money to pay?",
+     "options": [
+      "The king's tribute",
+      "The temple tax",
+      "The builders' wages",
+      "A ransom to the nations"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does Nehemiah say he and his servants did not buy while working on the wall?",
+     "options": [
+      "Any land",
+      "Any slaves",
+      "Any horses",
+      "Any wine"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Nehemiah do before he contended with the nobles and rulers?",
+     "options": [
+      "He consulted with himself",
+      "He fasted for three days",
+      "He wrote to the king",
+      "He called for the priests"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "We, our sons and our daughters, are many. Let us get grain, that ____.",
+     "answer": "we may eat and live",
+     "wrong": [
+      "our children may not starve",
+      "we may pay our debts",
+      "we may sow our fields"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Even their servants ruled over the people, but I didn't do so, because of ____.",
+     "answer": "the fear of God",
+     "wrong": [
+      "the love of my people",
+      "the command of the king",
+      "the poverty of the land"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Nehemiah said that he and his servants had never lent the people money or grain.",
+     "answer": false,
+     "v": 10
+    }
+   ]
+  },
+  "6": {
+   "keyVerse": 3,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How long did it take to finish the wall?",
+     "options": [
+      "Fifty two days",
+      "Forty days",
+      "Seventy days",
+      "One hundred twenty days"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Sanballat and Geshem ask Nehemiah to meet them?",
+     "options": [
+      "In the plain of Ono",
+      "In the valley of Hinnom",
+      "In the hills of Samaria",
+      "At the gate of Ephraim"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Sanballat's servant bring the fifth time?",
+     "options": [
+      "An open letter",
+      "A gift of gold",
+      "A sealed scroll",
+      "A royal decree"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Shemaiah urge Nehemiah to do?",
+     "options": [
+      "Hide in the temple and shut the doors",
+      "Flee back to Susa at night",
+      "Stop work on the gates",
+      "Meet his enemies in the villages"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who had hired Shemaiah to speak against Nehemiah?",
+     "options": [
+      "Tobiah and Sanballat",
+      "Geshem and Gashmu",
+      "The nobles of Judah",
+      "The prophetess Noadiah"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "I am doing a great work, so that ____.",
+     "answer": "I can't come down",
+     "wrong": [
+      "I cannot rest now",
+      "I must stay here",
+      "I have no time"
+     ],
+     "v": 3
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Who is there that, being such as I, would go into the temple ____?",
+     "answer": "to save his life",
+     "wrong": [
+      "to hide from enemies",
+      "to pray for help",
+      "to escape the night"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "All the nations around us were afraid, for they perceived that this work was done ____.",
+     "answer": "by our God",
+     "wrong": [
+      "by the king's order",
+      "by strong men",
+      "by many hands"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The open letter claimed Nehemiah planned to make himself king.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The nobles of Judah refused all contact with Tobiah.",
+     "answer": false,
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Sanballat and Geshem really intend by asking Nehemiah to meet them?",
+     "options": [
+      "To harm him",
+      "To make peace with him",
+      "To help build the gates",
+      "To bring him tribute"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Nehemiah answer the charges in the open letter?",
+     "options": [
+      "You imagine them out of your own heart",
+      "The king already knows the truth",
+      "I will come and explain myself",
+      "My God will judge between us"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which prophetess does Nehemiah ask God to remember for trying to frighten him?",
+     "options": [
+      "Noadiah",
+      "Huldah",
+      "Deborah",
+      "Miriam"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why were many in Judah sworn to Tobiah?",
+     "options": [
+      "He was the son in law of Shecaniah",
+      "He was a prince of Ammon",
+      "He had paid them silver",
+      "He was the son of a priest"
+     ],
+     "v": 18
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They said, \"Their hands will be weakened from the work.\" But now, ____.",
+     "answer": "strengthen my hands",
+     "wrong": [
+      "fight for your people",
+      "hear my prayer",
+      "remember your servant"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "He was hired so that they might have material for ____, that they might reproach me.",
+     "answer": "an evil report",
+     "wrong": [
+      "a charge before the king",
+      "a letter to Susa",
+      "a lawsuit against me"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Tobiah sent letters to Nehemiah to encourage him in the work.",
+     "answer": false,
+     "v": 19
+    }
+   ]
+  },
+  "7": {
+   "keyVerse": 4,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom did Nehemiah put in charge of Jerusalem?",
+     "options": [
+      "Hanani and Hananiah",
+      "Ezra and Zerubbabel",
+      "Eliashib and Shemaiah",
+      "Meshullam and Zadok"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What problem did Nehemiah see in the city after the wall was built?",
+     "options": [
+      "Few people and houses not built",
+      "No water in the pools",
+      "Enemies camped outside the gates",
+      "The temple still lay in ruins"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When were the gates of Jerusalem allowed to be opened?",
+     "options": [
+      "Not until the sun is hot",
+      "At the first light of dawn",
+      "Only after the morning sacrifice",
+      "Only when the governor was present"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Nehemiah find that he used to list the people?",
+     "options": [
+      "A genealogy of those who came up first",
+      "A letter from King Cyrus",
+      "The census taken by Moses",
+      "The records of the temple treasury"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What happened to priests who could not find their genealogical records?",
+     "options": [
+      "They were removed from the priesthood",
+      "They were sent back to Babylon",
+      "They were made gatekeepers",
+      "They were given land outside the city"
+     ],
+     "v": 64
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They were not to eat of the most holy things until a priest stood up to minister with ____.",
+     "answer": "Urim and Thummim",
+     "wrong": [
+      "the ark of the covenant",
+      "the golden censer",
+      "oil and incense"
+     ],
+     "v": 65
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Nehemiah said Hananiah was a faithful man and ____.",
+     "answer": "feared God above many",
+     "wrong": [
+      "loved the law of Moses",
+      "served the king well",
+      "was wise in counsel"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "These are the children of the province whom ____ had carried away.",
+     "answer": "Nebuchadnezzar the king of Babylon",
+     "wrong": [
+      "Shalmaneser the king of Assyria",
+      "Sennacherib the king of Assyria",
+      "Pharaoh the king of Egypt"
+     ],
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "After the wall was built, gatekeepers, singers, and Levites were appointed.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The governor gave nothing to the treasury, leaving the gifts to the heads of households.",
+     "answer": false,
+     "v": 70
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who put it into Nehemiah's heart to gather the people and list them by genealogy?",
+     "options": [
+      "His God",
+      "The king",
+      "Ezra the scribe",
+      "The nobles"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where were the inhabitants of Jerusalem to stand their watch?",
+     "options": [
+      "Each one near his own house",
+      "Only on the towers",
+      "At the temple gates",
+      "Outside the city walls"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When the seventh month came, where were the children of Israel?",
+     "options": [
+      "In their cities",
+      "At the water gate",
+      "Still in Babylon",
+      "In the wilderness"
+     ],
+     "v": 73
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which family is listed as the singers among those who returned?",
+     "options": [
+      "The children of Asaph",
+      "The children of Korah",
+      "The children of Heman",
+      "The children of Gershon"
+     ],
+     "v": 44
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Now when the wall was built and I had ____, the gatekeepers and singers were appointed.",
+     "answer": "set up the doors",
+     "wrong": [
+      "dedicated the gates",
+      "counted the people",
+      "hung the bars"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They could not show their fathers' houses, nor their offspring, ____.",
+     "answer": "whether they were of Israel",
+     "wrong": [
+      "whether they were priests",
+      "where they were born",
+      "who their mothers were"
+     ],
+     "v": 61
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Singing men and singing women were counted along with the returning assembly.",
+     "answer": true,
+     "v": 67
+    }
+   ]
+  },
+  "8": {
+   "keyVerse": 10,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Who brought and read the book of the law before the assembly?",
+     "options": [
+      "Ezra",
+      "Nehemiah",
+      "Eliashib",
+      "Zerubbabel"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the people first react when they heard the words of the law?",
+     "options": [
+      "They wept",
+      "They danced",
+      "They left in anger",
+      "They sat in silence"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Ezra stand on while reading to the people?",
+     "options": [
+      "A pulpit of wood",
+      "The top of the wall",
+      "The steps of the temple",
+      "A stone platform"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "On the second day, what did the leaders find written in the law?",
+     "options": [
+      "To live in booths during the seventh month feast",
+      "To gather at the water gate each Sabbath",
+      "To fast on the tenth day of the month",
+      "To read the law every seventh year"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Don't be grieved, for ____ is your strength.",
+     "answer": "the joy of the LORD",
+     "wrong": [
+      "the word of the LORD",
+      "the hand of the LORD",
+      "the name of the LORD"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Eat the fat, drink the sweet, and send portions to ____.",
+     "answer": "him for whom nothing is prepared",
+     "wrong": [
+      "the priests and the Levites",
+      "the widows and the orphans",
+      "your brothers in the villages"
+     ],
+     "v": 10
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Since the days of ____ to that day the children of Israel had not done so.",
+     "answer": "Joshua the son of Nun",
+     "wrong": [
+      "David the son of Jesse",
+      "Solomon the son of David",
+      "Samuel the prophet"
+     ],
+     "v": 17
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "The people gather before the water gate",
+      "Ezra reads from early morning until midday",
+      "The people are told not to mourn or weep",
+      "The people make temporary shelters"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The people answered, \"Amen, Amen,\" lifting up their hands.",
+     "answer": true,
+     "v": 6
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The feast was kept seven days, and on the eighth day everyone returned home.",
+     "answer": false,
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did all the people do when Ezra opened the book?",
+     "options": [
+      "They stood up",
+      "They knelt down",
+      "They shouted for joy",
+      "They covered their faces"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "On what day did Ezra bring the law before the assembly?",
+     "options": [
+      "The first day of the seventh month",
+      "The tenth day of the first month",
+      "The fifteenth day of the seventh month",
+      "The Sabbath after Passover"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the readers help the people understand the law?",
+     "options": [
+      "They read distinctly and gave the sense",
+      "They translated it into Persian",
+      "They sang it with harps",
+      "They wrote it on the wall"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where did people build their temporary shelters?",
+     "options": [
+      "On their roofs and in their courts",
+      "Outside the city walls",
+      "On the Mount of Olives",
+      "In the valley of Hinnom"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The Levites calmed all the people, saying, \"Hold your peace, for ____.\"",
+     "answer": "the day is holy",
+     "wrong": [
+      "the LORD is near",
+      "the law is good",
+      "your sins are forgiven"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Day by day, from the first day to the last day, he read in the book of ____.",
+     "answer": "the law of God",
+     "wrong": [
+      "the kings of Judah",
+      "the covenant of Abraham",
+      "the prophets of old"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Ezra read the law only to the men of the assembly.",
+     "answer": false,
+     "v": 3
+    }
+   ]
+  },
+  "9": {
+   "keyVerse": 31,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the children of Israel come to the assembly?",
+     "options": [
+      "Fasting, in sackcloth, with dirt on them",
+      "In white linen for a feast",
+      "Armed and ready for battle",
+      "In robes carrying palm branches"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What is the Levites' long prayer in this chapter mostly about?",
+     "options": [
+      "God's faithfulness through Israel's rebellions",
+      "The building of the wall",
+      "The families who returned from exile",
+      "The duties of priests and Levites"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "From where does the prayer say God brought Abram out?",
+     "options": [
+      "Ur of the Chaldees",
+      "Haran",
+      "Egypt",
+      "Damascus"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "In their rebellion, why did the fathers appoint a captain?",
+     "options": [
+      "To return to their bondage",
+      "To attack the Amalekites",
+      "To replace Moses as judge",
+      "To lead them into Canaan"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You are a God ready to pardon, gracious and merciful, ____, and abundant in loving kindness.",
+     "answer": "slow to anger",
+     "wrong": [
+      "quick to forgive",
+      "rich in mercy",
+      "mighty to save"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They cast your law behind their back, and killed ____ that testified against them.",
+     "answer": "your prophets",
+     "wrong": [
+      "your priests",
+      "your servants",
+      "your judges"
+     ],
+     "v": 26
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You gave also ____ to instruct them, and didn't withhold your manna from their mouth.",
+     "answer": "your good Spirit",
+     "wrong": [
+      "your holy law",
+      "your faithful prophets",
+      "your wise judges"
+     ],
+     "v": 20
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "God chooses Abram",
+      "God divides the sea",
+      "God speaks from heaven on Mount Sinai",
+      "The people make a molded calf"
+     ],
+     "v": 7
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The chapter ends with the people making a sure covenant sealed by princes, Levites, and priests.",
+     "answer": true,
+     "v": 38
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The people read the law for half the day and confessed for the other half.",
+     "answer": false,
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did God lead the people in the wilderness by day and by night?",
+     "options": [
+      "A pillar of cloud and a pillar of fire",
+      "An angel and a star",
+      "A trumpet and a torch",
+      "The ark and the lampstand"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "From whom did the offspring of Israel separate themselves?",
+     "options": [
+      "All foreigners",
+      "The priests",
+      "Their kings",
+      "Their own families"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What does the prayer say did not grow old during the forty years in the wilderness?",
+     "options": [
+      "Their clothes",
+      "Their tents",
+      "Their tools",
+      "Their elders"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Whose lands does the prayer say Israel possessed?",
+     "options": [
+      "Sihon and Og",
+      "Balak and Balaam",
+      "Eglon and Jabin",
+      "Agag and Amalek"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "You gave them bread from the sky for their hunger, and brought water out of ____ for their thirst.",
+     "answer": "the rock",
+     "wrong": [
+      "the ground",
+      "the well",
+      "the river"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "You cast their pursuers into the depths, as ____.",
+     "answer": "a stone into the mighty waters",
+     "wrong": [
+      "lead into the deep sea",
+      "chaff before the wind",
+      "a stone into a pit"
+     ],
+     "v": 11
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "The people say they are free men in the land God gave their fathers.",
+     "answer": false,
+     "v": 36
+    }
+   ]
+  },
+  "10": {
+   "keyVerse": 30,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whose name is first among those who sealed the covenant?",
+     "options": [
+      "Nehemiah the governor",
+      "Ezra the scribe",
+      "Eliashib the high priest",
+      "Zerubbabel"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Besides the leaders, who joined in the curse and oath to walk in God's law?",
+     "options": [
+      "All with knowledge and understanding, with their families",
+      "Only the priests and Levites",
+      "Only the men of Judah",
+      "Only the heads of households"
+     ],
+     "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did they promise if merchants brought grain to sell on the Sabbath?",
+     "options": [
+      "Not to buy from them on the Sabbath",
+      "To buy only what the priests needed",
+      "To drive them out of the city",
+      "To charge them a tax"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did they charge themselves each year for the service of God's house?",
+     "options": [
+      "A third of a shekel",
+      "Half a shekel",
+      "One shekel",
+      "A tenth of their silver"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "We would forego the seventh year crops and ____.",
+     "answer": "the exaction of every debt",
+     "wrong": [
+      "the sale of our fields",
+      "the payment of the tribute",
+      "the gathering of the tithe"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "We will not forsake ____.",
+     "answer": "the house of our God",
+     "wrong": [
+      "the law of Moses",
+      "the city of our fathers",
+      "the covenant with Abraham"
+     ],
+     "v": 39
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The Levites shall bring up ____ to the house of our God, into the treasure house.",
+     "answer": "the tithe of the tithes",
+     "wrong": [
+      "the first of the fruits",
+      "the best of the flock",
+      "the gold of the offering"
+     ],
+     "v": 38
+    },
+    {
+     "t": "order",
+     "d": 2,
+     "items": [
+      "Leaders set their seals on the covenant",
+      "The people swear to walk in God's law",
+      "They promise not to intermarry with the peoples",
+      "They pledge support for God's house"
+     ],
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The people promised to bring the firstborn of their sons and livestock to God's house.",
+     "answer": true,
+     "v": 36
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "The tithes of the ground were to be given to the gatekeepers in the farming villages.",
+     "answer": false,
+     "v": 37
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Through whom did the people say God's law had been given?",
+     "options": [
+      "Moses the servant of God",
+      "Ezra the scribe",
+      "David the man of God",
+      "Joshua the son of Nun"
+     ],
+     "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did they promise to bring to the LORD's house year by year?",
+     "options": [
+      "The first fruits of their ground and trees",
+      "A lamb from each household",
+      "Silver for the city wall",
+      "Gold for the lampstand"
+     ],
+     "v": 35
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did they decide who would bring the wood offering?",
+     "options": [
+      "They cast lots",
+      "The governor assigned it",
+      "The oldest families went first",
+      "The high priest chose"
+     ],
+     "v": 34
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Who was to be with the Levites when they took the tithes?",
+     "options": [
+      "A priest descended from Aaron",
+      "The governor",
+      "A scribe of the king",
+      "The chief gatekeeper"
+     ],
+     "v": 38
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The yearly charge was for the show bread, for the continual meal offering, for ____.",
+     "answer": "the continual burnt offering",
+     "wrong": [
+      "the evening incense",
+      "the Passover lamb",
+      "the daily drink offering"
+     ],
+     "v": 33
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "We should bring the first fruits of ____, our wave offerings, and the new wine and the oil.",
+     "answer": "our dough",
+     "wrong": [
+      "our flocks",
+      "our vineyards",
+      "our olive trees"
+     ],
+     "v": 37
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "They promised not to buy from merchants on the Sabbath, but said holy days were allowed.",
+     "answer": false,
+     "v": 31
+    }
+   ]
+  },
+  "11": {
+   "keyVerse": 2,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which two tribes had children living in Jerusalem?",
+     "options": [
+      "Judah and Benjamin",
+      "Judah and Levi",
+      "Benjamin and Ephraim",
+      "Judah and Simeon"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who lived in Jerusalem without the casting of lots?",
+     "options": [
+      "The princes of the people",
+      "The temple servants",
+      "The singers",
+      "The gatekeepers"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the people treat the men who willingly offered to live in Jerusalem?",
+     "options": [
+      "They blessed them",
+      "They paid them silver",
+      "They gave them fields",
+      "They made them rulers"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did the temple servants live?",
+     "options": [
+      "Ophel",
+      "Bethel",
+      "Anathoth",
+      "The valley of Hinnom"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Mattaniah was the chief who began what?",
+     "options": [
+      "The thanksgiving in prayer",
+      "The watch at the gates",
+      "The counting of the treasury",
+      "The reading of the law"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The rest of the people cast lots to bring one of ten to dwell in Jerusalem, ____.",
+     "answer": "the holy city",
+     "wrong": [
+      "the royal city",
+      "the city of David",
+      "the rebuilt city"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "There was a commandment from the king, and a settled provision for ____, as every day required.",
+     "answer": "the singers",
+     "wrong": [
+      "the gatekeepers",
+      "the priests",
+      "the temple servants"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "So they encamped from Beersheba to ____.",
+     "answer": "the valley of Hinnom",
+     "wrong": [
+      "the brook of Egypt",
+      "the river Jordan",
+      "the gates of Jerusalem"
+     ],
+     "v": 30
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Nine out of ten parts of the people lived in cities outside Jerusalem.",
+     "answer": true,
+     "v": 1
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "All the priests and Levites of Israel lived inside Jerusalem.",
+     "answer": false,
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was the task of Akkub, Talmon, and their brothers?",
+     "options": [
+      "They kept watch at the gates",
+      "They led the singing",
+      "They guarded the treasury",
+      "They cared for the altar fire"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How are the sons of Perez who lived in Jerusalem described?",
+     "options": [
+      "Valiant men",
+      "Skilled builders",
+      "Wise elders",
+      "Rich merchants"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where was Pethahiah in all matters concerning the people?",
+     "options": [
+      "At the king's hand",
+      "At the city gate",
+      "In the house of God",
+      "In Susa the palace"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Shabbethai and Jozabad have oversight of?",
+     "options": [
+      "The outward business of God's house",
+      "The singers and their songs",
+      "The gates of the city",
+      "The tithes of the villages"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "And their brothers, ____, one hundred twenty eight.",
+     "answer": "mighty men of valor",
+     "wrong": [
+      "keepers of the treasure",
+      "skilled in music",
+      "servants of the temple"
+     ],
+     "v": 14
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The children of Benjamin also lived at Lod, and Ono, ____.",
+     "answer": "the valley of craftsmen",
+     "wrong": [
+      "the valley of salt",
+      "the plain of Sharon",
+      "the hill of Moreh"
+     ],
+     "v": 35
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "None of the children of Benjamin lived outside Jerusalem.",
+     "answer": false,
+     "v": 31
+    }
+   ]
+  },
+  "12": {
+   "keyVerse": 43,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did the two thanksgiving companies march at the dedication?",
+     "options": [
+      "On top of the wall",
+      "Around the temple courts",
+      "Through the city streets",
+      "Outside the city gates"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the priests and Levites purify after purifying themselves?",
+     "options": [
+      "The people, the gates, and the wall",
+      "The altar, the vessels, and the courts",
+      "The water gate and the pools",
+      "The singers and their instruments"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "With whom did the priests and Levites listed at the start of the chapter go up?",
+     "options": [
+      "Zerubbabel and Jeshua",
+      "Ezra and Nehemiah",
+      "Cyrus and Sheshbazzar",
+      "Haggai and Zechariah"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "By whose commandment did the Levites praise and give thanks, section next to section?",
+     "options": [
+      "David the man of God",
+      "Moses the servant of God",
+      "Solomon the king",
+      "Asaph the singer"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where had the singers built villages for themselves?",
+     "options": [
+      "Around Jerusalem",
+      "Near Susa the palace",
+      "In the hills of Ephraim",
+      "Along the Jordan"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Men were appointed over the rooms for the treasures, for the wave offerings, for the first fruits, and ____.",
+     "answer": "for the tithes",
+     "wrong": [
+      "for the vessels",
+      "for the garments",
+      "for the incense"
+     ],
+     "v": 44
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "To keep the dedication with gladness, with giving thanks and singing, with ____.",
+     "answer": "cymbals, stringed instruments, and harps",
+     "wrong": [
+      "trumpets, flutes, and drums",
+      "horns, lyres, and tambourines",
+      "pipes, shofars, and bells"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "The women and the children also rejoiced, so that ____ was heard even far away.",
+     "answer": "the joy of Jerusalem",
+     "wrong": [
+      "the sound of trumpets",
+      "the song of the Levites",
+      "the shout of the people"
+     ],
+     "v": 43
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Great sacrifices were offered on the day of the dedication.",
+     "answer": true,
+     "v": 43
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Nehemiah went with the company that headed toward the dung gate.",
+     "answer": false,
+     "v": 38
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Whom did they seek out of all their places to come to the dedication?",
+     "options": [
+      "The Levites",
+      "The princes",
+      "The prophets",
+      "The mighty men"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who went before the first thanksgiving company?",
+     "options": [
+      "Ezra the scribe",
+      "Nehemiah the governor",
+      "Eliashib the priest",
+      "Zerubbabel"
+     ],
+     "v": 36
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What was Mattaniah the Levite over, with his brothers?",
+     "options": [
+      "The thanksgiving songs",
+      "The treasury",
+      "The gatekeepers",
+      "The wood offering"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "By the spring gate, what did the first company go up?",
+     "options": [
+      "The stairs of David's city",
+      "The tower of Hananel",
+      "The ascent of the corner",
+      "The steps of the temple"
+     ],
+     "v": 37
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Judah rejoiced for the priests and for ____ who served.",
+     "answer": "the Levites",
+     "wrong": [
+      "the singers",
+      "the gatekeepers",
+      "the princes"
+     ],
+     "v": 44
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "In the days of David and Asaph of old there was a chief of the singers, and ____ to God.",
+     "answer": "songs of praise and thanksgiving",
+     "wrong": [
+      "harps and cymbals in the temple",
+      "a feast at the new moon",
+      "prayers at the evening offering"
+     ],
+     "v": 46
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "In the days of Nehemiah, the people stopped giving portions to the singers and gatekeepers.",
+     "answer": false,
+     "v": 47
+    }
+   ]
+  },
+  "13": {
+   "keyVerse": 31,
+   "questions": [
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "For whom had Eliashib the priest prepared a great room in God's house?",
+     "options": [
+      "Tobiah",
+      "Sanballat",
+      "Geshem",
+      "Shemaiah"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Nehemiah do with Tobiah's household stuff?",
+     "options": [
+      "Threw it out of the room",
+      "Burned it at the gate",
+      "Sold it for the treasury",
+      "Sent it back to Ammon"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why had the Levites and singers fled to their fields?",
+     "options": [
+      "Their portions had not been given",
+      "Enemies attacked the temple",
+      "Tobiah drove them out",
+      "A famine struck Jerusalem"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which king did Nehemiah say was caused to sin by foreign women?",
+     "options": [
+      "Solomon",
+      "David",
+      "Ahab",
+      "Jeroboam"
+     ],
+     "v": 26
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "A grandson of Eliashib the high priest was son in law to whom?",
+     "options": [
+      "Sanballat the Horonite",
+      "Tobiah the Ammonite",
+      "Geshem the Arabian",
+      "Shecaniah the son of Arah"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "They hired Balaam against them to curse them; however, our God ____.",
+     "answer": "turned the curse into a blessing",
+     "wrong": [
+      "stopped the mouth of Balaam",
+      "fought for his people",
+      "shut the eyes of Moab"
+     ],
+     "v": 2
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "I contended with the rulers, and said, \"Why is ____ forsaken?\"",
+     "answer": "God's house",
+     "wrong": [
+      "the law of Moses",
+      "the holy city",
+      "the Sabbath day"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Their children spoke half in the speech of Ashdod, and could not speak ____.",
+     "answer": "in the Jews' language",
+     "wrong": [
+      "the words of the law",
+      "to their own fathers",
+      "in the holy tongue"
+     ],
+     "v": 24
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Men of Tyre sold fish and wares to the people of Judah on the Sabbath.",
+     "answer": true,
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Nehemiah was in Jerusalem when Eliashib prepared the room for Tobiah.",
+     "answer": false,
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What was found written about Ammonites and Moabites in the book of Moses?",
+     "options": [
+      "They should never enter God's assembly",
+      "They must pay a yearly tax",
+      "They could serve as gatekeepers",
+      "They must leave the land at once"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Nehemiah command when the gates grew dark before the Sabbath?",
+     "options": [
+      "Shut the doors until after the Sabbath",
+      "Light torches on the wall",
+      "Sound the trumpet for the feast",
+      "Let only the priests enter"
+     ],
+     "v": 19
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Nehemiah warn the merchants camped around the wall?",
+     "options": [
+      "He would lay hands on them",
+      "He would burn their wares",
+      "He would report them to the king",
+      "He would tax their goods"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why were Shelemiah, Zadok, and Pedaiah made treasurers?",
+     "options": [
+      "They were counted faithful",
+      "They could read and write",
+      "They were related to Nehemiah",
+      "They were chosen by lot"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "In those days I saw some men treading wine presses ____.",
+     "answer": "on the Sabbath in Judah",
+     "wrong": [
+      "at night in secret",
+      "in the courts of God's house",
+      "outside the city gates"
+     ],
+     "v": 15
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I brought into them the vessels of God's house, with ____ again.",
+     "answer": "the meal offerings and the frankincense",
+     "wrong": [
+      "the gold and the silver",
+      "the tithes of the Levites",
+      "the bread of the presence"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Nehemiah made the men swear not to give their daughters to foreign sons.",
+     "answer": true,
+     "v": 25
+    }
+   ]
+  }
+ }
+}

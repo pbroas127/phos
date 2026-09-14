@@ -1288,7 +1288,7 @@
      "d": 2,
      "q": "About how many Israelite men did the men of Ai strike down?",
      "options": [
-      "About thirty-six",
+      "About thirty six",
       "About three hundred",
       "About twelve",
       "About one thousand"
@@ -1855,7 +1855,7 @@
      "d": 1,
      "q": "Which king led the alliance against Gibeon?",
      "options": [
-      "Adoni-Zedek king of Jerusalem",
+      "Adoni Zedek king of Jerusalem",
       "Jabin king of Hazor",
       "Horam king of Gezer",
       "Og king of Bashan"
@@ -1940,7 +1940,7 @@
      "q": "Who gathered the northern kings to fight against Israel?",
      "options": [
       "Jabin king of Hazor",
-      "Adoni-Zedek king of Jerusalem",
+      "Adoni Zedek king of Jerusalem",
       "Og king of Bashan",
       "Horam king of Gezer"
      ],
@@ -2141,7 +2141,7 @@
      "options": [
       "Sihon and Og",
       "Jabin and Jobab",
-      "Adoni-Zedek and Horam",
+      "Adoni Zedek and Horam",
       "Balak and Balaam"
      ],
      "v": 2
@@ -2175,10 +2175,10 @@
      "d": 3,
      "q": "How many kings west of the Jordan are counted in total?",
      "options": [
-      "Thirty-one",
+      "Thirty one",
       "Twelve",
       "Forty",
-      "Twenty-two"
+      "Twenty two"
      ],
      "v": 24
     },
@@ -2514,7 +2514,7 @@
     {
      "t": "choice",
      "d": 2,
-     "q": "How did Caleb describe his strength at eighty-five years old?",
+     "q": "How did Caleb describe his strength at eighty five years old?",
      "options": [
       "As strong as the day Moses sent him",
       "Weak, but still willing to fight",
@@ -2613,9 +2613,9 @@
      "d": 2,
      "q": "For how many years did Caleb say the LORD had kept him alive since that word?",
      "options": [
-      "Forty-five",
+      "Forty five",
       "Forty",
-      "Thirty-eight",
+      "Thirty eight",
       "Fifty"
      ],
      "v": 10
@@ -3804,9 +3804,9 @@
      "d": 3,
      "q": "How many cities did the Levites receive in all?",
      "options": [
-      "Forty-eight",
+      "Forty eight",
       "Twelve",
-      "Thirty-one",
+      "Thirty one",
       "Sixty"
      ],
      "v": 41
@@ -4472,7 +4472,7 @@
       "One hundred ten",
       "One hundred twenty",
       "One hundred",
-      "Eighty-five"
+      "Eighty five"
      ],
      "v": 29
     },

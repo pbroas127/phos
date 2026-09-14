@@ -50,8 +50,8 @@ for f in files:
             if not isinstance(v, int) or not 1 <= v <= nv:
                 err(w, f"v {v} out of range 1..{nv}")
             text = json.dumps(q, ensure_ascii=False)
-            if "—" in text or "–" in text:
-                err(w, "contains an em or en dash")
+            if "—" in text or "–" in text or re.search(r"\w-\w", text):
+                err(w, "contains a dash or hyphen")
             key = (q.get("q") or "") + "|".join(q.get("items", []))
             if key in seen:
                 err(w, "duplicate question")

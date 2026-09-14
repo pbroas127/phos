@@ -9,7 +9,14 @@
 {"t":"blank","d":3,"q":"Therefore God, your God, has anointed you with ____ above your fellows.","answer":"the oil of gladness","wrong":["the oil of holiness","the spirit of power","the crown of honor"],"v":9},
 {"t":"order","d":3,"items":["You are my Son, today I have become your father","Your throne, O God, is forever","You laid the foundation of the earth","Sit at my right hand"],"v":5},
 {"t":"tf","d":1,"q":"The chapter calls angels serving spirits sent out for those who will inherit salvation.","answer":true,"v":14},
-{"t":"tf","d":2,"q":"The chapter says the heavens will never grow old, just as the Lord continues.","answer":false,"v":11}
+{"t":"tf","d":2,"q":"The chapter says the heavens will never grow old, just as the Lord continues.","answer":false,"v":11},
+{"t":"choice","d":1,"q":"Through whom did God speak to the fathers in the past?","options":["The prophets","The angels","The priests","The kings"],"v":1},
+{"t":"choice","d":2,"q":"Where did the Son sit down after purifying us of our sins?","options":["At the right hand of the Majesty on high","Before the throne of the angels","On the throne of David","In the holy place of the temple"],"v":3},
+{"t":"choice","d":3,"q":"The Son is called the radiance of God's what?","options":["Glory","Holiness","Wisdom","Power"],"v":3},
+{"t":"blank","d":2,"q":"Has at the end of these days spoken to us by his Son, through whom also ____.","answer":"he made the worlds","wrong":["he redeemed the nations","he gave the law","he judged the earth"],"v":2},
+{"t":"blank","d":3,"q":"You have loved righteousness and ____.","answer":"hated iniquity","wrong":["shunned all evil","despised the proud","rejected the wicked"],"v":9},
+{"t":"tf","d":2,"q":"The chapter calls the Son the very image of God's substance.","answer":true,"v":3},
+{"t":"tf","d":1,"q":"The chapter says God spoke to the fathers at only one time and in one way.","answer":false,"v":1}
 ]},
 "2":{"keyVerse":18,"questions":[
 {"t":"choice","d":1,"q":"What might happen if we don't pay greater attention to what we heard?","options":["We might drift away","We might fall asleep","We might lose our reward","We might turn to idols"],"v":1},
@@ -21,7 +28,14 @@
 {"t":"blank","d":3,"q":"In bringing many children to glory, to make the author of their salvation ____.","answer":"perfect through sufferings","wrong":["known through his works","glorious in his rising","holy through obedience"],"v":10},
 {"t":"order","d":3,"items":["The world to come is not subject to angels","What is man, that you think of him?","He tasted death for everyone","Not ashamed to call them brothers"],"v":5},
 {"t":"tf","d":1,"q":"The chapter says Jesus delivers those who were held in bondage all their lives by fear of death.","answer":true,"v":15},
-{"t":"tf","d":2,"q":"The chapter says we already see all things subjected to him.","answer":false,"v":8}
+{"t":"tf","d":2,"q":"The chapter says we already see all things subjected to him.","answer":false,"v":8},
+{"t":"choice","d":1,"q":"Whom did Jesus bring to nothing through his death?","options":["The devil, who had the power of death","The false prophets","The rulers of this age","The kings of the earth"],"v":14},
+{"t":"choice","d":2,"q":"Why is Jesus able to help those who are tempted?","options":["He himself suffered being tempted","He is far above all temptation","He sits at God's right hand","He knows every heart"],"v":18},
+{"t":"choice","d":3,"q":"Under the word spoken through angels, what did every transgression receive?","options":["A just penalty","A sin offering","A second chance","A warning from a prophet"],"v":2},
+{"t":"blank","d":2,"q":"Again, Behold, here I am with ____ whom God has given me.","answer":"the children","wrong":["the brothers","the people","the servants"],"v":13},
+{"t":"blank","d":3,"q":"I will declare your name to my brothers. Among the congregation ____.","answer":"I will sing your praise","wrong":["I will lift my hands","I will tell your works","I will bless your name"],"v":12},
+{"t":"tf","d":2,"q":"The chapter says the message of salvation was first spoken by angels and later confirmed by the Lord.","answer":false,"v":3},
+{"t":"tf","d":1,"q":"The chapter says Jesus shared in flesh and blood just as the children have.","answer":true,"v":14}
 ]},
 "3":{"keyVerse":13,"questions":[
 {"t":"choice","d":1,"q":"Jesus is compared with which faithful servant of God in this chapter?","options":["Moses","Abraham","Aaron","Joshua"],"v":2},
@@ -33,7 +47,14 @@
 {"t":"blank","d":3,"q":"Holy brothers, consider the Apostle and ____ of our confession: Jesus.","answer":"High Priest","wrong":["Chief Shepherd","Great King","Faithful Witness"],"v":1},
 {"t":"order","d":3,"items":["Christ is faithful as a Son over his house","Don't harden your hearts as in the rebellion","Beware of an evil heart of unbelief","Those who came out of Egypt rebelled"],"v":6},
 {"t":"tf","d":1,"q":"The chapter says the Israelites could not enter God's rest because of unbelief.","answer":true,"v":19},
-{"t":"tf","d":2,"q":"The chapter says those who rebelled were people who had stayed behind in Egypt.","answer":false,"v":16}
+{"t":"tf","d":2,"q":"The chapter says those who rebelled were people who had stayed behind in Egypt.","answer":false,"v":16},
+{"t":"choice","d":1,"q":"According to the chapter, who built all things?","options":["God","Moses","The angels","The fathers"],"v":4},
+{"t":"choice","d":2,"q":"What happened to the bodies of those who sinned in the wilderness?","options":["They fell in the wilderness","They were buried in Egypt","They were swallowed by the sea","They were carried into Canaan"],"v":17},
+{"t":"choice","d":3,"q":"What does God say that generation always did in their heart?","options":["They erred","They grumbled","They boasted","They wept"],"v":10},
+{"t":"blank","d":2,"q":"We are his house, if we hold fast our confidence and ____ firm to the end.","answer":"the glorying of our hope","wrong":["the joy of our faith","the word of our testimony","the love we had at first"],"v":6},
+{"t":"blank","d":3,"q":"Beware, brothers, lest there might be in any one of you an evil heart of unbelief, in ____.","answer":"falling away from the living God","wrong":["turning back toward Egypt","refusing to hear his voice","forgetting the works of God"],"v":12},
+{"t":"tf","d":2,"q":"The chapter says we have become partakers of Christ if we hold our beginning confidence firm to the end.","answer":true,"v":14},
+{"t":"tf","d":1,"q":"The chapter says God was pleased with the generation that tested him in the wilderness.","answer":false,"v":10}
 ]},
 "4":{"keyVerse":16,"questions":[
 {"t":"choice","d":1,"q":"What is the word of God said to be sharper than?","options":["Any two edged sword","A refiner's fire","A hammer that breaks rock","An arrow in flight"],"v":12},
@@ -45,7 +66,14 @@
 {"t":"blank","d":3,"q":"Piercing even to the dividing of soul and spirit, ____, and able to discern the thoughts of the heart.","answer":"of both joints and marrow","wrong":["of both flesh and bone","of both heart and mind","of both life and breath"],"v":12},
 {"t":"order","d":3,"items":["Fear lest we come short of his rest","Give diligence to enter that rest","Hold tightly to our confession","Draw near to the throne of grace"],"v":1},
 {"t":"tf","d":1,"q":"The chapter says no creature is hidden from God's sight.","answer":true,"v":13},
-{"t":"tf","d":2,"q":"The chapter describes Jesus as a high priest who remained on earth rather than passing through the heavens.","answer":false,"v":14}
+{"t":"tf","d":2,"q":"The chapter describes Jesus as a high priest who remained on earth rather than passing through the heavens.","answer":false,"v":14},
+{"t":"choice","d":1,"q":"On which day did God rest from all his works?","options":["The seventh day","The first day","The sixth day","The fortieth day"],"v":4},
+{"t":"choice","d":2,"q":"Why did those who first had the good news preached to them fail to enter?","options":["Because of disobedience","Because of their enemies","Because Moses died first","Because they had no leader"],"v":6},
+{"t":"choice","d":3,"q":"What does the one who has entered God's rest also rest from?","options":["His own works","His enemies","His sins","His wanderings"],"v":10},
+{"t":"blank","d":2,"q":"That we may receive mercy and may find grace for ____.","answer":"help in time of need","wrong":["strength in the day","comfort in our trials","peace in every trouble"],"v":16},
+{"t":"blank","d":3,"q":"As I swore in my wrath, they will not enter into my rest; although the works were finished from ____.","answer":"the foundation of the world","wrong":["the days of Moses","the first of days","the time of the fathers"],"v":3},
+{"t":"tf","d":2,"q":"The chapter says those who have believed do enter into God's rest.","answer":true,"v":3},
+{"t":"tf","d":1,"q":"The chapter says our high priest cannot be touched with the feeling of our infirmities.","answer":false,"v":15}
 ]},
 "5":{"keyVerse":8,"questions":[
 {"t":"choice","d":1,"q":"After whose order is Christ named a high priest?","options":["Melchizedek","Aaron","Levi","Abraham"],"v":10},
@@ -57,7 +85,14 @@
 {"t":"blank","d":3,"q":"Solid food is for the full grown, who by reason of use have their senses exercised ____.","answer":"to discern good and evil","wrong":["to understand the scriptures","to teach the first principles","to walk in the Spirit"],"v":14},
 {"t":"order","d":3,"items":["Every high priest is taken from among men","You are a priest forever","He learned obedience by what he suffered","You have become dull of hearing"],"v":1},
 {"t":"tf","d":1,"q":"The chapter says Christ took the honor of being high priest on himself.","answer":false,"v":5},
-{"t":"tf","d":2,"q":"The writer says that by this time the readers should be teachers.","answer":true,"v":12}
+{"t":"tf","d":2,"q":"The writer says that by this time the readers should be teachers.","answer":true,"v":12},
+{"t":"choice","d":1,"q":"Why is everyone who lives on milk not experienced in the word of righteousness?","options":["He is a baby","He is a stranger","He is a servant","He is a sinner"],"v":13},
+{"t":"choice","d":2,"q":"For whom must the earthly high priest offer sacrifices for sins?","options":["For the people and for himself","For the people only","For the Levites only","For the elders of Israel"],"v":3},
+{"t":"choice","d":3,"q":"Why was Christ heard when he prayed in the days of his flesh?","options":["For his godly fear","For his many words","For his long fasting","For his costly offerings"],"v":7},
+{"t":"blank","d":2,"q":"Every high priest is appointed for men in things pertaining to God, that he may offer ____.","answer":"both gifts and sacrifices for sins","wrong":["prayers and incense before God","the firstfruits of the harvest","blessings over all the people"],"v":1},
+{"t":"blank","d":3,"q":"You again need to have someone teach you the rudiments of ____ of the revelations of God.","answer":"the first principles","wrong":["the ancient law","the holy writings","the true faith"],"v":12},
+{"t":"tf","d":1,"q":"The writer says he has only a few simple words to say about Melchizedek.","answer":false,"v":11},
+{"t":"tf","d":2,"q":"The chapter says Christ was named a high priest by God.","answer":true,"v":10}
 ]},
 "6":{"keyVerse":19,"questions":[
 {"t":"choice","d":1,"q":"What does the writer urge readers to press on to?","options":["Perfection","Repentance","Baptism","Judgment"],"v":1},
@@ -69,7 +104,14 @@
 {"t":"blank","d":3,"q":"That by two immutable things, in which it is impossible ____, we may have a strong encouragement.","answer":"for God to lie","wrong":["for man to fail","for hope to fade","for faith to waver"],"v":18},
 {"t":"order","d":3,"items":["Those who fell away cannot be renewed","Land that bears a good crop is blessed","Show diligence to the fullness of hope","Jesus entered as a forerunner for us"],"v":6},
 {"t":"tf","d":1,"q":"The chapter says Abraham obtained the promise after he had patiently endured.","answer":true,"v":15},
-{"t":"tf","d":2,"q":"The chapter says Jesus became a high priest forever after the order of Aaron.","answer":false,"v":20}
+{"t":"tf","d":2,"q":"The chapter says Jesus became a high priest forever after the order of Aaron.","answer":false,"v":20},
+{"t":"choice","d":1,"q":"What do those who fall away do to the Son of God, according to the chapter?","options":["Crucify him again and put him to open shame","Deny him before rulers and kings","Sell him again for silver","Forget his name and his works"],"v":6},
+{"t":"choice","d":2,"q":"What did God say when he swore to Abraham?","options":["Surely blessing I will bless you","I will give you this land","Your name will be great","Kings will come from you"],"v":14},
+{"t":"choice","d":3,"q":"Where does our hope enter, according to the chapter?","options":["Within the veil","Into the holy city","Into the promised land","Before the altar"],"v":19},
+{"t":"blank","d":2,"q":"That you won't be sluggish, but imitators of those who through ____ inherited the promises.","answer":"faith and perseverance","wrong":["prayer and fasting","love and obedience","hope and patience"],"v":12},
+{"t":"blank","d":3,"q":"And tasted the good word of God and the powers of ____.","answer":"the age to come","wrong":["the kingdom of heaven","the eternal city","the world above"],"v":5},
+{"t":"tf","d":2,"q":"The writer says he is persuaded of better things for the readers, things that accompany salvation.","answer":true,"v":9},
+{"t":"tf","d":1,"q":"The chapter says the readers had stopped serving the saints.","answer":false,"v":10}
 ]},
 "7":{"keyVerse":25,"questions":[
 {"t":"choice","d":1,"q":"What did Abraham give to Melchizedek?","options":["A tenth of the best plunder","His firstborn lamb","A golden altar","A flock of sheep"],"v":4},
@@ -81,7 +123,14 @@
 {"t":"blank","d":3,"q":"Who has been made, not after the law of a fleshly commandment, but after ____.","answer":"the power of an endless life","wrong":["the order of the Levites","the promise made to Abraham","the oath sworn to David"],"v":16},
 {"t":"order","d":3,"items":["Melchizedek met Abraham and blessed him","The lesser is blessed by the greater","The law made nothing perfect","He lives forever to make intercession"],"v":1},
 {"t":"tf","d":1,"q":"The chapter says Jesus must offer sacrifices daily, first for his own sins.","answer":false,"v":27},
-{"t":"tf","d":2,"q":"The chapter describes Melchizedek as without father, without mother, and without genealogy.","answer":true,"v":3}
+{"t":"tf","d":2,"q":"The chapter describes Melchizedek as without father, without mother, and without genealogy.","answer":true,"v":3},
+{"t":"choice","d":1,"q":"Melchizedek was king of which place?","options":["Salem","Jericho","Hebron","Bethel"],"v":1},
+{"t":"choice","d":2,"q":"Who, through Abraham, is said to have paid tithes?","options":["Levi","Isaac","Judah","Aaron"],"v":9},
+{"t":"choice","d":2,"q":"How does the chapter describe the high priest who was fitting for us?","options":["Holy, guiltless, undefiled, separated from sinners","Wise, strong, rich, and respected","Born of Levi and anointed with oil","Chosen by lot from the elders"],"v":26},
+{"t":"blank","d":2,"q":"Therefore he is also able to save ____ those who draw near to God through him.","answer":"to the uttermost","wrong":["in every trouble","from every enemy","at the last day"],"v":25},
+{"t":"blank","d":3,"q":"The Lord swore and ____, You are a priest forever.","answer":"will not change his mind","wrong":["his word will stand","it will surely come","he will not forget"],"v":21},
+{"t":"tf","d":1,"q":"The chapter says Jesus has an unchangeable priesthood because he lives forever.","answer":true,"v":24},
+{"t":"choice","d":3,"q":"When the priesthood is changed, what else must of necessity change?","options":["The law","The temple","The altar","The tribe of Israel"],"v":12}
 ]},
 "8":{"keyVerse":12,"questions":[
 {"t":"choice","d":1,"q":"What does the Lord say he will make with the house of Israel and Judah?","options":["A new covenant","A new temple","A new kingdom","A new priesthood"],"v":8},
@@ -93,7 +142,14 @@
 {"t":"blank","d":3,"q":"That which is becoming obsolete and grows aged is ____.","answer":"near to vanishing away","wrong":["ready to be renewed","kept for a season","soon to be fulfilled"],"v":13},
 {"t":"order","d":3,"items":["The main point: we have such a high priest","If the first covenant had been faultless","All will know me, least to greatest","A new covenant makes the first obsolete"],"v":1},
 {"t":"tf","d":1,"q":"The chapter says Jesus is the mediator of a better covenant given on better promises.","answer":true,"v":6},
-{"t":"tf","d":2,"q":"The chapter says God found no fault with the people under the first covenant.","answer":false,"v":8}
+{"t":"tf","d":2,"q":"The chapter says God found no fault with the people under the first covenant.","answer":false,"v":8},
+{"t":"choice","d":1,"q":"Where did our high priest sit down, according to the chapter?","options":["At the right hand of the Majesty's throne","Beside the altar in the temple","On the mountain of God","At the gate of the holy city"],"v":1},
+{"t":"choice","d":2,"q":"Who pitched the true tabernacle that our high priest serves?","options":["The Lord","Moses","The priests","Aaron"],"v":2},
+{"t":"choice","d":3,"q":"Why did the Lord disregard the fathers he led out of Egypt?","options":["They didn't continue in his covenant","They built a golden calf","They refused to enter the land","They rejected Moses as leader"],"v":9},
+{"t":"blank","d":2,"q":"I will put my laws into their mind. I will be their God, and ____.","answer":"they will be my people","wrong":["they will serve me","they will know my name","I will dwell among them"],"v":10},
+{"t":"blank","d":3,"q":"For if that first covenant had been faultless, then no place would have been sought ____.","answer":"for a second","wrong":["for a better","for another law","for another priest"],"v":7},
+{"t":"tf","d":1,"q":"The chapter says every high priest is appointed to offer both gifts and sacrifices.","answer":true,"v":3},
+{"t":"tf","d":2,"q":"The chapter says the new covenant would be just like the covenant God made with their fathers.","answer":false,"v":9}
 ]},
 "9":{"keyVerse":22,"questions":[
 {"t":"choice","d":1,"q":"How often did the high priest enter the second part of the tabernacle?","options":["Once a year","Once a month","Every Sabbath","Every day"],"v":7},
@@ -105,7 +161,14 @@
 {"t":"blank","d":3,"q":"How much more will the blood of Christ cleanse your conscience from ____ to serve the living God?","answer":"dead works","wrong":["evil desires","all guilt","the old law"],"v":14},
 {"t":"order","d":3,"items":["The earthly tabernacle and its furnishings","Gifts could not perfect the worshiper's conscience","A will is in force only after death","Christ will appear a second time"],"v":2},
 {"t":"tf","d":1,"q":"The chapter says Christ entered into holy places made with hands.","answer":false,"v":24},
-{"t":"tf","d":2,"q":"The chapter says even the first covenant was not dedicated without blood.","answer":true,"v":18}
+{"t":"tf","d":2,"q":"The chapter says even the first covenant was not dedicated without blood.","answer":true,"v":18},
+{"t":"choice","d":1,"q":"When Christ appears a second time, what will he do?","options":["Save those eagerly waiting for him","Deal with sin once more","Build a new tabernacle","Offer himself again"],"v":28},
+{"t":"choice","d":2,"q":"What overshadowed the mercy seat?","options":["Cherubim of glory","A golden lamp stand","A cloud of incense","The second veil"],"v":5},
+{"t":"choice","d":3,"q":"Along with blood, what did Moses use when he sprinkled the book and the people?","options":["Water, scarlet wool, and hyssop","Oil, flour, and salt","Wine, bread, and incense","Ashes, cedar, and myrrh"],"v":19},
+{"t":"blank","d":2,"q":"But now once at the end of the ages, he has been revealed to put away sin by ____.","answer":"the sacrifice of himself","wrong":["the power of his word","the blood of bulls","the gift of the Spirit"],"v":26},
+{"t":"blank","d":3,"q":"Being only fleshly ordinances, imposed until ____.","answer":"a time of reformation","wrong":["the coming of Messiah","the end of the age","the day of judgment"],"v":10},
+{"t":"tf","d":1,"q":"The chapter says the priests went continually into the first tabernacle to accomplish the services.","answer":true,"v":6},
+{"t":"tf","d":2,"q":"The chapter says the ark of the covenant was overlaid on all sides with silver.","answer":false,"v":4}
 ]},
 "10":{"keyVerse":23,"questions":[
 {"t":"choice","d":1,"q":"What can the blood of bulls and goats never do?","options":["Take away sins","Cleanse the altar","Satisfy the law","Dedicate the priests"],"v":4},
@@ -117,7 +180,14 @@
 {"t":"blank","d":3,"q":"But the righteous one will live by faith. If he shrinks back, ____ in him.","answer":"my soul has no pleasure","wrong":["my Spirit finds no rest","I will take no delight","my eyes will not look"],"v":38},
 {"t":"order","d":2,"items":["The law is a shadow of good things","I have come to do your will","The Holy Spirit testifies of the covenant","Hold fast the confession of our hope"],"v":1},
 {"t":"tf","d":1,"q":"The chapter says Christ offered one sacrifice for sins forever and sat down at God's right hand.","answer":true,"v":12},
-{"t":"tf","d":3,"q":"The chapter says that for one who sins willfully after knowing the truth, a sacrifice for sins still remains.","answer":false,"v":26}
+{"t":"tf","d":3,"q":"The chapter says that for one who sins willfully after knowing the truth, a sacrifice for sins still remains.","answer":false,"v":26},
+{"t":"choice","d":2,"q":"According to the chapter, what is there in the old sacrifices year by year?","options":["A yearly reminder of sins","A cleansing of the conscience","A promise of rest","A renewal of the covenant"],"v":3},
+{"t":"choice","d":2,"q":"As we draw near with a true heart, with what is our body washed?","options":["Pure water","Holy oil","Sprinkled blood","New wine"],"v":22},
+{"t":"choice","d":1,"q":"Why should we hold fast the confession of our hope without wavering?","options":["He who promised is faithful","The Day is still far off","The law demands it of us","Our leaders are watching us"],"v":23},
+{"t":"choice","d":3,"q":"On the word of how many witnesses did someone who disregarded Moses' law die?","options":["Two or three","One","Seven","Twelve"],"v":28},
+{"t":"blank","d":2,"q":"You didn't desire sacrifice and offering, but ____.","answer":"you prepared a body for me","wrong":["you opened my ears","you desired a humble heart","you gave me your law"],"v":5},
+{"t":"blank","d":3,"q":"Therefore don't throw away your boldness, ____.","answer":"which has a great reward","wrong":["which comes from above","for the Day is near","which is your strength"],"v":35},
+{"t":"tf","d":1,"q":"The chapter quotes the Lord saying, Vengeance belongs to me. I will repay.","answer":true,"v":30}
 ]},
 "11":{"keyVerse":1,"questions":[
 {"t":"choice","d":1,"q":"Who by faith prepared a ship for the saving of his house?","options":["Noah","Abraham","Moses","Enoch"],"v":7},
@@ -129,7 +199,14 @@
 {"t":"blank","d":3,"q":"By faith the walls of Jericho fell down after they had been encircled ____.","answer":"for seven days","wrong":["by the whole army","for forty days","with trumpets and shouts"],"v":30},
 {"t":"order","d":3,"items":["Abel offered a more excellent sacrifice","Abraham went out not knowing where","Isaac blessed Jacob and Esau","Rahab received the spies in peace"],"v":4},
 {"t":"tf","d":1,"q":"The chapter says Abraham offered up Isaac, concluding that God could raise him from the dead.","answer":true,"v":19},
-{"t":"tf","d":2,"q":"The chapter says Moses left Egypt because he feared the king's wrath.","answer":false,"v":27}
+{"t":"tf","d":2,"q":"The chapter says Moses left Egypt because he feared the king's wrath.","answer":false,"v":27},
+{"t":"choice","d":1,"q":"By faith, what did the people pass through as on dry land?","options":["The Red Sea","The Jordan River","The Dead Sea","The river Nile"],"v":29},
+{"t":"choice","d":1,"q":"Who by faith received power to conceive when she was past age?","options":["Sarah","Rebekah","Rachel","Hannah"],"v":11},
+{"t":"choice","d":2,"q":"Whom did Jacob bless by faith when he was dying?","options":["Each of the sons of Joseph","Reuben and Judah","All twelve of his sons","Joseph and Benjamin"],"v":21},
+{"t":"choice","d":3,"q":"When his end was near, what did Joseph give instructions about?","options":["His bones","His coat","His wealth","His brothers"],"v":22},
+{"t":"blank","d":2,"q":"Now faith is assurance of things hoped for, ____.","answer":"proof of things not seen","wrong":["the hope of the righteous","the gift of God to all","strength for the weary soul"],"v":1},
+{"t":"blank","d":3,"q":"Considering the reproach of Christ greater riches than ____; for he looked to the reward.","answer":"the treasures of Egypt","wrong":["the throne of Pharaoh","the wisdom of Egypt","the gold of kings"],"v":26},
+{"t":"tf","d":2,"q":"The chapter says Rahab perished along with those who were disobedient.","answer":false,"v":31}
 ]},
 "12":{"keyVerse":6,"questions":[
 {"t":"choice","d":1,"q":"What does the writer say we are surrounded by?","options":["So great a cloud of witnesses","A host of mighty angels","A world of temptations","The walls of salvation"],"v":1},
@@ -141,7 +218,14 @@
 {"t":"blank","d":3,"q":"Lest any ____ springing up trouble you and many be defiled by it.","answer":"root of bitterness","wrong":["seed of pride","spirit of envy","branch of anger"],"v":15},
 {"t":"order","d":3,"items":["Run with perseverance the race set before us","The Lord disciplines the one he loves","Lift up the hands that hang down","You have come to Mount Zion"],"v":1},
 {"t":"tf","d":1,"q":"The writer says the readers have already resisted sin to the point of blood.","answer":false,"v":4},
-{"t":"tf","d":2,"q":"The chapter says believers are receiving a Kingdom that can't be shaken.","answer":true,"v":28}
+{"t":"tf","d":2,"q":"The chapter says believers are receiving a Kingdom that can't be shaken.","answer":true,"v":28},
+{"t":"choice","d":1,"q":"Without what will no man see the Lord?","options":["Sanctification","Knowledge","Riches","Wisdom"],"v":14},
+{"t":"choice","d":2,"q":"The blood of sprinkling speaks better than what?","options":["The blood of Abel","The law of Moses","The voice of the prophets","The blood of bulls"],"v":24},
+{"t":"choice","d":3,"q":"What did Esau find no place for, though he sought it diligently with tears?","options":["A change of mind","A new birthright","A second meal","A place to hide"],"v":17},
+{"t":"blank","d":2,"q":"Make straight paths for your feet, so what is lame may not be dislocated, but ____.","answer":"rather be healed","wrong":["made strong again","kept from falling","carried to rest"],"v":13},
+{"t":"blank","d":3,"q":"For consider him who has endured such ____ against himself, that you don't grow weary.","answer":"contradiction of sinners","wrong":["hatred of the world","mockery of the crowds","anger of the rulers"],"v":3},
+{"t":"tf","d":2,"q":"The chapter says those who heard the voice at the mountain begged to hear more words.","answer":false,"v":19},
+{"t":"tf","d":1,"q":"The chapter says we had earthly fathers who disciplined us, and we paid them respect.","answer":true,"v":9}
 ]},
 "13":{"keyVerse":8,"questions":[
 {"t":"choice","d":1,"q":"What have some done by showing hospitality to strangers?","options":["Entertained angels without knowing it","Received a prophet's reward","Welcomed kings unaware","Stored up treasure in heaven"],"v":2},
@@ -153,6 +237,13 @@
 {"t":"blank","d":3,"q":"For we don't have here an enduring city, but we seek ____.","answer":"that which is to come","wrong":["a country of our own","the rest that remains","a home in the heavens"],"v":14},
 {"t":"order","d":2,"items":["Let brotherly love continue","Let marriage be held in honor","Be free from the love of money","Remember your leaders"],"v":1},
 {"t":"tf","d":1,"q":"The writer quotes God saying, I will in no way leave you, neither will I forsake you.","answer":true,"v":5},
-{"t":"tf","d":3,"q":"The writer says it is good for the heart to be established by foods rather than by grace.","answer":false,"v":9}
+{"t":"tf","d":3,"q":"The writer says it is good for the heart to be established by foods rather than by grace.","answer":false,"v":9},
+{"t":"choice","d":1,"q":"What does the writer ask the readers to do for him and those with him?","options":["Pray for us","Send Timothy to us","Visit us in prison","Greet the saints in Rome"],"v":18},
+{"t":"choice","d":2,"q":"Why should the readers obey their leaders?","options":["They watch on behalf of your souls","They were chosen by the apostles","They are older and wiser","They know the law best"],"v":17},
+{"t":"choice","d":3,"q":"What title is given to Jesus, whom the God of peace brought again from the dead?","options":["The great shepherd of the sheep","The firstborn of creation","The lion of the tribe of Judah","The bright morning star"],"v":20},
+{"t":"blank","d":2,"q":"Considering the results of their conduct, ____.","answer":"imitate their faith","wrong":["honor their names","follow their teaching","give thanks for them"],"v":7},
+{"t":"blank","d":3,"q":"So that with good courage we say, The Lord is my helper. ____. What can man do to me?","answer":"I will not fear","wrong":["I will not be moved","I shall not want","I will trust in him"],"v":6},
+{"t":"tf","d":2,"q":"The writer says he has written to them in many words.","answer":false,"v":22},
+{"t":"tf","d":1,"q":"The chapter says God is well pleased with the sacrifices of doing good and sharing.","answer":true,"v":16}
 ]}
 }}

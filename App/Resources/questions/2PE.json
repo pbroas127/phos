@@ -9,7 +9,14 @@
 {"t":"blank","d":3,"q":"That through these you may become ____, having escaped from the corruption that is in the world by lust.","answer":"partakers of the divine nature","wrong":["heirs of the eternal kingdom","children of the living God","servants of the holy covenant"],"v":4},
 {"t":"order","d":3,"items":["Moral excellence","Knowledge","Self control","Perseverance"],"v":5},
 {"t":"tf","d":1,"q":"Peter says prophecy of Scripture came by the will of holy men.","answer":false,"v":21},
-{"t":"tf","d":2,"q":"The voice Peter heard said, \"This is my beloved Son, in whom I am well pleased.\"","answer":true,"v":17}
+{"t":"tf","d":2,"q":"The voice Peter heard said, \"This is my beloved Son, in whom I am well pleased.\"","answer":true,"v":17},
+{"t":"choice","d":1,"q":"What has God's divine power granted to us?","options":["All things that pertain to life and godliness","Riches and honor in this world","Victory over every enemy","Visions and dreams of heaven"],"v":3},
+{"t":"choice","d":2,"q":"If these qualities abound in you, what do they keep you from being?","options":["Idle or unfruitful","Proud or boastful","Weak or fearful","Lost or confused"],"v":8},
+{"t":"choice","d":3,"q":"In Peter's list of qualities, what is added last, to brotherly affection?","options":["Love","Godliness","Joy","Peace"],"v":7},
+{"t":"blank","d":2,"q":"For thus you will be richly supplied with the entrance into ____ of our Lord and Savior, Jesus Christ.","answer":"the eternal Kingdom","wrong":["the heavenly city","the promised rest","the holy place"],"v":11},
+{"t":"blank","d":3,"q":"Knowing this first, that no prophecy of Scripture is of ____.","answer":"private interpretation","wrong":["human origin","hidden meaning","uncertain value"],"v":20},
+{"t":"tf","d":1,"q":"Peter says he and those with him were eyewitnesses of Christ's majesty.","answer":true,"v":16},
+{"t":"tf","d":2,"q":"Peter says he will stop reminding the readers, since they already know these things.","answer":false,"v":12}
 ]},
 "2":{"keyVerse":9,"questions":[
 {"t":"choice","d":1,"q":"Whose way does Peter say the false teachers followed, loving the wages of wrongdoing?","options":["Balaam","Cain","Korah","Jezebel"],"v":15},
@@ -21,7 +28,14 @@
 {"t":"blank","d":3,"q":"Promising them liberty, while they themselves are ____.","answer":"bondservants of corruption","wrong":["slaves of their passions","prisoners of darkness","servants of deceit"],"v":19},
 {"t":"order","d":2,"items":["God did not spare the angels who sinned","A flood brought on the ancient world","Sodom and Gomorrah turned into ashes","Righteous Lot delivered from the wicked"],"v":4},
 {"t":"tf","d":1,"q":"Peter says that for those who escape the world's defilement and are entangled again, the last state is worse than the first.","answer":true,"v":20},
-{"t":"tf","d":3,"q":"Peter says angels bring slanderous judgments against dignitaries before the Lord.","answer":false,"v":11}
+{"t":"tf","d":3,"q":"Peter says angels bring slanderous judgments against dignitaries before the Lord.","answer":false,"v":11},
+{"t":"choice","d":1,"q":"What will the false teachers secretly bring in?","options":["Destructive heresies","Foreign idols","Strange foods","Forbidden books"],"v":1},
+{"t":"choice","d":1,"q":"How does Peter describe Noah?","options":["A preacher of righteousness","A friend of God","A builder of altars","A judge of Israel"],"v":5},
+{"t":"choice","d":2,"q":"What distressed righteous Lot?","options":["The lustful life of the wicked","The loss of his wife","The poverty of his family","The threats of the kings"],"v":7},
+{"t":"choice","d":3,"q":"Because many follow the false teachers' immoral ways, what happens to the way of the truth?","options":["It will be maligned","It will be forgotten","It will be hidden","It will be lost"],"v":2},
+{"t":"blank","d":2,"q":"Enticing unsettled souls, having ____, accursed children!","answer":"a heart trained in greed","wrong":["a mind full of lies","a tongue of deceit","a spirit of pride"],"v":14},
+{"t":"blank","d":3,"q":"The Lord knows how to deliver the godly out of temptation and to keep the unrighteous ____ for the day of judgment.","answer":"under punishment","wrong":["in chains","in darkness","far from him"],"v":9},
+{"t":"tf","d":2,"q":"Peter says the false teachers count it pleasure to revel only in secret at night.","answer":false,"v":13}
 ]},
 "3":{"keyVerse":8,"questions":[
 {"t":"choice","d":1,"q":"How does Peter say the day of the Lord will come?","options":["As a thief in the night","With a great trumpet blast","Like lightning from the east","After a sign in the heavens"],"v":10},
@@ -33,6 +47,13 @@
 {"t":"blank","d":3,"q":"But the heavens that exist now and the earth, by the same word have been ____.","answer":"stored up for fire","wrong":["set apart for glory","kept safe from flood","made ready for renewal"],"v":7},
 {"t":"order","d":2,"items":["Remember the words of the holy prophets","The world then perished, overflowed with water","One day is with the Lord as a thousand years","Beware lest you fall from your steadfastness"],"v":2},
 {"t":"tf","d":1,"q":"Peter says this is the second letter he has written to these readers.","answer":true,"v":1},
-{"t":"tf","d":3,"q":"Peter tells his readers to regard the patience of the Lord as a sign of delay.","answer":false,"v":15}
+{"t":"tf","d":3,"q":"Peter tells his readers to regard the patience of the Lord as a sign of delay.","answer":false,"v":15},
+{"t":"choice","d":1,"q":"On the day of the Lord, what will happen to the earth and the works in it?","options":["They will be burned up","They will be flooded","They will be shaken","They will be hidden"],"v":10},
+{"t":"choice","d":2,"q":"What do the mockers of the last days walk after?","options":["Their own lusts","The traditions of men","False prophets","The ways of the Gentiles"],"v":3},
+{"t":"choice","d":3,"q":"What do the ignorant and unsettled do with things that are hard to understand?","options":["Twist them to their own destruction","Ignore them completely","Memorize them without understanding","Bring them to the apostles"],"v":16},
+{"t":"blank","d":2,"q":"Be diligent to be found in peace, ____ in his sight.","answer":"without defect and blameless","wrong":["holy and pure","faithful and true","humble and ready"],"v":14},
+{"t":"blank","d":3,"q":"What kind of people ought you to be in ____?","answer":"holy living and godliness","wrong":["faith and patience","love and good works","prayer and watchfulness"],"v":11},
+{"t":"tf","d":2,"q":"Peter says the mockers carefully remember that the earth was formed by the word of God.","answer":false,"v":5},
+{"t":"tf","d":1,"q":"Peter tells readers to look for and earnestly desire the coming of the day of God.","answer":true,"v":12}
 ]}
 }}

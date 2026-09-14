@@ -7,6 +7,12 @@
 {"t":"blank","d":2,"q":"I pray that you may prosper in all things and be healthy, even as ____.","answer":"your soul prospers","wrong":["your faith grows","your heart rejoices","your love abounds"],"v":2},
 {"t":"blank","d":3,"q":"He who does good is of God. He who does evil ____.","answer":"hasn't seen God","wrong":["doesn't know the truth","walks in darkness","has no part in him"],"v":11},
 {"t":"tf","d":1,"q":"The elder says he hopes to see his friend soon and speak face to face.","answer":true,"v":14},
-{"t":"tf","d":2,"q":"The elder says the brothers who went out for the sake of the Name accepted support from the Gentiles.","answer":false,"v":7}
+{"t":"tf","d":2,"q":"The elder says the brothers who went out for the sake of the Name accepted support from the Gentiles.","answer":false,"v":7},
+{"t":"choice","d":1,"q":"Who loves to be first among them and doesn't accept what the elder says?","options":["Diotrephes","Demetrius","Gaius","Alexander"],"v":9},
+{"t":"choice","d":3,"q":"Why ought we to receive such traveling brothers, according to the elder?","options":["That we may be fellow workers for the truth","That we may gain a reward","That the Gentiles may see our love","That the assembly may grow"],"v":8},
+{"t":"choice","d":2,"q":"Before whom did the brothers testify about Gaius's love?","options":["The assembly","The elders","The apostles","The Gentiles"],"v":6},
+{"t":"blank","d":2,"q":"Beloved, you do ____ in whatever you accomplish for those who are brothers and strangers.","answer":"a faithful work","wrong":["a good deed","a holy service","a great kindness"],"v":5},
+{"t":"blank","d":3,"q":"You will do well to send them forward on their journey ____.","answer":"in a way worthy of God","wrong":["with food and money","in peace and safety","with letters of greeting"],"v":6},
+{"t":"tf","d":1,"q":"The elder rejoiced greatly when brothers came and testified about Gaius's truth.","answer":true,"v":3}
 ]}
 }}

@@ -399,7 +399,7 @@
      "d": 2,
      "q": "Which city, surrounded by water yet still captured, does Nahum compare Nineveh to?",
      "options": [
-      "No-Amon",
+      "No Amon",
       "Tyre",
       "Babylon",
       "Sidon"
@@ -411,7 +411,7 @@
      "d": 2,
      "q": "What are Nineveh's fortresses compared to?",
      "options": [
-      "Fig trees with first-ripe figs",
+      "Fig trees with first ripe figs",
       "Tents in a windstorm",
       "Sand walls by the sea",
       "Towers of dry clay"

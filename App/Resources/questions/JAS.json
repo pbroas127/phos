@@ -9,7 +9,14 @@
 {"t":"blank","d":3,"q":"Pure religion and undefiled before our God and Father is this: to visit ____ in their affliction.","answer":"the fatherless and widows","wrong":["the sick and the prisoners","the poor and the strangers","the weak and the lonely"],"v":27},
 {"t":"order","d":3,"items":["Count it all joy in temptations","The rich fade like a flower","Every good gift comes from above","An unbridled tongue makes religion worthless"],"v":2},
 {"t":"tf","d":1,"q":"James says God sometimes tempts people in order to test them.","answer":false,"v":13},
-{"t":"tf","d":2,"q":"James says the anger of man doesn't produce the righteousness of God.","answer":true,"v":20}
+{"t":"tf","d":2,"q":"James says the anger of man doesn't produce the righteousness of God.","answer":true,"v":20},
+{"t":"choice","d":1,"q":"What does the testing of your faith produce?","options":["Endurance","Wisdom","Joy","Humility"],"v":3},
+{"t":"choice","d":2,"q":"According to James, what does lust bear when it has conceived?","options":["Sin","Death","Shame","Sorrow"],"v":15},
+{"t":"choice","d":2,"q":"To whom does James address his letter?","options":["The twelve tribes in the Dispersion","The saints in Jerusalem","The assembly at Antioch","The elders of Asia"],"v":1},
+{"t":"choice","d":3,"q":"By what did God give birth to us, according to James?","options":["The word of truth","The Holy Spirit","The blood of Christ","The law of freedom"],"v":18},
+{"t":"blank","d":2,"q":"But be doers of the word, and not only hearers, ____.","answer":"deluding your own selves","wrong":["forgetting what you heard","wasting what you received","hiding what you know"],"v":22},
+{"t":"blank","d":3,"q":"Receive with humility ____, which is able to save your souls.","answer":"the implanted word","wrong":["the gift of grace","the wisdom from above","the law of freedom"],"v":21},
+{"t":"tf","d":1,"q":"James tells the brother in humble circumstances to be ashamed of his position.","answer":false,"v":9}
 ]},
 "2":{"keyVerse":17,"questions":[
 {"t":"choice","d":1,"q":"In James's example, what is said to the poor man who comes in?","options":["Stand there, or sit by my footstool","Sit here in a good place","Go in peace, be warmed","Wait outside until we finish"],"v":3},
@@ -21,7 +28,14 @@
 {"t":"blank","d":3,"q":"For judgment is without mercy to him who has shown no mercy. ____.","answer":"Mercy triumphs over judgment","wrong":["Love covers all sins","Blessed are the merciful","God will repay each one"],"v":13},
 {"t":"order","d":3,"items":["Don't hold the faith with partiality","God chose the poor to be rich in faith","Speak and act as those judged by freedom","Faith without works cannot save"],"v":1},
 {"t":"tf","d":1,"q":"James says whoever stumbles in one point of the law is guilty only of that point.","answer":false,"v":10},
-{"t":"tf","d":2,"q":"James says Abraham was called the friend of God.","answer":true,"v":23}
+{"t":"tf","d":2,"q":"James says Abraham was called the friend of God.","answer":true,"v":23},
+{"t":"choice","d":1,"q":"Whom did Abraham offer up on the altar?","options":["Isaac his son","Ishmael his son","Lot his nephew","A lamb from his flock"],"v":21},
+{"t":"choice","d":2,"q":"What did Rahab do with the messengers?","options":["Received them and sent them out another way","Handed them over to the king","Led them across the Jordan","Turned them away from her door"],"v":25},
+{"t":"choice","d":2,"q":"What does James say the rich do to his readers?","options":["Oppress them and drag them before courts","Give them work in their fields","Invite them into their homes","Build them a synagogue"],"v":6},
+{"t":"choice","d":3,"q":"What have those who show partiality become, according to James?","options":["Judges with evil thoughts","Friends of the world","Servants of the rich","Enemies of the poor"],"v":4},
+{"t":"blank","d":2,"q":"Yet you didn't give them the things the body needs, ____?","answer":"what good is it","wrong":["how can you rest","where is your love","who will help them"],"v":16},
+{"t":"blank","d":3,"q":"Show me your faith without works, and I will show you ____.","answer":"my faith by my works","wrong":["my works by my faith","the love of my heart","the fruit of my life"],"v":18},
+{"t":"tf","d":1,"q":"James says someone who avoids adultery but commits murder is still a transgressor of the law.","answer":true,"v":11}
 ]},
 "3":{"keyVerse":17,"questions":[
 {"t":"choice","d":1,"q":"Why does James say not many should become teachers?","options":["They will receive heavier judgment","Few understand the Scriptures","Teachers are often proud","The church needs more servants"],"v":1},
@@ -33,7 +47,14 @@
 {"t":"blank","d":3,"q":"Now the fruit of righteousness is sown in peace by ____.","answer":"those who make peace","wrong":["those who are humble","the wise in heart","those who love mercy"],"v":18},
 {"t":"order","d":3,"items":["First pure","Then peaceful","Gentle","Reasonable"],"v":17},
 {"t":"tf","d":1,"q":"James says a small fire can spread to a large forest, like the tongue.","answer":true,"v":5},
-{"t":"tf","d":2,"q":"James says sea creatures are the one kind of creature mankind cannot tame.","answer":false,"v":7}
+{"t":"tf","d":2,"q":"James says sea creatures are the one kind of creature mankind cannot tame.","answer":false,"v":7},
+{"t":"choice","d":1,"q":"What does James say a spring does not send out from the same opening?","options":["Fresh and bitter water","Hot and cold water","Clean and muddy water","Water and oil"],"v":11},
+{"t":"choice","d":1,"q":"With the tongue we bless God, and with it we curse whom?","options":["Men made in the image of God","The angels in heaven","The rulers of this world","The false teachers"],"v":9},
+{"t":"choice","d":2,"q":"What does James call anyone who doesn't stumble in word?","options":["A perfect person","A wise teacher","A humble servant","A true prophet"],"v":2},
+{"t":"choice","d":3,"q":"What is found where jealousy and selfish ambition are?","options":["Confusion and every evil deed","War and bloodshed","Pride and boasting","Sorrow and regret"],"v":16},
+{"t":"blank","d":2,"q":"Let him show by his good conduct that his deeds are done in ____.","answer":"gentleness of wisdom","wrong":["fear of the Lord","humility of heart","purity of spirit"],"v":13},
+{"t":"blank","d":3,"q":"If you have bitter jealousy and selfish ambition in your heart, don't boast and ____.","answer":"don't lie against the truth","wrong":["don't judge your brother","don't speak in anger","don't seek your own"],"v":14},
+{"t":"tf","d":2,"q":"James says the wisdom from above is full of mercy and good fruits.","answer":true,"v":17}
 ]},
 "4":{"keyVerse":7,"questions":[
 {"t":"choice","d":1,"q":"What does James say friendship with the world is?","options":["Hostility toward God","Foolishness to God","A snare of the devil","The root of all evil"],"v":4},
@@ -45,7 +66,14 @@
 {"t":"blank","d":3,"q":"For you ought to say, ____, we will both live, and do this or that.","answer":"If the Lord wills","wrong":["By God's grace alone","As the Spirit leads","With the Lord's blessing"],"v":15},
 {"t":"order","d":3,"items":["Fightings come from pleasures within","Humble yourselves and he will exalt you","Don't speak against one another","Knowing good and not doing it is sin"],"v":1},
 {"t":"tf","d":1,"q":"James says the devil will flee from you if you resist him.","answer":true,"v":7},
-{"t":"tf","d":2,"q":"James tells sinners to let their laughter be turned to joy.","answer":false,"v":9}
+{"t":"tf","d":2,"q":"James tells sinners to let their laughter be turned to joy.","answer":false,"v":9},
+{"t":"choice","d":1,"q":"Why do you not have, according to James?","options":["Because you don't ask","Because you are lazy","Because God is testing you","Because the rich take it"],"v":2},
+{"t":"choice","d":2,"q":"What does someone who judges his brother speak against?","options":["The law","The prophets","The elders","The assembly"],"v":11},
+{"t":"choice","d":2,"q":"What does James call those who seek friendship with the world?","options":["Adulterers and adulteresses","Fools and scoffers","Hypocrites and liars","Children of darkness"],"v":4},
+{"t":"choice","d":3,"q":"In James's example, how long do the traders plan to spend in the city?","options":["A year","A month","Seven days","Three years"],"v":13},
+{"t":"blank","d":2,"q":"But now you glory in your boasting. ____.","answer":"All such boasting is evil","wrong":["Pride comes before a fall","God sees every heart","Your glory will soon fade"],"v":16},
+{"t":"blank","d":3,"q":"Or do you think that the Scripture says in vain, The Spirit who lives in us ____?","answer":"yearns jealously","wrong":["cries out","groans within","speaks softly"],"v":5},
+{"t":"tf","d":1,"q":"James says we know exactly what our life will be like tomorrow.","answer":false,"v":14}
 ]},
 "5":{"keyVerse":16,"questions":[
 {"t":"choice","d":1,"q":"Which prophet does James use as an example of powerful prayer?","options":["Elijah","Elisha","Moses","Samuel"],"v":17},
@@ -57,6 +85,13 @@
 {"t":"blank","d":3,"q":"He who turns a sinner from the error of his way will save a soul from death and ____.","answer":"will cover a multitude of sins","wrong":["will shine like the stars","will receive a great reward","will be called righteous"],"v":20},
 {"t":"order","d":3,"items":["A warning to the rich","Be patient until the Lord's coming","Don't swear by any oath","Pray over the sick"],"v":1},
 {"t":"tf","d":1,"q":"James says the judge stands at the door.","answer":true,"v":9},
-{"t":"tf","d":2,"q":"James says the cries of cheated laborers have not reached the Lord's ears.","answer":false,"v":4}
+{"t":"tf","d":2,"q":"James says the cries of cheated laborers have not reached the Lord's ears.","answer":false,"v":4},
+{"t":"choice","d":1,"q":"What does James tell the rich to do because of the miseries coming on them?","options":["Weep and howl","Give to the poor","Build bigger barns","Flee to the mountains"],"v":1},
+{"t":"choice","d":2,"q":"In James's warning, what has become corroded?","options":["Their gold and silver","Their houses and fields","Their swords and shields","Their crowns and thrones"],"v":3},
+{"t":"choice","d":2,"q":"What should someone who is cheerful do?","options":["Sing praises","Give thanks at the table","Share with the poor","Rest from work"],"v":13},
+{"t":"choice","d":3,"q":"Whom does James offer as an example of suffering and perseverance?","options":["The prophets who spoke in the Lord's name","The apostles in Jerusalem","The judges of Israel","The kings of Judah"],"v":10},
+{"t":"blank","d":2,"q":"He prayed again, and the sky gave rain, and ____.","answer":"the earth produced its fruit","wrong":["the rivers overflowed","the people rejoiced greatly","the famine came to an end"],"v":18},
+{"t":"blank","d":3,"q":"The insistent prayer of a righteous person is ____.","answer":"powerfully effective","wrong":["heard in heaven","a sweet aroma","never in vain"],"v":16},
+{"t":"tf","d":1,"q":"James says the Lord is harsh and slow to show mercy.","answer":false,"v":11}
 ]}
 }}

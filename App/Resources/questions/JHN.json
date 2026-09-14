@@ -2428,6 +2428,85 @@
      "q": "After washing their feet, Jesus told the disciples, \"You are all clean.\"",
      "answer": false,
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "After washing their feet, what did Jesus say the disciples ought to do?",
+     "options": [
+      "Wash one another's feet",
+      "Wash the feet of the poor",
+      "Offer a sacrifice at the temple",
+      "Keep the feast of the Passover"
+     ],
+     "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Which Scripture did Jesus say would be fulfilled about his betrayer?",
+     "options": [
+      "He who eats bread with me has lifted his heel against me",
+      "The stone which the builders rejected",
+      "Strike the shepherd, and the sheep will scatter",
+      "They hated me without a cause"
+     ],
+     "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the disciples react when Jesus said one of them would betray him?",
+     "options": [
+      "They looked at one another, perplexed",
+      "They all left the table in fear",
+      "They argued about who was greatest",
+      "They began to pray aloud together"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "When Peter asked, \"Lord, do you wash my feet?\" what did Jesus first answer?",
+     "options": [
+      "You don't know now, but you will understand later",
+      "Unless you are washed, you cannot enter",
+      "Let it be so for now",
+      "A servant must do as his lord does"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"If you know these things, ____ if you do them.\"",
+     "answer": "blessed are you",
+     "wrong": [
+      "wise are you",
+      "you will live",
+      "great is your reward"
+     ],
+     "v": 17
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When Jesus had said this, he was ____, and testified, \"Most certainly I tell you that one of you will betray me.\"",
+     "answer": "troubled in spirit",
+     "wrong": [
+      "grieved in his heart",
+      "moved with compassion",
+      "silent for a while"
+     ],
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Peter told Jesus, \"I will lay down my life for you.\"",
+     "answer": true,
+     "v": 37
     }
    ]
   },
@@ -2543,6 +2622,85 @@
      "q": "Jesus said that whoever believes in him will do lesser works than his.",
      "answer": false,
      "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "When asked how the disciples could know the way, how did Jesus describe himself?",
+     "options": [
+      "The way, the truth, and the life",
+      "The bread of life",
+      "The light of the world",
+      "The good shepherd"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Jesus say the disciples would rejoice if they loved him?",
+     "options": [
+      "Because he was going to his Father",
+      "Because he would rise on the third day",
+      "Because the Kingdom had come near",
+      "Because their names were written in heaven"
+     ],
+     "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Jesus say about the prince of the world who was coming?",
+     "options": [
+      "He has nothing in me",
+      "He has already been judged",
+      "He will flee from the Counselor",
+      "He will rule only a short time"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus say at the close of this chapter?",
+     "options": [
+      "Arise, let's go from here",
+      "It is finished",
+      "Watch and pray with me",
+      "Peace be with you"
+     ],
+     "v": 31
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"Yet a little while, and the world will see me no more; but you will see me. Because I live, ____.\"",
+     "answer": "you will live also",
+     "wrong": [
+      "you will see my glory",
+      "the world will be judged",
+      "you will not fear"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said, \"If a man loves me, he will keep my word. My Father will love him, and we will come to him and ____.\"",
+     "answer": "make our home with him",
+     "wrong": [
+      "give him eternal life",
+      "reveal our glory to him",
+      "write our name on him"
+     ],
+     "v": 23
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jesus said that after preparing a place, he would come again and receive the disciples to himself.",
+     "answer": true,
+     "v": 3
     }
    ]
   },
@@ -2658,6 +2816,85 @@
      "q": "Jesus said the Counselor would testify about him, but the disciples would not need to testify.",
      "answer": false,
      "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What happens to a man who doesn't remain in Jesus, like a branch?",
+     "options": [
+      "He is thrown out, withers, and is burned",
+      "He is grafted back into the vine",
+      "He is left to grow wild",
+      "He is tied again to the vine"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Jesus say the disciples were already pruned clean?",
+     "options": [
+      "Because of the word he had spoken to them",
+      "Because they had been baptized by John",
+      "Because he had washed their feet",
+      "Because they had left everything"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did Jesus say his Father is glorified?",
+     "options": [
+      "When the disciples bear much fruit",
+      "When the disciples offer sacrifices",
+      "When the whole world believes",
+      "When the temple is made clean"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Jesus say people would do these things to the disciples for his name's sake?",
+     "options": [
+      "They don't know him who sent Jesus",
+      "They fear losing their power",
+      "They love darkness rather than light",
+      "They keep the traditions of the elders"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus said, \"Greater love has no one than this, that someone ____ for his friends.\"",
+     "answer": "lay down his life",
+     "wrong": [
+      "give all he has",
+      "leave his own home",
+      "spend all his days"
+     ],
+     "v": 13
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"Even as the Father has loved me, I also have loved you. ____.\"",
+     "answer": "Remain in my love",
+     "wrong": [
+      "Love one another",
+      "Walk in my light",
+      "Keep my word always"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jesus said that if he had not come and spoken to them, they would still have had sin.",
+     "answer": false,
+     "v": 22
     }
    ]
   },
@@ -2773,6 +3010,85 @@
      "q": "The disciples said that Jesus was now speaking plainly, using no figures of speech.",
      "answer": true,
      "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Besides killing some of them, what did Jesus say people would do to the disciples?",
+     "options": [
+      "Put them out of the synagogues",
+      "Sell them as slaves",
+      "Take away their homes",
+      "Send them away to Rome"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why hadn't Jesus told the disciples these things from the beginning?",
+     "options": [
+      "Because he was with them",
+      "Because they were too young in faith",
+      "Because the Father forbade it",
+      "Because the crowds were always near"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Why did Jesus say the Father himself loves the disciples?",
+     "options": [
+      "They loved Jesus and believed he came from God",
+      "They left their nets to follow him",
+      "They kept the whole law of Moses",
+      "They gave their money to the poor"
+     ],
+     "v": 27
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the disciples say made them believe Jesus came from God?",
+     "options": [
+      "He knows all things without being questioned",
+      "He calmed the storm on the sea",
+      "He raised Lazarus from the dead",
+      "He fed five thousand people"
+     ],
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"Until now, you have asked nothing in my name. Ask, and you will receive, that ____.\"",
+     "answer": "your joy may be made full",
+     "wrong": [
+      "your faith may grow strong",
+      "the Father may be glorified",
+      "you may have peace"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Jesus said, \"I still have many things to tell you, but ____.\"",
+     "answer": "you can't bear them now",
+     "wrong": [
+      "the hour has not come",
+      "you would not understand",
+      "my time is short"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Jesus said the disciples would be scattered, each to his own place, and leave him alone.",
+     "answer": true,
+     "v": 32
     }
    ]
   },
@@ -2888,6 +3204,85 @@
      "q": "Jesus prayed that believers would be one so that the world may believe the Father sent him.",
      "answer": true,
      "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "From whom did Jesus ask the Father to keep his disciples?",
+     "options": [
+      "The evil one",
+      "The chief priests",
+      "False prophets",
+      "The rulers of this age"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus say he had accomplished on the earth?",
+     "options": [
+      "The work the Father gave him to do",
+      "The building of a new temple",
+      "The gathering of all Israel",
+      "The defeat of every enemy"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus desire for those the Father had given him?",
+     "options": [
+      "To be with him and see his glory",
+      "To rule over the twelve tribes",
+      "To stay in Jerusalem until he returned",
+      "To be kept from all suffering"
+     ],
+     "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Jesus say he does for his disciples' sakes?",
+     "options": [
+      "He sanctifies himself",
+      "He lays aside his glory",
+      "He fasts and prays",
+      "He stays silent before the world"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Lifting up his eyes to heaven, Jesus said, \"Father, the time has come. ____, that your Son may also glorify you.\"",
+     "answer": "Glorify your Son",
+     "wrong": [
+      "Give me strength",
+      "Remember your servant",
+      "Send your Spirit"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus prayed, \"I pray for them. ____, but for those whom you have given me, for they are yours.\"",
+     "answer": "I don't pray for the world",
+     "wrong": [
+      "I don't pray for myself",
+      "I don't ask for riches",
+      "I don't pray for the rulers"
+     ],
+     "v": 9
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Jesus said the world has known the Father, but has not believed that he sent Jesus.",
+     "answer": false,
+     "v": 25
     }
    ]
   },
@@ -3002,6 +3397,85 @@
      "q": "Jesus told the high priest that he had taught many things in secret.",
      "answer": false,
      "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jesus tell Peter after Peter struck with his sword?",
+     "options": [
+      "Put the sword into its sheath",
+      "Flee to the mountains",
+      "Watch and pray with me",
+      "Go and tell the others"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Who brought Peter into the court of the high priest?",
+     "options": [
+      "Another disciple known to the high priest",
+      "The maid who kept the door",
+      "A servant of Annas",
+      "Nicodemus"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the Jews say they could not judge Jesus themselves?",
+     "options": [
+      "It was illegal for them to put anyone to death",
+      "The Passover had already begun",
+      "Pilate had forbidden it",
+      "They had no witnesses against him"
+     ],
+     "v": 31
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "When an officer slapped him, what did Jesus answer?",
+     "options": [
+      "If I spoke well, why do you beat me?",
+      "Father, forgive them",
+      "Do what you must do",
+      "My hour has not yet come"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus asked, \"Who are you looking for?\" They answered him, \"____.\"",
+     "answer": "Jesus of Nazareth",
+     "wrong": [
+      "The King of the Jews",
+      "The man called Christ",
+      "The teacher from Galilee"
+     ],
+     "v": 5
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The servants and the officers were standing there, having made a fire of coals, for ____.",
+     "answer": "it was cold",
+     "wrong": [
+      "it was night",
+      "it was early",
+      "the wind was strong"
+     ],
+     "v": 18
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When Jesus said, \"I am he,\" Peter was standing with the soldiers who came to arrest him.",
+     "answer": false,
+     "v": 5
     }
    ]
   },
@@ -3116,6 +3590,85 @@
      "q": "Jesus was laid in a new tomb in a garden near the place where he was crucified.",
      "answer": true,
      "v": 41
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Jesus say just before he bowed his head and gave up his spirit?",
+     "options": [
+      "It is finished",
+      "Father, into your hands",
+      "Woman, behold your son",
+      "My God, why have you forsaken me"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "When Pilate asked, \"Shall I crucify your King?\" what did the chief priests answer?",
+     "options": [
+      "We have no king but Caesar",
+      "His blood be on us",
+      "He is no king of ours",
+      "Release Barabbas to us"
+     ],
+     "v": 15
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "In what languages was the title on the cross written?",
+     "options": [
+      "Hebrew, Latin, and Greek",
+      "Hebrew and Aramaic only",
+      "Greek and Latin only",
+      "Latin, Greek, and Egyptian"
+     ],
+     "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the Jews cry out when Pilate sought to release Jesus?",
+     "options": [
+      "If you release him, you aren't Caesar's friend",
+      "He stirs up the whole nation",
+      "Our law forbids his release",
+      "Give us Barabbas instead"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Seeing that all things were now finished, that the Scripture might be fulfilled, Jesus said, \"____!\"",
+     "answer": "I am thirsty",
+     "wrong": [
+      "Father, remember me",
+      "Let it be done",
+      "I am coming home"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Joseph of Arimathaea was a disciple of Jesus, but secretly ____.",
+     "answer": "for fear of the Jews",
+     "wrong": [
+      "because he was rich",
+      "because he sat on the council",
+      "for fear of Pilate"
+     ],
+     "v": 38
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "When Pilate asked Jesus, \"Where are you from?\" Jesus gave him no answer.",
+     "answer": true,
+     "v": 9
     }
    ]
   },
@@ -3230,6 +3783,85 @@
      "q": "The other disciple outran Peter and reached the tomb first.",
      "answer": true,
      "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Thomas say when Jesus showed him his hands and side?",
+     "options": [
+      "My Lord and my God!",
+      "Now I know it is you",
+      "Forgive my unbelief",
+      "Truly you are the Christ"
+     ],
+     "v": 28
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Mary say when Jesus called her by name?",
+     "options": [
+      "Rabboni!",
+      "Hosanna!",
+      "Where have you been?",
+      "Is it really you, Lord?"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Where were the two angels sitting in the tomb?",
+     "options": [
+      "One at the head and one at the feet",
+      "Both on the stone at the door",
+      "One inside and one outside",
+      "Both at the head of the place"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What does the text say the disciples did not yet know?",
+     "options": [
+      "The Scripture that he must rise from the dead",
+      "Where Mary had gone that morning",
+      "Who had rolled the stone away",
+      "That the soldiers had fled"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said to Thomas, \"Because you have seen me, you have believed. Blessed are those who ____ and have believed.\"",
+     "answer": "have not seen",
+     "wrong": [
+      "have heard my word",
+      "have kept my commands",
+      "have waited patiently"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Jesus said, \"Peace be to you. As the Father has sent me, ____.\"",
+     "answer": "even so I send you",
+     "wrong": [
+      "so you must go",
+      "even so you will follow",
+      "so I will be with you"
+     ],
+     "v": 21
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When Jesus first stood among the disciples, he showed them his hands and his side.",
+     "answer": true,
+     "v": 20
     }
    ]
   },
@@ -3344,6 +3976,85 @@
      "q": "Jesus told Peter that the disciple he loved would not die.",
      "answer": false,
      "v": 23
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Where did Jesus reveal himself to the disciples in this chapter?",
+     "options": [
+      "At the sea of Tiberias",
+      "On the road to Emmaus",
+      "On a mountain in Galilee",
+      "In the upper room"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Jesus call out to the disciples from the beach?",
+     "options": [
+      "Children, have you anything to eat?",
+      "Peace be to you!",
+      "Come and follow me!",
+      "Why are you afraid?"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "The second time Peter said he had affection for Jesus, what did Jesus say?",
+     "options": [
+      "Tend my sheep",
+      "Feed my lambs",
+      "Strengthen your brothers",
+      "Gather my flock"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "When Peter saw the disciple whom Jesus loved following, what did he ask?",
+     "options": [
+      "Lord, what about this man?",
+      "Lord, will he come with us?",
+      "Lord, is he greater than I?",
+      "Lord, why does he follow?"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Jesus spoke of the kind of death by which Peter would glorify God. Then he said to him, \"____.\"",
+     "answer": "Follow me",
+     "wrong": [
+      "Go in peace",
+      "Stay here",
+      "Watch and pray"
+     ],
+     "v": 19
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "None of the disciples dared inquire of him, \"____?\" knowing that it was the Lord.",
+     "answer": "Who are you",
+     "wrong": [
+      "Where did you come from",
+      "Is it really you",
+      "Why have you come"
+     ],
+     "v": 12
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "When Jesus stood on the beach, the disciples recognized him at once.",
+     "answer": false,
+     "v": 4
     }
    ]
   }

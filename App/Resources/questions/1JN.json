@@ -9,7 +9,12 @@
 {"t":"blank","d":2,"q":"But if we walk in the light as he is in the light, we have ____.","answer":"fellowship with one another","wrong":["peace with God himself","joy in our hearts","hope of eternal life"],"v":7},
 {"t":"blank","d":3,"q":"That which we have seen with our eyes, that which we saw, and ____, concerning the Word of life.","answer":"our hands touched","wrong":["our ears heard","our hearts believed","our lips declared"],"v":1},
 {"t":"tf","d":1,"q":"John says anyone who claims fellowship with God while walking in darkness is lying.","answer":true,"v":6},
-{"t":"tf","d":3,"q":"John says our fellowship is with the Father and with the Holy Spirit.","answer":false,"v":3}
+{"t":"tf","d":3,"q":"John says our fellowship is with the Father and with the Holy Spirit.","answer":false,"v":3},
+{"t":"choice","d":2,"q":"Besides deceiving ourselves, what else does John say is true if we say we have no sin?","options":["The truth is not in us","The light is hidden from us","Our joy is taken away","Our prayers are not heard"],"v":8},
+{"t":"choice","d":1,"q":"From what does John say God will cleanse us when we confess our sins?","options":["All unrighteousness","All fear","Every doubt","All sorrow"],"v":9},
+{"t":"blank","d":2,"q":"That which we have seen and heard we declare to you, that you also may have ____.","answer":"fellowship with us","wrong":["joy in the Lord","eternal life with him","peace in your hearts"],"v":3},
+{"t":"blank","d":3,"q":"And the life was revealed, and we have seen, and testify, and declare to you ____.","answer":"the life, the eternal life","wrong":["the word, the living word","the light, the true light","the truth, the whole truth"],"v":2},
+{"t":"tf","d":1,"q":"John says the Word of life he declares was from the beginning.","answer":true,"v":1}
 ]},
 "2":{"keyVerse":17,"questions":[
 {"t":"choice","d":1,"q":"If anyone sins, what does John say we have with the Father in Jesus Christ?","options":["A Counselor","A Judge","A King","A Witness"],"v":1},
@@ -21,7 +26,14 @@
 {"t":"blank","d":3,"q":"You have ____ from the Holy One, and you all have knowledge.","answer":"an anointing","wrong":["a promise","a calling","a seal"],"v":20},
 {"t":"order","d":2,"items":["Keeping his commandments shows we know him","Claiming to be in the light while hating a brother","Don't love the world","Many antichrists have arisen"],"v":3},
 {"t":"tf","d":1,"q":"John says those who went out from them never truly belonged to them.","answer":true,"v":19},
-{"t":"tf","d":3,"q":"John says Jesus is the atoning sacrifice for our sins only, and not for the whole world.","answer":false,"v":2}
+{"t":"tf","d":3,"q":"John says Jesus is the atoning sacrifice for our sins only, and not for the whole world.","answer":false,"v":2},
+{"t":"choice","d":1,"q":"Who does John say remains forever?","options":["He who does God's will","He who knows the law","He who is strong","He who has knowledge"],"v":17},
+{"t":"choice","d":2,"q":"How ought someone who says he remains in him to walk?","options":["Just like he walked","In the fear of the Lord","According to the law","In quiet humility"],"v":6},
+{"t":"choice","d":2,"q":"What does John say the one who confesses the Son also has?","options":["The Father","The Spirit","The truth","The kingdom"],"v":23},
+{"t":"choice","d":3,"q":"What is the promise that he promised us?","options":["The eternal life","The Holy Spirit","A new heaven","The crown of glory"],"v":25},
+{"t":"blank","d":2,"q":"He who loves his brother remains in the light, and there is no ____ in him.","answer":"occasion for stumbling","wrong":["darkness at all","hatred or envy","fear of judgment"],"v":10},
+{"t":"blank","d":3,"q":"Remain in him, that when he appears, we may have boldness and ____ before him at his coming.","answer":"not be ashamed","wrong":["stand without fear","be found faithful","rejoice with joy"],"v":28},
+{"t":"tf","d":1,"q":"John says he writes to the readers because they don't know the truth.","answer":false,"v":21}
 ]},
 "3":{"keyVerse":18,"questions":[
 {"t":"choice","d":1,"q":"Because of the Father's great love, what does John say we should be called?","options":["Children of God","Friends of God","Servants of the Lord","Heirs of the promise"],"v":1},
@@ -33,7 +45,14 @@
 {"t":"blank","d":3,"q":"Because if our heart condemns us, God is ____, and knows all things.","answer":"greater than our heart","wrong":["merciful toward our sins","patient with our weakness","faithful to forgive us"],"v":20},
 {"t":"order","d":2,"items":["Everyone with this hope purifies himself","Sin is lawlessness","Don't be surprised if the world hates you","Let's not love in word only"],"v":3},
 {"t":"tf","d":1,"q":"John says we know we have passed out of death into life because we love the brothers.","answer":true,"v":14},
-{"t":"tf","d":3,"q":"John says we know God remains in us by the commandments he gave us.","answer":false,"v":24}
+{"t":"tf","d":3,"q":"John says we know God remains in us by the commandments he gave us.","answer":false,"v":24},
+{"t":"choice","d":1,"q":"Instead of loving in word or with the tongue only, how should we love?","options":["In deed and truth","In prayer and fasting","In spirit and power","With joy and gladness"],"v":18},
+{"t":"choice","d":1,"q":"Why does the world not know us, according to John?","options":["It didn't know him","It is full of darkness","We are hidden from it","We have left it behind"],"v":1},
+{"t":"choice","d":2,"q":"What shows that God's love does not remain in someone who has the world's goods?","options":["He closes his heart against a brother in need","He gives his goods to the temple","He keeps his goods for his family","He spends his goods on pleasure"],"v":17},
+{"t":"choice","d":3,"q":"Why does John say whoever is born of God doesn't commit sin?","options":["His seed remains in him","He keeps the whole law","He has seen God's face","He is never tempted"],"v":9},
+{"t":"blank","d":2,"q":"This is his commandment, that we should believe in the name of his Son, Jesus Christ, and ____.","answer":"love one another","wrong":["keep his word","walk in the light","confess our sins"],"v":23},
+{"t":"blank","d":3,"q":"Whatever we ask, we receive from him, because we keep his commandments and do the things that are ____.","answer":"pleasing in his sight","wrong":["right in his eyes","holy before him","good in his name"],"v":22},
+{"t":"tf","d":2,"q":"John says whoever sins has truly seen him and knows him.","answer":false,"v":6}
 ]},
 "4":{"keyVerse":19,"questions":[
 {"t":"choice","d":1,"q":"What does John tell believers to do with the spirits?","options":["Test them to see whether they are of God","Cast them out in Jesus' name","Ignore them completely","Pray against them"],"v":1},
@@ -45,7 +64,14 @@
 {"t":"blank","d":3,"q":"If a man says, \"I love God,\" and hates his brother, ____.","answer":"he is a liar","wrong":["he is in darkness","he has no life","he deceives himself"],"v":20},
 {"t":"order","d":2,"items":["Many false prophets have gone out","They are of the world, and the world hears them","No one has seen God at any time","We love him because he first loved us"],"v":1},
 {"t":"tf","d":1,"q":"John says God sent his only born Son into the world that we might live through him.","answer":true,"v":9},
-{"t":"tf","d":3,"q":"John testifies that the Father has sent the Son as the judge of the world.","answer":false,"v":14}
+{"t":"tf","d":3,"q":"John testifies that the Father has sent the Son as the judge of the world.","answer":false,"v":14},
+{"t":"choice","d":1,"q":"In John's appeal to love one another, what reason does he give?","options":["Love is of God","Love covers sins","The world is watching","The end is near"],"v":7},
+{"t":"choice","d":2,"q":"How do we know that we remain in him and he in us?","options":["He has given us of his Spirit","We keep every law","We have seen his face","We pray without ceasing"],"v":13},
+{"t":"choice","d":3,"q":"Why may we have boldness in the day of judgment?","options":["As he is, even so we are in this world","We have never sinned","We have tested every spirit","We have kept the law"],"v":17},
+{"t":"blank","d":2,"q":"Whoever confesses that Jesus is the Son of God, ____, and he in God.","answer":"God remains in him","wrong":["the Spirit rests on him","he has eternal life","he is born again"],"v":15},
+{"t":"blank","d":3,"q":"If we love one another, God remains in us, and his love ____.","answer":"has been perfected in us","wrong":["shines out through us","will guard our hearts","dwells with us always"],"v":12},
+{"t":"tf","d":1,"q":"John says the spirit of the Antichrist is already in the world.","answer":true,"v":3},
+{"t":"tf","d":2,"q":"John says he who is not of God listens to the apostles.","answer":false,"v":6}
 ]},
 "5":{"keyVerse":12,"questions":[
 {"t":"choice","d":1,"q":"What does John say is the victory that has overcome the world?","options":["Your faith","Your love","Your obedience","Your hope"],"v":4},
@@ -57,6 +83,13 @@
 {"t":"blank","d":3,"q":"This is the boldness which we have toward him, that if we ask anything ____, he listens to us.","answer":"according to his will","wrong":["in the name of Jesus","with faith and patience","from a pure heart"],"v":14},
 {"t":"order","d":2,"items":["Whoever loves the Father loves his child","Who overcomes the world but the one who believes","If we receive the witness of men","All unrighteousness is sin"],"v":1},
 {"t":"tf","d":1,"q":"John says he wrote these things so believers may know that they have eternal life.","answer":true,"v":13},
-{"t":"tf","d":3,"q":"John tells believers to make a request for a brother whose sin leads to death.","answer":false,"v":16}
+{"t":"tf","d":3,"q":"John tells believers to make a request for a brother whose sin leads to death.","answer":false,"v":16},
+{"t":"choice","d":1,"q":"Whoever believes that Jesus is the Christ has been what?","options":["Born of God","Made perfect","Called a saint","Set free from the law"],"v":1},
+{"t":"choice","d":2,"q":"Whose witness does John say is greater than the witness of men?","options":["The witness of God","The witness of angels","The witness of prophets","The witness of apostles"],"v":9},
+{"t":"choice","d":2,"q":"What does the evil one not do to the one born of God?","options":["Touch him","Tempt him","See him","Hear him"],"v":18},
+{"t":"choice","d":3,"q":"What has the Son of God given us, according to John?","options":["An understanding, that we know him who is true","A kingdom that cannot be shaken","A new law written on stone","Power over every spirit"],"v":20},
+{"t":"blank","d":2,"q":"It is the Spirit who testifies, because ____.","answer":"the Spirit is the truth","wrong":["the Spirit knows all things","the Spirit came from heaven","God has sent him"],"v":6},
+{"t":"blank","d":3,"q":"He who doesn't believe God has ____, because he has not believed in the testimony.","answer":"made him a liar","wrong":["denied his own Son","hardened his heart","turned from the truth"],"v":10},
+{"t":"tf","d":1,"q":"John says the one who doesn't have God's Son still has the life.","answer":false,"v":12}
 ]}
 }}

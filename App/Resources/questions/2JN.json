@@ -7,6 +7,12 @@
 {"t":"blank","d":2,"q":"Not as though I wrote to you a new commandment, but that which we had from the beginning, ____.","answer":"that we love one another","wrong":["that we keep the faith","that we walk in light","that we honor the Father"],"v":5},
 {"t":"blank","d":3,"q":"He who remains in the teaching has ____.","answer":"both the Father and the Son","wrong":["the promise of eternal life","the Spirit of truth within","a full and lasting reward"],"v":9},
 {"t":"tf","d":2,"q":"The elder tells the lady to welcome into her house anyone who comes, even if he doesn't bring this teaching.","answer":false,"v":10},
-{"t":"tf","d":3,"q":"The letter closes with greetings from the children of the lady's chosen sister.","answer":true,"v":13}
+{"t":"tf","d":3,"q":"The letter closes with greetings from the children of the lady's chosen sister.","answer":true,"v":13},
+{"t":"choice","d":1,"q":"What does the elder say love is?","options":["Walking according to his commandments","Giving to the poor","Speaking kind words","Forgiving every wrong"],"v":6},
+{"t":"choice","d":2,"q":"What does the elder say remains in us and will be with us forever?","options":["The truth","Our joy","The assembly","Our reward"],"v":2},
+{"t":"choice","d":3,"q":"The greeting says grace, mercy, and peace will be with us in what?","options":["Truth and love","Faith and hope","Joy and peace","Spirit and power"],"v":3},
+{"t":"blank","d":2,"q":"Watch yourselves, that we don't lose the things which we have accomplished, but that we receive ____.","answer":"a full reward","wrong":["a crown of life","an eternal rest","a great honor"],"v":8},
+{"t":"blank","d":3,"q":"This is the commandment, even as you heard from the beginning, that ____.","answer":"you should walk in it","wrong":["you should teach it","you should keep it always","you should hold it fast"],"v":6},
+{"t":"tf","d":2,"q":"The greeting says grace, mercy, and peace come from both God the Father and the Lord Jesus Christ.","answer":true,"v":3}
 ]}
 }}

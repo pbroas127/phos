@@ -41,8 +41,8 @@ def fill_info(aid):
     s, j = call("GET", f"/v1/appInfos/{iid}/appInfoLocalizations")
     loc = next(x for x in j["data"] if x["attributes"]["locale"] == "en-US")
     s, j = call("PATCH", f"/v1/appInfoLocalizations/{loc['id']}", {"data": {"type": "appInfoLocalizations", "id": loc["id"],
-        "attributes": {"subtitle": M["subtitle"], "privacyPolicyUrl": M["privacyPolicyUrl"]}}})
-    ok(s, j, "subtitle and privacy url")
+        "attributes": {"name": M["name"], "subtitle": M["subtitle"], "privacyPolicyUrl": M["privacyPolicyUrl"]}}})
+    ok(s, j, "name, subtitle and privacy url")
 
     s, j = call("GET", f"/v1/appInfos/{iid}/ageRatingDeclaration")
     rid = j["data"]["id"]

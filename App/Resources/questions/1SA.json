@@ -2221,7 +2221,7 @@
      "d": 1,
      "q": "How did Samuel describe himself to all Israel?",
      "options": [
-      "Old and gray-headed",
+      "Old and gray headed",
       "Weak and nearly blind",
       "Still young and strong",
       "Tired of judging them"
@@ -3198,7 +3198,7 @@
      "d": 2,
      "q": "What did the king promise the man who killed Goliath?",
      "options": [
-      "Riches, his daughter, and a tax-free house",
+      "Riches, his daughter, and a tax free house",
       "A city of his own in Judah",
       "Command over the whole army",
       "A share of Saul's kingdom"
@@ -3437,7 +3437,7 @@
     {
      "t": "blank",
      "d": 3,
-     "q": "David said, \"Does it seem a light thing to be the king's son-in-law, since I am ____?\"",
+     "q": "David said, \"Does it seem a light thing to be the king's son in law, since I am ____?\"",
      "answer": "a poor man and little known",
      "wrong": [
       "the youngest of my brothers",
@@ -4101,7 +4101,7 @@
      "t": "blank",
      "d": 2,
      "q": "Ahimelech asked, \"Who among all your servants is so faithful as David, who is ____?\"",
-     "answer": "the king's son-in-law",
+     "answer": "the king's son in law",
      "wrong": [
       "the LORD's anointed",
       "the slayer of Goliath",
@@ -5081,7 +5081,7 @@
      "answer": "my servant forever",
      "wrong": [
       "a great captain",
-      "my son-in-law",
+      "my son in law",
       "king over Israel"
      ],
      "v": 12
@@ -5312,7 +5312,7 @@
       "His bodyguard forever",
       "Captain of the whole army",
       "Governor of Ziklag",
-      "His son-in-law"
+      "His son in law"
      ],
      "v": 2
     },
@@ -5408,7 +5408,7 @@
       "He had found no fault in him",
       "He was a dangerous Hebrew",
       "He was a hired soldier",
-      "He was Saul's son-in-law"
+      "He was Saul's son in law"
      ],
      "v": 3
     },

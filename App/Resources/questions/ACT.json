@@ -3185,6 +3185,85 @@
      "q": "Silas and Timothy traveled on with Paul when he was escorted to Athens.",
      "answer": false,
      "v": 14
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Paul explain and demonstrate from the Scriptures in Thessalonica?",
+     "options": [
+      "That the Christ had to suffer and rise again",
+      "That the temple would soon be destroyed",
+      "That the law of Moses had ended",
+      "That John was the promised prophet"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What provoked Paul's spirit while he waited in Athens?",
+     "options": [
+      "He saw the city full of idols",
+      "The philosophers mocked his teaching",
+      "The synagogue refused to hear him",
+      "Silas and Timothy were delayed"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did the Athenians and the strangers living there spend their time?",
+     "options": [
+      "Telling or hearing some new thing",
+      "Debating the decrees of Caesar",
+      "Offering sacrifices at every altar",
+      "Training for the public games"
+     ],
+     "v": 21
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The God who made the world and all things in it doesn't dwell in ____.",
+     "answer": "temples made with hands",
+     "wrong": [
+      "the shrines of Athens",
+      "images of gold and silver",
+      "the high places of men"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "For in him we live, ____.",
+     "answer": "move, and have our being",
+     "wrong": [
+      "breathe, and find our rest",
+      "grow, and bear our fruit",
+      "work, and know our purpose"
+     ],
+     "v": 28
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "At Beroea, many of the prominent Greek women believed, but no men did.",
+     "answer": false,
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did the Thessalonian crowd accuse the believers of saying?",
+     "options": [
+      "That there is another king, Jesus",
+      "That Caesar is not a god",
+      "That the temple must fall",
+      "That no one should pay taxes"
+     ],
+     "v": 7
     }
    ]
   },
@@ -3299,6 +3378,85 @@
      "q": "When the Jews at Ephesus asked Paul to stay longer, he agreed to remain with them.",
      "answer": false,
      "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Paul do when the Jews in Corinth opposed him and blasphemed?",
+     "options": [
+      "He shook out his clothing",
+      "He shook the dust from his feet",
+      "He tore his robe",
+      "He knelt and prayed for them"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where was the house of Justus, where Paul went next?",
+     "options": [
+      "Next door to the synagogue",
+      "Beside the marketplace",
+      "Near the harbor at Cenchreae",
+      "Across from the judgment seat"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the Lord tell Paul in a vision in the night?",
+     "options": [
+      "Don't be afraid, but speak and don't be silent",
+      "Leave Corinth and go to Ephesus",
+      "Go up to Jerusalem for the feast",
+      "Wait here for Silas and Timothy"
+     ],
+     "v": 9
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Now a certain Jew named Apollos, an Alexandrian by race, ____, came to Ephesus.",
+     "answer": "an eloquent man",
+     "wrong": [
+      "a learned scribe",
+      "a wealthy merchant",
+      "a tent maker"
+     ],
+     "v": 24
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I must by all means keep this coming feast in Jerusalem, but ____ if God wills.",
+     "answer": "I will return again to you",
+     "wrong": [
+      "I will send Timothy to you",
+      "I will write to you",
+      "I will see you in Rome"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What charge did the Jews bring against Paul before Gallio?",
+     "options": [
+      "He persuades men to worship God contrary to the law",
+      "He speaks against the decrees of Caesar",
+      "He brought Greeks into the temple",
+      "He stirs up riots in the city"
+     ],
+     "v": 13
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Apollos was a man of Pontus by race.",
+     "answer": false,
+     "v": 24
     }
    ]
   },
@@ -3413,6 +3571,85 @@
      "q": "Paul went into the theater to speak to the rioting crowd.",
      "answer": false,
      "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What happened when Paul laid his hands on the disciples at Ephesus?",
+     "options": [
+      "The Holy Spirit came and they spoke in other languages",
+      "They were healed of their diseases",
+      "They were sent out to Macedonia",
+      "They saw a vision of the Lord"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How long did Paul's teaching in the school of Tyrannus continue?",
+     "options": [
+      "Two years",
+      "Three months",
+      "Six months",
+      "Seven years"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How did the sons of Sceva flee out of the house?",
+     "options": [
+      "Naked and wounded",
+      "Blind and trembling",
+      "Bound in chains",
+      "Mute and afraid"
+     ],
+     "v": 16
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which of Paul's travel companions did the crowd seize and rush into the theater?",
+     "options": [
+      "Gaius and Aristarchus",
+      "Timothy and Erastus",
+      "Silas and Timothy",
+      "Alexander and Demetrius"
+     ],
+     "v": 29
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The assembly was in confusion. Most of them didn't know ____.",
+     "answer": "why they had come together",
+     "wrong": [
+      "what Paul had taught",
+      "who had started the riot",
+      "where Paul was staying"
+     ],
+     "v": 32
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "There is danger not only to our trade, but also that the temple of the great goddess Artemis will be ____.",
+     "answer": "counted as nothing",
+     "wrong": [
+      "torn down by force",
+      "closed by the proconsul",
+      "left without worshipers"
+     ],
+     "v": 27
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "The disciples Paul found at Ephesus had already received the Holy Spirit.",
+     "answer": false,
+     "v": 2
     }
    ]
   },
@@ -3527,6 +3764,85 @@
      "q": "Paul reminded the elders that he had taught them publicly, but never from house to house.",
      "answer": false,
      "v": 20
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Paul say after he went down and embraced the young man who fell?",
+     "options": [
+      "Don't be troubled, for his life is in him",
+      "Arise, and walk",
+      "He is only sleeping",
+      "Pray, and he will live"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did Paul return through Macedonia instead of sailing for Syria from Greece?",
+     "options": [
+      "Jews made a plot against him",
+      "A storm closed the sea",
+      "The disciples begged him to stay",
+      "The Spirit forbade him to sail"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "On what day were the disciples at Troas gathered to break bread?",
+     "options": [
+      "The first day of the week",
+      "The Sabbath day",
+      "The day of Pentecost",
+      "The last day of Unleavened Bread"
+     ],
+     "v": 7
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Take heed to yourselves and to all the flock, in which the Holy Spirit has ____.",
+     "answer": "made you overseers",
+     "wrong": [
+      "set you apart",
+      "given you charge",
+      "called you servants"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Therefore watch, remembering that for a period of ____ I didn't cease to admonish everyone night and day with tears.",
+     "answer": "three years",
+     "wrong": [
+      "two years",
+      "three months",
+      "many seasons"
+     ],
+     "v": 31
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul said he was going to Jerusalem knowing exactly what would happen to him there.",
+     "answer": false,
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "To whom did Paul entrust the Ephesian elders?",
+     "options": [
+      "To God and to the word of his grace",
+      "To Timothy and Tychicus",
+      "To the apostles in Jerusalem",
+      "To the assembly at Antioch"
+     ],
+     "v": 32
     }
    ]
   },
@@ -3641,6 +3957,85 @@
      "q": "Paul told the commanding officer that he was a Jew from Antioch in Syria.",
      "answer": false,
      "v": 39
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Agabus say the Jews at Jerusalem would do to the owner of the belt?",
+     "options": [
+      "Bind him and deliver him to the Gentiles",
+      "Stone him outside the city",
+      "Cast him out of the synagogue",
+      "Keep him in prison for years"
+     ],
+     "v": 11
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What had the believing Jews been told Paul taught Jews living among the Gentiles?",
+     "options": [
+      "To forsake Moses",
+      "To stop keeping the Sabbath",
+      "To worship in Gentile temples",
+      "To refuse the temple tax"
+     ],
+     "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How many daughters who prophesied did Philip the evangelist have?",
+     "options": [
+      "Four",
+      "Two",
+      "Three",
+      "Seven"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "Which of these had the elders written that Gentile believers should keep themselves from?",
+     "options": [
+      "Food offered to idols",
+      "Wine at feasts",
+      "Eating pork",
+      "Working on the Sabbath"
+     ],
+     "v": 25
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "They seized Paul and dragged him out of the temple. Immediately ____.",
+     "answer": "the doors were shut",
+     "wrong": [
+      "the crowd grew silent",
+      "the soldiers came running",
+      "the priests cried out"
+     ],
+     "v": 30
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "The commanding officer arrested him and commanded him to be bound with ____.",
+     "answer": "two chains",
+     "wrong": [
+      "iron fetters",
+      "leather straps",
+      "heavy ropes"
+     ],
+     "v": 33
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Standing on the stairs, Paul spoke to the people in the Greek language.",
+     "answer": false,
+     "v": 40
     }
    ]
   },
@@ -3755,6 +4150,85 @@
      "q": "In Paul's account, the Lord told him in the temple to stay in Jerusalem and testify there.",
      "answer": false,
      "v": 18
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "At what time of day did the great light shine around Paul on his journey?",
+     "options": [
+      "About noon",
+      "At midnight",
+      "At sunrise",
+      "In the evening"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did the voice answer when Paul asked, \"Who are you, Lord?\"",
+     "options": [
+      "I am Jesus of Nazareth, whom you persecute",
+      "I am the God of your fathers",
+      "I am the Righteous One of Israel",
+      "I am the one Stephen saw"
+     ],
+     "v": 8
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Ananias urge Paul to do after he received his sight?",
+     "options": [
+      "Arise, be baptized, and wash away his sins",
+      "Go to Jerusalem and meet the apostles",
+      "Fast and pray for three days",
+      "Go into the synagogue and preach"
+     ],
+     "v": 16
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "When the blood of Stephen was shed, I also was standing by, consenting to his death, and ____ of those who killed him.",
+     "answer": "guarding the cloaks",
+     "wrong": [
+      "counting the stones",
+      "holding the letters",
+      "watching the faces"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "For you will be ____ to all men of what you have seen and heard.",
+     "answer": "a witness for him",
+     "wrong": [
+      "a servant of God",
+      "a light for him",
+      "a messenger of peace"
+     ],
+     "v": 15
+    },
+    {
+     "t": "tf",
+     "d": 2,
+     "q": "Paul said he received letters to bring believers from Caesarea to Jerusalem in bonds.",
+     "answer": false,
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the commanding officer do on the day after Paul revealed he was a Roman?",
+     "options": [
+      "Freed him and gathered the chief priests and council",
+      "Sent him to the governor in Caesarea",
+      "Had him scourged in the barracks",
+      "Released him to the crowd"
+     ],
+     "v": 30
     }
    ]
   },
@@ -3869,6 +4343,85 @@
      "q": "Lysias wrote to Felix that Paul was charged with a crime worthy of death.",
      "answer": false,
      "v": 29
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "How did Paul respond when told he had spoken evil of God's high priest?",
+     "options": [
+      "He said he didn't know he was high priest",
+      "He said the high priest deserved it",
+      "He asked the council to forgive him",
+      "He said God told him to speak"
+     ],
+     "v": 5
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did some scribes of the Pharisees' part say about Paul?",
+     "options": [
+      "We find no evil in this man",
+      "He is worthy of death",
+      "Let him be sent to Caesar",
+      "He is a prophet of God"
+     ],
+     "v": 9
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did the commanding officer have soldiers take Paul by force into the barracks?",
+     "options": [
+      "He feared Paul would be torn in pieces",
+      "Paul had insulted the high priest",
+      "The council ordered Paul's arrest",
+      "Paul had asked for protection"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did the commanding officer tell the young man before letting him go?",
+     "options": [
+      "Tell no one you revealed these things to me",
+      "Bring Paul to me tonight",
+      "Go and warn the chief priests",
+      "Stay in the barracks for safety"
+     ],
+     "v": 22
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "Brothers, I have lived before God in ____ until today.",
+     "answer": "all good conscience",
+     "wrong": [
+      "all humility of heart",
+      "faithful obedience",
+      "fear and trembling"
+     ],
+     "v": 1
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "When the governor had read the letter, he asked ____.",
+     "answer": "what province he was from",
+     "wrong": [
+      "who his accusers were",
+      "why he had been bound",
+      "whether he was a Roman"
+     ],
+     "v": 34
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Only the horsemen went on with Paul from Antipatris, while the other soldiers returned to the barracks.",
+     "answer": true,
+     "v": 32
     }
    ]
   },
@@ -3983,6 +4536,85 @@
      "q": "Felix's wife Drusilla was a Roman.",
      "answer": false,
      "v": 24
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Which high priest came down to Caesarea with the elders to accuse Paul?",
+     "options": [
+      "Ananias",
+      "Caiaphas",
+      "Annas",
+      "Sceva"
+     ],
+     "v": 1
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What did Tertullus claim Paul had tried to do?",
+     "options": [
+      "Profane the temple",
+      "Escape from custody",
+      "Kill the high priest",
+      "Raise an army in Judea"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Paul say he came to Jerusalem to bring after some years away?",
+     "options": [
+      "Gifts for the needy and offerings",
+      "Letters from the elders at Ephesus",
+      "A report from the Gentile churches",
+      "Sacrifices for his own vow"
+     ],
+     "v": 17
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What freedom did Felix allow Paul while he was kept in custody?",
+     "options": [
+      "His friends could serve and visit him",
+      "He could leave the city by day",
+      "He could preach in the synagogue",
+      "He could write to Caesar"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "In the temple they didn't find me ____ or stirring up a crowd.",
+     "answer": "disputing with anyone",
+     "wrong": [
+      "preaching to the Greeks",
+      "speaking against Moses",
+      "gathering my followers"
+     ],
+     "v": 12
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "But Felix, having ____ concerning the Way, deferred them.",
+     "answer": "more exact knowledge",
+     "wrong": [
+      "little interest",
+      "heard many reports",
+      "no clear understanding"
+     ],
+     "v": 22
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul said the Jews from Asia who found him in the temple ought to have been there to accuse him.",
+     "answer": true,
+     "v": 19
     }
    ]
   },
@@ -4097,6 +4729,85 @@
      "q": "Paul admitted to Festus that he had wronged the Jews, but said it was nothing worthy of death.",
      "answer": false,
      "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "What were the Jewish leaders plotting when they asked Festus for a favor against Paul?",
+     "options": [
+      "To kill him on the way",
+      "To stone him in the temple court",
+      "To poison him in prison",
+      "To hand him over to a mob"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Festus first say Paul should be kept in custody?",
+     "options": [
+      "Caesarea",
+      "Jerusalem",
+      "Antipatris",
+      "Rome"
+     ],
+     "v": 4
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Where did Paul tell Festus he ought to be tried?",
+     "options": [
+      "Before Caesar's judgment seat",
+      "Before the council in Jerusalem",
+      "Before King Agrippa",
+      "Before the elders of Israel"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "How did Agrippa and Bernice come into the place of hearing?",
+     "options": [
+      "With great pomp",
+      "Secretly by night",
+      "Without any guards",
+      "Dressed in mourning"
+     ],
+     "v": 23
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "It seems to me unreasonable, in sending a prisoner, not to also ____.",
+     "answer": "specify the charges against him",
+     "wrong": [
+      "send his accusers with him",
+      "write a full report",
+      "bind him in chains"
+     ],
+     "v": 27
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "Of whom I have ____ to write to my lord.",
+     "answer": "no certain thing",
+     "wrong": [
+      "no clear charge",
+      "little of worth",
+      "nothing good at all"
+     ],
+     "v": 26
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Festus described Paul to King Agrippa as a prisoner left behind by Felix.",
+     "answer": true,
+     "v": 14
     }
    ]
   },
@@ -4211,6 +4922,85 @@
      "q": "Paul said the light he saw on the road was dimmer than the noonday sun.",
      "answer": false,
      "v": 13
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "For what did Paul tell Agrippa he now stood to be judged?",
+     "options": [
+      "The hope of the promise God made to our fathers",
+      "Bringing Greeks into the temple",
+      "Speaking against Caesar",
+      "Teaching against the law of Moses"
+     ],
+     "v": 6
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why was Paul especially glad to make his defense before Agrippa?",
+     "options": [
+      "Agrippa was expert in the customs of the Jews",
+      "Agrippa had known him from his youth",
+      "Agrippa was a close friend of Caesar",
+      "Agrippa had already heard him preach"
+     ],
+     "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did Paul say he did when the saints were put to death?",
+     "options": [
+      "He gave his vote against them",
+      "He guarded the prisoners",
+      "He wrote to the chief priests",
+      "He stayed silent in the council"
+     ],
+     "v": 10
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did Paul say he declared to Jews and Gentiles alike?",
+     "options": [
+      "Repent, turn to God, and do worthy works",
+      "Keep the law and be circumcised",
+      "Wait in Jerusalem for the Kingdom",
+      "Leave their idols and join the synagogue"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "Why is it judged incredible with you if God ____?",
+     "answer": "does raise the dead",
+     "wrong": [
+      "does speak from heaven",
+      "does send a Messiah",
+      "does forgive the Gentiles"
+     ],
+     "v": 8
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "I pray that all who hear me today might become such as I am, ____.",
+     "answer": "except for these bonds",
+     "wrong": [
+      "servants of the Lord",
+      "free from all sin",
+      "witnesses of his glory"
+     ],
+     "v": 29
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "Paul said the voice on the road spoke to him in the Greek language.",
+     "answer": false,
+     "v": 14
     }
    ]
   },
@@ -4325,6 +5115,85 @@
      "q": "The centurion Julius treated Paul harshly and would not let him visit friends at Sidon.",
      "answer": false,
      "v": 3
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the centurion stop the soldiers from killing the prisoners?",
+     "options": [
+      "He desired to save Paul",
+      "He feared Caesar's anger",
+      "Paul begged him to spare them",
+      "The sailors needed their help"
+     ],
+     "v": 43
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What were the sailors trying to do when they lowered the boat into the sea?",
+     "options": [
+      "Flee out of the ship",
+      "Lay out anchors from the bow",
+      "Search for a landing place",
+      "Rescue a man overboard"
+     ],
+     "v": 30
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "Why did most on board advise sailing on from Fair Havens?",
+     "options": [
+      "The haven was not suitable to winter in",
+      "Their food was running low",
+      "The people there were hostile",
+      "The centurion was ordered to hurry"
+     ],
+     "v": 12
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What did they throw into the sea to lighten the ship after eating enough?",
+     "options": [
+      "The wheat",
+      "The anchors",
+      "The passengers' baggage",
+      "The soldiers' weapons"
+     ],
+     "v": 38
+    },
+    {
+     "t": "blank",
+     "d": 1,
+     "q": "When neither sun nor stars shone on us for many days, ____ that we would be saved was now taken away.",
+     "answer": "all hope",
+     "wrong": [
+      "every thought",
+      "all belief",
+      "any promise"
+     ],
+     "v": 20
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "But we must run aground on ____.",
+     "answer": "a certain island",
+     "wrong": [
+      "the sand bars",
+      "the coast of Italy",
+      "the rocks of Crete"
+     ],
+     "v": 26
+    },
+    {
+     "t": "tf",
+     "d": 3,
+     "q": "Paul told the men they should have listened to him and not set sail from Sidon.",
+     "answer": false,
+     "v": 21
     }
    ]
   },
@@ -4439,6 +5308,85 @@
      "q": "The Jewish leaders in Rome said they had received letters from Judea speaking against Paul.",
      "answer": false,
      "v": 21
+    },
+    {
+     "t": "choice",
+     "d": 1,
+     "q": "Why did the natives of the island kindle a fire?",
+     "options": [
+      "Because of the rain and the cold",
+      "To cook food for the sailors",
+      "To signal other ships",
+      "To offer a sacrifice"
+     ],
+     "v": 2
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "How long did Publius courteously entertain them?",
+     "options": [
+      "Three days",
+      "One day",
+      "Seven days",
+      "Three months"
+     ],
+     "v": 7
+    },
+    {
+     "t": "choice",
+     "d": 2,
+     "q": "What did the Jewish leaders in Rome say they knew about this sect?",
+     "options": [
+      "Everywhere it is spoken against",
+      "It is growing in every city",
+      "Caesar has forbidden it",
+      "It began among the Greeks"
+     ],
+     "v": 22
+    },
+    {
+     "t": "choice",
+     "d": 3,
+     "q": "What was the figurehead of the ship they boarded after wintering on the island?",
+     "options": [
+      "The Twin Brothers",
+      "The Great Artemis",
+      "The Morning Star",
+      "The Golden Eagle"
+     ],
+     "v": 11
+    },
+    {
+     "t": "blank",
+     "d": 2,
+     "q": "The salvation of God is sent to the nations, and ____.",
+     "answer": "they will listen",
+     "wrong": [
+      "they will rejoice",
+      "they will be healed",
+      "they will believe"
+     ],
+     "v": 28
+    },
+    {
+     "t": "blank",
+     "d": 3,
+     "q": "In Rome, Paul was allowed to stay by himself with ____.",
+     "answer": "the soldier who guarded him",
+     "wrong": [
+      "the centurion Julius",
+      "his traveling companions",
+      "the brothers from Puteoli"
+     ],
+     "v": 16
+    },
+    {
+     "t": "tf",
+     "d": 1,
+     "q": "When Paul explained Jesus from the law and the prophets, all of the Jews in Rome believed.",
+     "answer": false,
+     "v": 24
     }
    ]
   }

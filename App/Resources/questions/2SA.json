@@ -904,7 +904,7 @@
      "options": [
       "Thirty years old",
       "Twenty years old",
-      "Twenty-five years old",
+      "Twenty five years old",
       "Forty years old"
      ],
      "v": 4
@@ -986,7 +986,7 @@
      "d": 2,
      "q": "Where did the ark stay for three months?",
      "options": [
-      "In Obed-Edom the Gittite's house",
+      "In Obed Edom the Gittite's house",
       "In Abinadab's house on the hill",
       "At the threshing floor of Nacon",
       "In the tent in David's city"
@@ -1058,7 +1058,7 @@
      "d": 2,
      "items": [
       "Uzzah dies beside the ark",
-      "The ark stays with Obed-Edom",
+      "The ark stays with Obed Edom",
       "David dances as the ark enters the city",
       "Michal rebukes David"
      ],
@@ -1105,11 +1105,11 @@
     {
      "t": "choice",
      "d": 2,
-     "q": "What moved David to bring the ark from Obed-Edom's house?",
+     "q": "What moved David to bring the ark from Obed Edom's house?",
      "options": [
-      "He heard the LORD had blessed Obed-Edom's house",
+      "He heard the LORD had blessed Obed Edom's house",
       "Nathan the prophet commanded him to",
-      "Obed-Edom begged him to take it away",
+      "Obed Edom begged him to take it away",
       "The priests warned of a coming plague"
      ],
      "v": 12

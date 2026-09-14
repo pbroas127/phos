@@ -1609,7 +1609,7 @@
      "t": "blank",
      "d": 1,
      "q": "The LORD your God doesn't give you this good land for your righteousness, for you are ____.",
-     "answer": "a stiff-necked people",
+     "answer": "a stiff necked people",
      "wrong": [
       "a chosen people",
       "a wandering people",
@@ -1790,7 +1790,7 @@
     {
      "t": "blank",
      "d": 2,
-     "q": "Circumcise therefore ____, and be no more stiff-necked.",
+     "q": "Circumcise therefore ____, and be no more stiff necked.",
      "answer": "the foreskin of your heart",
      "wrong": [
       "the hearts of your sons",
@@ -3669,7 +3669,7 @@
     {
      "t": "choice",
      "d": 2,
-     "q": "Why was a fearful and faint-hearted man sent home?",
+     "q": "Why was a fearful and faint hearted man sent home?",
      "options": [
       "So his brothers' hearts would not melt",
       "So he would not betray the army",

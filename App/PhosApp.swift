@@ -41,10 +41,7 @@ struct PhosApp: App {
                         model.routeFromLock()
                     }
                 }
-                .onOpenURL { _ in
-                    model.refresh()
-                    model.routeFromLock()
-                }
+                .onOpenURL { url in model.open(url) }
         }
     }
 }

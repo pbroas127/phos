@@ -360,7 +360,7 @@ final class AppModel {
         checkAchievements()
         ReminderScheduler.reschedule(self)
         if settings.onboarded { CloudBackup.save(self) }
-        WidgetCenter.shared.reloadAllTimelines()
+        WidgetWriter.write(self)
     }
 
     /// Recomputes trophy progress and queues a celebration for anything newly earned.
@@ -388,6 +388,7 @@ final class AppModel {
             settings.pinnedTrophies.append(a.id)
         }
         store.settings = settings
+        WidgetWriter.write(self)
     }
 
 
@@ -422,7 +423,7 @@ final class AppModel {
         rollover()
         store.storedToday = today
         writeSnapshot()
-        WidgetCenter.shared.reloadAllTimelines()
+        WidgetWriter.write(self)
     }
 
     func savePreferences() {
@@ -431,6 +432,22 @@ final class AppModel {
     }
 
     /// Opens the unlock screen after the lock sends someone here.
+    /// Opens the part of Wick a widget or notification points to.
+    func open(_ url: URL) {
+        refresh()
+        guard settings.onboarded, !demo else { return }
+        switch url.host {
+        case "read":
+            tab = 0
+            if !today.readingDone && route == nil { route = .reading }
+        case "progress", "journal", "streak": tab = 1
+        case "locks", "settings": tab = 2
+        case "trophies": tab = 3
+        default: tab = 0
+        }
+        routeFromLock()
+    }
+
     func routeFromLock() {
         guard settings.onboarded, route == nil else { return }
         switch lockReason {
@@ -555,6 +572,7 @@ final class AppModel {
         checkAchievements()
         ReminderScheduler.reschedule(self)
         CloudBackup.save(self)
+        WidgetWriter.write(self)
         // Reading counts for every lock today. Opening them is the reader's choice on the result screen.
         readyToUnlock = waiting
         lastUnlocked = []

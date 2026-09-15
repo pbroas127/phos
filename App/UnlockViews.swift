@@ -135,8 +135,14 @@ struct MissedView: View {
                             .frame(width: 96, height: 96)
                             .background(Theme.soft, in: Circle())
                             .padding(.top, 20)
-                        Text("\(score) of \(total) correct").font(Theme.serif(32)).foregroundStyle(Theme.ink)
-                        Text("You need \(min(model.readingCheck.pass, total)) to unlock").foregroundStyle(Theme.dim)
+                        if total == 0 {
+                            Text("Questions open again soon").font(Theme.serif(30)).foregroundStyle(Theme.ink).multilineTextAlignment(.center)
+                            Text("You missed a quiz a moment ago, so new questions wait a little, even for another chapter.")
+                                .foregroundStyle(Theme.dim).multilineTextAlignment(.center)
+                        } else {
+                            Text("\(score) of \(total) correct").font(Theme.serif(32)).foregroundStyle(Theme.ink)
+                            Text("You need \(min(model.readingCheck.pass, total)) to unlock").foregroundStyle(Theme.dim)
+                        }
                         ForEach(missed, id: \.id) { q in
                             CardBox {
                                 VStack(alignment: .leading, spacing: 8) {

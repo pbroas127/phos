@@ -229,9 +229,10 @@ final class KokoroEngine: @unchecked Sendable {
     static let shared = KokoroEngine()
     static let sampleRate = 24_000.0
     /// Longest piece of text voiced at once. Short pieces keep the model's memory well under what iOS allows.
-    static let pieceLimit = 120
+    /// Measured on a Mac with Tools/kokoro-check: 80 characters peaks near 680 MB, a whole long verse passed 2 GB.
+    static let pieceLimit = 80
     /// Below this much free memory the natural voice steps aside for the iPhone voice instead of risking a crash.
-    static let minimumFreeMemory = 450 * 1024 * 1024
+    static let minimumFreeMemory = 900 * 1024 * 1024
 
     private let queue = DispatchQueue(label: "phos.kokoro", qos: .userInitiated)
     private let lock = NSLock()
@@ -346,7 +347,7 @@ final class KokoroEngine: @unchecked Sendable {
         }
         if tts == nil {
             Memory.cacheLimit = 16 * 1024 * 1024
-            Memory.memoryLimit = min(1_200 * 1024 * 1024, max(600 * 1024 * 1024, os_proc_available_memory() / 2))
+            Memory.memoryLimit = 900 * 1024 * 1024
             tts = KokoroTTS(modelPath: KokoroModel.fileURL)
             if let url = Bundle.main.url(forResource: "kokoro-voices", withExtension: "npz") {
                 styles = NpyzReader.read(fileFromPath: url) ?? [:]

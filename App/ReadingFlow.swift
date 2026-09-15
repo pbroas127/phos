@@ -155,7 +155,15 @@ struct ReadingFlow: View {
 
     private func startQuiz() {
         // After a miss, new questions wait for the timer however you get back here: rereading, reflecting again, or reopening Wick.
-        if model.nextAttemptAt != nil && draft.failed {
+        // This holds for a different chapter too, so switching chapters cannot skip the wait.
+        if model.nextAttemptAt != nil {
+            if !draft.failed {
+                draft.failed = true
+                draft.correct = 0
+                draft.quizIDs = []
+                items = []
+                missed = []
+            }
             go(.result)
             return
         }

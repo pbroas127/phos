@@ -69,6 +69,13 @@ for limit in [2000, 200, 120, 80] {
     if limit == 120 { writeWAV(r.samples, to: out.appendingPathComponent("esther_8_9_limit120.wav")) }
 }
 
+// 1b. The same with the memory limit the app sets.
+Memory.memoryLimit = 900 * 1024 * 1024
+for limit in [120, 80] {
+    let r = speak(longest, limit: limit)
+    print(String(format: "with 900 MB limit, limit %d: made in %.1fs, peak %d MB, failures %d", limit, r.seconds, r.peakMB, r.failures))
+}
+
 // 2. Punctuation and names that could trip the pronunciation step.
 for (b, c, v) in [("JHN", 6, 58), ("JHN", 2, 20), ("GEN", 5, 3), ("PSA", 23, 1), ("JHN", 11, 35), ("REV", 22, 21), ("PSA", 119, 105)] {
     let text = verse(b, c, v)

@@ -79,6 +79,7 @@ class Decoder {
 
     var x = MLX.concatenated([asr, F0, NProcessed], axis: 1)
     x = encode(x: x, s: s)
+    eval(x)
 
     let asrResidual = MLX.swappedAxes(asrRes[0](MLX.swappedAxes(asr, 2, 1), conv: MLX.conv1d), 2, 1)
     var res = true
@@ -88,6 +89,7 @@ class Decoder {
         x = MLX.concatenated([x, asrResidual, F0, NProcessed], axis: 1)
       }
       x = block(x: x, s: s)
+      eval(x)
 
       if block.upsampleType != "none" {
         res = false

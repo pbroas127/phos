@@ -98,6 +98,7 @@ class AdaINResBlock1 {
       xt = MLX.swappedAxes(xt, 2, 1)
 
       result = xt + result
+      eval(result)
     }
     return result
   }

@@ -155,6 +155,7 @@ class Generator {
     
     var har = MLX.concatenated([harSpec, harPhase], axis: 1)
     har = MLX.swappedAxes(har, 2, 1)
+    eval(har)
         
     var newX = x
     for i in 0 ..< numUpsamples {
@@ -171,6 +172,7 @@ class Generator {
         newX = reflectionPad(newX)
       }
       newX = newX + xSource
+      eval(newX)
       
       var xs: MLXArray?
       for j in 0 ..< numKernels {
@@ -180,8 +182,10 @@ class Generator {
           let temp = resBlocks[i * numKernels + j](newX, s)
           xs = xs! + temp
         }
+        eval(xs!)
       }
       newX = xs! / numKernels
+      eval(newX)
     }
     
     newX = LeakyReLU(negativeSlope: 0.01)(newX)
@@ -189,6 +193,7 @@ class Generator {
     newX = MLX.swappedAxes(newX, 2, 1)
     newX = convPost(newX, conv: MLX.conv1d)
     newX = MLX.swappedAxes(newX, 2, 1)
+    eval(newX)
     
     let spec = MLX.exp(newX[0..., 0 ..< (postNFFt / 2 + 1), 0...])
     let phase = MLX.sin(newX[0..., (postNFFt / 2 + 1)..., 0...])

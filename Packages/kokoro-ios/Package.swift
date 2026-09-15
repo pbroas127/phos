@@ -1,4 +1,4 @@
-// Vendored from github.com/mlalma/kokoro-ios 1.0.11 (MIT). Changed: static library so it links into the app.
+// Vendored from github.com/mlalma/kokoro-ios 1.0.11 (MIT). Changed: static library so it links into the app, and eval() between model stages to cut peak memory.
 // swift-tools-version: 6.2
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 

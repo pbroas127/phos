@@ -191,6 +191,8 @@ public final class KokoroTTS {
       style: globalStyle
     )
     
+    eval(durationFeatures)
+
     // Step 5: Predict phoneme durations
     let (predictedDurations, alignmentTarget) = predictDurations(
       features: durationFeatures,
@@ -202,11 +204,14 @@ public final class KokoroTTS {
     let alignedEncoding = durationFeatures.transposed(0, 2, 1).matmul(alignmentTarget)
     
     // Step 7: Predict prosody (F0, pitch)
+    eval(alignedEncoding)
     let (f0Prediction, nPrediction) = prosodyPredictor.F0NTrain(x: alignedEncoding, s: globalStyle)
+    eval(f0Prediction, nPrediction)
     
     // Step 8: Encode text for decoder
     let textEncoding = textEncoder(paddedInputIds, inputLengths: inputLengths, m: textMask)
     let asrFeatures = MLX.matmul(textEncoding, alignmentTarget)
+    eval(asrFeatures)
     
     // Step 9: Generate audio
     let audio = decoder(

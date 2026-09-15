@@ -24,6 +24,7 @@ struct VoiceSettingsView: View {
                         preview.voiceID = model.settings.voiceID
                         preview.rate = model.settings.voiceRate
                         preview.skip(-1000)
+                        KokoroEngine.shared.clearProblem()
                         preview.resume()
                     }
                 } label: {
@@ -33,8 +34,17 @@ struct VoiceSettingsView: View {
                 Picker("Speed", selection: $model.settings.voiceRate) {
                     ForEach(VoiceSpeed.options, id: \.self) { Text(VoiceSpeed.label($0)).tag($0) }
                 }
+                if preview.preparing {
+                    HStack(spacing: 8) {
+                        ProgressView()
+                        Text("Getting the voice ready. The first time can take a little while.").font(.footnote).foregroundStyle(Theme.dim)
+                    }
+                }
+                if let problem = preview.voiceProblem {
+                    Text(problem).font(.footnote).foregroundStyle(Theme.red)
+                }
             } footer: {
-                Text("Natural voices change speed at once. iPhone voices restart the verse at the new speed.")
+                Text("Changing the speed starts the current verse again at the new speed.")
             }
 
             if VoiceCatalog.naturalSupported {

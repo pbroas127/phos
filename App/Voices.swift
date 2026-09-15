@@ -1,5 +1,6 @@
 import AVFoundation
 import Foundation
+import UIKit
 import NaturalLanguage
 #if !targetEnvironment(simulator)
 import KokoroSwift
@@ -227,96 +228,173 @@ final class KokoroModel: NSObject, ObservableObject, URLSessionDownloadDelegate 
 final class KokoroEngine: @unchecked Sendable {
     static let shared = KokoroEngine()
     static let sampleRate = 24_000.0
+    /// Longest piece of text voiced at once. Short pieces keep the model's memory well under what iOS allows.
+    static let pieceLimit = 120
+    /// Below this much free memory the natural voice steps aside for the iPhone voice instead of risking a crash.
+    static let minimumFreeMemory = 450 * 1024 * 1024
+
     private let queue = DispatchQueue(label: "phos.kokoro", qos: .userInitiated)
+    private let lock = NSLock()
     private var cache: [String: AVAudioPCMBuffer] = [:]
-    /// The voice playback wants right now. Queued work for any other voice is skipped, so switching voices never waits behind it.
-    private var wanted = ""
+    private var cacheOrder: [String] = []
+    private var _wanted = ""
+    private var _active = true
+    private var failuresInARow = 0
     #if !targetEnvironment(simulator)
     private var tts: KokoroTTS?
     private var styles: [String: MLXArray] = [:]
     #endif
 
-    func buffer(_ text: String, voice: String, done: @escaping (AVAudioPCMBuffer?) -> Void) {
+    /// Set when the natural voice could not play, shown in Listen and Settings.
+    static let problemChanged = Notification.Name("wick.kokoro.problem")
+    private(set) var problem: String? {
+        didSet { DispatchQueue.main.async { NotificationCenter.default.post(name: Self.problemChanged, object: nil) } }
+    }
+
+    private var wanted: String {
+        get { lock.lock(); defer { lock.unlock() }; return _wanted }
+        set { lock.lock(); _wanted = newValue; lock.unlock() }
+    }
+
+    /// iOS does not let apps use the GPU in the background, so voicing only happens while Wick is on screen.
+    /// Verses made ahead of time still play with the phone locked; anything else uses the iPhone voice.
+    private var active: Bool {
+        get { lock.lock(); defer { lock.unlock() }; return _active }
+        set { lock.lock(); _active = newValue; lock.unlock() }
+    }
+
+    init() {
+        #if canImport(UIKit)
+        let center = NotificationCenter.default
+        center.addObserver(forName: UIApplication.willResignActiveNotification, object: nil, queue: nil) { [weak self] _ in self?.active = false }
+        center.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: nil) { [weak self] _ in self?.active = false }
+        center.addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: nil) { [weak self] _ in self?.active = true }
+        #endif
+    }
+
+    static func key(_ text: String, _ voice: String, _ speed: Double) -> String { "\(voice)|\(speed)|\(text)" }
+
+    /// A verse already voiced and waiting, if there is one.
+    func cached(_ text: String, voice: String, speed: Double) -> AVAudioPCMBuffer? {
+        lock.lock(); defer { lock.unlock() }
+        return cache[Self.key(text, voice, speed)]
+    }
+
+    func buffer(_ text: String, voice: String, speed: Double, done: @escaping (AVAudioPCMBuffer?) -> Void) {
         wanted = voice
+        if let hit = cached(text, voice: voice, speed: speed) { done(hit); return }
         queue.async {
-            let b = self.make(text, voice)
+            let b = self.make(text, voice, speed)
             DispatchQueue.main.async { done(b) }
         }
     }
 
-    func prefetch(_ text: String, voice: String) {
+    /// Voices the next few verses while Wick is open, so playback continues smoothly and keeps going if the phone locks.
+    func prefetch(_ texts: [String], voice: String, speed: Double) {
         queue.async {
-            guard self.wanted == voice else { return }
-            _ = self.make(text, voice)
+            for text in texts {
+                guard self.wanted == voice, self.active else { return }
+                _ = self.make(text, voice, speed)
+            }
         }
     }
 
-    /// Loads the model and voices the given text ahead of time, so the first play with a new voice starts at once.
-    func warm(_ text: String, voice: String) {
+    /// Loads the model and voices the given text ahead of time, so the first play with a new voice starts quickly.
+    func warm(_ text: String, voice: String, speed: Double) {
         wanted = voice
-        queue.async {
-            guard self.wanted == voice else { return }
-            _ = self.make(text, voice)
-        }
+        prefetch([text], voice: voice, speed: speed)
     }
 
     func unload() {
         queue.async {
+            self.lock.lock()
             self.cache.removeAll()
+            self.cacheOrder.removeAll()
+            self.lock.unlock()
             #if !targetEnvironment(simulator)
             self.tts = nil
             self.styles = [:]
+            Memory.clearCache()
             #endif
         }
     }
 
-    private func make(_ text: String, _ voice: String) -> AVAudioPCMBuffer? {
-        let key = voice + "|" + text
-        if let hit = cache[key] { return hit }
+    func clearProblem() {
+        failuresInARow = 0
+        problem = nil
+    }
+
+    private func store(_ buffer: AVAudioPCMBuffer, key: String) {
+        lock.lock(); defer { lock.unlock() }
+        cache[key] = buffer
+        cacheOrder.removeAll { $0 == key }
+        cacheOrder.append(key)
+        // ponytail: about 12 verses of audio is a few MB, plenty for the verses around playback.
+        while cacheOrder.count > 12 { cache[cacheOrder.removeFirst()] = nil }
+    }
+
+    private func make(_ text: String, _ voice: String, _ speed: Double) -> AVAudioPCMBuffer? {
+        let key = Self.key(text, voice, speed)
+        if let hit = cached(text, voice: voice, speed: speed) { return hit }
         #if targetEnvironment(simulator)
         return nil
         #else
-        guard KokoroModel.shared.ready else { return nil }
+        guard KokoroModel.shared.ready, active else { return nil }
+        guard os_proc_available_memory() > Self.minimumFreeMemory || tts != nil && os_proc_available_memory() > Self.minimumFreeMemory / 2 else {
+            problem = "Your iPhone is low on memory, so the iPhone voice is reading for now."
+            return nil
+        }
         if tts == nil {
+            Memory.cacheLimit = 16 * 1024 * 1024
+            Memory.memoryLimit = min(1_200 * 1024 * 1024, max(600 * 1024 * 1024, os_proc_available_memory() / 2))
             tts = KokoroTTS(modelPath: KokoroModel.fileURL)
             if let url = Bundle.main.url(forResource: "kokoro-voices", withExtension: "npz") {
                 styles = NpyzReader.read(fileFromPath: url) ?? [:]
             }
         }
-        guard let tts, let style = styles[voice + ".npy"] else { return nil }
+        guard let tts, let style = styles[voice + ".npy"] else {
+            problem = "The natural voices could not load. Try removing and downloading them again in Settings."
+            return nil
+        }
         let language: Language = voice.hasPrefix("b") ? .enGB : .enUS
         var samples: [Float] = []
-        for part in Self.chunks(text) {
-            if let audio = try? tts.generateAudio(voice: style, language: language, text: part).0 {
+        for piece in SpeechText.pieces(text, limit: Self.pieceLimit) {
+            guard active, wanted == voice else { Memory.clearCache(); return nil }
+            do {
+                let audio = try tts.generateAudio(voice: style, language: language, text: piece, speed: Float(speed)).0
+                Memory.clearCache()
+                guard SpeechText.looksLikeSpeech(audio) else { return failed("A verse did not sound right, so the iPhone voice read it.") }
                 samples += audio
+                samples += [Float](repeating: 0, count: Int(Self.sampleRate * 0.12))
+            } catch {
+                Memory.clearCache()
+                return failed("A verse could not be voiced, so the iPhone voice read it.")
             }
         }
         guard !samples.isEmpty else { return nil }
-        samples += [Float](repeating: 0, count: Int(Self.sampleRate * 0.3)) // a short breath between verses
+        samples += [Float](repeating: 0, count: Int(Self.sampleRate * 0.2)) // a short breath between verses
         guard let format = AVAudioFormat(standardFormatWithSampleRate: Self.sampleRate, channels: 1),
               let buffer = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: AVAudioFrameCount(samples.count)),
               let channel = buffer.floatChannelData?[0] else { return nil }
         buffer.frameLength = buffer.frameCapacity
         samples.withUnsafeBufferPointer { channel.update(from: $0.baseAddress!, count: samples.count) }
-        if cache.count >= 6 { cache.removeAll() } // ponytail: tiny cache, only the verses around playback matter
-        cache[key] = buffer
+        store(buffer, key: key)
+        if failuresInARow > 0 || problem != nil {
+            failuresInARow = 0
+            problem = nil
+        }
         return buffer
         #endif
     }
 
-    /// Kokoro handles about 500 phonemes at once, so long verses go in sentence sized pieces.
-    static func chunks(_ text: String) -> [String] {
-        guard text.count > 220 else { return [text] }
-        let tokenizer = NLTokenizer(unit: .sentence)
-        tokenizer.string = text
-        var parts: [String] = []
-        tokenizer.enumerateTokens(in: text.startIndex..<text.endIndex) { range, _ in
-            let s = text[range].trimmingCharacters(in: .whitespaces)
-            if !s.isEmpty { parts.append(s) }
-            return true
-        }
-        return parts.isEmpty ? [text] : parts
+    private func failed(_ message: String) -> AVAudioPCMBuffer? {
+        failuresInARow += 1
+        problem = failuresInARow >= 3 ? "Natural voices are not working on this iPhone right now, so the iPhone voice is reading." : message
+        return nil
     }
+
+    /// Natural voices step aside after several failures in a row, until the reader tries again.
+    var gaveUp: Bool { failuresInARow >= 3 }
 }
 
 /// Reads a quiz question and its choices out loud with the iPhone voice, for people who listen rather than read.

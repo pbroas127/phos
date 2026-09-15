@@ -392,30 +392,30 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
     @Published var playing = false
     @Published var finished = false
     @Published var preparing = false
+    /// Set when a natural voice could not play and the iPhone voice took over.
+    @Published var voiceProblem: String?
     /// Verses whose audio played all the way through. Skipping ahead never counts.
     @Published var played: Set<Int> = []
     var voiceID = ""
     var title = ""
-    /// Playback speed, 1 is normal. Natural voices change at once; iPhone voices restart the verse.
-    var rate: Double = 1.0 {
-        didSet { pitch.rate = Float(rate) }
-    }
+    /// Playback speed, 1 is normal. Changing it restarts the current verse at the new speed.
+    var rate: Double = 1.0
 
     private let synth = AVSpeechSynthesizer()
     private let engine = AVAudioEngine()
     private let player = AVAudioPlayerNode()
-    private let pitch = AVAudioUnitTimePitch()
+    private var connectedFormat: AVAudioFormat?
     private var verses: [String] = []
     private var started = false
     /// Bumped whenever playback jumps, so audio finishing from an old verse is ignored.
     private var generation = 0
     private var observers: [NSObjectProtocol] = []
+    private var commandTargets: [(MPRemoteCommand, Any)] = []
 
     override init() {
         super.init()
         synth.delegate = self
         engine.attach(player)
-        engine.attach(pitch)
         let center = NotificationCenter.default
         observers.append(center.addObserver(forName: AVAudioSession.interruptionNotification, object: nil, queue: .main) { [weak self] note in
             guard let self, let raw = note.userInfo?[AVAudioSessionInterruptionTypeKey] as? UInt,
@@ -432,20 +432,29 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
                   AVAudioSession.RouteChangeReason(rawValue: raw) == .oldDeviceUnavailable else { return }
             self?.pause()
         })
+        // iOS stops the audio engine when the output changes. Start the verse again rather than going silent.
+        observers.append(center.addObserver(forName: .AVAudioEngineConfigurationChange, object: engine, queue: .main) { [weak self] _ in
+            guard let self else { return }
+            self.connectedFormat = nil
+            if self.playing { self.speak(from: self.verseIndex) }
+        })
+        observers.append(center.addObserver(forName: KokoroEngine.problemChanged, object: nil, queue: .main) { [weak self] _ in
+            self?.voiceProblem = KokoroEngine.shared.problem
+        })
         let commands = MPRemoteCommandCenter.shared()
-        commands.playCommand.addTarget { [weak self] _ in self?.resume(); return .success }
-        commands.pauseCommand.addTarget { [weak self] _ in self?.pause(); return .success }
-        commands.togglePlayPauseCommand.addTarget { [weak self] _ in self?.toggle(); return .success }
-        commands.nextTrackCommand.addTarget { [weak self] _ in self?.skip(1); return .success }
-        commands.previousTrackCommand.addTarget { [weak self] _ in self?.skip(-1); return .success }
+        commandTargets = [
+            (commands.playCommand, commands.playCommand.addTarget { [weak self] _ in self?.resume(); return .success }),
+            (commands.pauseCommand, commands.pauseCommand.addTarget { [weak self] _ in self?.pause(); return .success }),
+            (commands.togglePlayPauseCommand, commands.togglePlayPauseCommand.addTarget { [weak self] _ in self?.toggle(); return .success }),
+            (commands.nextTrackCommand, commands.nextTrackCommand.addTarget { [weak self] _ in self?.skip(1); return .success }),
+            (commands.previousTrackCommand, commands.previousTrackCommand.addTarget { [weak self] _ in self?.skip(-1); return .success }),
+        ]
     }
 
     deinit {
         observers.forEach(NotificationCenter.default.removeObserver)
-        let commands = MPRemoteCommandCenter.shared()
-        [commands.playCommand, commands.pauseCommand, commands.togglePlayPauseCommand, commands.nextTrackCommand, commands.previousTrackCommand]
-            .forEach { $0.removeTarget(nil) }
-        MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
+        // Only this speaker's own controls, so a second speaker (a voice preview) never breaks the other.
+        commandTargets.forEach { $0.0.removeTarget($0.1) }
     }
 
     func load(_ verses: [String]) {
@@ -453,7 +462,8 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
     }
 
     private var neuralVoice: String? {
-        guard let name = VoiceCatalog.kokoroName(voiceID), VoiceCatalog.naturalSupported, KokoroModel.shared.ready else { return nil }
+        guard let name = VoiceCatalog.kokoroName(voiceID), VoiceCatalog.naturalSupported, KokoroModel.shared.ready,
+              !KokoroEngine.shared.gaveUp else { return nil }
         return name
     }
 
@@ -465,7 +475,7 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
         guard playing else { return }
         playing = false
         synth.pauseSpeaking(at: .word)
-        player.pause()
+        if engine.isRunning { player.pause() }
         updateNowPlaying()
     }
 
@@ -475,7 +485,7 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
             playing = true
             if synth.isPaused {
                 synth.continueSpeaking()
-            } else if engine.isRunning {
+            } else if engine.isRunning && player.isPlaying == false && connectedFormat != nil {
                 player.play()
             } else {
                 speak(from: verseIndex)
@@ -503,6 +513,8 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
 
     /// After picking a new voice: keep the verse, and only restart it if it was playing. Paused stays paused.
     func restartVerse() {
+        KokoroEngine.shared.clearProblem()
+        voiceProblem = nil
         guard started else { warm(); return }
         if playing {
             speak(from: verseIndex)
@@ -513,23 +525,24 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
         }
     }
 
-    /// Speed changes apply at once to natural voices. An iPhone voice restarts the verse at the new speed.
+    /// A new speed voices the verse again at that speed, from the start of the verse.
     func setRate(_ r: Double) {
+        guard r != rate else { return }
         rate = r
-        if neuralVoice == nil && playing { speak(from: verseIndex) }
+        if playing { speak(from: verseIndex) } else { warm() }
         updateNowPlaying()
     }
 
-    /// Gets the current verse ready in the new voice while nothing is playing.
+    /// Gets the current verse and the next ones ready while nothing is playing.
     private func warm() {
         guard let voice = neuralVoice, verseIndex < verses.count else { return }
-        KokoroEngine.shared.warm(verses[verseIndex], voice: voice)
+        KokoroEngine.shared.warm(verses[verseIndex], voice: voice, speed: rate)
     }
 
     private func halt() {
         generation += 1
         synth.stopSpeaking(at: .immediate)
-        player.stop()
+        if engine.isRunning { player.stop() }
         preparing = false
     }
 
@@ -557,37 +570,53 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
     }
 
     private func speakSystem(_ index: Int) {
+        guard index < verses.count else { return }
         let u = AVSpeechUtterance(string: verses[index])
         u.rate = min(AVSpeechUtteranceMaximumSpeechRate, max(AVSpeechUtteranceMinimumSpeechRate, AVSpeechUtteranceDefaultSpeechRate * Float(rate)))
-        u.voice = VoiceCatalog.systemVoice(voiceID)
+        u.voice = VoiceCatalog.systemVoice(VoiceCatalog.kokoroName(voiceID) == nil ? voiceID : "")
         u.postUtteranceDelay = 0.15
         synth.speak(u)
     }
 
+    /// Connects the player for this audio format and starts the engine. False means the iPhone voice should read instead.
+    private func startEngine(for format: AVAudioFormat) -> Bool {
+        if engine.isRunning, connectedFormat == format { return true }
+        if engine.isRunning { engine.stop() }
+        engine.disconnectNodeOutput(player)
+        engine.connect(player, to: engine.mainMixerNode, format: format)
+        connectedFormat = format
+        engine.prepare()
+        do {
+            try engine.start()
+            return engine.isRunning
+        } catch {
+            connectedFormat = nil
+            return false
+        }
+    }
+
     private func speakNatural(_ index: Int, voice: String) {
         let gen = generation
-        preparing = true
-        KokoroEngine.shared.buffer(verses[index], voice: voice) { [weak self] buffer in
+        let speed = rate
+        preparing = KokoroEngine.shared.cached(verses[index], voice: voice, speed: speed) == nil
+        KokoroEngine.shared.buffer(verses[index], voice: voice, speed: speed) { [weak self] buffer in
             guard let self, gen == self.generation else { return }
             self.preparing = false
-            guard let buffer else {
-                // Kokoro could not voice this verse, so the iPhone voice reads it and playback carries on.
+            guard let buffer, self.startEngine(for: buffer.format) else {
+                // The natural voice could not play this verse, so the iPhone voice reads it and playback carries on.
+                self.voiceProblem = KokoroEngine.shared.problem
                 self.speakSystem(index)
                 return
             }
-            if !self.engine.isRunning {
-                self.engine.connect(self.player, to: self.pitch, format: buffer.format)
-                self.engine.connect(self.pitch, to: self.engine.mainMixerNode, format: buffer.format)
-                try? self.engine.start()
-            }
-            self.player.scheduleBuffer(buffer) {
+            self.player.scheduleBuffer(buffer, at: nil, options: .interrupts) {
                 DispatchQueue.main.async {
                     guard gen == self.generation else { return }
                     self.advance(after: index)
                 }
             }
-            if self.playing { self.player.play() }
-            if index + 1 < self.verses.count { KokoroEngine.shared.prefetch(self.verses[index + 1], voice: voice) }
+            if self.playing && self.engine.isRunning { self.player.play() }
+            let ahead = self.verses[(index + 1)..<min(self.verses.count, index + 5)]
+            if !ahead.isEmpty { KokoroEngine.shared.prefetch(Array(ahead), voice: voice, speed: speed) }
         }
     }
 
@@ -613,6 +642,7 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
         playing = false
         started = false
         if engine.isRunning { engine.stop() }
+        connectedFormat = nil
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
         try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
     }
@@ -700,7 +730,12 @@ struct ListenRead: View {
                             .id(speaker.verseIndex)
                         }
                         if speaker.preparing {
-                            ProgressView().tint(Theme.gold)
+                            HStack(spacing: 8) {
+                                ProgressView().tint(Theme.gold)
+                                Text("Getting the voice ready").font(.caption).foregroundStyle(Theme.dim)
+                            }
+                        } else if let problem = speaker.voiceProblem {
+                            Text(problem).font(.caption).foregroundStyle(Theme.dim).multilineTextAlignment(.center).padding(.horizontal, 20)
                         }
                     }
                     .padding(.vertical, 18)
@@ -807,21 +842,15 @@ struct ListenRead: View {
         return VoiceCatalog.isWarm ? "system:\(VoiceCatalog.systemVoice("").identifier)" : ""
     }
 
+    /// Tapping steps through the speeds. A button, not a menu, so the screen's once a second redraw cannot close it.
     private var speedMenu: some View {
-        Menu {
-            ForEach(VoiceSpeed.options, id: \.self) { r in
-                Button {
-                    model.settings.voiceRate = r
-                    model.savePreferences()
-                    speaker.setRate(r)
-                } label: {
-                    if r == model.settings.voiceRate {
-                        Label(VoiceSpeed.label(r), systemImage: "checkmark")
-                    } else {
-                        Text(VoiceSpeed.label(r))
-                    }
-                }
-            }
+        Button {
+            let options = VoiceSpeed.options
+            let i = options.firstIndex(of: model.settings.voiceRate) ?? options.firstIndex(of: 1.0) ?? 0
+            let next = options[(i + 1) % options.count]
+            model.settings.voiceRate = next
+            model.savePreferences()
+            speaker.setRate(next)
         } label: {
             Text(VoiceSpeed.label(model.settings.voiceRate))
                 .font(.subheadline.weight(.semibold)).monospacedDigit()
@@ -830,7 +859,8 @@ struct ListenRead: View {
                 .overlay(Capsule().stroke(Theme.line))
                 .foregroundStyle(Theme.ink)
         }
-        .accessibilityLabel("Speed")
+        .accessibilityLabel("Speed, \(VoiceSpeed.label(model.settings.voiceRate))")
+        .accessibilityHint("Tap for the next speed")
     }
 
     private var voiceMenu: some View {

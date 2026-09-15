@@ -146,6 +146,7 @@ struct PathDetailView: View {
     var onRead: (ChapterPick) -> Void
     @State private var picked: ChapterPick?
     @State private var confirmRestart = false
+    @State private var reviewing: ReviewRequest?
 
     var body: some View {
         let plan = ReadingPlans.plan(planID)
@@ -166,7 +167,15 @@ struct PathDetailView: View {
                     .buttonStyle(.phos)
                 } else {
                     CardBox(fill: Theme.soft) {
-                        Label("You finished \(plan.name).", systemImage: "checkmark.seal.fill").font(.headline).foregroundStyle(Theme.ink)
+                        VStack(alignment: .leading, spacing: 12) {
+                            Label("You finished \(plan.name).", systemImage: "checkmark.seal.fill").font(.headline).foregroundStyle(Theme.ink)
+                            if let book = plan.bookID {
+                                Text("Take one quiz across the whole book. Review only, nothing unlocks.")
+                                    .font(.footnote).foregroundStyle(Theme.dim)
+                                Button("Review \(plan.name)") { reviewing = .book(book) }.buttonStyle(.phos)
+                                ReviewLines(reviews: model.reviews.filter { $0.scope == book })
+                            }
+                        }
                     }
                 }
 
@@ -203,6 +212,7 @@ struct PathDetailView: View {
                 .environment(model)
                 .presentationDetents([.medium])
         }
+        .sheet(item: $reviewing) { ReviewFlow(request: $0).environment(model) }
         .confirmationDialog("Restart \(plan.name)?", isPresented: $confirmRestart, titleVisibility: .visible) {
             Button("Restart from chapter 1") { model.restart(plan.id) }
             Button("Cancel", role: .cancel) {}
@@ -242,6 +252,7 @@ struct ChapterActionSheet: View {
     @Environment(\.dismiss) private var dismiss
     let pick: ChapterPick
     var onRead: (ChapterPick) -> Void
+    @State private var reviewing: ReviewRequest?
 
     var body: some View {
         let plan = ReadingPlans.plan(pick.planID)
@@ -256,6 +267,9 @@ struct ChapterActionSheet: View {
             }
             Button(last == nil ? "Read \(BookNames.title(ref))" : "Read it again") { onRead(pick) }
                 .buttonStyle(.phos)
+            if model.canReview(ref) {
+                Button("Quiz only") { reviewing = .chapter(ref) }.buttonStyle(.phosSecondary)
+            }
             if pick.index != pos {
                 Button("Make this my next chapter") {
                     model.setPosition(plan.id, pick.index)
@@ -272,6 +286,7 @@ struct ChapterActionSheet: View {
         .padding(24)
         .background(Theme.paper.ignoresSafeArea())
         .preferredColorScheme(.light)
+        .sheet(item: $reviewing) { ReviewFlow(request: $0).environment(model) }
     }
 
     private func status(pos: Int, last: Date?) -> String {

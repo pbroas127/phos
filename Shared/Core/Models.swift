@@ -449,6 +449,17 @@ struct DayRecord: Codable, Identifiable, Hashable {
     var misses: Int? = nil
 }
 
+/// A quiz taken on its own after reading. Never opens apps or counts toward the streak.
+struct ReviewRecord: Codable, Identifiable, Hashable {
+    var id: String { "\(scope).\(Int(completedAt.timeIntervalSince1970))" }
+    /// A chapter id like "JHN.3" or a book id like "JHN".
+    var scope: String
+    var chapterIDs: [String]
+    var score: Int
+    var total: Int
+    var completedAt: Date
+}
+
 /// One lock's unlock state for the current day.
 struct LockDay: Codable, Equatable {
     var until: Date?
@@ -585,6 +596,8 @@ struct AppSettings: Codable, Equatable {
     var pinnedTrophies: [String] = []
     /// Lets someone who read on their own skip straight to reflecting and the questions.
     var allowAlreadyRead = false
+    /// Quiz only on chapters never read in Wick, for people who read on paper.
+    var allowReviewUnread = false
     /// One friendly reminder a day, only on days without a reading.
     var reminderOn = true
     /// Minutes after midnight for the reminder. 8:00 PM by default.
@@ -611,6 +624,7 @@ struct AppSettings: Codable, Equatable {
         voiceID = (try? c.decode(String.self, forKey: .voiceID)) ?? d.voiceID
         pinnedTrophies = (try? c.decode([String].self, forKey: .pinnedTrophies)) ?? d.pinnedTrophies
         allowAlreadyRead = (try? c.decode(Bool.self, forKey: .allowAlreadyRead)) ?? d.allowAlreadyRead
+        allowReviewUnread = (try? c.decode(Bool.self, forKey: .allowReviewUnread)) ?? d.allowReviewUnread
         reminderOn = (try? c.decode(Bool.self, forKey: .reminderOn)) ?? d.reminderOn
         reminderMinutes = (try? c.decode(Int.self, forKey: .reminderMinutes)) ?? d.reminderMinutes
         let version = (try? c.decode(Int.self, forKey: .schemaVersion)) ?? 1

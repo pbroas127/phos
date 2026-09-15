@@ -67,6 +67,18 @@ final class SharedStore {
         set { defaults.set(Array(newValue).sorted(), forKey: "watchedDays") }
     }
 
+    /// Quizzes taken on their own after reading.
+    var reviews: [ReviewRecord] {
+        get { load("reviews", as: [ReviewRecord].self) ?? [] }
+        set { save(newValue, "reviews") }
+    }
+
+    /// Question ids already used in reviews, by chapter, so review questions rotate before any repeat.
+    var reviewAsked: [String: [String]] {
+        get { load("reviewAsked", as: [String: [String]].self) ?? [:] }
+        set { save(newValue, "reviewAsked") }
+    }
+
     /// Achievement ids and when each was first earned.
     var earned: [String: Date] {
         get { load("earned", as: [String: Date].self) ?? [:] }

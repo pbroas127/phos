@@ -20,6 +20,9 @@ struct BackupPayload: Codable {
     var allowAlreadyRead: Bool
     var shieldStyle: ShieldStyle
     var shieldTheme: ShieldTheme
+    /// Added after the first backups shipped, so older ones decode without it.
+    var reviews: [ReviewRecord]? = nil
+    var allowReviewUnread: Bool? = nil
 }
 
 /// Automatic backup to the person's own iCloud through the key value store. No account and no servers of ours.
@@ -41,7 +44,8 @@ enum CloudBackup {
                                     planPositions: s.planPositions, pinnedTrophies: s.pinnedTrophies, passUses: s.passUses,
                                     preferredRead: s.preferredRead, preferredReflect: s.preferredReflect, voiceID: s.voiceID,
                                     reminderOn: s.reminderOn, reminderMinutes: s.reminderMinutes, allowAlreadyRead: s.allowAlreadyRead,
-                                    shieldStyle: s.shieldStyle, shieldTheme: s.shieldTheme)
+                                    shieldStyle: s.shieldStyle, shieldTheme: s.shieldTheme,
+                                    reviews: model.reviews, allowReviewUnread: s.allowReviewUnread)
         var data = pack(payload)
         // ponytail: years of long reflections could pass iCloud's 1 MB; then the oldest reflection text is dropped first.
         // Upgrade path is a CloudKit record if people ever hit this.
@@ -102,6 +106,10 @@ extension AppModel {
         settings.allowAlreadyRead = backup.allowAlreadyRead
         settings.shieldStyle = backup.shieldStyle
         settings.shieldTheme = backup.shieldTheme
+        settings.allowReviewUnread = backup.allowReviewUnread ?? settings.allowReviewUnread
+        var reviewsByID = Dictionary(store.reviews.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
+        for r in backup.reviews ?? [] where reviewsByID[r.id] == nil { reviewsByID[r.id] = r }
+        store.reviews = reviewsByID.values.sorted { $0.completedAt < $1.completedAt }
         store.settings = settings
         refresh()
     }

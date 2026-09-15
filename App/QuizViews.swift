@@ -5,6 +5,8 @@ struct QuizRunner: View {
     let items: [QuizItem]
     var onAnswer: (Int, Int, [Question]) -> Void
     var onFinish: (Int, [Question]) -> Void
+    var footnote = "The chapter is hidden until you finish"
+    var footnoteIcon = "eye.slash"
 
     @State private var index: Int
     @State private var correct: Int
@@ -12,11 +14,14 @@ struct QuizRunner: View {
     @State private var answered: Bool? = nil
 
     init(items: [QuizItem], startIndex: Int = 0, startCorrect: Int = 0, startMissed: [Question] = [],
+         footnote: String = "The chapter is hidden until you finish", footnoteIcon: String = "eye.slash",
          onAnswer: @escaping (Int, Int, [Question]) -> Void = { _, _, _ in },
          onFinish: @escaping (Int, [Question]) -> Void) {
         self.items = items
         self.onAnswer = onAnswer
         self.onFinish = onFinish
+        self.footnote = footnote
+        self.footnoteIcon = footnoteIcon
         _index = State(initialValue: min(startIndex, max(items.count - 1, 0)))
         _correct = State(initialValue: startCorrect)
         _missed = State(initialValue: startMissed)
@@ -57,7 +62,7 @@ struct QuizRunner: View {
                     .buttonStyle(.phos)
                 }
                 Spacer(minLength: 0)
-                Label("The chapter is hidden until you finish", systemImage: "eye.slash")
+                Label(footnote, systemImage: footnoteIcon)
                     .font(.caption).foregroundStyle(Theme.dim).frame(maxWidth: .infinity)
             }
             .padding(.horizontal, 20)

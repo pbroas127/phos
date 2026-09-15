@@ -622,3 +622,36 @@ final class ReminderTests: XCTestCase {
     }
 }
 
+final class ReviewTests: XCTestCase {
+    func q(_ chapter: String, _ n: Int) -> Question {
+        Question(t: .tf, d: n % 3 + 1, v: 1, q: "Q\(n)", answerBool: true, id: "\(chapter).\(n)")
+    }
+
+    func testReviewSpreadsAcrossChaptersAndRotates() {
+        var g = SeededGenerator(seed: 7)
+        let banks = [("A", (0..<6).map { q("A", $0) }), ("B", (0..<6).map { q("B", $0) })]
+        let first = QuizEngine.review(banks: banks, total: 4, asked: [:], using: &g)
+        XCTAssertEqual(first.items.count, 4)
+        XCTAssertEqual(first.items.filter { $0.id.hasPrefix("A.") }.count, 2)
+        let second = QuizEngine.review(banks: banks, total: 4, asked: first.asked, using: &g)
+        XCTAssertTrue(Set(second.items.map(\.id)).isDisjoint(with: Set(first.items.map(\.id))))
+        let third = QuizEngine.review(banks: banks, total: 4, asked: second.asked, using: &g)
+        XCTAssertEqual(third.items.count, 4)
+        // Every question has now been used once, so the next review starts over instead of coming up short.
+        let fourth = QuizEngine.review(banks: banks, total: 4, asked: third.asked, using: &g)
+        XCTAssertEqual(fourth.items.count, 4)
+    }
+
+    func testReviewTrophiesCountChaptersBooksAndPerfectExams() {
+        let read = (1...4).map { DayRecord(dayKey: "2026-09-0\($0)", ref: ChapterRef(book: "PHM", chapter: 1), title: "Philemon 1",
+                                          readMode: .paper, reflectMode: .typed, reflection: "", score: 3, total: 3,
+                                          completedAt: Date(), readingSeconds: 60, fromPlan: true) }
+        let reviews = [ReviewRecord(scope: "PHM.1", chapterIDs: ["PHM.1"], score: 4, total: 5, completedAt: Date()),
+                       ReviewRecord(scope: "PHM", chapterIDs: ["PHM.1"], score: 10, total: 10, completedAt: Date()),
+                       ReviewRecord(scope: "JHN", chapterIDs: ["JHN.1", "JHN.2"], score: 10, total: 10, completedAt: Date())]
+        let s = AchievementStats(records: read, passUses: [], usage: [:], watchedDays: [], todayKey: "2026-09-04", reviews: reviews)
+        XCTAssertEqual(s.reviewedChapters.count, 3)
+        XCTAssertEqual(s.perfectBookReviews, 1)
+        XCTAssertEqual(s.booksFullyReviewed, 1)
+    }
+}

@@ -172,6 +172,40 @@ enum QuizEngine {
         }
     }
 
+    /// Picks a review quiz across chapters, spreading questions evenly. Each chapter rotates through its whole
+    /// bank before any question repeats; a chapter running low starts over rather than coming up short.
+    static func review<R: RandomNumberGenerator>(banks: [(String, [Question])], total: Int, asked: [String: [String]],
+                                                 using rng: inout R) -> (items: [QuizItem], asked: [String: [String]]) {
+        var asked = asked
+        let share = banks.isEmpty ? 0 : (total + banks.count - 1) / banks.count
+        var pools: [(id: String, fresh: [Question])] = banks.map { id, bank in
+            var seen = Set(asked[id] ?? [])
+            if bank.filter({ !seen.contains($0.id) }).count < min(share, bank.count) {
+                seen = []
+                asked[id] = []
+            }
+            return (id, bank.filter { !seen.contains($0.id) }.shuffled(using: &rng))
+        }
+        pools.shuffle(using: &rng)
+        var chosen: [Question] = []
+        while chosen.count < total {
+            var took = false
+            for i in pools.indices where chosen.count < total && !pools[i].fresh.isEmpty {
+                let q = pools[i].fresh.removeFirst()
+                chosen.append(q)
+                asked[pools[i].id, default: []].append(q.id)
+                took = true
+            }
+            if !took { break }
+        }
+        return (chosen.sorted { $0.d < $1.d }.map { item(for: $0, using: &rng) }, asked)
+    }
+
+    static func review(banks: [(String, [Question])], total: Int, asked: [String: [String]]) -> (items: [QuizItem], asked: [String: [String]]) {
+        var g = SystemRandomNumberGenerator()
+        return review(banks: banks, total: total, asked: asked, using: &g)
+    }
+
     /// Wait before new questions: none after the first miss, 2 minutes after the second, 5 after that.
     static func waitAfterMiss(missCount: Int) -> TimeInterval {
         switch missCount {
@@ -192,5 +226,29 @@ struct SeededGenerator: RandomNumberGenerator {
         z = (z ^ (z >> 30)) &* 0xBF58476D1CE4E5B9
         z = (z ^ (z >> 27)) &* 0x94D049BB133111EB
         return z ^ (z >> 31)
+    }
+}
+
+/// A review someone asked for: one chapter, or every chapter of a book.
+struct ReviewRequest: Identifiable, Equatable {
+    let scope: String
+    let title: String
+    let chapters: [ChapterRef]
+    var id: String { scope }
+
+    static func chapter(_ ref: ChapterRef) -> ReviewRequest {
+        ReviewRequest(scope: ref.id, title: BookNames.title(ref), chapters: [ref])
+    }
+
+    static func book(_ id: String) -> ReviewRequest {
+        let plan = ReadingPlans.bookPlan(id)
+        return ReviewRequest(scope: id, title: plan?.name ?? id, chapters: plan?.chapters ?? [])
+    }
+
+    /// Five for a chapter; ten to fifteen for a whole book.
+    var total: Int { chapters.count == 1 ? 5 : min(15, max(10, chapters.count * 2)) }
+
+    func chapter(of q: Question) -> ChapterRef? {
+        chapters.first { ref in QuestionBank.shared.questions(for: ref)?.questions.contains { $0.id == q.id } ?? false }
     }
 }

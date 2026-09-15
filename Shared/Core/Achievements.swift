@@ -75,9 +75,13 @@ struct AchievementStats {
     let usage: [String: Int]
     /// Days Phos was watching screen time, so a missing usage entry means almost no use.
     let watchedDays: Set<String>
+    /// Chapters quizzed again after reading, perfect whole book reviews, and books reviewed cover to cover.
+    let reviewedChapters: Set<String>
+    let perfectBookReviews: Int
+    let booksFullyReviewed: Int
 
     init(records: [DayRecord], passUses: [PassUse], usage: [String: Int], watchedDays: Set<String>, todayKey: String,
-         morning: TimeOfDay = TimeOfDay(hour: 0, minute: 0), calendar: Calendar = .current) {
+         reviews: [ReviewRecord] = [], morning: TimeOfDay = TimeOfDay(hour: 0, minute: 0), calendar: Calendar = .current) {
         self.records = records
         self.todayKey = todayKey
         self.usage = usage
@@ -114,6 +118,17 @@ struct AchievementStats {
         self.hours = hours
         self.comebacks = records.filter { ($0.misses ?? 0) > 0 }.count
         self.passDays = Set(passUses.map { DayKey.key(for: $0.date, morning: morning, calendar: calendar) })
+        var reviewed = Set<String>(), perfectBooks = 0
+        for r in reviews {
+            reviewed.formUnion(r.chapterIDs)
+            if r.chapterIDs.count > 1 && r.total > 0 && r.score >= r.total { perfectBooks += 1 }
+        }
+        self.reviewedChapters = reviewed
+        self.perfectBookReviews = perfectBooks
+        self.booksFullyReviewed = byBook.filter { book, read in
+            guard let n = ReadingPlans.chapterCounts[book], read.count >= n else { return false }
+            return (1...n).allSatisfy { reviewed.contains("\(book).\($0)") }
+        }.count
     }
 
     // MARK: Helpers used by the catalog
@@ -347,7 +362,10 @@ enum Achievements {
         Achievement(id: "quiz.scribe", group: .mastery, name: "The Scribe", detail: "Get a perfect quiz 30 days in a row.", art: "ink_scroll", goal: 30) { $0.longestRun($0.perfectDays) },
         Achievement(id: "quiz.500", group: .mastery, name: "Always Ready", detail: "Answer 500 questions correctly.", art: "open_book_star", goal: 500) { $0.correctAnswers },
         Achievement(id: "quiz.2000", group: .mastery, name: "Sword of the Spirit", detail: "Answer 2,000 questions correctly.", art: "sword_word", goal: 2000) { $0.correctAnswers },
-        Achievement(id: "quiz.comeback", group: .mastery, name: "Cast the Net Again", detail: "Miss a quiz, then pass it later the same day.", art: "fishing_net", goal: 1) { $0.comebacks }
+        Achievement(id: "quiz.comeback", group: .mastery, name: "Cast the Net Again", detail: "Miss a quiz, then pass it later the same day.", art: "fishing_net", goal: 1) { $0.comebacks },
+        Achievement(id: "review.10", group: .mastery, name: "Second Look", detail: "Review 10 chapters you already read.", art: "scroll_keeper", goal: 10) { $0.reviewedChapters.count },
+        Achievement(id: "review.book", group: .mastery, name: "Book Exam", detail: "Get a perfect score on a whole book review.", art: "laurel_wreath", goal: 1) { $0.perfectBookReviews },
+        Achievement(id: "review.full", group: .mastery, name: "Full Circle", detail: "Review every chapter of a book you finished.", art: "four_scrolls", goal: 1) { $0.booksFullyReviewed }
     ]
 
     static let reflection: [Achievement] = [

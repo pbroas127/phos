@@ -23,6 +23,8 @@ final class AppModel {
     var settings: AppSettings
     var today: TodayState
     var records: [DayRecord]
+    /// Quizzes taken on their own after reading. They never open apps.
+    var reviews: [ReviewRecord] = []
     var authorized = false
     var route: Route?
     var now = Date()
@@ -127,6 +129,30 @@ final class AppModel {
 
     func record(for ref: ChapterRef) -> DayRecord? {
         records.filter { $0.dayKey == today.dayKey && $0.ref == ref }.max { $0.completedAt < $1.completedAt }
+    }
+
+    // MARK: Reviews
+
+    func canReview(_ ref: ChapterRef) -> Bool { settings.allowReviewUnread || readIDs.contains(ref.id) }
+
+    func reviews(for ref: ChapterRef) -> [ReviewRecord] { reviews.filter { $0.scope == ref.id } }
+
+    func reviewItems(_ r: ReviewRequest) -> [QuizItem] {
+        let banks = r.chapters.map { ($0.id, QuestionBank.shared.questions(for: $0)?.questions ?? []) }
+        let picked = QuizEngine.review(banks: banks, total: r.total, asked: store.reviewAsked)
+        if !demo { store.reviewAsked = picked.asked }
+        return picked.items
+    }
+
+    func completeReview(_ r: ReviewRequest, score: Int, total: Int) {
+        guard total > 0 else { return }
+        var all = store.reviews
+        all.append(ReviewRecord(scope: r.scope, chapterIDs: r.chapters.map(\.id), score: score, total: total, completedAt: Date()))
+        store.reviews = all
+        reviews = all
+        checkAchievements()
+        if settings.onboarded && !demo { CloudBackup.save(self) }
+        WidgetWriter.write(self)
     }
 
     func choose(planID: String, index: Int) {
@@ -355,6 +381,7 @@ final class AppModel {
         }
         today = store.today(now: now, morning: settings.schedule.morning)
         records = store.records
+        reviews = store.reviews
         writeSnapshot()
         if settings.onboarded && !demo { LockEngine.sync(store: store, now: now) }
         checkAchievements()
@@ -366,7 +393,7 @@ final class AppModel {
     /// Recomputes trophy progress and queues a celebration for anything newly earned.
     func checkAchievements() {
         stats = AchievementStats(records: records, passUses: settings.passUses, usage: store.usage, watchedDays: store.watchedDays,
-                                 todayKey: today.dayKey, morning: settings.schedule.morning)
+                                 todayKey: today.dayKey, reviews: reviews, morning: settings.schedule.morning)
         var saved = store.earned
         let firstLook = saved.isEmpty
         let new = Achievements.all.filter { saved[$0.id] == nil && $0.done(stats) }

@@ -61,6 +61,13 @@ struct SettingsScreen: View {
                              : "Every reading uses the timer or reading along, to keep you accountable.")
                             .font(.footnote).foregroundStyle(Theme.dim)
                     }
+                    VStack(alignment: .leading, spacing: 4) {
+                        Toggle("Quiz only on any chapter", isOn: $model.settings.allowReviewUnread)
+                        Text(model.settings.allowReviewUnread
+                             ? "Review quizzes are offered on every chapter, read in Wick or not."
+                             : "Review quizzes are offered on chapters you have read in Wick.")
+                            .font(.footnote).foregroundStyle(Theme.dim)
+                    }
                 }
 
                 Section("Lock screen") {
@@ -109,6 +116,7 @@ struct SettingsScreen: View {
             .onChange(of: model.settings.preferredRead) { _, _ in model.savePreferences() }
             .onChange(of: model.settings.preferredReflect) { _, _ in model.savePreferences() }
             .onChange(of: model.settings.allowAlreadyRead) { _, _ in model.savePreferences() }
+            .onChange(of: model.settings.allowReviewUnread) { _, _ in model.savePreferences() }
             .onChange(of: model.settings.reminderOn) { _, on in
                 model.savePreferences()
                 if on { Task { _ = await Notifier.requestPermission(); ReminderScheduler.reschedule(model) } } else { ReminderScheduler.reschedule(model) }

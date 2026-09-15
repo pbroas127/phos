@@ -223,6 +223,7 @@ struct JournalEntryRow: View {
     @Environment(AppModel.self) private var model
     let entry: DayRecord
     @State private var open = false
+    @State private var reviewing: ReviewRequest?
 
     /// Prompt answers are saved as "Question? Answer" lines. The question shows in bold.
     private var reflectionText: Text {
@@ -270,6 +271,8 @@ struct JournalEntryRow: View {
                     Label(entry.reflectMode.title, systemImage: entry.reflectMode.symbol).font(.caption).foregroundStyle(Theme.dim)
                     Text("\(entry.score) of \(entry.total) correct").font(.caption).foregroundStyle(Theme.dim)
                     Spacer()
+                    Button("Quiz me again") { reviewing = .chapter(entry.ref) }
+                        .font(.caption.weight(.semibold)).foregroundStyle(Theme.gold)
                     if let bp = ReadingPlans.bookPlan(entry.ref.book), let i = bp.chapters.firstIndex(of: entry.ref) {
                         Button("Read again") {
                             model.choose(planID: bp.id, index: i)
@@ -278,11 +281,13 @@ struct JournalEntryRow: View {
                         .font(.caption.weight(.semibold)).foregroundStyle(Theme.gold)
                     }
                 }
+                ReviewLines(reviews: model.reviews(for: entry.ref))
             }
         }
         .padding(16)
         .background(Theme.card, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
         .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).stroke(Theme.line))
+        .sheet(item: $reviewing) { ReviewFlow(request: $0).environment(model) }
     }
 }
 

@@ -33,11 +33,49 @@ enum VoiceCatalog {
         #endif
     }
 
+    /// Listing the iPhone's voices can take seconds the first time, so it happens once, off the main thread.
+    private static var systemCache: [VoiceChoice]?
+    private static var bestCache: AVSpeechSynthesisVoice?
+    private static let lock = NSLock()
+
+    static var isWarm: Bool {
+        lock.lock()
+        defer { lock.unlock() }
+        return systemCache != nil && bestCache != nil
+    }
+
+    /// Loads the voice list in the background, then calls back on the main thread.
+    static func warm(_ done: @escaping () -> Void = {}) {
+        if isWarm { done(); return }
+        DispatchQueue.global(qos: .userInitiated).async {
+            _ = system()
+            _ = bestSystemVoice()
+            DispatchQueue.main.async(execute: done)
+        }
+    }
+
     static func system() -> [VoiceChoice] {
-        AVSpeechSynthesisVoice.speechVoices()
+        lock.lock()
+        defer { lock.unlock() }
+        if let systemCache { return systemCache }
+        let list = AVSpeechSynthesisVoice.speechVoices()
             .filter { $0.language.hasPrefix("en") && !$0.voiceTraits.contains(.isNoveltyVoice) && !$0.voiceTraits.contains(.isPersonalVoice) }
             .sorted { $0.quality.rawValue != $1.quality.rawValue ? $0.quality.rawValue > $1.quality.rawValue : $0.name < $1.name }
             .map { VoiceChoice(id: "system:\($0.identifier)", name: $0.name, detail: "\(accent($0.language)), \(quality($0.quality))") }
+        systemCache = list
+        return list
+    }
+
+    private static func bestSystemVoice() -> AVSpeechSynthesisVoice {
+        lock.lock()
+        defer { lock.unlock() }
+        if let bestCache { return bestCache }
+        let best = AVSpeechSynthesisVoice.speechVoices()
+            .filter { $0.language == "en-US" && !$0.voiceTraits.contains(.isNoveltyVoice) && !$0.voiceTraits.contains(.isPersonalVoice) }
+            .max { $0.quality.rawValue < $1.quality.rawValue }
+        let voice = best ?? AVSpeechSynthesisVoice(language: "en-US") ?? AVSpeechSynthesisVoice()
+        bestCache = voice
+        return voice
     }
 
     static func accent(_ code: String) -> String {
@@ -57,14 +95,13 @@ enum VoiceCatalog {
     /// The system voice for an id, or the best American voice on the phone.
     static func systemVoice(_ id: String) -> AVSpeechSynthesisVoice {
         if id.hasPrefix("system:"), let v = AVSpeechSynthesisVoice(identifier: String(id.dropFirst(7))) { return v }
-        let best = AVSpeechSynthesisVoice.speechVoices()
-            .filter { $0.language == "en-US" && !$0.voiceTraits.contains(.isNoveltyVoice) && !$0.voiceTraits.contains(.isPersonalVoice) }
-            .max { $0.quality.rawValue < $1.quality.rawValue }
-        return best ?? AVSpeechSynthesisVoice(language: "en-US")!
+        return bestSystemVoice()
     }
 
     static func name(_ id: String) -> String {
         if let n = natural.first(where: { $0.id == id }) { return n.name }
+        if id.hasPrefix("system:"), let n = system().first(where: { $0.id == id })?.name { return n }
+        guard isWarm else { return "iPhone voice" }
         return systemVoice(id).name
     }
 
@@ -163,12 +200,15 @@ final class KokoroEngine: @unchecked Sendable {
     static let sampleRate = 24_000.0
     private let queue = DispatchQueue(label: "phos.kokoro", qos: .userInitiated)
     private var cache: [String: AVAudioPCMBuffer] = [:]
+    /// The voice playback wants right now. Queued work for any other voice is skipped, so switching voices never waits behind it.
+    private var wanted = ""
     #if !targetEnvironment(simulator)
     private var tts: KokoroTTS?
     private var styles: [String: MLXArray] = [:]
     #endif
 
     func buffer(_ text: String, voice: String, done: @escaping (AVAudioPCMBuffer?) -> Void) {
+        wanted = voice
         queue.async {
             let b = self.make(text, voice)
             DispatchQueue.main.async { done(b) }
@@ -176,7 +216,19 @@ final class KokoroEngine: @unchecked Sendable {
     }
 
     func prefetch(_ text: String, voice: String) {
-        queue.async { _ = self.make(text, voice) }
+        queue.async {
+            guard self.wanted == voice else { return }
+            _ = self.make(text, voice)
+        }
+    }
+
+    /// Loads the model and voices the given text ahead of time, so the first play with a new voice starts at once.
+    func warm(_ text: String, voice: String) {
+        wanted = voice
+        queue.async {
+            guard self.wanted == voice else { return }
+            _ = self.make(text, voice)
+        }
     }
 
     func unload() {

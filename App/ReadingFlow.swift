@@ -394,10 +394,22 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
         speak(from: min(max(0, verseIndex + delta), max(0, verses.count - 1)))
     }
 
-    /// Starts the current verse again, used after picking a new voice.
+    /// After picking a new voice: keep the verse, and only restart it if it was playing. Paused stays paused.
     func restartVerse() {
-        guard started else { return }
-        speak(from: verseIndex)
+        guard started else { warm(); return }
+        if playing {
+            speak(from: verseIndex)
+        } else {
+            halt()
+            started = false
+            warm()
+        }
+    }
+
+    /// Gets the current verse ready in the new voice while nothing is playing.
+    private func warm() {
+        guard let voice = neuralVoice, verseIndex < verses.count else { return }
+        KokoroEngine.shared.warm(verses[verseIndex], voice: voice)
     }
 
     private func halt() {
@@ -494,6 +506,8 @@ struct ListenRead: View {
     @ObservedObject private var kokoro = KokoroModel.shared
     @State private var pendingVoice: VoiceChoice?
     @State private var voiceHelp = false
+    @State private var systemVoices: [VoiceChoice] = []
+    @State private var voiceName = "Voice"
 
     var body: some View {
         let verses = Bible.shared.chapter(ref)?.verses ?? []
@@ -554,6 +568,11 @@ struct ListenRead: View {
         .onAppear {
             speaker.load(verses)
             speaker.voiceID = model.settings.voiceID
+            voiceName = VoiceCatalog.name(model.settings.voiceID)
+            VoiceCatalog.warm {
+                systemVoices = VoiceCatalog.system()
+                voiceName = VoiceCatalog.name(model.settings.voiceID)
+            }
         }
         .onDisappear { speaker.stop() }
         .sheet(item: $pendingVoice) { voice in
@@ -568,23 +587,32 @@ struct ListenRead: View {
         }
     }
 
+    private var currentVoiceID: String {
+        if !model.settings.voiceID.isEmpty { return model.settings.voiceID }
+        return VoiceCatalog.isWarm ? "system:\(VoiceCatalog.systemVoice("").identifier)" : ""
+    }
+
     private var voiceMenu: some View {
-        Menu {
+        let current = currentVoiceID
+        return Menu {
             if VoiceCatalog.naturalSupported {
                 Section("Natural voices") {
                     ForEach(VoiceCatalog.natural) { v in
-                        Button { pick(v) } label: { voiceLabel(v) }
+                        Button { pick(v) } label: { voiceLabel(v, current: current) }
                     }
                 }
             }
             Section("iPhone voices") {
-                ForEach(VoiceCatalog.system()) { v in
-                    Button { pick(v) } label: { voiceLabel(v) }
+                if systemVoices.isEmpty {
+                    Text("Loading voices")
+                }
+                ForEach(systemVoices) { v in
+                    Button { pick(v) } label: { voiceLabel(v, current: current) }
                 }
                 Button("Get more iPhone voices") { voiceHelp = true }
             }
         } label: {
-            Label(VoiceCatalog.name(model.settings.voiceID), systemImage: "person.wave.2.fill")
+            Label(voiceName, systemImage: "person.wave.2.fill")
                 .font(.subheadline.weight(.semibold))
                 .padding(.horizontal, 14).padding(.vertical, 9)
                 .background(Theme.card, in: Capsule())
@@ -595,8 +623,7 @@ struct ListenRead: View {
     }
 
     @ViewBuilder
-    private func voiceLabel(_ v: VoiceChoice) -> some View {
-        let current = model.settings.voiceID.isEmpty ? "system:\(VoiceCatalog.systemVoice("").identifier)" : model.settings.voiceID
+    private func voiceLabel(_ v: VoiceChoice, current: String) -> some View {
         if v.id == current {
             Label("\(v.name), \(v.detail)", systemImage: "checkmark")
         } else {
@@ -615,6 +642,7 @@ struct ListenRead: View {
     private func choose(_ id: String) {
         model.settings.voiceID = id
         model.savePreferences()
+        voiceName = VoiceCatalog.name(id)
         speaker.voiceID = id
         speaker.restartVerse()
     }

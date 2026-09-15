@@ -1,0 +1,36 @@
+name: kokoro-check
+on:
+  workflow_dispatch:
+jobs:
+  voices:
+    runs-on: macos-15
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select newest Xcode 26
+        run: |
+          XCODE=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          sudo xcode-select -s "$XCODE"
+      - name: Metal toolchain for MLX
+        run: xcodebuild -downloadComponent MetalToolchain || true
+      - name: Download the model
+        run: curl -sL -o model.safetensors https://huggingface.co/prince-canuma/Kokoro-82M/resolve/main/kokoro-v1_0.safetensors && ls -la model.safetensors
+      - name: Build
+        working-directory: Tools/kokoro-check
+        run: |
+          set -o pipefail
+          xcodebuild build -scheme KokoroCheck -destination "platform=macOS,arch=arm64" -configuration Release -derivedDataPath dd \
+            -skipMacroValidation -skipPackagePluginValidation 2>&1 | grep -E "error:|BUILD" | tail -30
+      - name: Bundles next to the tool
+        run: ls -R Tools/kokoro-check/dd/Build/Products/Release/ | grep -iE "bundle|metallib|json|txt" | head -40
+      - name: Run on GPU
+        continue-on-error: true
+        run: Tools/kokoro-check/dd/Build/Products/Release/KokoroCheck model.safetensors App/Resources/kokoro-voices.npz out/gpu gpu 2>&1 | tail -40
+      - name: Run on CPU
+        continue-on-error: true
+        run: Tools/kokoro-check/dd/Build/Products/Release/KokoroCheck model.safetensors App/Resources/kokoro-voices.npz out/cpu cpu 2>&1 | tail -40
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: voices
+          path: out

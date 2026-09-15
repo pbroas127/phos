@@ -240,9 +240,28 @@ struct ReviewRequest: Identifiable, Equatable {
         ReviewRequest(scope: ref.id, title: BookNames.title(ref), chapters: [ref])
     }
 
-    static func book(_ id: String) -> ReviewRequest {
+    /// A book review. `only` limits it to chapters that were read; nil covers every chapter.
+    static func book(_ id: String, only: Set<String>? = nil) -> ReviewRequest {
         let plan = ReadingPlans.bookPlan(id)
-        return ReviewRequest(scope: id, title: plan?.name ?? id, chapters: plan?.chapters ?? [])
+        var chapters = plan?.chapters ?? []
+        if let only {
+            let read = chapters.filter { only.contains($0.id) }
+            if !read.isEmpty { chapters = read }
+        }
+        return ReviewRequest(scope: id, title: plan?.name ?? id, chapters: chapters)
+    }
+
+    /// A quick review across recently read chapters.
+    static func recent(_ refs: [ChapterRef]) -> ReviewRequest {
+        ReviewRequest(scope: "recent", title: "Recent chapters", chapters: refs)
+    }
+
+    /// A readable name for a saved review.
+    static func title(for r: ReviewRecord) -> String {
+        if r.scope == "recent" { return "Quick review" }
+        let parts = r.scope.split(separator: ".")
+        if parts.count == 2, let n = Int(parts[1]) { return BookNames.title(ChapterRef(book: String(parts[0]), chapter: n)) }
+        return BookNames.name(r.scope)
     }
 
     /// Five for a chapter; ten to fifteen for a whole book.

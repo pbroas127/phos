@@ -9,8 +9,11 @@ final class SpeechRecorder: ObservableObject {
     @Published var isRecording = false
     @Published var level: Double = 0
     @Published var problem: String?
+    /// File name of the recording under Documents/Reflections, set once the first buffer is written.
+    @Published private(set) var audioFile: String?
 
     private let engine = AVAudioEngine()
+    private var file: AVAudioFile?
     private let recognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))
     private var request: SFSpeechAudioBufferRecognitionRequest?
     private var task: SFSpeechRecognitionTask?
@@ -19,6 +22,12 @@ final class SpeechRecorder: ObservableObject {
     private var restartTimer: Timer?
     private var noiseFloor: Float = 0.004
     private var hangover: Double = 0
+
+    static var reflectionsDirectory: URL {
+        FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("Reflections", isDirectory: true)
+    }
+
+    static func audioURL(_ name: String) -> URL { reflectionsDirectory.appendingPathComponent(name) }
 
     static func requestPermissions() async -> Bool {
         let speech = await withCheckedContinuation { (c: CheckedContinuation<Bool, Never>) in
@@ -37,14 +46,16 @@ final class SpeechRecorder: ObservableObject {
         }
         do {
             let session = AVAudioSession.sharedInstance()
-            try session.setCategory(.record, mode: .measurement, options: .duckOthers)
+            try session.setCategory(.record, mode: .measurement, options: [.duckOthers, .allowBluetooth])
             try session.setActive(true, options: .notifyOthersOnDeactivation)
             startRecognition()
             let input = engine.inputNode
             let format = input.outputFormat(forBus: 0)
+            openFile(format)
             input.removeTap(onBus: 0)
             input.installTap(onBus: 0, bufferSize: 1024, format: format) { [weak self] buffer, _ in
                 self?.request?.append(buffer)
+                try? self?.file?.write(from: buffer)
                 self?.measure(buffer)
             }
             engine.prepare()
@@ -66,6 +77,8 @@ final class SpeechRecorder: ObservableObject {
         engine.inputNode.removeTap(onBus: 0)
         request?.endAudio()
         task?.finish()
+        // Everything heard so far is kept, so talking again adds to it instead of replacing it.
+        committed = transcript
         isRecording = false
         level = 0
         try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
@@ -83,6 +96,23 @@ final class SpeechRecorder: ObservableObject {
         transcript = ""
         committed = ""
         speechSeconds = 0
+        file = nil
+        if let audioFile { try? FileManager.default.removeItem(at: Self.audioURL(audioFile)) }
+        audioFile = nil
+    }
+
+    /// One recording per reflection. Pausing and talking again keeps writing to the same file.
+    // ponytail: a draft resumed after the app was killed starts a fresh file; the earlier audio is dropped.
+    private func openFile(_ format: AVAudioFormat) {
+        guard file == nil else { return }
+        let dir = Self.reflectionsDirectory
+        try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+        let name = UUID().uuidString + ".m4a"
+        let settings: [String: Any] = [AVFormatIDKey: kAudioFormatMPEG4AAC, AVSampleRateKey: format.sampleRate,
+                                       AVNumberOfChannelsKey: Int(format.channelCount), AVEncoderAudioQualityKey: AVAudioQuality.medium.rawValue]
+        guard let f = try? AVAudioFile(forWriting: dir.appendingPathComponent(name), settings: settings) else { return }
+        file = f
+        audioFile = name
     }
 
     private func startRecognition() {

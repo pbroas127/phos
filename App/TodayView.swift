@@ -35,6 +35,8 @@ struct TodayScreen: View {
                     }
                     .pickerStyle(.segmented)
 
+                    if !model.authorized && model.settings.onboarded && !model.demo { ScreenTimeOffBanner() }
+                    if model.notificationsDenied && model.settings.onboarded { NotificationsOffBanner() }
                     LockBanner()
 
                     switch view {
@@ -106,11 +108,11 @@ struct LockBanner: View {
             case .needsQuestion: return "One question opens it"
             case .needsTap: return "Tap to unlock"
             case .usedUp: return "No unlocks left today"
-            case .strict: return "Strict until \(LockLogic.activeEnd(first, now: Date()).shortTime)"
+            case .strict: return LockLogic.reopenPhrase(first, now: Date()).map { "Opens \($0)" } ?? "Strict all day"
             default: return "Tap to see how to unlock"
             }
         }
-        let until = open.compactMap { model.today.day($0.id).until ?? model.today.day($0.id).passUntil }.min()
+        let until = open.compactMap { model.lockDay($0).until ?? model.lockDay($0).passUntil }.min()
         return until.map { "Next lock at \($0.shortTime)" } ?? "Open"
     }
 }
@@ -163,7 +165,7 @@ struct PlanCard: View {
                 if !model.today.readingDone {
                     HStack(spacing: 6) {
                         Image(systemName: "lock.fill")
-                        Text(model.lockedCount == 0 ? "Add a lock in Settings" : "\(model.lockedCount) locked until you finish")
+                        Text(model.lockedCount == 0 ? "Add a lock in Settings" : "\(model.lockedLabel) locked until you finish")
                     }
                     .font(.footnote).foregroundStyle(Theme.dim).frame(maxWidth: .infinity)
                 }
@@ -323,8 +325,11 @@ struct CalendarView: View {
             let symbols = cal.veryShortWeekdaySymbols
             let ordered = Array(symbols[(cal.firstWeekday - 1)...] + symbols[..<(cal.firstWeekday - 1)])
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 6), count: 7), spacing: 8) {
-                ForEach(0..<7, id: \.self) { Text(ordered[$0]).font(.caption.weight(.semibold)).foregroundStyle(Theme.dim) }
-                ForEach(0..<lead, id: \.self) { _ in Color.clear.frame(height: 38) }
+                // Headers and blanks get their own ids. Plain numbers here clashed with the day numbers and hid days 1 to 6.
+                ForEach((0..<7).map { "weekday\($0)" }, id: \.self) { tag in
+                    Text(ordered[Int(tag.dropFirst(7))!]).font(.caption.weight(.semibold)).foregroundStyle(Theme.dim)
+                }
+                ForEach((0..<lead).map { "blank\($0)" }, id: \.self) { _ in Color.clear.frame(height: 38) }
                 ForEach(1...days, id: \.self) { day in
                     let date = cal.date(byAdding: .day, value: day - 1, to: month)!
                     let key = String(format: "%04d-%02d-%02d", cal.component(.year, from: date), cal.component(.month, from: date), day)

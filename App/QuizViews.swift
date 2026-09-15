@@ -12,6 +12,7 @@ struct QuizRunner: View {
     @State private var correct: Int
     @State private var missed: [Question]
     @State private var answered: Bool? = nil
+    @State private var finishing = false
 
     init(items: [QuizItem], startIndex: Int = 0, startCorrect: Int = 0, startMissed: [Question] = [],
          footnote: String = "The chapter is hidden until you finish", footnoteIcon: String = "eye.slash",
@@ -54,6 +55,8 @@ struct QuizRunner: View {
                     Feedback(item: item, right: answered)
                     Button(index + 1 >= items.count ? "See result" : "Next question") {
                         if index + 1 >= items.count {
+                            guard !finishing else { return }
+                            finishing = true
                             onFinish(correct, missed)
                         } else {
                             withAnimation { index += 1; self.answered = nil }
@@ -94,17 +97,50 @@ struct Feedback: View {
 }
 
 struct QuestionView: View {
+    @Environment(AppModel.self) private var model
+    @ObservedObject private var reader = QuestionSpeaker.shared
     let item: QuizItem
     let locked: Bool
     var onAnswer: (Bool) -> Void
 
     var body: some View {
-        switch item.question.t {
-        case .choice: ChoiceQuestion(item: item, locked: locked, onAnswer: onAnswer)
-        case .blank: BlankQuestion(item: item, locked: locked, onAnswer: onAnswer)
-        case .order: OrderQuestion(item: item, locked: locked, onAnswer: onAnswer)
-        case .tf: TrueFalseQuestion(item: item, locked: locked, onAnswer: onAnswer)
+        VStack(alignment: .leading, spacing: 8) {
+            Button {
+                if reader.speaking {
+                    reader.stop()
+                } else {
+                    reader.speak(spokenText, voiceID: model.settings.voiceID, rate: model.settings.voiceRate)
+                }
+            } label: {
+                Label(reader.speaking ? "Stop" : "Read the question", systemImage: reader.speaking ? "stop.fill" : "speaker.wave.2.fill")
+                    .font(.caption.weight(.semibold)).foregroundStyle(Theme.dim)
+            }
+            .frame(maxWidth: .infinity, alignment: .trailing)
+            .accessibilityLabel(reader.speaking ? "Stop reading the question" : "Read the question aloud")
+            switch item.question.t {
+            case .choice: ChoiceQuestion(item: item, locked: locked, onAnswer: onAnswer)
+            case .blank: BlankQuestion(item: item, locked: locked, onAnswer: onAnswer)
+            case .order: OrderQuestion(item: item, locked: locked, onAnswer: onAnswer)
+            case .tf: TrueFalseQuestion(item: item, locked: locked, onAnswer: onAnswer)
+            }
         }
+        .onDisappear { reader.stop() }
+        .onChange(of: item.id) { _, _ in reader.stop() }
+    }
+
+    /// The question and its choices as one spoken passage.
+    private var spokenText: String {
+        let q = item.question
+        var parts = [q.q ?? ""]
+        switch q.t {
+        case .choice, .blank:
+            parts.append("The choices are: " + item.choices.joined(separator: ". "))
+        case .order:
+            parts.append("Put these in order: " + item.choices.joined(separator: ". "))
+        case .tf:
+            parts.append("True or false?")
+        }
+        return parts.joined(separator: ". ")
     }
 }
 

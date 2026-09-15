@@ -22,7 +22,8 @@ enum ReminderScheduler {
         let plan = Reminders.plan(Reminders.Input(todayKey: input.todayKey, readToday: false, streak: input.streak, lastReadKey: input.lastReadKey,
                                                   totalChapters: input.totalChapters, chapter: input.chapter, title: input.title, plan: input.plan,
                                                   planLeft: input.planLeft, lockedApps: input.lockedApps, nextTrophy: input.nextTrophy,
-                                                  weekday: input.weekday), days: 1)
+                                                  weekday: input.weekday, hour: input.hour, resetsAtMidnight: input.resetsAtMidnight,
+                                                  tone: input.tone), days: 1)
         guard let first = plan.first else { return }
         let message = Reminders.message(first.context, seed: Int(Date().timeIntervalSince1970))
         let content = UNMutableNotificationContent()
@@ -49,7 +50,7 @@ enum ReminderScheduler {
             content.title = message.title
             content.body = message.body
             content.sound = .default
-            content.userInfo = ["route": "reading"]
+            content.userInfo = ["route": "read"]
             let parts = cal.dateComponents([.year, .month, .day, .hour, .minute], from: fire)
             return UNNotificationRequest(identifier: prefix + key, content: content,
                                          trigger: UNCalendarNotificationTrigger(dateMatching: parts, repeats: false))
@@ -82,7 +83,10 @@ enum ReminderScheduler {
             planLeft: max(0, model.plan.chapters.count - model.readCount(model.plan)),
             lockedApps: model.settings.lockSets.filter(\.enabled).map(\.appCount).reduce(0, +),
             nextTrophy: close.map { (name: $0.0, left: $0.1) },
-            weekday: weekday
+            weekday: weekday,
+            hour: model.settings.reminderMinutes / 60,
+            resetsAtMidnight: model.settings.schedule.morning.minutesFromMidnight == 0,
+            tone: model.settings.reminderTone
         )
     }
 }

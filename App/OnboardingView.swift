@@ -6,6 +6,9 @@ struct OnboardingView: View {
     @State private var page = 0
     @State private var working = false
     @State private var wizardShown = false
+    /// When the setup preview of the shield ends.
+    @State private var previewEnds: Date?
+    @Environment(\.scenePhase) private var phase
 
     private let pages = 6
 
@@ -40,6 +43,12 @@ struct OnboardingView: View {
                 }
                 .buttonStyle(.phos)
                 .disabled(working)
+                if page == 2 && !model.authorized {
+                    // Locks wait for access. Today shows a banner to turn it on later.
+                    Button("Not now") { withAnimation { page += 1 } }.buttonStyle(.phosQuiet).disabled(working)
+                } else if page == 3 && model.locks.isEmpty {
+                    Button("Skip for now") { withAnimation { page += 1 } }.buttonStyle(.phosQuiet)
+                }
                 if page > 0 {
                     Button("Back") { withAnimation { page -= 1 } }.buttonStyle(.phosQuiet)
                 }
@@ -51,6 +60,21 @@ struct OnboardingView: View {
         .sheet(isPresented: $wizardShown) {
             LockWizard { model.createLock($0) }.environment(model)
         }
+        .onChange(of: phase) { _, p in if p == .active { endPreviewIfDue() } }
+    }
+
+    private func startPreview(_ lock: LockSet) {
+        Blocker.preview(lock, minutes: 2)
+        previewEnds = Date().addingTimeInterval(120)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 121) { endPreviewIfDue() }
+    }
+
+    /// Screen Time ends the preview on its own. This covers the app being open when it does, or iOS running late.
+    private func endPreviewIfDue() {
+        guard let ends = previewEnds, Date() >= ends else { return }
+        previewEnds = nil
+        guard !model.settings.onboarded else { return }
+        for lock in model.locks { Blocker.apply(lock, shield: false) }
     }
 
     private var primaryLabel: String {
@@ -130,7 +154,7 @@ struct OnboardingView: View {
     private var screenTime: some View {
         VStack(alignment: .leading, spacing: 18) {
             Text("Screen Time access").font(Theme.serif(36)).foregroundStyle(Theme.ink)
-            Text("Wick uses Apple's Screen Time to lock the apps you pick. Apple keeps your app list private. Wick never sees which apps you use, and nothing leaves your iPhone.")
+            Text("Wick uses Apple's Screen Time to lock the apps you pick. Apple keeps your app list private, so Wick never sees which apps you use. Your journal backs up to your own iCloud, and you can turn that off in Settings.")
                 .font(.body).foregroundStyle(Theme.ink).wrapLines()
             if model.authorized {
                 Label("Access allowed", systemImage: "checkmark.circle.fill").font(.headline).foregroundStyle(Theme.green)
@@ -154,6 +178,15 @@ struct OnboardingView: View {
             }
             if !model.locks.isEmpty {
                 Button("Add another lock") { wizardShown = true }.buttonStyle(.phosSecondary)
+            }
+            if let first = model.locks.first, model.authorized, !model.demo {
+                Button(previewEnds == nil ? "See it work" : "Showing the shield now") { startPreview(first) }
+                    .buttonStyle(.phosSecondary)
+                    .disabled(previewEnds != nil)
+                Text(previewEnds == nil
+                     ? "Try the lock for 2 minutes before you finish setup."
+                     : "Open one of your locked apps to see the shield. It unlocks by itself in 2 minutes.")
+                    .font(.footnote).foregroundStyle(Theme.dim).wrapLines()
             }
         }
     }

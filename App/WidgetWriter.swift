@@ -10,12 +10,23 @@ enum WidgetWriter {
         d.streak = model.streak
         d.longestStreak = Streaks.longest(doneKeys: doneKeys)
         d.readToday = model.today.readingDone
+        d.dayKey = todayKey
+        d.morningHour = model.settings.schedule.morning.hour
+        d.morningMinute = model.settings.schedule.morning.minute
+        d.lastDoneKey = doneKeys.max()
         d.week = (0..<7).map { doneKeys.contains(DayKey.adding($0 - 6, to: todayKey)) }
         d.totalChapters = Set(model.records.map(\.ref.id)).count
 
-        let ref = model.today.readingDone && !model.planFinished ? model.plan.chapters[model.planPosition] : model.todaysChapter
+        // The chapter shown is today's, read or not. Once it is read, the next one waits for tomorrow.
+        let ref = model.todaysChapter
         d.chapter = BookNames.title(ref)
         d.chapterTitle = ChapterTitles.title(ref) ?? ""
+        let next = model.planFinished ? ref : model.plan.chapters[min(model.planPosition, model.plan.chapters.count - 1)]
+        d.nextChapter = BookNames.title(next)
+        d.nextTitle = ChapterTitles.title(next) ?? ""
+        if let key = QuestionBank.shared.questions(for: next)?.keyVerse {
+            d.nextKeyVerse = .init(text: clean(Bible.shared.verse(next, key)), ref: BookNames.verseTitle(next, key))
+        }
         if let key = QuestionBank.shared.questions(for: ref)?.keyVerse {
             d.keyVerse = .init(text: clean(Bible.shared.verse(ref, key)), ref: BookNames.verseTitle(ref, key))
         }
@@ -33,9 +44,9 @@ enum WidgetWriter {
 
         d.locks = model.settings.lockSets.filter(\.enabled).map { lock in
             let state = model.state(lock)
-            let day = model.today.day(lock.id)
+            let day = model.lockDay(lock)
             let limited = lock.policy == .limited
-            return WidgetData.Lock(name: lock.name, locked: state.isLocked, status: status(state),
+            return WidgetData.Lock(id: lock.id, name: lock.name, locked: state.isLocked, status: status(state),
                                    left: limited ? max(0, lock.limit - day.count) : nil, limit: limited ? lock.limit : nil)
         }
         d.lockedApps = model.lockedCount
@@ -44,6 +55,7 @@ enum WidgetWriter {
         let pinned = model.settings.pinnedTrophies.compactMap { id in Achievements.all.first { $0.id == id && model.earned[id] == nil } }
         let close = Achievements.almost(stats, earned: Set(model.earned.keys), limit: 6).filter { a in !pinned.contains { $0.id == a.id } }
         d.trophies = (pinned + close).prefix(6).map { info($0, stats: stats, earned: false) }
+        d.closest = Achievements.almost(stats, earned: Set(model.earned.keys), limit: 6).map { info($0, stats: stats, earned: false) }
         if let last = Achievements.all.compactMap({ a in model.earned[a.id].map { (a, $0) } }).max(by: { $0.1 < $1.1 }) {
             d.lastEarned = info(last.0, stats: stats, earned: true)
         }
@@ -55,7 +67,7 @@ enum WidgetWriter {
         guard d != old else { return }
         d.updated = Date()
         model.store.widgetData = d
-        for art in Set(d.trophies.map(\.art) + [d.lastEarned?.art].compactMap { $0 }) { saveImage(art) }
+        for art in Set(d.trophies.map(\.art) + d.closest.map(\.art) + [d.lastEarned?.art].compactMap { $0 }) { saveImage(art) }
         WidgetCenter.shared.reloadAllTimelines()
     }
 

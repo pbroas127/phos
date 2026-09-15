@@ -90,6 +90,26 @@ final class SharedStore {
         set { save(newValue, "today") }
     }
 
+    /// The day before today, kept when the app rolls over so overnight locks keep the unlocks and reading from the day their window started.
+    var yesterday: TodayState? {
+        get { load("yesterday", as: TodayState.self) }
+        set { save(newValue, "yesterday") }
+    }
+
+    /// Days with a reading, kept small so extensions can work out the streak without loading the whole journal.
+    var doneKeys: [String] {
+        get { defaults.stringArray(forKey: "doneKeys") ?? [] }
+        set { defaults.set(newValue, forKey: "doneKeys") }
+    }
+
+    /// The state of the day before `key`, from whichever copy still holds it.
+    func previousDay(before key: String) -> TodayState? {
+        let prev = DayKey.adding(-1, to: key)
+        if let t = storedToday, t.dayKey == prev { return t }
+        if let y = yesterday, y.dayKey == prev { return y }
+        return nil
+    }
+
     /// Today's state, starting a fresh day when the morning boundary has passed.
     func today(now: Date = Date(), morning: TimeOfDay? = nil) -> TodayState {
         let key = DayKey.key(for: now, morning: morning ?? settings.schedule.morning)

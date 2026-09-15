@@ -3,19 +3,22 @@ import SwiftUI
 import UserNotifications
 
 final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
-    var onNotificationTap: (() -> Void)?
+    var onNotificationTap: ((String?) -> Void)?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         UNUserNotificationCenter.current().delegate = self
-        // Phos is designed light only. System sheets and pickers follow the window style.
-        NotificationCenter.default.addObserver(forName: UIWindow.didBecomeVisibleNotification, object: nil, queue: .main) { note in
-            (note.object as? UIWindow)?.overrideUserInterfaceStyle = .light
-        }
         return true
     }
 
+    /// The natural voices download keeps going while the app is closed. iOS wakes the app to finish it.
+    func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
+        KokoroModel.backgroundCompletion = completionHandler
+        _ = KokoroModel.shared
+    }
+
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        DispatchQueue.main.async { self.onNotificationTap?() }
+        let target = response.notification.request.content.userInfo["route"] as? String
+        DispatchQueue.main.async { self.onNotificationTap?(target) }
         completionHandler()
     }
 
@@ -33,12 +36,10 @@ struct PhosApp: App {
         WindowGroup {
             RootView()
                 .environment(model)
-                .preferredColorScheme(.light)
-                .environment(\.colorScheme, .light)
+                .preferredColorScheme(model.settings.appearance.scheme)
                 .onAppear {
-                    delegate.onNotificationTap = {
-                        model.refresh()
-                        model.routeFromLock()
+                    delegate.onNotificationTap = { target in
+                        model.routeFromNotification(target)
                     }
                 }
                 .onOpenURL { url in model.open(url) }
@@ -62,11 +63,9 @@ struct RootView: View {
             }
         }
         .tint(Theme.gold)
-        .preferredColorScheme(.light)
         .onChange(of: phase) { _, p in
             if p == .active {
                 model.refresh()
-                model.routeFromLock()
             }
         }
         .fullScreenCover(item: $model.route) { route in
@@ -77,7 +76,6 @@ struct RootView: View {
                 }
             }
             .environment(model)
-            .preferredColorScheme(.light)
         }
     }
 }
@@ -108,6 +106,16 @@ struct MainTabs: View {
                 }
                 .transition(.opacity)
             }
+        }
+    }
+}
+
+extension AppAppearance {
+    var scheme: ColorScheme? {
+        switch self {
+        case .system: return nil
+        case .light: return .light
+        case .dark: return .dark
         }
     }
 }

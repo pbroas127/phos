@@ -11,6 +11,8 @@ struct ShieldCopy {
     /// For locks with a daily limit: unlocks remaining and the daily total.
     var unlocksLeft: Int? = nil
     var unlockLimit: Int? = nil
+    /// One short line on how the button works, or how to get in when notifications are off.
+    var hint: String? = nil
 }
 
 /// Words and colors for the locked app screen, shared by the real shield and the preview in Settings.
@@ -40,20 +42,32 @@ enum ShieldArt {
         }
     }
 
-    static func copy(state: LockLogic.State, lock: LockSet?, app: String, snap: SharedSnapshot, today: TodayState? = nil, now: Date = Date()) -> ShieldCopy {
+    static func copy(state: LockLogic.State, lock: LockSet?, app: String, snap: SharedSnapshot, today: TodayState? = nil,
+                     yesterday: TodayState? = nil, morning: TimeOfDay = TimeOfDay(hour: 0, minute: 0), now: Date = Date()) -> ShieldCopy {
         var c = baseCopy(state: state, lock: lock, app: app, snap: snap, now: now)
         if let lock, lock.policy == .limited, state != .strict, state != .inactive {
+            let day = today.map { LockLogic.day(for: lock, today: $0, yesterday: yesterday, now: now, morning: morning).day(lock.id) }
             c.unlockLimit = lock.limit
-            c.unlocksLeft = max(0, lock.limit - (today?.day(lock.id).count ?? 0))
+            c.unlocksLeft = max(0, lock.limit - (day?.count ?? 0))
+        }
+        if state.isLocked {
+            if snap.notificationsDenied {
+                c.hint = "Open Wick from your Home Screen to continue."
+            } else if state == .needsReading {
+                c.hint = "Tap below, then tap the notification."
+            }
         }
         return c
     }
 
-    /// Filled dots for unlocks left, empty dots for ones used today.
+    /// Filled dots for unlocks left, empty dots for ones used today. More than 10 wrap to a second row.
     static func dots(left: Int, total: Int) -> String {
-        let shown = min(total, 10)
+        let shown = min(total, 20)
         let filled = min(left, shown)
-        return (Array(repeating: "●", count: filled) + Array(repeating: "○", count: shown - filled)).joined(separator: " ")
+        let marks = Array(repeating: "●", count: filled) + Array(repeating: "○", count: shown - filled)
+        return stride(from: 0, to: marks.count, by: 10)
+            .map { marks[$0..<min($0 + 10, marks.count)].joined(separator: " ") }
+            .joined(separator: "\n")
     }
 
     static func unlocksLabel(_ left: Int) -> String {
@@ -64,11 +78,14 @@ enum ShieldArt {
         let chapter = snap.chapterTitle
         switch state {
         case .strict:
-            let f = DateFormatter()
-            f.timeStyle = .short
-            let time = lock.map { f.string(from: LockLogic.activeEnd($0, now: now)) } ?? "later"
+            let body: String
+            if let lock {
+                body = LockLogic.reopenPhrase(lock, now: now).map { "\(app) opens again \($0)." } ?? "This lock is on all day, every day."
+            } else {
+                body = "\(app) opens again later."
+            }
             return ShieldCopy(eyebrow: lock?.name ?? "Strict hours", title: "Rest now.",
-                              body: "\(app) opens again at \(time).", isVerse: false, reference: nil, button: "Open Wick")
+                              body: body, isVerse: false, reference: nil, button: "Open Wick")
         case .usedUp:
             return ShieldCopy(eyebrow: "Daily limit reached", title: "Enough for today.",
                               body: "Unlocks reset at midnight. Rest in what you read.", isVerse: false, reference: nil, button: "Open Wick")
@@ -107,6 +124,7 @@ enum ShieldArt {
     /// Subtitle text for the system shield: the verse with its reference, or the state message.
     static func subtitle(_ c: ShieldCopy) -> String {
         var text = c.isVerse ? "“\(c.body)”\n\(c.reference ?? "")" : c.body
+        if let hint = c.hint { text += "\n\n\(hint)" }
         // iOS lays out the shield itself, so blank lines are the only way to set the dots apart from the verse.
         if let left = c.unlocksLeft, let total = c.unlockLimit {
             text += "\n\n\n\(dots(left: left, total: total))\n\(unlocksLabel(left))"

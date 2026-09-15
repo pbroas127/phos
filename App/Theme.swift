@@ -2,15 +2,20 @@ import SwiftUI
 
 /// Morning Prayer: warm white, gold, a book serif.
 enum Theme {
-    static let paper = Color(hex: 0xFBF9F4)
-    static let card = Color.white
-    static let ink = Color(hex: 0x221D17)
-    static let dim = Color(hex: 0x8A7F71)
-    static let line = Color(hex: 0xECE5D8)
-    static let gold = Color(hex: 0xA87A22)
-    static let soft = Color(hex: 0xF3EBDB)
-    static let red = Color(hex: 0xB23A2B)
-    static let green = Color(hex: 0x2F8A57)
+    static let paper = dyn(light: 0xFBF9F4, dark: 0x17140F)
+    static let card = dyn(light: 0xFFFFFF, dark: 0x1F1B15)
+    static let ink = dyn(light: 0x221D17, dark: 0xF3EDE2)
+    static let dim = dyn(light: 0x8A7F71, dark: 0xA89C8B)
+    static let line = dyn(light: 0xECE5D8, dark: 0x3A3229)
+    static let gold = dyn(light: 0xA87A22, dark: 0xE0AE4B)
+    static let soft = dyn(light: 0xF3EBDB, dark: 0x241F18)
+    static let red = dyn(light: 0xB23A2B, dark: 0xE5484D)
+    static let green = dyn(light: 0x2F8A57, dark: 0x4CBF7A)
+
+    /// One color for light and one for dark, resolved by the system as the appearance changes.
+    static func dyn(light: UInt32, dark: UInt32) -> Color {
+        Color(uiColor: UIColor { $0.userInterfaceStyle == .dark ? UIColor(hex: dark) : UIColor(hex: light) })
+    }
 
     static func serif(_ size: CGFloat, _ weight: Font.Weight = .medium) -> Font {
         .system(size: size, weight: weight, design: .serif)
@@ -20,6 +25,12 @@ enum Theme {
 extension Color {
     init(hex: UInt32) {
         self.init(red: Double((hex >> 16) & 0xFF) / 255, green: Double((hex >> 8) & 0xFF) / 255, blue: Double(hex & 0xFF) / 255)
+    }
+}
+
+extension UIColor {
+    convenience init(hex: UInt32) {
+        self.init(red: CGFloat((hex >> 16) & 0xFF) / 255, green: CGFloat((hex >> 8) & 0xFF) / 255, blue: CGFloat(hex & 0xFF) / 255, alpha: 1)
     }
 }
 

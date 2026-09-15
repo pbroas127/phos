@@ -51,6 +51,7 @@ targets:
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         ITSAppUsesNonExemptEncryption: false
+        UIBackgroundModes: [audio]
         CFBundleURLTypes:
           - CFBundleURLName: com.peterbroas.phos
             CFBundleURLSchemes: [phos]
@@ -60,7 +61,6 @@ targets:
           UIColorName: LaunchBackground
           UIImageName: LaunchMark
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
-        UIUserInterfaceStyle: Light
     dependencies:
       - package: KokoroSwift
       - package: MLXSwift
@@ -226,7 +226,6 @@ targets:
         CFBundleDisplayName: Wick Report
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
-        UIUserInterfaceStyle: Light
         EXAppExtensionAttributes:
           EXExtensionPointIdentifier: com.apple.deviceactivityui.report-extension
 

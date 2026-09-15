@@ -35,6 +35,10 @@ final class AppModel {
     /// Locks a finished reading can open. The result screen asks whether to open them now or save them for later.
     var readyToUnlock: [LockSet] = []
     var tab = DemoScreen.startTab
+    /// Notifications are turned off, so the lock screen button cannot open Wick.
+    var notificationsDenied = false
+    /// A widget or link asked to start reading in a particular way.
+    var startMode: ReadMode?
     /// Trophy history, recomputed after readings and on refresh.
     private(set) var stats: AchievementStats
     private(set) var earned: [String: Date] = [:]
@@ -133,6 +137,46 @@ final class AppModel {
 
     // MARK: Reviews
 
+    /// Puts the model back to a first launch after every stored value was removed.
+    func resetAfterDelete() {
+        settings = AppSettings()
+        today = TodayState(dayKey: DayKey.key(for: Date(), morning: settings.schedule.morning))
+        records = []
+        reviews = []
+        earned = [:]
+        celebrating = []
+        readyToUnlock = []
+        lastUnlocked = []
+        lastAfter = nil
+        route = nil
+        tab = 0
+        stats = AchievementStats(records: [], passUses: [], usage: [:], watchedDays: [], todayKey: today.dayKey)
+    }
+
+    /// The most recently read chapters, newest first, without repeats.
+    func recentReadChapters(limit: Int) -> [ChapterRef] {
+        var seen = Set<String>()
+        var out: [ChapterRef] = []
+        for r in records.sorted(by: { $0.completedAt > $1.completedAt }) where !seen.contains(r.ref.id) {
+            seen.insert(r.ref.id)
+            out.append(r.ref)
+            if out.count == limit { break }
+        }
+        return out
+    }
+
+    struct BookProgress { let id: String; let name: String; let read: Int; let total: Int }
+
+    /// Books with at least one chapter read, in Bible order.
+    func booksWithReadings() -> [BookProgress] {
+        let ids = readIDs
+        return BookNames.order.compactMap { book in
+            let total = ReadingPlans.chapterCounts[book] ?? 0
+            let read = (1...max(1, total)).filter { ids.contains("\(book).\($0)") }.count
+            return read == 0 ? nil : BookProgress(id: book, name: BookNames.name(book), read: read, total: total)
+        }
+    }
+
     func canReview(_ ref: ChapterRef) -> Bool { settings.allowReviewUnread || readIDs.contains(ref.id) }
 
     func reviews(for ref: ChapterRef) -> [ReviewRecord] { reviews.filter { $0.scope == ref.id } }
@@ -155,12 +199,12 @@ final class AppModel {
         WidgetWriter.write(self)
     }
 
-    func choose(planID: String, index: Int) {
+    func choose(planID: String, index: Int, makeActive: Bool = true) {
         rollover()
         let p = ReadingPlans.plan(planID)
         guard p.chapters.indices.contains(index) else { return }
         let ref = p.chapters[index]
-        if settings.planID != p.id {
+        if makeActive && settings.planID != p.id {
             settings.planID = p.id
             store.settings = settings
         }
@@ -219,15 +263,37 @@ final class AppModel {
 
     func lock(_ id: String) -> LockSet? { settings.lockSets.first { $0.id == id } }
 
-    func state(_ lock: LockSet) -> LockLogic.State { LockLogic.state(lock, today: today, now: now) }
+    /// The day before today, for overnight locks whose window started last evening.
+    var yesterdayState: TodayState? { demo ? nil : store.previousDay(before: today.dayKey) }
 
-    var lockReason: LockReason { LockLogic.reason(today: today, locks: settings.lockSets, now: now) }
+    func state(_ lock: LockSet) -> LockLogic.State {
+        LockLogic.state(lock, today: today, yesterday: yesterdayState, now: now, morning: settings.schedule.morning)
+    }
+
+    var lockReason: LockReason {
+        LockLogic.reason(today: today, yesterday: yesterdayState, locks: settings.lockSets, now: now, morning: settings.schedule.morning)
+    }
 
     var lockedLocks: [LockSet] { settings.lockSets.filter { state($0).isLocked } }
 
-    var readingCheck: ReadingCheck { LockLogic.readingCheck(today: today, locks: settings.lockSets, now: now) }
+    var readingCheck: ReadingCheck {
+        LockLogic.readingCheck(today: today, yesterday: yesterdayState, locks: settings.lockSets, now: now, morning: settings.schedule.morning)
+    }
 
     var lockedCount: Int { demo ? 4 : lockedLocks.map(\.appCount).reduce(0, +) }
+
+    /// A lock's unlocks right now, from the day its window started.
+    func lockDay(_ lock: LockSet) -> LockDay {
+        LockLogic.day(for: lock, today: today, yesterday: demo ? nil : store.previousDay(before: today.dayKey), now: now,
+                      morning: settings.schedule.morning).day(lock.id)
+    }
+
+    /// "4 apps locked" or "4 apps and categories locked".
+    var lockedLabel: String {
+        let n = lockedCount
+        if lockedLocks.contains(where: { $0.categoryCount > 0 }) { return n == 1 ? "1 category" : "\(n) apps and categories" }
+        return n == 1 ? "1 app" : "\(n) apps"
+    }
 
     func passesLeft(_ lock: LockSet) -> Int { settings.passesLeft(lock, now: now) }
 
@@ -243,18 +309,23 @@ final class AppModel {
     func unlock(_ lock: LockSet, method: UnlockMethod) {
         rollover()
         let now = Date()
-        var day = today.day(lock.id)
+        // An overnight window after midnight keeps its unlocks on the day it started.
+        let previous = demo ? nil : store.previousDay(before: today.dayKey)
+        let onPrevious = LockLogic.usesPreviousDay(lock, today: today, yesterday: previous, now: now, morning: settings.schedule.morning)
+        var target = onPrevious ? (previous ?? today) : today
+        var day = target.day(lock.id)
         let end: Date
         if method == .pass {
             end = now.addingTimeInterval(15 * 60)
             day.passUntil = end
         } else {
             end = LockLogic.rewardEnd(lock, now: now)
-            day.until = max(end, day.until ?? end)
-            day.count += 1
+            // The reading itself opens a limited lock without using one of its unlocks.
+            day = LockLogic.opened(day, until: end, spendsUnlock: method != .reading)
         }
         if method == .question { today.recallCount += 1 }
-        today.unlocks[lock.id] = day
+        target.unlocks[lock.id] = day
+        if onPrevious { store.yesterday = target } else { today.unlocks[lock.id] = day }
         self.now = now
         saveToday()
         if !demo {
@@ -338,17 +409,45 @@ final class AppModel {
     /// Adding apps only makes a lock stronger, so it never needs protection.
     func addApps(to id: String, picked: FamilyActivitySelection) {
         guard let i = settings.lockSets.firstIndex(where: { $0.id == id }) else { return }
-        let merged = Blocker.union(Blocker.selection(from: settings.lockSets[i].selection), picked)
-        settings.lockSets[i].selection = Blocker.encode(merged)
-        settings.lockSets[i].appCount = Blocker.lockedCount(merged)
+        Blocker.set(Blocker.union(Blocker.selection(from: settings.lockSets[i].selection), picked), on: &settings.lockSets[i])
+        // A delayed change waiting to start gets the new apps too, so it does not remove them when it lands.
+        if let p = settings.pendingLocks.firstIndex(where: { $0.id == id && !$0.deleted }) {
+            let pending = Blocker.selection(from: settings.pendingLocks[p].lock.selection)
+            Blocker.set(Blocker.union(pending, picked), on: &settings.pendingLocks[p].lock)
+        }
         applyLocks()
     }
 
-    func checkPasscode(_ code: String, for lock: LockSet) -> Bool { Passcode.verify(code, lock.protection) }
+    /// Wrong tries in a row make the passcode wait a while. The right passcode also cancels a pending reset.
+    func checkPasscode(_ code: String, for lock: LockSet) -> Bool {
+        guard let i = settings.lockSets.firstIndex(where: { $0.id == lock.id }) else { return false }
+        var p = settings.lockSets[i].protection
+        if let until = p.lockedOutUntil, until > Date() { return false }
+        let ok = Passcode.verify(code, p)
+        if ok {
+            p.failedAttempts = 0
+            p.lockedOutUntil = nil
+            p.passcodeResetAt = nil
+        } else {
+            p.failedAttempts += 1
+            let wait = Passcode.wait(afterFailures: p.failedAttempts)
+            if wait > 0 { p.lockedOutUntil = Date().addingTimeInterval(wait) }
+        }
+        settings.lockSets[i].protection = p
+        store.settings = settings
+        return ok
+    }
 
     func forgotPasscode(_ id: String) {
         guard let i = settings.lockSets.firstIndex(where: { $0.id == id }) else { return }
         settings.lockSets[i].protection.passcodeResetAt = Date().addingTimeInterval(86_400)
+        store.settings = settings
+    }
+
+    /// Keeping the passcode only makes the lock stronger, so anyone can cancel a reset.
+    func cancelPasscodeReset(_ id: String) {
+        guard let i = settings.lockSets.firstIndex(where: { $0.id == id }) else { return }
+        settings.lockSets[i].protection.passcodeResetAt = nil
         store.settings = settings
     }
 
@@ -371,6 +470,8 @@ final class AppModel {
                 settings.lockSets[i].protection.passcodeHash = nil
                 settings.lockSets[i].protection.passcodeSalt = nil
                 settings.lockSets[i].protection.passcodeResetAt = nil
+                settings.lockSets[i].protection.failedAttempts = 0
+                settings.lockSets[i].protection.lockedOutUntil = nil
                 settings.lockSets[i].protection.kind = .none
                 changed = true
             }
@@ -379,9 +480,13 @@ final class AppModel {
             store.settings = settings
             if !demo { Blocker.registerDaily(settings: settings) }
         }
-        today = store.today(now: now, morning: settings.schedule.morning)
+        move(to: store.today(now: now, morning: settings.schedule.morning))
         records = store.records
         reviews = store.reviews
+        if !demo { authorized = AuthorizationCenter.shared.authorizationStatus == .approved }
+        let keys = Array(doneKeys).sorted()
+        if store.doneKeys != keys { store.doneKeys = keys }
+        checkNotificationPermission()
         writeSnapshot()
         if settings.onboarded && !demo { LockEngine.sync(store: store, now: now) }
         checkAchievements()
@@ -395,7 +500,7 @@ final class AppModel {
         stats = AchievementStats(records: records, passUses: settings.passUses, usage: store.usage, watchedDays: store.watchedDays,
                                  todayKey: today.dayKey, reviews: reviews, morning: settings.schedule.morning)
         var saved = store.earned
-        let firstLook = saved.isEmpty
+        let firstLook = saved.isEmpty && records.count > 1
         let new = Achievements.all.filter { saved[$0.id] == nil && $0.done(stats) }
         guard !new.isEmpty else {
             earned = saved
@@ -443,7 +548,30 @@ final class AppModel {
     /// Moves to the new day if midnight passed while Phos was open, so an unlock is saved to the day it belongs to.
     private func rollover(_ date: Date = Date()) {
         let key = DayKey.key(for: date, morning: settings.schedule.morning)
-        if today.dayKey != key { today = store.today(now: date, morning: settings.schedule.morning) }
+        if today.dayKey != key { move(to: store.today(now: date, morning: settings.schedule.morning)) }
+    }
+
+    /// Switches to another day's state. The day that just ended is kept, so an overnight lock still sees the reading
+    /// and unlocks from the evening its window started.
+    private func move(to fresh: TodayState) {
+        if fresh.dayKey != today.dayKey, today.dayKey == DayKey.adding(-1, to: fresh.dayKey), !demo {
+            store.yesterday = today
+        }
+        today = fresh
+    }
+
+    private func checkNotificationPermission() {
+        guard !demo else { return }
+        UNUserNotificationCenter.current().getNotificationSettings { s in
+            let denied = s.authorizationStatus == .denied
+            DispatchQueue.main.async {
+                guard denied != self.notificationsDenied || self.store.snapshot.notificationsDenied != denied else { return }
+                self.notificationsDenied = denied
+                var snap = self.store.snapshot
+                snap.notificationsDenied = denied
+                self.store.snapshot = snap
+            }
+        }
     }
 
     private func saveToday() {
@@ -467,12 +595,33 @@ final class AppModel {
         case "read":
             tab = 0
             if !today.readingDone && route == nil { route = .reading }
+        case "listen":
+            tab = 0
+            if route == nil {
+                startMode = .listen
+                route = .reading
+            }
         case "progress", "journal", "streak": tab = 1
         case "locks", "settings": tab = 2
         case "trophies": tab = 3
         default: tab = 0
         }
         routeFromLock()
+    }
+
+    /// A tapped notification says where it wants to go: "read" opens today's reading, "unlock" opens the unlock screen.
+    func routeFromNotification(_ target: String?) {
+        refresh()
+        guard settings.onboarded, !demo, route == nil else { return }
+        switch target {
+        case "read":
+            tab = 0
+            route = today.readingDone ? (lockReason == .none ? nil : .unlock) : .reading
+        case "unlock":
+            route = .unlock
+        default:
+            routeFromLock()
+        }
     }
 
     func routeFromLock() {
@@ -550,11 +699,21 @@ final class AppModel {
         readyToUnlock = []
     }
 
-    func completeReading(ref: ChapterRef, readMode: ReadMode, reflectMode: ReflectMode, reflection: String, score: Int, total: Int) -> PathLogic.After? {
+    func completeReading(ref: ChapterRef, readMode: ReadMode, reflectMode: ReflectMode, reflection: String, score: Int, total: Int,
+                         audioFile: String? = nil) -> PathLogic.After? {
         rollover()
+        // A chapter started before the day ended and finished soon after counts for the day it started,
+        // so reading past midnight never breaks a streak.
+        var grace: TodayState?
+        if let prev = store.previousDay(before: today.dayKey), !prev.readingDone, prev.chapter == ref,
+           let started = prev.readingStartedAt, Date().timeIntervalSince(started) < 3 * 3600,
+           today.readingStartedAt == nil || today.readingStartedAt! >= started {
+            grace = prev
+        }
         var contextPlan: ReadingPlan?
         var contextIndex: Int?
-        if let id = today.contextPlanID, let i = today.contextIndex, ReadingPlans.plan(id).chapters.indices.contains(i),
+        let context = grace ?? today
+        if let id = context.contextPlanID, let i = context.contextIndex, ReadingPlans.plan(id).chapters.indices.contains(i),
            ReadingPlans.plan(id).chapters[i] == ref {
             contextPlan = ReadingPlans.plan(id)
             contextIndex = i
@@ -566,11 +725,11 @@ final class AppModel {
             contextIndex = i
         }
 
-        let seconds = Int(Date().timeIntervalSince(today.readingStartedAt ?? Date()))
-        let record = DayRecord(dayKey: today.dayKey, ref: ref, title: BookNames.title(ref), readMode: readMode,
+        let seconds = Int(Date().timeIntervalSince(context.readingStartedAt ?? today.readingStartedAt ?? Date()))
+        let record = DayRecord(dayKey: context.dayKey, ref: ref, title: BookNames.title(ref), readMode: readMode,
                                reflectMode: reflectMode, reflection: reflection, score: score, total: total,
                                completedAt: Date(), readingSeconds: max(0, seconds), fromPlan: contextPlan != nil,
-                               misses: today.missesToday)
+                               misses: context.missesToday, audioFile: audioFile)
         var all = store.records
         all.append(record)
         store.records = all
@@ -584,8 +743,16 @@ final class AppModel {
             after = result
         }
         let waiting = settings.lockSets.filter { [.needsReading, .needsQuestion, .needsTap].contains(state($0)) }
-        today.readingDone = true
-        today.chapter = ref
+        if var y = grace {
+            // The reading belongs to yesterday. Today still has its own chapter to read.
+            y.readingDone = true
+            y.readingStartedAt = nil
+            if !demo { store.yesterday = y }
+            if today.chapter == ref { today.chapter = nil }
+        } else {
+            today.readingDone = true
+            today.chapter = ref
+        }
         today.contextPlanID = nil
         today.contextIndex = nil
         today.readingStartedAt = nil

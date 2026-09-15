@@ -605,20 +605,63 @@ final class ReminderTests: XCTestCase {
     func testEveryTemplateFillsAndHasNoDashes() {
         var c = Reminders.Context(kind: .keepStreak)
         c.streak = 1; c.next = 2; c.days = 3; c.chapter = "John 4"; c.title = "Living Water"; c.plan = "John"
-        c.left = 1; c.apps = 1; c.trophy = "Month of Light"; c.total = 1
-        for kind in Reminders.Kind.allCases {
-            let list = Reminders.templates[kind] ?? []
-            XCTAssertFalse(list.isEmpty, kind.rawValue)
-            for i in list.indices {
-                c.kind = kind
-                let m = Reminders.message(c, seed: i)
-                for text in [m.title, m.body] {
-                    XCTAssertFalse(text.contains("{"), text)
-                    XCTAssertFalse(text.contains("-") || text.contains("\u{2014}") || text.contains("\u{2013}"), text)
-                    XCTAssertFalse(text.contains("1 days") || text.contains("1 chapters") || text.contains("1 apps"), text)
+        c.left = 1; c.apps = 1; c.trophy = "Month of Light"; c.total = 1; c.trophyLeft = 2
+        for tone in ReminderTone.allCases {
+            c.tone = tone
+            for kind in Reminders.Kind.allCases {
+                let list = Reminders.templates(tone)[kind] ?? []
+                XCTAssertFalse(list.isEmpty, kind.rawValue)
+                for t in list {
+                    for text in [Reminders.fill(t.title, c), Reminders.fill(t.body, c)] {
+                        XCTAssertFalse(text.contains("{"), text)
+                        XCTAssertFalse(text.contains("-") || text.contains("\u{2014}") || text.contains("\u{2013}"), text)
+                        XCTAssertFalse(text.contains("1 days") || text.contains("1 chapters") || text.contains("1 apps") || text.contains("1 app are"), text)
+                    }
                 }
             }
         }
+    }
+
+    func testGentleHasNoEmojiOrStreakPressure() {
+        let pressure = ["at risk", "break the chain", "misses you", "Say less", "seen things", "o'clock"]
+        for (_, list) in Reminders.templates(.gentle) {
+            for t in list {
+                for text in [t.title, t.body] {
+                    XCTAssertFalse(text.unicodeScalars.contains { $0.properties.isEmojiPresentation }, text)
+                    for word in pressure { XCTAssertFalse(text.localizedCaseInsensitiveContains(word), text) }
+                }
+            }
+        }
+        for (_, list) in Reminders.templates(.playful) {
+            for t in list {
+                for word in pressure { XCTAssertFalse((t.title + t.body).localizedCaseInsensitiveContains(word), t.title) }
+            }
+        }
+    }
+
+    func testMorningReminderNeverSaysTonight() {
+        for tone in ReminderTone.allCases {
+            for kind in Reminders.Kind.allCases {
+                for t in Reminders.candidates(kind, tone: tone, hour: 6) {
+                    let text = (t.title + " " + t.body).lowercased()
+                    XCTAssertFalse(text.contains("tonight") || text.contains("before bed") || text.contains("big night"), t.title)
+                }
+                for t in Reminders.candidates(kind, tone: tone, hour: 20) {
+                    XCTAssertFalse((t.title + " " + t.body).lowercased().contains("morning"), t.title)
+                }
+            }
+        }
+    }
+
+    func testTrophyLeftAndDeadlineFill() {
+        var c = Reminders.Context(kind: .trophyClose)
+        c.trophy = "Month of Light"; c.left = 18; c.trophyLeft = 2; c.chapter = "John 4"; c.apps = 1
+        c.resetsAtMidnight = false
+        XCTAssertEqual(Reminders.fill("Just {trophyLeft} more", c), "Just 2 more")
+        XCTAssertEqual(Reminders.fill("{appsWaiting} on you", c), "1 app is waiting on you")
+        XCTAssertEqual(Reminders.fill("Read {deadline}", c), "Read before your day resets")
+        let planned = Reminders.plan(input(readToday: false, streak: 6, last: "2026-09-13"))
+        XCTAssertEqual(planned.first!.context.trophyLeft, 2)
     }
 }
 
@@ -653,5 +696,127 @@ final class ReviewTests: XCTestCase {
         XCTAssertEqual(s.reviewedChapters.count, 3)
         XCTAssertEqual(s.perfectBookReviews, 1)
         XCTAssertEqual(s.booksFullyReviewed, 1)
+    }
+}
+
+final class LockScheduleTests: XCTestCase {
+    var cal: Calendar = {
+        var c = Calendar(identifier: .gregorian)
+        c.timeZone = TimeZone(identifier: "America/Chicago")!
+        return c
+    }()
+
+    func date(_ day: Int, _ hour: Int, _ minute: Int = 0) -> Date {
+        cal.date(from: DateComponents(year: 2026, month: 9, day: day, hour: hour, minute: minute))!
+    }
+
+    func lock(_ policy: UnlockPolicy) -> LockSet {
+        var l = LockSet()
+        l.id = "night"
+        l.name = "Night"
+        l.policy = policy
+        l.appCount = 3
+        return l
+    }
+
+    func testReadingOpensALimitedLockWithoutUsingAnUnlock() {
+        var limited = lock(.limited)
+        limited.limit = 1
+        let noon = date(12, 12)
+        var today = TodayState(dayKey: "2026-09-12")
+        today.readingDone = true
+        today.unlocks[limited.id] = LockLogic.opened(LockDay(), until: noon.addingTimeInterval(600), spendsUnlock: false)
+        XCTAssertEqual(today.day(limited.id).count, 0)
+        XCTAssertEqual(LockLogic.state(limited, today: today, now: noon, calendar: cal), .open)
+        // After the reading's unlock ends, the one daily unlock is still there.
+        XCTAssertEqual(LockLogic.state(limited, today: today, now: noon.addingTimeInterval(700), calendar: cal), .needsTap)
+        today.unlocks[limited.id] = LockLogic.opened(today.day(limited.id), until: noon.addingTimeInterval(1400), spendsUnlock: true)
+        XCTAssertEqual(today.day(limited.id).count, 1)
+        XCTAssertEqual(LockLogic.state(limited, today: today, now: noon.addingTimeInterval(1500), calendar: cal), .usedUp)
+    }
+
+    func testStrictLocksSayWhenTheyOpenAgain() {
+        var strict = lock(.strict)
+        XCTAssertNil(LockLogic.reopens(strict, now: date(11, 12), calendar: cal))
+        XCTAssertNil(LockLogic.reopenPhrase(strict, now: date(11, 12), calendar: cal))
+        // Sept 11 2026 is a Friday. A weekday lock opens again tomorrow, Saturday.
+        strict.days = [2, 3, 4, 5, 6]
+        XCTAssertEqual(LockLogic.reopens(strict, now: date(11, 12), calendar: cal), date(12, 0))
+        XCTAssertEqual(LockLogic.reopenPhrase(strict, now: date(11, 12), calendar: cal), "tomorrow")
+        // Wednesday Sept 9, every day but Sunday: opens again Sunday.
+        strict.days = [2, 3, 4, 5, 6, 7]
+        XCTAssertEqual(LockLogic.reopens(strict, now: date(9, 12), calendar: cal), date(13, 0))
+        XCTAssertEqual(LockLogic.reopenPhrase(strict, now: date(9, 12), calendar: cal), cal.weekdaySymbols[0])
+        strict.allDay = false
+        strict.start = TimeOfDay(hour: 22, minute: 0)
+        strict.end = TimeOfDay(hour: 6, minute: 0)
+        XCTAssertEqual(LockLogic.reopens(strict, now: date(9, 23), calendar: cal), date(10, 6))
+        XCTAssertTrue(LockLogic.reopenPhrase(strict, now: date(9, 23), calendar: cal)?.hasPrefix("at ") == true)
+    }
+
+    func testOpenOnlyHoursLockTheRestOfTheDay() {
+        var evenings = lock(.questionEach)
+        evenings.allDay = false
+        evenings.openWindow = true
+        // Open 6 PM to 9 PM is stored as locked 9 PM to 6 PM.
+        evenings.start = TimeOfDay(hour: 21, minute: 0)
+        evenings.end = TimeOfDay(hour: 18, minute: 0)
+        XCTAssertTrue(LockLogic.isActive(evenings, now: date(12, 12), calendar: cal))
+        XCTAssertFalse(LockLogic.isActive(evenings, now: date(12, 19), calendar: cal))
+        XCTAssertTrue(LockLogic.isActive(evenings, now: date(12, 22), calendar: cal))
+        XCTAssertTrue(LockLogic.isActive(evenings, now: date(13, 3), calendar: cal))
+        XCTAssertTrue(evenings.hoursLabel.hasPrefix("Open "))
+        XCTAssertEqual(1440 - evenings.windowMinutes, 180)
+    }
+
+    func testOvernightLockKeepsItsUnlocksAcrossMidnight() {
+        var night = lock(.limited)
+        night.limit = 3
+        night.rewardSeconds = LockSet.untilEnd
+        night.allDay = false
+        night.start = TimeOfDay(hour: 21, minute: 0)
+        night.end = TimeOfDay(hour: 7, minute: 0)
+
+        // Read and unlocked at 9:30 PM on Saturday Sept 12, until the lock ends at 7 AM.
+        let unlockedAt = date(12, 21, 30)
+        let end = LockLogic.rewardEnd(night, now: unlockedAt, calendar: cal)
+        XCTAssertEqual(end, date(13, 7))
+        var evening = TodayState(dayKey: "2026-09-12")
+        evening.readingDone = true
+        evening.unlocks[night.id] = LockLogic.opened(LockDay(), until: end, spendsUnlock: true)
+
+        // Past midnight the app has a fresh day, but the lock still belongs to the evening it started.
+        let fresh = TodayState(dayKey: "2026-09-13")
+        let halfPastMidnight = date(13, 0, 30)
+        XCTAssertTrue(LockLogic.usesPreviousDay(night, today: fresh, yesterday: evening, now: halfPastMidnight, calendar: cal))
+        XCTAssertEqual(LockLogic.state(night, today: fresh, yesterday: evening, now: halfPastMidnight, calendar: cal), .open)
+        XCTAssertEqual(LockLogic.state(night, today: fresh, yesterday: nil, now: halfPastMidnight, calendar: cal), .needsReading)
+
+        // The count carries too: 3 used in the evening means none left after midnight.
+        var used = evening
+        var day = LockDay()
+        day.count = 3
+        used.unlocks[night.id] = day
+        XCTAssertEqual(LockLogic.state(night, today: fresh, yesterday: used, now: halfPastMidnight, calendar: cal), .usedUp)
+
+        // Once the window ends, the new day is used.
+        XCTAssertFalse(LockLogic.usesPreviousDay(night, today: fresh, yesterday: used, now: date(13, 12), calendar: cal))
+        XCTAssertEqual(LockLogic.state(night, today: fresh, yesterday: used, now: date(13, 22), calendar: cal), .needsReading)
+    }
+
+    func testPasscodeWaitsAfterWrongTries() {
+        XCTAssertEqual(Passcode.wait(afterFailures: 4), 0)
+        XCTAssertEqual(Passcode.wait(afterFailures: 5), 60)
+        XCTAssertEqual(Passcode.wait(afterFailures: 9), 0)
+        XCTAssertEqual(Passcode.wait(afterFailures: 10), 900)
+        XCTAssertEqual(Passcode.wait(afterFailures: 15), 900)
+    }
+
+    func testShortUnlocksMigrateToFiveMinutes() throws {
+        var old = LockSet()
+        old.rewardSeconds = 30
+        let data = try JSONEncoder().encode(old)
+        XCTAssertEqual(try JSONDecoder().decode(LockSet.self, from: data).rewardSeconds, 300)
+        XCTAssertFalse(LockSet.rewardChoices.contains(30))
     }
 }

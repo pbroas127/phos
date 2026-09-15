@@ -2,12 +2,20 @@ import AVFoundation
 import Speech
 import SwiftUI
 
+/// The microphone level on its own, so the chapter text does not redraw with every audio buffer.
+final class LevelMeter: ObservableObject {
+    @Published var level: Double = 0
+}
+
 /// Listens while someone reads the chapter aloud and moves a highlight through the words.
 final class PassageListener: ObservableObject {
     @Published private(set) var along: ReadAlong
     @Published var listening = false
-    @Published var level: Double = 0
     @Published var problem: String?
+    /// True when recognition needs a connection this iPhone does not have right now.
+    @Published var offline = false
+    let meter = LevelMeter()
+    private var errorStreak = 0
 
     private let engine = AVAudioEngine()
     private let recognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))
@@ -36,13 +44,15 @@ final class PassageListener: ObservableObject {
     func start() {
         guard !listening else { return }
         problem = nil
+        offline = false
+        errorStreak = 0
         guard recognizer?.isAvailable == true else {
             problem = "Speech recognition is not available right now. Try again in a moment."
             return
         }
         do {
             let session = AVAudioSession.sharedInstance()
-            try session.setCategory(.record, mode: .measurement, options: .duckOthers)
+            try session.setCategory(.record, mode: .measurement, options: [.duckOthers, .allowBluetooth])
             try session.setActive(true, options: .notifyOthersOnDeactivation)
             begin()
             let input = engine.inputNode
@@ -72,7 +82,7 @@ final class PassageListener: ObservableObject {
         request = nil
         task = nil
         listening = false
-        level = 0
+        meter.level = 0
         along.beginSegment()
         try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
     }
@@ -102,10 +112,21 @@ final class PassageListener: ObservableObject {
             DispatchQueue.main.async {
                 guard let self, gen == self.generation else { return }
                 if let result {
+                    self.errorStreak = 0
+                    self.offline = false
                     self.along.update(transcript: result.bestTranscription.formattedString)
                     if self.along.finished { self.stop(); return }
                     if result.isFinal && self.listening { self.begin() }
                 } else if error != nil && self.listening {
+                    self.errorStreak += 1
+                    // Without on device recognition, every attempt fails while there is no connection. Stop after three
+                    // in a row instead of retrying forever with "Listening" on screen.
+                    if self.errorStreak >= 3 && self.recognizer?.supportsOnDeviceRecognition != true {
+                        self.offline = true
+                        self.problem = "Read aloud needs a connection on this iPhone right now. Connect to WiFi or try Read in Wick."
+                        self.stop()
+                        return
+                    }
                     // A pause or a hiccup ends the task. Keep listening from the same spot after a short beat.
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
                         if gen == self.generation && self.listening { self.begin() }
@@ -120,7 +141,7 @@ final class PassageListener: ObservableObject {
         var sum: Float = 0
         for i in 0..<Int(buffer.frameLength) { sum += data[i] * data[i] }
         let rms = (sum / Float(buffer.frameLength)).squareRoot()
-        DispatchQueue.main.async { self.level = Double(min(1, rms * 12)) }
+        DispatchQueue.main.async { self.meter.level = Double(min(1, rms * 12)) }
     }
 }
 
@@ -197,7 +218,11 @@ struct SpeakRead: View {
             HStack(spacing: 10) {
                 Circle().fill(listener.listening ? Theme.green : Theme.line).frame(width: 9, height: 9)
                 Text(listener.listening ? "Listening" : "Paused").font(.subheadline.weight(.semibold)).foregroundStyle(Theme.ink)
-                LevelBars(level: listener.level, active: listener.listening)
+                LevelBars(meter: listener.meter, active: listener.listening)
+                if listener.offline {
+                    Text("Offline").font(.caption2.weight(.semibold)).foregroundStyle(Theme.red)
+                        .padding(.horizontal, 7).padding(.vertical, 3).background(Theme.red.opacity(0.1), in: Capsule())
+                }
                 Spacer()
                 Text("\(along.heardAll.count) of \(along.words.count) words").font(.caption.monospacedDigit()).foregroundStyle(Theme.dim)
             }
@@ -277,10 +302,11 @@ struct SpeakRead: View {
 }
 
 private struct LevelBars: View {
-    let level: Double
+    @ObservedObject var meter: LevelMeter
     let active: Bool
 
     var body: some View {
+        let level = meter.level
         HStack(spacing: 2) {
             ForEach(0..<5, id: \.self) { i in
                 Capsule()
@@ -288,6 +314,6 @@ private struct LevelBars: View {
                     .frame(width: 3, height: CGFloat(6 + i * 3))
             }
         }
-        .animation(.easeOut(duration: 0.12), value: level)
+        .animation(.easeOut(duration: 0.12), value: meter.level)
     }
 }

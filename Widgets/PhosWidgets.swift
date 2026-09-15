@@ -13,21 +13,24 @@ struct WickEntry<Config>: TimelineEntry {
     let revealed: Bool
 }
 
-private func loadData(preview: Bool) -> WidgetData {
+private func loadData(preview: Bool, at date: Date) -> WidgetData {
     let store = SharedStore.shared
-    return preview && !store.hasWidgetData ? .placeholder : store.widgetData
+    return preview && !store.hasWidgetData ? .placeholder : store.widgetData.current(now: date)
 }
 
-private func makeEntry<C>(_ config: C, preview: Bool) -> WickEntry<C> {
-    WickEntry(date: Date(), data: loadData(preview: preview), config: config,
-              verseOffset: WidgetData.verseOffset, trophyOffset: WidgetData.trophyOffset, revealed: WidgetData.memoryRevealed)
+private func makeEntry<C>(_ config: C, preview: Bool, at date: Date = Date()) -> WickEntry<C> {
+    let data = loadData(preview: preview, at: date)
+    if !preview { WidgetData.resetDailyState(for: data.dayKey) }
+    return WickEntry(date: date, data: data, config: config,
+                     verseOffset: WidgetData.verseOffset, trophyOffset: WidgetData.trophyOffset, revealed: WidgetData.memoryRevealed)
 }
 
-/// Widgets redraw when the app writes new data. This only keeps the day and hour labels honest in between.
+/// Widgets redraw when the app writes new data. In between they refresh hourly and right when a new day starts.
 private func nextRefresh(after date: Date) -> Date {
     let cal = Calendar.current
     let hour = cal.nextDate(after: date, matching: DateComponents(minute: 0), matchingPolicy: .nextTime) ?? date.addingTimeInterval(3600)
-    return min(hour, date.addingTimeInterval(3600))
+    let dayStart = SharedStore.shared.widgetData.nextDayStart(after: date) ?? hour
+    return min(hour, dayStart, date.addingTimeInterval(3600))
 }
 
 struct WickProvider<Config: WidgetConfigurationIntent>: AppIntentTimelineProvider {
@@ -172,9 +175,15 @@ private struct UnlockDots: View {
     let total: Int
     let c: W
     var body: some View {
-        HStack(spacing: 4) {
-            ForEach(0..<min(total, 10), id: \.self) { i in
-                Circle().fill(i < left ? c.gold : .clear).overlay(Circle().strokeBorder(c.gold.opacity(0.6), lineWidth: 1)).frame(width: 7, height: 7)
+        // Up to 20 dots, in rows of 10.
+        let shown = min(total, 20)
+        VStack(alignment: .leading, spacing: 3) {
+            ForEach(0..<((shown + 9) / 10), id: \.self) { row in
+                HStack(spacing: 4) {
+                    ForEach((row * 10)..<min(shown, row * 10 + 10), id: \.self) { i in
+                        Circle().fill(i < left ? c.gold : .clear).overlay(Circle().strokeBorder(c.gold.opacity(0.6), lineWidth: 1)).frame(width: 7, height: 7)
+                    }
+                }
             }
         }
     }
@@ -206,8 +215,23 @@ private struct IntentButton<I: AppIntent, Label: View>: View {
     }
 
     var body: some View {
-        Button(intent: intent) { label.foregroundStyle(c.ink).frame(width: 30, height: 30).background(c.soft, in: Circle()) }
+        Button(intent: intent) {
+            label.foregroundStyle(c.ink).frame(width: 36, height: 36).background(c.soft, in: Circle())
+                .frame(width: 44, height: 44).contentShape(Rectangle())
+        }
             .buttonStyle(.plain)
+    }
+}
+
+/// Opens Wick straight into listening to today's chapter.
+private struct ListenPill: View {
+    let c: W
+    var body: some View {
+        Link(destination: URL(string: "phos://listen")!) {
+            Label("Listen", systemImage: "headphones")
+                .font(.caption.weight(.semibold)).foregroundStyle(c.paper)
+                .padding(.horizontal, 10).padding(.vertical, 6).background(c.ink, in: Capsule())
+        }
     }
 }
 
@@ -258,12 +282,16 @@ struct TodayView: View {
                 }
                 Spacer(minLength: 0)
             }
-            if o.showLocks {
-                HStack(spacing: 4) {
-                    Image(systemName: d.readToday ? "checkmark.circle.fill" : "lock.fill")
-                    Text(d.readToday ? "Apps earned" : (d.lockedApps == 0 ? "Nothing locked" : "\(d.lockedApps) locked"))
+            HStack {
+                if o.showLocks {
+                    HStack(spacing: 4) {
+                        Image(systemName: d.readToday ? "checkmark.circle.fill" : "lock.fill")
+                        Text(d.readToday ? "Apps earned" : (d.lockedApps == 0 ? "Nothing locked" : "\(d.lockedApps) locked"))
+                    }
+                    .font(.caption).foregroundStyle(d.readToday ? c.gold : c.dim)
                 }
-                .font(.caption).foregroundStyle(d.readToday ? c.gold : c.dim)
+                Spacer(minLength: 0)
+                if family != .systemSmall && !d.readToday { ListenPill(c: c) }
             }
             if o.showPlan && d.planTotal > 0 {
                 if family != .systemSmall {
@@ -293,9 +321,10 @@ struct VerseView: View {
                 .minimumScaleFactor(0.7).lineSpacing(family == .systemSmall ? 1 : 3)
                 .frame(maxWidth: .infinity, alignment: .leading)
             Spacer(minLength: 0)
-            HStack {
+            HStack(spacing: 8) {
                 Text(v.ref).font(.caption.weight(.semibold)).foregroundStyle(c.gold)
                 Spacer()
+                if family != .systemSmall && !d.readToday { ListenPill(c: c) }
                 if o.shuffle {
                     IntentButton(intent: ShuffleVerseIntent(), c: c) { Image(systemName: "arrow.2.squarepath").font(.caption.weight(.semibold)) }
                 }
@@ -463,7 +492,8 @@ struct LocksView: View {
 
     var body: some View {
         let d = entry.data, o = entry.config, c = W.palette(o.look, scheme)
-        let chosen = o.lock.flatMap { pick in d.locks.first { $0.name == pick.name } }
+        // Locks are followed by id so a rename keeps working. Widgets set up before ids existed stored the name.
+        let chosen = o.lock.flatMap { pick in d.locks.first { $0.id == pick.id } ?? d.locks.first { $0.name == pick.id } }
         VStack(alignment: .leading, spacing: 6) {
             if let lock = chosen {
                 HStack {
@@ -525,7 +555,11 @@ struct TrophyView: View {
 
     var body: some View {
         let d = entry.data, o = entry.config, c = W.palette(o.look, scheme)
-        let list: [WidgetData.Trophy] = o.pick == .latest ? [d.lastEarned].compactMap { $0 } : d.trophies
+        let list: [WidgetData.Trophy] = switch o.pick {
+        case .latest: [d.lastEarned].compactMap { $0 }
+        case .pinned: d.trophies
+        case .closest: d.closest.isEmpty ? d.trophies : d.closest
+        }
         VStack(alignment: .leading, spacing: 6) {
             HStack {
                 Eyebrow(text: o.pick == .latest ? "Last earned" : "Almost there", c: c)

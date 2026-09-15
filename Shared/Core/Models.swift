@@ -211,6 +211,9 @@ struct LockProtection: Codable, Hashable {
     var commitUntil: Date?
     /// While this lock is on, iOS blocks deleting apps.
     var blockDeletion = false
+    /// Wrong passcode tries in a row, and when the next try is allowed.
+    var failedAttempts = 0
+    var lockedOutUntil: Date?
 
     init() {}
 
@@ -225,15 +228,31 @@ struct LockProtection: Codable, Hashable {
         delayHours = (try? c.decode(Int.self, forKey: .delayHours)) ?? d.delayHours
         commitUntil = try? c.decode(Date.self, forKey: .commitUntil)
         blockDeletion = (try? c.decode(Bool.self, forKey: .blockDeletion)) ?? d.blockDeletion
+        failedAttempts = (try? c.decode(Int.self, forKey: .failedAttempts)) ?? d.failedAttempts
+        lockedOutUntil = try? c.decode(Date.self, forKey: .lockedOutUntil)
     }
 
     var hasPasscode: Bool { passcodeHash != nil }
+
+    /// Reads after "Protected by".
+    var protectedBy: String {
+        switch kind {
+        case .none: return "nothing"
+        case .passcode: return "a passcode"
+        case .countdown: return countdownMinutes == 1 ? "a 1 minute wait" : "a \(countdownMinutes) minute wait"
+        case .delay: return delayHours == 1 ? "a 1 hour delay" : "a \(delayHours) hour delay"
+        case .commitment:
+            guard let u = commitUntil else { return "a commitment" }
+            return "a commitment until \(u.formatted(.dateTime.month(.abbreviated).day()))"
+        case .afterReading: return "reading first"
+        }
+    }
 
     var summary: String {
         switch kind {
         case .none: return "No protection"
         case .passcode: return "Passcode"
-        case .countdown: return "\(countdownMinutes) min timer"
+        case .countdown: return "\(countdownMinutes) minute wait"
         case .delay: return "\(delayHours) hour delay"
         case .commitment:
             guard let u = commitUntil else { return "Commitment" }
@@ -245,7 +264,7 @@ struct LockProtection: Codable, Hashable {
 
 struct LockSet: Codable, Identifiable, Hashable {
     static let untilEnd = -1
-    static let rewardChoices = [30, 60, 300, 600, 900, 1800, 3600, 7200, untilEnd]
+    static let rewardChoices = [300, 600, 900, 1800, 3600, 7200, untilEnd]
 
     var id = UUID().uuidString
     var name = ""
@@ -258,6 +277,11 @@ struct LockSet: Codable, Identifiable, Hashable {
     var allDay = true
     var start = TimeOfDay(hour: 21, minute: 0)
     var end = TimeOfDay(hour: 7, minute: 0)
+    /// Set when the person picked the hours the apps are open. start and end still hold the locked window,
+    /// so a lock open 6 PM to 9 PM is stored as locked 9 PM to 6 PM.
+    var openWindow = false
+    /// How many of appCount are whole categories, for honest wording.
+    var categoryCount = 0
     var policy: UnlockPolicy = .questionEach
     var limit = 5
     var limitNeedsQuestion = false
@@ -281,9 +305,13 @@ struct LockSet: Codable, Identifiable, Hashable {
         days = (try? c.decode(Set<Int>.self, forKey: .days)) ?? d.days
         start = (try? c.decode(TimeOfDay.self, forKey: .start)) ?? d.start
         end = (try? c.decode(TimeOfDay.self, forKey: .end)) ?? d.end
+        openWindow = (try? c.decode(Bool.self, forKey: .openWindow)) ?? d.openWindow
+        categoryCount = (try? c.decode(Int.self, forKey: .categoryCount)) ?? d.categoryCount
         limit = (try? c.decode(Int.self, forKey: .limit)) ?? d.limit
         limitNeedsQuestion = (try? c.decode(Bool.self, forKey: .limitNeedsQuestion)) ?? d.limitNeedsQuestion
         rewardSeconds = (try? c.decode(Int.self, forKey: .rewardSeconds)) ?? d.rewardSeconds
+        // 30 and 60 second unlocks were removed: Screen Time cannot relock that precisely.
+        if rewardSeconds != LockSet.untilEnd && rewardSeconds < 300 { rewardSeconds = 300 }
         reading = (try? c.decode(ReadingCheck.self, forKey: .reading)) ?? d.reading
         emergencyPasses = (try? c.decode(Int.self, forKey: .emergencyPasses)) ?? d.emergencyPasses
         protection = (try? c.decode(LockProtection.self, forKey: .protection)) ?? d.protection
@@ -321,7 +349,18 @@ struct LockSet: Codable, Identifiable, Hashable {
         return m % 60 == 0 ? (m == 60 ? "1 hour" : "\(m / 60) hours") : "\(m / 60) hr \(m % 60) min"
     }
 
-    var hoursLabel: String { allDay ? "All day" : "\(start.label) to \(end.label)" }
+    var hoursLabel: String {
+        if allDay { return "All day" }
+        return openWindow ? "Open \(end.label) to \(start.label)" : "\(start.label) to \(end.label)"
+    }
+
+    /// "4 apps", "1 category", "4 apps and categories".
+    var appsLabel: String {
+        if categoryCount > 0 {
+            return appCount == 1 ? "1 category" : "\(appCount) apps and categories"
+        }
+        return appCount == 1 ? "1 app" : "\(appCount) apps"
+    }
 
     var daysLabel: String {
         if days.count == 7 { return "Every day" }
@@ -341,8 +380,8 @@ struct LockSet: Codable, Identifiable, Hashable {
     }
 
     var summary: String {
-        let apps = appCount == 1 ? "1 app" : "\(appCount) apps"
-        return "\(hoursLabel) · \(policyLabel) · \(apps)"
+        let parts = [days.count == 7 ? nil : daysLabel, hoursLabel, policyLabel, appsLabel]
+        return parts.compactMap { $0 }.joined(separator: " · ")
     }
 
     /// Length of the scheduled window in minutes. Equal start and end means all 24 hours.
@@ -376,10 +415,29 @@ enum ShieldStyle: String, Codable, CaseIterable, Identifiable {
     }
 }
 
+enum ReminderTone: String, Codable, CaseIterable, Identifiable {
+    case gentle, playful
+    var id: String { rawValue }
+    var title: String { self == .gentle ? "Gentle" : "Playful" }
+}
+
 enum ShieldTheme: String, Codable, CaseIterable, Identifiable {
     case dark, light
     var id: String { rawValue }
     var title: String { self == .dark ? "Night" : "Ivory" }
+}
+
+/// Whether the app follows the iPhone's appearance or picks one.
+enum AppAppearance: String, Codable, CaseIterable, Identifiable {
+    case system, light, dark
+    var id: String { rawValue }
+    var title: String {
+        switch self {
+        case .system: return "Match iPhone"
+        case .light: return "Light"
+        case .dark: return "Dark"
+        }
+    }
 }
 
 enum ReadMode: String, Codable, CaseIterable, Identifiable {
@@ -447,6 +505,8 @@ struct DayRecord: Codable, Identifiable, Hashable {
     var fromPlan: Bool
     /// Quizzes missed that day before this one passed.
     var misses: Int? = nil
+    /// Recording of a spoken reflection, a file name under Documents/Reflections.
+    var audioFile: String? = nil
 }
 
 /// A quiz taken on its own after reading. Never opens apps or counts toward the streak.
@@ -533,6 +593,13 @@ struct ReadingDraft: Codable, Equatable {
     /// Read it aloud progress: words heard and the furthest word reached.
     var aloudHeard: [Int] = []
     var aloudCursor = 0
+    /// Listen progress: the verse to resume at and the verses that played all the way through.
+    var listenVerse = 0
+    var listenPlayed: [Int] = []
+    /// True after "I already read it", so going back from reflecting returns to the reading choice.
+    var skippedRead = false
+    /// Recording of a spoken reflection, a file name under Documents/Reflections.
+    var audioFile: String? = nil
 
     init(dayKey: String, ref: ChapterRef) {
         self.dayKey = dayKey
@@ -556,6 +623,10 @@ struct ReadingDraft: Codable, Equatable {
         failed = (try? c.decode(Bool.self, forKey: .failed)) ?? false
         aloudHeard = (try? c.decode([Int].self, forKey: .aloudHeard)) ?? []
         aloudCursor = (try? c.decode(Int.self, forKey: .aloudCursor)) ?? 0
+        listenVerse = (try? c.decode(Int.self, forKey: .listenVerse)) ?? 0
+        listenPlayed = (try? c.decode([Int].self, forKey: .listenPlayed)) ?? []
+        skippedRead = (try? c.decode(Bool.self, forKey: .skippedRead)) ?? false
+        audioFile = try? c.decode(String.self, forKey: .audioFile)
     }
 
     /// The step to reopen at. Reading timers never resume, so a partly read chapter starts reading again.
@@ -564,7 +635,7 @@ struct ReadingDraft: Codable, Equatable {
         switch step {
         case .mode: return .mode
         // Reading out loud saves word by word, so it picks up right where it stopped.
-        case .read: return readMode == .speak && aloudCursor > 0 ? .read : .mode
+        case .read: return (readMode == .speak && aloudCursor > 0) || (readMode == .listen && listenVerse > 0) ? .read : .mode
         default: return step
         }
     }
@@ -592,16 +663,23 @@ struct AppSettings: Codable, Equatable {
     var preferredReflect: ReflectMode = .typed
     /// Read aloud voice: kokoro:<name>, system:<identifier>, or empty for the best iPhone voice.
     var voiceID = ""
+    /// Listening speed, 1 is normal.
+    var voiceRate: Double = 1.0
     /// Trophies shown on the Today screen.
     var pinnedTrophies: [String] = []
     /// Lets someone who read on their own skip straight to reflecting and the questions.
     var allowAlreadyRead = false
     /// Quiz only on chapters never read in Wick, for people who read on paper.
     var allowReviewUnread = false
+    var appearance: AppAppearance = .system
     /// One friendly reminder a day, only on days without a reading.
     var reminderOn = true
     /// Minutes after midnight for the reminder. 8:00 PM by default.
     var reminderMinutes = 20 * 60
+    /// Journal, trophies, and reading places save to the person's own iCloud.
+    var backupOn = true
+    /// Gentle invites to read. Playful adds emoji and streak talk.
+    var reminderTone: ReminderTone = .gentle
     var schemaVersion = 3
 
     init() {}
@@ -622,11 +700,15 @@ struct AppSettings: Codable, Equatable {
         preferredRead = (try? c.decode(ReadMode.self, forKey: .preferredRead)) ?? d.preferredRead
         preferredReflect = (try? c.decode(ReflectMode.self, forKey: .preferredReflect)) ?? d.preferredReflect
         voiceID = (try? c.decode(String.self, forKey: .voiceID)) ?? d.voiceID
+        voiceRate = (try? c.decode(Double.self, forKey: .voiceRate)) ?? d.voiceRate
         pinnedTrophies = (try? c.decode([String].self, forKey: .pinnedTrophies)) ?? d.pinnedTrophies
         allowAlreadyRead = (try? c.decode(Bool.self, forKey: .allowAlreadyRead)) ?? d.allowAlreadyRead
         allowReviewUnread = (try? c.decode(Bool.self, forKey: .allowReviewUnread)) ?? d.allowReviewUnread
+        appearance = (try? c.decode(AppAppearance.self, forKey: .appearance)) ?? d.appearance
         reminderOn = (try? c.decode(Bool.self, forKey: .reminderOn)) ?? d.reminderOn
         reminderMinutes = (try? c.decode(Int.self, forKey: .reminderMinutes)) ?? d.reminderMinutes
+        backupOn = (try? c.decode(Bool.self, forKey: .backupOn)) ?? d.backupOn
+        reminderTone = (try? c.decode(ReminderTone.self, forKey: .reminderTone)) ?? d.reminderTone
         let version = (try? c.decode(Int.self, forKey: .schemaVersion)) ?? 1
         schemaVersion = 3
 
@@ -691,6 +773,8 @@ struct SharedSnapshot: Codable, Equatable {
     var planName = ""
     var planDay = 0
     var planLength = 0
+    /// The shield button works by posting a notification, so the shield says how else to get in when they are off.
+    var notificationsDenied = false
 
     init() {}
 
@@ -709,5 +793,6 @@ struct SharedSnapshot: Codable, Equatable {
         planName = (try? c.decode(String.self, forKey: .planName)) ?? d.planName
         planDay = (try? c.decode(Int.self, forKey: .planDay)) ?? d.planDay
         planLength = (try? c.decode(Int.self, forKey: .planLength)) ?? d.planLength
+        notificationsDenied = (try? c.decode(Bool.self, forKey: .notificationsDenied)) ?? d.notificationsDenied
     }
 }

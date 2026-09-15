@@ -37,6 +37,20 @@ enum Blocker {
         sel.applicationTokens.count + sel.categoryTokens.count + sel.webDomainTokens.count
     }
 
+    /// Stores a picked selection on a lock with its counts.
+    static func set(_ sel: FamilyActivitySelection, on lock: inout LockSet) {
+        lock.selection = encode(sel)
+        lock.appCount = lockedCount(sel)
+        lock.categoryCount = sel.categoryTokens.count
+    }
+
+    /// Shows the shield on a lock's apps for a short time during setup, so people see what it looks like.
+    /// The Screen Time schedule ends it, and every sync puts the lock back to its real state.
+    static func preview(_ lock: LockSet, minutes: Int = 2, now: Date = Date()) {
+        apply(lock, shield: true)
+        scheduleRelock(lockID: "preview", at: now.addingTimeInterval(TimeInterval(minutes * 60)), now: now)
+    }
+
     static func union(_ a: FamilyActivitySelection, _ b: FamilyActivitySelection) -> FamilyActivitySelection {
         var out = a
         out.applicationTokens.formUnion(b.applicationTokens)
@@ -117,13 +131,17 @@ enum Blocker {
 
 /// Lock decisions shared by the app and the activity monitor extension.
 enum LockEngine {
-    static func sync(store: SharedStore = .shared, now: Date = Date(), today override: TodayState? = nil) {
+    static func sync(store: SharedStore = .shared, now: Date = Date(), today override: TodayState? = nil, yesterday overrideYesterday: TodayState? = nil) {
         let settings = store.settings
-        let today = override ?? store.today(now: now, morning: settings.schedule.morning)
+        let morning = settings.schedule.morning
+        let today = override ?? store.today(now: now, morning: morning)
+        let yesterday = overrideYesterday ?? store.previousDay(before: today.dayKey)
         var deletionBlocked = false
         var lockedCount = 0
         for lock in settings.lockSets {
-            let locked = LockLogic.state(lock, today: today, now: now).isLocked
+            // Nothing is shielded until setup is finished, which also ends the setup preview.
+            let locked = settings.onboarded
+                && LockLogic.state(lock, today: today, yesterday: yesterday, now: now, morning: morning).isLocked
             Blocker.apply(lock, shield: locked)
             if locked {
                 lockedCount += lock.appCount
@@ -137,9 +155,20 @@ enum LockEngine {
         ManagedSettingsStore(named: .protection).application.denyAppRemoval = deletionBlocked ? true : nil
 
         var snap = store.snapshot
-        snap.reason = LockLogic.reason(today: today, locks: settings.lockSets, now: now)
+        snap.reason = LockLogic.reason(today: today, yesterday: yesterday, locks: settings.lockSets, now: now, morning: morning)
         snap.readingDone = today.readingDone
         snap.lockedCount = lockedCount
+        if store.storedToday?.dayKey != today.dayKey {
+            // A new day began and the app has not opened yet. Point the shield at the next chapter and the real streak.
+            // ponytail: the daily verse stays as it was, since loading the Bible here would pass the monitor's memory limit.
+            let plan = ReadingPlans.plan(settings.planID)
+            if !plan.chapters.isEmpty {
+                let position = min(settings.planPositions[plan.id] ?? 0, plan.chapters.count)
+                snap.chapterTitle = BookNames.title(plan.chapters[min(position, plan.chapters.count - 1)])
+            }
+            let done = store.doneKeys
+            if !done.isEmpty { snap.streak = Streaks.current(doneKeys: Set(done), todayKey: today.dayKey) }
+        }
         store.snapshot = snap
     }
 
@@ -156,14 +185,23 @@ enum LockEngine {
 
     static func handleIntervalEnd(_ activity: DeviceActivityName, store: SharedStore = .shared, now: Date = Date()) {
         var today = store.today(now: now, morning: store.settings.schedule.morning)
+        var yesterday = store.previousDay(before: today.dayKey)
         if let id = activity.unlockLockID {
             // iOS can end the interval a little before the unlock time, so treat the last minute as over. Kept in memory only.
-            var day = today.day(id)
-            if let u = day.until, u <= now.addingTimeInterval(60) { day.until = nil }
-            if let p = day.passUntil, p <= now.addingTimeInterval(60) { day.passUntil = nil }
-            today.unlocks[id] = day
+            today = expire(id, in: today, now: now)
+            yesterday = yesterday.map { expire(id, in: $0, now: now) }
         }
-        sync(store: store, now: now, today: today)
+        sync(store: store, now: now, today: today, yesterday: yesterday)
+    }
+
+    private static func expire(_ id: String, in state: TodayState, now: Date) -> TodayState {
+        guard state.unlocks[id] != nil else { return state }
+        var s = state
+        var day = s.day(id)
+        if let u = day.until, u <= now.addingTimeInterval(60) { day.until = nil }
+        if let p = day.passUntil, p <= now.addingTimeInterval(60) { day.passUntil = nil }
+        s.unlocks[id] = day
+        return s
     }
 }
 

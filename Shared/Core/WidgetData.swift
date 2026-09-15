@@ -9,6 +9,7 @@ struct WidgetData: Codable, Equatable {
     }
 
     struct Lock: Codable, Equatable {
+        var id: String = ""
         var name: String
         var locked: Bool
         var status: String
@@ -26,6 +27,16 @@ struct WidgetData: Codable, Equatable {
     }
 
     var updated = Date()
+    /// The day this data describes, and when a day starts, so widgets can tell a new day has begun without the app.
+    var dayKey = ""
+    var morningHour = 0
+    var morningMinute = 0
+    /// The most recent day with a reading.
+    var lastDoneKey: String?
+    /// What to read next once today's chapter is done.
+    var nextChapter = ""
+    var nextTitle = ""
+    var nextKeyVerse: Verse?
     var streak = 0
     var longestStreak = 0
     var readToday = false
@@ -43,7 +54,10 @@ struct WidgetData: Codable, Equatable {
     var upcoming: [Verse] = []
     var locks: [Lock] = []
     var lockedApps = 0
+    /// Pinned trophies first, then the closest.
     var trophies: [Trophy] = []
+    /// Closest to earning, ignoring pins.
+    var closest: [Trophy] = []
     var lastEarned: Trophy?
     var earnedCount = 0
     var trophyTotal = 127
@@ -65,6 +79,45 @@ struct WidgetData: Codable, Equatable {
         d.earnedCount = 9
         return d
     }()
+
+    /// The data as it should look right now. When a new day has started since the app last wrote it,
+    /// today's reading is not done yet, the week moves along, a broken streak shows zero, and the next chapter is up.
+    func current(now: Date = Date(), calendar: Calendar = .current) -> WidgetData {
+        guard !dayKey.isEmpty else { return self }
+        let key = DayKey.key(for: now, morning: TimeOfDay(hour: morningHour, minute: morningMinute), calendar: calendar)
+        guard let a = DayKey.date(from: dayKey), let b = DayKey.date(from: key) else { return self }
+        let days = Int((b.timeIntervalSince(a) / 86_400).rounded())
+        guard days > 0 else { return self }
+        var d = self
+        d.dayKey = key
+        d.week = Array((week + Array(repeating: false, count: min(days, 7))).suffix(7))
+        if let last = lastDoneKey, last >= DayKey.adding(-1, to: key) {} else { d.streak = 0 }
+        if readToday && !nextChapter.isEmpty {
+            d.chapter = nextChapter
+            d.chapterTitle = nextTitle
+            if let v = nextKeyVerse { d.keyVerse = v }
+        }
+        d.readToday = false
+        if !verses.isEmpty {
+            let shift = days % verses.count
+            d.verses = Array(verses[shift...] + verses[..<shift])
+        }
+        return d
+    }
+
+    /// The start of the next day, so widgets can redraw right when it begins.
+    func nextDayStart(after date: Date, calendar: Calendar = .current) -> Date? {
+        calendar.nextDate(after: date, matching: DateComponents(hour: morningHour, minute: morningMinute), matchingPolicy: .nextTime)
+    }
+
+    /// Shuffles and reveals are for one day. A new day starts back at the day's own verse, hidden.
+    static func resetDailyState(for key: String) {
+        guard let defaults = UserDefaults(suiteName: AppGroup.id), !key.isEmpty, defaults.string(forKey: "widget.day") != key else { return }
+        defaults.set(key, forKey: "widget.day")
+        defaults.set(0, forKey: "widget.verseOffset")
+        defaults.set(0, forKey: "widget.trophyOffset")
+        defaults.set(false, forKey: "widget.memoryRevealed")
+    }
 
     // MARK: Widget only state
 

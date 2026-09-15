@@ -16,6 +16,7 @@ struct ProgressScreen: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     Text("Progress").font(Theme.serif(34)).foregroundStyle(Theme.ink)
+                    if !model.records.isEmpty { ReviewEntryCard() }
                     Picker("Progress", selection: $tab) {
                         ForEach(Tab.allCases) { Text($0.rawValue).tag($0) }
                     }
@@ -275,12 +276,14 @@ struct JournalEntryRow: View {
                         .font(.caption.weight(.semibold)).foregroundStyle(Theme.gold)
                     if let bp = ReadingPlans.bookPlan(entry.ref.book), let i = bp.chapters.firstIndex(of: entry.ref) {
                         Button("Read again") {
-                            model.choose(planID: bp.id, index: i)
+                            // Rereading an old chapter should not switch the plan you are in.
+                            model.choose(planID: bp.id, index: i, makeActive: false)
                             model.route = .reading
                         }
                         .font(.caption.weight(.semibold)).foregroundStyle(Theme.gold)
                     }
                 }
+                if let file = entry.audioFile { AudioReplayButton(file: file) }
                 ReviewLines(reviews: model.reviews(for: entry.ref))
             }
         }
@@ -316,7 +319,7 @@ struct JournalCalendar: View {
             }
             .foregroundStyle(Theme.gold)
             LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 4), count: 7), spacing: 6) {
-                ForEach(Array(ordered.enumerated()), id: \.offset) { _, symbol in
+                ForEach(Array(ordered.enumerated()).map { ("weekday\($0.offset)", $0.element) }, id: \.0) { _, symbol in
                     Text(symbol).font(.caption2.weight(.semibold)).foregroundStyle(Theme.dim)
                 }
                 ForEach(0..<(offset + count), id: \.self) { i in

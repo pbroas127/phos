@@ -70,14 +70,22 @@ struct WeeklyUsage {
 struct WeeklyUsageView: View {
     let usage: WeeklyUsage
 
-    private let gold = Color(red: 0xA8 / 255, green: 0x7A / 255, blue: 0x22 / 255)
-    private let ghost = Color(red: 0xEC / 255, green: 0xE2 / 255, blue: 0xCF / 255)
-    private let ink = Color(red: 0x22 / 255, green: 0x1D / 255, blue: 0x17 / 255)
-    private let dim = Color(red: 0x8A / 255, green: 0x7F / 255, blue: 0x71 / 255)
-    private let line = Color(red: 0xEC / 255, green: 0xE5 / 255, blue: 0xD8 / 255)
-    private let soft = Color(red: 0xF7 / 255, green: 0xF2 / 255, blue: 0xE8 / 255)
-    private let green = Color(red: 0x2F / 255, green: 0x8A / 255, blue: 0x57 / 255)
-    private let red = Color(red: 0xB2 / 255, green: 0x3A / 255, blue: 0x2B / 255)
+    private static func dyn(_ light: UInt32, _ dark: UInt32) -> Color {
+        func ui(_ v: UInt32) -> UIColor {
+            UIColor(red: CGFloat((v >> 16) & 0xFF) / 255, green: CGFloat((v >> 8) & 0xFF) / 255, blue: CGFloat(v & 0xFF) / 255, alpha: 1)
+        }
+        return Color(uiColor: UIColor { $0.userInterfaceStyle == .dark ? ui(dark) : ui(light) })
+    }
+
+    private let gold = Self.dyn(0xA87A22, 0xE0AE4B)
+    private let ghost = Self.dyn(0xECE2CF, 0x3A3229)
+    private let ink = Self.dyn(0x221D17, 0xF3EDE2)
+    private let dim = Self.dyn(0x8A7F71, 0xA89C8B)
+    private let line = Self.dyn(0xECE5D8, 0x3A3229)
+    private let soft = Self.dyn(0xF7F2E8, 0x241F18)
+    private let green = Self.dyn(0x2F8A57, 0x4CBF7A)
+    private let red = Self.dyn(0xB23A2B, 0xE5484D)
+    private let card = Self.dyn(0xFFFFFF, 0x1F1B15)
 
     var body: some View {
         let maxSeconds = max(usage.days.map(\.allSeconds).max() ?? 1, 60)
@@ -134,8 +142,7 @@ struct WeeklyUsageView: View {
         }
         .padding(20)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color.white)
-        .environment(\.colorScheme, .light)
+        .background(card)
     }
 
     private func stat(_ title: String, _ seconds: TimeInterval, last: TimeInterval, color: Color) -> some View {

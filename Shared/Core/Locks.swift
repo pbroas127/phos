@@ -40,6 +40,40 @@ enum LockLogic {
         return false
     }
 
+    /// When the window running right now began, for scheduled locks. Nil for all day locks or when not active.
+    static func windowStart(_ lock: LockSet, now: Date, calendar: Calendar = .current) -> Date? {
+        guard !lock.allDay, lock.start != lock.end, isActive(lock, now: now, calendar: calendar) else { return nil }
+        let s = lock.start.minutesFromMidnight, e = lock.end.minutesFromMidnight
+        let startsYesterday = s > e && minutes(now, calendar) < e
+        let day = startsYesterday ? (calendar.date(byAdding: .day, value: -1, to: now) ?? now) : now
+        return lock.start.date(on: day, calendar: calendar)
+    }
+
+    /// The day a lock's unlocks and reading belong to. A window that crosses into a new day, like 9 PM to 7 AM,
+    /// keeps using the day it started on until it ends, so midnight does not relock it or refill its unlocks.
+    /// A reading done on either day counts.
+    static func day(for lock: LockSet, today: TodayState, yesterday: TodayState?, now: Date,
+                    morning: TimeOfDay = TimeOfDay(hour: 0, minute: 0), calendar: Calendar = .current) -> TodayState {
+        guard let yesterday, yesterday.dayKey == DayKey.adding(-1, to: today.dayKey),
+              let start = windowStart(lock, now: now, calendar: calendar),
+              DayKey.key(for: start, morning: morning, calendar: calendar) == yesterday.dayKey else { return today }
+        var d = yesterday
+        d.readingDone = yesterday.readingDone || today.readingDone
+        return d
+    }
+
+    /// True when this lock's unlocks right now are saved on the previous day.
+    static func usesPreviousDay(_ lock: LockSet, today: TodayState, yesterday: TodayState?, now: Date,
+                                morning: TimeOfDay = TimeOfDay(hour: 0, minute: 0), calendar: Calendar = .current) -> Bool {
+        day(for: lock, today: today, yesterday: yesterday, now: now, morning: morning, calendar: calendar).dayKey != today.dayKey
+    }
+
+    static func state(_ lock: LockSet, today: TodayState, yesterday: TodayState?, now: Date,
+                      morning: TimeOfDay = TimeOfDay(hour: 0, minute: 0), calendar: Calendar = .current) -> State {
+        state(lock, today: day(for: lock, today: today, yesterday: yesterday, now: now, morning: morning, calendar: calendar),
+              now: now, calendar: calendar)
+    }
+
     static func state(_ lock: LockSet, today: TodayState, now: Date, calendar: Calendar = .current) -> State {
         guard isActive(lock, now: now, calendar: calendar) else { return .inactive }
         let day = today.day(lock.id)
@@ -68,6 +102,45 @@ enum LockLogic {
         return end
     }
 
+    /// When a lock that is on stops being on, for "opens again" copy. Nil when it never switches off.
+    static func reopens(_ lock: LockSet, now: Date, calendar: Calendar = .current) -> Date? {
+        guard lock.allDay || lock.start == lock.end else { return activeEnd(lock, now: now, calendar: calendar) }
+        let today = calendar.startOfDay(for: now)
+        for i in 1...7 {
+            guard let d = calendar.date(byAdding: .day, value: i, to: today) else { continue }
+            if !lock.days.contains(calendar.component(.weekday, from: d)) { return d }
+        }
+        return nil
+    }
+
+    /// "at 7:00 AM", "tomorrow", "Monday", or nil when the lock is on all day, every day.
+    static func reopenPhrase(_ lock: LockSet, now: Date, calendar: Calendar = .current) -> String? {
+        guard let when = reopens(lock, now: now, calendar: calendar) else { return nil }
+        if !(lock.allDay || lock.start == lock.end) {
+            let f = DateFormatter()
+            f.calendar = calendar
+            f.timeZone = calendar.timeZone
+            f.timeStyle = .short
+            f.dateStyle = .none
+            return "at \(f.string(from: when))"
+        }
+        let days = calendar.dateComponents([.day], from: calendar.startOfDay(for: now), to: when).day ?? 0
+        if days <= 1 { return "tomorrow" }
+        let f = DateFormatter()
+        f.calendar = calendar
+        f.timeZone = calendar.timeZone
+        f.dateFormat = "EEEE"
+        return f.string(from: when)
+    }
+
+    /// A reading opens its locks without using one of a limited lock's unlocks. Every later unlock counts.
+    static func opened(_ day: LockDay, until end: Date, spendsUnlock: Bool) -> LockDay {
+        var d = day
+        d.until = max(end, d.until ?? end)
+        if spendsUnlock { d.count += 1 }
+        return d
+    }
+
     static func rewardEnd(_ lock: LockSet, now: Date, calendar: Calendar = .current) -> Date {
         lock.rewardSeconds == LockSet.untilEnd
             ? activeEnd(lock, now: now, calendar: calendar)
@@ -75,8 +148,9 @@ enum LockLogic {
     }
 
     /// One line that describes the most pressing lock, for the shield button and widgets.
-    static func reason(today: TodayState, locks: [LockSet], now: Date, calendar: Calendar = .current) -> LockReason {
-        let states = locks.map { state($0, today: today, now: now, calendar: calendar) }
+    static func reason(today: TodayState, yesterday: TodayState? = nil, locks: [LockSet], now: Date,
+                       morning: TimeOfDay = TimeOfDay(hour: 0, minute: 0), calendar: Calendar = .current) -> LockReason {
+        let states = locks.map { state($0, today: today, yesterday: yesterday, now: now, morning: morning, calendar: calendar) }
         if states.contains(.needsReading) { return .reading }
         if states.contains(.needsQuestion) { return .recall }
         if states.contains(.needsTap) { return .tap }
@@ -86,8 +160,9 @@ enum LockLogic {
     }
 
     /// The strictest reading check among locks waiting on today's reading, or among all locks if none are.
-    static func readingCheck(today: TodayState, locks: [LockSet], now: Date, calendar: Calendar = .current) -> ReadingCheck {
-        let waiting = locks.filter { state($0, today: today, now: now, calendar: calendar) == .needsReading }
+    static func readingCheck(today: TodayState, yesterday: TodayState? = nil, locks: [LockSet], now: Date,
+                             morning: TimeOfDay = TimeOfDay(hour: 0, minute: 0), calendar: Calendar = .current) -> ReadingCheck {
+        let waiting = locks.filter { state($0, today: today, yesterday: yesterday, now: now, morning: morning, calendar: calendar) == .needsReading }
         let pool = waiting.isEmpty ? locks.filter(\.enabled) : waiting
         return ReadingCheck.strictest(pool.map(\.reading))
     }
@@ -116,7 +191,7 @@ enum ProtectionLogic {
             return .delayed(max(1, p.delayHours))
         case .commitment:
             guard let until = p.commitUntil, until > now else { return .open }
-            return .blocked("You committed to \(lock.name) until \(until.formatted(date: .abbreviated, time: .shortened)). Until then only emergency passes can open it, and you can still add apps.")
+            return .blocked("You committed to \(lock.name) until \(until.formatted(date: .abbreviated, time: .shortened)). Until then this lock's settings can't change. Reading still unlocks it, and you can still add apps.")
         case .afterReading:
             return readingDone ? .open : .blocked("\(lock.name) settings open after today's reading. Read first, then come back. You can still add apps.")
         }
@@ -136,6 +211,12 @@ enum Passcode {
     static func verify(_ code: String, _ p: LockProtection) -> Bool {
         guard let h = p.passcodeHash, let s = p.passcodeSalt else { return true }
         return hash(code, salt: s) == h
+    }
+
+    /// Seconds to wait after this many wrong tries in a row: 1 minute at 5, then 15 minutes at 10 and every 5 after.
+    static func wait(afterFailures n: Int) -> TimeInterval {
+        if n >= 10 && n % 5 == 0 { return 15 * 60 }
+        return n == 5 ? 60 : 0
     }
 
     static func isValid(_ code: String) -> Bool {

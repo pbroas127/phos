@@ -127,12 +127,34 @@ final class KokoroModel: NSObject, ObservableObject, URLSessionDownloadDelegate 
     @Published private(set) var problem: String?
 
     private var task: URLSessionDownloadTask?
-    private lazy var session = URLSession(configuration: .default, delegate: self, delegateQueue: nil)
+    /// A background session, so the download keeps going with the phone locked or Wick closed.
+    private lazy var session: URLSession = {
+        let config = URLSessionConfiguration.background(withIdentifier: "wick.kokoro")
+        config.isDiscretionary = false
+        config.sessionSendsLaunchEvents = true
+        return URLSession(configuration: config, delegate: self, delegateQueue: nil)
+    }()
+    /// Handed over by the app delegate when iOS relaunches Wick for a finished background download.
+    static var backgroundCompletion: (() -> Void)?
 
     override init() {
         let size = (try? FileManager.default.attributesOfItem(atPath: Self.fileURL.path)[.size] as? Int64) ?? nil
         ready = size == Self.expectedBytes
         super.init()
+        reattach()
+    }
+
+    /// Picks up a download that was still running the last time Wick closed.
+    private func reattach() {
+        guard !ready else { return }
+        session.getTasksWithCompletionHandler { [weak self] _, _, downloads in
+            guard let self, let running = downloads.first(where: { $0.state == .running || $0.state == .suspended }) else { return }
+            DispatchQueue.main.async {
+                self.task = running
+                let expected = running.countOfBytesExpectedToReceive
+                self.progress = expected > 0 ? Double(running.countOfBytesReceived) / Double(expected) : 0
+            }
+        }
     }
 
     func download() {
@@ -180,6 +202,13 @@ final class KokoroModel: NSObject, ObservableObject, URLSessionDownloadDelegate 
             DispatchQueue.main.async { self.ready = true }
         } catch {
             DispatchQueue.main.async { self.problem = "Wick could not save the voices. Check that your iPhone has free space." }
+        }
+    }
+
+    func urlSessionDidFinishEvents(forBackgroundURLSession session: URLSession) {
+        DispatchQueue.main.async {
+            Self.backgroundCompletion?()
+            Self.backgroundCompletion = nil
         }
     }
 
@@ -287,5 +316,41 @@ final class KokoroEngine: @unchecked Sendable {
             return true
         }
         return parts.isEmpty ? [text] : parts
+    }
+}
+
+/// Reads a quiz question and its choices out loud with the iPhone voice, for people who listen rather than read.
+final class QuestionSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDelegate {
+    static let shared = QuestionSpeaker()
+    @Published private(set) var speaking = false
+    private let synth = AVSpeechSynthesizer()
+
+    override init() {
+        super.init()
+        synth.delegate = self
+    }
+
+    func speak(_ text: String, voiceID: String, rate: Double) {
+        stop()
+        try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .spokenAudio, options: [])
+        try? AVAudioSession.sharedInstance().setActive(true)
+        let u = AVSpeechUtterance(string: text)
+        u.rate = min(AVSpeechUtteranceMaximumSpeechRate, max(AVSpeechUtteranceMinimumSpeechRate, AVSpeechUtteranceDefaultSpeechRate * Float(rate)))
+        u.voice = VoiceCatalog.systemVoice(voiceID)
+        speaking = true
+        synth.speak(u)
+    }
+
+    func stop() {
+        synth.stopSpeaking(at: .immediate)
+        speaking = false
+    }
+
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
+        DispatchQueue.main.async { self.speaking = false }
+    }
+
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
+        DispatchQueue.main.async { self.speaking = false }
     }
 }

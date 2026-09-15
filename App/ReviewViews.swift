@@ -28,7 +28,6 @@ struct ReviewFlow: View {
             }
         }
         .background(Theme.paper.ignoresSafeArea())
-        .preferredColorScheme(.light)
         .onAppear { if items.isEmpty { items = model.reviewItems(request) } }
     }
 }

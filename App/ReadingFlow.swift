@@ -1,4 +1,5 @@
 import AVFoundation
+import MediaPlayer
 import SwiftUI
 
 /// Read, reflect, answer, unlock. Progress is saved at every step, so leaving never loses work.
@@ -31,12 +32,13 @@ struct ReadingFlow: View {
             Group {
                 switch draft.step {
                 case .mode:
-                    ModeChoice(selected: $draft.readMode, onAlreadyRead: model.settings.allowAlreadyRead ? { go(.reflect) } : nil) { go(.read) }
+                    ModeChoice(selected: $draft.readMode, onAlreadyRead: model.settings.allowAlreadyRead ? { draft.skippedRead = true; go(.reflect) } : nil) { draft.skippedRead = false; go(.read) }
                 case .read:
-                    ReadStep(ref: ref, mode: draft.readMode, aloudHeard: $draft.aloudHeard, aloudCursor: $draft.aloudCursor) { go(.reflect) }
+                    ReadStep(ref: ref, mode: draft.readMode, aloudHeard: $draft.aloudHeard, aloudCursor: $draft.aloudCursor,
+                             listenVerse: $draft.listenVerse, listenPlayed: $draft.listenPlayed) { go(.reflect) }
                 case .reflect:
                     ReflectStep(ref: ref, mode: $draft.reflectMode, text: $draft.reflection,
-                                prompts: $draft.prompts, speechSeconds: $draft.speechSeconds) { startQuiz() }
+                                prompts: $draft.prompts, speechSeconds: $draft.speechSeconds, audioFile: $draft.audioFile) { startQuiz() }
                 case .quiz:
                     QuizRunner(items: items, startIndex: draft.answered, startCorrect: draft.correct, startMissed: missed,
                                onAnswer: { answered, correct, missedQuestions in
@@ -54,7 +56,7 @@ struct ReadingFlow: View {
                     .id(items.map(\.id).joined())
                 case .result:
                     if !draft.failed {
-                        UnlockSummary(title: "\(draft.correct) of \(items.count) correct", after: model.lastAfter) {
+                        UnlockSummary(title: "\(draft.correct) of \(items.count) correct", ref: ref, after: model.lastAfter) {
                             dismiss()
                         }
                     } else {
@@ -73,6 +75,9 @@ struct ReadingFlow: View {
         .onChange(of: draft.readMode) { _, _ in save() }
         .onChange(of: draft.aloudCursor) { _, _ in save() }
         .onChange(of: draft.aloudHeard.count) { _, _ in save() }
+        .onChange(of: draft.listenVerse) { _, _ in save() }
+        .onChange(of: draft.listenPlayed.count) { _, _ in save() }
+        .onChange(of: draft.audioFile) { _, _ in save() }
     }
 
     /// Reading and reflecting can always step back to change how you read. Read aloud keeps its place.
@@ -80,7 +85,7 @@ struct ReadingFlow: View {
     private var backAction: (() -> Void)? {
         switch draft.step {
         case .read: return { go(.mode) }
-        case .reflect: return { go(.read) }
+        case .reflect: return { go(draft.skippedRead ? .mode : .read) }
         default: return nil
         }
     }
@@ -122,13 +127,20 @@ struct ReadingFlow: View {
             items = questions.map { QuizEngine.pick(from: [$0], count: 1, avoiding: []).first! }
             draft.step = startStep ?? resume
             if draft.step == .quiz && items.isEmpty { draft.step = .reflect }
+            // A widget's Listen button switches a reading that has not moved past reading yet.
+            if let mode = model.startMode, draft.step == .mode || draft.step == .read {
+                draft.readMode = mode
+                draft.step = .read
+            }
+            model.startMode = nil
             save()
         } else {
             draft = ReadingDraft(dayKey: model.today.dayKey, ref: ref)
-            draft.readMode = model.settings.preferredRead
+            draft.readMode = model.startMode ?? model.settings.preferredRead
             draft.reflectMode = model.settings.preferredReflect
             if let record = model.record(for: ref) { draft.reflection = record.reflection }
-            draft.step = startStep ?? .mode
+            draft.step = startStep ?? (model.startMode == nil ? .mode : .read)
+            model.startMode = nil
             if draft.step == .quiz { startQuiz() }
         }
     }
@@ -164,7 +176,7 @@ struct ReadingFlow: View {
         if draft.correct >= needed || items.isEmpty {
             draft.failed = false
             model.completeReading(ref: ref, readMode: draft.readMode, reflectMode: draft.reflectMode, reflection: draft.reflection,
-                                  score: draft.correct, total: items.count)
+                                  score: draft.correct, total: items.count, audioFile: draft.reflectMode == .spoken ? draft.audioFile : nil)
             withAnimation { draft.step = .result }
         } else {
             model.registerMiss()
@@ -203,7 +215,7 @@ struct ModeChoice: View {
                         }
                         .buttonStyle(.plain)
                     }
-                    Text("The reading timer only counts while Wick stays open. Leaving the app or locking your phone starts it over, so the screen stays awake while you read.")
+                    Text("The reading timer keeps counting if your phone locks. Switching to another app starts it over.")
                         .font(.footnote).foregroundStyle(Theme.dim).padding(.top, 4)
                 }
                 .padding(20)
@@ -238,11 +250,16 @@ struct ReadStep: View {
     let mode: ReadMode
     var aloudHeard: Binding<[Int]> = .constant([])
     var aloudCursor: Binding<Int> = .constant(0)
+    var listenVerse: Binding<Int> = .constant(0)
+    var listenPlayed: Binding<[Int]> = .constant([])
     var onDone: () -> Void
 
     @State private var start = Date()
     @State private var restarted = false
     @State private var finished = false
+    /// Paper readers may let the phone lock. These tell a screen lock apart from switching to another app.
+    @State private var lockedAt: Date?
+    @State private var leftAt: Date?
 
     var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { context in
@@ -258,18 +275,39 @@ struct ReadStep: View {
                 case .paper: PaperRead(ref: ref, remaining: remaining, minimum: minimum, onDone: onDone)
                 case .inApp: InAppRead(ref: ref, remaining: remaining, onDone: onDone)
                 case .speak: SpeakRead(ref: ref, heard: aloudHeard, cursor: aloudCursor, onDone: onDone)
-                case .listen: ListenRead(ref: ref, remaining: remaining, onDone: onDone)
+                case .listen: ListenRead(ref: ref, remaining: remaining, verse: listenVerse, played: listenPlayed, onDone: onDone)
                 }
             }
             .onChange(of: remaining == 0) { _, done in if done { finished = true } }
         }
         .onAppear {
             start = Date()
-            UIApplication.shared.isIdleTimerDisabled = true
+            // A paper reader can set the phone down and let it lock. Reading on screen keeps it awake.
+            UIApplication.shared.isIdleTimerDisabled = mode != .paper
         }
         .onDisappear { UIApplication.shared.isIdleTimerDisabled = false }
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.protectedDataWillBecomeUnavailableNotification)) { _ in
+            lockedAt = Date()
+        }
         .onChange(of: phase) { _, p in
-            guard p == .background, !finished else { return }
+            // Listening keeps playing with the phone locked, so leaving never restarts it.
+            guard !finished, mode != .listen else { return }
+            if mode == .paper {
+                // iOS reports a screen lock a few seconds after it happens, so paper mode decides on return:
+                // away a while and the phone never locked means another app was used.
+                if p == .background {
+                    leftAt = Date()
+                    lockedAt = nil
+                } else if p == .active, let left = leftAt {
+                    leftAt = nil
+                    if lockedAt == nil && Date().timeIntervalSince(left) > 15 {
+                        start = Date()
+                        restarted = true
+                    }
+                }
+                return
+            }
+            guard p == .background else { return }
             start = Date()
             restarted = true
         }
@@ -296,7 +334,7 @@ struct PaperRead: View {
                 }
             }
             .frame(width: 230, height: 230)
-            Text("Put the phone down and read the whole chapter. The button wakes up when the timer runs out.")
+            Text("Set the phone down and read the whole chapter. It is fine if the screen locks. Switching to another app starts the timer over.")
                 .font(.subheadline).foregroundStyle(Theme.dim).multilineTextAlignment(.center).padding(.horizontal, 30)
             Spacer()
             Button(remaining > 0 ? "Done reading in \(countdownText(remaining))" : "Done reading", action: onDone)
@@ -343,21 +381,60 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
     @Published var playing = false
     @Published var finished = false
     @Published var preparing = false
+    /// Verses whose audio played all the way through. Skipping ahead never counts.
+    @Published var played: Set<Int> = []
     var voiceID = ""
-    var rate: Float = AVSpeechUtteranceDefaultSpeechRate
+    var title = ""
+    /// Playback speed, 1 is normal. Natural voices change at once; iPhone voices restart the verse.
+    var rate: Double = 1.0 {
+        didSet { pitch.rate = Float(rate) }
+    }
 
     private let synth = AVSpeechSynthesizer()
     private let engine = AVAudioEngine()
     private let player = AVAudioPlayerNode()
+    private let pitch = AVAudioUnitTimePitch()
     private var verses: [String] = []
     private var started = false
     /// Bumped whenever playback jumps, so audio finishing from an old verse is ignored.
     private var generation = 0
+    private var observers: [NSObjectProtocol] = []
 
     override init() {
         super.init()
         synth.delegate = self
         engine.attach(player)
+        engine.attach(pitch)
+        let center = NotificationCenter.default
+        observers.append(center.addObserver(forName: AVAudioSession.interruptionNotification, object: nil, queue: .main) { [weak self] note in
+            guard let self, let raw = note.userInfo?[AVAudioSessionInterruptionTypeKey] as? UInt,
+                  let type = AVAudioSession.InterruptionType(rawValue: raw) else { return }
+            if type == .began {
+                self.pause()
+            } else if let opts = note.userInfo?[AVAudioSessionInterruptionOptionKey] as? UInt,
+                      AVAudioSession.InterruptionOptions(rawValue: opts).contains(.shouldResume) {
+                self.resume()
+            }
+        })
+        observers.append(center.addObserver(forName: AVAudioSession.routeChangeNotification, object: nil, queue: .main) { [weak self] note in
+            guard let raw = note.userInfo?[AVAudioSessionRouteChangeReasonKey] as? UInt,
+                  AVAudioSession.RouteChangeReason(rawValue: raw) == .oldDeviceUnavailable else { return }
+            self?.pause()
+        })
+        let commands = MPRemoteCommandCenter.shared()
+        commands.playCommand.addTarget { [weak self] _ in self?.resume(); return .success }
+        commands.pauseCommand.addTarget { [weak self] _ in self?.pause(); return .success }
+        commands.togglePlayPauseCommand.addTarget { [weak self] _ in self?.toggle(); return .success }
+        commands.nextTrackCommand.addTarget { [weak self] _ in self?.skip(1); return .success }
+        commands.previousTrackCommand.addTarget { [weak self] _ in self?.skip(-1); return .success }
+    }
+
+    deinit {
+        observers.forEach(NotificationCenter.default.removeObserver)
+        let commands = MPRemoteCommandCenter.shared()
+        [commands.playCommand, commands.pauseCommand, commands.togglePlayPauseCommand, commands.nextTrackCommand, commands.previousTrackCommand]
+            .forEach { $0.removeTarget(nil) }
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
     }
 
     func load(_ verses: [String]) {
@@ -370,11 +447,20 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
     }
 
     func toggle() {
-        if playing {
-            playing = false
-            synth.pauseSpeaking(at: .word)
-            player.pause()
-        } else if started {
+        playing ? pause() : resume()
+    }
+
+    func pause() {
+        guard playing else { return }
+        playing = false
+        synth.pauseSpeaking(at: .word)
+        player.pause()
+        updateNowPlaying()
+    }
+
+    func resume() {
+        guard !playing else { return }
+        if started {
             playing = true
             if synth.isPaused {
                 synth.continueSpeaking()
@@ -383,15 +469,25 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
             } else {
                 speak(from: verseIndex)
             }
+            updateNowPlaying()
         } else {
-            try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .spokenAudio)
-            try? AVAudioSession.sharedInstance().setActive(true)
             speak(from: verseIndex)
         }
     }
 
+    /// Moves to another verse. Keeps playing if it was playing, stays paused if it was paused.
     func skip(_ delta: Int) {
-        speak(from: min(max(0, verseIndex + delta), max(0, verses.count - 1)))
+        let index = min(max(0, verseIndex + delta), max(0, verses.count - 1))
+        if playing {
+            speak(from: index)
+        } else {
+            halt()
+            verseIndex = index
+            finished = false
+            started = false
+            warm()
+            updateNowPlaying()
+        }
     }
 
     /// After picking a new voice: keep the verse, and only restart it if it was playing. Paused stays paused.
@@ -404,6 +500,13 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
             started = false
             warm()
         }
+    }
+
+    /// Speed changes apply at once to natural voices. An iPhone voice restarts the verse at the new speed.
+    func setRate(_ r: Double) {
+        rate = r
+        if neuralVoice == nil && playing { speak(from: verseIndex) }
+        updateNowPlaying()
     }
 
     /// Gets the current verse ready in the new voice while nothing is playing.
@@ -419,22 +522,32 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
         preparing = false
     }
 
+    private func activateSession() {
+        let session = AVAudioSession.sharedInstance()
+        try? session.setCategory(.playback, mode: .spokenAudio, options: [])
+        try? session.setActive(true)
+    }
+
     private func speak(from index: Int) {
         halt()
         guard index < verses.count else {
             finished = true
             playing = false
+            updateNowPlaying()
             return
         }
+        activateSession()
         started = true
         playing = true
+        finished = false
         verseIndex = index
+        updateNowPlaying()
         if let voice = neuralVoice { speakNatural(index, voice: voice) } else { speakSystem(index) }
     }
 
     private func speakSystem(_ index: Int) {
         let u = AVSpeechUtterance(string: verses[index])
-        u.rate = rate
+        u.rate = min(AVSpeechUtteranceMaximumSpeechRate, max(AVSpeechUtteranceMinimumSpeechRate, AVSpeechUtteranceDefaultSpeechRate * Float(rate)))
         u.voice = VoiceCatalog.systemVoice(voiceID)
         u.postUtteranceDelay = 0.15
         synth.speak(u)
@@ -452,7 +565,8 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
                 return
             }
             if !self.engine.isRunning {
-                self.engine.connect(self.player, to: self.engine.mainMixerNode, format: buffer.format)
+                self.engine.connect(self.player, to: self.pitch, format: buffer.format)
+                self.engine.connect(self.pitch, to: self.engine.mainMixerNode, format: buffer.format)
                 try? self.engine.start()
             }
             self.player.scheduleBuffer(buffer) {
@@ -467,6 +581,7 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
     }
 
     private func advance(after index: Int) {
+        played.insert(index)
         if index + 1 < verses.count {
             if playing {
                 speak(from: index + 1)
@@ -478,6 +593,7 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
             finished = true
             playing = false
             started = false
+            updateNowPlaying()
         }
     }
 
@@ -486,6 +602,22 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
         playing = false
         started = false
         if engine.isRunning { engine.stop() }
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
+        try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
+    }
+
+    /// The Lock Screen and headphone controls show the chapter, the verse, and the voice.
+    private func updateNowPlaying() {
+        guard started || playing else {
+            MPNowPlayingInfoCenter.default().nowPlayingInfo = nil
+            return
+        }
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = [
+            MPMediaItemPropertyTitle: title,
+            MPMediaItemPropertyArtist: "Verse \(min(verseIndex + 1, max(verses.count, 1))) of \(verses.count) · \(VoiceCatalog.name(voiceID))",
+            MPMediaItemPropertyAlbumTitle: "Wick",
+            MPNowPlayingInfoPropertyPlaybackRate: playing ? rate : 0
+        ]
     }
 
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
@@ -497,23 +629,49 @@ final class ChapterSpeaker: NSObject, ObservableObject, AVSpeechSynthesizerDeleg
     }
 }
 
+/// Speeds someone can pick for listening.
+enum VoiceSpeed {
+    static let options: [Double] = [0.8, 0.9, 1.0, 1.1, 1.25, 1.5]
+
+    static func label(_ r: Double) -> String {
+        r == 1 ? "1x" : String(format: "%g", r) + "x"
+    }
+}
+
 struct ListenRead: View {
     @Environment(AppModel.self) private var model
     let ref: ChapterRef
     let remaining: TimeInterval
+    @Binding var savedVerse: Int
+    @Binding var savedPlayed: [Int]
     var onDone: () -> Void
     @StateObject private var speaker = ChapterSpeaker()
     @ObservedObject private var kokoro = KokoroModel.shared
     @State private var pendingVoice: VoiceChoice?
+    /// A natural voice picked before its download finished. Applied the moment the download lands.
+    @State private var pendingID: String?
     @State private var voiceHelp = false
     @State private var systemVoices: [VoiceChoice] = []
     @State private var voiceName = "Voice"
 
+    /// Share of verses that must actually play before listening counts as finished.
+    static let needed = 0.8
+
+    init(ref: ChapterRef, remaining: TimeInterval, verse: Binding<Int> = .constant(0), played: Binding<[Int]> = .constant([]), onDone: @escaping () -> Void) {
+        self.ref = ref
+        self.remaining = remaining
+        _savedVerse = verse
+        _savedPlayed = played
+        self.onDone = onDone
+    }
+
     var body: some View {
         let verses = Bible.shared.chapter(ref)?.verses ?? []
+        let enoughPlayed = Double(speaker.played.count) >= Double(verses.count) * Self.needed
         VStack(spacing: 22) {
-            HStack {
+            HStack(spacing: 10) {
                 Spacer()
+                speedMenu
                 voiceMenu
             }
             .padding(.horizontal, 20)
@@ -523,13 +681,17 @@ struct ListenRead: View {
                     VStack(spacing: 12) {
                         Text(BookNames.title(ref)).font(Theme.serif(40)).foregroundStyle(Theme.ink)
                         if speaker.verseIndex < verses.count {
-                            RedLetterText(verse: verses[speaker.verseIndex], number: speaker.verseIndex + 1, size: 17)
-                                .multilineTextAlignment(.center).lineLimit(6).padding(.horizontal, 20)
+                            ScrollView {
+                                RedLetterText(verse: verses[speaker.verseIndex], number: speaker.verseIndex + 1, size: 17)
+                                    .multilineTextAlignment(.center).padding(.horizontal, 20)
+                            }
+                            .id(speaker.verseIndex)
                         }
                         if speaker.preparing {
                             ProgressView().tint(Theme.gold)
                         }
                     }
+                    .padding(.vertical, 18)
                 )
                 .frame(maxHeight: 320)
                 .padding(.horizontal, 20)
@@ -538,7 +700,7 @@ struct ListenRead: View {
                 HStack {
                     Text("Verse \(min(speaker.verseIndex + 1, verses.count))")
                     Spacer()
-                    Text("\(verses.count) verses")
+                    Text("\(speaker.played.count) of \(verses.count) verses heard")
                 }
                 .font(.caption).foregroundStyle(Theme.dim)
             }
@@ -556,29 +718,58 @@ struct ListenRead: View {
             }
             .foregroundStyle(Theme.ink)
             Spacer()
-            let ready = speaker.finished || remaining <= 0
-            Button(ready ? "Finished listening" : "Keep listening · \(countdownText(remaining))") {
-                speaker.stop()
-                onDone()
+            let ready = (speaker.finished && enoughPlayed) || remaining <= 0
+            if speaker.finished && !enoughPlayed && remaining > 0 {
+                Text("Some verses were skipped. Listen to them to finish.")
+                    .font(.footnote).foregroundStyle(Theme.dim).multilineTextAlignment(.center).padding(.horizontal, 20)
+                Button("Go to the first skipped verse") {
+                    if let first = (0..<verses.count).first(where: { !speaker.played.contains($0) }) {
+                        speaker.skip(first - speaker.verseIndex)
+                        speaker.resume()
+                    }
+                }
+                .buttonStyle(.phos)
+                .padding(.horizontal, 20).padding(.bottom, 12)
+            } else {
+                Button(ready ? "Finished listening" : "Keep listening · \(countdownText(remaining))") {
+                    speaker.stop()
+                    onDone()
+                }
+                .buttonStyle(.phos).disabled(!ready)
+                .padding(.horizontal, 20).padding(.bottom, 12)
             }
-            .buttonStyle(.phos).disabled(!ready)
-            .padding(.horizontal, 20).padding(.bottom, 12)
         }
         .padding(.top, 6)
         .onAppear {
             speaker.load(verses)
+            speaker.title = BookNames.title(ref)
             speaker.voiceID = model.settings.voiceID
+            speaker.rate = model.settings.voiceRate
+            speaker.verseIndex = min(max(0, savedVerse), max(0, verses.count - 1))
+            speaker.played = Set(savedPlayed.filter { $0 >= 0 && $0 < verses.count })
             voiceName = VoiceCatalog.name(model.settings.voiceID)
             VoiceCatalog.warm {
                 systemVoices = VoiceCatalog.system()
                 voiceName = VoiceCatalog.name(model.settings.voiceID)
             }
         }
+        .onChange(of: speaker.verseIndex) { _, v in savedVerse = v }
+        .onChange(of: speaker.played.count) { _, _ in savedPlayed = Array(speaker.played).sorted() }
+        .onChange(of: kokoro.ready) { _, ready in
+            if ready, let id = pendingID {
+                pendingID = nil
+                pendingVoice = nil
+                choose(id)
+            }
+        }
         .onDisappear { speaker.stop() }
         .sheet(item: $pendingVoice) { voice in
             NaturalVoiceSheet(voiceName: voice.name) {
                 pendingVoice = nil
-                choose(voice.id)
+                if pendingID != nil {
+                    pendingID = nil
+                    choose(voice.id)
+                }
             }
             .presentationDetents([.medium])
         }
@@ -590,6 +781,32 @@ struct ListenRead: View {
     private var currentVoiceID: String {
         if !model.settings.voiceID.isEmpty { return model.settings.voiceID }
         return VoiceCatalog.isWarm ? "system:\(VoiceCatalog.systemVoice("").identifier)" : ""
+    }
+
+    private var speedMenu: some View {
+        Menu {
+            ForEach(VoiceSpeed.options, id: \.self) { r in
+                Button {
+                    model.settings.voiceRate = r
+                    model.savePreferences()
+                    speaker.setRate(r)
+                } label: {
+                    if r == model.settings.voiceRate {
+                        Label(VoiceSpeed.label(r), systemImage: "checkmark")
+                    } else {
+                        Text(VoiceSpeed.label(r))
+                    }
+                }
+            }
+        } label: {
+            Text(VoiceSpeed.label(model.settings.voiceRate))
+                .font(.subheadline.weight(.semibold)).monospacedDigit()
+                .padding(.horizontal, 12).padding(.vertical, 9)
+                .background(Theme.card, in: Capsule())
+                .overlay(Capsule().stroke(Theme.line))
+                .foregroundStyle(Theme.ink)
+        }
+        .accessibilityLabel("Speed")
     }
 
     private var voiceMenu: some View {
@@ -633,6 +850,7 @@ struct ListenRead: View {
 
     private func pick(_ v: VoiceChoice) {
         if VoiceCatalog.kokoroName(v.id) != nil && !kokoro.ready {
+            pendingID = v.id
             pendingVoice = v
         } else {
             choose(v.id)

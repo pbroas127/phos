@@ -61,7 +61,12 @@ enum TrophyPick: String, AppEnum {
 /// A lock group, so a widget can follow just one of them.
 struct LockChoice: AppEntity {
     let id: String
-    var name: String { id }
+    var name: String
+
+    init(id: String, name: String? = nil) {
+        self.id = id
+        self.name = name ?? SharedStore.shared.widgetData.locks.first { $0.id == id }?.name ?? id
+    }
 
     static let typeDisplayRepresentation = TypeDisplayRepresentation(name: "Lock")
     static let defaultQuery = LockQuery()
@@ -69,7 +74,9 @@ struct LockChoice: AppEntity {
 
     struct LockQuery: EntityQuery {
         func entities(for ids: [String]) async throws -> [LockChoice] { ids.map { LockChoice(id: $0) } }
-        func suggestedEntities() async throws -> [LockChoice] { SharedStore.shared.widgetData.locks.map { LockChoice(id: $0.name) } }
+        func suggestedEntities() async throws -> [LockChoice] {
+            SharedStore.shared.widgetData.locks.map { LockChoice(id: $0.id.isEmpty ? $0.name : $0.id, name: $0.name) }
+        }
         func defaultResult() async -> LockChoice? { nil }
     }
 }

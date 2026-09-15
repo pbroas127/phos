@@ -48,6 +48,12 @@ struct SettingsScreen: View {
                         LabeledContent("Books and paths", value: model.plan.name)
                     }
                     .foregroundStyle(Theme.ink)
+                    NavigationLink {
+                        VoiceSettingsView()
+                    } label: {
+                        LabeledContent("Voice and speed", value: VoiceCatalog.naturalSupported || !model.settings.voiceID.isEmpty
+                                       ? "\(VoiceCatalog.name(model.settings.voiceID)), \(VoiceSpeed.label(model.settings.voiceRate))" : "iPhone voice")
+                    }
                     Picker("Reading style", selection: $model.settings.preferredRead) {
                         ForEach(ReadMode.allCases) { Text($0.title).tag($0) }
                     }
@@ -70,6 +76,13 @@ struct SettingsScreen: View {
                     }
                 }
 
+                Section("Appearance") {
+                    Picker("Appearance", selection: $model.settings.appearance) {
+                        ForEach(AppAppearance.allCases) { Text($0.title).tag($0) }
+                    }
+                    .pickerStyle(.segmented)
+                }
+
                 Section("Lock screen") {
                     Picker("Style", selection: $model.settings.shieldStyle) {
                         ForEach(ShieldStyle.allCases) { Text($0.title).tag($0) }
@@ -87,17 +100,23 @@ struct SettingsScreen: View {
                     Toggle("Daily reminder", isOn: $model.settings.reminderOn)
                     if model.settings.reminderOn {
                         DatePicker("Time", selection: reminderTime, displayedComponents: .hourAndMinute)
+                        Picker("Tone", selection: $model.settings.reminderTone) {
+                            ForEach(ReminderTone.allCases) { Text($0.title).tag($0) }
+                        }
+                        .pickerStyle(.segmented)
+                        Text(model.settings.reminderTone == .gentle
+                             ? "Calm invitations to read, no emoji, no streak talk."
+                             : "Emoji, fun, and a little streak talk.")
+                            .font(.footnote).foregroundStyle(Theme.dim)
                         Button("Send a sample now") { ReminderScheduler.sendSample(model) }
                     }
                 } header: {
                     Text("Reminders")
                 } footer: {
-                    Text("One friendly nudge a day, only on days you have not read yet. It changes with your streak and your next chapter.")
+                    Text("One nudge a day, only on days you have not read yet. It changes with your streak, your next chapter, and the time you pick.")
                 }
 
-                Section("Backup") {
-                    BackupRow()
-                }
+                DataSection()
 
                 Section("About") {
                     Link("Help and support", destination: URL(string: "https://phos-app-sigma.vercel.app/support")!)
@@ -113,6 +132,7 @@ struct SettingsScreen: View {
             .navigationDestination(for: String.self) { id in LockDetailView(lockID: id) }
             .onChange(of: model.settings.shieldStyle) { _, _ in model.savePreferences() }
             .onChange(of: model.settings.shieldTheme) { _, _ in model.savePreferences() }
+            .onChange(of: model.settings.appearance) { _, _ in model.savePreferences() }
             .onChange(of: model.settings.preferredRead) { _, _ in model.savePreferences() }
             .onChange(of: model.settings.preferredReflect) { _, _ in model.savePreferences() }
             .onChange(of: model.settings.allowAlreadyRead) { _, _ in model.savePreferences() }
@@ -122,6 +142,10 @@ struct SettingsScreen: View {
                 if on { Task { _ = await Notifier.requestPermission(); ReminderScheduler.reschedule(model) } } else { ReminderScheduler.reschedule(model) }
             }
             .onChange(of: model.settings.reminderMinutes) { _, _ in
+                model.savePreferences()
+                ReminderScheduler.reschedule(model)
+            }
+            .onChange(of: model.settings.reminderTone) { _, _ in
                 model.savePreferences()
                 ReminderScheduler.reschedule(model)
             }
@@ -153,6 +177,10 @@ struct LockRow: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(lock.name).font(.body.weight(.semibold)).foregroundStyle(Theme.ink)
                 Text(lock.enabled ? lock.summary : "Turned off").font(.caption).foregroundStyle(Theme.dim).lineLimit(1)
+                if let reset = lock.protection.passcodeResetAt {
+                    Label("Passcode clears \(reset.formatted(date: .abbreviated, time: .shortened))", systemImage: "exclamationmark.triangle.fill")
+                        .font(.caption.weight(.semibold)).foregroundStyle(Theme.red).lineLimit(1)
+                }
             }
             Spacer()
             if lock.protection.kind != .none {
@@ -258,10 +286,26 @@ struct WhenFields: View {
             }
             .pickerStyle(.segmented)
             if !lock.allDay {
-                DatePicker("Starts", selection: timeBinding($lock, \.start), displayedComponents: .hourAndMinute)
-                DatePicker("Ends", selection: timeBinding($lock, \.end), displayedComponents: .hourAndMinute)
-                let m = lock.windowMinutes
-                Text("Active for \(m / 60) hr\(m % 60 == 0 ? "" : " \(m % 60) min") each day.").font(.caption).foregroundStyle(Theme.dim)
+                Picker("Hours mean", selection: $lock.openWindow) {
+                    Text("Locked these hours").tag(false)
+                    Text("Open only these hours").tag(true)
+                }
+                .pickerStyle(.segmented)
+                // Open hours are stored as the locked window around them: open 6 to 9 PM is locked 9 PM to 6 PM.
+                if lock.openWindow {
+                    DatePicker("Opens", selection: timeBinding($lock, \.end), displayedComponents: .hourAndMinute)
+                    DatePicker("Locks again", selection: timeBinding($lock, \.start), displayedComponents: .hourAndMinute)
+                    let m = 1440 - lock.windowMinutes
+                    Text("Open for \(m / 60) hr\(m % 60 == 0 ? "" : " \(m % 60) min") each day, locked the rest.").font(.caption).foregroundStyle(Theme.dim)
+                } else {
+                    DatePicker("Starts", selection: timeBinding($lock, \.start), displayedComponents: .hourAndMinute)
+                    DatePicker("Ends", selection: timeBinding($lock, \.end), displayedComponents: .hourAndMinute)
+                    let m = lock.windowMinutes
+                    Text("Active for \(m / 60) hr\(m % 60 == 0 ? "" : " \(m % 60) min") each day.").font(.caption).foregroundStyle(Theme.dim)
+                }
+                if lock.start.minutesFromMidnight > lock.end.minutesFromMidnight {
+                    Text("Hours that run past midnight count for the day they start.").font(.caption).foregroundStyle(Theme.dim)
+                }
             } else {
                 Text("Active from midnight to midnight.").font(.caption).foregroundStyle(Theme.dim)
             }
@@ -459,12 +503,10 @@ struct LockWizard: View {
                 get: { selection },
                 set: { sel in
                     selection = sel
-                    draft.selection = Blocker.encode(sel)
-                    draft.appCount = Blocker.lockedCount(sel)
+                    Blocker.set(sel, on: &draft)
                 }
             ))
         }
-        .preferredColorScheme(.light)
     }
 
     private func title(_ p: Int) -> String {
@@ -492,7 +534,7 @@ struct LockWizard: View {
             }
             SettingsCard(title: "Apps", footer: "Phone, Messages, and Maps can never be locked.") {
                 HStack {
-                    Text(draft.appCount == 0 ? "Nothing chosen yet" : "\(draft.appCount) apps and categories").foregroundStyle(Theme.ink)
+                    Text(draft.appCount == 0 ? "Nothing chosen yet" : draft.appsLabel).foregroundStyle(Theme.ink)
                     Spacer()
                     Button("Choose") { pickerShown = true }.font(.body.weight(.semibold)).foregroundStyle(Theme.gold)
                 }
@@ -515,7 +557,7 @@ struct LockWizard: View {
             }
         default:
             SettingsCard(title: draft.name.isEmpty ? "Lock" : draft.name) {
-                review("Apps", "\(draft.appCount) apps and categories")
+                review("Apps", draft.appsLabel)
                 review("Days", draft.daysLabel)
                 review("Hours", draft.hoursLabel)
                 review("Unlocks", draft.policyLabel)
@@ -546,6 +588,7 @@ struct LockWizard: View {
         case 1:
             if draft.days.isEmpty { return "Pick at least one day." }
             if draft.windowMinutes < 15 { return "Hours must last at least 15 minutes." }
+            if draft.openWindow && !draft.allDay && 1440 - draft.windowMinutes < 15 { return "Open hours must last at least 15 minutes." }
         case 5:
             if draft.protection.kind == .passcode && !draft.protection.hasPasscode { return "Set a passcode first." }
         default:
@@ -598,6 +641,19 @@ struct LockDetailView: View {
                     Text(lock.summary).font(.caption).foregroundStyle(Theme.dim)
                 }
 
+                if let reset = lock.protection.passcodeResetAt {
+                    CardBox(padding: 14, fill: Theme.soft) {
+                        VStack(alignment: .leading, spacing: 6) {
+                            Label("The passcode clears \(reset.formatted(date: .abbreviated, time: .shortened))", systemImage: "exclamationmark.triangle.fill")
+                                .font(.subheadline.weight(.semibold)).foregroundStyle(Theme.ink)
+                            Text("Someone tapped \"I forgot the passcode\". After that time anyone can change this lock.")
+                                .font(.footnote).foregroundStyle(Theme.dim).wrapLines()
+                            Button("Cancel reset") { model.cancelPasscodeReset(lock.id) }
+                                .font(.footnote.weight(.semibold)).foregroundStyle(Theme.gold)
+                        }
+                    }
+                }
+
                 if let pending = model.pendingByLock[lock.id] {
                     CardBox(padding: 14, fill: Theme.soft) {
                         VStack(alignment: .leading, spacing: 6) {
@@ -611,7 +667,7 @@ struct LockDetailView: View {
 
                 SettingsCard(title: "Apps", footer: editing ? "You can remove apps while settings are open." : "Adding apps always works. Removing them needs Change settings.") {
                     HStack {
-                        Text("\(lock.appCount) apps and categories").foregroundStyle(Theme.ink)
+                        Text(lock.appsLabel).foregroundStyle(Theme.ink)
                         Spacer()
                         Button("Add apps") { addSelection = Blocker.selection(from: lock.selection); addPickerShown = true }
                             .font(.body.weight(.semibold)).foregroundStyle(Theme.gold)
@@ -625,7 +681,24 @@ struct LockDetailView: View {
                     }
                 }
 
-                ZStack(alignment: .top) {
+                if !editing {
+                    VStack(spacing: 8) {
+                        Button { requestEdit(lock) } label: {
+                            Label("Change settings", systemImage: lock.protection.kind.symbol)
+                                .font(.headline)
+                                .padding(.horizontal, 22).padding(.vertical, 14)
+                                .background(Theme.gold, in: Capsule())
+                                .foregroundStyle(.white)
+                        }
+                        if lock.protection.kind != .none {
+                            Text("Protected by \(lock.protection.protectedBy)")
+                                .font(.caption.weight(.semibold)).foregroundStyle(Theme.dim)
+                        }
+                    }
+                    .frame(maxWidth: .infinity)
+                }
+
+                VStack(alignment: .leading, spacing: 18) {
                     VStack(alignment: .leading, spacing: 18) {
                         SettingsCard(title: "Name") { TextField("Name", text: $draft.name) }
                         SettingsCard(title: "Schedule") { WhenFields(lock: $draft) }
@@ -647,25 +720,7 @@ struct LockDetailView: View {
                     }
                     .disabled(!editing)
                     .opacity(editing ? 1 : 0.4)
-
-                    if !editing {
-                        VStack(spacing: 8) {
-                            Button { requestEdit(lock) } label: {
-                                Label("Change settings", systemImage: lock.protection.kind.symbol)
-                                    .font(.headline)
-                                    .padding(.horizontal, 22).padding(.vertical, 14)
-                                    .background(Theme.gold, in: Capsule())
-                                    .foregroundStyle(.white)
-                                    .shadow(color: Theme.ink.opacity(0.18), radius: 12, y: 6)
-                            }
-                            Text("Protected by \(lock.protection.summary.lowercased())")
-                                .font(.caption.weight(.semibold)).foregroundStyle(Theme.ink)
-                                .padding(.horizontal, 10).padding(.vertical, 4)
-                                .background(Theme.paper.opacity(0.9), in: Capsule())
-                        }
-                        .frame(maxWidth: .infinity)
-                        .padding(.top, 70)
-                    }
+                    .accessibilityHint(editing ? "" : "Tap Change settings first")
                 }
             }
             .padding(20)
@@ -700,6 +755,7 @@ struct LockDetailView: View {
                 if let updated = model.lock(lock.id) {
                     draft.selection = updated.selection
                     draft.appCount = updated.appCount
+                    draft.categoryCount = updated.categoryCount
                 }
             }
         ))
@@ -707,12 +763,16 @@ struct LockDetailView: View {
             get: { replaceSelection },
             set: { sel in
                 replaceSelection = sel
-                draft.selection = Blocker.encode(sel)
-                draft.appCount = Blocker.lockedCount(sel)
+                Blocker.set(sel, on: &draft)
             }
         ))
         .sheet(isPresented: $passcodeShown) {
-            PasscodeEntrySheet(lock: lock, onSuccess: { passcodeShown = false; editing = true }, onCancel: { passcodeShown = false })
+            PasscodeEntrySheet(lock: lock, onSuccess: {
+                passcodeShown = false
+                // The right passcode clears tries and any reset, so start editing from the saved lock.
+                if let saved = model.lock(lock.id) { draft = saved }
+                editing = true
+            }, onCancel: { passcodeShown = false })
                 .environment(model)
         }
         .sheet(isPresented: Binding(get: { countdownMinutes != nil }, set: { if !$0 { countdownMinutes = nil } })) {
@@ -743,6 +803,7 @@ struct LockDetailView: View {
         if draft.appCount == 0 { return "Keep at least one app, or delete the lock." }
         if draft.days.isEmpty { return "Pick at least one day." }
         if draft.windowMinutes < 15 { return "Hours must last at least 15 minutes." }
+        if draft.openWindow && !draft.allDay && 1440 - draft.windowMinutes < 15 { return "Open hours must last at least 15 minutes." }
         if draft.protection.kind == .passcode && !draft.protection.hasPasscode { return "Set a passcode." }
         return nil
     }
@@ -800,9 +861,22 @@ struct PasscodeEntrySheet: View {
     var onCancel: () -> Void
     @State private var code = ""
     @State private var wrong = false
+    @State private var confirmReset = false
     @FocusState private var focused: Bool
 
     var body: some View {
+        TimelineView(.periodic(from: .now, by: 1)) { context in
+            entry(lockedFor: max(0, (model.lock(lock.id)?.protection.lockedOutUntil ?? context.date).timeIntervalSince(context.date)))
+        }
+        .confirmationDialog("Remove the passcode in 24 hours?", isPresented: $confirmReset, titleVisibility: .visible) {
+            Button("Remove it in 24 hours", role: .destructive) { model.forgotPasscode(lock.id) }
+            Button("Keep the passcode", role: .cancel) {}
+        } message: {
+            Text("Anyone with this phone can do this, so the person who keeps your code will not be asked. You can cancel it from the lock until then.")
+        }
+    }
+
+    private func entry(lockedFor wait: TimeInterval) -> some View {
         VStack(spacing: 20) {
             Image(systemName: "key.fill").font(.system(size: 40)).foregroundStyle(Theme.gold).padding(.top, 30)
             Text("Enter the passcode").font(Theme.serif(28)).foregroundStyle(Theme.ink)
@@ -815,23 +889,26 @@ struct PasscodeEntrySheet: View {
                 .background(Theme.card, in: RoundedRectangle(cornerRadius: 14))
                 .overlay(RoundedRectangle(cornerRadius: 14).stroke(wrong ? Theme.red : Theme.line))
                 .focused($focused)
-            if wrong { Text("That passcode is not right.").font(.footnote).foregroundStyle(Theme.red) }
+            if wait > 0 {
+                Text("Too many wrong tries. Try again in \(countdownText(wait)).").font(.footnote).foregroundStyle(Theme.red)
+            } else if wrong {
+                Text("That passcode is not right.").font(.footnote).foregroundStyle(Theme.red)
+            }
             Button("Continue") {
                 if model.checkPasscode(code, for: lock) { onSuccess() } else { wrong = true; code = "" }
             }
             .buttonStyle(.phos)
-            .disabled(code.count < 4)
+            .disabled(code.count < 4 || wait > 0)
             Button("Cancel") { onCancel() }.buttonStyle(.phosQuiet)
             if let reset = model.lock(lock.id)?.protection.passcodeResetAt {
                 Text("The passcode clears \(reset.formatted(date: .abbreviated, time: .shortened)).").font(.footnote).foregroundStyle(Theme.dim)
             } else {
-                Button("I forgot the passcode") { model.forgotPasscode(lock.id) }.font(.footnote).foregroundStyle(Theme.dim)
+                Button("I forgot the passcode") { confirmReset = true }.font(.footnote).foregroundStyle(Theme.dim)
             }
             Spacer()
         }
         .padding(24)
         .background(Theme.paper.ignoresSafeArea())
-        .preferredColorScheme(.light)
         .onAppear { focused = true }
     }
 }
@@ -881,7 +958,6 @@ struct PasscodeSetupSheet: View {
         }
         .padding(24)
         .background(Theme.paper.ignoresSafeArea())
-        .preferredColorScheme(.light)
         .onAppear { focused = true }
     }
 }
@@ -915,8 +991,7 @@ struct CooldownSheet: View {
             .padding(24)
         }
         .background(Theme.paper.ignoresSafeArea())
-        .preferredColorScheme(.light)
-        .onChange(of: phase) { _, p in if p != .active { start = Date() } }
+        .onChange(of: phase) { _, p in if p == .background { start = Date() } }
     }
 }
 

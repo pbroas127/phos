@@ -1,3 +1,4 @@
+import AVFoundation
 import SwiftUI
 import UIKit
 
@@ -86,17 +87,19 @@ struct ReflectStep: View {
     @Binding var text: String
     @Binding var prompts: [String]
     @Binding var speechSeconds: Double
+    @Binding var audioFile: String?
     var onDone: () -> Void
     @State private var textShown = false
 
     init(ref: ChapterRef, mode: Binding<ReflectMode>, text: Binding<String>,
          prompts: Binding<[String]> = .constant(["", "", ""]), speechSeconds: Binding<Double> = .constant(0),
-         onDone: @escaping () -> Void) {
+         audioFile: Binding<String?> = .constant(nil), onDone: @escaping () -> Void) {
         self.ref = ref
         _mode = mode
         _text = text
         _prompts = prompts
         _speechSeconds = speechSeconds
+        _audioFile = audioFile
         self.onDone = onDone
     }
 
@@ -110,7 +113,7 @@ struct ReflectStep: View {
 
             switch mode {
             case .typed: TypeReflect(ref: ref, text: $text, onDone: onDone)
-            case .spoken: SpeakReflect(ref: ref, text: $text, savedSeconds: $speechSeconds, onDone: onDone)
+            case .spoken: SpeakReflect(ref: ref, text: $text, savedSeconds: $speechSeconds, audioFile: $audioFile, onDone: onDone)
             case .prompts: PromptsReflect(ref: ref, text: $text, answers: $prompts, onDone: onDone)
             }
 
@@ -228,6 +231,7 @@ struct SpeakReflect: View {
     let ref: ChapterRef
     @Binding var text: String
     @Binding var savedSeconds: Double
+    var audioFile: Binding<String?> = .constant(nil)
     var onDone: () -> Void
     @StateObject private var recorder = SpeechRecorder()
     @State private var notice: String?
@@ -259,7 +263,8 @@ struct SpeakReflect: View {
             .frame(width: 180, height: 180)
             VStack(spacing: 2) {
                 Text("\(Int(seconds)) / \(rules.seconds) sec").font(Theme.serif(28)).monospacedDigit().foregroundStyle(Theme.ink)
-                Text(recorder.isRecording ? "Only time you are talking counts" : "Tap the microphone and start talking").font(.subheadline).foregroundStyle(Theme.dim)
+                Text(recorder.isRecording ? "Only time you are talking counts" : (seconds > 0 ? "Tap the microphone to keep going" : "Tap the microphone and start talking"))
+                    .font(.subheadline).foregroundStyle(Theme.dim)
             }
             ScrollView {
                 Text(spoken.isEmpty ? "Your words show up here as you speak." : spoken)
@@ -292,6 +297,7 @@ struct SpeakReflect: View {
         }
         .onChange(of: recorder.transcript) { _, t in if !t.isEmpty { text = t } }
         .onChange(of: Int(recorder.speechSeconds)) { _, s in savedSeconds = Double(s) }
+        .onChange(of: recorder.audioFile) { _, f in if let f { audioFile.wrappedValue = f } }
         .onDisappear { recorder.stop() }
     }
 
@@ -367,6 +373,52 @@ struct PromptsReflect: View {
                            "Jesus does not shame him for coming in secret. He just tells him the truth plainly.",
                            "Bring the questions I keep hiding into the light"]
             }
+        }
+    }
+}
+
+/// Plays back the recording of a spoken reflection from the journal.
+final class ReflectionPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
+    @Published var playing = false
+    private var player: AVAudioPlayer?
+
+    func toggle(_ url: URL) {
+        if playing {
+            player?.pause()
+            playing = false
+            return
+        }
+        if player?.url != url {
+            player = try? AVAudioPlayer(contentsOf: url)
+            player?.delegate = self
+        }
+        try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .spokenAudio, options: [])
+        try? AVAudioSession.sharedInstance().setActive(true)
+        playing = player?.play() ?? false
+    }
+
+    func stop() {
+        player?.stop()
+        playing = false
+    }
+
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        DispatchQueue.main.async { self.playing = false }
+    }
+}
+
+struct AudioReplayButton: View {
+    let file: String
+    @StateObject private var player = ReflectionPlayer()
+
+    var body: some View {
+        let url = SpeechRecorder.audioURL(file)
+        if FileManager.default.fileExists(atPath: url.path) {
+            Button { player.toggle(url) } label: {
+                Label(player.playing ? "Pause" : "Play what you said", systemImage: player.playing ? "pause.circle.fill" : "play.circle.fill")
+                    .font(.caption.weight(.semibold)).foregroundStyle(Theme.gold)
+            }
+            .onDisappear { player.stop() }
         }
     }
 }

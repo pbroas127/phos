@@ -121,7 +121,7 @@ struct AchievementStats {
         var reviewed = Set<String>(), perfectBooks = 0
         for r in reviews {
             reviewed.formUnion(r.chapterIDs)
-            if r.chapterIDs.count > 1 && r.total > 0 && r.score >= r.total { perfectBooks += 1 }
+            if let n = ReadingPlans.chapterCounts[r.scope], r.chapterIDs.count >= n, r.total > 0, r.score >= r.total { perfectBooks += 1 }
         }
         self.reviewedChapters = reviewed
         self.perfectBookReviews = perfectBooks

@@ -36,24 +36,85 @@ enum CloudBackup {
 
     static var lastSaved: Date? { UserDefaults.standard.object(forKey: savedKey) as? Date }
 
-    @discardableResult
-    static func save(_ model: AppModel) -> Bool {
-        guard available, !model.demo, !model.records.isEmpty else { return false }
+    private static let queue = DispatchQueue(label: "wick.backup", qos: .utility)
+    private static let fingerprintKey = "wick.backup.fingerprint"
+
+    /// Saves in the background after changes. Never shrinks the backup: whatever iCloud already holds is merged in first,
+    /// so a new phone that skipped restore cannot wipe years of journal.
+    static func save(_ model: AppModel) {
+        guard let payload = payload(model) else { return }
+        let print = fingerprint(payload)
+        guard UserDefaults.standard.string(forKey: fingerprintKey) != print else { return }
+        queue.async { if write(payload) { UserDefaults.standard.set(print, forKey: fingerprintKey) } }
+    }
+
+    /// Saves right away, for the Back up now button.
+    static func saveNow(_ model: AppModel) -> Bool {
+        guard let payload = payload(model) else { return false }
+        let ok = queue.sync { write(payload) }
+        if ok { UserDefaults.standard.set(fingerprint(payload), forKey: fingerprintKey) }
+        return ok
+    }
+
+    /// Removes the backup from iCloud.
+    static func erase() {
+        let store = NSUbiquitousKeyValueStore.default
+        store.removeObject(forKey: key)
+        store.synchronize()
+        UserDefaults.standard.removeObject(forKey: savedKey)
+        UserDefaults.standard.removeObject(forKey: fingerprintKey)
+    }
+
+    private static func payload(_ model: AppModel) -> BackupPayload? {
+        guard available, !model.demo, model.settings.backupOn, !model.records.isEmpty else { return nil }
         let s = model.settings
-        var payload = BackupPayload(savedAt: Date(), records: model.records, earned: model.earned, planID: s.planID,
-                                    planPositions: s.planPositions, pinnedTrophies: s.pinnedTrophies, passUses: s.passUses,
-                                    preferredRead: s.preferredRead, preferredReflect: s.preferredReflect, voiceID: s.voiceID,
-                                    reminderOn: s.reminderOn, reminderMinutes: s.reminderMinutes, allowAlreadyRead: s.allowAlreadyRead,
-                                    shieldStyle: s.shieldStyle, shieldTheme: s.shieldTheme,
-                                    reviews: model.reviews, allowReviewUnread: s.allowReviewUnread)
+        return BackupPayload(savedAt: Date(), records: model.records, earned: model.earned, planID: s.planID,
+                             planPositions: s.planPositions, pinnedTrophies: s.pinnedTrophies, passUses: s.passUses,
+                             preferredRead: s.preferredRead, preferredReflect: s.preferredReflect, voiceID: s.voiceID,
+                             reminderOn: s.reminderOn, reminderMinutes: s.reminderMinutes, allowAlreadyRead: s.allowAlreadyRead,
+                             shieldStyle: s.shieldStyle, shieldTheme: s.shieldTheme,
+                             reviews: model.reviews, allowReviewUnread: s.allowReviewUnread)
+    }
+
+    private static func fingerprint(_ p: BackupPayload) -> String {
+        let last = p.records.map(\.completedAt.timeIntervalSince1970).max() ?? 0
+        return "\(p.records.count).\(p.reviews?.count ?? 0).\(p.earned.count).\(Int(last)).\(p.planID).\(p.planPositions.values.reduce(0, +))"
+    }
+
+    /// Combines this iPhone's history with what iCloud already has. Settings come from this iPhone.
+    static func merged(_ local: BackupPayload, with remote: BackupPayload?) -> BackupPayload {
+        guard let remote else { return local }
+        var out = local
+        var byID = Dictionary(local.records.map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
+        for r in remote.records {
+            if let mine = byID[r.id] {
+                if mine.reflection.isEmpty && !r.reflection.isEmpty { byID[r.id]?.reflection = r.reflection }
+            } else {
+                byID[r.id] = r
+            }
+        }
+        out.records = byID.values.sorted { $0.completedAt < $1.completedAt }
+        var reviews = Dictionary((local.reviews ?? []).map { ($0.id, $0) }, uniquingKeysWith: { a, _ in a })
+        for r in remote.reviews ?? [] where reviews[r.id] == nil { reviews[r.id] = r }
+        out.reviews = reviews.values.sorted { $0.completedAt < $1.completedAt }
+        for (id, date) in remote.earned { out.earned[id] = min(out.earned[id] ?? date, date) }
+        for (plan, pos) in remote.planPositions { out.planPositions[plan] = max(out.planPositions[plan] ?? 0, pos) }
+        out.pinnedTrophies = Array(Set(local.pinnedTrophies + remote.pinnedTrophies))
+        out.passUses = Array(Set(local.passUses + remote.passUses)).sorted { $0.date < $1.date }
+        return out
+    }
+
+    private static func write(_ local: BackupPayload) -> Bool {
+        var payload = merged(local, with: latest())
         var data = pack(payload)
-        // ponytail: years of long reflections could pass iCloud's 1 MB; then the oldest reflection text is dropped first.
-        // Upgrade path is a CloudKit record if people ever hit this.
-        var i = 0
+        // ponytail: years of long reflections could pass iCloud's 1 MB; then the oldest reflection text is dropped first,
+        // a tenth of the journal at a time. Upgrade path is a CloudKit record if people ever hit this.
         let sorted = payload.records.indices.sorted { payload.records[$0].completedAt < payload.records[$1].completedAt }
+        var i = 0
+        let step = max(1, sorted.count / 10)
         while let d = data, d.count > limit, i < sorted.count {
-            payload.records[sorted[i]].reflection = ""
-            i += 1
+            for j in sorted[i..<min(sorted.count, i + step)] { payload.records[j].reflection = "" }
+            i += step
             data = pack(payload)
         }
         guard let data, data.count <= limit else { return false }
@@ -123,15 +184,25 @@ struct BackupRow: View {
     @State private var found: BackupPayload?
 
     var body: some View {
+        @Bindable var model = model
         VStack(alignment: .leading, spacing: 10) {
-            Label(CloudBackup.available ? "iCloud backup is on" : "iCloud is off on this iPhone",
-                  systemImage: CloudBackup.available ? "checkmark.icloud" : "icloud.slash")
-                .foregroundStyle(CloudBackup.available ? Theme.ink : Theme.dim)
-            Text(detail).font(.footnote).foregroundStyle(Theme.dim).fixedSize(horizontal: false, vertical: true)
             if CloudBackup.available {
+                Toggle(isOn: $model.settings.backupOn) {
+                    Label("Back up to iCloud", systemImage: model.settings.backupOn ? "checkmark.icloud" : "icloud.slash")
+                        .foregroundStyle(Theme.ink)
+                }
+                .onChange(of: model.settings.backupOn) { _, on in
+                    model.savePreferences()
+                    if on { CloudBackup.save(model) }
+                }
+            } else {
+                Label("iCloud is off on this iPhone", systemImage: "icloud.slash").foregroundStyle(Theme.dim)
+            }
+            Text(detail).font(.footnote).foregroundStyle(Theme.dim).fixedSize(horizontal: false, vertical: true)
+            if CloudBackup.available && model.settings.backupOn {
                 HStack(spacing: 16) {
                     Button("Back up now") {
-                        message = CloudBackup.save(model) ? "Backed up just now." : "Nothing to back up yet. Finish a chapter first."
+                        message = CloudBackup.saveNow(model) ? "Backed up just now." : "Nothing to back up yet. Finish a chapter first."
                     }
                     .buttonStyle(.borderless)
                     Button("Restore") {
@@ -152,13 +223,16 @@ struct BackupRow: View {
             }
             Button("Cancel", role: .cancel) {}
         } message: {
-            Text("Readings, journal entries, streaks, trophies, and your places in each book come back. Nothing on this iPhone is removed.")
+            Text("Readings, journal entries, streaks, trophies, and places in each book are added to what is on this iPhone. Your reading and reflection style, reminder time, lock screen look, and active plan switch to the backup's.")
         }
     }
 
     private var detail: String {
         guard CloudBackup.available else {
             return "Sign in to iCloud in the Settings app to keep your journal, streaks, and trophies safe."
+        }
+        guard model.settings.backupOn else {
+            return "Backup is off. Your journal, streaks, and trophies stay only on this iPhone. Your existing iCloud backup is kept until you delete your data."
         }
         if let saved = CloudBackup.lastSaved {
             return "Your journal, streaks, trophies, and reading places save to your iCloud automatically. Last saved \(saved.formatted(.relative(presentation: .named)))."

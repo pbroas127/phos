@@ -34,7 +34,6 @@ struct LibraryView: View {
                 PathDetailView(planID: id, onRead: onRead)
             }
         }
-        .preferredColorScheme(.light)
     }
 
     private var continueSection: some View {
@@ -285,7 +284,6 @@ struct ChapterActionSheet: View {
         }
         .padding(24)
         .background(Theme.paper.ignoresSafeArea())
-        .preferredColorScheme(.light)
         .sheet(item: $reviewing) { ReviewFlow(request: $0).environment(model) }
     }
 

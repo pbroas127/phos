@@ -746,7 +746,7 @@ final class LockScheduleTests: XCTestCase {
         // Wednesday Sept 9, every day but Sunday: opens again Sunday.
         strict.days = [2, 3, 4, 5, 6, 7]
         XCTAssertEqual(LockLogic.reopens(strict, now: date(9, 12), calendar: cal), date(13, 0))
-        XCTAssertEqual(LockLogic.reopenPhrase(strict, now: date(9, 12), calendar: cal), cal.weekdaySymbols[0])
+        XCTAssertEqual(LockLogic.reopenPhrase(strict, now: date(9, 12), calendar: cal), "Sunday")
         strict.allDay = false
         strict.start = TimeOfDay(hour: 22, minute: 0)
         strict.end = TimeOfDay(hour: 6, minute: 0)

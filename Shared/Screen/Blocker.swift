@@ -46,7 +46,7 @@ enum Blocker {
 
     /// Shows the shield on a lock's apps for a short time during setup, so people see what it looks like.
     /// The Screen Time schedule ends it, and every sync puts the lock back to its real state.
-    static func preview(_ lock: LockSet, minutes: Int = 2, now: Date = Date()) {
+    static func preview(_ lock: LockSet, minutes: Int = 2, now: Date = TrustedClock.now()) {
         apply(lock, shield: true)
         scheduleRelock(lockID: "preview", at: now.addingTimeInterval(TimeInterval(minutes * 60)), now: now)
     }
@@ -112,7 +112,7 @@ enum Blocker {
     }
 
     /// Relocks a lock when its open time ends. Schedules must span 15 minutes, so short windows start in the past.
-    static func scheduleRelock(lockID: String, at end: Date, now: Date = Date()) {
+    static func scheduleRelock(lockID: String, at end: Date, now: Date = TrustedClock.now()) {
         let center = DeviceActivityCenter()
         center.stopMonitoring([.unlock(lockID)])
         let start = min(now, end.addingTimeInterval(-15 * 60))
@@ -131,7 +131,7 @@ enum Blocker {
 
 /// Lock decisions shared by the app and the activity monitor extension.
 enum LockEngine {
-    static func sync(store: SharedStore = .shared, now: Date = Date(), today override: TodayState? = nil, yesterday overrideYesterday: TodayState? = nil) {
+    static func sync(store: SharedStore = .shared, now: Date = TrustedClock.now(), today override: TodayState? = nil, yesterday overrideYesterday: TodayState? = nil) {
         let settings = store.settings
         let morning = settings.schedule.morning
         let today = override ?? store.today(now: now, morning: morning)
@@ -166,13 +166,14 @@ enum LockEngine {
                 let position = min(settings.planPositions[plan.id] ?? 0, plan.chapters.count)
                 snap.chapterTitle = BookNames.title(plan.chapters[min(position, plan.chapters.count - 1)])
             }
+            snap.questionTopic = ""
             let done = store.doneKeys
             if !done.isEmpty { snap.streak = Streaks.current(doneKeys: Set(done), todayKey: today.dayKey) }
         }
         store.snapshot = snap
     }
 
-    static func handleIntervalStart(_ activity: DeviceActivityName, store: SharedStore = .shared, now: Date = Date()) {
+    static func handleIntervalStart(_ activity: DeviceActivityName, store: SharedStore = .shared, now: Date = TrustedClock.now()) {
         // An unlock starting needs no work, and syncing here could reapply a shield from data older than the unlock.
         guard activity.unlockLockID == nil else { return }
         if activity == .day {
@@ -183,7 +184,7 @@ enum LockEngine {
         sync(store: store, now: now)
     }
 
-    static func handleIntervalEnd(_ activity: DeviceActivityName, store: SharedStore = .shared, now: Date = Date()) {
+    static func handleIntervalEnd(_ activity: DeviceActivityName, store: SharedStore = .shared, now: Date = TrustedClock.now()) {
         var today = store.today(now: now, morning: store.settings.schedule.morning)
         var yesterday = store.previousDay(before: today.dayKey)
         if let id = activity.unlockLockID {
@@ -207,7 +208,7 @@ enum LockEngine {
 
 extension LockEngine {
     /// Saves the highest screen time threshold reached today. Only touches the usage key, never today's lock state.
-    static func recordUsage(_ event: DeviceActivityEvent.Name, store: SharedStore = .shared, now: Date = Date()) {
+    static func recordUsage(_ event: DeviceActivityEvent.Name, store: SharedStore = .shared, now: Date = TrustedClock.now()) {
         guard let minutes = Int(event.rawValue.replacingOccurrences(of: "phos.use.", with: "")) else { return }
         let key = DayKey.key(for: now, morning: store.settings.schedule.morning)
         var usage = store.usage

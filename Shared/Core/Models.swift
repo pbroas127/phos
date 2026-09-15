@@ -548,6 +548,8 @@ struct TodayState: Codable, Equatable {
     var askedQuestionIDs: [String] = []
     var unlocks: [String: LockDay] = [:]
     var recallCount = 0
+    /// A question shown on the unlock screen and not answered yet, by lock, so reopening shows the same one.
+    var pendingQuestions: [String: String] = [:]
 
     init(dayKey: String) {
         self.dayKey = dayKey
@@ -566,6 +568,7 @@ struct TodayState: Codable, Equatable {
         askedQuestionIDs = (try? c.decode([String].self, forKey: .askedQuestionIDs)) ?? []
         unlocks = (try? c.decode([String: LockDay].self, forKey: .unlocks)) ?? [:]
         recallCount = (try? c.decode(Int.self, forKey: .recallCount)) ?? 0
+        pendingQuestions = (try? c.decode([String: String].self, forKey: .pendingQuestions)) ?? [:]
     }
 
     func day(_ lockID: String) -> LockDay { unlocks[lockID] ?? LockDay() }
@@ -775,6 +778,8 @@ struct SharedSnapshot: Codable, Equatable {
     var planLength = 0
     /// The shield button works by posting a notification, so the shield says how else to get in when they are off.
     var notificationsDenied = false
+    /// What a question unlock asks about: one chapter's name, or empty when several were read today.
+    var questionTopic = ""
 
     init() {}
 
@@ -794,5 +799,6 @@ struct SharedSnapshot: Codable, Equatable {
         planDay = (try? c.decode(Int.self, forKey: .planDay)) ?? d.planDay
         planLength = (try? c.decode(Int.self, forKey: .planLength)) ?? d.planLength
         notificationsDenied = (try? c.decode(Bool.self, forKey: .notificationsDenied)) ?? d.notificationsDenied
+        questionTopic = (try? c.decode(String.self, forKey: .questionTopic)) ?? d.questionTopic
     }
 }

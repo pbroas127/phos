@@ -820,3 +820,20 @@ final class LockScheduleTests: XCTestCase {
         XCTAssertFalse(LockSet.rewardChoices.contains(30))
     }
 }
+
+final class TrustedClockTests: XCTestCase {
+    func testChangingTheClockDoesNotMoveTime() {
+        let anchor: TimeInterval = 1_800_000_000
+        let wall = Date(timeIntervalSince1970: anchor + 600)
+        // Ten minutes really passed: the wall clock is trusted.
+        XCTAssertEqual(TrustedClock.resolve(wall: wall, mono: 600, anchorWall: anchor, anchorMono: 0), wall)
+        // The clock jumped three hours ahead while only ten minutes passed: the real ten minutes win.
+        let jumped = Date(timeIntervalSince1970: anchor + 600 + 3 * 3600)
+        XCTAssertEqual(TrustedClock.resolve(wall: jumped, mono: 600, anchorWall: anchor, anchorMono: 0), wall)
+        // Set back an hour: still the real time.
+        let back = Date(timeIntervalSince1970: anchor + 600 - 3600)
+        XCTAssertEqual(TrustedClock.resolve(wall: back, mono: 600, anchorWall: anchor, anchorMono: 0), wall)
+        // After a restart the monotonic clock starts over, so the wall clock is trusted again.
+        XCTAssertEqual(TrustedClock.resolve(wall: jumped, mono: 5, anchorWall: anchor, anchorMono: 600), jumped)
+    }
+}

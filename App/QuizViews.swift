@@ -2,7 +2,10 @@ import SwiftUI
 
 /// Runs a set of questions one at a time and reports the score and misses.
 struct QuizRunner: View {
+    @Environment(\.scenePhase) private var phase
     let items: [QuizItem]
+    /// Leaving Wick while a question is showing counts it as missed, so nobody can look an answer up or fish for an easier question.
+    var leavingCountsAsMiss = true
     var onAnswer: (Int, Int, [Question]) -> Void
     var onFinish: (Int, [Question]) -> Void
     var footnote = "The chapter is hidden until you finish"
@@ -15,7 +18,7 @@ struct QuizRunner: View {
     @State private var finishing = false
 
     init(items: [QuizItem], startIndex: Int = 0, startCorrect: Int = 0, startMissed: [Question] = [],
-         footnote: String = "The chapter is hidden until you finish", footnoteIcon: String = "eye.slash",
+         footnote: String = "The chapter is hidden until you finish", footnoteIcon: String = "eye.slash", leavingCountsAsMiss: Bool = true,
          onAnswer: @escaping (Int, Int, [Question]) -> Void = { _, _, _ in },
          onFinish: @escaping (Int, [Question]) -> Void) {
         self.items = items
@@ -23,6 +26,7 @@ struct QuizRunner: View {
         self.onFinish = onFinish
         self.footnote = footnote
         self.footnoteIcon = footnoteIcon
+        self.leavingCountsAsMiss = leavingCountsAsMiss
         _index = State(initialValue: min(startIndex, max(items.count - 1, 0)))
         _correct = State(initialValue: startCorrect)
         _missed = State(initialValue: startMissed)
@@ -67,9 +71,20 @@ struct QuizRunner: View {
                 Spacer(minLength: 0)
                 Label(footnote, systemImage: footnoteIcon)
                     .font(.caption).foregroundStyle(Theme.dim).frame(maxWidth: .infinity)
+                if leavingCountsAsMiss {
+                    Text("Leaving Wick during a question counts it as missed.")
+                        .font(.caption2).foregroundStyle(Theme.dim).frame(maxWidth: .infinity)
+                }
             }
             .padding(.horizontal, 20)
             .padding(.bottom, 12)
+            }
+            .onChange(of: phase) { _, p in
+                guard p == .background, leavingCountsAsMiss, answered == nil, !finishing, !items.isEmpty else { return }
+                let item = items[min(index, items.count - 1)]
+                answered = false
+                missed.append(item.question)
+                onAnswer(index + 1, correct, missed)
             }
         }
     }

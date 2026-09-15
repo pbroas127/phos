@@ -18,17 +18,12 @@ jobs:
       - name: Build
         working-directory: Tools/kokoro-check
         run: |
+          cp ../../Shared/Core/SpeechText.swift Sources/KokoroCheck/SpeechText.swift
           set -o pipefail
           xcodebuild build -scheme KokoroCheck -destination "platform=macOS,arch=arm64" -configuration Release -derivedDataPath dd \
             -skipMacroValidation -skipPackagePluginValidation 2>&1 | grep -E "error:|BUILD" | tail -30
-      - name: Bundles next to the tool
-        run: ls -R Tools/kokoro-check/dd/Build/Products/Release/ | grep -iE "bundle|metallib|json|txt" | head -40
-      - name: Run on GPU
-        continue-on-error: true
-        run: Tools/kokoro-check/dd/Build/Products/Release/KokoroCheck model.safetensors App/Resources/kokoro-voices.npz out/gpu gpu 2>&1 | tail -40
-      - name: Run on CPU
-        continue-on-error: true
-        run: Tools/kokoro-check/dd/Build/Products/Release/KokoroCheck model.safetensors App/Resources/kokoro-voices.npz out/cpu cpu 2>&1 | tail -40
+      - name: Run the voices like the app does
+        run: Tools/kokoro-check/dd/Build/Products/Release/KokoroCheck model.safetensors App/Resources/kokoro-voices.npz App/Resources/bible.json out 2>&1 | tail -80
       - uses: actions/upload-artifact@v4
         if: always()
         with:

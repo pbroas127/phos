@@ -20,14 +20,14 @@ class ShieldActionExtension: ShieldActionDelegate {
     private func lock(_ matches: (FamilyActivitySelection) -> Bool) -> LockSet? {
         let store = SharedStore.shared
         let settings = store.settings
-        let today = store.today(morning: settings.schedule.morning)
+        let today = store.today(now: TrustedClock.now(), morning: settings.schedule.morning)
         let yesterday = store.previousDay(before: today.dayKey)
         let candidates = settings.lockSets.filter { set in
             guard let data = set.selection, let sel = try? JSONDecoder().decode(FamilyActivitySelection.self, from: data) else { return false }
             return matches(sel)
         }
         return candidates.first {
-            LockLogic.state($0, today: today, yesterday: yesterday, now: Date(), morning: settings.schedule.morning).isLocked
+            LockLogic.state($0, today: today, yesterday: yesterday, now: TrustedClock.now(), morning: settings.schedule.morning).isLocked
         } ?? candidates.first
     }
 
@@ -41,8 +41,8 @@ class ShieldActionExtension: ShieldActionDelegate {
         let state: LockLogic.State
         if let lock {
             let morning = store.settings.schedule.morning
-            let today = store.today(morning: morning)
-            state = LockLogic.state(lock, today: today, yesterday: store.previousDay(before: today.dayKey), now: Date(), morning: morning)
+            let today = store.today(now: TrustedClock.now(), morning: morning)
+            state = LockLogic.state(lock, today: today, yesterday: store.previousDay(before: today.dayKey), now: TrustedClock.now(), morning: morning)
         } else {
             state = Self.state(for: snap.reason)
         }
@@ -53,7 +53,7 @@ class ShieldActionExtension: ShieldActionDelegate {
                 done(.defer)
                 return
             }
-            let content = Self.content(state: state, lock: lock, chapter: snap.chapterTitle)
+            let content = Self.content(state: state, lock: lock, chapter: snap.chapterTitle, topic: snap.questionTopic)
             center.removeDeliveredNotifications(withIdentifiers: ["phos.shield"])
             center.add(UNNotificationRequest(identifier: "phos.shield", content: content, trigger: nil)) { _ in
                 done(.close)
@@ -71,7 +71,7 @@ class ShieldActionExtension: ShieldActionDelegate {
         }
     }
 
-    private static func content(state: LockLogic.State, lock: LockSet?, chapter: String) -> UNMutableNotificationContent {
+    private static func content(state: LockLogic.State, lock: LockSet?, chapter: String, topic: String) -> UNMutableNotificationContent {
         let content = UNMutableNotificationContent()
         let name = lock?.name ?? "your apps"
         var route = "read"
@@ -86,7 +86,7 @@ class ShieldActionExtension: ShieldActionDelegate {
             route = "unlock"
         case .needsQuestion:
             content.title = "One question"
-            content.body = "Tap to answer a question about \(chapter) and open \(name)."
+            content.body = "Tap to answer a question about \(topic.isEmpty ? "what you read today" : topic) and open \(name)."
         case .needsTap:
             content.title = "Ready to unlock"
             content.body = "You read today. Tap to open \(name)."

@@ -125,7 +125,7 @@ struct MissedView: View {
 
     var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { context in
-            let wait = max(0, (model.today.nextAttemptAt ?? context.date).timeIntervalSince(context.date))
+            let wait = max(0, (model.today.nextAttemptAt ?? context.date).timeIntervalSince(TrustedClock.now()))
             VStack(spacing: 16) {
                 ScrollView {
                     VStack(spacing: 16) {
@@ -282,11 +282,13 @@ struct LockStatusCard: View {
 struct QuestionUnlockView: View {
     @Environment(AppModel.self) private var model
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.scenePhase) private var phase
     let lock: LockSet
     var onRead: () -> Void = {}
     var onPass: () -> Void = {}
     @State private var item: QuizItem?
     @State private var answered: Bool?
+    @State private var loaded = false
 
     var body: some View {
         ScrollView {
@@ -300,12 +302,20 @@ struct QuestionUnlockView: View {
                     }
                     Text("You wrote that about \(record.title). Now one question from it.").font(.subheadline).foregroundStyle(Theme.dim)
                 }
+                let chapters = model.questionChapters(for: lock)
+                if !chapters.isEmpty {
+                    Text(chapters.count == 1 ? "One question about \(BookNames.title(chapters[0]))." : "One question about what you read today.")
+                        .font(.subheadline.weight(.semibold)).foregroundStyle(Theme.ink)
+                }
                 if let item {
                     QuestionView(item: item, locked: answered != nil) { right in
                         answered = right
-                        if right { model.unlock(lock, method: .question) } else { model.registerMiss() }
+                        model.answerUnlockQuestion(for: lock, right: right)
                     }
                     .id(item.id)
+                    if answered == nil {
+                        Text("Leaving before you answer counts as a miss.").font(.caption).foregroundStyle(Theme.dim)
+                    }
                     if let answered {
                         Feedback(item: item, right: answered)
                         if answered {
@@ -316,8 +326,12 @@ struct QuestionUnlockView: View {
                             RetryButton { newQuestion() }
                         }
                     }
+                } else if loaded, model.nextAttemptAt != nil {
+                    // A miss is waiting out its timer. Reopening this screen does not skip it.
+                    Text("You missed the last question.").font(.headline).foregroundStyle(Theme.ink)
+                    RetryButton { newQuestion() }
                 } else {
-                    Text("No questions are available for today's chapter.").foregroundStyle(Theme.dim)
+                    Text("No questions are available for what you read today.").foregroundStyle(Theme.dim)
                     Button("Read today's chapter", action: onRead).buttonStyle(.phos)
                     if lock.emergencyPasses > 0 {
                         Button("Use an emergency pass (\(model.passesLeft(lock)) left)") { dismiss(); onPass() }
@@ -331,15 +345,24 @@ struct QuestionUnlockView: View {
         .background(Theme.paper.ignoresSafeArea())
         .navigationTitle("One question")
         .navigationBarTitleDisplayMode(.inline)
-        .onAppear { if item == nil { newQuestion() } }
+        .onAppear {
+            if item == nil { newQuestion() }
+            loaded = true
+        }
+        // Leaving with a question on screen counts as a miss, so it cannot be looked up or traded for another.
+        .onDisappear { leftUnanswered() }
+        .onChange(of: phase) { _, p in if p == .background { leftUnanswered() } }
     }
 
     private func newQuestion() {
-        let ref = model.todaysRecord?.ref ?? model.todaysChapter
-        let bank = QuestionBank.shared.questions(for: ref)?.questions ?? []
-        item = QuizEngine.pick(from: bank, count: 1, avoiding: Set(model.today.askedQuestionIDs)).first
-        if let item { model.markAsked([item]) }
         answered = nil
+        item = model.unlockQuestion(for: lock)
+    }
+
+    private func leftUnanswered() {
+        guard item != nil, answered == nil else { return }
+        answered = false
+        model.answerUnlockQuestion(for: lock, right: false)
     }
 }
 
@@ -349,7 +372,7 @@ struct RetryButton: View {
 
     var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { context in
-            let wait = max(0, (model.today.nextAttemptAt ?? context.date).timeIntervalSince(context.date))
+            let wait = max(0, (model.today.nextAttemptAt ?? context.date).timeIntervalSince(TrustedClock.now()))
             Button(wait > 0 ? "Another question in \(countdownText(wait))" : "Try another question", action: action)
                 .buttonStyle(.phos).disabled(wait > 0)
         }
@@ -370,7 +393,7 @@ struct EmergencyPassSheet: View {
                 .font(.subheadline).foregroundStyle(Theme.dim).multilineTextAlignment(.center)
             if let end {
                 TimelineView(.periodic(from: .now, by: 1)) { context in
-                    let left = end.timeIntervalSince(context.date)
+                    let left = end.timeIntervalSince(TrustedClock.now())
                     VStack(spacing: 12) {
                         Text(left > 0 ? countdownText(left) : "Ready").font(Theme.serif(44)).monospacedDigit().foregroundStyle(Theme.ink)
                         Text("Take a breath. Is this worth it?").foregroundStyle(Theme.dim)
@@ -382,7 +405,7 @@ struct EmergencyPassSheet: View {
                     }
                 }
             } else {
-                Button("Use a pass") { end = Date().addingTimeInterval(model.demo ? 3 : 60) }
+                Button("Use a pass") { end = TrustedClock.now().addingTimeInterval(model.demo ? 3 : 60) }
                     .buttonStyle(.phos)
                     .disabled(model.passesLeft(lock) == 0)
             }

@@ -28,22 +28,22 @@ class ShieldConfigurationExtension: ShieldConfigurationDataSource {
         let store = SharedStore.shared
         let settings = store.settings
         let morning = settings.schedule.morning
-        let today = store.today(morning: morning)
+        let today = store.today(now: TrustedClock.now(), morning: morning)
         let yesterday = store.previousDay(before: today.dayKey)
         let candidates = settings.lockSets.filter { set in
             guard let data = set.selection, let sel = try? JSONDecoder().decode(FamilyActivitySelection.self, from: data) else { return false }
             return matches(sel)
         }
-        return candidates.first { LockLogic.state($0, today: today, yesterday: yesterday, now: Date(), morning: morning).isLocked } ?? candidates.first
+        return candidates.first { LockLogic.state($0, today: today, yesterday: yesterday, now: TrustedClock.now(), morning: morning).isLocked } ?? candidates.first
     }
 
     private func make(name: String?, lock: LockSet?) -> ShieldConfiguration {
         let store = SharedStore.shared
         let snap = store.snapshot
         let morning = store.settings.schedule.morning
-        let today = store.today(morning: morning)
+        let today = store.today(now: TrustedClock.now(), morning: morning)
         let yesterday = store.previousDay(before: today.dayKey)
-        let state = lock.map { LockLogic.state($0, today: today, yesterday: yesterday, now: Date(), morning: morning) } ?? .needsReading
+        let state = lock.map { LockLogic.state($0, today: today, yesterday: yesterday, now: TrustedClock.now(), morning: morning) } ?? .needsReading
         let copy = ShieldArt.copy(state: state, lock: lock, app: name ?? "This app", snap: snap, today: today,
                                   yesterday: yesterday, morning: morning)
         // Bedtime style locks always stay dark. Appearance cannot be read reliably inside a shield.

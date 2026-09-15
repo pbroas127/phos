@@ -20,7 +20,7 @@ struct ReviewFlow: View {
                     items = model.reviewItems(request)
                 }, done: { dismiss() })
             } else {
-                QuizRunner(items: items, footnote: "Review only. This does not open your apps.", footnoteIcon: "arrow.counterclockwise") { score, missed in
+                QuizRunner(items: items, footnote: "Review only. This does not open your apps.", footnoteIcon: "arrow.counterclockwise", leavingCountsAsMiss: false) { score, missed in
                     model.completeReview(request, score: score, total: items.count)
                     withAnimation { outcome = ReviewOutcome(score: score, total: items.count, missed: missed) }
                 }

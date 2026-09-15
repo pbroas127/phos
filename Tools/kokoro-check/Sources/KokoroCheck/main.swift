@@ -4,110 +4,96 @@ import KokoroSwift
 import MLX
 import MLXUtilsLibrary
 
-// Usage: KokoroCheck <model.safetensors> <voices.npz> <outDir> <cpu|gpu>
+// Usage: KokoroCheck <model.safetensors> <voices.npz> <bible.json> <outDir>
+// SpeechText.swift is copied in from Shared/Core by the workflow, so this runs the exact text handling the app uses.
 let args = CommandLine.arguments
 let modelURL = URL(fileURLWithPath: args[1])
 let voicesURL = URL(fileURLWithPath: args[2])
-let out = URL(fileURLWithPath: args[3], isDirectory: true)
-let useCPU = args.count > 4 && args[4] == "cpu"
+let bibleURL = URL(fileURLWithPath: args[3])
+let out = URL(fileURLWithPath: args[4], isDirectory: true)
 try? FileManager.default.createDirectory(at: out, withIntermediateDirectories: true)
 
-Memory.cacheLimit = 32 * 1024 * 1024
-if useCPU { Device.setDefault(device: .cpu) }
-print("device", useCPU ? "cpu" : "gpu")
+Memory.cacheLimit = 16 * 1024 * 1024
 
-func stats(_ s: [Float]) -> String {
-    let finite = s.filter { $0.isFinite }
-    let nan = s.count - finite.count
-    let rms = sqrt(finite.reduce(0.0) { $0 + Double($1 * $1) } / Double(max(1, finite.count)))
-    let peak = finite.map { abs($0) }.max() ?? 0
-    var crossings = 0
-    if finite.count > 1 {
-        for i in 1..<finite.count where (finite[i - 1] < 0) != (finite[i] < 0) { crossings += 1 }
-    }
-    return String(format: "samples %d seconds %.2f rms %.4f peak %.4f nan %d zcr %.3f", s.count, Double(s.count) / 24000, rms, peak, nan,
-                  Double(crossings) / Double(max(1, finite.count)))
-}
+struct Book: Decodable { let id: String; let chapters: [Chapter] }
+struct Chapter: Decodable { let verses: [String] }
+struct Bible: Decodable { let books: [Book] }
+let bible = try! JSONDecoder().decode(Bible.self, from: Data(contentsOf: bibleURL))
+func verse(_ book: String, _ ch: Int, _ v: Int) -> String { bible.books.first { $0.id == book }!.chapters[ch - 1].verses[v - 1] }
 
-func writeWAV(_ samples: [Float], rate: Double, to url: URL) {
-    guard !samples.isEmpty, let format = AVAudioFormat(standardFormatWithSampleRate: rate, channels: 1),
+func writeWAV(_ samples: [Float], to url: URL) {
+    guard !samples.isEmpty, let format = AVAudioFormat(standardFormatWithSampleRate: 24000, channels: 1),
           let buffer = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: AVAudioFrameCount(samples.count)) else { return }
     buffer.frameLength = buffer.frameCapacity
     samples.withUnsafeBufferPointer { buffer.floatChannelData![0].update(from: $0.baseAddress!, count: samples.count) }
-    let settings: [String: Any] = [AVFormatIDKey: kAudioFormatLinearPCM, AVSampleRateKey: rate, AVNumberOfChannelsKey: 1,
+    let settings: [String: Any] = [AVFormatIDKey: kAudioFormatLinearPCM, AVSampleRateKey: 24000, AVNumberOfChannelsKey: 1,
                                    AVLinearPCMBitDepthKey: 16, AVLinearPCMIsFloatKey: false]
-    do {
-        let file = try AVAudioFile(forWriting: url, settings: settings, commonFormat: .pcmFormatFloat32, interleaved: false)
-        try file.write(from: buffer)
-    } catch {
-        print("write failed", error)
+    if let file = try? AVAudioFile(forWriting: url, settings: settings, commonFormat: .pcmFormatFloat32, interleaved: false) {
+        try? file.write(from: buffer)
     }
 }
 
-/// Plays the samples through the node chain the app uses, rendered offline, to hear what the speaker hears.
-func render(_ samples: [Float], timePitch: Bool) -> [Float] {
-    let format = AVAudioFormat(standardFormatWithSampleRate: 24000, channels: 1)!
-    let engine = AVAudioEngine()
-    let player = AVAudioPlayerNode()
-    let pitch = AVAudioUnitTimePitch()
-    engine.attach(player)
-    engine.attach(pitch)
-    if timePitch {
-        engine.connect(player, to: pitch, format: format)
-        engine.connect(pitch, to: engine.mainMixerNode, format: format)
-    } else {
-        engine.connect(player, to: engine.mainMixerNode, format: format)
-    }
-    let outFormat = AVAudioFormat(standardFormatWithSampleRate: 48000, channels: 1)!
-    do {
-        try engine.enableManualRenderingMode(.offline, format: outFormat, maximumFrameCount: 4096)
-        try engine.start()
-    } catch {
-        print("render setup failed", error)
-        return []
-    }
-    let buffer = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: AVAudioFrameCount(samples.count))!
-    buffer.frameLength = buffer.frameCapacity
-    samples.withUnsafeBufferPointer { buffer.floatChannelData![0].update(from: $0.baseAddress!, count: samples.count) }
-    player.scheduleBuffer(buffer)
-    player.play()
-    var result: [Float] = []
-    let chunk = AVAudioPCMBuffer(pcmFormat: outFormat, frameCapacity: 4096)!
-    let total = samples.count * 2
-    while result.count < total {
-        guard let status = try? engine.renderOffline(4096, to: chunk), status == .success else { break }
-        result += Array(UnsafeBufferPointer(start: chunk.floatChannelData![0], count: Int(chunk.frameLength)))
-    }
-    engine.stop()
-    return result
-}
-
-let start = Date()
 let tts = KokoroTTS(modelPath: modelURL)
 let styles = NpyzReader.read(fileFromPath: voicesURL) ?? [:]
-print(String(format: "loaded in %.1fs, %d voices, active %d MB", Date().timeIntervalSince(start), styles.count, Memory.activeMemory / 1_048_576))
+let heart = styles["af_heart.npy"]!
 
-let texts = [
-    "In the beginning was the Word, and the Word was with God, and the Word was God.",
-    "Now faith is assurance of things hoped for, proof of things not seen.",
-]
-for voice in ["af_heart", "am_michael", "bf_emma"] {
-    guard let style = styles[voice + ".npy"] else { print("missing", voice); continue }
-    for (i, text) in texts.enumerated() {
-        let t = Date()
+func speak(_ text: String, limit: Int, voice: MLXArray = heart, speed: Float = 1) -> (samples: [Float], seconds: Double, peakMB: Int, pieces: Int, failures: Int) {
+    Memory.peakMemory = 0
+    let start = Date()
+    var all: [Float] = []
+    var failures = 0
+    let parts = SpeechText.pieces(text, limit: limit)
+    for p in parts {
         do {
-            let audio = try tts.generateAudio(voice: style, language: voice.hasPrefix("b") ? .enGB : .enUS, text: text).0
-            let secs = Date().timeIntervalSince(t)
-            print(voice, i, String(format: "gen %.2fs", secs), stats(audio), "peak mem MB", Memory.peakMemory / 1_048_576)
-            writeWAV(audio, rate: 24000, to: out.appendingPathComponent("\(voice)_\(i)_raw.wav"))
-            if i == 0 {
-                writeWAV(render(audio, timePitch: true), rate: 48000, to: out.appendingPathComponent("\(voice)_\(i)_timepitch.wav"))
-                writeWAV(render(audio, timePitch: false), rate: 48000, to: out.appendingPathComponent("\(voice)_\(i)_direct.wav"))
-            }
+            let a = try tts.generateAudio(voice: voice, language: .enUS, text: p, speed: speed).0
+            if SpeechText.looksLikeSpeech(a) { all += a } else { failures += 1 }
         } catch {
-            print(voice, i, "error", error)
+            failures += 1
+            print("  error on piece:", p, error)
         }
         Memory.clearCache()
     }
+    return (all, Date().timeIntervalSince(start), Memory.peakMemory / 1_048_576, parts.count, failures)
 }
-print("done, peak memory MB", Memory.peakMemory / 1_048_576)
+
+// Warm up so timings below are steady.
+_ = speak("Hello.", limit: 120)
+
+// 1. Memory by piece size on the longest verse in the Bible.
+let longest = verse("EST", 8, 9)
+print("Esther 8:9 has \(longest.count) characters")
+for limit in [2000, 200, 120, 80] {
+    let r = speak(longest, limit: limit)
+    print(String(format: "limit %4d: pieces %d, audio %.1fs, made in %.1fs, peak %d MB, failures %d", limit, r.pieces,
+                 Double(r.samples.count) / 24000, r.seconds, r.peakMB, r.failures))
+    if limit == 120 { writeWAV(r.samples, to: out.appendingPathComponent("esther_8_9_limit120.wav")) }
+}
+
+// 2. Punctuation and names that could trip the pronunciation step.
+for (b, c, v) in [("JHN", 6, 58), ("JHN", 2, 20), ("GEN", 5, 3), ("PSA", 23, 1), ("JHN", 11, 35), ("REV", 22, 21), ("PSA", 119, 105)] {
+    let text = verse(b, c, v)
+    let r = speak(text, limit: 120)
+    print("\(b) \(c):\(v) pieces \(r.pieces) failures \(r.failures) audio \(String(format: "%.1f", Double(r.samples.count) / 24000))s peak \(r.peakMB) MB :: \(SpeechText.clean(text).prefix(70))")
+}
+
+// 3. A whole chapter the way Listen plays it, to catch any verse that throws or sounds wrong.
+var total: Double = 0
+var audio: Double = 0
+var worstPeak = 0
+var bad = 0
+for (i, v) in bible.books.first(where: { $0.id == "JHN" })!.chapters[0].verses.enumerated() {
+    let r = speak(v, limit: 120)
+    total += r.seconds
+    audio += Double(r.samples.count) / 24000
+    worstPeak = max(worstPeak, r.peakMB)
+    if r.failures > 0 || r.samples.isEmpty { bad += 1; print("  John 1:\(i + 1) failed pieces \(r.failures)") }
+    if i == 0 { writeWAV(r.samples, to: out.appendingPathComponent("john_1_1.wav")) }
+}
+print(String(format: "John 1: %.0fs of audio made in %.0fs (%.1fx real time), worst peak %d MB, verses with problems %d", audio, total, audio / max(total, 0.1), worstPeak, bad))
+
+// 4. Speed and every voice.
+for name in styles.keys.sorted() {
+    let r = speak("Your word is a lamp to my feet, and a light for my path.", limit: 120, voice: styles[name]!, speed: 1.25)
+    print("\(name) at 1.25x: audio \(String(format: "%.2f", Double(r.samples.count) / 24000))s failures \(r.failures)")
+}
+print("done")

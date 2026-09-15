@@ -91,13 +91,13 @@ enum ShieldArt {
                               body: "Unlocks reset at midnight. Rest in what you read.", isVerse: false, reference: nil, button: "Open Wick")
         case .needsQuestion:
             return ShieldCopy(eyebrow: "Almost there", title: "One question left.",
-                              body: "Answer one question about \(chapter) to open \(app).", isVerse: false, reference: nil,
+                              body: "Answer one question about \(snap.questionTopic.isEmpty ? "what you read today" : snap.questionTopic) to open \(app).", isVerse: false, reference: nil,
                               button: "Answer the question")
         case .needsTap:
             let reward = lock.map { LockSet.rewardLabel($0.rewardSeconds).lowercased() } ?? "a while"
             let forText = lock?.rewardSeconds == LockSet.untilEnd ? "until this lock ends" : "for \(reward)"
             return ShieldCopy(eyebrow: "Chapter read", title: "Well done.",
-                              body: "You read \(chapter) today. \(app) opens \(forText).", isVerse: false, reference: nil,
+                              body: "You read \(snap.questionTopic.isEmpty ? "" : snap.questionTopic + " ")today. \(app) opens \(forText).", isVerse: false, reference: nil,
                               button: app.count <= 14 ? "Unlock \(app)" : "Unlock")
         case .needsReading, .open, .inactive:
             switch snap.style {

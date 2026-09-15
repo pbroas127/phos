@@ -115,18 +115,16 @@ struct ReadingFlow: View {
             missed = saved.missedIDs.compactMap { byID[$0] }
             var questions = saved.quizIDs.compactMap { byID[$0] }
             let resume = saved.resumeStep
-            if resume == .quiz, saved.answered < questions.count {
-                // The question showing when they left may have been seen, so swap it for a fresh one.
-                let used = Set(questions.map(\.id) + model.today.askedQuestionIDs)
-                if let fresh = bank().first(where: { !used.contains($0.id) }) {
-                    questions[saved.answered] = fresh
-                    draft.quizIDs = questions.map(\.id)
-                    model.markAsked([QuizEngine.pick(from: [fresh], count: 1, avoiding: []).first].compactMap { $0 })
-                }
-            }
+            // Questions are never swapped on return. Leaving during a question already counted it as missed,
+            // so coming back cannot be used to fish for an easier one.
+            _ = questions.count
             items = questions.map { QuizEngine.pick(from: [$0], count: 1, avoiding: []).first! }
             draft.step = startStep ?? resume
             if draft.step == .quiz && items.isEmpty { draft.step = .reflect }
+            // Every question was answered before leaving, so finish now instead of showing the last one again.
+            if draft.step == .quiz && !items.isEmpty && draft.answered >= items.count {
+                DispatchQueue.main.async { finishQuiz() }
+            }
             // A widget's Listen button switches a reading that has not moved past reading yet.
             if let mode = model.startMode, draft.step == .mode || draft.step == .read {
                 draft.readMode = mode
@@ -156,6 +154,11 @@ struct ReadingFlow: View {
     }
 
     private func startQuiz() {
+        // After a miss, new questions wait for the timer however you get back here: rereading, reflecting again, or reopening Wick.
+        if model.nextAttemptAt != nil && draft.failed {
+            go(.result)
+            return
+        }
         items = QuizEngine.pick(from: bank(), count: model.readingCheck.questions, avoiding: Set(model.today.askedQuestionIDs))
         model.markAsked(items)
         draft.quizIDs = items.map(\.id)
@@ -254,17 +257,18 @@ struct ReadStep: View {
     var listenPlayed: Binding<[Int]> = .constant([])
     var onDone: () -> Void
 
-    @State private var start = Date()
+    @State private var start = TrustedClock.now()
     @State private var restarted = false
     @State private var finished = false
     /// Paper readers may let the phone lock. These tell a screen lock apart from switching to another app.
     @State private var lockedAt: Date?
     @State private var leftAt: Date?
+    @State private var unlockedAt: Date?
 
     var body: some View {
         TimelineView(.periodic(from: .now, by: 1)) { context in
             let minimum = TimeInterval(model.readingCheck.minutes * 60)
-            let remaining = (model.demo || finished || mode == .speak) ? 0 : max(0, minimum - context.date.timeIntervalSince(start))
+            let remaining = (model.demo || finished || mode == .speak) ? 0 : max(0, minimum - TrustedClock.now().timeIntervalSince(start))
             VStack(spacing: 0) {
                 if restarted && remaining > 0 {
                     Label("You left Wick, so the timer started over.", systemImage: "arrow.counterclockwise")
@@ -281,13 +285,16 @@ struct ReadStep: View {
             .onChange(of: remaining == 0) { _, done in if done { finished = true } }
         }
         .onAppear {
-            start = Date()
+            start = TrustedClock.now()
             // A paper reader can set the phone down and let it lock. Reading on screen keeps it awake.
             UIApplication.shared.isIdleTimerDisabled = mode != .paper
         }
         .onDisappear { UIApplication.shared.isIdleTimerDisabled = false }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.protectedDataWillBecomeUnavailableNotification)) { _ in
             lockedAt = Date()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.protectedDataDidBecomeAvailableNotification)) { _ in
+            unlockedAt = Date()
         }
         .onChange(of: phase) { _, p in
             // Listening keeps playing with the phone locked, so leaving never restarts it.
@@ -298,17 +305,21 @@ struct ReadStep: View {
                 if p == .background {
                     leftAt = Date()
                     lockedAt = nil
+                    unlockedAt = nil
                 } else if p == .active, let left = leftAt {
                     leftAt = nil
-                    if lockedAt == nil && Date().timeIntervalSince(left) > 15 {
-                        start = Date()
+                    let away = Date().timeIntervalSince(left)
+                    // Away a while without the screen locking, or the phone was unlocked and used somewhere else first.
+                    let usedElsewhere = lockedAt == nil ? away > 15 : (unlockedAt.map { Date().timeIntervalSince($0) > 15 } ?? false)
+                    if usedElsewhere {
+                        start = TrustedClock.now()
                         restarted = true
                     }
                 }
                 return
             }
             guard p == .background else { return }
-            start = Date()
+            start = TrustedClock.now()
             restarted = true
         }
     }
@@ -653,6 +664,7 @@ struct ListenRead: View {
     @State private var voiceHelp = false
     @State private var systemVoices: [VoiceChoice] = []
     @State private var voiceName = "Voice"
+    @State private var pickerShown = false
 
     /// Share of verses that must actually play before listening counts as finished.
     static let needed = 0.8
@@ -718,7 +730,7 @@ struct ListenRead: View {
             }
             .foregroundStyle(Theme.ink)
             Spacer()
-            let ready = (speaker.finished && enoughPlayed) || remaining <= 0
+            let ready = enoughPlayed && (speaker.finished || remaining <= 0)
             if speaker.finished && !enoughPlayed && remaining > 0 {
                 Text("Some verses were skipped. Listen to them to finish.")
                     .font(.footnote).foregroundStyle(Theme.dim).multilineTextAlignment(.center).padding(.horizontal, 20)
@@ -776,6 +788,18 @@ struct ListenRead: View {
         .sheet(isPresented: $voiceHelp) {
             BetterVoicesHelp().presentationDetents([.medium])
         }
+        // A sheet instead of a menu: the listening screen redraws every second, which closed a menu mid scroll.
+        .sheet(isPresented: $pickerShown) {
+            VoicePickerSheet(current: currentVoiceID, systemVoices: systemVoices) { v in
+                pickerShown = false
+                // Let the list close before a download sheet can open.
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.45) { pick(v) }
+            } onHelp: {
+                pickerShown = false
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.45) { voiceHelp = true }
+            }
+            .presentationDetents([.medium, .large])
+        }
     }
 
     private var currentVoiceID: String {
@@ -810,25 +834,7 @@ struct ListenRead: View {
     }
 
     private var voiceMenu: some View {
-        let current = currentVoiceID
-        return Menu {
-            if VoiceCatalog.naturalSupported {
-                Section("Natural voices") {
-                    ForEach(VoiceCatalog.natural) { v in
-                        Button { pick(v) } label: { voiceLabel(v, current: current) }
-                    }
-                }
-            }
-            Section("iPhone voices") {
-                if systemVoices.isEmpty {
-                    Text("Loading voices")
-                }
-                ForEach(systemVoices) { v in
-                    Button { pick(v) } label: { voiceLabel(v, current: current) }
-                }
-                Button("Get more iPhone voices") { voiceHelp = true }
-            }
-        } label: {
+        Button { pickerShown = true } label: {
             Label(voiceName, systemImage: "person.wave.2.fill")
                 .font(.subheadline.weight(.semibold))
                 .padding(.horizontal, 14).padding(.vertical, 9)
@@ -836,7 +842,7 @@ struct ListenRead: View {
                 .overlay(Capsule().stroke(Theme.line))
                 .foregroundStyle(Theme.ink)
         }
-        .accessibilityLabel("Voice")
+        .accessibilityLabel("Voice, \(voiceName)")
     }
 
     @ViewBuilder
@@ -863,6 +869,64 @@ struct ListenRead: View {
         voiceName = VoiceCatalog.name(id)
         speaker.voiceID = id
         speaker.restartVerse()
+    }
+}
+
+/// Every voice in one scrollable list. Tapping one picks it.
+struct VoicePickerSheet: View {
+    let current: String
+    let systemVoices: [VoiceChoice]
+    var onPick: (VoiceChoice) -> Void
+    var onHelp: () -> Void
+    @ObservedObject private var kokoro = KokoroModel.shared
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        NavigationStack {
+            List {
+                if VoiceCatalog.naturalSupported {
+                    Section {
+                        ForEach(VoiceCatalog.natural) { row($0) }
+                    } header: {
+                        Text("Natural voices")
+                    } footer: {
+                        Text(kokoro.ready ? "Made on your iPhone, no connection needed." : "One download of \(KokoroModel.megabytes) MB the first time you pick one.")
+                    }
+                }
+                Section("iPhone voices") {
+                    if systemVoices.isEmpty {
+                        HStack(spacing: 10) {
+                            ProgressView()
+                            Text("Loading voices").foregroundStyle(Theme.dim)
+                        }
+                    }
+                    ForEach(systemVoices) { row($0) }
+                    Button("Get more iPhone voices", action: onHelp).foregroundStyle(Theme.gold)
+                }
+            }
+            .navigationTitle("Voice")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } }
+            }
+        }
+    }
+
+    private func row(_ v: VoiceChoice) -> some View {
+        Button { onPick(v) } label: {
+            HStack {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(v.name).foregroundStyle(Theme.ink)
+                    Text(v.detail).font(.caption).foregroundStyle(Theme.dim)
+                }
+                Spacer()
+                if v.id == current {
+                    Image(systemName: "checkmark").font(.body.weight(.semibold)).foregroundStyle(Theme.gold)
+                }
+            }
+            .contentShape(Rectangle())
+        }
+        .accessibilityAddTraits(v.id == current ? .isSelected : [])
     }
 }
 

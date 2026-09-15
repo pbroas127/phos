@@ -46,7 +46,7 @@ struct WidgetData: Codable, Equatable {
     var trophies: [Trophy] = []
     var lastEarned: Trophy?
     var earnedCount = 0
-    var trophyTotal = 124
+    var trophyTotal = 127
 
     static let placeholder: WidgetData = {
         var d = WidgetData()

@@ -363,9 +363,9 @@ enum Achievements {
         Achievement(id: "quiz.500", group: .mastery, name: "Always Ready", detail: "Answer 500 questions correctly.", art: "open_book_star", goal: 500) { $0.correctAnswers },
         Achievement(id: "quiz.2000", group: .mastery, name: "Sword of the Spirit", detail: "Answer 2,000 questions correctly.", art: "sword_word", goal: 2000) { $0.correctAnswers },
         Achievement(id: "quiz.comeback", group: .mastery, name: "Cast the Net Again", detail: "Miss a quiz, then pass it later the same day.", art: "fishing_net", goal: 1) { $0.comebacks },
-        Achievement(id: "review.10", group: .mastery, name: "Second Look", detail: "Review 10 chapters you already read.", art: "scroll_keeper", goal: 10) { $0.reviewedChapters.count },
-        Achievement(id: "review.book", group: .mastery, name: "Book Exam", detail: "Get a perfect score on a whole book review.", art: "laurel_wreath", goal: 1) { $0.perfectBookReviews },
-        Achievement(id: "review.full", group: .mastery, name: "Full Circle", detail: "Review every chapter of a book you finished.", art: "four_scrolls", goal: 1) { $0.booksFullyReviewed }
+        Achievement(id: "review.10", group: .mastery, name: "Second Look", detail: "Review 10 chapters you already read.", art: "second_look", goal: 10) { $0.reviewedChapters.count },
+        Achievement(id: "review.book", group: .mastery, name: "Book Exam", detail: "Get a perfect score on a whole book review.", art: "book_exam", goal: 1) { $0.perfectBookReviews },
+        Achievement(id: "review.full", group: .mastery, name: "Full Circle", detail: "Review every chapter of a book you finished.", art: "full_circle", goal: 1) { $0.booksFullyReviewed }
     ]
 
     static let reflection: [Achievement] = [
